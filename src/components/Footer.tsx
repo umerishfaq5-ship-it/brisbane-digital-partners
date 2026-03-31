@@ -2,49 +2,63 @@ import { Link } from "react-router-dom";
 import { MapPin, Phone, Mail } from "lucide-react";
 
 const Footer = () => (
-  <footer className="hero-gradient text-primary-foreground">
-    <div className="container py-16">
-      <div className="grid md:grid-cols-4 gap-10">
+  <footer className="hero-gradient text-primary-foreground relative overflow-hidden">
+    {/* Subtle decorative elements */}
+    <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-accent/30 to-transparent" />
+    <div className="absolute top-20 right-10 w-72 h-72 bg-accent/5 rounded-full blur-3xl" />
+
+    <div className="container py-20 relative z-10">
+      <div className="grid md:grid-cols-4 gap-12">
         <div className="md:col-span-1">
-          <p className="font-heading font-bold text-xl mb-3">
+          <p className="font-heading font-extrabold text-2xl mb-4">
             Next Tab<span className="text-accent">.</span>
           </p>
-          <p className="text-sm opacity-80 leading-relaxed">
+          <p className="text-sm opacity-60 leading-relaxed max-w-xs">
             Brisbane-based digital agency delivering practical SEO and development solutions for Australian businesses.
           </p>
         </div>
 
         <div>
-          <h4 className="font-heading font-semibold mb-4 text-sm uppercase tracking-wider opacity-60">Services</h4>
-          <ul className="space-y-2 text-sm opacity-80">
-            <li><Link to="/services/seo-audits" className="hover:opacity-100 transition-opacity">SEO Audits & Strategy</Link></li>
-            <li><Link to="/services/local-seo" className="hover:opacity-100 transition-opacity">Local SEO</Link></li>
-            <li><Link to="/services/mobile-apps" className="hover:opacity-100 transition-opacity">Mobile App Development</Link></li>
-            <li><Link to="/services/web-development" className="hover:opacity-100 transition-opacity">Web Design & Development</Link></li>
+          <h4 className="font-heading font-bold mb-5 text-xs uppercase tracking-[0.2em] opacity-40">Services</h4>
+          <ul className="space-y-3 text-sm">
+            <li><Link to="/services/seo-audits" className="opacity-60 hover:opacity-100 hover:text-accent transition-all duration-300">SEO Audits & Strategy</Link></li>
+            <li><Link to="/services/local-seo" className="opacity-60 hover:opacity-100 hover:text-accent transition-all duration-300">Local SEO</Link></li>
+            <li><Link to="/services/mobile-apps" className="opacity-60 hover:opacity-100 hover:text-accent transition-all duration-300">Mobile App Development</Link></li>
+            <li><Link to="/services/web-development" className="opacity-60 hover:opacity-100 hover:text-accent transition-all duration-300">Web Design & Development</Link></li>
           </ul>
         </div>
 
         <div>
-          <h4 className="font-heading font-semibold mb-4 text-sm uppercase tracking-wider opacity-60">Company</h4>
-          <ul className="space-y-2 text-sm opacity-80">
-            <li><Link to="/about" className="hover:opacity-100 transition-opacity">About Us</Link></li>
-            <li><Link to="/portfolio" className="hover:opacity-100 transition-opacity">Portfolio</Link></li>
-            <li><Link to="/testimonials" className="hover:opacity-100 transition-opacity">Testimonials</Link></li>
-            <li><Link to="/contact" className="hover:opacity-100 transition-opacity">Contact</Link></li>
+          <h4 className="font-heading font-bold mb-5 text-xs uppercase tracking-[0.2em] opacity-40">Company</h4>
+          <ul className="space-y-3 text-sm">
+            <li><Link to="/about" className="opacity-60 hover:opacity-100 hover:text-accent transition-all duration-300">About Us</Link></li>
+            <li><Link to="/portfolio" className="opacity-60 hover:opacity-100 hover:text-accent transition-all duration-300">Portfolio</Link></li>
+            <li><Link to="/testimonials" className="opacity-60 hover:opacity-100 hover:text-accent transition-all duration-300">Testimonials</Link></li>
+            <li><Link to="/contact" className="opacity-60 hover:opacity-100 hover:text-accent transition-all duration-300">Contact</Link></li>
           </ul>
         </div>
 
         <div>
-          <h4 className="font-heading font-semibold mb-4 text-sm uppercase tracking-wider opacity-60">Contact</h4>
-          <ul className="space-y-3 text-sm opacity-80">
-            <li className="flex items-start gap-2"><MapPin className="w-4 h-4 mt-0.5 shrink-0" /> Brisbane, QLD, Australia</li>
-            <li className="flex items-center gap-2"><Phone className="w-4 h-4 shrink-0" /> +61 4XX XXX XXX</li>
-            <li className="flex items-center gap-2"><Mail className="w-4 h-4 shrink-0" /> hello@nexttab.com.au</li>
+          <h4 className="font-heading font-bold mb-5 text-xs uppercase tracking-[0.2em] opacity-40">Contact</h4>
+          <ul className="space-y-4 text-sm">
+            <li className="flex items-start gap-3 opacity-60">
+              <MapPin className="w-4 h-4 mt-0.5 shrink-0 text-accent" />
+              <span>Brisbane, QLD, Australia</span>
+            </li>
+            <li className="flex items-center gap-3 opacity-60">
+              <Phone className="w-4 h-4 shrink-0 text-accent" />
+              <span>+61 4XX XXX XXX</span>
+            </li>
+            <li className="flex items-center gap-3 opacity-60">
+              <Mail className="w-4 h-4 shrink-0 text-accent" />
+              <span>hello@nexttab.com.au</span>
+            </li>
           </ul>
         </div>
       </div>
 
-      <div className="border-t border-primary-foreground/10 mt-12 pt-6 text-center text-xs opacity-50">
+      <div className="divider-gradient mt-16 mb-6 opacity-20" />
+      <div className="text-center text-xs opacity-30">
         © {new Date().getFullYear()} Next Tab Agency. All rights reserved.
       </div>
     </div>

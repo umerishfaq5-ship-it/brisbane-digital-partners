@@ -1,9 +1,10 @@
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
-import { Search, Smartphone, Globe, ArrowRight, Star, Users, Briefcase, Clock } from "lucide-react";
+import { Search, Smartphone, Globe, ArrowRight, Star, Users, Briefcase, Clock, CheckCircle } from "lucide-react";
 import Layout from "@/components/Layout";
 import SectionHeading from "@/components/SectionHeading";
+import heroBg from "@/assets/hero-bg.jpg";
 
 const stats = [
   { icon: Briefcase, value: "50+", label: "Projects Delivered" },
@@ -53,73 +54,100 @@ const testimonials = [
   },
 ];
 
+const stagger = {
+  hidden: {},
+  visible: { transition: { staggerChildren: 0.1 } },
+};
+
 const fadeUp = {
-  initial: { opacity: 0, y: 24 },
-  whileInView: { opacity: 1, y: 0 },
-  viewport: { once: true },
-  transition: { duration: 0.5 },
+  hidden: { opacity: 0, y: 30 },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: [0.16, 1, 0.3, 1] } },
 };
 
 const Index = () => (
   <Layout>
     {/* Hero */}
-    <section className="hero-gradient text-primary-foreground relative overflow-hidden">
-      <div className="container py-24 md:py-36 relative z-10">
+    <section className="relative min-h-[90vh] flex items-center overflow-hidden">
+      <img src={heroBg} alt="" className="absolute inset-0 w-full h-full object-cover" width={1920} height={1080} />
+      <div className="absolute inset-0 bg-gradient-to-r from-primary/95 via-primary/80 to-primary/40" />
+
+      <div className="container relative z-10 py-32 md:py-40">
         <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7 }}
-          className="max-w-3xl"
+          initial="hidden"
+          animate="visible"
+          variants={stagger}
+          className="max-w-2xl"
         >
-          <span className="inline-block text-accent font-heading font-semibold text-sm uppercase tracking-wider mb-4">
+          <motion.span
+            variants={fadeUp}
+            className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-accent/15 text-accent text-xs font-bold uppercase tracking-[0.15em] mb-6 border border-accent/20"
+          >
+            <span className="w-1.5 h-1.5 rounded-full bg-accent animate-pulse" />
             Brisbane Digital Agency
-          </span>
-          <h1 className="font-heading font-bold text-4xl md:text-6xl leading-[1.1] mb-6">
+          </motion.span>
+
+          <motion.h1
+            variants={fadeUp}
+            className="font-heading font-extrabold text-4xl sm:text-5xl md:text-[3.5rem] leading-[1.08] text-primary-foreground mb-6"
+          >
             We build digital experiences that{" "}
             <span className="text-gradient">grow your business</span>
-          </h1>
-          <p className="text-lg md:text-xl opacity-80 max-w-xl mb-8 leading-relaxed">
+          </motion.h1>
+
+          <motion.p
+            variants={fadeUp}
+            className="text-lg md:text-xl text-primary-foreground/60 max-w-lg mb-10 leading-relaxed"
+          >
             Practical SEO strategies and expert web & mobile development for Australian businesses that want real results — not jargon.
-          </p>
-          <div className="flex flex-wrap gap-4">
-            <Button variant="accent" size="lg" asChild>
+          </motion.p>
+
+          <motion.div variants={fadeUp} className="flex flex-wrap gap-4">
+            <Button variant="hero-primary" size="xl" asChild>
               <Link to="/contact">Let's Discuss Your Project</Link>
             </Button>
-            <Button variant="accent-outline" size="lg" className="border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10 hover:text-primary-foreground" asChild>
-              <Link to="/portfolio">View Our Work</Link>
+            <Button variant="hero-secondary" size="xl" asChild>
+              <Link to="/portfolio">View Our Work <ArrowRight className="w-4 h-4 ml-1" /></Link>
             </Button>
-          </div>
+          </motion.div>
         </motion.div>
       </div>
+
       {/* Decorative gradient orbs */}
-      <div className="absolute top-0 right-0 w-96 h-96 bg-accent/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/3" />
-      <div className="absolute bottom-0 left-1/4 w-64 h-64 bg-accent/5 rounded-full blur-3xl translate-y-1/2" />
+      <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-background to-transparent" />
     </section>
 
     {/* Stats */}
-    <section className="border-b">
-      <div className="container py-12">
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-          {stats.map((stat, i) => (
-            <motion.div
-              key={stat.label}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.4, delay: i * 0.1 }}
-              className="text-center"
-            >
-              <stat.icon className="w-6 h-6 text-accent mx-auto mb-2" />
-              <p className="font-heading font-bold text-3xl text-foreground">{stat.value}</p>
-              <p className="text-sm text-muted-foreground mt-1">{stat.label}</p>
-            </motion.div>
-          ))}
-        </div>
+    <section className="relative -mt-16 z-20">
+      <div className="container">
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+          className="glass rounded-2xl shadow-premium p-8 md:p-10 border"
+        >
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+            {stats.map((stat, i) => (
+              <motion.div
+                key={stat.label}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.4, delay: i * 0.1 }}
+                className="text-center"
+              >
+                <stat.icon className="w-5 h-5 text-accent mx-auto mb-3" />
+                <p className="font-heading font-extrabold text-3xl md:text-4xl text-foreground">{stat.value}</p>
+                <p className="text-xs text-muted-foreground mt-1 font-medium uppercase tracking-wider">{stat.label}</p>
+              </motion.div>
+            ))}
+          </div>
+        </motion.div>
       </div>
     </section>
 
     {/* Services */}
-    <section className="py-20 md:py-28">
+    <section className="py-24 md:py-32">
       <div className="container">
         <SectionHeading
           eyebrow="What We Do"
@@ -130,22 +158,24 @@ const Index = () => (
           {services.map((service, i) => (
             <motion.div
               key={service.title}
-              {...fadeUp}
-              transition={{ duration: 0.5, delay: i * 0.1 }}
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: i * 0.12 }}
             >
               <Link
                 to={service.href}
-                className="group block p-8 rounded-xl border bg-card hover:shadow-lg transition-all duration-300 h-full"
+                className="group card-premium block p-8 rounded-2xl h-full"
               >
-                <div className="w-12 h-12 rounded-lg bg-accent/10 flex items-center justify-center mb-5">
-                  <service.icon className="w-6 h-6 text-accent" />
+                <div className="w-14 h-14 rounded-xl bg-accent/10 flex items-center justify-center mb-6 group-hover:bg-accent/20 transition-colors duration-300">
+                  <service.icon className="w-7 h-7 text-accent" />
                 </div>
-                <h3 className="font-heading font-semibold text-lg mb-3 text-foreground group-hover:text-accent transition-colors">
+                <h3 className="font-heading font-bold text-lg mb-3 text-foreground group-hover:text-accent transition-colors duration-300">
                   {service.title}
                 </h3>
-                <p className="text-muted-foreground text-sm leading-relaxed mb-4">{service.description}</p>
-                <span className="inline-flex items-center gap-1 text-accent text-sm font-medium">
-                  Learn more <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" />
+                <p className="text-muted-foreground text-sm leading-relaxed mb-5">{service.description}</p>
+                <span className="inline-flex items-center gap-2 text-accent text-sm font-semibold">
+                  Learn more <ArrowRight className="w-4 h-4 group-hover:translate-x-1.5 transition-transform duration-300" />
                 </span>
               </Link>
             </motion.div>
@@ -155,56 +185,68 @@ const Index = () => (
     </section>
 
     {/* Portfolio Preview */}
-    <section className="surface-warm py-20 md:py-28">
-      <div className="container">
+    <section className="surface-warm py-24 md:py-32 relative overflow-hidden">
+      <div className="absolute top-0 left-0 right-0 divider-gradient" />
+      <div className="container relative z-10">
         <SectionHeading
           eyebrow="Our Work"
           title="Projects we're proud of"
           description="From mobile apps to SEO transformations, here's a snapshot of the work we've delivered."
         />
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
           {portfolioItems.map((item, i) => (
             <motion.div
               key={item.title}
-              {...fadeUp}
-              transition={{ duration: 0.4, delay: i * 0.08 }}
-              className="bg-card rounded-xl p-6 border hover:shadow-md transition-shadow"
+              initial={{ opacity: 0, y: 24 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: i * 0.08 }}
+              className="card-premium rounded-2xl p-6"
             >
-              <span className="text-xs font-semibold text-accent uppercase tracking-wider">{item.category}</span>
-              <h3 className="font-heading font-semibold text-foreground mt-2 mb-2">{item.title}</h3>
+              <span className="inline-block text-[10px] font-bold text-accent uppercase tracking-[0.15em] px-2.5 py-1 bg-accent/10 rounded-full">{item.category}</span>
+              <h3 className="font-heading font-bold text-foreground mt-4 mb-2 text-lg">{item.title}</h3>
               <p className="text-sm text-muted-foreground leading-relaxed">{item.description}</p>
             </motion.div>
           ))}
         </div>
-        <div className="text-center mt-10">
-          <Button variant="outline" asChild>
-            <Link to="/portfolio">View All Projects <ArrowRight className="w-4 h-4 ml-1" /></Link>
+        <div className="text-center mt-12">
+          <Button variant="outline" size="lg" asChild>
+            <Link to="/portfolio">View All Projects <ArrowRight className="w-4 h-4 ml-2" /></Link>
           </Button>
         </div>
       </div>
     </section>
 
     {/* Testimonials */}
-    <section className="py-20 md:py-28">
+    <section className="py-24 md:py-32">
       <div className="container">
         <SectionHeading eyebrow="Testimonials" title="What our clients say" />
         <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
           {testimonials.map((t, i) => (
             <motion.blockquote
               key={t.author}
-              {...fadeUp}
+              initial={{ opacity: 0, y: 24 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
               transition={{ duration: 0.5, delay: i * 0.15 }}
-              className="bg-card border rounded-xl p-8"
+              className="card-premium rounded-2xl p-8 relative"
             >
-              <div className="flex gap-1 mb-4">
+              {/* Quote mark */}
+              <span className="absolute top-6 right-8 text-6xl font-heading text-accent/10 leading-none">"</span>
+              <div className="flex gap-1 mb-5">
                 {[...Array(5)].map((_, j) => (
                   <Star key={j} className="w-4 h-4 fill-accent text-accent" />
                 ))}
               </div>
-              <p className="text-foreground leading-relaxed mb-6 italic">"{t.quote}"</p>
-              <footer>
-                <p className="font-heading font-semibold text-foreground text-sm">{t.author}</p>
-                <p className="text-muted-foreground text-xs">{t.role}</p>
+              <p className="text-foreground leading-relaxed mb-6 relative z-10">"{t.quote}"</p>
+              <footer className="flex items-center gap-3">
+                <div className="w-10 h-10 rounded-full bg-accent/10 flex items-center justify-center">
+                  <span className="font-heading font-bold text-accent text-sm">{t.author[0]}</span>
+                </div>
+                <div>
+                  <p className="font-heading font-bold text-foreground text-sm">{t.author}</p>
+                  <p className="text-muted-foreground text-xs">{t.role}</p>
+                </div>
               </footer>
             </motion.blockquote>
           ))}
@@ -213,14 +255,24 @@ const Index = () => (
     </section>
 
     {/* CTA */}
-    <section className="hero-gradient text-primary-foreground py-20 md:py-28">
-      <div className="container text-center">
-        <motion.div {...fadeUp}>
-          <h2 className="font-heading font-bold text-3xl md:text-4xl mb-4">Ready to grow your business?</h2>
-          <p className="opacity-80 max-w-lg mx-auto mb-8">
-            Let's have a straightforward conversation about what you need and how we can help. No obligations, no jargon.
+    <section className="relative overflow-hidden">
+      <img src={heroBg} alt="" className="absolute inset-0 w-full h-full object-cover" loading="lazy" width={1920} height={1080} />
+      <div className="absolute inset-0 bg-primary/90" />
+      <div className="container text-center py-24 md:py-32 relative z-10">
+        <motion.div
+          initial={{ opacity: 0, y: 24 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+        >
+          <span className="inline-block text-accent font-heading font-bold text-xs uppercase tracking-[0.2em] mb-4">Ready?</span>
+          <h2 className="font-heading font-extrabold text-3xl md:text-[2.75rem] text-primary-foreground mb-5 leading-tight">
+            Let's build something great together
+          </h2>
+          <p className="text-primary-foreground/60 max-w-lg mx-auto mb-10 leading-relaxed">
+            A straightforward conversation about what you need and how we can help. No obligations, no jargon — just real talk.
           </p>
-          <Button variant="accent" size="lg" asChild>
+          <Button variant="hero-primary" size="xl" asChild>
             <Link to="/contact">Get a Free Audit</Link>
           </Button>
         </motion.div>
