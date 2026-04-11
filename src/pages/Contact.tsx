@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { MapPin, Phone, Mail, Clock, ArrowRight } from "lucide-react";
+import { MapPin, Phone, Mail, Clock, ArrowRight, Shield, Zap } from "lucide-react";
 import Layout from "@/components/Layout";
 import { toast } from "sonner";
 import heroBg from "@/assets/hero-bg.jpg";
@@ -16,28 +16,31 @@ const contactInfo = [
 ];
 
 const Contact = () => {
-  const [form, setForm] = useState({ name: "", email: "", phone: "", message: "" });
+  const [form, setForm] = useState({ name: "", email: "", phone: "", service: "", message: "" });
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     toast.success("Thanks for reaching out! We'll get back to you within 24 hours.");
-    setForm({ name: "", email: "", phone: "", message: "" });
+    setForm({ name: "", email: "", phone: "", service: "", message: "" });
   };
 
   return (
     <Layout>
-      <section className="relative min-h-[45vh] flex items-center overflow-hidden">
+      <section className="relative min-h-[50vh] flex items-center overflow-hidden">
         <img src={heroBg} alt="" className="absolute inset-0 w-full h-full object-cover" width={1920} height={1080} />
-        <div className="absolute inset-0 bg-primary/90" />
+        <div className="absolute inset-0 bg-gradient-to-br from-primary/95 via-primary/85 to-transparent" />
+        <div className="absolute bottom-1/3 right-[10%] w-80 h-80 bg-accent/10 rounded-full blur-[100px]" />
         <div className="container relative z-10 py-32 md:py-40 pt-40">
-          <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}>
-            <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-accent/15 text-accent text-xs font-bold uppercase tracking-[0.15em] mb-6 border border-accent/20">
+          <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }} className="max-w-2xl">
+            <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-accent/15 text-accent text-xs font-semibold uppercase tracking-[0.15em] mb-6 border border-accent/20">
+              <span className="w-1.5 h-1.5 rounded-full bg-accent" />
               Contact Us
             </span>
-            <h1 className="font-heading font-extrabold text-4xl md:text-[3.25rem] leading-[1.1] text-primary-foreground max-w-2xl">
-              Let's start a conversation
+            <h1 className="font-heading font-bold text-4xl md:text-[3.5rem] leading-[1.08] text-primary-foreground">
+              Let's start a{" "}
+              <span className="text-gradient">conversation</span>
             </h1>
-            <p className="mt-6 text-primary-foreground/60 max-w-xl text-lg leading-relaxed">
+            <p className="mt-6 text-primary-foreground/55 max-w-xl text-lg leading-relaxed">
               Whether you've got a detailed brief or just a rough idea, we're happy to chat. No pressure, no obligations.
             </p>
           </motion.div>
@@ -54,7 +57,9 @@ const Contact = () => {
               transition={{ duration: 0.5, delay: 0.1 }}
               className="lg:col-span-3"
             >
-              <span className="inline-block text-accent font-heading font-bold text-xs uppercase tracking-[0.2em] mb-3">Send a Message</span>
+              <span className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/5 text-primary text-xs font-semibold uppercase tracking-[0.15em] mb-4 border border-primary/10">
+                Send a Message
+              </span>
               <h2 className="font-heading font-bold text-2xl md:text-3xl text-foreground mb-8">Tell us about your project</h2>
               <form onSubmit={handleSubmit} className="space-y-5">
                 <div className="grid sm:grid-cols-2 gap-4">
@@ -66,7 +71,7 @@ const Contact = () => {
                       value={form.name}
                       onChange={(e) => setForm({ ...form, name: e.target.value })}
                       placeholder="Your name"
-                      className="h-12 rounded-xl"
+                      className="h-12 rounded-xl border-border/60 focus:border-accent"
                     />
                   </div>
                   <div>
@@ -78,20 +83,37 @@ const Contact = () => {
                       value={form.email}
                       onChange={(e) => setForm({ ...form, email: e.target.value })}
                       placeholder="you@example.com"
-                      className="h-12 rounded-xl"
+                      className="h-12 rounded-xl border-border/60 focus:border-accent"
                     />
                   </div>
                 </div>
-                <div>
-                  <label className="text-sm font-medium text-foreground mb-2 block">Phone</label>
-                  <Input
-                    type="tel"
-                    maxLength={20}
-                    value={form.phone}
-                    onChange={(e) => setForm({ ...form, phone: e.target.value })}
-                    placeholder="+61 4XX XXX XXX"
-                    className="h-12 rounded-xl"
-                  />
+                <div className="grid sm:grid-cols-2 gap-4">
+                  <div>
+                    <label className="text-sm font-medium text-foreground mb-2 block">Phone</label>
+                    <Input
+                      type="tel"
+                      maxLength={20}
+                      value={form.phone}
+                      onChange={(e) => setForm({ ...form, phone: e.target.value })}
+                      placeholder="+61 4XX XXX XXX"
+                      className="h-12 rounded-xl border-border/60 focus:border-accent"
+                    />
+                  </div>
+                  <div>
+                    <label className="text-sm font-medium text-foreground mb-2 block">Service Interested In</label>
+                    <select
+                      value={form.service}
+                      onChange={(e) => setForm({ ...form, service: e.target.value })}
+                      className="w-full h-12 rounded-xl border border-border/60 bg-background px-4 text-sm text-foreground focus:border-accent focus:outline-none focus:ring-2 focus:ring-ring/20"
+                    >
+                      <option value="">Select a service</option>
+                      <option value="seo">SEO Audits & Strategy</option>
+                      <option value="local-seo">Local SEO</option>
+                      <option value="mobile-app">Mobile App Development</option>
+                      <option value="web-dev">Website Design & Development</option>
+                      <option value="other">Not sure yet</option>
+                    </select>
+                  </div>
                 </div>
                 <div>
                   <label className="text-sm font-medium text-foreground mb-2 block">Tell us about your project *</label>
@@ -101,11 +123,11 @@ const Contact = () => {
                     rows={6}
                     value={form.message}
                     onChange={(e) => setForm({ ...form, message: e.target.value })}
-                    placeholder="What are you looking to achieve?"
-                    className="rounded-xl"
+                    placeholder="What are you looking to achieve? Any budget or timeline in mind?"
+                    className="rounded-xl border-border/60 focus:border-accent"
                   />
                 </div>
-                <Button variant="accent" size="lg" type="submit">
+                <Button variant="accent" size="lg" type="submit" className="rounded-full">
                   Send Message <ArrowRight className="w-4 h-4 ml-1" />
                 </Button>
               </form>
@@ -117,28 +139,44 @@ const Contact = () => {
               transition={{ duration: 0.5, delay: 0.25 }}
               className="lg:col-span-2"
             >
-              <span className="inline-block text-accent font-heading font-bold text-xs uppercase tracking-[0.2em] mb-3">Get in Touch</span>
+              <span className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/5 text-primary text-xs font-semibold uppercase tracking-[0.15em] mb-4 border border-primary/10">
+                Get in Touch
+              </span>
               <h2 className="font-heading font-bold text-2xl md:text-3xl text-foreground mb-8">Contact details</h2>
-              <div className="space-y-6">
+              <div className="space-y-5">
                 {contactInfo.map((item) => (
                   <div key={item.label} className="flex items-start gap-4">
-                    <div className="w-12 h-12 rounded-xl bg-accent/10 flex items-center justify-center shrink-0">
-                      <item.icon className="w-5 h-5 text-accent" />
+                    <div className="w-12 h-12 rounded-xl bg-primary/5 border border-primary/10 flex items-center justify-center shrink-0">
+                      <item.icon className="w-5 h-5 text-primary" />
                     </div>
                     <div>
-                      <p className="font-heading font-bold text-sm text-foreground">{item.label}</p>
+                      <p className="font-heading font-semibold text-sm text-foreground">{item.label}</p>
                       <p className="text-sm text-muted-foreground mt-0.5">{item.value}</p>
                     </div>
                   </div>
                 ))}
               </div>
 
-              {/* Trust badge */}
-              <div className="mt-10 p-6 rounded-2xl border bg-muted/50">
-                <p className="font-heading font-bold text-sm text-foreground mb-2">💬 Free consultation</p>
-                <p className="text-xs text-muted-foreground leading-relaxed">
-                  Every conversation starts with a free, no-obligation discussion. We'll give you honest advice on what will actually help your business.
-                </p>
+              {/* Trust badges */}
+              <div className="mt-10 space-y-3">
+                <div className="surface-teal rounded-2xl p-5 border border-primary-foreground/10">
+                  <div className="flex items-center gap-3 mb-2">
+                    <Shield className="w-5 h-5 text-accent" />
+                    <p className="font-heading font-semibold text-primary-foreground text-sm">Free Consultation</p>
+                  </div>
+                  <p className="text-xs text-primary-foreground/50 leading-relaxed">
+                    Every conversation starts with a free, no-obligation discussion. We'll give you honest advice on what will actually help.
+                  </p>
+                </div>
+                <div className="card-premium rounded-2xl p-5">
+                  <div className="flex items-center gap-3 mb-2">
+                    <Zap className="w-5 h-5 text-accent" />
+                    <p className="font-heading font-semibold text-foreground text-sm">Quick Response</p>
+                  </div>
+                  <p className="text-xs text-muted-foreground leading-relaxed">
+                    We typically respond within a few hours during business hours. Expect a reply the same business day.
+                  </p>
+                </div>
               </div>
             </motion.div>
           </div>

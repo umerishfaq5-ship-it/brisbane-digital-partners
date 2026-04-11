@@ -34,14 +34,18 @@ const Header = () => {
 
   return (
     <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${scrolled ? "glass shadow-sm border-b" : "bg-transparent"}`}>
-      <div className="container flex items-center justify-between h-20">
-        <Link to="/" className="font-heading font-extrabold text-xl tracking-tight">
-          <span className={scrolled ? "text-foreground" : "text-primary-foreground"}>Next Tab</span>
-          <span className="text-accent">.</span>
+      <div className="container flex items-center justify-between h-[72px]">
+        <Link to="/" className="flex items-center gap-2">
+          <div className="w-8 h-8 rounded-lg bg-accent flex items-center justify-center">
+            <span className="font-heading font-bold text-accent-foreground text-sm">N</span>
+          </div>
+          <span className={`font-heading font-bold text-lg tracking-tight ${scrolled ? "text-foreground" : "text-primary-foreground"}`}>
+            Next Tab
+          </span>
         </Link>
 
         {/* Desktop Nav */}
-        <nav className="hidden lg:flex items-center gap-0.5">
+        <nav className="hidden lg:flex items-center gap-1">
           {navLinks.map((link) =>
             link.children ? (
               <div
@@ -51,10 +55,10 @@ const Header = () => {
                 onMouseLeave={() => setServicesOpen(false)}
               >
                 <button
-                  className={`link-underline flex items-center gap-1 px-4 py-2 text-[13px] font-medium rounded-lg transition-all duration-300 ${
+                  className={`link-underline flex items-center gap-1 px-3.5 py-2 text-[13px] font-medium rounded-lg transition-all duration-300 ${
                     scrolled
-                      ? location.pathname.startsWith("/services") ? "text-accent" : "text-foreground/80 hover:text-foreground"
-                      : location.pathname.startsWith("/services") ? "text-accent" : "text-primary-foreground/80 hover:text-primary-foreground"
+                      ? location.pathname.startsWith("/services") ? "text-accent" : "text-foreground/70 hover:text-foreground"
+                      : location.pathname.startsWith("/services") ? "text-accent" : "text-primary-foreground/70 hover:text-primary-foreground"
                   }`}
                 >
                   {link.label}
@@ -63,9 +67,9 @@ const Header = () => {
                 <AnimatePresence>
                   {servicesOpen && (
                     <motion.div
-                      initial={{ opacity: 0, y: 10, scale: 0.98 }}
+                      initial={{ opacity: 0, y: 8, scale: 0.98 }}
                       animate={{ opacity: 1, y: 0, scale: 1 }}
-                      exit={{ opacity: 0, y: 10, scale: 0.98 }}
+                      exit={{ opacity: 0, y: 8, scale: 0.98 }}
                       transition={{ duration: 0.2, ease: [0.16, 1, 0.3, 1] }}
                       className="absolute top-full left-0 w-80 bg-card rounded-xl shadow-premium border p-2 mt-2"
                     >
@@ -86,18 +90,18 @@ const Header = () => {
               <Link
                 key={link.label}
                 to={link.href}
-                className={`link-underline px-4 py-2 text-[13px] font-medium rounded-lg transition-all duration-300 ${
+                className={`link-underline px-3.5 py-2 text-[13px] font-medium rounded-lg transition-all duration-300 ${
                   scrolled
-                    ? location.pathname === link.href ? "text-accent" : "text-foreground/80 hover:text-foreground"
-                    : location.pathname === link.href ? "text-accent" : "text-primary-foreground/80 hover:text-primary-foreground"
+                    ? location.pathname === link.href ? "text-accent" : "text-foreground/70 hover:text-foreground"
+                    : location.pathname === link.href ? "text-accent" : "text-primary-foreground/70 hover:text-primary-foreground"
                 }`}
               >
                 {link.label}
               </Link>
             )
           )}
-          <Button variant="accent" size="sm" className="ml-4" asChild>
-            <Link to="/contact">Get a Free Audit</Link>
+          <Button variant="accent" size="sm" className="ml-3 rounded-full" asChild>
+            <Link to="/contact">Free Consultation</Link>
           </Button>
         </nav>
 
@@ -147,8 +151,8 @@ const Header = () => {
                   </Link>
                 )
               )}
-              <Button variant="accent" className="mt-3" asChild>
-                <Link to="/contact" onClick={() => setMobileOpen(false)}>Get a Free Audit</Link>
+              <Button variant="accent" className="mt-3 rounded-full" asChild>
+                <Link to="/contact" onClick={() => setMobileOpen(false)}>Free Consultation</Link>
               </Button>
             </nav>
           </motion.div>
