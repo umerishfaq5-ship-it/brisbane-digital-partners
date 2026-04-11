@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Inter:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -6,49 +6,57 @@
 
 @layer base {
   :root {
-    --background: 220 20% 97%;
-    --foreground: 220 40% 8%;
+    --background: 40 20% 97%;
+    --foreground: 180 30% 8%;
 
     --card: 0 0% 100%;
-    --card-foreground: 220 40% 8%;
+    --card-foreground: 180 30% 8%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 220 40% 8%;
+    --popover-foreground: 180 30% 8%;
 
-    --primary: 220 50% 10%;
-    --primary-foreground: 45 100% 96%;
+    --primary: 175 60% 12%;
+    --primary-foreground: 40 50% 96%;
 
-    --secondary: 220 20% 94%;
-    --secondary-foreground: 220 40% 8%;
+    --secondary: 40 15% 93%;
+    --secondary-foreground: 180 30% 8%;
 
-    --muted: 220 15% 94%;
-    --muted-foreground: 220 10% 45%;
+    --muted: 40 10% 93%;
+    --muted-foreground: 180 8% 45%;
 
-    --accent: 30 100% 50%;
-    --accent-foreground: 0 0% 100%;
+    --accent: 42 90% 52%;
+    --accent-foreground: 180 50% 6%;
 
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 220 15% 91%;
-    --input: 220 15% 91%;
-    --ring: 30 100% 50%;
+    --border: 40 12% 89%;
+    --input: 40 12% 89%;
+    --ring: 42 90% 52%;
 
     --radius: 0.75rem;
 
-    /* Premium tokens */
-    --accent-warm: 30 100% 50%;
-    --accent-gold: 40 90% 55%;
-    --surface-elevated: 0 0% 100%;
-    --surface-warm: 38 40% 97%;
-    --text-subtle: 220 10% 55%;
-    --shadow-sm: 0 1px 3px 0 hsl(220 40% 8% / 0.04), 0 1px 2px -1px hsl(220 40% 8% / 0.03);
-    --shadow-md: 0 4px 16px -2px hsl(220 40% 8% / 0.06), 0 2px 6px -2px hsl(220 40% 8% / 0.04);
-    --shadow-lg: 0 12px 40px -8px hsl(220 40% 8% / 0.1), 0 4px 16px -4px hsl(220 40% 8% / 0.06);
-    --shadow-glow: 0 0 30px hsl(30 100% 50% / 0.15);
+    /* Australian premium tokens */
+    --teal: 175 60% 12%;
+    --teal-light: 175 45% 22%;
+    --gold: 42 90% 52%;
+    --gold-light: 44 85% 65%;
+    --sand: 38 30% 95%;
+    --ocean: 195 55% 30%;
+    --eucalyptus: 160 35% 35%;
+    --terracotta: 15 55% 55%;
 
-    --font-heading: 'Plus Jakarta Sans', system-ui, sans-serif;
-    --font-body: 'Inter', system-ui, sans-serif;
+    --surface-elevated: 0 0% 100%;
+    --surface-warm: 38 30% 96%;
+    --text-subtle: 180 8% 50%;
+    --shadow-sm: 0 1px 3px 0 hsl(180 30% 8% / 0.04), 0 1px 2px -1px hsl(180 30% 8% / 0.03);
+    --shadow-md: 0 4px 16px -2px hsl(180 30% 8% / 0.06), 0 2px 6px -2px hsl(180 30% 8% / 0.04);
+    --shadow-lg: 0 12px 40px -8px hsl(180 30% 8% / 0.1), 0 4px 16px -4px hsl(180 30% 8% / 0.06);
+    --shadow-glow: 0 0 40px hsl(42 90% 52% / 0.15);
+    --shadow-teal: 0 0 40px hsl(175 60% 12% / 0.15);
+
+    --font-heading: 'Sora', system-ui, sans-serif;
+    --font-body: 'DM Sans', system-ui, sans-serif;
 
     --sidebar-background: 0 0% 98%;
     --sidebar-foreground: 240 5.3% 26.1%;
@@ -77,17 +85,24 @@
 
   h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-heading);
-    letter-spacing: -0.025em;
+    letter-spacing: -0.03em;
   }
 }
 
 @layer utilities {
   .hero-gradient {
-    background: linear-gradient(160deg, hsl(220, 50%, 8%) 0%, hsl(220, 45%, 16%) 50%, hsl(220, 35%, 20%) 100%);
+    background: linear-gradient(160deg, hsl(175, 60%, 8%) 0%, hsl(175, 55%, 14%) 40%, hsl(195, 50%, 18%) 100%);
   }
 
   .text-gradient {
-    background: linear-gradient(135deg, hsl(30, 100%, 55%) 0%, hsl(40, 95%, 60%) 50%, hsl(30, 100%, 50%) 100%);
+    background: linear-gradient(135deg, hsl(42, 90%, 55%) 0%, hsl(44, 85%, 65%) 50%, hsl(42, 90%, 52%) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .text-gradient-teal {
+    background: linear-gradient(135deg, hsl(175, 50%, 30%) 0%, hsl(195, 45%, 40%) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -97,14 +112,18 @@
     background-color: hsl(var(--surface-warm));
   }
 
+  .surface-teal {
+    background: linear-gradient(160deg, hsl(175, 60%, 8%) 0%, hsl(180, 50%, 12%) 100%);
+  }
+
   .glass {
-    background: hsl(0 0% 100% / 0.7);
+    background: hsl(0 0% 100% / 0.75);
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
   }
 
   .glass-dark {
-    background: hsl(220 50% 10% / 0.6);
+    background: hsl(175 60% 10% / 0.6);
     backdrop-filter: blur(24px);
     -webkit-backdrop-filter: blur(24px);
   }
@@ -117,17 +136,32 @@
     box-shadow: var(--shadow-glow);
   }
 
+  .shadow-teal {
+    box-shadow: var(--shadow-teal);
+  }
+
   .card-premium {
     background: hsl(var(--card));
     border: 1px solid hsl(var(--border));
     box-shadow: var(--shadow-sm);
-    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
   }
 
   .card-premium:hover {
     box-shadow: var(--shadow-lg);
-    border-color: hsl(30 100% 50% / 0.2);
-    transform: translateY(-4px);
+    border-color: hsl(42 90% 52% / 0.25);
+    transform: translateY(-6px);
+  }
+
+  .card-teal {
+    background: hsl(175 60% 12%);
+    border: 1px solid hsl(175 45% 20%);
+    color: hsl(40 50% 96%);
+  }
+
+  .card-teal:hover {
+    border-color: hsl(42 90% 52% / 0.4);
+    box-shadow: 0 12px 40px -8px hsl(175 60% 12% / 0.4);
   }
 
   .divider-gradient {
@@ -135,8 +169,23 @@
     background: linear-gradient(90deg, transparent, hsl(var(--border)), transparent);
   }
 
-  .border-gradient {
-    border-image: linear-gradient(135deg, hsl(30 100% 50% / 0.3), hsl(40 90% 55% / 0.1)) 1;
+  .border-gold {
+    border-image: linear-gradient(135deg, hsl(42 90% 52% / 0.4), hsl(44 85% 65% / 0.1)) 1;
+  }
+
+  .pattern-dots {
+    background-image: radial-gradient(hsl(175 60% 12% / 0.07) 1px, transparent 1px);
+    background-size: 24px 24px;
+  }
+
+  .pattern-lines {
+    background-image: repeating-linear-gradient(
+      -45deg,
+      transparent,
+      transparent 8px,
+      hsl(42 90% 52% / 0.03) 8px,
+      hsl(42 90% 52% / 0.03) 9px
+    );
   }
 }
 
@@ -152,5 +201,10 @@
   }
   .link-underline:hover::after {
     @apply origin-bottom-left scale-x-100;
+  }
+
+  .number-outline {
+    -webkit-text-stroke: 1.5px hsl(42 90% 52% / 0.3);
+    color: transparent;
   }
 }
