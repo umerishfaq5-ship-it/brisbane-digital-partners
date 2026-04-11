@@ -17,11 +17,16 @@ const SectionHeading = ({ eyebrow, title, description, center = true, light = fa
     className={`mb-14 md:mb-20 ${center ? "text-center" : ""}`}
   >
     {eyebrow && (
-      <span className={`inline-block font-heading font-bold text-xs uppercase tracking-[0.2em] mb-3 ${light ? "text-accent" : "text-accent"}`}>
+      <span className={`inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-[0.15em] mb-4 ${
+        light 
+          ? "bg-accent/15 text-accent border border-accent/20" 
+          : "bg-primary/5 text-primary border border-primary/10"
+      }`}>
+        <span className={`w-1.5 h-1.5 rounded-full ${light ? "bg-accent" : "bg-accent"}`} />
         {eyebrow}
       </span>
     )}
-    <h2 className={`font-heading font-bold text-3xl md:text-[2.75rem] leading-[1.15] ${light ? "text-primary-foreground" : "text-foreground"}`}>
+    <h2 className={`font-heading font-bold text-3xl md:text-[2.75rem] leading-[1.12] ${light ? "text-primary-foreground" : "text-foreground"}`}>
       {title}
     </h2>
     {description && (
