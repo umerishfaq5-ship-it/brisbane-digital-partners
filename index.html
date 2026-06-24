@@ -1,55 +1,102 @@
 <!doctype html>
-<html lang="en">
+<html lang="en-AU">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Next Tab Agency — SEO & Web Development Brisbane</title>
-    <meta name="description" content="Brisbane-based digital agency delivering practical SEO strategies and expert web & mobile app development for Australian businesses. Get real results, not jargon." />
+    <link rel="icon" type="image/svg+xml" href="/logo.svg" />
+    <!-- Preload the hero image to improve LCP (Largest Contentful Paint) -->
+    <link rel="preload" as="image" href="/assets/hero-bg.jpg" fetchpriority="high" />
+    <link rel="preconnect" href="https://www.googletagmanager.com" />
+    <link rel="preconnect" href="https://is1-ssl.mzstatic.com" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://play-lh.googleusercontent.com" crossorigin="anonymous" />
+    <link rel="dns-prefetch" href="https://is1-ssl.mzstatic.com" />
+    <link rel="dns-prefetch" href="https://play-lh.googleusercontent.com" />
+    <meta name="theme-color" content="#0B302D" />
+    <!-- Title leads with strongest geo-modified keyword; per-page titles injected by SEO.tsx Helmet -->
+    <title>Brisbane SEO Agency &amp; Web Development | Next Tab Agency</title>
+    <meta name="description" content="Brisbane-based digital agency delivering practical SEO strategies and expert web &amp; mobile app development for Australian businesses. Get real results, not jargon." />
     <meta name="author" content="Next Tab Agency" />
-    <link rel="canonical" href="https://nexttab.com.au" />
+    <meta name="geo.region" content="AU-QLD" />
+    <meta name="geo.placename" content="Eagleby, Brisbane" />
+    <meta name="geo.position" content="-27.7105;153.2080" />
+    <meta name="ICBM" content="-27.7105, 153.2080" />
+    <!-- canonical and hreflang are injected per-page by SEO.tsx via react-helmet-async -->
 
-    <meta property="og:title" content="Next Tab Agency — SEO & Web Development Brisbane" />
-    <meta property="og:description" content="Practical SEO and expert web & mobile development for Australian businesses. Brisbane-based, results-driven." />
+    <meta property="og:title" content="Brisbane SEO Agency &amp; Web Development | Next Tab Agency" />
+    <meta property="og:description" content="Practical SEO and expert web &amp; mobile development for Australian businesses. Brisbane-based, results-driven." />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://nexttab.com.au" />
+    <meta property="og:locale" content="en_AU" />
+    <meta property="og:url" content="https://nexttabagency.com" />
+    <meta property="og:image" content="https://nexttabagency.com/og-image.webp" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
 
     <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@nexttabagency" />
 
     <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "LocalBusiness",
-      "name": "Next Tab Agency",
-      "description": "Brisbane-based digital agency providing SEO, web development, and mobile app development for Australian businesses.",
-      "url": "https://nexttab.com.au",
-      "telephone": "+61-4XX-XXX-XXX",
-      "email": "hello@nexttab.com.au",
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Brisbane",
-        "addressRegion": "QLD",
-        "addressCountry": "AU"
+    [
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Next Tab Agency",
+        "url": "https://nexttabagency.com"
       },
-      "areaServed": {
-        "@type": "Country",
-        "name": "Australia"
-      },
-      "hasOfferCatalog": {
-        "@type": "OfferCatalog",
-        "name": "Digital Services",
-        "itemListElement": [
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "SEO Audits & Strategy" } },
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Local SEO for Australian Businesses" } },
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Mobile App Development" } },
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Custom Website Design & Development" } }
-        ]
+      {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Next Tab Agency",
+        "description": "Brisbane-based digital agency providing SEO, WordPress development, Local SEO, and mobile app development for Australian businesses. Located in Eagleby, QLD.",
+        "url": "https://nexttabagency.com",
+        "telephone": "+61491000094",
+        "email": "info@nexttabagency.com",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Taylor Street",
+          "addressLocality": "Eagleby",
+          "addressRegion": "QLD",
+          "postalCode": "4207",
+          "addressCountry": "AU"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": -27.7105,
+          "longitude": 153.2080
+        },
+        "areaServed": [
+          { "@type": "City", "name": "Brisbane" },
+          { "@type": "State", "name": "Queensland" },
+          { "@type": "Country", "name": "Australia" }
+        ],
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Digital Services",
+          "itemListElement": [
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "SEO Audits & Strategy" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Local SEO for Australian Businesses" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "WordPress Development" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Mobile App Development" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Custom Website Design & Development" } }
+          ]
+        }
       }
-    }
+    ]
+    </script>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2K905TTNLV"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-2K905TTNLV');
     </script>
   </head>
 
   <body>
     <div id="root"></div>
+
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>

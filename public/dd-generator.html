@@ -1,0 +1,874 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DD Earnings Screenshot Generator</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <!--
+    iPhone 15 Pro Max — DoorDash Dasher Earnings Screen
+    ────────────────────────────────────────────────────
+    Status bar → SF Pro (Apple system font)
+    App content → TT Norms Pro ≈ Plus Jakarta Sans (closest free geometric match)
+  -->
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg: #0d0e14;
+      --surface: #16192a;
+      --surface2: #1e2138;
+      --border: #2a2f4a;
+      --accent: #ff3008;
+      --text: #eef0ff;
+      --muted: #7a80a0;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 32px 16px 60px;
+      gap: 36px;
+    }
+
+    /* ─── PAGE HEADER ─────────────────────────── */
+    .page-header { text-align: center; }
+    .page-header .logo { display: inline-flex; align-items: center; gap: 10px; margin-bottom: 8px; }
+    .logo-icon { width: 40px; height: 40px; background: var(--accent); border-radius: 12px; display: flex; align-items: center; justify-content: center; }
+    .logo-icon svg { width: 22px; height: 22px; fill: #fff; }
+    .page-header h1 { font-size: 22px; font-weight: 700; letter-spacing: -0.3px; }
+    .page-header p { color: var(--muted); font-size: 13px; margin-top: 4px; }
+
+    /* ─── MAIN LAYOUT ─────────────────────────── */
+    .main { display: flex; gap: 40px; align-items: flex-start; width: 100%; max-width: 1120px; flex-wrap: wrap; justify-content: center; }
+
+    /* ─── CONTROL PANEL ───────────────────────── */
+    .panel { background: var(--surface); border: 1px solid var(--border); border-radius: 22px; padding: 28px; width: 380px; flex-shrink: 0; }
+    .panel h2 { font-size: 11px; font-weight: 700; color: var(--muted); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 18px; }
+    .form-group { margin-bottom: 14px; }
+    .form-group label { display: block; font-size: 11px; font-weight: 600; color: var(--muted); margin-bottom: 5px; text-transform: uppercase; letter-spacing: 0.6px; }
+    .form-group input, .form-group textarea { width: 100%; background: var(--surface2); border: 1px solid var(--border); border-radius: 10px; color: var(--text); font-family: 'Inter', sans-serif; font-size: 13px; padding: 10px 13px; outline: none; transition: border-color .15s; resize: vertical; }
+    .form-group input:focus, .form-group textarea:focus { border-color: var(--accent); }
+    .form-row { display: flex; gap: 10px; }
+    .form-row .form-group { flex: 1; }
+    .json-area { font-family: 'Courier New', monospace; font-size: 11px; min-height: 200px; line-height: 1.6; }
+    .btn-primary { width: 100%; padding: 12px; background: var(--accent); color: #fff; border: none; border-radius: 12px; font-family: 'Inter', sans-serif; font-size: 14px; font-weight: 600; cursor: pointer; transition: opacity .15s, transform .1s; margin-top: 6px; }
+    .btn-primary:hover { opacity: .88; }
+    .btn-primary:active { transform: scale(.98); }
+    .btn-secondary { width: 100%; padding: 10px; background: transparent; color: var(--text); border: 1px solid var(--border); border-radius: 11px; font-family: 'Inter', sans-serif; font-size: 13px; font-weight: 500; cursor: pointer; transition: background .15s; margin-top: 8px; }
+    .btn-secondary:hover { background: var(--surface2); }
+    .divider { border: none; border-top: 1px solid var(--border); margin: 22px 0; }
+
+    /* ─── PHONE WRAPPER ───────────────────────── */
+    .preview-wrapper { display: flex; flex-direction: column; align-items: center; gap: 18px; }
+    .preview-wrapper > span { font-size: 11px; font-weight: 700; color: var(--muted); text-transform: uppercase; letter-spacing: 1px; }
+
+    /* ─── PHONE SHELL — flat screenshot, no device frame ─── */
+    .phone-shell {
+      width: 393px;
+      background: #fff;
+      border-radius: 0;
+      border: none;
+      box-shadow: 0 8px 40px rgba(0,0,0,.25);
+      overflow: hidden;
+    }
+
+    /* ═══════════════════════════════════════════════
+       PHONE SCREEN
+       ─────────────────────────────────────────────
+       Base font: Plus Jakarta Sans (≈ TT Norms Pro)
+       All colors explicitly set to prevent bleed
+    ═══════════════════════════════════════════════ */
+    #phone-screen {
+      width: 100%;
+      background: #fff;
+      font-family: 'Plus Jakarta Sans', -apple-system, 'Helvetica Neue', sans-serif;
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+      color: #1a1a1a;
+      padding-bottom: 16px;
+    }
+    #phone-screen * { box-sizing: border-box; color: inherit; }
+
+    /* ── iOS STATUS BAR ────────────────────────── */
+    .status-bar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 16px 20px 0;
+      height: 54px;
+      font-family: -apple-system, 'SF Pro Display', 'Helvetica Neue', sans-serif;
+    }
+    .sb-left {
+      display: flex;
+      align-items: center;
+      gap: 3px;
+    }
+    .sb-time {
+      font-size: 17px;
+      font-weight: 700;
+      color: #000;
+      letter-spacing: 0px;
+    }
+    /* iOS location services arrow — small filled triangle */
+    .sb-loc-arrow {
+      display: flex;
+      align-items: center;
+      margin-left: 1px;
+      margin-top: -1px;
+    }
+    .sb-loc-arrow svg {
+      width: 12px;
+      height: 12px;
+      fill: #000;
+    }
+
+    .sb-right {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    /* iOS Cellular Bars */
+    .sb-cellular { display: flex; align-items: flex-end; gap: 1.5px; }
+    .sb-cellular .bar {
+      width: 3px;
+      background: #000;
+      border-radius: 0.8px;
+    }
+    .sb-cellular .bar.b1 { height: 4px; }
+    .sb-cellular .bar.b2 { height: 6px; }
+    .sb-cellular .bar.b3 { height: 8.5px; }
+    .sb-cellular .bar.b4 { height: 11px; opacity: 0.25; }
+
+    /* iOS WiFi Icon */
+    .sb-wifi svg {
+      width: 16px;
+      height: 12px;
+    }
+
+    /* ── iOS Battery — iPhone 15 Pro Max realistic ──── */
+    .sb-battery-wrap {
+      display: flex;
+      align-items: center;
+      gap: 0;
+    }
+    .battery-icon {
+      position: relative;
+      width: 27px;
+      height: 12px;
+      border: 1.2px solid rgba(0,0,0,0.4);
+      border-radius: 3px;
+      overflow: hidden;
+    }
+    .battery-icon .fill {
+      position: absolute;
+      top: 1.5px;
+      left: 1.5px;
+      bottom: 1.5px;
+      border-radius: 1px;
+      z-index: 1;
+      transition: width .3s, background .3s;
+    }
+    .battery-icon .pct {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 8px;
+      font-weight: 800;
+      z-index: 2;
+      letter-spacing: -0.2px;
+      font-family: -apple-system, 'SF Pro Text', sans-serif;
+      line-height: 1;
+    }
+    .battery-nub {
+      width: 1.5px;
+      height: 4px;
+      background: rgba(0,0,0,0.4);
+      border-radius: 0 1px 1px 0;
+      margin-left: 1px;
+      flex-shrink: 0;
+    }
+
+    /* ── DYNAMIC ISLAND — centered between status bar ── */
+    .dynamic-island {
+      width: 126px;
+      height: 36px;
+      background: #000;
+      border-radius: 20px;
+      /* Center horizontally */
+      margin: -6px auto 0;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      padding-left: 12px;
+    }
+    /* Blue nav arrow inside Dynamic Island */
+    .di-arrow {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .di-arrow svg {
+      width: 13px;
+      height: 13px;
+    }
+
+    /* ── NAVIGATION BAR ───────────────────────── */
+    .nav-bar {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 12px 20px 6px;
+      position: relative;
+    }
+    .nav-back {
+      position: absolute;
+      left: 16px;
+      top: 50%;
+      transform: translateY(-50%);
+      display: flex;
+      align-items: center;
+      padding-top: 6px;
+    }
+    /* Simple thin left arrow ← */
+    .nav-back svg {
+      width: 12px;
+      height: 22px;
+      stroke: #000;
+      stroke-width: 2.5;
+      fill: none;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+    .nav-title {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      font-family: 'Plus Jakarta Sans', -apple-system, sans-serif;
+      font-size: 17px;
+      font-weight: 700;
+      color: #000;
+      letter-spacing: -0.2px;
+    }
+    /* Small dropdown chevron ∨ */
+    .nav-chevron {
+      display: flex;
+      align-items: center;
+      margin-top: 2px;
+    }
+    .nav-chevron svg {
+      width: 11px;
+      height: 11px;
+      stroke: #000;
+      stroke-width: 2.5;
+      fill: none;
+    }
+
+    /* ── HERO SECTION ─────────────────────────── */
+    .hero-section {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 16px 20px 18px;
+    }
+    .hero-left {
+      display: flex;
+      align-items: baseline;
+      gap: 4px;
+    }
+    /* $625.40 — massive bold number */
+    .hero-amount {
+      font-family: 'Plus Jakarta Sans', -apple-system, sans-serif;
+      font-size: 44px;
+      font-weight: 800;
+      color: #000;
+      letter-spacing: -1.5px;
+      line-height: 1;
+    }
+    /* Small up-caret ^ next to amount — NO circle */
+    .hero-caret {
+      font-size: 18px;
+      font-weight: 400;
+      color: #000;
+      margin-left: 2px;
+      align-self: flex-start;
+      margin-top: 8px;
+      line-height: 1;
+    }
+
+    /* "Earn per offer" pill */
+    .earn-pill {
+      display: flex;
+      align-items: center;
+      gap: 7px;
+      background: #f2f2f7;
+      border: 1px solid #e5e5ea;
+      border-radius: 10px;
+      padding: 8px 14px;
+      font-family: 'Plus Jakarta Sans', -apple-system, sans-serif;
+      font-size: 13px;
+      font-weight: 600;
+      color: #1c1c1e;
+      white-space: nowrap;
+      flex-shrink: 0;
+    }
+    .earn-pill svg {
+      width: 16px;
+      height: 16px;
+      stroke: #1c1c1e;
+      fill: none;
+      stroke-width: 1.8;
+      flex-shrink: 0;
+    }
+
+    /* ── STATS SECTION ────────────────────────── */
+    .stats-section {
+      padding: 0 20px;
+    }
+    /* DoorDash pay row — sits alone above a divider */
+    .stat-row-dd {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 12px 0 18px;
+    }
+    /* Thin hairline divider between sections */
+    .stat-divider {
+      height: 1px;
+      background: #e5e5ea;
+    }
+    /* Metric rows */
+    .stat-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 14px 0;
+    }
+    .stat-row + .stat-row {
+      /* No borders between metric rows — they just stack */
+    }
+    /* Labels: gray, 16px, medium weight */
+    .stat-label {
+      font-family: 'Plus Jakarta Sans', -apple-system, sans-serif;
+      font-size: 15px;
+      font-weight: 400;
+      color: #8e8e93 !important;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+    /* Values: black, 16px, medium weight */
+    .stat-value {
+      font-family: 'Plus Jakarta Sans', -apple-system, sans-serif;
+      font-size: 15px;
+      font-weight: 400;
+      color: #000 !important;
+    }
+    /* ⓘ info icon — thin outline circle */
+    .info-icon {
+      width: 17px;
+      height: 17px;
+      border: 1.5px solid #c7c7cc;
+      border-radius: 50%;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 10px;
+      color: #c7c7cc !important;
+      font-weight: 600;
+      font-family: -apple-system, serif;
+      font-style: italic;
+      line-height: 1;
+    }
+
+    /* ── SECTION BREAK ────────────────────────── */
+    .section-break {
+      height: 8px;
+      background: #f2f2f7;
+      margin-top: 8px;
+    }
+
+    /* ── DASHES SECTION ───────────────────────── */
+    .dashes-section {
+      padding: 20px 20px 0;
+    }
+    .dashes-title {
+      font-family: 'Plus Jakarta Sans', -apple-system, sans-serif;
+      font-size: 22px;
+      font-weight: 800;
+      color: #000 !important;
+      letter-spacing: -0.3px;
+      margin-bottom: 4px;
+    }
+    .dash-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 18px 0;
+      border-bottom: 1px solid #f2f2f7;
+    }
+    .dash-row:last-child { border-bottom: none; }
+    /* Day label: e.g. "Sunday, May 25" */
+    .dash-day {
+      font-family: 'Plus Jakarta Sans', -apple-system, sans-serif;
+      font-size: 16px;
+      font-weight: 500;
+      color: #1c1c1e !important;
+    }
+    .dash-right {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    /* Amount: bold */
+    .dash-amount {
+      font-family: 'Plus Jakarta Sans', -apple-system, sans-serif;
+      font-size: 16px;
+      font-weight: 600;
+      color: #1c1c1e !important;
+      letter-spacing: -0.2px;
+    }
+    /* Chevron > */
+    .dash-chevron {
+      color: #c7c7cc !important;
+      display: flex;
+      align-items: center;
+    }
+    .dash-chevron svg {
+      width: 8px;
+      height: 14px;
+      stroke: #c7c7cc;
+      stroke-width: 2.5;
+      fill: none;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+
+    /* ── HOME INDICATOR ───────────────────────── */
+    .home-indicator {
+      display: flex;
+      justify-content: center;
+      padding: 20px 0 8px;
+    }
+    .home-bar {
+      width: 134px;
+      height: 5px;
+      background: #1a1a1a;
+      border-radius: 3px;
+    }
+
+    /* ── PHONE SCROLL ─────────────────────────── */
+    .phone-scroll {
+      max-height: 844px;
+      overflow-y: auto;
+      overflow-x: hidden;
+    }
+    .phone-scroll::-webkit-scrollbar { display: none; }
+
+    /* ─── DOWNLOAD BTN ────────────────────────── */
+    .download-btn {
+      display: flex; align-items: center; gap: 8px;
+      padding: 13px 32px;
+      background: linear-gradient(135deg, #34c759, #28a745);
+      color: #fff; border: none; border-radius: 14px;
+      font-family: 'Inter', sans-serif; font-size: 14px; font-weight: 600;
+      cursor: pointer; transition: opacity .15s, transform .1s;
+      box-shadow: 0 4px 18px rgba(52,199,89,.35);
+    }
+    .download-btn:hover { opacity: .88; }
+    .download-btn:active { transform: scale(.97); }
+    .download-btn svg { width: 18px; height: 18px; }
+
+    /* ─── TOAST ────────────────────────────────── */
+    .toast {
+      position: fixed; bottom: 30px; left: 50%;
+      transform: translateX(-50%) translateY(80px);
+      background: #1e2135; border: 1px solid var(--border);
+      color: var(--text); padding: 11px 24px; border-radius: 40px;
+      font-size: 13px; font-weight: 500;
+      transition: transform .3s ease; z-index: 9999;
+    }
+    .toast.show { transform: translateX(-50%) translateY(0); }
+  </style>
+</head>
+<body>
+
+<div class="page-header">
+  <div class="logo">
+    <div class="logo-icon">
+      <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14H9V8h2v8zm4 0h-2V8h2v8z"/></svg>
+    </div>
+    <h1>DD Earnings Generator</h1>
+  </div>
+  <p>Paste AI-generated JSON → pixel-perfect iPhone 15 Pro Max screenshot</p>
+</div>
+
+<div class="main">
+
+  <!-- ══ CONTROL PANEL ════════════════════════ -->
+  <div class="panel">
+    <h2>📋 JSON Input</h2>
+    <div class="form-group">
+      <textarea id="json-input" class="json-area" placeholder='Paste AI-generated JSON here…'></textarea>
+    </div>
+    <button class="btn-primary" onclick="renderFromJson()">⚡ Generate Screenshot</button>
+
+    <hr class="divider" />
+    <h2>🎛️ Manual Override</h2>
+    <div class="form-row">
+      <div class="form-group"><label>Time</label><input id="m-time" value="12:03" /></div>
+      <div class="form-group"><label>Battery %</label><input id="m-battery" value="25" /></div>
+    </div>
+    <div class="form-row">
+      <div class="form-group"><label>Date Range</label><input id="m-range" value="Jun 1 - Jun 7" /></div>
+      <div class="form-group"><label>Deliveries</label><input id="m-deliveries" value="33" /></div>
+    </div>
+    <div class="form-row">
+      <div class="form-group"><label>Total Earnings</label><input id="m-total" value="625.40" /></div>
+      <div class="form-group"><label>DoorDash Pay</label><input id="m-ddpay" value="625.40" /></div>
+    </div>
+    <div class="form-row">
+      <div class="form-group"><label>Active Time</label><input id="m-active" value="28 hr 15 min" /></div>
+      <div class="form-group"><label>Dash Time</label><input id="m-dash" value="41 hr 45 min" /></div>
+    </div>
+    <button class="btn-secondary" onclick="renderManual()">🔧 Apply Manual Values</button>
+
+    <hr class="divider" />
+    <h2>📅 Daily Breakdown</h2>
+    <div id="breakdown-rows"></div>
+    <button class="btn-secondary" onclick="syncBreakdown()" style="margin-top:4px;">↺ Sync from JSON</button>
+  </div>
+
+  <!-- ══ PHONE PREVIEW ════════════════════════ -->
+  <div class="preview-wrapper">
+    <span>📱 iPhone 15 Pro Max Preview</span>
+    <div class="phone-shell">
+      <div class="phone-scroll" id="phone-screen">
+
+        <!-- ═══ iOS STATUS BAR ═══════════════ -->
+        <div class="status-bar">
+          <div class="sb-left">
+            <span class="sb-time" id="s-time">12:03</span>
+            <span class="sb-loc-arrow">
+              <svg viewBox="0 0 24 24"><path d="M12 2L4.5 20.29l.71.71L12 18l6.79 3 .71-.71z"/></svg>
+            </span>
+          </div>
+          <div class="sb-right">
+            <div class="sb-cellular">
+              <div class="bar b1"></div>
+              <div class="bar b2"></div>
+              <div class="bar b3"></div>
+              <div class="bar b4"></div>
+            </div>
+            <span class="sb-wifi">
+              <svg viewBox="0 0 26 20" fill="#000">
+                <circle cx="13" cy="18" r="2"/>
+                <path d="M8 13 Q13 8 18 13" stroke="#000" stroke-width="2.2" fill="none" stroke-linecap="round"/>
+                <path d="M4 9 Q13 1 22 9" stroke="#000" stroke-width="2.2" fill="none" stroke-linecap="round"/>
+              </svg>
+            </span>
+            <div class="sb-battery-wrap">
+              <div class="battery-icon" id="battery-icon">
+                <div class="fill" id="s-battery-fill" style="width:25%; background:#34c759;"></div>
+                <span class="pct" id="s-battery-pct">25</span>
+              </div>
+              <div class="battery-nub"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ═══ DYNAMIC ISLAND ═══════════════ -->
+        <div class="dynamic-island">
+          <div class="di-arrow">
+            <svg viewBox="0 0 24 24" fill="#0A84FF">
+              <path d="M12 2L4.5 20.29l.71.71L12 18l6.79 3 .71-.71z"/>
+            </svg>
+          </div>
+        </div>
+
+        <!-- ═══ NAVIGATION BAR ═══════════════ -->
+        <div class="nav-bar">
+          <div class="nav-back">
+            <svg viewBox="0 0 12 22">
+              <path d="M10 2L2 11L10 20"/>
+            </svg>
+          </div>
+          <div class="nav-title">
+            <span id="s-date-range">Jun 1 – Jun 7</span>
+            <span class="nav-chevron">
+              <svg viewBox="0 0 12 12"><path d="M2 4l4 4 4-4"/></svg>
+            </span>
+          </div>
+        </div>
+
+        <!-- ═══ HERO EARNINGS ════════════════ -->
+        <div class="hero-section">
+          <div class="hero-left">
+            <span class="hero-amount">$<span id="s-total">625.40</span></span>
+            <span class="hero-caret">^</span>
+          </div>
+          <div class="earn-pill">
+            <svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/>
+              <line x1="3" y1="6" x2="21" y2="6"/>
+              <path d="M16 10a4 4 0 01-8 0"/>
+            </svg>
+            Earn per offer
+          </div>
+        </div>
+
+        <!-- ═══ STATS SECTION ════════════════ -->
+        <div class="stats-section">
+          <!-- DoorDash pay row -->
+          <div class="stat-row-dd">
+            <span class="stat-label">DoorDash pay <span class="info-icon">i</span></span>
+            <span class="stat-value" id="s-dd-pay">$625.40</span>
+          </div>
+          <!-- Hairline divider -->
+          <div class="stat-divider"></div>
+          <!-- Metric rows -->
+          <div class="stat-row">
+            <span class="stat-label">Active time</span>
+            <span class="stat-value" id="s-active">28 hr 15 min</span>
+          </div>
+          <div class="stat-row">
+            <span class="stat-label">Dash time</span>
+            <span class="stat-value" id="s-dash-time">41 hr 45 min</span>
+          </div>
+          <div class="stat-row">
+            <span class="stat-label">Completed deliveries</span>
+            <span class="stat-value" id="s-deliveries">33</span>
+          </div>
+        </div>
+
+        <!-- ═══ SECTION BREAK ════════════════ -->
+        <div class="section-break"></div>
+
+        <!-- ═══ DASHES SECTION ═══════════════ -->
+        <div class="dashes-section">
+          <div class="dashes-title">Dashes</div>
+          <div id="s-breakdown"></div>
+        </div>
+
+        <!-- ═══ HOME INDICATOR ═══════════════ -->
+        <div class="home-indicator"><div class="home-bar"></div></div>
+
+      </div>
+    </div>
+
+    <button class="download-btn" onclick="downloadScreenshot()">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/>
+        <polyline points="7 10 12 15 17 10"/>
+        <line x1="12" y1="15" x2="12" y2="3"/>
+      </svg>
+      Download PNG
+    </button>
+  </div>
+
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+<script>
+/* ═══════════════════════════════════════════
+   DEFAULT DATA — matches your reference image
+═══════════════════════════════════════════ */
+const DEFAULT = {
+  status_bar: { time: "12:03", battery: "25", charging: false },
+  header: { date_range: "Jun 1 - Jun 7", total_earnings: "625.40", doordash_pay: "625.40" },
+  summary: { active_time: "28 hr 15 min", dash_time: "41 hr 45 min", deliveries: "33" },
+  breakdown: [
+    { day: "Monday, Jun 1",    amount: "82.50" },
+    { day: "Tuesday, Jun 2",   amount: "71.20" },
+    { day: "Wednesday, Jun 3", amount: "63.90" },
+    { day: "Thursday, Jun 4",  amount: "89.30" },
+    { day: "Friday, Jun 5",    amount: "104.75" },
+    { day: "Saturday, Jun 6",  amount: "125.00" },
+    { day: "Sunday, Jun 7",    amount: "88.75" }
+  ]
+};
+
+/* Month abbreviator: "June" → "Jun", "April" → "Apr", etc. */
+function abbr(s) {
+  return s.replace(/\b(January|February|March|April|June|July|August|September|October|November|December)\b/g,
+    m => m.slice(0,3));
+}
+
+/* ═══════════════════════════════════════════
+   APPLY DATA → UPDATE PHONE SCREEN
+═══════════════════════════════════════════ */
+function applyData(d) {
+  const sb = d.status_bar || {};
+  const hd = d.header || {};
+  const sm = d.summary || {};
+  const bd = d.breakdown || [];
+
+  // Status bar
+  document.getElementById('s-time').textContent = sb.time || '12:03';
+  const bat = Math.min(100, Math.max(0, parseInt(String(sb.battery||'25').replace('%','')) || 25));
+  document.getElementById('s-battery-pct').textContent = bat;
+  const fillEl = document.getElementById('s-battery-fill');
+  fillEl.style.width = bat + '%';
+  // iOS: green when ≤ 20% (low power mode) or charging, white fill otherwise
+  if (bat <= 20) {
+    fillEl.style.background = '#ff3b30';
+    document.getElementById('s-battery-pct').style.color = '#000';
+  } else if (bat <= 40) {
+    fillEl.style.background = '#34c759';
+    document.getElementById('s-battery-pct').style.color = '#000';
+  } else {
+    fillEl.style.background = '#000';
+    document.getElementById('s-battery-pct').style.color = '#fff';
+  }
+
+  // Nav bar — abbreviate months, use en-dash between dates
+  const rawRange = abbr(hd.date_range || 'Jun 1 - Jun 7');
+  const navRange = rawRange.replace(/\s*[-–—]\s*/g, ' – ');
+  document.getElementById('s-date-range').textContent = navRange;
+
+  // Hero
+  const total = hd.total_earnings || '0.00';
+  document.getElementById('s-total').textContent = total;
+  document.getElementById('s-dd-pay').textContent = '$' + (hd.doordash_pay || total);
+
+  // Summary
+  document.getElementById('s-active').textContent = sm.active_time || '–';
+  document.getElementById('s-dash-time').textContent = sm.dash_time || '–';
+  document.getElementById('s-deliveries').textContent = sm.deliveries || '–';
+
+  // Breakdown
+  const cont = document.getElementById('s-breakdown');
+  cont.innerHTML = '';
+  bd.forEach(item => {
+    const row = document.createElement('div');
+    row.className = 'dash-row';
+    row.innerHTML = `
+      <span class="dash-day">${abbr(item.day)}</span>
+      <div class="dash-right">
+        <span class="dash-amount">$${item.amount}</span>
+        <span class="dash-chevron"><svg viewBox="0 0 8 14"><path d="M1 1l6 6-6 6"/></svg></span>
+      </div>`;
+    cont.appendChild(row);
+  });
+
+  // Sync manual fields
+  document.getElementById('m-time').value = sb.time || '12:03';
+  document.getElementById('m-battery').value = bat;
+  document.getElementById('m-range').value = hd.date_range || 'Jun 1 - Jun 7';
+  document.getElementById('m-total').value = total;
+  document.getElementById('m-ddpay').value = hd.doordash_pay || total;
+  document.getElementById('m-active').value = sm.active_time || '';
+  document.getElementById('m-dash').value = sm.dash_time || '';
+  document.getElementById('m-deliveries').value = sm.deliveries || '';
+  buildBreakdownInputs(bd);
+}
+
+/* Build breakdown input rows in control panel */
+function buildBreakdownInputs(bd) {
+  const c = document.getElementById('breakdown-rows');
+  c.innerHTML = '';
+  bd.forEach((item, i) => {
+    const r = document.createElement('div');
+    r.className = 'form-row';
+    r.style.marginBottom = '10px';
+    r.innerHTML = `
+      <div class="form-group" style="flex:2.2;"><label>Day ${i+1}</label>
+        <input class="bd-day" value="${item.day}" /></div>
+      <div class="form-group" style="flex:1;"><label>$</label>
+        <input class="bd-amt" value="${item.amount}" /></div>`;
+    c.appendChild(r);
+  });
+}
+
+/* Render from JSON textarea */
+function renderFromJson() {
+  const raw = document.getElementById('json-input').value.trim();
+  if (!raw) { toast('⚠️ Paste JSON first'); return; }
+  try { applyData(JSON.parse(raw)); toast('✅ Screenshot generated!'); }
+  catch(e) { toast('❌ Invalid JSON: ' + e.message); }
+}
+
+/* Render from manual inputs */
+function renderManual() {
+  const days = document.querySelectorAll('.bd-day');
+  const amts = document.querySelectorAll('.bd-amt');
+  const bd = [];
+  days.forEach((el, i) => bd.push({ day: el.value, amount: amts[i].value }));
+  applyData({
+    status_bar: { time: document.getElementById('m-time').value, battery: document.getElementById('m-battery').value },
+    header: { date_range: document.getElementById('m-range').value, total_earnings: document.getElementById('m-total').value, doordash_pay: document.getElementById('m-ddpay').value },
+    summary: { active_time: document.getElementById('m-active').value, dash_time: document.getElementById('m-dash').value, deliveries: document.getElementById('m-deliveries').value },
+    breakdown: bd
+  });
+  toast('✅ Applied!');
+}
+
+/* Sync breakdown from JSON */
+function syncBreakdown() {
+  const raw = document.getElementById('json-input').value.trim();
+  if (!raw) { toast('⚠️ Paste JSON first'); return; }
+  try { buildBreakdownInputs(JSON.parse(raw).breakdown || []); toast('↺ Synced!'); }
+  catch(e) { toast('❌ Invalid JSON'); }
+}
+
+/* ═══════════════════════════════════════════
+   DOWNLOAD PNG
+═══════════════════════════════════════════ */
+async function downloadScreenshot() {
+  toast('⏳ Rendering high-res PNG…');
+  const el = document.querySelector('.phone-shell');
+  const canvas = await html2canvas(el, {
+    scale: 3,
+    useCORS: true,
+    allowTaint: true,
+    backgroundColor: '#ffffff',
+    logging: false,
+    onclone: (doc) => {
+      doc.querySelectorAll('#phone-screen .nav-title, #phone-screen .hero-amount, #phone-screen .earn-pill, #phone-screen .stat-label, #phone-screen .stat-value, #phone-screen .dashes-title, #phone-screen .dash-day, #phone-screen .dash-amount, #phone-screen .hero-caret').forEach(n => {
+        n.style.fontFamily = "'Plus Jakarta Sans', -apple-system, 'Helvetica Neue', sans-serif";
+      });
+      doc.querySelectorAll('#phone-screen .sb-time, #phone-screen .pct').forEach(n => {
+        n.style.fontFamily = "-apple-system, 'SF Pro Display', 'Helvetica Neue', sans-serif";
+      });
+    }
+  });
+
+  // Auto-generate filename
+  const range = document.getElementById('s-date-range').textContent.replace(/\s/g,'');
+  const total = document.getElementById('s-total').textContent;
+  const fname = `doordash-${range}-$${total}.png`;
+
+  const a = document.createElement('a');
+  a.download = fname;
+  a.href = canvas.toDataURL('image/png');
+  a.click();
+  toast('✅ Saved: ' + fname);
+}
+
+function toast(msg) {
+  const t = document.getElementById('toast');
+  t.textContent = msg;
+  t.classList.add('show');
+  setTimeout(() => t.classList.remove('show'), 2800);
+}
+
+// Init
+window.addEventListener('DOMContentLoaded', () => {
+  buildBreakdownInputs(DEFAULT.breakdown);
+  applyData(DEFAULT);
+  document.getElementById('json-input').value = JSON.stringify(DEFAULT, null, 2);
+});
+</script>
+</body>
+</html>

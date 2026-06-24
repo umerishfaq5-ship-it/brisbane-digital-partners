@@ -6,9 +6,13 @@ interface SectionHeadingProps {
   description?: string;
   center?: boolean;
   light?: boolean;
+  level?: 1 | 2 | 3 | 4 | 5 | 6;
+  id?: string;
 }
 
-const SectionHeading = ({ eyebrow, title, description, center = true, light = false }: SectionHeadingProps) => (
+const SectionHeading = ({ eyebrow, title, description, center = true, light = false, level = 2, id }: SectionHeadingProps) => {
+  const HeadingTag = `h${level}` as keyof JSX.IntrinsicElements;
+  return (
   <motion.div
     initial={{ opacity: 0, y: 24 }}
     whileInView={{ opacity: 1, y: 0 }}
@@ -26,15 +30,16 @@ const SectionHeading = ({ eyebrow, title, description, center = true, light = fa
         {eyebrow}
       </span>
     )}
-    <h2 className={`font-heading font-bold text-3xl md:text-[2.75rem] leading-[1.12] ${light ? "text-primary-foreground" : "text-foreground"}`}>
+    <HeadingTag id={id} className={`font-heading font-bold text-3xl md:text-[2.75rem] leading-[1.12] ${light ? "text-primary-foreground" : "text-foreground"}`}>
       {title}
-    </h2>
+    </HeadingTag>
     {description && (
       <p className={`mt-5 max-w-2xl leading-relaxed text-[15px] ${center ? "mx-auto" : ""} ${light ? "text-primary-foreground/60" : "text-muted-foreground"}`}>
         {description}
       </p>
     )}
   </motion.div>
-);
+  );
+};
 
 export default SectionHeading;

@@ -1,0 +1,25 @@
+# Next Tab Agency - Entity & Context Data
+
+## Agency Overview
+Next Tab Agency is a premium technical SEO, web development, and digital marketing agency based in Brisbane, Australia. We specialize in solving complex technical bottlenecks, scaling e-commerce platforms, and dominating local search for Australian SMEs.
+
+## Core Entity Information
+* **Organization Name:** Next Tab Agency
+* **Headquarters:** Taylor Street, Eagleby, QLD 4207, Brisbane, Australia
+* **Contact Number:** 0491 000 094
+* **Contact Email:** info@nexttabagency.com
+* **Target Market:** Australian SMEs, Trades & Services, Retail, Healthcare, Professional Services.
+* **Service Areas:** Brisbane (QLD), Sydney (NSW), Melbourne (VIC), Perth (WA), Adelaide (SA), Canberra (ACT).
+
+## Core Technical Expertise
+1.  **Technical SEO:** Large-scale indexing fixes, crawl budget optimization, and schema markup strategy.
+2.  **Web Development:** Custom WordPress, Headless CMS, React, Next.js, TypeScript.
+3.  **E-Commerce Platforms:** WooCommerce custom development, Shopify Plus, BigCommerce, Maropost Commerce Cloud (Neto).
+4.  **Mobile App Development:** Cross-platform React Native architecture for iOS and Android.
+5.  **Local SEO:** Google Business Profile (GBP) optimization and local map pack dominance.
+
+## Verified Case Studies & Results
+* **Heaven on Mainstreet (Local SEO):** Recovered suspended GBP, achieved #1 Map Pack ranking, generated 5.86M organic impressions and 49.3K organic clicks.
+* **Institutional Scalper (Technical SEO):** Resolved critical crawl budget issues for a 2.5 million-page architecture, achieving Top-3 rankings and sub-1.5s load times.
+* **MyFitnessCoach (App Development):** Delivered a React Native app with AI integration resulting in 10,000+ downloads and a 4.8-star App Store rating.
+* **CircleIt (App Development):** Built a real-time Firebase social community platform MVP in a single sprint.
