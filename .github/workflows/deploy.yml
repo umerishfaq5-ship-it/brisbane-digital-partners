@@ -2,7 +2,7 @@ name: Deploy Antigravity Ultra Updates
 on:
   push:
     branches:
-      - main  # Jab bhi aap main par code push karein gy, yeh chal jaye ga
+      - main
 
 jobs:
   build-and-deploy:
@@ -16,10 +16,11 @@ jobs:
         with:
           bun-version: latest
 
-      - name: Install Dependencies & Build
+      - name: Install Dependencies, Playwright & Build
         run: |
           bun install
-          bun run build  # Yeh aap ka dist folder generate kary ga
+          bunx playwright install chromium --with-deps
+          bun run build
 
       - name: Deploy dist folder via FTP
         uses: SamKirkland/FTP-Deploy-Action@v4.3.4
