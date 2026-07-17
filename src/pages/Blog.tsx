@@ -9,7 +9,7 @@ const posts = [
     title: "Google’s May 2026 Core Update is Complete: What Australian Businesses Need to Know",
     excerpt: "The second major Google core update of 2026 has officially finished rolling out. Here is what happened and what you should do next.",
     category: "SEO Updates",
-    date: "June 10, 2026",
+    date: "June 12, 2026",
     readTime: "4 min read",
     image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2070&auto=format&fit=crop",
     featured: true,

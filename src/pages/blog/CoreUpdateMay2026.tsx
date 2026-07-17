@@ -16,7 +16,7 @@ const schema = {
     "@type": "Organization", "name": "Next Tab Agency",
     "logo": { "@type": "ImageObject", "url": "https://nexttabagency.com/logo.png" }
   },
-  "datePublished": "2026-06-10"
+  "datePublished": "2026-06-12"
 };
 
 const CoreUpdateMay2026 = () => (
@@ -29,7 +29,7 @@ const CoreUpdateMay2026 = () => (
     <BlogPostLayout
       title="Google’s May 2026 Core Update is Complete: What Australian Businesses Need to Know"
       subtitle="The 12-day core update triggered massive ranking volatility. Here is what actually happened, why your traffic dropped, and your immediate action plan."
-      date="June 10, 2026"
+      date="June 12, 2026"
       readTime="9 min read"
       category="SEO Updates"
       heroImage="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2070&auto=format&fit=crop"
