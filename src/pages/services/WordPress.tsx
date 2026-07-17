@@ -233,11 +233,26 @@ const WordPress = () => (
                 </div>
               ))}
             </div>
+
+            {/* Internal cross-link: WordPress → WooCommerce */}
+            <div className="mt-5 rounded-2xl border border-accent/30 bg-accent/5 p-5">
+              <p className="text-xs text-muted-foreground leading-relaxed">
+                🛒 Need an online store on your WordPress site?{" "}
+                <Link
+                  to="/services/woocommerce-development"
+                  className="text-accent font-semibold hover:underline"
+                >
+                  Need a shop? Upgrade to WooCommerce
+                </Link>{" "}
+                — Australia's most flexible, fee-free e-commerce platform.
+              </p>
+            </div>
           </motion.div>
 
         </div>
       </div>
     </section>
+
 
     {/* ── Interactive Speed Calculator ────────────────────────── */}
     <section aria-label="Interactive ROI Calculator" className="py-12 md:py-20 relative">

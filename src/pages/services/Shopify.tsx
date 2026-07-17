@@ -305,6 +305,17 @@ const Shopify = () => (
             </motion.li>
           ))}
         </ul>
+
+        {/* Portfolio proof link → implements: Shopify → CircleIt (Proof) */}
+        <div className="mt-8 rounded-2xl border border-accent/30 bg-accent/5 p-6 text-center">
+          <p className="text-sm text-muted-foreground">
+            🏆 Want proof? See how our React Native expertise powers{" "}
+            <Link to="/portfolio/circle-it" className="text-accent font-semibold hover:underline">
+              the CircleIt social app — 5,000+ users, 68% retention
+            </Link>
+            {" "}— the same technical team that builds your Shopify store.
+          </p>
+        </div>
       </div>
     </section>
 

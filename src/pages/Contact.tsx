@@ -1,4 +1,4 @@
-import { useState } from "react";
+﻿import { useState } from "react";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -232,7 +232,91 @@ const Contact = () => {
         </div>
       </section>
 
+      {/* ── Full-Width Map & Audit Booking Section ─────────────────── */}
+      <section aria-labelledby="contact-map-heading" className="py-0 relative overflow-hidden">
+        <div className="flex flex-col lg:flex-row min-h-[500px]">
+
+          {/* Left — Google Map (60%) */}
+          <div className="relative w-full lg:w-[60%] min-h-[320px] lg:min-h-[500px]">
+            <div className="absolute inset-0 ring-1 ring-inset ring-border/20 z-10 pointer-events-none" />
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3539.7777694088167!2d153.19120031513764!3d-27.68259298279541!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b9147fb4eef1c5b%3A0x1234567890abcdef!2sTaylor%20St%2C%20Eagleby%20QLD%204207!5e0!3m2!1sen!2sau!4v1696000000000!5m2!1sen!2sau"
+              width="100%"
+              height="100%"
+              style={{ border: 0, filter: "invert(90%) hue-rotate(180deg) saturate(0.8) brightness(0.9)" }}
+              allowFullScreen
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              title="Next Tab Agency Brisbane Office — Taylor Street, Eagleby QLD 4207"
+              className="absolute inset-0 w-full h-full"
+            />
+            <div className="absolute top-4 left-4 z-20 bg-primary/95 backdrop-blur-sm rounded-xl px-4 py-3 shadow-xl border border-accent/20">
+              <p className="font-heading font-bold text-accent text-xs uppercase tracking-wider mb-0.5">📍 Next Tab Agency</p>
+              <p className="text-primary-foreground/80 text-xs">Taylor Street, Eagleby QLD 4207</p>
+              <p className="text-primary-foreground/50 text-[10px] mt-0.5">Brisbane, Australia</p>
+            </div>
+          </div>
+
+          {/* Right — Audit Booking Form (40%) */}
+          <div className="w-full lg:w-[40%] bg-gradient-to-br from-primary via-primary/95 to-primary/90 p-8 md:p-12 flex flex-col justify-center relative overflow-hidden">
+            <div className="absolute inset-0 pattern-lines opacity-10" />
+            <div className="absolute -top-16 -right-16 w-48 h-48 bg-accent/10 rounded-full blur-3xl" />
+            <div className="relative z-10">
+              <span className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-accent/15 text-accent text-xs font-semibold uppercase tracking-[0.15em] mb-4 border border-accent/20">
+                <span className="w-1.5 h-1.5 rounded-full bg-accent animate-pulse" />
+                Free — No Obligation
+              </span>
+              <h2 id="contact-map-heading" className="font-heading font-black text-2xl md:text-3xl text-primary-foreground leading-tight mb-2">
+                Book Your 15-Minute<br />
+                <span className="text-accent">Technical Audit</span>
+              </h2>
+              <p className="text-primary-foreground/60 text-sm leading-relaxed mb-6">
+                with <strong className="text-primary-foreground">Hamza Ishfaq</strong> or our Strategy Team. We'll show you exactly what's holding your site back — in 15 minutes, free.
+              </p>
+
+              <div className="flex items-center gap-3 mb-6 pb-6 border-b border-primary-foreground/10">
+                <img
+                  src="/assets/hamza-ceo.png?v=2"
+                  alt="Hamza Ishfaq — Founder Next Tab Agency"
+                  className="w-12 h-12 rounded-full object-cover ring-2 ring-accent/40"
+                  width={48} height={48}
+                />
+                <div>
+                  <p className="font-semibold text-primary-foreground text-sm">Hamza Ishfaq</p>
+                  <p className="text-accent text-xs">Founder & CEO</p>
+                </div>
+              </div>
+
+              <form onSubmit={handleSubmit} className="space-y-3">
+                <Input
+                  placeholder="Your Full Name"
+                  value={form.name} onChange={e => setForm(f => ({ ...f, name: e.target.value }))}
+                  required
+                  className="bg-primary-foreground/10 border-primary-foreground/20 text-primary-foreground placeholder:text-primary-foreground/40 focus:border-accent"
+                />
+                <Input
+                  type="email" placeholder="Business Email"
+                  value={form.email} onChange={e => setForm(f => ({ ...f, email: e.target.value }))}
+                  required
+                  className="bg-primary-foreground/10 border-primary-foreground/20 text-primary-foreground placeholder:text-primary-foreground/40 focus:border-accent"
+                />
+                <Input
+                  type="tel" placeholder="Phone (Optional)"
+                  value={form.phone} onChange={e => setForm(f => ({ ...f, phone: e.target.value }))}
+                  className="bg-primary-foreground/10 border-primary-foreground/20 text-primary-foreground placeholder:text-primary-foreground/40 focus:border-accent"
+                />
+                <Button type="submit" variant="accent" className="w-full rounded-xl font-bold">
+                  Book My Free Audit →
+                </Button>
+                <p className="text-[10px] text-primary-foreground/40 text-center">No lock-in. No sales pressure.</p>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <AIInsightsPanel
+
         pageTitle="Contact Next Tab Agency — Brisbane Digital Agency"
         tabs={[
           {
@@ -302,3 +386,4 @@ const Contact = () => {
 };
 
 export default Contact;
+

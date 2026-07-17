@@ -8,15 +8,16 @@ const schema = {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
   "mainEntityOfPage": { "@type": "WebPage", "@id": "https://nexttabagency.com/blog/what-are-backlinks" },
-  "headline": "What Are Backlinks? Think of Them as Digital 'Votes of Confidence'",
-  "description": "Why do some websites rank higher with less content? It comes down to Authority. Learn why backlinks are the 'doctor recommendations' of the internet, and how to earn the right ones.",
+  "headline": "Ethical Backlink Strategies for Australian Domain Authority",
+  "description": "Why do some Australian websites rank higher with less content? Domain authority — built through ethical backlinks. Learn how to build genuine authority without risking a Google penalty.",
   "image": "https://images.unsplash.com/photo-1606761568499-6d2451b23c66?q=80&w=2074",
   "author": { "@type": "Organization", "name": "Next Tab Agency" },
   "publisher": {
     "@type": "Organization", "name": "Next Tab Agency",
     "logo": { "@type": "ImageObject", "url": "https://nexttabagency.com/logo.png" }
   },
-  "datePublished": "2025-05-31"
+  "datePublished": "2025-05-31",
+  "dateModified": "2026-07-05"
 };
 
 const faqSchema = {
@@ -32,30 +33,38 @@ const faqSchema = {
 const WhatAreBacklinks = () => (
   <>
     <Helmet>
-      <title>What Are Backlinks? Think of Them as Digital 'Votes of Confidence' | Next Tab Agency</title>
-      <meta name="description" content="Why do some websites rank higher with less content? It comes down to Authority. Learn why backlinks are the 'doctor recommendations' of the internet, and how to earn the right ones." />
+      <title>Ethical Backlink Strategies for Australian Domain Authority | Next Tab Agency</title>
+      <meta name="description" content="Why do some Australian websites rank higher with less content? Domain authority — built through ethical backlinks. Learn how to build genuine authority without risking a Google penalty." />
       <script type="application/ld+json">{JSON.stringify(faqSchema)}</script>
     </Helmet>
 
     <BlogPostLayout
-      title="What Are Backlinks? Think of Them as Digital 'Votes of Confidence'"
-      subtitle="Why do some websites rank higher with less content? It's all about Authority — and backlinks are how you earn it."
+      title="Ethical Backlink Strategies for Australian Domain Authority"
+      subtitle="Why do some Australian websites rank higher with less content? It's all about Domain Authority — and ethical backlinks are how serious businesses earn it."
       date="May 31, 2025"
       readTime="7 min read"
       category="Authority Building"
       heroImage="https://images.unsplash.com/photo-1606761568499-6d2451b23c66?q=80&w=2074&auto=format&fit=crop"
-      heroImageAlt="Network of connected websites representing backlinks and digital authority"
+      heroImageAlt="Network of connected Australian websites representing ethical backlinks and domain authority"
       schema={schema}
-      ctaHeading="Ready to Build Your Digital Authority?"
-      ctaSub="Our link building strategies earn you high-quality backlinks from authoritative Australian sources. Let's talk about building your rankings for good."
+      ctaHeading="Ready to Build Your Australian Domain Authority?"
+      ctaSub="Our ethical link building strategies earn you high-quality backlinks from authoritative Australian sources. Let's talk about building your rankings for good."
       ctaBtn="Let's Build My Authority →"
     >
       <p className="mb-6 text-xl font-semibold leading-relaxed text-foreground">
-        Have you ever wondered why a competitor with a simpler website — and less content than you — still outranks you on Google? It's almost certainly down to one thing: <strong>Authority</strong>.
+        Have you ever wondered why a competitor with a simpler website — and less content than you — still outranks you on Google? It's almost certainly down to one thing: <strong>Domain Authority</strong>.
       </p>
-      <p className="mb-10 text-lg leading-relaxed text-muted-foreground">
-        And the currency of authority online is <strong className="text-foreground">backlinks</strong>. This guide will explain exactly what they are, why they matter, and how to get the right ones without getting penalised by Google.
+      <p className="mb-8 text-lg leading-relaxed text-muted-foreground">
+        And the currency of authority online is <strong className="text-foreground">ethical backlinks</strong>. This guide will explain exactly what they are, why they matter for Australian businesses, and how to earn the right ones without getting penalised by Google.
       </p>
+      <div className="my-8 p-5 rounded-2xl border-l-4 border-accent bg-accent/5">
+        <p className="text-base font-semibold text-foreground mb-1">⚠️ Important: Fix Your Foundation First</p>
+        <p className="text-sm text-muted-foreground leading-relaxed">
+          If you have a slow site, backlinks won't work. Slow pages signal low quality to Google, and no amount of links will overcome a poor technical foundation. Start with an{" "}
+          <Link to="/services/seo-audits" className="text-accent font-semibold underline decoration-accent/40 hover:decoration-accent transition-colors">SEO Audit</Link>{" "}
+          first — then build your authority on solid ground.
+        </p>
+      </div>
 
       <div className="grid grid-cols-1 gap-4 my-10 sm:grid-cols-3">
         <Stat value="#1" label="factor in Google's ranking algorithm for 10+ years" source="Moz Search Ranking Factors" />

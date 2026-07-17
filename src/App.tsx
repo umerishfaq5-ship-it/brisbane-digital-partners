@@ -7,6 +7,7 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import ScrollToTop from "@/components/ScrollToTop";
 import Index from "./pages/Index.tsx";
 import About from "./pages/About.tsx";
+import OurTeam from "./pages/OurTeam.tsx";
 import Services from "./pages/Services.tsx";
 import SeoAudits from "./pages/services/SeoAudits.tsx";
 import LocalSeo from "./pages/services/LocalSeo.tsx";
@@ -20,6 +21,8 @@ import Wix          from "./pages/services/Wix.tsx";
 import BigCommerce  from "./pages/services/BigCommerce.tsx";
 import Magento      from "./pages/services/Magento.tsx";
 import Maropost     from "./pages/services/Maropost.tsx";
+import SpeedOptimization from "./pages/services/SpeedOptimization.tsx";
+import SeoMigration from "./pages/services/SeoMigration.tsx";
 import SocialMediaAds from "./pages/services/SocialMediaAds.tsx";
 import PpcAds       from "./pages/services/PpcAds.tsx";
 import GoogleBusinessProfile from "./pages/services/GoogleBusinessProfile.tsx";
@@ -73,6 +76,7 @@ const App = () => (
           <Routes>
             <Route path="/" element={<Index />} />
             <Route path="/about" element={<About />} />
+            <Route path="/our-team" element={<OurTeam />} />
             <Route path="/services" element={<Services />} />
             <Route path="/services/seo-audits" element={<SeoAudits />} />
             <Route path="/services/local-seo" element={<LocalSeo />} />
@@ -86,6 +90,8 @@ const App = () => (
             <Route path="/services/bigcommerce-development" element={<BigCommerce />} />
             <Route path="/services/magento-development"     element={<Magento />} />
             <Route path="/services/maropost-neto"           element={<Maropost />} />
+            <Route path="/services/speed-optimization"      element={<SpeedOptimization />} />
+            <Route path="/services/seo-migration"           element={<SeoMigration />} />
             <Route path="/services/social-media-ads"        element={<SocialMediaAds />} />
             <Route path="/services/ppc-google-ads"          element={<PpcAds />} />
             <Route path="/services/google-business-profile" element={<GoogleBusinessProfile />} />

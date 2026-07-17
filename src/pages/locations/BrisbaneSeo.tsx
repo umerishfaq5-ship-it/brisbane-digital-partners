@@ -26,7 +26,13 @@ const whyUs = [
   { icon: Star, title: "5-Star Rated", desc: "4.9/5 average across 30+ Australian clients. Our results speak for themselves." },
 ];
 
-const suburbs = ["Brisbane CBD", "Fortitude Valley", "South Brisbane", "West End", "Newstead", "New Farm", "Paddington", "Toowong", "Indooroopilly", "Chermside", "Carindale", "Eight Mile Plains", "Springwood", "Logan", "Ipswich", "Gold Coast", "Sunshine Coast", "Redlands"];
+const suburbs = [
+  "Brisbane CBD", "Fortitude Valley", "South Brisbane", "West End", "Newstead", "New Farm",
+  "Paddington", "Toowong", "Indooroopilly", "Chermside", "Carindale", "Eight Mile Plains",
+  "Springwood", "Logan", "Ipswich", "Beenleigh", "Eagleby", "Redlands",
+  "Wynnum", "Manly", "Mt Gravatt", "Sunnybank", "Rocklea", "Moorooka",
+  "Brendale", "Stafford", "Carseldine", "Aspley", "Gold Coast", "Sunshine Coast",
+];
 
 const fadeUp = {
   hidden: { opacity: 0, y: 28 },
@@ -62,8 +68,8 @@ const BrisbaneSeo = () => (
       </script>
     </Helmet>
     <SEO
-      title="SEO Agency Brisbane QLD — Local SEO, Google Ads & Web Development"
-      description="Brisbane's leading SEO agency. We help Queensland businesses rank higher on Google, dominate the local Map Pack, and build high-performance websites. Free consultation available."
+      title="Result-Oriented SEO Agency Brisbane | No-Link Ranking Experts | Next Tab Agency"
+      description="Brisbane's most technical SEO agency. We rank Brisbane businesses without relying on spammy backlinks — using entity authority, content siloing, and technical site architecture. Serving Fortitude Valley, South Brisbane, Eagleby, Beenleigh, and all of QLD."
       canonical="/locations/brisbane-seo"
       breadcrumbs={[
         { name: "Home", url: "https://nexttabagency.com/" },
@@ -84,10 +90,10 @@ const BrisbaneSeo = () => (
             Brisbane, QLD — Home Base
           </span>
           <h1 id="brisbane-hero-heading" className="font-heading font-bold text-4xl md:text-[3.5rem] leading-[1.08] text-primary-foreground mb-6">
-            Data-Driven <span className="text-gradient">SEO Agency Brisbane:</span> Get More Leads, Not Just Traffic.
+            Result-Oriented <span className="text-gradient">SEO Agency Brisbane:</span> No-Link Ranking Experts.
           </h1>
           <p className="text-lg md:text-xl text-primary-foreground/60 max-w-2xl mb-10 leading-relaxed">
-            We're Brisbane-based and proud of it. From the CBD to the suburbs, we help Queensland businesses rank higher on Google, run profitable ads, and build websites that convert.
+            We're Brisbane-based and proud of it. We rank local businesses without spammy backlink schemes — using entity authority, content siloing, and technical architecture that out-performs what OMG and Dejan charge 3x more for.
           </p>
           <div className="flex flex-wrap gap-4">
             <Button variant="hero-primary" size="xl" className="rounded-full" asChild>
@@ -202,17 +208,49 @@ const BrisbaneSeo = () => (
       </div>
     </section>
 
-    {/* Suburbs */}
+    {/* Suburbs — Local Geofencing */}
     <section aria-labelledby="brisbane-suburbs-heading" className="py-20">
       <div className="container">
-        <h2 id="brisbane-suburbs-heading" className="font-heading font-bold text-2xl text-foreground mb-3 text-center">We serve all Brisbane suburbs & Greater Queensland</h2>
-        <p className="text-muted-foreground text-center mb-8 max-w-2xl mx-auto">Whether you're in the heart of the CBD or the outer suburbs, we understand the local search landscape and build strategies that work in your specific area.</p>
-        <div className="flex flex-wrap gap-2 justify-center">
-          {suburbs.map((s) => (
-            <span key={s} className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-primary/5 border border-primary/10 text-sm text-foreground/70">
-              <MapPin className="w-3 h-3 text-accent" />{s}
-            </span>
+        <h2 id="brisbane-suburbs-heading" className="font-heading font-bold text-2xl text-foreground mb-3 text-center">
+          We serve all Brisbane suburbs & Greater Queensland
+        </h2>
+        <p className="text-muted-foreground text-center mb-8 max-w-2xl mx-auto">
+          Local geofencing is our strategy — we build suburb-specific content and citation signals so Brisbane businesses rank in the exact postcodes their customers search from.
+        </p>
+
+        {/* Suburb clusters */}
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-10">
+          {[
+            { zone: "Inner Brisbane", emoji: "🏙️", suburbs: ["Brisbane CBD", "Fortitude Valley", "South Brisbane", "West End", "Newstead", "New Farm", "Paddington"] },
+            { zone: "Inner West & South", emoji: "🏡", suburbs: ["Toowong", "Indooroopilly", "Mt Gravatt", "Sunnybank", "Moorooka", "Rocklea", "Eight Mile Plains"] },
+            { zone: "North & North-East", emoji: "🌿", suburbs: ["Chermside", "Aspley", "Stafford", "Carseldine", "Brendale", "Wynnum", "Manly", "Carindale"] },
+            { zone: "South Corridor", emoji: "📍", suburbs: ["Springwood", "Logan", "Beenleigh", "Eagleby", "Ipswich", "Redlands", "Gold Coast"] },
+          ].map((cluster) => (
+            <div key={cluster.zone} className="card-premium rounded-2xl p-5">
+              <div className="flex items-center gap-2 mb-3">
+                <span>{cluster.emoji}</span>
+                <h3 className="font-heading font-semibold text-foreground text-sm">{cluster.zone}</h3>
+              </div>
+              <div className="flex flex-wrap gap-1.5">
+                {cluster.suburbs.map((s) => (
+                  <span key={s} className="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-primary/5 border border-primary/10 text-xs text-foreground/70">
+                    <MapPin className="w-2.5 h-2.5 text-accent" />{s}
+                  </span>
+                ))}
+              </div>
+            </div>
           ))}
+        </div>
+
+        {/* Technical SEO Audit CTA */}
+        <div className="max-w-2xl mx-auto rounded-2xl border border-accent/30 bg-accent/5 p-6 text-center">
+          <p className="text-sm text-muted-foreground leading-relaxed">
+            🔍 Not sure why you're not ranking in your suburb?{" "}
+            <Link to="/services/seo-audits" className="text-accent font-semibold hover:underline">
+              Start with a professional Technical SEO Audit to find your site's bottlenecks
+            </Link>
+            {" "}— we'll identify every reason Google isn't showing you to customers in your area.
+          </p>
         </div>
       </div>
     </section>

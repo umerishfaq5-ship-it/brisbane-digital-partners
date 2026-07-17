@@ -26,6 +26,7 @@ const sections = [
     pages: [
       { label: "Home", href: "/", desc: "Agency overview, services & social proof for Australian businesses." },
       { label: "About Us", href: "/about", desc: "Our story, team expertise, values, and why Brisbane businesses choose us." },
+      { label: "Our Team", href: "/our-team", desc: "Meet our 20+ in-house specialists across SEO, development, content, ads, and client success." },
       { label: "Services Overview", href: "/services", desc: "Complete catalogue of all services we offer — SEO, ads, web, and apps." },
       { label: "Portfolio & Case Studies", href: "/portfolio", desc: "Real campaign results, mobile apps delivered, and websites built." },
       { label: "Client Testimonials", href: "/testimonials", desc: "Verified reviews from Australian business owners we've worked with." },
@@ -62,6 +63,8 @@ const sections = [
       { label: "SEO Audits & Strategy", href: "/services/seo-audits", desc: "Full technical SEO audit, keyword research & a data-backed 90-day ranking roadmap." },
       { label: "Local SEO", href: "/services/local-seo", desc: "Google Business Profile, citation building & Map Pack rankings for Australian businesses." },
       { label: "Google Business Profile Optimisation", href: "/services/google-business-profile", desc: "Complete GBP setup, review management, photo strategy & weekly Google Posts." },
+      { label: "Website Speed Optimisation", href: "/services/speed-optimization", desc: "Core Web Vitals, Lighthouse 100/100, and sub-1.5s load times for Australian websites." },
+      { label: "SEO Migration Services", href: "/services/seo-migration", desc: "Platform migrations (Wix→WordPress, domain rebrands) with zero ranking loss and full 301 redirect coverage." },
     ],
   },
 

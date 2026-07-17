@@ -31,121 +31,60 @@ export interface AIInsightsPanelProps {
 
 /* ── Component ──────────────────────────────────────────────── */
 export default function AIInsightsPanel({ pageTitle, tabs }: AIInsightsPanelProps) {
-  const [active, setActive] = useState(tabs[0]?.id ?? "searchbots");
-
   return (
+    /*
+      ════════════════════════════════════════════════════════════
+      VISUALLY HIDDEN — FULLY CRAWLABLE
+      This section is invisible to human visitors (no pixels,
+      no layout space, no interaction). It exists PURELY for:
+        • Googlebot structured data extraction
+        • ChatGPT / Perplexity / Claude AI retrieval
+        • Bing & other crawlers
+      DO NOT add aria-hidden="true" — that would hide it from
+      screen readers AND some AI crawlers. Clip-path approach
+      keeps it in accessibility tree AND crawler DOM.
+      ════════════════════════════════════════════════════════════
+    */
     <section
       aria-label="GEO-Optimised Data Layer — Executive Summary for AI and Search Engines"
       data-ai-section="true"
       data-page={pageTitle}
-      className="py-10 md:py-14 border-t border-border/40"
+      style={{
+        position: "absolute",
+        width: "1px",
+        height: "1px",
+        padding: 0,
+        margin: "-1px",
+        overflow: "hidden",
+        clip: "rect(0,0,0,0)",
+        clipPath: "inset(50%)",
+        whiteSpace: "nowrap",
+        border: 0,
+      }}
     >
-      <div className="container max-w-5xl">
-        {/* Section Header */}
-        <div className="flex items-start gap-4 mb-10">
-          <div className="w-10 h-10 rounded-xl bg-primary/5 border border-primary/10 flex items-center justify-center shrink-0 mt-0.5" aria-hidden="true">
-            <Bot className="w-5 h-5 text-primary" />
-          </div>
-          <div>
-            <p className="text-[10px] font-bold uppercase tracking-[0.2em] text-accent mb-1">GEO-Optimised Data Layer</p>
-            <h2 className="font-heading font-semibold text-xl text-foreground">Executive Summary</h2>
-            <p className="text-sm text-muted-foreground mt-1">
-              Structured data formatted for AI models, search bots, and generative engines.
-            </p>
-          </div>
+      {/* Full structured data — all tabs always in DOM for crawlers */}
+      {tabs.map((tab) => (
+        <div
+          key={tab.id}
+          id={`geo-panel-${tab.id}`}
+          role="region"
+          aria-label={`${tab.label} — for ${tab.audience}`}
+          data-ai-audience={tab.audience}
+        >
+          <h2>{pageTitle} — {tab.label}</h2>
+          <p>Optimised for: {tab.audience}</p>
+          <article
+            itemScope
+            itemType="https://schema.org/WebPageElement"
+          >
+            {tab.content}
+          </article>
         </div>
-
-        {/* Tab Rail — visual only, all content is always in DOM */}
-        <div className="flex flex-wrap gap-2 mb-8" role="tablist" aria-label="AI audience selector">
-          {tabs.map((tab) => {
-            const Icon = tab.icon;
-            const isActive = tab.id === active;
-            return (
-              <button
-                key={tab.id}
-                role="tab"
-                aria-selected={isActive}
-                aria-controls={`geo-panel-${tab.id}`}
-                id={`geo-tab-${tab.id}`}
-                onClick={() => setActive(tab.id)}
-                className={`
-                  inline-flex items-center gap-2 px-4 py-2 rounded-full text-xs font-semibold border transition-all duration-300
-                  ${isActive
-                    ? "bg-primary text-primary-foreground border-primary shadow-sm"
-                    : "bg-card text-muted-foreground border-border hover:border-primary/40 hover:text-foreground"
-                  }
-                `}
-              >
-                <Icon className="w-3 h-3" aria-hidden="true" />
-                {tab.label}
-              </button>
-            );
-          })}
-        </div>
-
-        {/*
-          ════════════════════════════════════════════════════════
-          ALL PANELS ARE ALWAYS IN THE DOM.
-          Crawlers and AI agents read all content regardless of
-          which tab is "active". CSS controls visibility only.
-          ════════════════════════════════════════════════════════
-        */}
-        <div className="relative">
-          {tabs.map((tab) => {
-            const isActive = tab.id === active;
-            return (
-              <div
-                key={tab.id}
-                id={`geo-panel-${tab.id}`}
-                role="tabpanel"
-                aria-labelledby={`geo-tab-${tab.id}`}
-                data-ai-audience={tab.audience}
-                /*
-                  CRITICAL SEO: All panels stay in the DOM (crawlable).
-                  Inactive panels use SR-only positioning — visually hidden
-                  but NOT display:none, so Googlebot reads all content.
-                */
-                className={isActive
-                  ? "card-premium rounded-2xl p-8 block opacity-100"
-                  : "absolute w-px h-px p-0 overflow-hidden whitespace-nowrap clip-0"
-                }
-                style={isActive ? {} : { clip: "rect(0,0,0,0)", clipPath: "inset(50%)", position: "absolute" }}
-              >
-                <h4 className="text-[10px] font-bold uppercase tracking-[0.2em] text-muted-foreground/50 mb-6">
-                  {tab.label} — Optimised for: <span itemProp="audience">{tab.audience}</span>
-                </h4>
-                <article
-                  itemScope
-                  itemType="https://schema.org/WebPageElement"
-                  className="prose-sm max-w-none text-muted-foreground"
-                >
-                  {tab.content}
-                </article>
-              </div>
-            );
-          })}
-        </div>
-
-        {/*
-          ════════════════════════════════════════════════════════
-          HIDDEN MACHINE-READABLE SUMMARY (always visible to bots)
-          aria-hidden is NOT set so search bots and AI crawlers
-          can access this complete structured summary.
-          ════════════════════════════════════════════════════════
-        */}
-        <details className="mt-6" style={{ opacity: 0, height: 0, overflow: "hidden" }} tabIndex={-1}>
-          <summary>Full structured data for all AI agents — {pageTitle}</summary>
-          {tabs.map((tab) => (
-            <div key={tab.id}>
-              <h3>{tab.label} — {tab.audience}</h3>
-              {tab.content}
-            </div>
-          ))}
-        </details>
-      </div>
+      ))}
     </section>
   );
 }
+
 
 /* ── Shared Helpers ──────────────────────────────────────────── */
 

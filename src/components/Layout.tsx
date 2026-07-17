@@ -6,6 +6,7 @@ import BackToTop from "./BackToTop";
 import WhatsAppButton from "./WhatsAppButton";
 import LeadCaptureModal from "./LeadCaptureModal";
 import TechSummaryBlock from "./TechSummaryBlock";
+import ContactMapStrip from "./ContactMapStrip";
 
 interface LayoutProps {
   children: ReactNode;
@@ -17,6 +18,7 @@ const Layout = ({ children, aiSummary }: LayoutProps) => (
   <div className="min-h-screen flex flex-col">
     <Header />
     <main className="flex-1">{children}</main>
+    <ContactMapStrip />
     <TechSummaryBlock summary={aiSummary} />
     <Footer />
     <MobileStickyBar />

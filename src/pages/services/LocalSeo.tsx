@@ -135,6 +135,20 @@ const LocalSeo = () => {
                   </div>
                 ))}
               </div>
+
+              {/* Internal cross-link: Local SEO → Brisbane SEO location page */}
+              <div className="mt-5 rounded-2xl border border-accent/30 bg-accent/5 p-5">
+                <p className="text-xs text-muted-foreground leading-relaxed">
+                  📍 Based in Brisbane?{" "}
+                  <Link
+                    to="/locations/brisbane-seo"
+                    className="text-accent font-semibold hover:underline"
+                  >
+                    See our dedicated Brisbane SEO service page
+                  </Link>{" "}
+                  — built specifically for Queensland businesses targeting local search.
+                </p>
+              </div>
             </motion.div>
           </div>
         </div>

@@ -62,6 +62,9 @@ const Index = () => (
               <Button variant="hero-primary" size="xl" className="rounded-full font-bold shadow-lg shadow-accent/20" onClick={() => window.dispatchEvent(new Event('open-lead-modal'))}>
                 Request Your Free Technical Audit <ArrowRight className="w-4 h-4 ml-1" />
               </Button>
+              <Button variant="hero-secondary" size="xl" className="rounded-full" asChild>
+                <Link to="/locations/brisbane-seo">Brisbane SEO Services</Link>
+              </Button>
             </motion.div>
           </motion.div>
         </div>

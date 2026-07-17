@@ -132,7 +132,9 @@ const ShopifySeoAustralia = () => (
         Product Schema is structured data that tells Google your product's name, price, rating, and stock status. When implemented correctly, your Google search results show <strong className="text-foreground">star ratings, prices, and availability</strong> directly in the search results — dramatically increasing click-through rates.
       </p>
       <p className="mb-6 text-lg leading-relaxed text-muted-foreground">
-        For Shopify stores, apps like <strong className="text-foreground">JSON-LD for SEO</strong> or <strong className="text-foreground">Schema Plus</strong> handle this without requiring any code. As an <Link to="/services/shopify-development" className="font-semibold text-accent hover:underline">Expert Shopify Developer Brisbane</Link>, our team implements this as standard on every build.
+        For Shopify stores, apps like <strong className="text-foreground">JSON-LD for SEO</strong> or <strong className="text-foreground">Schema Plus</strong> handle this without requiring any code. Our team of{" "}
+        <Link to="/services/shopify-development" className="font-semibold text-accent hover:underline">Shopify Development</Link>{" "}
+        experts implement this as standard on every Shopify build we deliver for Australian e-commerce stores.
       </p>
 
       <StepBadge n={4} title="Build an Australian Backlink Profile" />

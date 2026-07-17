@@ -299,11 +299,14 @@ export default function CircleIt() {
             </div>
             
             <div className="p-5 rounded-2xl border border-white/15 bg-white/5 mb-6">
-              <p className="text-primary-foreground/80 text-sm mb-2">
-                <strong className="text-white">Need a similar App solution for your business?</strong>
+              <p className="text-primary-foreground/80 text-sm mb-3">
+                <strong className="text-white">Ready to build your own high-retention app?</strong>
+              </p>
+              <p className="text-primary-foreground/60 text-xs leading-relaxed mb-3">
+                CircleIt proves what our React Native team delivers: a fully-featured social platform, 5,000+ users, and 68% 30-day retention — all in a single MVP sprint. If you have an app idea, we know how to execute it.
               </p>
               <Link to="/contact" className="inline-flex items-center gap-2 text-sm font-bold text-blue-400 hover:text-blue-300 transition-colors">
-                Contact us <ArrowRight className="w-4 h-4" />
+                Start Your App Project <ArrowRight className="w-4 h-4" />
               </Link>
             </div>
 

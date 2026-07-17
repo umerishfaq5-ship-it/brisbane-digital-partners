@@ -30,22 +30,22 @@ import AIInsightsPanel, {
    Page Data
 ───────────────────────────────────────────────────────────────── */
 const service = {
-  title:       "Custom WooCommerce Development Brisbane (High Performance)",
-  headline:    "Powerful WooCommerce stores optimised for Conversion Rates in Australia",
+  title:       "WooCommerce Developers Brisbane | Scaling Australian eCommerce",
+  headline:    "Custom WooCommerce stores built with Afterpay, Australia Post, Xero, and StarTrack baked in",
   description:
-    "We specialise in WooCommerce development with a focus on Conversion Rate Optimisation (CRO) for Australian businesses. By integrating seamlessly with local payment gateways and shipping providers, we build high-performance e-commerce engines that generate real revenue.",
+    "We specialise in WooCommerce development for Brisbane and Australian businesses. Seamless integration with Australia Post, StarTrack, Afterpay, Xero, eWAY, and Zip — plus migration from Wix, Shopify, and Magento to WooCommerce with zero SEO loss.",
   longDescription:
-    "WooCommerce gives you complete ownership and unlimited flexibility. Unlike hosted platforms, there are no transaction fees and no limitations. We build custom WooCommerce stores tailored to the Brisbane and Australian market, incorporating essential local context like WooCommerce integration with Australia Post, StarTrack, and Afterpay. If you want a store that ranks locally and converts efficiently, we are your Brisbane WooCommerce Hub.",
+    "WooCommerce gives you complete ownership and unlimited flexibility. Unlike hosted platforms like Shopify, there are no transaction fees and no limitations. We build custom WooCommerce stores tailored to the Australian market, incorporating the full Australian eCommerce stack: Australia Post and StarTrack shipping, Afterpay and Zip Buy Now Pay Later, eWAY and Westpac PayWay payment gateways, and Xero and MYOB accounting integrations. Whether you're launching fresh or migrating from Wix, Shopify, or Magento, we handle the full project with zero ranking loss and complete data migration.",
 
   features: [
-    "Custom WooCommerce theme design and development (using Antigravity for speed)",
-    "API & ERP Integrations (Australia Post, StarTrack, Xero, MYOB)",
-    "Speed & Core Web Vitals Fixes (Advanced caching, image optimisation)",
-    "Australian payment gateways — eWAY, Pin Payments, Afterpay, Zip, Stripe",
-    "WooCommerce Subscriptions and recurring billing",
-    "B2B wholesale pricing, customer groups, and quote requests",
-    "WooCommerce SEO — structured data, schema, rich snippets",
-    "Local shipping zones, GST tax configuration, and Australian postcode rules",
+    "Custom WooCommerce theme design and development (Antigravity Framework for speed)",
+    "Australian eCommerce Stack: Australia Post, StarTrack, Afterpay, Zip, eWAY, Xero",
+    "Migration from Wix → WooCommerce, Shopify → WooCommerce, Magento → WooCommerce",
+    "Speed & Core Web Vitals engineering (caching, image optimisation, Cloudflare CDN)",
+    "Australian payment gateways — eWAY, Pin Payments, Afterpay, Zip, Stripe, PayPal",
+    "GST-compliant checkout, tax rules, and Australian postcode shipping zones",
+    "WooCommerce Subscriptions and recurring billing for Australian subscription boxes",
+    "B2B wholesale pricing, customer groups, and quote request systems",
   ],
 
   benefits: [
@@ -139,8 +139,8 @@ const WooCommerce = () => (
 
     {/* ── SEO & Schema ───────────────────────────────────────── */}
     <SEO
-      title="Custom WooCommerce Development Brisbane | High Performance"
-      description="Brisbane's WooCommerce Hub. Custom WooCommerce stores with Afterpay, Zip, GST setup, Australia Post integrations, and high-speed performance."
+      title="WooCommerce Developers Brisbane | Scaling Australian eCommerce | Afterpay + AU Post"
+      description="Brisbane's WooCommerce specialists. Full Australian eCommerce Stack: Afterpay, Australia Post, StarTrack, Xero, eWAY. Migration from Wix, Shopify, or Magento with zero ranking loss."
       canonical="/services/woocommerce-development"
       faqs={service.faqs}
       breadcrumbs={[
@@ -252,6 +252,98 @@ const WooCommerce = () => (
     <section aria-label="Interactive ROI Calculator" className="py-12 md:py-20 relative">
       <div className="container">
         <RoiSpeedSlider />
+      </div>
+    </section>
+
+    {/* ── Australian eCommerce Stack ──────────────────────────── */}
+    <section aria-labelledby="au-stack-heading" className="py-20 md:py-28 relative overflow-hidden">
+      <div className="container max-w-5xl relative z-10">
+        <SectionHeading
+          id="au-stack-heading"
+          eyebrow="The Australian eCommerce Stack"
+          title="Every AU integration you need, out of the box"
+          description="Competitors list 'integrations.' We deliver them — tested, configured, and live on launch day."
+        />
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+          {[
+            { icon: "📦", name: "Australia Post", cat: "Shipping", desc: "Live rate calculation, tracking integration, and label printing via Australia Post API." },
+            { icon: "🚚", name: "StarTrack", cat: "Express Shipping", desc: "StarTrack Express and StarTrack Premium shipping options with real-time rates and tracking." },
+            { icon: "💳", name: "Afterpay", cat: "Buy Now Pay Later", desc: "Official Afterpay WooCommerce integration — reduce checkout friction and increase AOV by 20–40%." },
+            { icon: "🔐", name: "eWAY", cat: "Payment Gateway", desc: "eWAY Rapid 3 direct payment gateway with 3DS2 security and Australian merchant accounts." },
+            { icon: "📊", name: "Xero", cat: "Accounting", desc: "Automated invoice creation, GST tax reconciliation, and order sync to your Xero account." },
+            { icon: "💸", name: "Zip Pay / Zip Money", cat: "Buy Now Pay Later", desc: "Zip Pay (up to $1,000) and Zip Money (up to $50,000) for high-ticket Australian purchases." },
+          ].map((s, i) => (
+            <motion.div
+              key={s.name}
+              initial={fadeUp.hidden}
+              whileInView={fadeUp.visible}
+              viewport={{ once: true }}
+              transition={{ delay: i * 0.07 }}
+              className="card-premium rounded-2xl p-6"
+            >
+              <span className="text-2xl block mb-3">{s.icon}</span>
+              <div className="flex items-start justify-between mb-2">
+                <h3 className="font-heading font-semibold text-foreground">{s.name}</h3>
+                <span className="text-[10px] font-semibold text-accent uppercase tracking-wide border border-accent/30 rounded-full px-2 py-0.5">{s.cat}</span>
+              </div>
+              <p className="text-sm text-muted-foreground leading-relaxed">{s.desc}</p>
+            </motion.div>
+          ))}
+        </div>
+        <motion.div
+          initial={{ opacity: 0, y: 16 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className="mt-10 rounded-2xl border border-accent/30 bg-accent/5 p-6 text-center"
+        >
+          <p className="text-sm text-muted-foreground">
+            📈 Drive traffic to your new WooCommerce store from day one.{" "}
+            <Link to="/services/seo-audits" className="text-accent font-semibold hover:underline">
+              Drive traffic to your new store with our data-driven SEO Services for eCommerce
+            </Link>
+            {" "}— a technical audit finds exactly what's blocking your rankings.
+          </p>
+        </motion.div>
+      </div>
+    </section>
+
+    {/* ── Migration Process ──────────────────────────────────── */}
+    <section aria-labelledby="migration-heading" className="surface-warm py-20 md:py-24 relative overflow-hidden">
+      <div className="absolute inset-0 pattern-dots" />
+      <div className="container max-w-5xl relative z-10">
+        <SectionHeading
+          id="migration-heading"
+          eyebrow="Platform Migration"
+          title="Migrating to WooCommerce? We handle everything."
+          description="From Wix to Shopify to Magento — we migrate your entire store with full data preservation and zero ranking loss."
+        />
+        <div className="grid sm:grid-cols-3 gap-5 mb-8">
+          {[
+            { from: "Wix", to: "WooCommerce", desc: "Wix's SEO ceiling is real. We migrate your products, pages, and redirect every URL so Google follows you across." },
+            { from: "Shopify", to: "WooCommerce", desc: "Escape monthly Shopify fees. We migrate your catalogue, customer records, and order history without data loss." },
+            { from: "Magento", to: "WooCommerce", desc: "End-of-life Magento 1 or unwieldy Magento 2? We move you to a faster, more manageable WooCommerce stack." },
+          ].map((m, i) => (
+            <motion.div
+              key={m.from}
+              initial={fadeUp.hidden}
+              whileInView={fadeUp.visible}
+              viewport={{ once: true }}
+              transition={{ delay: i * 0.1 }}
+              className="card-premium rounded-2xl p-6"
+            >
+              <div className="flex items-center gap-2 mb-3">
+                <span className="font-heading font-bold text-sm text-foreground bg-muted/50 px-3 py-1 rounded-full">{m.from}</span>
+                <ArrowRight className="w-4 h-4 text-accent" />
+                <span className="font-heading font-bold text-sm text-accent bg-accent/10 px-3 py-1 rounded-full">{m.to}</span>
+              </div>
+              <p className="text-sm text-muted-foreground leading-relaxed">{m.desc}</p>
+            </motion.div>
+          ))}
+        </div>
+        <p className="text-center text-sm text-muted-foreground">
+          Every migration includes a full 301 redirect map, post-migration audit, and 30-day monitoring.{" "}
+          <Link to="/services/seo-migration" className="text-accent font-semibold hover:underline">Learn more about our SEO Migration service →</Link>
+        </p>
       </div>
     </section>
 

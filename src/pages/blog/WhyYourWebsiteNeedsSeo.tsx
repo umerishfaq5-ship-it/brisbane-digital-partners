@@ -8,15 +8,16 @@ const schema = {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
   "mainEntityOfPage": { "@type": "WebPage", "@id": "https://nexttabagency.com/blog/why-your-website-needs-seo" },
-  "headline": "Is Your Business Invisible? 5 Reasons Why Your Website Needs SEO in 2025",
-  "description": "Having a website without SEO is like printing 5,000 business cards and keeping them in your desk drawer. Find out why SEO is non-negotiable for small businesses.",
+  "headline": "Why Brisbane Businesses Need Local SEO in 2024 — 5 Reasons You Can't Ignore",
+  "description": "Brisbane businesses that invest in Local SEO are 4x more likely to appear in the Google Map Pack. Here's why your Brisbane business needs Local SEO now — not later.",
   "image": "https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a?q=80&w=2074",
   "author": { "@type": "Organization", "name": "Next Tab Agency" },
   "publisher": {
     "@type": "Organization", "name": "Next Tab Agency",
     "logo": { "@type": "ImageObject", "url": "https://nexttabagency.com/logo.png" }
   },
-  "datePublished": "2025-05-10"
+  "datePublished": "2025-05-10",
+  "dateModified": "2026-07-05"
 };
 
 const faqSchema = {
@@ -32,29 +33,32 @@ const faqSchema = {
 const WhyYourWebsiteNeedsSeo = () => (
   <>
     <Helmet>
-      <title>Is Your Business Invisible? 5 Reasons Why Your Website Needs SEO | Next Tab Agency</title>
-      <meta name="description" content="Having a website without SEO is like printing 5,000 business cards and keeping them in your desk drawer. Find out why SEO is non-negotiable for small businesses." />
+      <title>Why Brisbane Businesses Need Local SEO in 2024 | Next Tab Agency</title>
+      <meta name="description" content="Brisbane businesses investing in Local SEO are 4x more likely to appear in the Google Map Pack. Discover 5 reasons why Local SEO is non-negotiable for your Brisbane business." />
       <script type="application/ld+json">{JSON.stringify(faqSchema)}</script>
     </Helmet>
 
     <BlogPostLayout
-      title="Is Your Business Invisible? 5 Reasons Why Your Website Needs SEO in 2025"
-      subtitle="Having a website without SEO is like printing 5,000 business cards and keeping them in your desk drawer. Here's what you're missing."
+      title="Why Brisbane Businesses Need Local SEO in 2024"
+      subtitle="Brisbane businesses on page 2 of Google are invisible. Here's why Local SEO is the single highest-ROI investment a Brisbane business can make — and why you can't afford to wait."
       date="May 10, 2025"
       readTime="6 min read"
-      category="SEO Strategy"
+      category="Local SEO Brisbane"
       heroImage="https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a?q=80&w=2074&auto=format&fit=crop"
-      heroImageAlt="Small business owner looking at laptop with SEO strategy"
+      heroImageAlt="Brisbane small business owner reviewing Local SEO strategy with Next Tab Agency"
       schema={schema}
-      ctaHeading="Get a Free Visibility Report"
-      ctaSub="Find out exactly where you stand on Google today — no cost, no obligation."
-      ctaBtn="Get My Free Visibility Report →"
+      ctaHeading="Get a Free Brisbane SEO Visibility Report"
+      ctaSub="Find out exactly where your Brisbane business stands on Google today — no cost, no obligation."
+      ctaBtn="Get My Free Local SEO Report →"
     >
       <p className="mb-6 text-xl font-semibold leading-relaxed text-foreground">
         Imagine printing 5,000 business cards, then locking them all in your desk drawer. No one sees them. No calls. No customers.
       </p>
+      <p className="mb-6 text-lg leading-relaxed text-muted-foreground">
+        That's exactly what a Brisbane business without <Link to="/services/local-seo" className="text-accent font-semibold underline decoration-accent/40 hover:decoration-accent transition-colors">Local SEO</Link> does. It exists, but nobody in Brisbane can find it. And if nobody can find it, it cannot make you money.
+      </p>
       <p className="mb-10 text-lg leading-relaxed text-muted-foreground">
-        That's exactly what a website without SEO does. It exists, but nobody can find it. And if nobody can find it, it cannot make you money.
+        With over 2.6 million people in Greater Brisbane, and every suburb's searches becoming hyper-competitive, ranking on page 1 is no longer optional — it's the difference between a thriving business and an empty phone.
       </p>
 
       <div className="grid grid-cols-1 gap-4 my-10 sm:grid-cols-3">

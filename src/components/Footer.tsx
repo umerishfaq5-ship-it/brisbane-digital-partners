@@ -92,9 +92,11 @@ const Footer = () => (
               <li><Link to="/services/wordpress-development" className="opacity-60 hover:opacity-100 hover:text-accent transition-all duration-300">WordPress</Link></li>
               <li><Link to="/services/shopify-development" className="opacity-60 hover:opacity-100 hover:text-accent transition-all duration-300">Shopify</Link></li>
               <li><Link to="/services/woocommerce-development" className="opacity-60 hover:opacity-100 hover:text-accent transition-all duration-300">WooCommerce</Link></li>
+              <li><Link to="/our-team" className="opacity-60 hover:opacity-100 hover:text-accent transition-all duration-300">Our Team</Link></li>
             </ul>
           </nav>
         </div>
+
 
         {/* Locations */}
         <div className="md:col-span-2">
@@ -155,29 +157,6 @@ const Footer = () => (
               </li>
             </ul>
           </address>
-
-          {/* Google Maps Embed — Eagleby, Brisbane */}
-          <div className="mt-6 rounded-xl overflow-hidden border border-primary-foreground/10" style={{ height: 180 }}>
-            <iframe
-              title="Next Tab Agency — Eagleby, Brisbane location"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3537.2!2d153.208!3d-27.7105!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjfCsDQyJzM3LjgiUyAxNTMCsDEyJzI4LjgiRQ!5e0!3m2!1sen!2sau!4v1700000000000!5m2!1sen!2sau"
-              width="100%"
-              height="180"
-              style={{ border: 0, filter: "invert(0.1) hue-rotate(180deg) saturate(0.9)" }}
-              allowFullScreen
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-              aria-label="Google Maps showing Next Tab Agency office in Eagleby, Brisbane"
-            />
-          </div>
-
-          {/* Free audit CTA */}
-          <Link
-            to="/contact"
-            className="mt-6 inline-flex items-center justify-center w-full px-4 py-3 text-sm font-bold rounded-xl bg-accent text-accent-foreground hover:bg-accent/90 transition-all"
-          >
-            Get My Free Aussie SEO Audit →
-          </Link>
         </div>
 
       </div>

@@ -25,7 +25,7 @@ export default function WhatsAppButton() {
   const location = useLocation();
   
   const WHATSAPP_NUMBER = "61491000094"; 
-  const DEFAULT_MESSAGE = encodeURIComponent("Hi Next Tab Agency! I'd like to discuss a project.");
+  const DEFAULT_MESSAGE = encodeURIComponent("Hi Mia! I found Next Tab Agency and I'd like to discuss a project.");
   const WHATSAPP_URL = `https://wa.me/${WHATSAPP_NUMBER}?text=${DEFAULT_MESSAGE}`;
 
   useEffect(() => {
@@ -46,7 +46,8 @@ export default function WhatsAppButton() {
   }, [location.pathname]); // Restart timer if they navigate to a new page
 
   const topic = formatTopic(location.pathname);
-  const tooltipText = topic ? `Want to know more about ${topic}?` : "Need help? Chat with us!";
+  const tooltipText = topic ? `Chat with Mia about ${topic}` : "Chat with Mia Henderson 👋";
+
 
   return (
     <div className="fixed bottom-24 right-4 md:bottom-6 md:right-6 z-50 flex flex-col items-end">

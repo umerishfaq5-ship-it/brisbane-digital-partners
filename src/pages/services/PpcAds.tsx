@@ -241,7 +241,7 @@ const PpcAds = () => (
         <div className="grid sm:grid-cols-3 gap-5 max-w-3xl mx-auto">
           {[
             { label: "Social Media Ads", href: "/services/social-media-ads", desc: "Extend your reach to social channels alongside search." },
-            { label: "SEO Audits & Strategy", href: "/services/seo-audits", desc: "Lower your cost-per-click by improving organic rankings." },
+            { label: "SEO Audits & Strategy", href: "/services/seo-audits", desc: "Ads provide traffic, SEO provides long-term growth — combine both for compounding ROI." },
             { label: "Google Business Profile", href: "/services/google-business-profile", desc: "Maximise local map pack presence alongside search ads." },
           ].map((item) => (
             <Link key={item.href} to={item.href} className="group card-premium rounded-2xl p-6 block">

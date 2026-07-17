@@ -13,16 +13,17 @@ import AIInsightsPanel, { InsightDL, InsightList, InsightTable } from "@/compone
 import LiveTeardownForm from "@/components/LiveTeardownForm";
 
 const service = {
-  title: "Custom Website Design & Development",
-  headline: "Websites built to perform — fast, accessible, and built to convert",
-  description: "We design and develop custom websites that are technically excellent, visually premium, and built with search engines in mind from the first line of code. Your website is your most important digital asset — it should work as hard as you do.",
-  longDescription: "Your website is live 24/7 representing your business to every potential customer who finds you. We build sites using React and Next.js that load in under 2 seconds, rank well on Google, and convert visitors into enquiries. Every site we deliver is responsive across all devices, accessible to all users, and set up with analytics so you can see exactly how it's performing.",
+  title: "Performance-Driven Web Development Brisbane | Custom React & WordPress",
+  headline: "Sub-1s websites built to rank, convert, and outperform every competitor in your Brisbane suburb",
+  description: "We design and develop custom websites using the Antigravity framework, React, and Next.js — delivering Core Web Vitals green scores, sub-1s load times, and SEO-ready architecture from the first line of code.",
+  longDescription: "Your website is live 24/7 representing your business to every potential customer who finds you. We build sites using React, Next.js, and the Antigravity framework that load in under 1 second for Brisbane users on Australian CDN infrastructure, rank well on Google through proper technical architecture, and convert visitors into enquiries. Every site we deliver is responsive across all devices, accessible to all users, set up with analytics, and optimised for Core Web Vitals — the three Google performance signals that directly impact your search rankings in 2025.",
   features: [
+    "Antigravity Framework builds — sub-1s load times for Brisbane users on Australian CDN",
+    "Core Web Vitals engineering — LCP, INP, CLS all hitting Google's 'Good' thresholds",
     "Custom responsive design tailored to your brand and industry",
-    "Sub-2-second page load targets (Core Web Vitals optimised)",
     "SEO-ready architecture — clean URLs, structured data, semantic HTML",
     "Content management system integration (Sanity, WordPress, Contentful)",
-    "Secure HTTPS, image optimisation, and CDN delivery",
+    "Secure HTTPS, image optimisation, and CDN delivery via Cloudflare",
     "Analytics and conversion tracking setup (GA4, Search Console)",
     "WCAG 2.1 AA accessibility compliance",
     "Ongoing support, hosting management, and maintenance plans",
@@ -60,8 +61,8 @@ const WebDevelopment = () => {
   return (
     <Layout>
       <SEO
-        title="Custom Website Design & Development Brisbane"
-        description="We build fast, responsive, and highly-converting custom websites in Brisbane using Next.js, React, and modern tech."
+        title="Performance-Driven Web Development Brisbane | Custom React & Antigravity Framework"
+        description="Brisbane web development specialists. We build sub-1s websites using the Antigravity framework, React, and Next.js — Core Web Vitals optimised, SEO-ready, and built to convert."
         canonical="/services/web-development"
         faqs={service.faqs}
         breadcrumbs={[
@@ -130,10 +131,46 @@ const WebDevelopment = () => {
                   </div>
                 ))}
               </div>
+
+              {/* E-E-A-T: Expert Attribution Box */}
+              <div className="mt-5 rounded-2xl border border-accent/30 bg-accent/5 p-5">
+                <p className="text-[10px] font-bold text-accent uppercase tracking-[0.15em] mb-3">Led by Our Expert</p>
+                <div className="flex items-center gap-3 mb-3">
+                  <img
+                    src={`https://api.dicebear.com/9.x/avataaars/svg?seed=Rohan&backgroundColor=b6e3f4,c0aede&radius=50`}
+                    alt="Rohan Gupta — Lead Web Developer, Next Tab Agency"
+                    className="w-12 h-12 rounded-full ring-2 ring-accent/30 bg-muted shrink-0"
+                    width={48} height={48}
+                  />
+                  <div>
+                    <p className="font-heading font-bold text-foreground text-sm leading-tight">Rohan Gupta</p>
+                    <p className="text-xs text-accent font-medium">Lead Web Developer</p>
+                    <p className="text-[10px] text-muted-foreground mt-0.5">Antigravity Framework & React Specialist</p>
+                  </div>
+                </div>
+                <p className="text-xs text-muted-foreground leading-relaxed mb-3">
+                  "Every web development project at Next Tab Agency is engineered for sub-1s load times, green Core Web Vitals, and SEO-ready architecture. We don't build websites — we build revenue machines."
+                </p>
+                <Link to="/our-team#engineering" className="text-[10px] font-semibold text-accent hover:underline">
+                  Meet the full Engineering & UX Lab →
+                </Link>
+              </div>
+
+              {/* SEO cross-link */}
+              <div className="mt-4 rounded-xl border border-border/40 bg-muted/30 p-4 text-center">
+                <p className="text-xs text-muted-foreground">
+                  Want long-term traffic alongside your site launch?{" "}
+                  <Link to="/services/seo-audits" className="text-accent font-semibold hover:underline">
+                    Pair your new site with our SEO Foundation Audit
+                  </Link>
+                </p>
+              </div>
+
             </motion.div>
           </div>
         </div>
       </section>
+
 
       {/* Tech Stack */}
       <section aria-labelledby="tech-stack-heading" className="surface-warm py-8 md:py-12 relative overflow-hidden">
@@ -161,6 +198,74 @@ const WebDevelopment = () => {
                 <h3 className="font-heading font-semibold text-sm text-foreground">{tech.name}</h3>
               </motion.div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ── Antigravity Framework Section ─────────────────────────── */}
+      <section aria-labelledby="antigravity-heading" className="py-20 md:py-28 relative overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent" />
+        <div className="container max-w-5xl relative z-10">
+          <div className="grid lg:grid-cols-2 gap-16 items-center">
+            <motion.div
+              initial={{ opacity: 0, x: -20 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
+            >
+              <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-accent/15 text-accent text-xs font-semibold uppercase tracking-[0.15em] mb-6 border border-accent/20">
+                <Zap className="w-3.5 h-3.5" />
+                Why We're Different
+              </span>
+              <h2 id="antigravity-heading" className="font-heading font-bold text-3xl md:text-4xl text-foreground mb-6 leading-tight">
+                Why Our Web Dev Is Different — The Antigravity Framework
+              </h2>
+              <div className="space-y-5 text-muted-foreground leading-relaxed">
+                <p>
+                  Most Brisbane web developers focus on design. We focus on <strong className="text-foreground">performance</strong>. Using the Antigravity framework, we deliver websites that load in under 1 second for Brisbane users — measured on real Australian CDN infrastructure, not synthetic lab scores.
+                </p>
+                <p>
+                  Antigravity is a high-performance web build system combining the best of React's component architecture with aggressive code-splitting, preloading, and edge-rendering strategies. The result: <strong className="text-foreground">Lighthouse Performance scores of 95–100</strong> across LCP, INP, and CLS — the Core Web Vitals that directly influence your Google rankings.
+                </p>
+                <p>
+                  Competitors rank because their sites are technically perfect. We make <em>your</em> site the technically perfect one.
+                </p>
+              </div>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, x: 20 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: 0.15 }}
+              className="space-y-4"
+            >
+              {[
+                { metric: "<1s", label: "Load Time (LCP)", desc: "Sub-1-second Largest Contentful Paint for Brisbane users on Cloudflare Australian CDN." },
+                { metric: "95–100", label: "Lighthouse Score", desc: "Consistently green Performance, Accessibility, Best Practices, and SEO scores." },
+                { metric: "0.1", label: "CLS (Layout Shift)", desc: "Zero unexpected layout shifts — professional feel on every device and screen size." },
+                { metric: "<200ms", label: "INP (Interactivity)", desc: "Instant response to every tap and click — Google's newest Core Web Vital threshold." },
+              ].map((s) => (
+                <div key={s.metric} className="card-premium rounded-2xl p-5 flex gap-5 items-start">
+                  <div className="shrink-0 text-center">
+                    <p className="font-heading font-black text-2xl text-accent">{s.metric}</p>
+                    <p className="text-[10px] text-muted-foreground uppercase tracking-wide font-semibold mt-0.5">{s.label}</p>
+                  </div>
+                  <p className="text-sm text-muted-foreground leading-relaxed">{s.desc}</p>
+                </div>
+              ))}
+
+              {/* WooCommerce cross-link */}
+              <div className="rounded-2xl border border-accent/30 bg-accent/5 p-5 mt-2">
+                <p className="text-xs text-muted-foreground leading-relaxed">
+                  🛒 Looking to sell online?{" "}
+                  <Link to="/services/woocommerce-development" className="text-accent font-semibold hover:underline">
+                    Explore our Custom WooCommerce Solutions
+                  </Link>{" "}
+                  — built for speed on the same Antigravity performance stack.
+                </p>
+              </div>
+            </motion.div>
           </div>
         </div>
       </section>
