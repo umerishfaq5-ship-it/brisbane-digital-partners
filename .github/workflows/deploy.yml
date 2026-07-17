@@ -1,0 +1,31 @@
+name: Deploy Antigravity Ultra Updates
+on:
+  push:
+    branches:
+      - main  # Jab bhi aap main par code push karein gy, yeh chal jaye ga
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Setup Bun
+        uses: oven-sh/setup-bun@v1
+        with:
+          bun-version: latest
+
+      - name: Install Dependencies & Build
+        run: |
+          bun install
+          bun run build  # Yeh aap ka dist folder generate kary ga
+
+      - name: Deploy dist folder via FTP
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+        with:
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          local-dir: ./dist/
+          server-dir: /
