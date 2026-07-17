@@ -5,6 +5,43 @@ import Layout from "@/components/Layout";
 
 const posts = [
   {
+    slug: "shopify-vs-woocommerce-seo",
+    title: "Shopify vs WooCommerce: Which Platform Actually Ranks Better on Google for Australian Stores?",
+    excerpt: "The ultimate E-commerce showdown. We break down the technical SEO, site speed, and scalability of both platforms.",
+    category: "E-commerce SEO",
+    date: "July 18, 2026",
+    readTime: "10 min read",
+    image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?q=80&w=2070&fm=webp&fit=crop",
+    featured: true,
+  },
+  {
+    slug: "seo-vs-google-ads-cost",
+    title: "The Rising Cost of Google Ads in Australia: Why SEO is Your Only Sustainable Strategy",
+    excerpt: "Are you burning thousands of dollars every month on PPC? Discover why relying solely on Google Ads is a risky strategy.",
+    category: "Marketing Strategy",
+    date: "July 18, 2026",
+    readTime: "7 min read",
+    image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?q=80&w=2072&fm=webp&fit=crop",
+  },
+  {
+    slug: "ai-search-sge-australia",
+    title: "How AI Search (ChatGPT & Google SGE) is Changing How Australians Find Businesses in 2026",
+    excerpt: "Generative AI is shifting the search landscape. Here is how forward-thinking leaders are adapting.",
+    category: "Technical SEO",
+    date: "July 18, 2026",
+    readTime: "8 min read",
+    image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=2070&fm=webp&fit=crop",
+  },
+  {
+    slug: "local-seo-map-pack",
+    title: "Why Your Local Competitor is Getting All the Calls (And How the Google Map Pack Fixes It)",
+    excerpt: "46% of all Google searches have local intent. If you aren't in the top 3 spots, you are essentially invisible.",
+    category: "Local SEO",
+    date: "July 18, 2026",
+    readTime: "6 min read",
+    image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=2070&fm=webp&fit=crop",
+  },
+  {
     slug: "core-update-may-2026",
     title: "Google’s May 2026 Core Update is Complete: What Australian Businesses Need to Know",
     excerpt: "The second major Google core update of 2026 has officially finished rolling out. Here is what happened and what you should do next.",

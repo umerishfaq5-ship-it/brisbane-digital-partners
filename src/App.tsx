@@ -52,6 +52,10 @@ import CoreUpdateMay2026 from "./pages/blog/CoreUpdateMay2026.tsx";
 import ContentStrategyCoreUpdate from "./pages/blog/ContentStrategyCoreUpdate.tsx";
 import TechnicalSeoCoreUpdate from "./pages/blog/TechnicalSeoCoreUpdate.tsx";
 import LocalEntityCoreUpdate from "./pages/blog/LocalEntityCoreUpdate.tsx";
+import LocalSeoMapPack from "./pages/blog/LocalSeoMapPack.tsx";
+import AiSearchSgeAustralia from "./pages/blog/AiSearchSgeAustralia.tsx";
+import SeoVsGoogleAdsCost from "./pages/blog/SeoVsGoogleAdsCost.tsx";
+import ShopifyVsWooCommerceSeo from "./pages/blog/ShopifyVsWooCommerceSeo.tsx";
 import HamzaInvoice from "./pages/hamza/HamzaInvoice.tsx";
 import HamzaRecords from "./pages/hamza/HamzaRecords.tsx";
 import HamzaInvoiceView from "./pages/hamza/HamzaInvoiceView.tsx";
@@ -127,6 +131,10 @@ const App = () => (
             <Route path="/blog/content-strategy-core-update" element={<ContentStrategyCoreUpdate />} />
             <Route path="/blog/technical-seo-core-update" element={<TechnicalSeoCoreUpdate />} />
             <Route path="/blog/local-entity-core-update" element={<LocalEntityCoreUpdate />} />
+            <Route path="/blog/local-seo-map-pack" element={<LocalSeoMapPack />} />
+            <Route path="/blog/ai-search-sge-australia" element={<AiSearchSgeAustralia />} />
+            <Route path="/blog/seo-vs-google-ads-cost" element={<SeoVsGoogleAdsCost />} />
+            <Route path="/blog/shopify-vs-woocommerce-seo" element={<ShopifyVsWooCommerceSeo />} />
             {/* Hamza Invoice System */}
             <Route path="/hamza" element={<HamzaAuthGuard><HamzaInvoice /></HamzaAuthGuard>} />
             <Route path="/hamza/records" element={<HamzaAuthGuard><HamzaRecords /></HamzaAuthGuard>} />
