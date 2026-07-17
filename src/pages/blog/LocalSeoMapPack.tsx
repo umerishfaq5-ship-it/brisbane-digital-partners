@@ -54,22 +54,22 @@ const LocalSeoMapPack = () => (
       <SectionH2>The "Near Me" Phenomenon</SectionH2>
 
       <p className="mb-6 text-lg leading-relaxed text-muted-foreground">
-        When people need a tradie, a clinic, or a local service, they don't want to browse through 10 pages of websites. They want immediate solutions. This is why <strong>"near me"</strong> searches have skyrocketed over the last few years. 
+        When people need a tradie, a clinic, or a local service, they don't want to browse through 10 pages of websites. They want immediate solutions. This is why <strong>"near me"</strong> searches have skyrocketed over the last few years.
       </p>
 
       <p className="mb-6 text-lg leading-relaxed text-muted-foreground">
         Google knows this. That's why they push the Google Map Pack (the top 3 local businesses shown on a map) to the very top of the search results, above organic website listings.
       </p>
 
-      <Blockquote 
-        quote="If your business isn't in the top 3 Map Pack results, you don't exist to 80% of local searchers." 
-        author="Brisbane Digital Partners Local SEO Team" 
+      <Blockquote
+        quote="If your business isn't in the top 3 Map Pack results, you don't exist to 80% of local searchers."
+        author="Brisbane Digital Partners Local SEO Team"
       />
 
       <SectionH2>Why Your Competitor is Winning</SectionH2>
 
       <p className="mb-6 text-lg leading-relaxed text-muted-foreground">
-        Your competitor isn't getting calls because they are better at what they do. They are getting calls because they have optimized their <Link to="/services/google-business-profile" className="font-semibold underline text-accent hover:text-accent/80">Google Business Profile (GBP)</</Link>.
+        Your competitor isn't getting calls because they are better at what they do. They are getting calls because they have optimized their <Link to="/services/google-business-profile" className="font-semibold underline text-accent hover:text-accent/80">Google Business Profile (GBP)</Link>.
       </p>
 
       <ul className="mb-8 space-y-2">
