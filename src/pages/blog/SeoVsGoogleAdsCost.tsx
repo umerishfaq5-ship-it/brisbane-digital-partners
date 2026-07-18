@@ -15,7 +15,7 @@ const schema = {
     "@type": "Organization", "name": "Brisbane Digital Partners",
     "logo": { "@type": "ImageObject", "url": "https://brisbanedigitalpartners.com.au/logo.png" }
   },
-  "datePublished": "2026-07-18"
+  "datePublished": "2026-07-16"
 };
 
 const SeoVsGoogleAdsCost = () => (
@@ -28,7 +28,7 @@ const SeoVsGoogleAdsCost = () => (
     <BlogPostLayout
       title="The Rising Cost of Google Ads in Australia: Why SEO is Your Only Sustainable Strategy"
       subtitle="Are you burning thousands of dollars every month on PPC? Discover why relying solely on Google Ads is a risky strategy and how SEO builds long-term equity."
-      date="July 18, 2026"
+      date="July 16, 2026"
       readTime="7 min read"
       category="Marketing Strategy"
       heroImage="https://images.unsplash.com/photo-1554224155-6726b3ff858f?q=80&w=2072&fm=webp&fit=crop"
