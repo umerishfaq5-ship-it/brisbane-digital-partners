@@ -15,7 +15,7 @@ const schema = {
     "@type": "Organization", "name": "Brisbane Digital Partners",
     "logo": { "@type": "ImageObject", "url": "https://brisbanedigitalpartners.com.au/logo.png" }
   },
-  "datePublished": "2026-07-18"
+  "datePublished": "2026-07-16"
 };
 
 const ShopifyVsWooCommerceSeo = () => (
@@ -28,7 +28,7 @@ const ShopifyVsWooCommerceSeo = () => (
     <BlogPostLayout
       title="Shopify vs WooCommerce: Which Platform Actually Ranks Better on Google for Australian Stores?"
       subtitle="The ultimate E-commerce showdown. We break down the technical SEO, site speed, and scalability of both platforms so you can make the right choice for your brand."
-      date="July 18, 2026"
+      date="July 16, 2026"
       readTime="10 min read"
       category="E-commerce SEO"
       heroImage="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?q=80&w=2070&fm=webp&fit=crop"

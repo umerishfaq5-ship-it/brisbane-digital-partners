@@ -15,7 +15,7 @@ const schema = {
     "@type": "Organization", "name": "Brisbane Digital Partners",
     "logo": { "@type": "ImageObject", "url": "https://brisbanedigitalpartners.com.au/logo.png" }
   },
-  "datePublished": "2026-07-18"
+  "datePublished": "2026-07-16"
 };
 
 const LocalSeoMapPack = () => (
@@ -28,7 +28,7 @@ const LocalSeoMapPack = () => (
     <BlogPostLayout
       title="Why Your Local Competitor is Getting All the Calls (And How the Google Map Pack Fixes It)"
       subtitle="46% of all Google searches have local intent. If your business isn't showing up in the top 3 Map Pack spots, you are essentially invisible to local customers."
-      date="July 18, 2026"
+      date="July 16, 2026"
       readTime="6 min read"
       category="Local SEO"
       heroImage="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=2070&fm=webp&fit=crop"

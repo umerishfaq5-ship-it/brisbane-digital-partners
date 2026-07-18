@@ -15,7 +15,7 @@ const schema = {
     "@type": "Organization", "name": "Brisbane Digital Partners",
     "logo": { "@type": "ImageObject", "url": "https://brisbanedigitalpartners.com.au/logo.png" }
   },
-  "datePublished": "2026-07-18"
+  "datePublished": "2026-07-16"
 };
 
 const AiSearchSgeAustralia = () => (
@@ -28,7 +28,7 @@ const AiSearchSgeAustralia = () => (
     <BlogPostLayout
       title="How AI Search (ChatGPT & Google SGE) is Changing How Australians Find Businesses in 2026"
       subtitle="Generative AI is shifting the search landscape. Here is how forward-thinking CEOs and Marketing Directors are adapting their strategies for AI visibility."
-      date="July 18, 2026"
+      date="July 16, 2026"
       readTime="8 min read"
       category="Technical SEO"
       heroImage="https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=2070&fm=webp&fit=crop"
