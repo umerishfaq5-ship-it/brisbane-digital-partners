@@ -70,33 +70,39 @@ const Footer = () => (
 
         {/* SEO Services */}
         <div className="md:col-span-2">
-          <p className="font-heading font-semibold mb-5 text-xs uppercase tracking-[0.2em] text-accent">SEO &amp; Ads</p>
+          <p className="font-heading font-semibold mb-5 text-xs uppercase tracking-[0.2em] text-accent">SEO Services</p>
           <nav aria-label="Footer SEO Services Navigation">
             <ul className="space-y-3 text-sm">
-              <li><Link to="/services/seo-audits" className="opacity-60 hover:opacity-100 hover:text-accent transition-all duration-300">SEO Audits</Link></li>
+              <li><Link to="/services/technical-seo" className="opacity-60 hover:opacity-100 hover:text-accent transition-all duration-300">Technical SEO</Link></li>
               <li><Link to="/services/local-seo" className="opacity-60 hover:opacity-100 hover:text-accent transition-all duration-300">Local SEO</Link></li>
-              <li><Link to="/services/google-business-profile" className="opacity-60 hover:opacity-100 hover:text-accent transition-all duration-300">Google Business Profile</Link></li>
-              <li><Link to="/services/ppc-google-ads" className="opacity-60 hover:opacity-100 hover:text-accent transition-all duration-300">PPC &amp; Google Ads</Link></li>
-              <li><Link to="/services/social-media-ads" className="opacity-60 hover:opacity-100 hover:text-accent transition-all duration-300">Social Media Ads</Link></li>
+              <li><Link to="/services/ecommerce-seo" className="opacity-60 hover:opacity-100 hover:text-accent transition-all duration-300">eCommerce SEO</Link></li>
+              <li><Link to="/services/link-building" className="opacity-60 hover:opacity-100 hover:text-accent transition-all duration-300">Link Building</Link></li>
+              <li><Link to="/services/ai-seo" className="opacity-60 hover:opacity-100 hover:text-accent transition-all duration-300">AI SEO / GEO</Link></li>
+              <li><Link to="/services/seo-audits" className="opacity-60 hover:opacity-100 hover:text-accent transition-all duration-300">SEO Audits</Link></li>
+              <li><Link to="/services/wordpress-seo" className="opacity-60 hover:opacity-100 hover:text-accent transition-all duration-300">WordPress SEO</Link></li>
+              <li><Link to="/services/shopify-seo" className="opacity-60 hover:opacity-100 hover:text-accent transition-all duration-300">Shopify SEO</Link></li>
+              <li><Link to="/services/small-business-seo" className="opacity-60 hover:opacity-100 hover:text-accent transition-all duration-300">Small Business SEO</Link></li>
+              <li><Link to="/services/seo-consulting" className="opacity-60 hover:opacity-100 hover:text-accent transition-all duration-300">SEO Consulting</Link></li>
             </ul>
           </nav>
         </div>
 
         {/* Web & Apps */}
         <div className="md:col-span-2">
-          <p className="font-heading font-semibold mb-5 text-xs uppercase tracking-[0.2em] text-accent">Web &amp; Apps</p>
-          <nav aria-label="Footer Web Services Navigation">
+          <p className="font-heading font-semibold mb-5 text-xs uppercase tracking-[0.2em] text-accent">Industry SEO</p>
+          <nav aria-label="Footer Industry SEO Navigation">
             <ul className="space-y-3 text-sm">
-              <li><Link to="/services/web-development" className="opacity-60 hover:opacity-100 hover:text-accent transition-all duration-300">Web Development</Link></li>
-              <li><Link to="/services/mobile-apps" className="opacity-60 hover:opacity-100 hover:text-accent transition-all duration-300">Mobile Apps</Link></li>
-              <li><Link to="/services/wordpress-development" className="opacity-60 hover:opacity-100 hover:text-accent transition-all duration-300">WordPress</Link></li>
-              <li><Link to="/services/shopify-development" className="opacity-60 hover:opacity-100 hover:text-accent transition-all duration-300">Shopify</Link></li>
-              <li><Link to="/services/woocommerce-development" className="opacity-60 hover:opacity-100 hover:text-accent transition-all duration-300">WooCommerce</Link></li>
-              <li><Link to="/our-team" className="opacity-60 hover:opacity-100 hover:text-accent transition-all duration-300">Our Team</Link></li>
+              <li><Link to="/industry/seo-for-tradies" className="opacity-60 hover:opacity-100 hover:text-accent transition-all duration-300">SEO for Tradies</Link></li>
+              <li><Link to="/industry/seo-for-dentists" className="opacity-60 hover:opacity-100 hover:text-accent transition-all duration-300">SEO for Dentists</Link></li>
+              <li><Link to="/industry/seo-for-lawyers" className="opacity-60 hover:opacity-100 hover:text-accent transition-all duration-300">SEO for Lawyers</Link></li>
+              <li><Link to="/industry/seo-for-real-estate" className="opacity-60 hover:opacity-100 hover:text-accent transition-all duration-300">Real Estate SEO</Link></li>
+              <li><Link to="/industry/healthcare-seo" className="opacity-60 hover:opacity-100 hover:text-accent transition-all duration-300">Healthcare SEO</Link></li>
+              <li><Link to="/industry/retail-seo" className="opacity-60 hover:opacity-100 hover:text-accent transition-all duration-300">Retail SEO</Link></li>
+              <li><Link to="/industry/accountant-seo" className="opacity-60 hover:opacity-100 hover:text-accent transition-all duration-300">Accountant SEO</Link></li>
+              <li><Link to="/industry/hospitality-seo" className="opacity-60 hover:opacity-100 hover:text-accent transition-all duration-300">Hospitality SEO</Link></li>
             </ul>
           </nav>
         </div>
-
 
         {/* Locations */}
         <div className="md:col-span-2">
@@ -104,11 +110,14 @@ const Footer = () => (
           <nav aria-label="Footer Locations Navigation">
             <ul className="space-y-3 text-sm">
               <li><Link to="/locations/brisbane-seo" className="opacity-60 hover:opacity-100 hover:text-accent transition-all duration-300">Brisbane, QLD</Link></li>
+              <li><Link to="/locations/gold-coast-seo" className="opacity-60 hover:opacity-100 hover:text-accent transition-all duration-300">Gold Coast, QLD</Link></li>
+              <li><Link to="/locations/sunshine-coast-seo" className="opacity-60 hover:opacity-100 hover:text-accent transition-all duration-300">Sunshine Coast, QLD</Link></li>
               <li><Link to="/locations/sydney-seo" className="opacity-60 hover:opacity-100 hover:text-accent transition-all duration-300">Sydney, NSW</Link></li>
               <li><Link to="/locations/melbourne-seo" className="opacity-60 hover:opacity-100 hover:text-accent transition-all duration-300">Melbourne, VIC</Link></li>
               <li><Link to="/locations/perth-seo" className="opacity-60 hover:opacity-100 hover:text-accent transition-all duration-300">Perth, WA</Link></li>
               <li><Link to="/locations/adelaide-seo" className="opacity-60 hover:opacity-100 hover:text-accent transition-all duration-300">Adelaide, SA</Link></li>
               <li><Link to="/locations/canberra-seo" className="opacity-60 hover:opacity-100 hover:text-accent transition-all duration-300">Canberra, ACT</Link></li>
+              <li><Link to="/locations/hobart-seo" className="opacity-60 hover:opacity-100 hover:text-accent transition-all duration-300">Hobart, TAS</Link></li>
             </ul>
           </nav>
         </div>

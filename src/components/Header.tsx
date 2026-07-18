@@ -9,30 +9,54 @@ import { motion, AnimatePresence } from "framer-motion";
 ───────────────────────────────────────────────────────────────── */
 const serviceGroups = [
   {
-    label: "SEO & Marketing",
+    label: "Core SEO Services",
+    desc: "Full-spectrum SEO for Australian businesses",
     items: [
-      { label: "SEO Audits & Strategy",          href: "/services/seo-audits",   desc: "Technical audits & ranking roadmaps" },
-      { label: "Local SEO for Australian Businesses", href: "/services/local-seo", desc: "Google Business & Map Pack rankings" },
+      { label: "Technical SEO",          href: "/services/technical-seo",       desc: "Crawl, speed & indexation fixes" },
+      { label: "Local SEO",              href: "/services/local-seo",            desc: "Google Map Pack & GBP rankings" },
+      { label: "eCommerce SEO",          href: "/services/ecommerce-seo",        desc: "Product & category page rankings" },
+      { label: "Link Building",          href: "/services/link-building",        desc: "Editorial backlinks & digital PR" },
+      { label: "SEO Audits & Strategy",  href: "/services/seo-audits",           desc: "Data-driven ranking roadmaps" },
+      { label: "SEO Migrations",         href: "/services/seo-migration",        desc: "Zero-loss website migrations" },
+      { label: "AI SEO / GEO",           href: "/services/ai-seo",              desc: "Get cited by ChatGPT & Gemini" },
+      { label: "Google Business Profile", href: "/services/google-business-profile", desc: "Map Pack & GBP optimisation" },
     ],
   },
   {
-    label: "Web & App Development",
+    label: "Platform SEO",
+    desc: "CMS-specific SEO expertise",
     items: [
-      { label: "Custom Web Development",  href: "/services/web-development", desc: "React, Next.js & modern frameworks" },
-      { label: "Mobile App Development",  href: "/services/mobile-apps",     desc: "React Native iOS & Android" },
+      { label: "WordPress SEO",     href: "/services/wordpress-seo",    desc: "Yoast, RankMath & WP architecture" },
+      { label: "WooCommerce SEO",   href: "/services/woocommerce-seo",  desc: "eCommerce SEO for WooCommerce" },
+      { label: "Shopify SEO",       href: "/services/shopify-seo",      desc: "Fix Shopify's SEO limitations" },
+      { label: "Magento SEO",       href: "/services/magento-seo",      desc: "Enterprise Magento SEO" },
+      { label: "BigCommerce SEO",   href: "/services/bigcommerce-seo",  desc: "BigCommerce organic rankings" },
     ],
   },
   {
-    label: "CMS Platforms",
+    label: "Industry SEO",
+    desc: "Sector-specific SEO strategies",
     items: [
-      { label: "WordPress",         href: "/services/wordpress-development",   desc: "Custom themes & WooCommerce" },
-      { label: "Squarespace",       href: "/services/squarespace-development", desc: "Premium creative websites" },
-      { label: "Shopify",           href: "/services/shopify-development",     desc: "Shopify & Shopify Plus stores" },
-      { label: "WooCommerce",       href: "/services/woocommerce-development", desc: "Flexible WordPress e-commerce" },
-      { label: "Wix",               href: "/services/wix-development",         desc: "Professional Wix Studio builds" },
-      { label: "BigCommerce",       href: "/services/bigcommerce-development", desc: "Enterprise e-commerce platform" },
-      { label: "Magento",           href: "/services/magento-development",     desc: "Adobe Commerce enterprise builds" },
-      { label: "Maropost / Neto",   href: "/services/maropost-neto",           desc: "Australian-built omnichannel ERP" },
+      { label: "SEO for Tradies",        href: "/industry/seo-for-tradies",      desc: "Plumbers, electricians & builders" },
+      { label: "SEO for Dentists",       href: "/industry/seo-for-dentists",     desc: "Dental clinic local SEO" },
+      { label: "SEO for Lawyers",        href: "/industry/seo-for-lawyers",      desc: "Law firm lead generation" },
+      { label: "SEO for Real Estate",    href: "/industry/seo-for-real-estate",  desc: "Property & agency rankings" },
+      { label: "SEO for Healthcare",     href: "/industry/healthcare-seo",       desc: "Medical & allied health SEO" },
+      { label: "SEO for E-Commerce",     href: "/industry/retail-seo",           desc: "Retail & online store growth" },
+    ],
+  },
+  {
+    label: "Web Development",
+    desc: "Premium builds across all platforms",
+    items: [
+      { label: "Custom Web Development",  href: "/services/web-development",         desc: "React, Next.js & modern frameworks" },
+      { label: "Mobile App Development",  href: "/services/mobile-apps",             desc: "React Native iOS & Android" },
+      { label: "WordPress",               href: "/services/wordpress-development",    desc: "Custom themes & WooCommerce" },
+      { label: "Shopify",                 href: "/services/shopify-development",      desc: "Shopify & Shopify Plus stores" },
+      { label: "WooCommerce",             href: "/services/woocommerce-development",  desc: "Flexible WordPress e-commerce" },
+      { label: "BigCommerce",             href: "/services/bigcommerce-development",  desc: "Enterprise e-commerce platform" },
+      { label: "Magento",                 href: "/services/magento-development",      desc: "Adobe Commerce enterprise builds" },
+      { label: "Squarespace / Wix",       href: "/services/squarespace-development",  desc: "Premium creative websites" },
     ],
   },
 ];
@@ -46,6 +70,7 @@ const navLinks = [
   { label: "Blog",         href: "/blog" },
   { label: "Contact",      href: "/contact" },
 ];
+
 
 /* ─────────────────────────────────────────────────────────────────
    Header Component
@@ -164,63 +189,29 @@ const Header = () => {
                       animate={{ opacity: 1, y: 0 }}
                       exit={{ opacity: 0, y: 10 }}
                       transition={{ duration: 0.2, ease: [0.16, 1, 0.3, 1] }}
-                      className="absolute top-full left-1/2 -translate-x-1/2 mt-3 w-[680px] bg-card rounded-2xl shadow-premium border border-border overflow-hidden"
+                      className="absolute top-full left-1/2 -translate-x-1/2 mt-3 w-[900px] bg-card rounded-2xl shadow-premium border border-border overflow-hidden"
                       onMouseEnter={handleMegaEnter}
                       onMouseLeave={handleMegaLeave}
                     >
-                      <div className="grid grid-cols-3 gap-0">
+                      <div className="grid grid-cols-4 divide-x divide-border/50">
 
                         {/* ── Service Groups ─────────────── */}
                         {serviceGroups.map((group) => (
-                          <div
-                            key={group.label}
-                            className={`p-5 ${
-                              group.label === "CMS Platforms"
-                                ? "col-span-3 border-t border-border/50 bg-muted/30"
-                                : "border-r border-border/50"
-                            }`}
-                          >
-                            <p className="text-[10px] font-bold uppercase tracking-[0.2em] text-accent mb-3 px-1">
-                              {group.label}
-                            </p>
-
-                            {group.label === "CMS Platforms" ? (
-                              /* CMS grid — 4 columns */
-                              <div className="grid grid-cols-4 gap-1">
-                                {group.items.map((item) => (
-                                  <Link
-                                    key={item.href}
-                                    to={item.href}
-                                    className="block px-3 py-2.5 rounded-lg hover:bg-muted transition-colors duration-200 group"
-                                  >
-                                    <p className="text-sm font-semibold text-foreground group-hover:text-accent transition-colors">
-                                      {item.label}
-                                    </p>
-                                    <p className="text-[11px] text-muted-foreground leading-tight mt-0.5">
-                                      {item.desc}
-                                    </p>
-                                  </Link>
-                                ))}
-                              </div>
-                            ) : (
-                              /* Standard two-item column */
-                              <div className="space-y-0.5">
-                                {group.items.map((item) => (
-                                  <Link
-                                    key={item.href}
-                                    to={item.href}
-                                    className="block px-3 py-2.5 rounded-lg hover:bg-muted transition-colors duration-200 group"
-                                  >
-                                    <p className="text-sm font-semibold text-foreground group-hover:text-accent transition-colors">
-                                      {item.label}
-                                    </p>
-                                    <p className="text-[11px] text-muted-foreground leading-tight mt-0.5">
-                                      {item.desc}
-                                    </p>
-                                  </Link>
-                                ))}
-                              </div>
-                            )}
+                          <div key={group.label} className="p-5">
+                            <p className="text-[10px] font-bold uppercase tracking-[0.2em] text-accent mb-1 px-1">{group.label}</p>
+                            {group.desc && <p className="text-[10px] text-muted-foreground mb-3 px-1 leading-tight">{group.desc}</p>}
+                            <div className="space-y-0.5">
+                              {group.items.map((item) => (
+                                <Link
+                                  key={item.href}
+                                  to={item.href}
+                                  className="block px-2 py-2 rounded-lg hover:bg-muted transition-colors duration-200 group"
+                                >
+                                  <p className="text-[12px] font-semibold text-foreground group-hover:text-accent transition-colors leading-tight">{item.label}</p>
+                                  <p className="text-[10px] text-muted-foreground leading-tight mt-0.5">{item.desc}</p>
+                                </Link>
+                              ))}
+                            </div>
                           </div>
                         ))}
 
@@ -228,7 +219,7 @@ const Header = () => {
 
                       {/* ── Footer Row ──────────────────────── */}
                       <div className="border-t border-border/50 px-5 py-3 flex items-center justify-between bg-muted/20">
-                        <p className="text-xs text-muted-foreground">10 specialist services across SEO, web & e-commerce</p>
+                        <p className="text-xs text-muted-foreground">30+ specialist services across SEO, web & e-commerce</p>
                         <Link
                           to="/services"
                           className="inline-flex items-center gap-1.5 text-xs font-bold text-accent hover:text-accent/80 transition-colors"
