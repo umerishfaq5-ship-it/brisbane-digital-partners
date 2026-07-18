@@ -26,12 +26,38 @@ import SeoMigration from "./pages/services/SeoMigration.tsx";
 import SocialMediaAds from "./pages/services/SocialMediaAds.tsx";
 import PpcAds       from "./pages/services/PpcAds.tsx";
 import GoogleBusinessProfile from "./pages/services/GoogleBusinessProfile.tsx";
+// SEO Service Pages
+import TechnicalSeo from "./pages/services/TechnicalSeo.tsx";
+import EcommerceSeo from "./pages/services/EcommerceSeo.tsx";
+import LinkBuilding from "./pages/services/LinkBuilding.tsx";
+import AiSeo from "./pages/services/AiSeo.tsx";
+import WordPressSeo from "./pages/services/WordPressSeo.tsx";
+import ShopifySeo from "./pages/services/ShopifySeo.tsx";
+import WooCommerceSeo from "./pages/services/WooCommerceSeo.tsx";
+import EnterpriseSeo from "./pages/services/EnterpriseSeo.tsx";
+import SmallBusinessSeo from "./pages/services/SmallBusinessSeo.tsx";
+import B2bSeo from "./pages/services/B2bSeo.tsx";
+import SeoConsulting from "./pages/services/SeoConsulting.tsx";
+// Industry Pages
+import SeoForTradies from "./pages/industry/SeoForTradies.tsx";
+import SeoForDentists from "./pages/industry/SeoForDentists.tsx";
+import SeoForLawyers from "./pages/industry/SeoForLawyers.tsx";
+import SeoForRealEstate from "./pages/industry/SeoForRealEstate.tsx";
+import RetailSeo from "./pages/industry/RetailSeo.tsx";
+import HospitalitySeo from "./pages/industry/HospitalitySeo.tsx";
+import HealthcareSeo from "./pages/industry/HealthcareSeo.tsx";
+import AccountantSeo from "./pages/industry/AccountantSeo.tsx";
+import MortgageBrokerSeo from "./pages/industry/MortgageBrokerSeo.tsx";
+import EducationSeo from "./pages/industry/EducationSeo.tsx";
 import BrisbaneSeo  from "./pages/locations/BrisbaneSeo.tsx";
 import SydneySeo    from "./pages/locations/SydneySeo.tsx";
 import MelbourneSeo from "./pages/locations/MelbourneSeo.tsx";
 import PerthSeo     from "./pages/locations/PerthSeo.tsx";
 import AdelaideSeo  from "./pages/locations/AdelaideSeo.tsx";
 import CanberraSeo  from "./pages/locations/CanberraSeo.tsx";
+import GoldCoastSeo from "./pages/locations/GoldCoastSeo.tsx";
+import SunshineCoastSeo from "./pages/locations/SunshineCoastSeo.tsx";
+import HobartSeo from "./pages/locations/HobartSeo.tsx";
 import Portfolio from "./pages/Portfolio.tsx";
 import Testimonials from "./pages/Testimonials.tsx";
 import Contact from "./pages/Contact.tsx";
@@ -99,6 +125,29 @@ const App = () => (
             <Route path="/services/social-media-ads"        element={<SocialMediaAds />} />
             <Route path="/services/ppc-google-ads"          element={<PpcAds />} />
             <Route path="/services/google-business-profile" element={<GoogleBusinessProfile />} />
+            {/* SEO Service Pages */}
+            <Route path="/services/technical-seo" element={<TechnicalSeo />} />
+            <Route path="/services/ecommerce-seo" element={<EcommerceSeo />} />
+            <Route path="/services/link-building" element={<LinkBuilding />} />
+            <Route path="/services/ai-seo" element={<AiSeo />} />
+            <Route path="/services/wordpress-seo" element={<WordPressSeo />} />
+            <Route path="/services/shopify-seo" element={<ShopifySeo />} />
+            <Route path="/services/woocommerce-seo" element={<WooCommerceSeo />} />
+            <Route path="/services/enterprise-seo" element={<EnterpriseSeo />} />
+            <Route path="/services/small-business-seo" element={<SmallBusinessSeo />} />
+            <Route path="/services/b2b-seo" element={<B2bSeo />} />
+            <Route path="/services/seo-consulting" element={<SeoConsulting />} />
+            {/* Industry Pages */}
+            <Route path="/industry/seo-for-tradies" element={<SeoForTradies />} />
+            <Route path="/industry/seo-for-dentists" element={<SeoForDentists />} />
+            <Route path="/industry/seo-for-lawyers" element={<SeoForLawyers />} />
+            <Route path="/industry/seo-for-real-estate" element={<SeoForRealEstate />} />
+            <Route path="/industry/retail-seo" element={<RetailSeo />} />
+            <Route path="/industry/hospitality-seo" element={<HospitalitySeo />} />
+            <Route path="/industry/healthcare-seo" element={<HealthcareSeo />} />
+            <Route path="/industry/accountant-seo" element={<AccountantSeo />} />
+            <Route path="/industry/mortgage-broker-seo" element={<MortgageBrokerSeo />} />
+            <Route path="/industry/education-seo" element={<EducationSeo />} />
             {/* Location Pages */}
             <Route path="/locations/brisbane-seo"  element={<BrisbaneSeo />} />
             <Route path="/locations/sydney-seo"    element={<SydneySeo />} />
@@ -106,6 +155,9 @@ const App = () => (
             <Route path="/locations/perth-seo"     element={<PerthSeo />} />
             <Route path="/locations/adelaide-seo"  element={<AdelaideSeo />} />
             <Route path="/locations/canberra-seo"  element={<CanberraSeo />} />
+            <Route path="/locations/gold-coast-seo" element={<GoldCoastSeo />} />
+            <Route path="/locations/sunshine-coast-seo" element={<SunshineCoastSeo />} />
+            <Route path="/locations/hobart-seo" element={<HobartSeo />} />
             <Route path="/portfolio" element={<Portfolio />} />
             <Route path="/portfolio/my-fitness-coach"         element={<MyFitnessCoach />} />
             <Route path="/portfolio/circle-it"                element={<CircleIt />} />
