@@ -83,6 +83,13 @@ const Footer = () => (
               <li><Link to="/services/shopify-seo" className="opacity-60 hover:opacity-100 hover:text-accent transition-all duration-300">Shopify SEO</Link></li>
               <li><Link to="/services/small-business-seo" className="opacity-60 hover:opacity-100 hover:text-accent transition-all duration-300">Small Business SEO</Link></li>
               <li><Link to="/services/seo-consulting" className="opacity-60 hover:opacity-100 hover:text-accent transition-all duration-300">SEO Consulting</Link></li>
+              <li><Link to="/services/on-page-seo" className="opacity-60 hover:opacity-100 hover:text-accent transition-all duration-300">On-Page SEO</Link></li>
+              <li><Link to="/services/content-marketing" className="opacity-60 hover:opacity-100 hover:text-accent transition-all duration-300">Content Marketing</Link></li>
+              <li><Link to="/services/facebook-ads" className="opacity-60 hover:opacity-100 hover:text-accent transition-all duration-300">Facebook Ads</Link></li>
+              <li><Link to="/services/email-marketing" className="opacity-60 hover:opacity-100 hover:text-accent transition-all duration-300">Email Marketing</Link></li>
+              <li><Link to="/services/conversion-rate-optimisation" className="opacity-60 hover:opacity-100 hover:text-accent transition-all duration-300">CRO</Link></li>
+              <li><Link to="/services/ppc-brisbane" className="opacity-60 hover:opacity-100 hover:text-accent transition-all duration-300">PPC Brisbane</Link></li>
+              <li><Link to="/services/seo-packages" className="opacity-60 hover:opacity-100 hover:text-accent transition-all duration-300">SEO Packages</Link></li>
             </ul>
           </nav>
         </div>
