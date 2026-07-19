@@ -38,6 +38,17 @@ import EnterpriseSeo from "./pages/services/EnterpriseSeo.tsx";
 import SmallBusinessSeo from "./pages/services/SmallBusinessSeo.tsx";
 import B2bSeo from "./pages/services/B2bSeo.tsx";
 import SeoConsulting from "./pages/services/SeoConsulting.tsx";
+import FacebookAds from "./pages/services/FacebookAds.tsx";
+import ContentMarketing from "./pages/services/ContentMarketing.tsx";
+import PpcBrisbane from "./pages/services/PpcBrisbane.tsx";
+import GoogleAdsBrisbane from "./pages/services/GoogleAdsBrisbane.tsx";
+import ConversionRateOptimisation from "./pages/services/ConversionRateOptimisation.tsx";
+import EmailMarketing from "./pages/services/EmailMarketing.tsx";
+import OnPageSeo from "./pages/services/OnPageSeo.tsx";
+import SeoPackages from "./pages/services/SeoPackages.tsx";
+import GoogleShopping from "./pages/services/GoogleShopping.tsx";
+import OffPageSeo from "./pages/services/OffPageSeo.tsx";
+import LinkedInAds from "./pages/services/LinkedInAds.tsx";
 // Industry Pages
 import SeoForTradies from "./pages/industry/SeoForTradies.tsx";
 import SeoForDentists from "./pages/industry/SeoForDentists.tsx";
@@ -137,6 +148,17 @@ const App = () => (
             <Route path="/services/small-business-seo" element={<SmallBusinessSeo />} />
             <Route path="/services/b2b-seo" element={<B2bSeo />} />
             <Route path="/services/seo-consulting" element={<SeoConsulting />} />
+            <Route path="/services/facebook-ads" element={<FacebookAds />} />
+            <Route path="/services/content-marketing" element={<ContentMarketing />} />
+            <Route path="/services/ppc-brisbane" element={<PpcBrisbane />} />
+            <Route path="/services/google-ads-brisbane" element={<GoogleAdsBrisbane />} />
+            <Route path="/services/conversion-rate-optimisation" element={<ConversionRateOptimisation />} />
+            <Route path="/services/email-marketing" element={<EmailMarketing />} />
+            <Route path="/services/on-page-seo" element={<OnPageSeo />} />
+            <Route path="/services/seo-packages" element={<SeoPackages />} />
+            <Route path="/services/google-shopping" element={<GoogleShopping />} />
+            <Route path="/services/off-page-seo" element={<OffPageSeo />} />
+            <Route path="/services/linkedin-ads" element={<LinkedInAds />} />
             {/* Industry Pages */}
             <Route path="/industry/seo-for-tradies" element={<SeoForTradies />} />
             <Route path="/industry/seo-for-dentists" element={<SeoForDentists />} />

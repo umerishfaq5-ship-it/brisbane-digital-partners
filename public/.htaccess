@@ -1,0 +1,97 @@
+# ============================================================
+#  Anti-Gravity / Brisbane Digital Partners
+#  LiteSpeed-hardened .htaccess for React SPA + prerendered pages
+#
+#  ROOT CAUSE FIX: LiteSpeed handles [OR] in RewriteCond
+#  differently from Apache — the original rule could silently
+#  skip the fallback when a directory path doesn't exist on disk.
+#  This version uses separate !-f / !-d conditions (AND logic)
+#  with an absolute /index.html target — guaranteed to work on
+#  LiteSpeed, Apache, and OpenLiteSpeed.
+# ============================================================
+
+Options -MultiViews
+
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /
+
+  # ── 1. Let real files pass through (JS, CSS, images, fonts, etc.)
+  RewriteCond %{REQUEST_FILENAME} -f
+  RewriteRule ^ - [L]
+
+  # ── 2. Let real directories pass through
+  #       (prerendered /services/local-seo/, /blog/why-your-..., etc.)
+  RewriteCond %{REQUEST_FILENAME} -d
+  RewriteRule ^ - [L]
+
+  # ── 3. Everything else → index.html (React Router takes over)
+  #       Using absolute path with [L,QSA] ensures LiteSpeed
+  #       doesn't re-enter the ruleset and cause redirect loops.
+  RewriteRule ^ /index.html [L,QSA]
+</IfModule>
+
+# ── MIME types ──────────────────────────────────────────────
+<IfModule mod_mime.c>
+  AddType application/javascript   .js .mjs
+  AddType text/css                 .css
+  AddType image/webp               .webp
+  AddType image/svg+xml            .svg
+  AddType image/avif               .avif
+  AddType font/woff2               .woff2
+  AddType application/json         .json
+</IfModule>
+
+# ── Compression ─────────────────────────────────────────────
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/plain text/css
+  AddOutputFilterByType DEFLATE application/javascript application/json
+  AddOutputFilterByType DEFLATE image/svg+xml font/woff2
+</IfModule>
+
+# ── Browser caching ─────────────────────────────────────────
+<IfModule mod_expires.c>
+  ExpiresActive On
+
+  # HTML — no cache (always fresh for prerendered pages)
+  ExpiresByType text/html                  "access plus 0 seconds"
+
+  # Versioned assets (Vite adds content hash) — cache 1 year
+  ExpiresByType application/javascript     "access plus 1 year"
+  ExpiresByType text/css                   "access plus 1 year"
+
+  # Images
+  ExpiresByType image/webp                 "access plus 1 year"
+  ExpiresByType image/avif                 "access plus 1 year"
+  ExpiresByType image/jpeg                 "access plus 1 year"
+  ExpiresByType image/png                  "access plus 1 year"
+  ExpiresByType image/gif                  "access plus 1 year"
+  ExpiresByType image/svg+xml              "access plus 1 year"
+
+  # Fonts
+  ExpiresByType font/woff2                 "access plus 1 year"
+</IfModule>
+
+# ── Security headers ────────────────────────────────────────
+<IfModule mod_headers.c>
+  # Prevent MIME-type sniffing
+  Header set X-Content-Type-Options "nosniff"
+
+  # Clickjacking protection
+  Header set X-Frame-Options "SAMEORIGIN"
+
+  # XSS filter
+  Header set X-XSS-Protection "1; mode=block"
+
+  # Cache-control for HTML (never cache — serve fresh prerendered HTML)
+  <FilesMatch "\.html$">
+    Header set Cache-Control "no-cache, no-store, must-revalidate"
+    Header set Pragma "no-cache"
+    Header set Expires "0"
+  </FilesMatch>
+
+  # Long-term cache for hashed assets
+  <FilesMatch "\.(js|css|woff2|webp|avif|jpg|png|svg)$">
+    Header set Cache-Control "public, max-age=31536000, immutable"
+  </FilesMatch>
+</IfModule>

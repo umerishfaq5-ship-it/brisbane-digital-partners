@@ -4,22 +4,36 @@ import { Button } from "@/components/ui/button";
 import { Menu, X, ChevronDown, ArrowRight } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 
-/* ─────────────────────────────────────────────────────────────────
-   Navigation Data — grouped for mega-menu
-───────────────────────────────────────────────────────────────── */
-const serviceGroups = [
+/* ───────────────────────────────────────────────────────────�const serviceGroups = [
   {
     label: "Core SEO Services",
     desc: "Full-spectrum SEO for Australian businesses",
     items: [
-      { label: "Technical SEO",          href: "/services/technical-seo",       desc: "Crawl, speed & indexation fixes" },
-      { label: "Local SEO",              href: "/services/local-seo",            desc: "Google Map Pack & GBP rankings" },
-      { label: "eCommerce SEO",          href: "/services/ecommerce-seo",        desc: "Product & category page rankings" },
-      { label: "Link Building",          href: "/services/link-building",        desc: "Editorial backlinks & digital PR" },
-      { label: "SEO Audits & Strategy",  href: "/services/seo-audits",           desc: "Data-driven ranking roadmaps" },
-      { label: "SEO Migrations",         href: "/services/seo-migration",        desc: "Zero-loss website migrations" },
-      { label: "AI SEO / GEO",           href: "/services/ai-seo",              desc: "Get cited by ChatGPT & Gemini" },
-      { label: "Google Business Profile", href: "/services/google-business-profile", desc: "Map Pack & GBP optimisation" },
+      { label: "Technical SEO",           href: "/services/technical-seo",                 desc: "Crawl, speed & indexation fixes" },
+      { label: "Local SEO",               href: "/services/local-seo",                     desc: "Google Map Pack & GBP rankings" },
+      { label: "On-Page SEO",             href: "/services/on-page-seo",                   desc: "Title tags, headings & content" },
+      { label: "eCommerce SEO",           href: "/services/ecommerce-seo",                 desc: "Product & category page rankings" },
+      { label: "Link Building",           href: "/services/link-building",                 desc: "Editorial backlinks & digital PR" },
+      { label: "Content Marketing",       href: "/services/content-marketing",             desc: "SEO-driven blog & topic clusters" },
+      { label: "SEO Audits & Strategy",   href: "/services/seo-audits",                    desc: "Data-driven ranking roadmaps" },
+      { label: "AI SEO / GEO",            href: "/services/ai-seo",                        desc: "Get cited by ChatGPT & Gemini" },
+      { label: "SEO Migrations",          href: "/services/seo-migration",                 desc: "Zero-loss website migrations" },
+      { label: "Google Business Profile", href: "/services/google-business-profile",       desc: "Map Pack & GBP optimisation" },
+      { label: "SEO Packages",            href: "/services/seo-packages",                  desc: "Local, Growth & Enterprise tiers" },
+      { label: "SEO Consulting",          href: "/services/seo-consulting",                desc: "Fractional Head of SEO" },
+    ],
+  },
+  {
+    label: "Paid Ads & Performance",
+    desc: "ROI-focused paid media management",
+    items: [
+      { label: "Google Ads Management",        href: "/services/ppc-google-ads",              desc: "Search, Shopping & Display Ads" },
+      { label: "PPC Agency Brisbane",          href: "/services/ppc-brisbane",                desc: "Local Brisbane PPC management" },
+      { label: "Google Ads Brisbane",          href: "/services/google-ads-brisbane",         desc: "Brisbane-specific Google Ads" },
+      { label: "Facebook & Meta Ads",          href: "/services/facebook-ads",                desc: "Full-funnel Facebook & Instagram" },
+      { label: "Social Media Ads",             href: "/services/social-media-ads",            desc: "Multi-platform paid social" },
+      { label: "Email Marketing",              href: "/services/email-marketing",             desc: "Automated sequences & campaigns" },
+      { label: "Conversion Rate Optimisation", href: "/services/conversion-rate-optimisation", desc: "Turn more visitors into leads" },
     ],
   },
   {
@@ -31,6 +45,9 @@ const serviceGroups = [
       { label: "Shopify SEO",       href: "/services/shopify-seo",      desc: "Fix Shopify's SEO limitations" },
       { label: "Magento SEO",       href: "/services/magento-seo",      desc: "Enterprise Magento SEO" },
       { label: "BigCommerce SEO",   href: "/services/bigcommerce-seo",  desc: "BigCommerce organic rankings" },
+      { label: "Small Business SEO", href: "/services/small-business-seo", desc: "Affordable SEO for SMBs" },
+      { label: "Enterprise SEO",    href: "/services/enterprise-seo",   desc: "Large-scale organic strategy" },
+      { label: "B2B SEO",           href: "/services/b2b-seo",          desc: "Pipeline-quality organic leads" },
     ],
   },
   {
@@ -43,19 +60,28 @@ const serviceGroups = [
       { label: "SEO for Real Estate",    href: "/industry/seo-for-real-estate",  desc: "Property & agency rankings" },
       { label: "SEO for Healthcare",     href: "/industry/healthcare-seo",       desc: "Medical & allied health SEO" },
       { label: "SEO for E-Commerce",     href: "/industry/retail-seo",           desc: "Retail & online store growth" },
+      { label: "Accountant SEO",         href: "/industry/accountant-seo",       desc: "Lead gen for accounting firms" },
+      { label: "Mortgage Broker SEO",    href: "/industry/mortgage-broker-seo",  desc: "Finance industry SEO" },
+      { label: "Hospitality SEO",        href: "/industry/hospitality-seo",      desc: "Hotels, restaurants & venues" },
+      { label: "Education SEO",          href: "/industry/education-seo",        desc: "Schools, RTOs & online courses" },
     ],
   },
   {
     label: "Web Development",
     desc: "Premium builds across all platforms",
     items: [
-      { label: "Custom Web Development",  href: "/services/web-development",         desc: "React, Next.js & modern frameworks" },
-      { label: "Mobile App Development",  href: "/services/mobile-apps",             desc: "React Native iOS & Android" },
-      { label: "WordPress",               href: "/services/wordpress-development",    desc: "Custom themes & WooCommerce" },
-      { label: "Shopify",                 href: "/services/shopify-development",      desc: "Shopify & Shopify Plus stores" },
-      { label: "WooCommerce",             href: "/services/woocommerce-development",  desc: "Flexible WordPress e-commerce" },
-      { label: "BigCommerce",             href: "/services/bigcommerce-development",  desc: "Enterprise e-commerce platform" },
-      { label: "Magento",                 href: "/services/magento-development",      desc: "Adobe Commerce enterprise builds" },
+      { label: "Custom Web Development", href: "/services/web-development",         desc: "React, Next.js & modern frameworks" },
+      { label: "Mobile App Development", href: "/services/mobile-apps",             desc: "React Native iOS & Android" },
+      { label: "WordPress",              href: "/services/wordpress-development",    desc: "Custom themes & WooCommerce" },
+      { label: "Shopify",                href: "/services/shopify-development",      desc: "Shopify & Shopify Plus stores" },
+      { label: "WooCommerce",            href: "/services/woocommerce-development",  desc: "Flexible WordPress e-commerce" },
+      { label: "BigCommerce",            href: "/services/bigcommerce-development",  desc: "Enterprise e-commerce platform" },
+      { label: "Magento",                href: "/services/magento-development",      desc: "Adobe Commerce enterprise builds" },
+      { label: "Squarespace / Wix",      href: "/services/squarespace-development",  desc: "Premium creative websites" },
+    ],
+  },
+];
+ { label: "Magento",                 href: "/services/magento-development",      desc: "Adobe Commerce enterprise builds" },
       { label: "Squarespace / Wix",       href: "/services/squarespace-development",  desc: "Premium creative websites" },
     ],
   },
