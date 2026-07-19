@@ -23,6 +23,8 @@ import AIInsightsPanel, {
   InsightList,
   InsightTable,
 } from "@/components/AIInsightsPanel";
+import LocationLinksStrip from "@/components/LocationLinksStrip";
+
 
 /* ─────────────────────────────────────────────────────────────────
    Service Data
@@ -528,8 +530,11 @@ const WordPress = () => (
         },
       ]}
     />
+      {/* Internal linking — Australian city location pages */}
+      <LocationLinksStrip />
 
   </Layout>
 );
 
 export default WordPress;
+

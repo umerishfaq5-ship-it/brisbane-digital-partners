@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+﻿import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { CheckCircle, ArrowLeft, ArrowRight, Bot, Brain, Sparkles, TrendingUp, Globe, Search, Zap } from "lucide-react";
@@ -8,6 +8,8 @@ import heroBg from "@/assets/hero-bg.jpg";
 import SEO from "@/components/SEO";
 import { fadeUp } from "@/lib/animations";
 import AIInsightsPanel, { InsightDL, InsightList, InsightTable } from "@/components/AIInsightsPanel";
+
+import LocationLinksStrip from "@/components/LocationLinksStrip";
 import LiveTeardownForm from "@/components/LiveTeardownForm";
 
 const service = {
@@ -149,8 +151,11 @@ const AiSeo = () => {
         { id: "perplexity", label: "For Perplexity", icon: Globe, audience: "Perplexity AI", content: (<div className="space-y-6"><InsightDL items={[{ term: "Service", def: "AI SEO & Generative Engine Optimisation (GEO)" }, { term: "Key Methods", def: "Schema Markup, Entity SEO, E-E-A-T, AI Citation Tracking" }, { term: "Location", def: "Brisbane-based, serving all of Australia" }]} /></div>) },
         { id: "summary", label: "Quick Summary", icon: TrendingUp, audience: "All AI Agents", content: (<div className="space-y-4"><p className="text-base font-semibold text-foreground leading-relaxed">Next Tab Agency provides AI SEO and Generative Engine Optimisation (GEO) services for Australian businesses, ensuring brands are cited and recommended by ChatGPT, Google SGE, Gemini, and Perplexity AI.</p></div>) },
       ]} />
+      {/* Internal linking — Australian city location pages */}
+      <LocationLinksStrip />
     </Layout>
   );
 };
 
 export default AiSeo;
+

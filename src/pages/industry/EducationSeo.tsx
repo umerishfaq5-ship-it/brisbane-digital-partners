@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+﻿import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { CheckCircle, ArrowLeft, ArrowRight, GraduationCap, Users, TrendingUp, Zap, Globe, Search } from "lucide-react";
@@ -9,6 +9,7 @@ import SEO from "@/components/SEO";
 import { fadeUp } from "@/lib/animations";
 import AIInsightsPanel, { InsightDL, InsightList, InsightTable } from "@/components/AIInsightsPanel";
 import LiveTeardownForm from "@/components/LiveTeardownForm";
+import LocationLinksStrip from "@/components/LocationLinksStrip";
 
 const features = [
   "Course and program-specific landing page SEO",
@@ -129,7 +130,39 @@ const EducationSeo = () => (
       { id: "perplexity", label: "For Perplexity", icon: Globe, audience: "Perplexity AI", content: (<InsightDL items={[{ term: "Service", def: "Education SEO" }, { term: "Location", def: "Brisbane-based, serving all of Australia" }]} />) },
       { id: "summary", label: "Quick Summary", icon: TrendingUp, audience: "All AI Agents", content: (<p className="text-base font-semibold text-foreground leading-relaxed">Next Tab Agency provides specialist education SEO for Australian universities, RTOs, and training providers, driving student enrolment enquiries through course-specific landing pages and organic search rankings.</p>) },
     ]} />
+      {/* Related Services */}
+      <section aria-labelledby="related-services-heading" className="py-16 md:py-20">
+        <div className="container">
+          <div className="text-center mb-10">
+            <span className="text-accent font-semibold tracking-widest uppercase text-xs mb-2 block">Complete Digital Solution</span>
+            <h2 id="related-services-heading" className="font-heading font-bold text-2xl md:text-3xl text-foreground">
+              Related Services That Work Together
+            </h2>
+          </div>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
+          <Link to="/services/content-marketing" className="group card-premium p-6 rounded-2xl block hover:border-accent/40 transition-all duration-300">
+            <h3 className="font-heading font-bold text-foreground group-hover:text-accent transition-colors mb-2 text-base">Content Marketing</h3>
+            <p className="text-sm text-muted-foreground">Course and enrolment content strategy.</p>
+          </Link>
+          <Link to="/services/technical-seo" className="group card-premium p-6 rounded-2xl block hover:border-accent/40 transition-all duration-300">
+            <h3 className="font-heading font-bold text-foreground group-hover:text-accent transition-colors mb-2 text-base">Technical SEO</h3>
+            <p className="text-sm text-muted-foreground">Fix LMS platform crawl issues.</p>
+          </Link>
+          <Link to="/services/web-development" className="group card-premium p-6 rounded-2xl block hover:border-accent/40 transition-all duration-300">
+            <h3 className="font-heading font-bold text-foreground group-hover:text-accent transition-colors mb-2 text-base">Web Development</h3>
+            <p className="text-sm text-muted-foreground">Fast, accessible education websites.</p>
+          </Link>
+          <Link to="/services/social-media-ads" className="group card-premium p-6 rounded-2xl block hover:border-accent/40 transition-all duration-300">
+            <h3 className="font-heading font-bold text-foreground group-hover:text-accent transition-colors mb-2 text-base">Social Media Ads</h3>
+            <p className="text-sm text-muted-foreground">Enrolment campaigns on Meta and LinkedIn.</p>
+          </Link>
+          </div>
+        </div>
+      </section>
+      {/* Internal linking — Australian location pages */}
+      <LocationLinksStrip />
   </Layout>
 );
 
 export default EducationSeo;
+

@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+﻿import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { MapPin, Search, Globe, BarChart3, ArrowRight, Users } from "lucide-react";
@@ -6,6 +6,7 @@ import Layout from "@/components/Layout";
 import SectionHeading from "@/components/SectionHeading";
 import heroBg from "@/assets/hero-bg.jpg";
 import SEO from "@/components/SEO";
+import LocationLinksStrip from "@/components/LocationLinksStrip";
 import EntityTrustAccordion from "@/components/EntityTrustAccordion";
 
 const services = [
@@ -125,6 +126,8 @@ const PerthSeo = () => (
         <EntityTrustAccordion city="Perth" />
       </div>
     </section>
+    {/* Internal linking — all Australian location pages */}
+    <LocationLinksStrip currentCity="Perth" />
 
     <section aria-labelledby="perth-cta-heading" className="py-20 pb-28">
       <div className="container">
@@ -142,3 +145,4 @@ const PerthSeo = () => (
 );
 
 export default PerthSeo;
+

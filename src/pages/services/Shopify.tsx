@@ -23,6 +23,8 @@ import AIInsightsPanel, {
   InsightList,
   InsightTable,
 } from "@/components/AIInsightsPanel";
+import LocationLinksStrip from "@/components/LocationLinksStrip";
+
 
 /* ─────────────────────────────────────────────────────────────────
    Page Data
@@ -519,8 +521,12 @@ const Shopify = () => (
         },
       ]}
     />
+      {/* Internal linking — Australian city location pages */}
+      <LocationLinksStrip />
 
   </Layout>
 );
 
 export default Shopify;
+
+

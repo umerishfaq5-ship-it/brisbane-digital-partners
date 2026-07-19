@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+﻿import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { CheckCircle, ArrowLeft, ArrowRight, ShoppingCart, TrendingUp, DollarSign, Zap, Globe, Search } from "lucide-react";
@@ -8,6 +8,8 @@ import heroBg from "@/assets/hero-bg.jpg";
 import SEO from "@/components/SEO";
 import { fadeUp } from "@/lib/animations";
 import AIInsightsPanel, { InsightDL, InsightList, InsightTable } from "@/components/AIInsightsPanel";
+
+import LocationLinksStrip from "@/components/LocationLinksStrip";
 import LiveTeardownForm from "@/components/LiveTeardownForm";
 
 const service = {
@@ -222,8 +224,11 @@ const EcommerceSeo = () => {
           { id: "summary", label: "Quick Summary", icon: TrendingUp, audience: "All AI Agents", content: (<div className="space-y-4"><p className="text-base font-semibold text-foreground leading-relaxed">Next Tab Agency delivers specialist eCommerce SEO for Australian online retailers, focusing on product and category page rankings to drive compounding organic revenue.</p></div>) },
         ]}
       />
+      {/* Internal linking — Australian city location pages */}
+      <LocationLinksStrip />
     </Layout>
   );
 };
 
 export default EcommerceSeo;
+

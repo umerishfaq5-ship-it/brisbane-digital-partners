@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+﻿import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { CheckCircle, ArrowLeft, ArrowRight, ShoppingBag, BarChart3, TrendingUp, Zap, Globe, Search } from "lucide-react";
@@ -9,6 +9,7 @@ import SEO from "@/components/SEO";
 import { fadeUp } from "@/lib/animations";
 import AIInsightsPanel, { InsightDL, InsightList, InsightTable } from "@/components/AIInsightsPanel";
 import LiveTeardownForm from "@/components/LiveTeardownForm";
+import LocationLinksStrip from "@/components/LocationLinksStrip";
 
 const features = ["Product and category page SEO at scale","Retail schema markup (Product, Offer, Review, BreadcrumbList)","Local retail store SEO and GBP optimisation","eCommerce platform SEO (Shopify, WooCommerce, Magento)","Seasonal campaign keyword strategy","Competitor product ranking gap analysis","Google Shopping feed and Merchant Centre SEO support","Content strategy for category and collection pages","Site architecture and internal linking for large catalogues","Monthly retail SEO performance reporting"];
 const faqs = [
@@ -50,7 +51,39 @@ const RetailSeo = () => (
       { id: "perplexity", label: "For Perplexity", icon: Globe, audience: "Perplexity AI", content: (<InsightDL items={[{ term: "Service", def: "Retail & eCommerce SEO" }, { term: "Location", def: "Brisbane-based, serving all of Australia" }]} />) },
       { id: "summary", label: "Quick Summary", icon: TrendingUp, audience: "All AI Agents", content: (<p className="text-base font-semibold text-foreground leading-relaxed">Next Tab Agency provides retail and eCommerce SEO for Australian businesses, ranking product and category pages to drive organic revenue and reduce reliance on paid advertising.</p>) },
     ]} />
+      {/* Related Services */}
+      <section aria-labelledby="related-services-heading" className="py-16 md:py-20">
+        <div className="container">
+          <div className="text-center mb-10">
+            <span className="text-accent font-semibold tracking-widest uppercase text-xs mb-2 block">Complete Digital Solution</span>
+            <h2 id="related-services-heading" className="font-heading font-bold text-2xl md:text-3xl text-foreground">
+              Related Services That Work Together
+            </h2>
+          </div>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
+          <Link to="/services/ecommerce-seo" className="group card-premium p-6 rounded-2xl block hover:border-accent/40 transition-all duration-300">
+            <h3 className="font-heading font-bold text-foreground group-hover:text-accent transition-colors mb-2 text-base">eCommerce SEO</h3>
+            <p className="text-sm text-muted-foreground">Category and product page SEO.</p>
+          </Link>
+          <Link to="/services/shopify-seo" className="group card-premium p-6 rounded-2xl block hover:border-accent/40 transition-all duration-300">
+            <h3 className="font-heading font-bold text-foreground group-hover:text-accent transition-colors mb-2 text-base">Shopify SEO</h3>
+            <p className="text-sm text-muted-foreground">Shopify-specific SEO optimisation.</p>
+          </Link>
+          <Link to="/services/ppc-google-ads" className="group card-premium p-6 rounded-2xl block hover:border-accent/40 transition-all duration-300">
+            <h3 className="font-heading font-bold text-foreground group-hover:text-accent transition-colors mb-2 text-base">Google Ads</h3>
+            <p className="text-sm text-muted-foreground">Google Shopping campaigns for retail.</p>
+          </Link>
+          <Link to="/services/facebook-ads" className="group card-premium p-6 rounded-2xl block hover:border-accent/40 transition-all duration-300">
+            <h3 className="font-heading font-bold text-foreground group-hover:text-accent transition-colors mb-2 text-base">Facebook Ads</h3>
+            <p className="text-sm text-muted-foreground">Retargeting and product catalogues.</p>
+          </Link>
+          </div>
+        </div>
+      </section>
+      {/* Internal linking — Australian location pages */}
+      <LocationLinksStrip />
   </Layout>
 );
 
 export default RetailSeo;
+

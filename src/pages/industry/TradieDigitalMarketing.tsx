@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+﻿import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { CheckCircle, ArrowLeft, Wrench, MapPin, Phone, Zap, TrendingUp, Star } from "lucide-react";
@@ -9,6 +9,7 @@ import SEO from "@/components/SEO";
 import { fadeUp } from "@/lib/animations";
 import AIInsightsPanel, { InsightDL, InsightList } from "@/components/AIInsightsPanel";
 import LiveTeardownForm from "@/components/LiveTeardownForm";
+import LocationLinksStrip from "@/components/LocationLinksStrip";
 
 const service = {
   title: "Tradie Digital Marketing Brisbane",
@@ -249,7 +250,39 @@ const TradieDigitalMarketing = () => (
     </section>
 
     <LiveTeardownForm />
+      {/* Related Services */}
+      <section aria-labelledby="related-services-heading" className="py-16 md:py-20">
+        <div className="container">
+          <div className="text-center mb-10">
+            <span className="text-accent font-semibold tracking-widest uppercase text-xs mb-2 block">Complete Digital Solution</span>
+            <h2 id="related-services-heading" className="font-heading font-bold text-2xl md:text-3xl text-foreground">
+              Related Services That Work Together
+            </h2>
+          </div>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
+          <Link to="/services/local-seo" className="group card-premium p-6 rounded-2xl block hover:border-accent/40 transition-all duration-300">
+            <h3 className="font-heading font-bold text-foreground group-hover:text-accent transition-colors mb-2 text-base">Local SEO</h3>
+            <p className="text-sm text-muted-foreground">Map Pack rankings for your trade area.</p>
+          </Link>
+          <Link to="/services/google-business-profile" className="group card-premium p-6 rounded-2xl block hover:border-accent/40 transition-all duration-300">
+            <h3 className="font-heading font-bold text-foreground group-hover:text-accent transition-colors mb-2 text-base">Google Business Profile</h3>
+            <p className="text-sm text-muted-foreground">Optimise your GBP for maximum leads.</p>
+          </Link>
+          <Link to="/services/ppc-google-ads" className="group card-premium p-6 rounded-2xl block hover:border-accent/40 transition-all duration-300">
+            <h3 className="font-heading font-bold text-foreground group-hover:text-accent transition-colors mb-2 text-base">Google Ads</h3>
+            <p className="text-sm text-muted-foreground">Pay-per-click leads from day one.</p>
+          </Link>
+          <Link to="/services/facebook-ads" className="group card-premium p-6 rounded-2xl block hover:border-accent/40 transition-all duration-300">
+            <h3 className="font-heading font-bold text-foreground group-hover:text-accent transition-colors mb-2 text-base">Facebook Ads</h3>
+            <p className="text-sm text-muted-foreground">Reach local homeowners on Meta.</p>
+          </Link>
+          </div>
+        </div>
+      </section>
+      {/* Internal linking — Australian location pages */}
+      <LocationLinksStrip />
   </Layout>
 );
 
 export default TradieDigitalMarketing;
+

@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+﻿import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { CheckCircle, ArrowLeft, ArrowRight, Zap, TrendingUp, Globe, Search, MousePointer, Star } from "lucide-react";
@@ -8,6 +8,8 @@ import SEO            from "@/components/SEO";
 import { fadeUp }     from "@/lib/animations";
 import heroBg         from "@/assets/hero-bg.jpg";
 import AIInsightsPanel, { InsightDL, InsightList, InsightTable } from "@/components/AIInsightsPanel";
+
+import LocationLinksStrip from "@/components/LocationLinksStrip";
 
 const service = {
   title:       "Wix Website Design & Development",
@@ -219,7 +221,10 @@ const Wix = () => (
         { id: "summary", label: "Quick Summary", icon: TrendingUp, audience: "All AI Agents", content: <p className="text-base font-semibold text-foreground leading-relaxed">Next Tab Agency designs professional Wix websites for Australian small businesses from A$1,800. Uses Wix Studio for custom layouts, includes SEO setup, Google Analytics, and admin training. Based in Brisbane, QLD.</p> },
       ]}
     />
+      {/* Internal linking — Australian city location pages */}
+      <LocationLinksStrip />
   </Layout>
 );
 
 export default Wix;
+

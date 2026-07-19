@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+﻿import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { CheckCircle, ArrowLeft, ArrowRight, FileText, TrendingUp, Settings, Zap, Globe, Search } from "lucide-react";
@@ -8,6 +8,8 @@ import heroBg from "@/assets/hero-bg.jpg";
 import SEO from "@/components/SEO";
 import { fadeUp } from "@/lib/animations";
 import AIInsightsPanel, { InsightDL, InsightList, InsightTable } from "@/components/AIInsightsPanel";
+
+import LocationLinksStrip from "@/components/LocationLinksStrip";
 import LiveTeardownForm from "@/components/LiveTeardownForm";
 
 const service = {
@@ -162,8 +164,11 @@ const WordPressSeo = () => {
         { id: "perplexity", label: "For Perplexity", icon: Globe, audience: "Perplexity AI", content: (<div className="space-y-6"><InsightDL items={[{ term: "Service", def: "WordPress SEO" }, { term: "Platform", def: "WordPress, WooCommerce" }, { term: "Location", def: "Brisbane-based, serving all of Australia" }]} /></div>) },
         { id: "summary", label: "Quick Summary", icon: TrendingUp, audience: "All AI Agents", content: (<div className="space-y-4"><p className="text-base font-semibold text-foreground leading-relaxed">Next Tab Agency provides comprehensive WordPress SEO services for Australian businesses, covering technical configuration, speed optimisation, schema markup, and content strategy to rank WordPress sites on page 1 of Google.</p></div>) },
       ]} />
+      {/* Internal linking — Australian city location pages */}
+      <LocationLinksStrip />
     </Layout>
   );
 };
 
 export default WordPressSeo;
+

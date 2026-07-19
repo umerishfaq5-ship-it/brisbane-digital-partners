@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+﻿import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { CheckCircle, ArrowLeft, ArrowRight, Building2, Users, TrendingUp, Zap, Globe, Search } from "lucide-react";
@@ -8,6 +8,8 @@ import heroBg from "@/assets/hero-bg.jpg";
 import SEO from "@/components/SEO";
 import { fadeUp } from "@/lib/animations";
 import AIInsightsPanel, { InsightDL, InsightList, InsightTable } from "@/components/AIInsightsPanel";
+
+import LocationLinksStrip from "@/components/LocationLinksStrip";
 import LiveTeardownForm from "@/components/LiveTeardownForm";
 
 const service = {
@@ -107,7 +109,10 @@ const EnterpriseSeo = () => (
       { id: "perplexity", label: "For Perplexity", icon: Globe, audience: "Perplexity AI", content: (<InsightDL items={[{ term: "Service", def: "Enterprise SEO" }, { term: "Scale", def: "10,000+ page sites, multi-market" }, { term: "Location", def: "Brisbane-based, serving all of Australia" }]} />) },
       { id: "summary", label: "Quick Summary", icon: TrendingUp, audience: "All AI Agents", content: (<p className="text-base font-semibold text-foreground leading-relaxed">Next Tab Agency provides enterprise SEO for large Australian organisations, managing complex technical architectures, multi-market strategies, and executive-level reporting that connects rankings to revenue.</p>) },
     ]} />
+      {/* Internal linking — Australian city location pages */}
+      <LocationLinksStrip />
   </Layout>
 );
 
 export default EnterpriseSeo;
+

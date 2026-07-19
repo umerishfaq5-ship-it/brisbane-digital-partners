@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+﻿import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { MapPin, Star, Camera, MessageSquare, BarChart3, CheckCircle, ArrowRight, TrendingUp, Search, Globe, Clock } from "lucide-react";
@@ -6,6 +6,8 @@ import Layout from "@/components/Layout";
 import SectionHeading from "@/components/SectionHeading";
 import heroBg from "@/assets/hero-bg.jpg";
 import SEO from "@/components/SEO";
+
+import LocationLinksStrip from "@/components/LocationLinksStrip";
 
 const optimisationAreas = [
   {
@@ -264,7 +266,10 @@ const GoogleBusinessProfile = () => (
         </motion.div>
       </div>
     </section>
+      {/* Internal linking — Australian city location pages */}
+      <LocationLinksStrip />
   </Layout>
 );
 
 export default GoogleBusinessProfile;
+

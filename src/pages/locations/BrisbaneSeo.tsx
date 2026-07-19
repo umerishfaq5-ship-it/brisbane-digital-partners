@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+﻿import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Helmet } from "react-helmet-async";
@@ -7,6 +7,7 @@ import Layout from "@/components/Layout";
 import SectionHeading from "@/components/SectionHeading";
 import heroBg from "@/assets/hero-bg.jpg";
 import SEO from "@/components/SEO";
+import LocationLinksStrip from "@/components/LocationLinksStrip";
 import EntityTrustAccordion from "@/components/EntityTrustAccordion";
 
 const services = [
@@ -255,28 +256,7 @@ const BrisbaneSeo = () => (
       </div>
     </section>
 
-    {/* Other Locations */}
-    <section aria-labelledby="other-locations-heading" className="py-16 surface-warm relative overflow-hidden">
-      <div className="absolute inset-0 pattern-dots" />
-      <div className="container relative z-10">
-        <h2 id="other-locations-heading" className="font-heading font-bold text-xl text-foreground mb-6 text-center">We also serve businesses across Australia</h2>
-        <div className="flex flex-wrap gap-3 justify-center">
-          {[
-            { city: "Sydney", href: "/locations/sydney-seo" },
-            { city: "Melbourne", href: "/locations/melbourne-seo" },
-            { city: "Perth", href: "/locations/perth-seo" },
-            { city: "Adelaide", href: "/locations/adelaide-seo" },
-            { city: "Canberra", href: "/locations/canberra-seo" },
-          ].map((l) => (
-            <Link key={l.href} to={l.href} className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-border/60 text-sm text-foreground/70 hover:text-accent hover:border-accent/40 transition-all">
-              <MapPin className="w-3.5 h-3.5" />{l.city}
-            </Link>
-          ))}
-        </div>
-      </div>
-    </section>
-
-    {/* Footer Map Area */}
+        {/* Footer Map Area */}
     <section className="py-20 bg-background border-t border-border/40">
       <div className="container">
         <div className="grid md:grid-cols-2 gap-12 items-center">
@@ -324,6 +304,8 @@ const BrisbaneSeo = () => (
     </section>
 
     {/* CTA */}
+    {/* Internal linking — all Australian location pages */}
+    <LocationLinksStrip currentCity="Brisbane" />
     <section aria-labelledby="brisbane-cta-heading" className="py-20 pb-28">
       <div className="container">
         <motion.div
@@ -351,3 +333,4 @@ const BrisbaneSeo = () => (
 );
 
 export default BrisbaneSeo;
+

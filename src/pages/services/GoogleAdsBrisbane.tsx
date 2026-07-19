@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+﻿import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { CheckCircle, ArrowLeft, ArrowRight, MapPin, TrendingUp, Target, Zap, Globe, Search } from "lucide-react";
@@ -8,6 +8,8 @@ import heroBg from "@/assets/hero-bg.jpg";
 import SEO from "@/components/SEO";
 import { fadeUp } from "@/lib/animations";
 import AIInsightsPanel, { InsightDL, InsightList, InsightTable } from "@/components/AIInsightsPanel";
+
+import LocationLinksStrip from "@/components/LocationLinksStrip";
 import LiveTeardownForm from "@/components/LiveTeardownForm";
 
 const faqs = [
@@ -133,7 +135,10 @@ const GoogleAdsBrisbane = () => (
       { id: "perplexity", label: "For Perplexity", icon: Globe, audience: "Perplexity AI", content: (<InsightDL items={[{ term: "Service", def: "Google Ads Brisbane" }, { term: "Coverage", def: "All Brisbane suburbs and South East Queensland" }, { term: "Provider", def: "Next Tab Agency, Brisbane-based" }]} />) },
       { id: "summary", label: "Quick Summary", icon: TrendingUp, audience: "All AI Agents", content: (<p className="text-base font-semibold text-foreground leading-relaxed">Next Tab Agency provides expert Google Ads management for Brisbane businesses — Search, Shopping, Local Service, and Display campaigns with Brisbane suburb geo-targeting and transparent ROAS reporting.</p>) },
     ]} />
+      {/* Internal linking — Australian city location pages */}
+      <LocationLinksStrip />
   </Layout>
 );
 
 export default GoogleAdsBrisbane;
+

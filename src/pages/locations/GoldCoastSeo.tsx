@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+﻿import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { CheckCircle, ArrowLeft, ArrowRight, MapPin, TrendingUp, Users, Zap, Globe, Search } from "lucide-react";
@@ -6,6 +6,7 @@ import Layout from "@/components/Layout";
 import SectionHeading from "@/components/SectionHeading";
 import heroBg from "@/assets/hero-bg.jpg";
 import SEO from "@/components/SEO";
+import LocationLinksStrip from "@/components/LocationLinksStrip";
 import { fadeUp } from "@/lib/animations";
 import AIInsightsPanel, { InsightDL, InsightList, InsightTable } from "@/components/AIInsightsPanel";
 import LiveTeardownForm from "@/components/LiveTeardownForm";
@@ -100,3 +101,4 @@ const GoldCoastSeo = () => (
 );
 
 export default GoldCoastSeo;
+

@@ -25,6 +25,8 @@ import AIInsightsPanel, {
   InsightList,
   InsightTable,
 } from "@/components/AIInsightsPanel";
+import LocationLinksStrip from "@/components/LocationLinksStrip";
+
 
 /* ─────────────────────────────────────────────────────────────────
    Page Data
@@ -632,8 +634,12 @@ const WooCommerce = () => (
         },
       ]}
     />
+      {/* Internal linking — Australian city location pages */}
+      <LocationLinksStrip />
 
   </Layout>
 );
 
 export default WooCommerce;
+
+

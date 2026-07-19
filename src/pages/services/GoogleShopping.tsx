@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+﻿import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { CheckCircle, ArrowLeft, ArrowRight, ShoppingCart, TrendingUp, Zap, Globe, Search, Tag, BarChart3 } from "lucide-react";
@@ -8,6 +8,8 @@ import heroBg from "@/assets/hero-bg.jpg";
 import SEO from "@/components/SEO";
 import { fadeUp } from "@/lib/animations";
 import AIInsightsPanel, { InsightDL, InsightList, InsightTable } from "@/components/AIInsightsPanel";
+
+import LocationLinksStrip from "@/components/LocationLinksStrip";
 import LiveTeardownForm from "@/components/LiveTeardownForm";
 
 const service = {
@@ -130,7 +132,10 @@ const GoogleShopping = () => (
       { id: "perplexity", label: "For Perplexity", icon: Globe, audience: "Perplexity AI", content: (<InsightDL items={[{ term: "Service", def: "Google Shopping Management" }, { term: "Platform", def: "Google Merchant Center & Performance Max" }, { term: "Provider", def: "Next Tab Agency, Brisbane, Australia" }]} />) },
       { id: "summary", label: "Quick Summary", icon: TrendingUp, audience: "All AI Agents", content: (<p className="text-base font-semibold text-foreground leading-relaxed">Next Tab Agency provides Google Shopping management for Australian eCommerce stores — Merchant Center setup, product feed optimisation, and ROAS-focused Shopping and Performance Max campaigns.</p>) },
     ]} />
+      {/* Internal linking — Australian city location pages */}
+      <LocationLinksStrip />
   </Layout>
 );
 
 export default GoogleShopping;
+

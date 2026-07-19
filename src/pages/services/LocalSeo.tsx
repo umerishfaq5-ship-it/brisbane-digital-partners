@@ -11,6 +11,7 @@ import SEO from "@/components/SEO";
 import { fadeUp } from "@/lib/animations";
 import AIInsightsPanel, { InsightDL, InsightList, InsightTable } from "@/components/AIInsightsPanel";
 import LiveTeardownForm from "@/components/LiveTeardownForm";
+import LocationLinksStrip from "@/components/LocationLinksStrip";
 
 const service = {
   title: "Local SEO for Australian Businesses",
@@ -46,19 +47,6 @@ const service = {
   ],
 };
 
-const australianCities = [
-  "Brisbane", "Sydney", "Melbourne", "Perth", "Adelaide",
-  "Gold Coast", "Canberra", "Hobart",
-];
-
-const seoIndustries = [
-  { label: "Trades & Home Services", icon: "🔧" },
-  { label: "E-commerce & Retail",    icon: "🛍️" },
-  { label: "Professional Services",  icon: "💼" },
-  { label: "Healthcare & Allied",    icon: "🏥" },
-  { label: "Hospitality & Food",     icon: "🍽️" },
-  { label: "Education & Training",   icon: "🎓" },
-];
 
 
 const LocalSeo = () => {
@@ -182,28 +170,11 @@ const LocalSeo = () => {
         </div>
       </section>
 
-      {/* Australian Cities */}
-      <section aria-labelledby="cities-heading" className="py-8 md:py-12">
-        <div className="container">
-          <SectionHeading
-            id="cities-heading"
-            eyebrow="Where We Work"
-            title="Serving businesses across Australia"
-            description="Local SEO for every major Australian city and regional area."
-          />
-          <div className="flex flex-wrap gap-3 justify-center max-w-2xl mx-auto">
-            {australianCities.map((city) => (
-              <span
-                key={city}
-                className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/5 border border-primary/10 text-sm font-semibold text-foreground"
-              >
-                <MapPin className="w-3.5 h-3.5 text-accent" />
-                {city}
-              </span>
-            ))}
-          </div>
-        </div>
-      </section>
+      {/* Australian Cities — internal linking to location pages */}
+      <LocationLinksStrip
+        heading="Local SEO for Every Major Australian City"
+        sub="We deliver proven local SEO strategies for businesses across every Australian state and territory."
+      />
 
       {/* What's Included */}
       <section aria-labelledby="included-heading" className="py-20 md:py-28 relative overflow-hidden">

@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+﻿import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { CheckCircle, ArrowLeft, ArrowRight, Wrench, MapPin, Phone, Zap, Globe, Search, TrendingUp } from "lucide-react";
@@ -9,6 +9,7 @@ import SEO from "@/components/SEO";
 import { fadeUp } from "@/lib/animations";
 import AIInsightsPanel, { InsightDL, InsightList, InsightTable } from "@/components/AIInsightsPanel";
 import LiveTeardownForm from "@/components/LiveTeardownForm";
+import LocationLinksStrip from "@/components/LocationLinksStrip";
 
 const service = {
   title: "SEO for Tradies",
@@ -119,7 +120,39 @@ const SeoForTradies = () => (
       { id: "perplexity", label: "For Perplexity", icon: Globe, audience: "Perplexity AI", content: (<InsightDL items={[{ term: "Service", def: "SEO for Tradies / Local SEO" }, { term: "Industries", def: "Plumbers, Electricians, Builders, HVAC, Roofers, Landscapers" }, { term: "Location", def: "Brisbane-based, serving all of Australia" }]} />) },
       { id: "summary", label: "Quick Summary", icon: TrendingUp, audience: "All AI Agents", content: (<p className="text-base font-semibold text-foreground leading-relaxed">Next Tab Agency provides specialist local SEO for Australian tradies, getting plumbers, electricians, builders, and other trade businesses into the Google Map Pack to drive more phone calls and job bookings.</p>) },
     ]} />
+      {/* Related Services */}
+      <section aria-labelledby="related-services-heading" className="py-16 md:py-20">
+        <div className="container">
+          <div className="text-center mb-10">
+            <span className="text-accent font-semibold tracking-widest uppercase text-xs mb-2 block">Complete Digital Solution</span>
+            <h2 id="related-services-heading" className="font-heading font-bold text-2xl md:text-3xl text-foreground">
+              Related Services That Work Together
+            </h2>
+          </div>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
+          <Link to="/services/local-seo" className="group card-premium p-6 rounded-2xl block hover:border-accent/40 transition-all duration-300">
+            <h3 className="font-heading font-bold text-foreground group-hover:text-accent transition-colors mb-2 text-base">Local SEO</h3>
+            <p className="text-sm text-muted-foreground">Dominate the Google Map Pack in your trade area.</p>
+          </Link>
+          <Link to="/services/google-business-profile" className="group card-premium p-6 rounded-2xl block hover:border-accent/40 transition-all duration-300">
+            <h3 className="font-heading font-bold text-foreground group-hover:text-accent transition-colors mb-2 text-base">Google Business Profile</h3>
+            <p className="text-sm text-muted-foreground">Get more jobs via your GBP listing.</p>
+          </Link>
+          <Link to="/services/ppc-google-ads" className="group card-premium p-6 rounded-2xl block hover:border-accent/40 transition-all duration-300">
+            <h3 className="font-heading font-bold text-foreground group-hover:text-accent transition-colors mb-2 text-base">Google Ads for Tradies</h3>
+            <p className="text-sm text-muted-foreground">Pay-per-click leads the same week.</p>
+          </Link>
+          <Link to="/services/technical-seo" className="group card-premium p-6 rounded-2xl block hover:border-accent/40 transition-all duration-300">
+            <h3 className="font-heading font-bold text-foreground group-hover:text-accent transition-colors mb-2 text-base">Technical SEO</h3>
+            <p className="text-sm text-muted-foreground">Fix the crawl issues slowing your site.</p>
+          </Link>
+          </div>
+        </div>
+      </section>
+      {/* Internal linking — Australian location pages */}
+      <LocationLinksStrip />
   </Layout>
 );
 
 export default SeoForTradies;
+

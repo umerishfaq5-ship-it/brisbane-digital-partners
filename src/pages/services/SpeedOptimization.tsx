@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+﻿import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { CheckCircle, ArrowLeft, ArrowRight, Zap, TrendingUp, Globe, Search, Gauge, Code2 } from "lucide-react";
@@ -8,6 +8,8 @@ import heroBg from "@/assets/hero-bg.jpg";
 import SEO from "@/components/SEO";
 import { fadeUp } from "@/lib/animations";
 import AIInsightsPanel, { InsightDL, InsightList, InsightTable } from "@/components/AIInsightsPanel";
+
+import LocationLinksStrip from "@/components/LocationLinksStrip";
 
 const service = {
   title: "Website Speed Optimisation Brisbane",
@@ -310,8 +312,11 @@ const SpeedOptimization = () => {
           },
         ]}
       />
+      {/* Internal linking — Australian city location pages */}
+      <LocationLinksStrip />
     </Layout>
   );
 };
 
 export default SpeedOptimization;
+
