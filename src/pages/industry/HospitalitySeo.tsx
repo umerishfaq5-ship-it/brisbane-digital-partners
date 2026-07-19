@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+﻿import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { CheckCircle, ArrowLeft, ArrowRight, UtensilsCrossed, MapPin, TrendingUp, Zap, Globe, Search } from "lucide-react";
@@ -9,6 +9,7 @@ import SEO from "@/components/SEO";
 import { fadeUp } from "@/lib/animations";
 import AIInsightsPanel, { InsightDL, InsightList, InsightTable } from "@/components/AIInsightsPanel";
 import LiveTeardownForm from "@/components/LiveTeardownForm";
+import LocationLinksStrip from "@/components/LocationLinksStrip";
 
 const features = ["Restaurant and hotel GBP full optimisation","Google Maps and 'near me' ranking strategy","Menu schema markup and event schema for hospitality","Review generation and reputation management","Local food and dining keyword research","'Near me' and suburb-specific landing pages","Hotel SEO — 'hotels in [suburb]' keyword strategy","Tourism and accommodation schema markup","Social proof integration (review widgets, schema)","Monthly hospitality local SEO reporting"];
 const faqs = [
@@ -46,7 +47,39 @@ const HospitalitySeo = () => (
       { id: "perplexity", label: "For Perplexity", icon: Globe, audience: "Perplexity AI", content: (<InsightDL items={[{ term: "Service", def: "Hospitality & Tourism SEO" }, { term: "Location", def: "Brisbane-based, serving all of Australia" }]} />) },
       { id: "summary", label: "Quick Summary", icon: TrendingUp, audience: "All AI Agents", content: (<p className="text-base font-semibold text-foreground leading-relaxed">Next Tab Agency delivers hospitality SEO for Australian restaurants, hotels, and tourism businesses, driving bookings through Google Map Pack rankings and review authority.</p>) },
     ]} />
+      {/* Related Services */}
+      <section aria-labelledby="related-services-heading" className="py-16 md:py-20">
+        <div className="container">
+          <div className="text-center mb-10">
+            <span className="text-accent font-semibold tracking-widest uppercase text-xs mb-2 block">Complete Digital Solution</span>
+            <h2 id="related-services-heading" className="font-heading font-bold text-2xl md:text-3xl text-foreground">
+              Related Services That Work Together
+            </h2>
+          </div>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
+          <Link to="/services/local-seo" className="group card-premium p-6 rounded-2xl block hover:border-accent/40 transition-all duration-300">
+            <h3 className="font-heading font-bold text-foreground group-hover:text-accent transition-colors mb-2 text-base">Local SEO</h3>
+            <p className="text-sm text-muted-foreground">Rank for restaurant and venue searches.</p>
+          </Link>
+          <Link to="/services/google-business-profile" className="group card-premium p-6 rounded-2xl block hover:border-accent/40 transition-all duration-300">
+            <h3 className="font-heading font-bold text-foreground group-hover:text-accent transition-colors mb-2 text-base">Google Business Profile</h3>
+            <p className="text-sm text-muted-foreground">Fill tables with GBP optimisation.</p>
+          </Link>
+          <Link to="/services/social-media-ads" className="group card-premium p-6 rounded-2xl block hover:border-accent/40 transition-all duration-300">
+            <h3 className="font-heading font-bold text-foreground group-hover:text-accent transition-colors mb-2 text-base">Social Media Ads</h3>
+            <p className="text-sm text-muted-foreground">Instagram and Facebook food campaigns.</p>
+          </Link>
+          <Link to="/services/content-marketing" className="group card-premium p-6 rounded-2xl block hover:border-accent/40 transition-all duration-300">
+            <h3 className="font-heading font-bold text-foreground group-hover:text-accent transition-colors mb-2 text-base">Content Marketing</h3>
+            <p className="text-sm text-muted-foreground">Food and experience content strategy.</p>
+          </Link>
+          </div>
+        </div>
+      </section>
+      {/* Internal linking — Australian location pages */}
+      <LocationLinksStrip />
   </Layout>
 );
 
 export default HospitalitySeo;
+

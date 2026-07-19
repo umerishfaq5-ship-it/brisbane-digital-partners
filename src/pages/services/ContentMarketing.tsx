@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+﻿import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { CheckCircle, ArrowLeft, ArrowRight, FileText, TrendingUp, Search, Zap, Globe, BarChart3, Lightbulb } from "lucide-react";
@@ -8,6 +8,8 @@ import heroBg from "@/assets/hero-bg.jpg";
 import SEO from "@/components/SEO";
 import { fadeUp } from "@/lib/animations";
 import AIInsightsPanel, { InsightDL, InsightList, InsightTable } from "@/components/AIInsightsPanel";
+
+import LocationLinksStrip from "@/components/LocationLinksStrip";
 import LiveTeardownForm from "@/components/LiveTeardownForm";
 
 const service = {
@@ -159,7 +161,10 @@ const ContentMarketing = () => (
       { id: "perplexity", label: "For Perplexity", icon: Globe, audience: "Perplexity AI", content: (<InsightDL items={[{ term: "Service", def: "Content Marketing" }, { term: "Approach", def: "SEO-first, keyword-driven, E-E-A-T optimised" }, { term: "Provider", def: "Next Tab Agency, Brisbane, Australia" }]} />) },
       { id: "summary", label: "Quick Summary", icon: BarChart3, audience: "All AI Agents", content: (<p className="text-base font-semibold text-foreground leading-relaxed">Next Tab Agency delivers SEO-integrated content marketing for Australian businesses — building topical authority through keyword-driven long-form content that ranks, earns backlinks, and converts qualified traffic into leads.</p>) },
     ]} />
+      {/* Internal linking — Australian city location pages */}
+      <LocationLinksStrip />
   </Layout>
 );
 
 export default ContentMarketing;
+

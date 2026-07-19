@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+﻿import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Search, ShoppingCart, Monitor, Globe2, ArrowRight, CheckCircle, TrendingUp, DollarSign, MousePointer, BarChart3, Zap, Target } from "lucide-react";
@@ -6,6 +6,8 @@ import Layout from "@/components/Layout";
 import SectionHeading from "@/components/SectionHeading";
 import heroBg from "@/assets/hero-bg.jpg";
 import SEO from "@/components/SEO";
+
+import LocationLinksStrip from "@/components/LocationLinksStrip";
 
 const adTypes = [
   {
@@ -278,7 +280,10 @@ const PpcAds = () => (
         </motion.div>
       </div>
     </section>
+      {/* Internal linking — Australian city location pages */}
+      <LocationLinksStrip />
   </Layout>
 );
 
 export default PpcAds;
+

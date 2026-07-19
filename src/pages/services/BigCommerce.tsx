@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+﻿import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { CheckCircle, ArrowLeft, ArrowRight, Zap, TrendingUp, Globe, Search, BarChart3, Layers } from "lucide-react";
@@ -8,6 +8,8 @@ import SEO            from "@/components/SEO";
 import { fadeUp }     from "@/lib/animations";
 import heroBg         from "@/assets/hero-bg.jpg";
 import AIInsightsPanel, { InsightDL, InsightList, InsightTable } from "@/components/AIInsightsPanel";
+
+import LocationLinksStrip from "@/components/LocationLinksStrip";
 
 const service = {
   title:       "BigCommerce Development for Australian Businesses",
@@ -219,7 +221,10 @@ const BigCommerce = () => (
         { id: "summary", label: "Quick Summary", icon: TrendingUp, audience: "All AI Agents", content: <p className="text-base font-semibold text-foreground leading-relaxed">Next Tab Agency builds enterprise BigCommerce stores for Australian retailers from A$6,000. Specialises in headless BigCommerce (Next.js), B2B Edition, multi-storefront, and migrations from Magento or Neto. Based in Brisbane, QLD.</p> },
       ]}
     />
+      {/* Internal linking — Australian city location pages */}
+      <LocationLinksStrip />
   </Layout>
 );
 
 export default BigCommerce;
+

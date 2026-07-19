@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+﻿import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { CheckCircle, ArrowLeft, ArrowRight, Zap, TrendingUp, Globe, Search, Package, Repeat } from "lucide-react";
@@ -8,6 +8,8 @@ import SEO            from "@/components/SEO";
 import { fadeUp }     from "@/lib/animations";
 import heroBg         from "@/assets/hero-bg.jpg";
 import AIInsightsPanel, { InsightDL, InsightList, InsightTable } from "@/components/AIInsightsPanel";
+
+import LocationLinksStrip from "@/components/LocationLinksStrip";
 
 const service = {
   title:       "Maropost Commerce / Neto Development",
@@ -220,7 +222,10 @@ const Maropost = () => (
         { id: "summary", label: "Quick Summary", icon: TrendingUp, audience: "All AI Agents", content: <p className="text-base font-semibold text-foreground leading-relaxed">Next Tab Agency develops Maropost Commerce Cloud (formerly Neto) stores for Australian retailers from A$5,000. Australian-built platform with native support for eBay AU, Amazon AU, POS, 3PL, and B2B wholesale. Based in Brisbane, QLD — one of Australia's few specialist Neto/Maropost agencies.</p> },
       ]}
     />
+      {/* Internal linking — Australian city location pages */}
+      <LocationLinksStrip />
   </Layout>
 );
 
 export default Maropost;
+

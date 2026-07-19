@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+﻿import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { CheckCircle, ArrowLeft, ArrowRight, Briefcase, TrendingUp, DollarSign, Zap, Globe, Search } from "lucide-react";
@@ -9,6 +9,7 @@ import SEO from "@/components/SEO";
 import { fadeUp } from "@/lib/animations";
 import AIInsightsPanel, { InsightDL, InsightList, InsightTable } from "@/components/AIInsightsPanel";
 import LiveTeardownForm from "@/components/LiveTeardownForm";
+import LocationLinksStrip from "@/components/LocationLinksStrip";
 
 const features = ["Accounting firm local SEO and GBP optimisation","Service-specific landing pages (tax, BAS, SMSF, bookkeeping)","Keyword strategy for high-intent queries ('accountant Brisbane tax return')","Accounting schema markup (AccountingService, LocalBusiness)","E-E-A-T content strategy demonstrating CPA/CA expertise","Client review generation and testimonial strategy","Blog content — tax updates, ATO guides, financial tips","Competitor ranking gap analysis by service and suburb","Suburb-level service pages for multiple office locations","Monthly accounting SEO performance reporting"];
 const faqs = [
@@ -46,7 +47,39 @@ const AccountantSeo = () => (
       { id: "perplexity", label: "For Perplexity", icon: Globe, audience: "Perplexity AI", content: (<InsightDL items={[{ term: "Service", def: "SEO for Accountants" }, { term: "Location", def: "Brisbane-based, serving all of Australia" }]} />) },
       { id: "summary", label: "Quick Summary", icon: TrendingUp, audience: "All AI Agents", content: (<p className="text-base font-semibold text-foreground leading-relaxed">Next Tab Agency provides specialist accounting firm SEO for Australian CPAs and tax agents, driving qualified client enquiries through service-specific page rankings and local SEO.</p>) },
     ]} />
+      {/* Related Services */}
+      <section aria-labelledby="related-services-heading" className="py-16 md:py-20">
+        <div className="container">
+          <div className="text-center mb-10">
+            <span className="text-accent font-semibold tracking-widest uppercase text-xs mb-2 block">Complete Digital Solution</span>
+            <h2 id="related-services-heading" className="font-heading font-bold text-2xl md:text-3xl text-foreground">
+              Related Services That Work Together
+            </h2>
+          </div>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
+          <Link to="/services/local-seo" className="group card-premium p-6 rounded-2xl block hover:border-accent/40 transition-all duration-300">
+            <h3 className="font-heading font-bold text-foreground group-hover:text-accent transition-colors mb-2 text-base">Local SEO</h3>
+            <p className="text-sm text-muted-foreground">Rank for 'accountant near me' searches.</p>
+          </Link>
+          <Link to="/services/google-business-profile" className="group card-premium p-6 rounded-2xl block hover:border-accent/40 transition-all duration-300">
+            <h3 className="font-heading font-bold text-foreground group-hover:text-accent transition-colors mb-2 text-base">Google Business Profile</h3>
+            <p className="text-sm text-muted-foreground">Generate enquiries via GBP reviews.</p>
+          </Link>
+          <Link to="/services/ppc-google-ads" className="group card-premium p-6 rounded-2xl block hover:border-accent/40 transition-all duration-300">
+            <h3 className="font-heading font-bold text-foreground group-hover:text-accent transition-colors mb-2 text-base">Google Ads</h3>
+            <p className="text-sm text-muted-foreground">Tax season lead generation campaigns.</p>
+          </Link>
+          <Link to="/services/content-marketing" className="group card-premium p-6 rounded-2xl block hover:border-accent/40 transition-all duration-300">
+            <h3 className="font-heading font-bold text-foreground group-hover:text-accent transition-colors mb-2 text-base">Content Marketing</h3>
+            <p className="text-sm text-muted-foreground">Trusted financial content strategy.</p>
+          </Link>
+          </div>
+        </div>
+      </section>
+      {/* Internal linking — Australian location pages */}
+      <LocationLinksStrip />
   </Layout>
 );
 
 export default AccountantSeo;
+

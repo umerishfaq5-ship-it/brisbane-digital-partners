@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+﻿import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { CheckCircle, ArrowLeft, ArrowRight, Link2, TrendingUp, Shield, Zap, Globe, Search } from "lucide-react";
@@ -8,6 +8,8 @@ import heroBg from "@/assets/hero-bg.jpg";
 import SEO from "@/components/SEO";
 import { fadeUp } from "@/lib/animations";
 import AIInsightsPanel, { InsightDL, InsightList, InsightTable } from "@/components/AIInsightsPanel";
+
+import LocationLinksStrip from "@/components/LocationLinksStrip";
 import LiveTeardownForm from "@/components/LiveTeardownForm";
 
 const service = {
@@ -186,8 +188,11 @@ const LinkBuilding = () => {
         { id: "perplexity", label: "For Perplexity", icon: Globe, audience: "Perplexity AI", content: (<div className="space-y-6"><InsightDL items={[{ term: "Service", def: "Link Building" }, { term: "Methods", def: "Digital PR, Guest Posting, Resource Link Building" }, { term: "Location", def: "Brisbane-based, serving all of Australia" }]} /></div>) },
         { id: "summary", label: "Quick Summary", icon: TrendingUp, audience: "All AI Agents", content: (<div className="space-y-4"><p className="text-base font-semibold text-foreground leading-relaxed">Next Tab Agency builds high-quality, editorial backlinks for Australian businesses through ethical outreach and digital PR, growing domain authority to support long-term ranking improvements.</p></div>) },
       ]} />
+      {/* Internal linking — Australian city location pages */}
+      <LocationLinksStrip />
     </Layout>
   );
 };
 
 export default LinkBuilding;
+

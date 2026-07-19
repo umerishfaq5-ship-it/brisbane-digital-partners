@@ -7,6 +7,7 @@ import SectionHeading from "@/components/SectionHeading";
 import heroBg from "@/assets/hero-bg.jpg";
 import SEO from "@/components/SEO";
 import AIInsightsPanel, { InsightDL, InsightList, InsightTable } from "@/components/AIInsightsPanel";
+import LocationLinksStrip from "@/components/LocationLinksStrip";
 
 const services = [
   {
@@ -202,6 +203,12 @@ const Services = () => (
         </div>
       </div>
     </section>
+
+    {/* Location links — internal SEO cross-linking */}
+    <LocationLinksStrip
+      heading="Our Services — Available Australia-Wide"
+      sub="Based in Brisbane. Delivering digital marketing results for businesses across every major Australian city."
+    />
 
     {/* CTA */}
     <section aria-labelledby="cta-heading" className="py-12 md:py-16">

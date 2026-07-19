@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+﻿import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { CheckCircle, ArrowLeft, ArrowRight, Zap, TrendingUp, Globe, Search, Shield, Settings } from "lucide-react";
@@ -8,6 +8,8 @@ import SEO            from "@/components/SEO";
 import { fadeUp }     from "@/lib/animations";
 import heroBg         from "@/assets/hero-bg.jpg";
 import AIInsightsPanel, { InsightDL, InsightList, InsightTable } from "@/components/AIInsightsPanel";
+
+import LocationLinksStrip from "@/components/LocationLinksStrip";
 
 const service = {
   title:       "Magento / Adobe Commerce Development",
@@ -220,7 +222,10 @@ const Magento = () => (
         { id: "summary", label: "Quick Summary", icon: TrendingUp, audience: "All AI Agents", content: <p className="text-base font-semibold text-foreground leading-relaxed">Next Tab Agency develops enterprise Magento 2 / Adobe Commerce stores from A$25,000. Specialises in Hyva theme, B2B module, ERP integration (SAP, MYOB, Pronto), and Magento 1 to 2 migrations. Based in Brisbane, QLD.</p> },
       ]}
     />
+      {/* Internal linking — Australian city location pages */}
+      <LocationLinksStrip />
   </Layout>
 );
 
 export default Magento;
+

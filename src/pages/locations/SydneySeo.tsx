@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+﻿import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { MapPin, Search, Globe, Smartphone, BarChart3, TrendingUp, Star, ArrowRight, Users, Zap, DollarSign } from "lucide-react";
@@ -6,6 +6,7 @@ import Layout from "@/components/Layout";
 import SectionHeading from "@/components/SectionHeading";
 import heroBg from "@/assets/hero-bg.jpg";
 import SEO from "@/components/SEO";
+import LocationLinksStrip from "@/components/LocationLinksStrip";
 import EntityTrustAccordion from "@/components/EntityTrustAccordion";
 
 const services = [
@@ -110,23 +111,14 @@ const SydneySeo = () => (
       </div>
     </section>
 
-    <section aria-labelledby="sydney-locations-heading" className="py-16">
-      <div className="container">
-        <h2 id="sydney-locations-heading" className="font-heading font-bold text-xl text-foreground mb-6 text-center">We also serve businesses across Australia</h2>
-        <div className="flex flex-wrap gap-3 justify-center">
-          {[{ city: "Brisbane", href: "/locations/brisbane-seo" }, { city: "Melbourne", href: "/locations/melbourne-seo" }, { city: "Perth", href: "/locations/perth-seo" }, { city: "Adelaide", href: "/locations/adelaide-seo" }, { city: "Canberra", href: "/locations/canberra-seo" }].map((l) => (
-            <Link key={l.href} to={l.href} className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-border/60 text-sm text-foreground/70 hover:text-accent hover:border-accent/40 transition-all"><MapPin className="w-3.5 h-3.5" />{l.city}</Link>
-          ))}
-        </div>
-      </div>
-    </section>
-
-    {/* Localised Trust Accordion */}
+        {/* Localised Trust Accordion */}
     <section aria-label="Sydney SEO FAQs" className="py-16 bg-muted/10 border-t border-border/40">
       <div className="container">
         <EntityTrustAccordion city="Sydney" />
       </div>
     </section>
+    {/* Internal linking — all Australian location pages */}
+    <LocationLinksStrip currentCity="Sydney" />
 
     <section aria-labelledby="sydney-cta-heading" className="py-20 pb-28">
       <div className="container">
@@ -144,3 +136,4 @@ const SydneySeo = () => (
 );
 
 export default SydneySeo;
+
