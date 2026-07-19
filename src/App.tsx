@@ -60,6 +60,9 @@ import HealthcareSeo from "./pages/industry/HealthcareSeo.tsx";
 import AccountantSeo from "./pages/industry/AccountantSeo.tsx";
 import MortgageBrokerSeo from "./pages/industry/MortgageBrokerSeo.tsx";
 import EducationSeo from "./pages/industry/EducationSeo.tsx";
+import NdisDigitalMarketing from "./pages/industry/NdisDigitalMarketing.tsx";
+import TradieDigitalMarketing from "./pages/industry/TradieDigitalMarketing.tsx";
+import SaasSeo from "./pages/industry/SaasSeo.tsx";
 import BrisbaneSeo  from "./pages/locations/BrisbaneSeo.tsx";
 import SydneySeo    from "./pages/locations/SydneySeo.tsx";
 import MelbourneSeo from "./pages/locations/MelbourneSeo.tsx";
@@ -170,6 +173,9 @@ const App = () => (
             <Route path="/industry/accountant-seo" element={<AccountantSeo />} />
             <Route path="/industry/mortgage-broker-seo" element={<MortgageBrokerSeo />} />
             <Route path="/industry/education-seo" element={<EducationSeo />} />
+            <Route path="/industry/ndis-digital-marketing" element={<NdisDigitalMarketing />} />
+            <Route path="/industry/tradie-digital-marketing" element={<TradieDigitalMarketing />} />
+            <Route path="/industry/saas-seo" element={<SaasSeo />} />
             {/* Location Pages */}
             <Route path="/locations/brisbane-seo"  element={<BrisbaneSeo />} />
             <Route path="/locations/sydney-seo"    element={<SydneySeo />} />

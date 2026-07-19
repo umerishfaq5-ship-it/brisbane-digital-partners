@@ -104,6 +104,10 @@ const routes = [
   // Hamza Invoice
   '/hamza',
   '/hamza/records',
+  '/industry/ndis-digital-marketing',
+  '/industry/tradie-digital-marketing',
+  '/industry/saas-seo',
+  '/services/linkedin-ads',
 ];
 
 const PORT = 54321;
@@ -130,11 +134,11 @@ function killPort(port) {
  * Strategy:
  *   1. Wait for networkidle (JS bundle loaded & executed)
  *   2. Wait for a visible content selector to appear in the DOM
- *   3. Poll innerText until it has real content (retry up to 10×)
+ *   3. Poll innerText until it has real content (retry up to 10Ã—)
  *   4. Extra settle time for framer-motion animations
  */
 async function waitForContent(page, route, minLength) {
-  // Step 1 — wait for any meaningful DOM element
+  // Step 1 â€” wait for any meaningful DOM element
   const selectors = [
     'h1',
     'h2',
@@ -152,7 +156,7 @@ async function waitForContent(page, route, minLength) {
     } catch { /* try next */ }
   }
 
-  // Step 2 — poll body.innerText with increasing backoff
+  // Step 2 â€” poll body.innerText with increasing backoff
   let bodyText = '';
   const delays = [300, 500, 700, 1000, 1000, 1000, 1500, 1500, 2000, 2000];
   for (let i = 0; i < delays.length; i++) {
@@ -165,7 +169,7 @@ async function waitForContent(page, route, minLength) {
     if (bodyText.length >= minLength) break;
   }
 
-  // Step 3 — extra settle for CSS animations / lazy images
+  // Step 3 â€” extra settle for CSS animations / lazy images
   await page.waitForTimeout(600);
 
   return bodyText;
@@ -230,7 +234,7 @@ async function runPrerender() {
         timeout: 45000,
       });
     } catch (err) {
-      console.warn(`  ⚠ goto timed out for ${route}: ${err.message}`);
+      console.warn(`  âš  goto timed out for ${route}: ${err.message}`);
     }
 
     const isHamzaRoute = route.startsWith('/hamza');
@@ -242,9 +246,9 @@ async function runPrerender() {
     if (bodyText.length < minLength) {
       hollowCount++;
       hollowRoutes.push(route);
-      console.warn(`  ⚠ HOLLOW: ${route} (${bodyText.length} chars)`);
+      console.warn(`  âš  HOLLOW: ${route} (${bodyText.length} chars)`);
     } else {
-      console.log(`  ✓ ${route} (${bodyText.length} chars)`);
+      console.log(`  âœ“ ${route} (${bodyText.length} chars)`);
     }
 
     const isIndex = route === '/';
@@ -264,13 +268,13 @@ async function runPrerender() {
 
   if (fs.existsSync(templateIndex)) fs.unlinkSync(templateIndex);
 
-  console.log('\n✅ Prerendering complete!');
+  console.log('\nâœ… Prerendering complete!');
   console.log(`   Total routes: ${routes.length}`);
   console.log(`   Successful:   ${routes.length - hollowCount}`);
   if (hollowCount > 0) {
     console.warn(`   Hollow pages: ${hollowCount}`);
     hollowRoutes.forEach(r => console.warn(`     - ${r}`));
-    console.warn('\n   Hollow pages still have the React SPA shell — they will');
+    console.warn('\n   Hollow pages still have the React SPA shell â€” they will');
     console.warn('   render correctly in the browser via client-side hydration.');
   }
 }
