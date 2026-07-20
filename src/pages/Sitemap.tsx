@@ -231,8 +231,7 @@ export default function Sitemap() {
       <SEO
         title="HTML Sitemap — All Pages | Next Tab Agency Brisbane"
         description="Complete site index for Next Tab Agency — SEO services, Google Ads, social media advertising, web development, location pages and legal documents. Built for humans and search engines."
-        canonical="/sitemap"
-        noIndex
+        canonical="/sitemap/"
         breadcrumbs={[
           { name: "Home", url: "https://nexttabagency.com/" },
           { name: "Sitemap", url: "https://nexttabagency.com/sitemap" },

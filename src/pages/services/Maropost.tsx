@@ -1,4 +1,4 @@
-﻿import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { CheckCircle, ArrowLeft, ArrowRight, Zap, TrendingUp, Globe, Search, Package, Repeat } from "lucide-react";
@@ -71,8 +71,7 @@ const Maropost = () => (
     <SEO
       title="Maropost Commerce / Neto Developer Brisbane — Australia's E-commerce Platform"
       description="Expert Maropost Commerce Cloud (Neto) development in Brisbane. Custom storefronts, multi-channel setup, 3PL integration, and migration for Australian retailers and wholesalers."
-      canonical="/services/maropost-neto"
-      noIndex={true}
+      canonical="/services/maropost-neto/"
       faqs={service.faqs}
       breadcrumbs={[
         { name: "Home",     url: "https://nexttabagency.com/" },

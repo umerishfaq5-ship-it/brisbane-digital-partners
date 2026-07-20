@@ -1,4 +1,4 @@
-﻿import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { CheckCircle, ArrowLeft, ArrowRight, Zap, TrendingUp, Globe, Search, Shield, Settings } from "lucide-react";
@@ -71,8 +71,7 @@ const Magento = () => (
     <SEO
       title="Magento Developer Brisbane — Adobe Commerce Development Australia"
       description="Expert Magento 2 and Adobe Commerce development in Brisbane. Hyva theme builds, ERP integrations, Magento 1 to 2 migrations, and B2B module configuration for Australian enterprise retailers."
-      canonical="/services/magento-development"
-      noIndex={true}
+      canonical="/services/magento-development/"
       faqs={service.faqs}
       breadcrumbs={[
         { name: "Home",     url: "https://nexttabagency.com/" },

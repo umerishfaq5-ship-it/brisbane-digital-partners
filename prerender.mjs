@@ -54,6 +54,10 @@ const routes = [
   '/services/magento-development',
   '/services/maropost-neto',
   // Industry Pages
+  '/services/off-page-seo',
+  '/services/google-shopping',
+  '/services/linkedin-ads',
+  // Industry Pages
   '/industry/seo-for-tradies',
   '/industry/seo-for-dentists',
   '/industry/seo-for-lawyers',
@@ -64,6 +68,9 @@ const routes = [
   '/industry/accountant-seo',
   '/industry/mortgage-broker-seo',
   '/industry/education-seo',
+  '/industry/ndis-digital-marketing',
+  '/industry/tradie-digital-marketing',
+  '/industry/saas-seo',
   // Location Pages
   '/locations/brisbane-seo',
   '/locations/sydney-seo',
@@ -75,6 +82,7 @@ const routes = [
   '/locations/sunshine-coast-seo',
   '/locations/hobart-seo',
   // General
+  '/our-team',
   '/portfolio',
   '/portfolio/my-fitness-coach',
   '/portfolio/circle-it',
@@ -101,13 +109,13 @@ const routes = [
   '/blog/content-strategy-core-update',
   '/blog/technical-seo-core-update',
   '/blog/local-entity-core-update',
-  // Hamza Invoice
+  '/blog/local-seo-map-pack',
+  '/blog/ai-search-sge-australia',
+  '/blog/seo-vs-google-ads-cost',
+  '/blog/shopify-vs-woocommerce-seo',
+  // Hamza Invoice (private, not indexed — still prerendered for app shell)
   '/hamza',
   '/hamza/records',
-  '/industry/ndis-digital-marketing',
-  '/industry/tradie-digital-marketing',
-  '/industry/saas-seo',
-  '/services/linkedin-ads',
 ];
 
 const PORT = 54321;

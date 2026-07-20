@@ -47,7 +47,17 @@ export default function SEO({
   serviceSchema,
 }: SEOProps) {
   const fullTitle = `${title} | ${SITE_NAME}`;
-  const canonicalUrl = canonical ? `${BASE_URL}${canonical}` : BASE_URL;
+  // Ensure canonical always uses trailing slash to match prerendered directory structure
+  // e.g. /about → https://nexttabagency.com/about/  (avoids 301 redirect in GSC)
+  const rawPath = canonical ?? '';
+  const normalizedPath =
+    rawPath === '' || rawPath === '/'
+      ? ''
+      : rawPath.endsWith('/')
+        ? rawPath
+        : `${rawPath}/`;
+  const canonicalUrl = `${BASE_URL}${normalizedPath || '/'}`;
+
   const image = ogImage ?? DEFAULT_OG_IMAGE;
 
   /* Build JSON-LD blocks */

@@ -8,8 +8,7 @@ const Privacy = () => (
     <SEO
       title="Privacy Policy"
       description="Next Tab Agency's Privacy Policy — how we collect, use, and protect your personal information in accordance with the Australian Privacy Act 1988."
-      canonical="/privacy"
-      noIndex
+      canonical="/privacy/"
       breadcrumbs={[
         { name: "Home", url: "https://nexttabagency.com/" },
         { name: "Privacy Policy", url: "https://nexttabagency.com/privacy" },
