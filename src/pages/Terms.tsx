@@ -8,8 +8,7 @@ const Terms = () => (
     <SEO
       title="Terms of Service"
       description="Next Tab Agency's Terms of Service — the terms governing our digital agency services including SEO, web development, and mobile app development in Australia."
-      canonical="/terms"
-      noIndex
+      canonical="/terms/"
       breadcrumbs={[
         { name: "Home", url: "https://nexttabagency.com/" },
         { name: "Terms of Service", url: "https://nexttabagency.com/terms" },
