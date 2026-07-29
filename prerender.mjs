@@ -164,21 +164,21 @@ async function waitForContent(page, route, minLength) {
     } catch { /* try next */ }
   }
 
-  // Step 2 â€” poll body.innerText with increasing backoff
+  // Step 2 — poll body.innerText with increasing backoff
   let bodyText = '';
-  const delays = [300, 500, 700, 1000, 1000, 1000, 1500, 1500, 2000, 2000];
+  const delays = [500, 700, 1000, 1000, 1500, 1500, 2000, 2000, 2000, 2500];
   for (let i = 0; i < delays.length; i++) {
     await page.waitForTimeout(delays[i]);
     try {
-      bodyText = (await page.innerText('body', { timeout: 3000 })).trim();
+      bodyText = (await page.innerText('body', { timeout: 5000 })).trim();
     } catch {
       bodyText = '';
     }
     if (bodyText.length >= minLength) break;
   }
 
-  // Step 3 â€” extra settle for CSS animations / lazy images
-  await page.waitForTimeout(600);
+  // Step 3 — extra settle for CSS animations / lazy images
+  await page.waitForTimeout(1000);
 
   return bodyText;
 }

@@ -30,8 +30,8 @@ import LocationLinksStrip from "@/components/LocationLinksStrip";
    Service Data
 ───────────────────────────────────────────────────────────────── */
 const service = {
-  title:       "WordPress Development for Australian Businesses",
-  headline:    "Powerful, flexible WordPress sites — built the right way",
+  title:       "WordPress Developer Brisbane — Custom Websites & WooCommerce",
+  headline:    "Powerful, flexible WordPress sites — built the right way in Brisbane",
   description:
     "WordPress powers over 40% of the internet, but not every WordPress site is built equal. We build fast, secure, and SEO-ready WordPress websites that are easy for you to manage and built to grow with your business.",
   longDescription:
@@ -91,24 +91,28 @@ const service = {
 
   faqs: [
     {
+      q: "Why choose a WordPress developer in Brisbane?",
+      a: "A local Brisbane WordPress developer understands the Australian market, is available in AEST business hours, and can meet in person. Next Tab Agency builds WordPress sites from our Eagleby, Brisbane office — with all code and hosting on Australian servers.",
+    },
+    {
+      q: "How much does a WordPress website cost in Brisbane?",
+      a: "A custom WordPress business site typically starts from A$3,500. WooCommerce stores start from A$5,500. Pricing depends on the number of pages, features, and integrations required. We provide transparent, upfront quotes.",
+    },
+    {
       q: "Why WordPress over other platforms?",
-      a: "WordPress gives you full ownership of your site, unlimited flexibility, and a massive ecosystem of tools. Unlike Squarespace or Wix, there are no monthly platform fees and no lock-in.",
+      a: "WordPress gives you full ownership of your site, unlimited flexibility, and a massive ecosystem of tools. Unlike Squarespace or Wix, there are no monthly platform fees and no lock-in. WordPress powers 43% of all websites globally.",
     },
     {
-      q: "Do you build WooCommerce shops?",
-      a: "Yes. WooCommerce is our preferred e-commerce solution for WordPress. We handle product setup, payment gateway integration (Stripe, PayPal, Afterpay), and shipping configuration.",
+      q: "Do you build WooCommerce shops in Brisbane?",
+      a: "Yes. WooCommerce is our preferred e-commerce solution for WordPress. We handle product setup, Australian payment gateway integration (Stripe, PayPal, Afterpay, Zip), and Australian Post shipping configuration.",
     },
     {
-      q: "How much does a WordPress site cost?",
-      a: "A custom WordPress business site typically starts from A$3,500. WooCommerce stores start from A$5,500. Pricing depends on the number of pages, features, and integrations required.",
+      q: "How long does a WordPress website take to build?",
+      a: "A standard WordPress business site takes 4–6 weeks from approved wireframes to launch. WooCommerce stores typically take 6–8 weeks. Complex builds with custom functionality or integrations may take longer.",
     },
     {
       q: "Will I be able to update my own content?",
-      a: "Absolutely. We build and configure your WordPress dashboard so updating pages, adding blog posts, or changing images is straightforward — even if you've never used WordPress before.",
-    },
-    {
-      q: "Do you provide hosting?",
-      a: "We recommend and configure high-performance Australian hosting (Kinsta, WP Engine, or Cloudflare) and can manage it on an ongoing basis as part of a maintenance plan.",
+      a: "Absolutely. We build and configure your WordPress dashboard so updating pages, adding blog posts, or changing images is straightforward — even if you've never used WordPress before. We provide hands-on admin training.",
     },
   ],
 };
@@ -132,19 +136,19 @@ const WordPress = () => (
 
     {/* ── SEO & Structured Data ──────────────────────────────── */}
     <SEO
-      title="WordPress Development Brisbane — Custom WordPress Websites Australia"
-      description="Custom WordPress website design and development in Brisbane. Fast, secure, SEO-ready WordPress sites for Australian businesses — including WooCommerce e-commerce."
+      title="WordPress Developer Brisbane | Custom WP Design & WooCommerce | Next Tab Agency"
+      description="Brisbane's WordPress specialists. Custom theme design, WooCommerce setup & ongoing support. Sub-2s load times, Google-ready architecture. 50+ WordPress sites delivered. Free quote today."
       canonical="/services/wordpress-development"
       faqs={service.faqs}
       breadcrumbs={[
         { name: "Home",     url: "https://nexttabagency.com/" },
         { name: "Services", url: "https://nexttabagency.com/services" },
-        { name: "WordPress Development", url: "https://nexttabagency.com/services/wordpress-development" },
+        { name: "WordPress Developer Brisbane", url: "https://nexttabagency.com/services/wordpress-development" },
       ]}
       serviceSchema={{
-        name:        "WordPress Development",
-        description: "Custom WordPress website design, WooCommerce e-commerce, and WordPress maintenance for Australian businesses.",
-        areaServed:  "Australia",
+        name:        "WordPress Developer Brisbane",
+        description: "Custom WordPress website design, WooCommerce e-commerce, and WordPress maintenance for Brisbane and Australian businesses. From A$3,500.",
+        areaServed:  "Brisbane, Australia",
       }}
     />
 
@@ -530,6 +534,29 @@ const WordPress = () => (
         },
       ]}
     />
+    {/* Related Services — Internal Linking */}
+    <section aria-label="Related WordPress Services" className="py-16 surface-warm">
+      <div className="container">
+        <p className="text-xs font-bold uppercase tracking-[0.2em] text-accent mb-6 text-center">Related Services</p>
+        <div className="flex flex-wrap gap-3 justify-center">
+          {[
+            { label: "WooCommerce Developer Brisbane", href: "/services/woocommerce-development" },
+            { label: "WordPress SEO", href: "/services/wordpress-seo" },
+            { label: "Shopify Development", href: "/services/shopify-development" },
+            { label: "Web Development Brisbane", href: "/services/web-development" },
+            { label: "BigCommerce Development", href: "/services/bigcommerce-development" },
+            { label: "Speed Optimisation", href: "/services/speed-optimization" },
+            { label: "Brisbane SEO Agency", href: "/locations/brisbane-seo" },
+          ].map((s) => (
+            <Link key={s.href} to={s.href}
+              className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full border border-border bg-card text-sm font-semibold text-foreground hover:border-accent hover:text-accent transition-colors">
+              {s.label} <span className="text-accent text-xs">→</span>
+            </Link>
+          ))}
+        </div>
+      </div>
+    </section>
+
       {/* Internal linking — Australian city location pages */}
       <LocationLinksStrip />
 

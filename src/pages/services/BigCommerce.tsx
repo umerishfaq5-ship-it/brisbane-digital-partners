@@ -1,4 +1,4 @@
-﻿import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { CheckCircle, ArrowLeft, ArrowRight, Zap, TrendingUp, Globe, Search, BarChart3, Layers } from "lucide-react";
@@ -12,7 +12,7 @@ import AIInsightsPanel, { InsightDL, InsightList, InsightTable } from "@/compone
 import LocationLinksStrip from "@/components/LocationLinksStrip";
 
 const service = {
-  title:       "BigCommerce Development for Australian Businesses",
+  title:       "BigCommerce Developer Brisbane | Enterprise eCommerce",
   headline:    "Enterprise-grade e-commerce — built to scale",
   description: "BigCommerce is the platform of choice for Australian retailers and wholesalers who have outgrown Shopify or WooCommerce. We build high-performance BigCommerce stores with custom themes, headless architecture, and complex business rules that enterprise retail demands.",
   longDescription: "BigCommerce offers enterprise-level e-commerce features at a fraction of the cost of Magento — with native multi-currency, multi-storefront, and B2B wholesale capabilities that are built in, not bolted on. We build BigCommerce stores for Australian retailers who need advanced product catalogues, complex pricing rules, and the ability to sell across multiple channels (Amazon AU, eBay, Google Shopping). Our builds include headless BigCommerce implementations using Next.js for maximum performance, and migration services from Shopify, Magento, and Neto/Maropost.",
@@ -69,14 +69,14 @@ const relatedServices = [
 const BigCommerce = () => (
   <Layout>
     <SEO
-      title="BigCommerce Development Brisbane — BigCommerce Agency Australia"
-      description="Expert BigCommerce development in Brisbane. Custom BigCommerce themes, headless Next.js storefronts, B2B Edition, and migration from Magento or Neto for Australian retailers."
+      title="BigCommerce Developer Brisbane | Enterprise eCommerce Agency | Next Tab Agency"
+      description="Brisbane's BigCommerce specialists. Custom Stencil themes, headless Next.js storefronts, B2B Edition & migration from Magento/Neto. From A$6,000. Already top 10 on Google — book a free scoping call."
       canonical="/services/bigcommerce-development"
       faqs={service.faqs}
       breadcrumbs={[
         { name: "Home",     url: "https://nexttabagency.com/" },
         { name: "Services", url: "https://nexttabagency.com/services" },
-        { name: "BigCommerce Development", url: "https://nexttabagency.com/services/bigcommerce-development" },
+        { name: "BigCommerce Developer Brisbane", url: "https://nexttabagency.com/services/bigcommerce-development" },
       ]}
       serviceSchema={{ name: "BigCommerce Development", description: "Custom BigCommerce e-commerce development, headless builds, and migrations for Australian retailers and wholesalers.", areaServed: "Australia" }}
     />
