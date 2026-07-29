@@ -193,7 +193,9 @@ const sections = [
     description: "Jargon-free SEO guides, local marketing tips, and digital growth insights for Australian small businesses.",
     pages: [
       { label: "Blog Index — All Articles", href: "/blog", desc: "All SEO guides and local marketing articles for Australian small business owners." },
-      { label: "Google’s May 2026 Core Update is Complete", href: "/blog/core-update-may-2026", desc: "The second major Google core update of 2026 has officially finished rolling out." },
+      { label: "How Much Does a Website Cost in Brisbane in 2026?", href: "/blog/website-cost-brisbane", desc: "Real Brisbane website pricing — template sites from $800, custom WordPress from $3,500, eCommerce from $4,500." },
+      { label: "How to Choose a Digital Marketing Agency in Brisbane", href: "/blog/choose-digital-marketing-agency-brisbane", desc: "10 questions to ask every Brisbane agency before you sign — and what the answers should look like." },
+      { label: "Google's May 2026 Core Update is Complete", href: "/blog/core-update-may-2026", desc: "The second major Google core update of 2026 has officially finished rolling out." },
       { label: "Hit by the May 2026 Core Update? Why 'Good' Content Isn't Enough Anymore", href: "/blog/content-strategy-core-update", desc: "Google no longer cares if your content is just 'good.'" },
       { label: "The Technical SEO Checklist to Recover from the 2026 Core Updates", href: "/blog/technical-seo-core-update", desc: "Technical bottlenecks blocking Google from crawling, rendering, or trusting your site." },
       { label: "Losing Organic Traffic? Use the Google Map Pack to Bypass Core Update Drops", href: "/blog/local-entity-core-update", desc: "If your traditional website rankings fluctuate, your Google Business Profile (GBP) is your ultimate safety net." },

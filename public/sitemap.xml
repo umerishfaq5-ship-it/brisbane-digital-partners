@@ -122,13 +122,13 @@
   </url>
   <url>
     <loc>https://nexttabagency.com/services/on-page-seo/</loc>
-    <lastmod>2026-07-19</lastmod>
+    <lastmod>2026-07-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://nexttabagency.com/services/off-page-seo/</loc>
-    <lastmod>2026-07-19</lastmod>
+    <lastmod>2026-07-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -262,7 +262,7 @@
   </url>
   <url>
     <loc>https://nexttabagency.com/services/email-marketing/</loc>
-    <lastmod>2026-07-19</lastmod>
+    <lastmod>2026-07-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -284,9 +284,9 @@
   </url>
   <url>
     <loc>https://nexttabagency.com/services/wordpress-development/</loc>
-    <lastmod>2026-07-19</lastmod>
+    <lastmod>2026-07-29</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.9</priority>
   </url>
   <url>
     <loc>https://nexttabagency.com/services/squarespace-development/</loc>
@@ -302,9 +302,9 @@
   </url>
   <url>
     <loc>https://nexttabagency.com/services/woocommerce-development/</loc>
-    <lastmod>2026-07-19</lastmod>
+    <lastmod>2026-07-29</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.9</priority>
   </url>
   <url>
     <loc>https://nexttabagency.com/services/wix-development/</loc>
@@ -314,15 +314,15 @@
   </url>
   <url>
     <loc>https://nexttabagency.com/services/bigcommerce-development/</loc>
-    <lastmod>2026-07-19</lastmod>
+    <lastmod>2026-07-29</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.9</priority>
   </url>
   <url>
     <loc>https://nexttabagency.com/services/magento-development/</loc>
-    <lastmod>2026-07-19</lastmod>
+    <lastmod>2026-07-29</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.9</priority>
   </url>
   <url>
     <loc>https://nexttabagency.com/services/maropost-neto/</loc>
@@ -425,7 +425,7 @@
   ============================================================ -->
   <url>
     <loc>https://nexttabagency.com/locations/brisbane-seo/</loc>
-    <lastmod>2026-07-19</lastmod>
+    <lastmod>2026-07-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -455,7 +455,7 @@
   </url>
   <url>
     <loc>https://nexttabagency.com/locations/perth-seo/</loc>
-    <lastmod>2026-07-19</lastmod>
+    <lastmod>2026-07-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -483,7 +483,7 @@
   ============================================================ -->
   <url>
     <loc>https://nexttabagency.com/blog/</loc>
-    <lastmod>2026-07-19</lastmod>
+    <lastmod>2026-07-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -579,9 +579,23 @@
   </url>
   <url>
     <loc>https://nexttabagency.com/blog/shopify-vs-woocommerce-seo/</loc>
-    <lastmod>2026-06-26</lastmod>
+    <lastmod>2026-07-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+  </url>
+
+  <!-- NEW BLOG POSTS — July 29 2026 -->
+  <url>
+    <loc>https://nexttabagency.com/blog/website-cost-brisbane/</loc>
+    <lastmod>2026-07-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://nexttabagency.com/blog/choose-digital-marketing-agency-brisbane/</loc>
+    <lastmod>2026-07-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
 
   <!-- ============================================================
@@ -589,7 +603,7 @@
   ============================================================ -->
   <url>
     <loc>https://nexttabagency.com/sitemap/</loc>
-    <lastmod>2026-07-19</lastmod>
+    <lastmod>2026-07-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>

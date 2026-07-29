@@ -5,6 +5,26 @@ import Layout from "@/components/Layout";
 
 const posts = [
   {
+    slug: "website-cost-brisbane",
+    title: "How Much Does a Website Cost in Brisbane in 2026? Honest Pricing Guide",
+    excerpt: "From $800 Wix templates to $60,000 custom applications — real pricing from a Brisbane agency. 5 tiers explained with what you actually get at each price point.",
+    category: "Web Development",
+    date: "July 29, 2026",
+    readTime: "12 min read",
+    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2015&fm=webp&fit=crop",
+    featured: true,
+  },
+  {
+    slug: "choose-digital-marketing-agency-brisbane",
+    title: "How to Choose a Digital Marketing Agency in Brisbane: 10 Questions That Separate the Good From the Dodgy",
+    excerpt: "Most Brisbane businesses hire the wrong agency and waste 6–12 months finding out. Here's exactly how to vet any Brisbane digital agency before you sign anything.",
+    category: "Agency Selection",
+    date: "July 29, 2026",
+    readTime: "10 min read",
+    image: "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?q=80&w=2070&fm=webp&fit=crop",
+    featured: true,
+  },
+  {
     slug: "shopify-vs-woocommerce-seo",
     title: "Shopify vs WooCommerce: Which Platform Actually Ranks Better on Google for Australian Stores?",
     excerpt: "The ultimate E-commerce showdown. We break down the technical SEO, site speed, and scalability of both platforms.",
@@ -12,7 +32,6 @@ const posts = [
     date: "July 16, 2026",
     readTime: "10 min read",
     image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?q=80&w=2070&fm=webp&fit=crop",
-    featured: true,
   },
   {
     slug: "seo-vs-google-ads-cost",
@@ -159,9 +178,13 @@ const categoryColors: Record<string, string> = {
   "Authority Building": "bg-purple-100 text-purple-700 dark:bg-purple-900/30 dark:text-purple-400",
   "SEO Tips":           "bg-yellow-100 text-yellow-700 dark:bg-yellow-900/30 dark:text-yellow-400",
   "E-Commerce SEO":     "bg-pink-100 text-pink-700 dark:bg-pink-900/30 dark:text-pink-400",
+  "E-commerce SEO":     "bg-pink-100 text-pink-700 dark:bg-pink-900/30 dark:text-pink-400",
   "SEO Updates":        "bg-red-100 text-red-700 dark:bg-red-900/30 dark:text-red-400",
   "Content Strategy":   "bg-indigo-100 text-indigo-700 dark:bg-indigo-900/30 dark:text-indigo-400",
   "Technical SEO":      "bg-teal-100 text-teal-700 dark:bg-teal-900/30 dark:text-teal-400",
+  "Marketing Strategy": "bg-violet-100 text-violet-700 dark:bg-violet-900/30 dark:text-violet-400",
+  "Web Development":    "bg-cyan-100 text-cyan-700 dark:bg-cyan-900/30 dark:text-cyan-400",
+  "Agency Selection":   "bg-rose-100 text-rose-700 dark:bg-rose-900/30 dark:text-rose-400",
 };
 
 const Blog = () => {

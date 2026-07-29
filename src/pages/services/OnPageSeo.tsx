@@ -1,4 +1,4 @@
-﻿import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { CheckCircle, ArrowLeft, ArrowRight, FileEdit, TrendingUp, Search, Zap, Globe, Tag, AlignLeft } from "lucide-react";
@@ -13,7 +13,7 @@ import LocationLinksStrip from "@/components/LocationLinksStrip";
 import LiveTeardownForm from "@/components/LiveTeardownForm";
 
 const service = {
-  title: "On-Page SEO",
+  title: "On-Page SEO Brisbane | Optimise Every Page That Should Rank",
   headline: "The Foundation Every Ranking Sits On.",
   description: "On-page SEO optimisation for Australian websites — title tags, headings, content, schema markup, internal links, and everything Google needs to understand, trust, and rank your pages.",
   longDescription: "On-page SEO is the practice of optimising individual web pages so search engines can correctly understand what they're about and what queries they should rank for. It covers everything visible on and within your page — from the title tag and meta description through to heading structure, body content, internal links, image alt text, and schema markup. Without solid on-page SEO, even the best content and backlink profile won't deliver the rankings your business deserves.",
@@ -58,16 +58,16 @@ const service = {
 const OnPageSeo = () => (
   <Layout>
     <SEO
-      title="On-Page SEO Australia — On-Page SEO Services & Optimisation"
-      description="Expert on-page SEO for Australian websites. We optimise title tags, headings, content, schema, and internal links to maximise your rankings and organic click-through rates."
+      title="On-Page SEO Brisbane | On-Page SEO Services Australia | Next Tab Agency"
+      description="On-page SEO for Brisbane & Australian websites. Title tags, headings, content, schema & internal links optimised. Audits from A$490. See results in 2-4 weeks. Free on-page audit."
       canonical="/services/on-page-seo"
       faqs={service.faqs}
       breadcrumbs={[
         { name: "Home", url: "https://nexttabagency.com/" },
         { name: "Services", url: "https://nexttabagency.com/services" },
-        { name: "On-Page SEO", url: "https://nexttabagency.com/services/on-page-seo" },
+        { name: "On-Page SEO Brisbane", url: "https://nexttabagency.com/services/on-page-seo" },
       ]}
-      serviceSchema={{ name: "On-Page SEO Services", description: "On-page SEO optimisation for Australian websites — title tags, headings, content, schema, and internal linking.", areaServed: "Australia" }}
+      serviceSchema={{ name: "On-Page SEO Brisbane", description: "On-page SEO optimisation for Brisbane and Australian websites — title tags, headings, content, schema, and internal linking. From A$490.", areaServed: "Brisbane, Australia" }}
     />
 
     <section aria-labelledby="hero-heading" className="relative min-h-[50vh] flex items-center overflow-hidden">
