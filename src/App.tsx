@@ -100,6 +100,8 @@ import HamzaInvoice from "./pages/hamza/HamzaInvoice.tsx";
 import HamzaRecords from "./pages/hamza/HamzaRecords.tsx";
 import HamzaInvoiceView from "./pages/hamza/HamzaInvoiceView.tsx";
 import HamzaAuthGuard from "./pages/hamza/HamzaAuthGuard.tsx";
+import WebsiteCostBrisbane from "./pages/blog/WebsiteCostBrisbane.tsx";
+import ChooseDigitalAgencyBrisbane from "./pages/blog/ChooseDigitalAgencyBrisbane.tsx";
 import MyFitnessCoach from "./pages/portfolio/MyFitnessCoach.tsx";
 import CircleIt from "./pages/portfolio/CircleIt.tsx";
 import VacanciesPage from "./pages/portfolio/Vacancies.tsx";
@@ -215,6 +217,8 @@ const App = () => (
             <Route path="/blog/ai-search-sge-australia" element={<AiSearchSgeAustralia />} />
             <Route path="/blog/seo-vs-google-ads-cost" element={<SeoVsGoogleAdsCost />} />
             <Route path="/blog/shopify-vs-woocommerce-seo" element={<ShopifyVsWooCommerceSeo />} />
+            <Route path="/blog/website-cost-brisbane" element={<WebsiteCostBrisbane />} />
+            <Route path="/blog/choose-digital-marketing-agency-brisbane" element={<ChooseDigitalAgencyBrisbane />} />
             {/* Hamza Invoice System */}
             <Route path="/hamza" element={<HamzaAuthGuard><HamzaInvoice /></HamzaAuthGuard>} />
             <Route path="/hamza/records" element={<HamzaAuthGuard><HamzaRecords /></HamzaAuthGuard>} />

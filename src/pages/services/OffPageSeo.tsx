@@ -1,4 +1,4 @@
-﻿import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { CheckCircle, ArrowLeft, ArrowRight, Link2, TrendingUp, Zap, Globe, Search, Shield, ExternalLink } from "lucide-react";
@@ -13,7 +13,7 @@ import LocationLinksStrip from "@/components/LocationLinksStrip";
 import LiveTeardownForm from "@/components/LiveTeardownForm";
 
 const service = {
-  title: "Off-Page SEO",
+  title: "Off-Page SEO Brisbane | Link Building & Digital PR",
   headline: "Build the Authority That Makes Rankings Stick.",
   description: "Off-page SEO for Australian businesses that want sustainable rankings — not short-lived spikes. We build genuine authority through editorial backlinks, digital PR, and brand signal acquisition.",
   longDescription: "Off-page SEO encompasses everything that happens outside your own website that signals authority and trust to Google. The most important off-page signal is backlinks — editorial links from other websites that tell Google your content is worth ranking. But off-page SEO in 2026 extends beyond links to include brand mentions, digital PR, social signals, and the growing influence of AI citation (GEO). We build a comprehensive off-page authority profile that creates durable rankings resistant to algorithm updates.",
@@ -52,16 +52,16 @@ const service = {
 const OffPageSeo = () => (
   <Layout>
     <SEO
-      title="Off-Page SEO Australia — Off-Page SEO Services & Link Building"
-      description="Off-page SEO for Australian businesses. We build editorial backlinks, digital PR coverage, and brand authority signals that create durable Google rankings."
+      title="Off-Page SEO Brisbane | Link Building & Digital PR Australia | Next Tab Agency"
+      description="Off-page SEO & link building for Brisbane businesses. Editorial backlinks, digital PR & brand authority. Australian-earned links only — no networks. Free backlink audit for Brisbane sites."
       canonical="/services/off-page-seo"
       faqs={service.faqs}
       breadcrumbs={[
         { name: "Home", url: "https://nexttabagency.com/" },
         { name: "Services", url: "https://nexttabagency.com/services" },
-        { name: "Off-Page SEO", url: "https://nexttabagency.com/services/off-page-seo" },
+        { name: "Off-Page SEO Brisbane", url: "https://nexttabagency.com/services/off-page-seo" },
       ]}
-      serviceSchema={{ name: "Off-Page SEO Services", description: "Off-page SEO, link building, and digital PR for Australian businesses.", areaServed: "Australia" }}
+      serviceSchema={{ name: "Off-Page SEO Brisbane", description: "Off-page SEO, link building, and digital PR for Brisbane and Australian businesses. Australian-earned editorial links only.", areaServed: "Brisbane, Australia" }}
     />
     <section aria-labelledby="hero-heading" className="relative min-h-[50vh] flex items-center overflow-hidden">
       <img src={heroBg} alt="Off-Page SEO Australia" className="absolute inset-0 w-full h-full object-cover" width={1920} height={1080} />

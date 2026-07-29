@@ -1,4 +1,4 @@
-﻿import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { CheckCircle, ArrowLeft, ArrowRight, Mail, TrendingUp, Zap, Globe, Search, Users, BarChart3 } from "lucide-react";
@@ -13,7 +13,7 @@ import LocationLinksStrip from "@/components/LocationLinksStrip";
 import LiveTeardownForm from "@/components/LiveTeardownForm";
 
 const service = {
-  title: "Email Marketing Agency",
+  title: "Email Marketing Agency Brisbane | Klaviyo & ActiveCampaign Specialists",
   headline: "Your List is Your Most Valuable Asset. Are You Using It?",
   description: "Email marketing for Australian businesses that want to generate revenue from their existing customer base — with automated sequences, targeted campaigns, and measurable ROI.",
   longDescription: "Email delivers $36 for every $1 spent — more than any other marketing channel. Yet most Australian businesses either don't have an email strategy, or are only sending occasional newsletters with minimal results. We build and manage email marketing systems that nurture leads through the funnel, re-engage inactive customers, drive repeat purchases for eCommerce stores, and automate the most time-consuming parts of your client communication.",
@@ -58,16 +58,16 @@ const service = {
 const EmailMarketing = () => (
   <Layout>
     <SEO
-      title="Email Marketing Agency Australia — Email Marketing Brisbane"
-      description="Email marketing agency for Australian businesses. We build automated sequences, manage campaigns, and deliver measurable revenue from your email list with full SPAM Act compliance."
+      title="Email Marketing Agency Brisbane | Klaviyo & Mailchimp Specialists | Next Tab Agency"
+      description="Brisbane's email marketing specialists. Klaviyo, Mailchimp & ActiveCampaign setup, automation & campaigns. $36 ROI per $1 spent. SPAM Act 2003 compliant. Free email audit for Brisbane businesses."
       canonical="/services/email-marketing"
       faqs={service.faqs}
       breadcrumbs={[
         { name: "Home", url: "https://nexttabagency.com/" },
         { name: "Services", url: "https://nexttabagency.com/services" },
-        { name: "Email Marketing", url: "https://nexttabagency.com/services/email-marketing" },
+        { name: "Email Marketing Agency Brisbane", url: "https://nexttabagency.com/services/email-marketing" },
       ]}
-      serviceSchema={{ name: "Email Marketing Services", description: "Email marketing strategy, automation, and campaign management for Australian businesses.", areaServed: "Australia" }}
+      serviceSchema={{ name: "Email Marketing Agency Brisbane", description: "Email marketing strategy, automation, and campaign management for Brisbane and Australian businesses. Klaviyo, Mailchimp, ActiveCampaign. SPAM Act 2003 compliant.", areaServed: "Brisbane, Australia" }}
     />
 
     <section aria-labelledby="hero-heading" className="relative min-h-[50vh] flex items-center overflow-hidden">
