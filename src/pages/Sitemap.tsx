@@ -117,8 +117,14 @@ const sections = [
     bg: "bg-ocean/10",
     description: "Google Ads, Social Media advertising and paid search campaigns.",
     pages: [
-      { label: "PPC & Google Ads Management", href: "/services/ppc-google-ads", desc: "Google Search, Shopping, Display & Remarketing campaigns managed for maximum ROAS." },
+      { label: "PPC Agency Brisbane", href: "/services/ppc-google-ads", desc: "Brisbane-based PPC and Google Ads management — certified specialists, average 4.2× ROAS." },
+      { label: "Google Ads Management", href: "/services/ppc-google-ads", desc: "Google Search, Shopping, Display & Remarketing campaigns managed for maximum ROAS." },
+      { label: "Google Ads Brisbane", href: "/services/google-ads-brisbane", desc: "Google Search, Shopping, and Local Service Ads for Brisbane businesses." },
+      { label: "Google Shopping Ads", href: "/services/google-shopping", desc: "Product listing ads, Shopping feed management and optimisation for Australian retailers." },
+      { label: "Facebook & Meta Ads", href: "/services/facebook-ads", desc: "Full-funnel Meta Ads management — Facebook and Instagram advertising for Australian businesses." },
+      { label: "LinkedIn Advertising", href: "/services/linkedin-ads", desc: "LinkedIn Sponsored Content and Lead Gen Forms for B2B businesses targeting decision-makers." },
       { label: "Social Media Advertising", href: "/services/social-media-ads", desc: "Facebook, Instagram, LinkedIn, YouTube & TikTok ad campaigns targeting Australian audiences." },
+      { label: "Conversion Rate Optimisation", href: "/services/conversion-rate-optimisation", desc: "CRO services — A/B testing and UX analysis to increase conversion rates from existing traffic." },
     ],
   },
 

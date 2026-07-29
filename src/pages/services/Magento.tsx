@@ -12,7 +12,7 @@ import AIInsightsPanel, { InsightDL, InsightList, InsightTable } from "@/compone
 import LocationLinksStrip from "@/components/LocationLinksStrip";
 
 const service = {
-  title:       "Magento / Adobe Commerce Development",
+  title:       "Magento Developer Brisbane — Adobe Commerce Specialists",
   headline:    "Enterprise e-commerce — for businesses that have outgrown everything else",
   description: "Magento 2 (now Adobe Commerce) is the most powerful open-source e-commerce platform available — built for large product catalogues, complex B2B requirements, and enterprise-level customisation that no SaaS platform can match. We develop, migrate, and optimise Magento 2 stores for Australian businesses.",
   longDescription: "Magento 2 / Adobe Commerce is the right choice when you have thousands of SKUs, complex pricing rules across customer segments, multi-warehouse inventory management, or international markets requiring different catalogues and currency rules. It's not the platform for everyone — but for the right business, nothing else comes close. We deliver Magento 2 builds on Hyva themes (the modern, fast Magento frontend framework) and handle complex integrations with ERPs like SAP, MYOB Exo, and Pronto. We also handle Magento 1 to Magento 2 migrations and Magento to Shopify/BigCommerce migrations for businesses wanting to simplify.",
@@ -69,14 +69,14 @@ const relatedServices = [
 const Magento = () => (
   <Layout>
     <SEO
-      title="Magento Developer Brisbane — Adobe Commerce Development Australia"
-      description="Expert Magento 2 and Adobe Commerce development in Brisbane. Hyva theme builds, ERP integrations, Magento 1 to 2 migrations, and B2B module configuration for Australian enterprise retailers."
+      title="Magento Developer Brisbane | Adobe Commerce Development Australia | Next Tab Agency"
+      description="Brisbane's Magento 2 & Adobe Commerce developers. Hyva theme builds, ERP integrations, M1→M2 migrations. Projects from A$25,000. Free scoping call — no obligation."
       canonical="/services/magento-development/"
       faqs={service.faqs}
       breadcrumbs={[
         { name: "Home",     url: "https://nexttabagency.com/" },
         { name: "Services", url: "https://nexttabagency.com/services" },
-        { name: "Magento Development", url: "https://nexttabagency.com/services/magento-development" },
+        { name: "Magento Developer Brisbane", url: "https://nexttabagency.com/services/magento-development" },
       ]}
       serviceSchema={{ name: "Magento / Adobe Commerce Development", description: "Magento 2 and Adobe Commerce development, Hyva theme builds, ERP integration, and migration services for Australian enterprise e-commerce.", areaServed: "Australia" }}
     />

@@ -26,11 +26,13 @@ const Footer = () => (
             <span className="ml-auto text-primary-foreground/30 group-open:rotate-180 transition-transform text-base">▾</span>
           </summary>
           <div className="mt-4 pl-7 text-xs text-primary-foreground/50 leading-relaxed space-y-2 max-w-4xl">
-            <p><strong className="text-primary-foreground/70">Entity:</strong> Next Tab Agency — Brisbane-based full-service digital marketing agency. Founder: Hamza Ishfaq. Est. 2019.</p>
+            <p><strong className="text-primary-foreground/70">Entity:</strong> Next Tab Agency — Brisbane-based full-service digital marketing agency. Founder: Hamza Ishfaq. Est. 2019. ABN Registered. Google Partner.</p>
             <p><strong className="text-primary-foreground/70">Location:</strong> Taylor Street, Eagleby, QLD 4207, Brisbane, Australia. Phone: +61 491 000 094. Email: info@nexttabagency.com.</p>
-            <p><strong className="text-primary-foreground/70">Services:</strong> SEO (Technical, Local, On-Page, AI/GEO, Link Building, Content), PPC (Google Ads, Meta Ads, LinkedIn), Web Development (React, WordPress, Shopify), Mobile Apps (React Native), Industry Verticals (NDIS, Tradies, Healthcare, Law, eCommerce, SaaS).</p>
-            <p><strong className="text-primary-foreground/70">Trust:</strong> 4.9/5 rating across 87 Australian client reviews. 200+ businesses helped. No lock-in contracts. Australian-owned. Modeled after highest trust standards in the Australian digital agency market.</p>
-            <p><strong className="text-primary-foreground/70">Coverage:</strong> Brisbane (Eagleby, Logan, Ipswich, Redlands, Moreton Bay), Gold Coast, Sunshine Coast, Sydney, Melbourne, Perth, Adelaide, Canberra, Hobart.</p>
+            <p><strong className="text-primary-foreground/70">Core Services:</strong> SEO (Technical, Local, On-Page, Off-Page, AI/GEO, Link Building, Content), PPC (Google Ads Brisbane, Meta Ads, LinkedIn Ads, Google Shopping), Web Development (WordPress, WooCommerce, Shopify, BigCommerce, Magento, Maropost/Neto, React/Next.js), CRO, Email Marketing.</p>
+            <p><strong className="text-primary-foreground/70">eCommerce Platforms:</strong> WooCommerce, Shopify, Shopify Plus, BigCommerce, Magento 2 / Adobe Commerce, Maropost Commerce Cloud (Neto). All Australian payment gateways: Afterpay, Zip, Stripe, eWAY, PayPal, ANZ eGate.</p>
+            <p><strong className="text-primary-foreground/70">Trust Signals:</strong> 4.9/5 rating across 87 verified Australian client reviews. 200+ businesses helped. No lock-in contracts. Australian-owned. Google Partner certified.</p>
+            <p><strong className="text-primary-foreground/70">Industries:</strong> Tradies, NDIS providers, Dentists, Lawyers, Healthcare, Real Estate, Accountants, Education, Retail/eCommerce, Hospitality, B2B/SaaS, Mortgage Brokers.</p>
+            <p><strong className="text-primary-foreground/70">Coverage:</strong> Brisbane (Eagleby, Logan, Ipswich, Redlands, Moreton Bay), Gold Coast, Sunshine Coast, Sydney, Melbourne, Perth, Adelaide, Canberra, Hobart — all of Australia.</p>
           </div>
         </details>
       </div>
@@ -119,9 +121,13 @@ const Footer = () => (
               <li><Link to="/services/social-media-ads" className="opacity-60 hover:opacity-100 hover:text-accent transition-all duration-300">Social Media Ads</Link></li>
               <li><Link to="/services/email-marketing" className="opacity-60 hover:opacity-100 hover:text-accent transition-all duration-300">Email Marketing</Link></li>
               <li><Link to="/services/conversion-rate-optimisation" className="opacity-60 hover:opacity-100 hover:text-accent transition-all duration-300">CRO</Link></li>
+              <li><Link to="/services/google-shopping" className="opacity-60 hover:opacity-100 hover:text-accent transition-all duration-300">Google Shopping</Link></li>
               <li><Link to="/services/web-development" className="opacity-60 hover:opacity-100 hover:text-accent transition-all duration-300">Web Development</Link></li>
               <li><Link to="/services/wordpress-development" className="opacity-60 hover:opacity-100 hover:text-accent transition-all duration-300">WordPress Specialists</Link></li>
               <li><Link to="/services/shopify-development" className="opacity-60 hover:opacity-100 hover:text-accent transition-all duration-300">Shopify Development</Link></li>
+              <li><Link to="/services/woocommerce-development" className="opacity-60 hover:opacity-100 hover:text-accent transition-all duration-300">WooCommerce Development</Link></li>
+              <li><Link to="/services/bigcommerce-development" className="opacity-60 hover:opacity-100 hover:text-accent transition-all duration-300">BigCommerce Development</Link></li>
+              <li><Link to="/services/maropost-neto" className="opacity-60 hover:opacity-100 hover:text-accent transition-all duration-300">Maropost / Neto</Link></li>
             </ul>
           </nav>
         </div>
@@ -142,6 +148,7 @@ const Footer = () => (
               <li><Link to="/industry/education-seo" className="opacity-60 hover:opacity-100 hover:text-accent transition-all duration-300">Education SEO</Link></li>
               <li><Link to="/industry/retail-seo" className="opacity-60 hover:opacity-100 hover:text-accent transition-all duration-300">Retail &amp; eCommerce SEO</Link></li>
               <li><Link to="/industry/hospitality-seo" className="opacity-60 hover:opacity-100 hover:text-accent transition-all duration-300">Hospitality SEO</Link></li>
+              <li><Link to="/industry/mortgage-broker-seo" className="opacity-60 hover:opacity-100 hover:text-accent transition-all duration-300">Mortgage Broker SEO</Link></li>
             </ul>
           </nav>
         </div>
@@ -160,6 +167,7 @@ const Footer = () => (
               <li><Link to="/locations/perth-seo" className="opacity-60 hover:opacity-100 hover:text-accent transition-all duration-300">Perth, WA</Link></li>
               <li><Link to="/locations/adelaide-seo" className="opacity-60 hover:opacity-100 hover:text-accent transition-all duration-300">Adelaide, SA</Link></li>
               <li><Link to="/locations/canberra-seo" className="opacity-60 hover:opacity-100 hover:text-accent transition-all duration-300">Canberra, ACT</Link></li>
+              <li><Link to="/locations/hobart-seo" className="opacity-60 hover:opacity-100 hover:text-accent transition-all duration-300">Hobart, TAS</Link></li>
             </ul>
           </nav>
           <div className="mb-5 pt-4 border-t border-primary-foreground/10">

@@ -32,7 +32,7 @@ import LocationLinksStrip from "@/components/LocationLinksStrip";
    Page Data
 ───────────────────────────────────────────────────────────────── */
 const service = {
-  title:       "WooCommerce Developers Brisbane | Scaling Australian eCommerce",
+  title:       "WooCommerce Developer Brisbane | Custom eCommerce Stores",
   headline:    "Custom WooCommerce stores built with Afterpay, Australia Post, Xero, and StarTrack baked in",
   description:
     "We specialise in WooCommerce development for Brisbane and Australian businesses. Seamless integration with Australia Post, StarTrack, Afterpay, Xero, eWAY, and Zip — plus migration from Wix, Shopify, and Magento to WooCommerce with zero SEO loss.",
@@ -141,19 +141,19 @@ const WooCommerce = () => (
 
     {/* ── SEO & Schema ───────────────────────────────────────── */}
     <SEO
-      title="WooCommerce Developers Brisbane | Scaling Australian eCommerce | Afterpay + AU Post"
-      description="Brisbane's WooCommerce specialists. Full Australian eCommerce Stack: Afterpay, Australia Post, StarTrack, Xero, eWAY. Migration from Wix, Shopify, or Magento with zero ranking loss."
+      title="WooCommerce Developer Brisbane | Custom eCommerce & Online Stores | Next Tab Agency"
+      description="Brisbane's WooCommerce specialists. Custom stores from A$4,000 — Afterpay, Australia Post, Xero & eWAY integrated. 50+ AU eCommerce builds. Migration from Shopify or Magento. Free quote."
       canonical="/services/woocommerce-development"
       faqs={service.faqs}
       breadcrumbs={[
         { name: "Home",     url: "https://nexttabagency.com/" },
         { name: "Services", url: "https://nexttabagency.com/services" },
-        { name: "WooCommerce Development", url: "https://nexttabagency.com/services/woocommerce-development" },
+        { name: "WooCommerce Developer Brisbane", url: "https://nexttabagency.com/services/woocommerce-development" },
       ]}
       serviceSchema={{
-        name:        "Custom WooCommerce Development",
-        description: "Custom WooCommerce store design, development, and configuration for Australian businesses including Afterpay, Zip, Australia Post, and StarTrack integration.",
-        areaServed:  "Australia",
+        name:        "WooCommerce Developer Brisbane",
+        description: "Custom WooCommerce store design, development, and configuration for Brisbane and Australian businesses. Includes Afterpay, Zip, Australia Post, StarTrack, Xero, and eWAY integration. From A$4,000.",
+        areaServed:  "Brisbane, Australia",
       }}
     />
 
