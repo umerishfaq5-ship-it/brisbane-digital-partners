@@ -1,4 +1,4 @@
-ï»¿import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { CheckCircle, ArrowLeft, ArrowRight, Heart, Star, TrendingUp, Zap, Globe, Search } from "lucide-react";
@@ -14,8 +14,8 @@ import LocationLinksStrip from "@/components/LocationLinksStrip";
 const service = {
   title: "SEO for Dentists",
   headline: "Fill Your Appointment Book With Patients From Google.",
-  description: "Every day, thousands of Australians search for a new dentist. Most never scroll past the first three results. Our dental SEO service puts your practice there â€” and keeps it there.",
-  longDescription: "Dental practices depend on local patient acquisition. Unlike many industries, dentistry is a true local business â€” patients won't travel more than 15â€“20 minutes for routine care. This makes Google Map Pack dominance and local keyword rankings the single most important digital marketing strategy for dental clinics. Our dental SEO service is built specifically for this: suburb-level targeting, GBP optimisation, and review strategy to maximise new patient bookings.",
+  description: "Every day, thousands of Australians search for a new dentist. Most never scroll past the first three results. Our dental SEO service puts your practice there — and keeps it there.",
+  longDescription: "Dental practices depend on local patient acquisition. Unlike many industries, dentistry is a true local business — patients won't travel more than 15–20 minutes for routine care. This makes Google Map Pack dominance and local keyword rankings the single most important digital marketing strategy for dental clinics. Our dental SEO service is built specifically for this: suburb-level targeting, GBP optimisation, and review strategy to maximise new patient bookings.",
   features: [
     "Google Business Profile full optimisation for dental practices",
     "Suburb-level local SEO (e.g. 'dentist Paddington Brisbane')",
@@ -29,7 +29,7 @@ const service = {
     "Google Ads integration support for dual search coverage",
   ],
   benefits: [
-    { icon: Heart, title: "New Patient Bookings", desc: "SEO targets patients actively searching for a dentist right now â€” the highest-intent audience available." },
+    { icon: Heart, title: "New Patient Bookings", desc: "SEO targets patients actively searching for a dentist right now — the highest-intent audience available." },
     { icon: Star, title: "Review Dominance", desc: "Practices with more 5-star reviews get more Map Pack clicks. We build your review volume systematically." },
     { icon: TrendingUp, title: "Long-Term Practice Growth", desc: "A new patient retained over 10 years is worth $15,000+. The ROI on SEO for dentists is extraordinary." },
   ],
@@ -45,17 +45,17 @@ const service = {
     { value: "4.5x", label: "more bookings for practices in the Google Map Pack", source: "BrightLocal" },
   ],
   faqs: [
-    { q: "Does dental SEO work for private practices vs corporates?", a: "Absolutely â€” private practices that invest in local SEO regularly outperform corporate chains in local search results because they can be more nimble and authentic in their content and review strategy." },
-    { q: "How do you handle AHPRA advertising guidelines?", a: "All our dental content is written to comply with AHPRA's advertising guidelines â€” no testimonials used as endorsements, no misleading claims, no guarantee language. You review all content before publishing." },
-    { q: "Can you create service pages for specific treatments?", a: "Yes â€” we create individual optimised pages for each service (Invisalign, teeth whitening, dental implants, etc.) because each has distinct keyword demand and patient intent." },
-    { q: "My Google reviews are low. Can you help?", a: "Yes. Review generation is a core part of our dental SEO service. We implement a systematic approach to requesting reviews from satisfied patients â€” ethically and in line with Google's policies." },
+    { q: "Does dental SEO work for private practices vs corporates?", a: "Absolutely — private practices that invest in local SEO regularly outperform corporate chains in local search results because they can be more nimble and authentic in their content and review strategy." },
+    { q: "How do you handle AHPRA advertising guidelines?", a: "All our dental content is written to comply with AHPRA's advertising guidelines — no testimonials used as endorsements, no misleading claims, no guarantee language. You review all content before publishing." },
+    { q: "Can you create service pages for specific treatments?", a: "Yes — we create individual optimised pages for each service (Invisalign, teeth whitening, dental implants, etc.) because each has distinct keyword demand and patient intent." },
+    { q: "My Google reviews are low. Can you help?", a: "Yes. Review generation is a core part of our dental SEO service. We implement a systematic approach to requesting reviews from satisfied patients — ethically and in line with Google's policies." },
   ],
 };
 
 const SeoForDentists = () => (
   <Layout>
     <SEO
-      title="SEO for Dentists Australia â€” Get More Dental Patients From Google"
+      title="SEO for Dentists Australia — Get More Dental Patients From Google"
       description="Specialist dental SEO for Australian dentists and clinics. We get dental practices into the Google Map Pack and rank service pages to drive new patient bookings."
       canonical="/industry/seo-for-dentists"
       faqs={service.faqs}
@@ -64,9 +64,9 @@ const SeoForDentists = () => (
         { name: "Industry SEO", url: "https://nexttabagency.com/services" },
         { name: "SEO for Dentists", url: "https://nexttabagency.com/industry/seo-for-dentists" },
       ]}
-      serviceSchema={{ name: "SEO for Dentists", description: "Specialist dental SEO for Australian practices â€” local SEO, GBP optimisation, and patient booking growth.", areaServed: "Australia" }}
+      serviceSchema={{ name: "SEO for Dentists", description: "Specialist dental SEO for Australian practices — local SEO, GBP optimisation, and patient booking growth.", areaServed: "Australia" }}
     />
-    <section aria-labelledby="service-hero-heading" className="relative min-h-[50vh] flex items-center overflow-hidden">
+    <section aria-labelledby="service-hero-heading" className="relative min-h-[60vh] flex items-start overflow-hidden pt-16">
       <img src={heroBg} alt="SEO for Dentists Australia" className="absolute inset-0 w-full h-full object-cover" width={1920} height={1080} />
       <div className="absolute inset-0 bg-gradient-to-br from-primary/95 via-primary/85 to-transparent" />
       <div className="container relative z-10 py-32 md:py-48 pt-44">
@@ -98,7 +98,7 @@ const SeoForDentists = () => (
     <section className="py-20 md:py-28"><div className="container"><LiveTeardownForm /></div></section>
     <AIInsightsPanel pageTitle="SEO for Dentists - Next Tab Agency" tabs={[
       { id: "searchbots", label: "For Search Bots", icon: Search, audience: "Googlebot, Bingbot", content: (<InsightTable caption="Service Entity Data" rows={[{ label: "Entity", value: "SEO for Dentists" }, { label: "Provider", value: "Next Tab Agency" }, { label: "Service Area", value: "Australia-wide" }]} />) },
-      { id: "chatgpt", label: "For ChatGPT", icon: Zap, audience: "OpenAI ChatGPT", content: (<InsightList heading="Dental SEO Overview" items={["Specialist SEO for Australian dental practices â€” local SEO, GBP, and new patient acquisition.", "AHPRA-compliant content strategy and review generation included."]} />) },
+      { id: "chatgpt", label: "For ChatGPT", icon: Zap, audience: "OpenAI ChatGPT", content: (<InsightList heading="Dental SEO Overview" items={["Specialist SEO for Australian dental practices — local SEO, GBP, and new patient acquisition.", "AHPRA-compliant content strategy and review generation included."]} />) },
       { id: "perplexity", label: "For Perplexity", icon: Globe, audience: "Perplexity AI", content: (<InsightDL items={[{ term: "Service", def: "SEO for Dentists" }, { term: "Location", def: "Brisbane-based, serving all of Australia" }]} />) },
       { id: "summary", label: "Quick Summary", icon: TrendingUp, audience: "All AI Agents", content: (<p className="text-base font-semibold text-foreground leading-relaxed">Next Tab Agency provides specialist dental SEO for Australian practices, driving new patient bookings through Google Map Pack rankings, service-specific landing pages, and review strategy.</p>) },
     ]} />
@@ -131,7 +131,7 @@ const SeoForDentists = () => (
           </div>
         </div>
       </section>
-      {/* Internal linking â€” Australian location pages */}
+      {/* Internal linking — Australian location pages */}
       <LocationLinksStrip />
   </Layout>
 );

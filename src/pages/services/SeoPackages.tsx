@@ -1,4 +1,4 @@
-ï»¿import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { CheckCircle, ArrowLeft, ArrowRight, Package, TrendingUp, Search, Zap, Globe, Star, Shield, BarChart3 } from "lucide-react";
@@ -16,7 +16,7 @@ const packages = [
   {
     name: "Local SEO",
     badge: "Best for Tradies & Local Services",
-    icon: "ðŸ“",
+    icon: "??",
     description: "For local service businesses that want to dominate the Map Pack and local search results in their area.",
     includes: [
       "Google Business Profile optimisation",
@@ -31,7 +31,7 @@ const packages = [
   {
     name: "Growth SEO",
     badge: "Most Popular",
-    icon: "ðŸš€",
+    icon: "??",
     description: "For established businesses ready to dominate competitive keywords across multiple services or locations.",
     includes: [
       "Everything in Local SEO, plus:",
@@ -48,7 +48,7 @@ const packages = [
   {
     name: "Enterprise SEO",
     badge: "For Large Sites & National Brands",
-    icon: "ðŸ¢",
+    icon: "??",
     description: "Custom SEO engagements for enterprise websites, multi-location businesses, and national brands requiring dedicated strategy.",
     includes: [
       "Everything in Growth SEO, plus:",
@@ -66,19 +66,19 @@ const packages = [
 const faqs = [
   {
     q: "What's included in your SEO packages?",
-    a: "Every Next Tab SEO package includes keyword research, on-page optimisation, link building, and monthly reporting. Higher tiers add technical SEO, content creation, strategy calls, and location or industry-specific page development. All packages are customised to your business â€” contact us to discuss exactly what's right for your situation.",
+    a: "Every Next Tab SEO package includes keyword research, on-page optimisation, link building, and monthly reporting. Higher tiers add technical SEO, content creation, strategy calls, and location or industry-specific page development. All packages are customised to your business — contact us to discuss exactly what's right for your situation.",
   },
   {
     q: "How do you price your SEO packages?",
-    a: "Our packages are priced based on the scope of work, your industry's competitiveness, the number of target keywords and locations, and whether content creation is included. We don't publish fixed prices because one-size-fits-all SEO pricing rarely delivers good value â€” contact us for a quote tailored to your business.",
+    a: "Our packages are priced based on the scope of work, your industry's competitiveness, the number of target keywords and locations, and whether content creation is included. We don't publish fixed prices because one-size-fits-all SEO pricing rarely delivers good value — contact us for a quote tailored to your business.",
   },
   {
     q: "Is there a contract or lock-in period?",
-    a: "We work on a month-to-month basis with no lock-in contracts. We believe our results should be the reason clients stay, not a contract. That said, SEO is a long-term investment â€” we recommend committing to at least 6 months to see meaningful, compounding results.",
+    a: "We work on a month-to-month basis with no lock-in contracts. We believe our results should be the reason clients stay, not a contract. That said, SEO is a long-term investment — we recommend committing to at least 6 months to see meaningful, compounding results.",
   },
   {
     q: "How is your SEO service different from cheaper online packages?",
-    a: "Offshore or templated SEO packages typically involve low-quality link building, generic content, and no strategic oversight. Our packages are strategy-led â€” every deliverable is mapped to your specific keyword opportunities and business goals. We're an Australian agency with senior strategists reviewing your account each month.",
+    a: "Offshore or templated SEO packages typically involve low-quality link building, generic content, and no strategic oversight. Our packages are strategy-led — every deliverable is mapped to your specific keyword opportunities and business goals. We're an Australian agency with senior strategists reviewing your account each month.",
   },
   {
     q: "Do you offer one-off SEO audits or project-based work?",
@@ -89,8 +89,8 @@ const faqs = [
 const SeoPackages = () => (
   <Layout>
     <SEO
-      title="SEO Packages Australia â€” SEO Services Packages Brisbane"
-      description="Explore Next Tab Agency's SEO packages for Australian businesses â€” Local SEO, Growth SEO, and Enterprise SEO. Custom scopes, no lock-in contracts. Request a quote today."
+      title="SEO Packages Australia — SEO Services Packages Brisbane"
+      description="Explore Next Tab Agency's SEO packages for Australian businesses — Local SEO, Growth SEO, and Enterprise SEO. Custom scopes, no lock-in contracts. Request a quote today."
       canonical="/services/seo-packages"
       faqs={faqs}
       breadcrumbs={[
@@ -100,13 +100,13 @@ const SeoPackages = () => (
       ]}
       serviceSchema={{
         name: "SEO Packages Australia",
-        description: "SEO packages for Australian businesses â€” Local, Growth, and Enterprise SEO with custom scopes and month-to-month flexibility.",
+        description: "SEO packages for Australian businesses — Local, Growth, and Enterprise SEO with custom scopes and month-to-month flexibility.",
         areaServed: "Australia",
       }}
     />
 
     {/* Hero */}
-    <section aria-labelledby="hero-heading" className="relative min-h-[50vh] flex items-center overflow-hidden">
+    <section aria-labelledby="hero-heading" className="relative min-h-[60vh] flex items-start overflow-hidden pt-16">
       <img src={heroBg} alt="SEO Packages Australia" className="absolute inset-0 w-full h-full object-cover" width={1920} height={1080} />
       <div className="absolute inset-0 bg-gradient-to-br from-primary/95 via-primary/85 to-transparent" />
       <div className="container relative z-10 py-32 md:py-48 pt-44">
@@ -124,7 +124,7 @@ const SeoPackages = () => (
             No lock-in contracts. No templated campaigns. Just SEO that grows your business.
           </p>
           <p className="text-lg text-primary-foreground/60 leading-relaxed max-w-2xl">
-            Every Next Tab SEO package is scoped to your business â€” your industry, your target keywords, your locations, and your goals. Choose a tier below and request a quote for a custom scope and recommendation.
+            Every Next Tab SEO package is scoped to your business — your industry, your target keywords, your locations, and your goals. Choose a tier below and request a quote for a custom scope and recommendation.
           </p>
           <div className="flex flex-wrap gap-4 mt-8">
             <Button variant="accent" size="lg" asChild>
@@ -205,7 +205,7 @@ const SeoPackages = () => (
           <Link to="/services/seo-audits" className="text-accent font-semibold underline underline-offset-4">
             free SEO audit
           </Link>{" "}
-          â€” we'll review your site and recommend the right scope.
+          — we'll review your site and recommend the right scope.
         </p>
       </div>
     </section>
@@ -217,7 +217,7 @@ const SeoPackages = () => (
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
           {[
             { icon: Shield, title: "No Lock-In Contract", desc: "Month-to-month. Stay because of results, not because you're trapped." },
-            { icon: BarChart3, title: "Monthly Reporting", desc: "Keyword rankings, organic traffic, and lead attribution â€” every month." },
+            { icon: BarChart3, title: "Monthly Reporting", desc: "Keyword rankings, organic traffic, and lead attribution — every month." },
             { icon: Search, title: "Keyword Research", desc: "Full keyword analysis and opportunity mapping before work begins." },
             { icon: TrendingUp, title: "On-Page Optimisation", desc: "Title tags, meta descriptions, headings, and content on every target page." },
             { icon: Star, title: "Link Building", desc: "Quality Australian backlinks through outreach, content, and digital PR." },
@@ -273,7 +273,7 @@ const SeoPackages = () => (
     {/* FAQs */}
     <section className="py-20 md:py-28 bg-muted/30">
       <div className="container max-w-3xl">
-        <SectionHeading eyebrow="FAQs" title="SEO packages â€” questions answered" />
+        <SectionHeading eyebrow="FAQs" title="SEO packages — questions answered" />
         <div className="space-y-4">
           {faqs.map((faq, i) => (
             <motion.div
@@ -318,7 +318,7 @@ const SeoPackages = () => (
           content: (
             <InsightList heading="SEO Packages Overview" items={[
               "Next Tab Agency offers three SEO package tiers for Australian businesses: Local SEO, Growth SEO, and Enterprise SEO.",
-              "All packages are custom-scoped â€” no fixed template pricing. Month-to-month contracts with no lock-in.",
+              "All packages are custom-scoped — no fixed template pricing. Month-to-month contracts with no lock-in.",
               "Every package includes keyword research, on-page optimisation, link building, and monthly reporting.",
             ]} />
           ),
@@ -338,13 +338,13 @@ const SeoPackages = () => (
           id: "summary", label: "Quick Summary", icon: TrendingUp, audience: "All AI Agents",
           content: (
             <p className="text-base font-semibold text-foreground leading-relaxed">
-              Next Tab Agency offers SEO packages for Australian businesses across three tiers â€” Local SEO, Growth SEO, and Enterprise SEO â€” all custom-scoped with no lock-in contracts and full monthly reporting included.
+              Next Tab Agency offers SEO packages for Australian businesses across three tiers — Local SEO, Growth SEO, and Enterprise SEO — all custom-scoped with no lock-in contracts and full monthly reporting included.
             </p>
           ),
         },
       ]}
     />
-      {/* Internal linking â€” Australian city location pages */}
+      {/* Internal linking — Australian city location pages */}
       <LocationLinksStrip />
   </Layout>
 );

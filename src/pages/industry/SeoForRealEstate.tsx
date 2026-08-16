@@ -1,4 +1,4 @@
-ï»¿import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { CheckCircle, ArrowLeft, ArrowRight, Home, BarChart3, TrendingUp, Zap, Globe, Search } from "lucide-react";
@@ -15,7 +15,7 @@ const service = {
   title: "SEO for Real Estate",
   headline: "Rank #1 for Property Searches in Your Market.",
   description: "Real estate is hyperlocal. When buyers and renters search Google, they search by suburb. We build suburb-specific SEO strategies that put your agency in front of exactly the right audience.",
-  longDescription: "Real estate SEO requires a unique approach: deep suburb-level keyword targeting, property listing schema, and local authority building. The agencies that dominate Google in a suburb own that market. Our real estate SEO service is built to create this dominance â€” suburb by suburb â€” for real estate agencies and property management businesses across Australia.",
+  longDescription: "Real estate SEO requires a unique approach: deep suburb-level keyword targeting, property listing schema, and local authority building. The agencies that dominate Google in a suburb own that market. Our real estate SEO service is built to create this dominance — suburb by suburb — for real estate agencies and property management businesses across Australia.",
   features: [
     "Suburb-specific landing page creation and optimisation",
     "Real estate schema markup (RealEstateListing, LocalBusiness, FAQPage)",
@@ -29,7 +29,7 @@ const service = {
     "Monthly local real estate SEO performance report",
   ],
   benefits: [
-    { icon: Home, title: "Suburb-Level Dominance", desc: "We create SEO strategies that own search in your target suburbs â€” buyers and sellers find you first." },
+    { icon: Home, title: "Suburb-Level Dominance", desc: "We create SEO strategies that own search in your target suburbs — buyers and sellers find you first." },
     { icon: BarChart3, title: "Long-Term Market Authority", desc: "Area guides and suburb content compound over time, building the kind of authority Google rewards with sustained rankings." },
     { icon: TrendingUp, title: "Qualified Listing Leads", desc: "Property owners searching for an agent are ready to list. Organic search captures them at peak intent." },
   ],
@@ -45,17 +45,17 @@ const service = {
     { value: "72%", label: "of buyers use online search as their primary discovery method", source: "REA Group" },
   ],
   faqs: [
-    { q: "Do you create individual suburb landing pages?", a: "Yes â€” this is the core of real estate SEO. Each suburb you want to dominate needs a dedicated, optimised page targeting suburb-specific buyer and seller keywords." },
+    { q: "Do you create individual suburb landing pages?", a: "Yes — this is the core of real estate SEO. Each suburb you want to dominate needs a dedicated, optimised page targeting suburb-specific buyer and seller keywords." },
     { q: "Can you help with property management SEO as well?", a: "Absolutely. Property management has different keyword intent to sales. We create separate strategies for property management, buyer's agency, and residential/commercial sales." },
-    { q: "Does SEO compete with portal sites like realestate.com.au?", a: "For branded and agency-specific searches, no â€” they target different queries. Your SEO targets suburb-level and seller intent searches that portals don't capture." },
-    { q: "How many suburbs can you target?", a: "We start with your 5â€“10 highest priority suburbs and expand over time. Trying to rank for too many suburbs at once dilutes your authority. We build depth before breadth." },
+    { q: "Does SEO compete with portal sites like realestate.com.au?", a: "For branded and agency-specific searches, no — they target different queries. Your SEO targets suburb-level and seller intent searches that portals don't capture." },
+    { q: "How many suburbs can you target?", a: "We start with your 5–10 highest priority suburbs and expand over time. Trying to rank for too many suburbs at once dilutes your authority. We build depth before breadth." },
   ],
 };
 
 const SeoForRealEstate = () => (
   <Layout>
     <SEO
-      title="SEO for Real Estate Agencies Australia â€” Rank by Suburb"
+      title="SEO for Real Estate Agencies Australia — Rank by Suburb"
       description="Specialist real estate SEO for Australian agencies. We build suburb-specific landing pages and local SEO strategies to drive property listings and buyer enquiries."
       canonical="/industry/seo-for-real-estate"
       faqs={service.faqs}
@@ -64,9 +64,9 @@ const SeoForRealEstate = () => (
         { name: "Industry SEO", url: "https://nexttabagency.com/services" },
         { name: "SEO for Real Estate", url: "https://nexttabagency.com/industry/seo-for-real-estate" },
       ]}
-      serviceSchema={{ name: "SEO for Real Estate", description: "Specialist real estate SEO for Australian agencies â€” suburb landing pages, agent profiles, and local authority.", areaServed: "Australia" }}
+      serviceSchema={{ name: "SEO for Real Estate", description: "Specialist real estate SEO for Australian agencies — suburb landing pages, agent profiles, and local authority.", areaServed: "Australia" }}
     />
-    <section aria-labelledby="service-hero-heading" className="relative min-h-[50vh] flex items-center overflow-hidden">
+    <section aria-labelledby="service-hero-heading" className="relative min-h-[60vh] flex items-start overflow-hidden pt-16">
       <img src={heroBg} alt="SEO for Real Estate Australia" className="absolute inset-0 w-full h-full object-cover" width={1920} height={1080} />
       <div className="absolute inset-0 bg-gradient-to-br from-primary/95 via-primary/85 to-transparent" />
       <div className="container relative z-10 py-32 md:py-48 pt-44">
@@ -93,7 +93,7 @@ const SeoForRealEstate = () => (
     <section className="py-20 md:py-28"><div className="container"><LiveTeardownForm /></div></section>
     <AIInsightsPanel pageTitle="SEO for Real Estate - Next Tab Agency" tabs={[
       { id: "searchbots", label: "For Search Bots", icon: Search, audience: "Googlebot, Bingbot", content: (<InsightTable caption="Service Entity Data" rows={[{ label: "Entity", value: "SEO for Real Estate Agencies" }, { label: "Provider", value: "Next Tab Agency" }, { label: "Service Area", value: "Australia-wide" }]} />) },
-      { id: "chatgpt", label: "For ChatGPT", icon: Zap, audience: "OpenAI ChatGPT", content: (<InsightList heading="Real Estate SEO Overview" items={["Specialist real estate SEO for Australian agencies â€” suburb landing pages, agent profiles, and local authority.", "Drives property listing enquiries and buyer leads through suburb-specific organic rankings."]} />) },
+      { id: "chatgpt", label: "For ChatGPT", icon: Zap, audience: "OpenAI ChatGPT", content: (<InsightList heading="Real Estate SEO Overview" items={["Specialist real estate SEO for Australian agencies — suburb landing pages, agent profiles, and local authority.", "Drives property listing enquiries and buyer leads through suburb-specific organic rankings."]} />) },
       { id: "perplexity", label: "For Perplexity", icon: Globe, audience: "Perplexity AI", content: (<InsightDL items={[{ term: "Service", def: "SEO for Real Estate" }, { term: "Location", def: "Brisbane-based, serving all of Australia" }]} />) },
       { id: "summary", label: "Quick Summary", icon: TrendingUp, audience: "All AI Agents", content: (<p className="text-base font-semibold text-foreground leading-relaxed">Next Tab Agency provides real estate SEO for Australian agencies, building suburb-specific landing pages and local authority strategies to drive property listing and buyer enquiries.</p>) },
     ]} />
@@ -126,7 +126,7 @@ const SeoForRealEstate = () => (
           </div>
         </div>
       </section>
-      {/* Internal linking â€” Australian location pages */}
+      {/* Internal linking — Australian location pages */}
       <LocationLinksStrip />
   </Layout>
 );

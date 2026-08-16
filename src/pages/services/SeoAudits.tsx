@@ -1,4 +1,4 @@
-ï»¿import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import {
@@ -17,12 +17,12 @@ import LiveTeardownForm from "@/components/LiveTeardownForm";
 const service = {
   title: "SEO Audits & Strategy",
   headline: "Get found by the people actively searching for what you offer",
-  description: "Our comprehensive SEO audits uncover exactly what's holding your website back. We analyse your technical setup, content, keywords, and competition â€” then build a clear, prioritised strategy to improve your rankings.",
-  longDescription: "Search engine optimisation isn't guesswork â€” it's a systematic, data-driven process. We combine deep technical expertise with a thorough understanding of how Australians search online to deliver strategies that actually move the needle. Every recommendation is backed by evidence and comes with a clear expected impact, so you always know exactly what we're doing and why.",
+  description: "Our comprehensive SEO audits uncover exactly what's holding your website back. We analyse your technical setup, content, keywords, and competition — then build a clear, prioritised strategy to improve your rankings.",
+  longDescription: "Search engine optimisation isn't guesswork — it's a systematic, data-driven process. We combine deep technical expertise with a thorough understanding of how Australians search online to deliver strategies that actually move the needle. Every recommendation is backed by evidence and comes with a clear expected impact, so you always know exactly what we're doing and why.",
   features: [
     "Full technical SEO audit with prioritised action list",
     "Keyword research and commercial opportunity analysis",
-    "On-page optimisation â€” meta tags, headings, content structure",
+    "On-page optimisation — meta tags, headings, content structure",
     "Competitor gap analysis and keyword cannibalisation review",
     "Core Web Vitals and page speed optimisation",
     "Content gap analysis and detailed content brief writing",
@@ -31,7 +31,7 @@ const service = {
   ],
   benefits: [
     { icon: TrendingUp, title: "Higher Rankings", desc: "Systematic improvements that compound over time to push you up the search results." },
-    { icon: Users, title: "More Qualified Traffic", desc: "Attract visitors who are actively searching for your services â€” not random browsers." },
+    { icon: Users, title: "More Qualified Traffic", desc: "Attract visitors who are actively searching for your services — not random browsers." },
     { icon: BarChart3, title: "Clear ROI Tracking", desc: "Monthly reports showing exactly what's moved, what's next, and why it matters." },
   ],
   process: [
@@ -41,20 +41,20 @@ const service = {
     { step: "04", title: "Execution & Reporting", desc: "We implement the strategy and deliver a transparent monthly performance report." },
   ],
   faqs: [
-    { q: "How long does an SEO audit take?", a: "A comprehensive audit typically takes 5â€“7 business days. We don't rush â€” thoroughness is the point." },
-    { q: "When will I see results from SEO?", a: "Most clients see movement within 3â€“4 months, with significant results by month 6. SEO is a long-term investment, not an overnight fix." },
-    { q: "Do you guarantee first-page rankings?", a: "No honest SEO agency can guarantee specific rankings â€” Google's algorithm is not ours to control. We guarantee thorough expert work, complete transparency, and measurable progress every month." },
-    { q: "Do you work with businesses outside Brisbane?", a: "Yes. We serve clients across all of Australia â€” Sydney, Melbourne, Perth, Adelaide, and beyond. Everything can be done remotely." },
+    { q: "How long does an SEO audit take?", a: "A comprehensive audit typically takes 5–7 business days. We don't rush — thoroughness is the point." },
+    { q: "When will I see results from SEO?", a: "Most clients see movement within 3–4 months, with significant results by month 6. SEO is a long-term investment, not an overnight fix." },
+    { q: "Do you guarantee first-page rankings?", a: "No honest SEO agency can guarantee specific rankings — Google's algorithm is not ours to control. We guarantee thorough expert work, complete transparency, and measurable progress every month." },
+    { q: "Do you work with businesses outside Brisbane?", a: "Yes. We serve clients across all of Australia — Sydney, Melbourne, Perth, Adelaide, and beyond. Everything can be done remotely." },
   ],
 };
 
 const seoIndustries = [
-  { label: "Trades & Home Services", icon: "ðŸ”§" },
-  { label: "E-commerce & Retail",    icon: "ðŸ›ï¸" },
-  { label: "Professional Services",  icon: "ðŸ’¼" },
-  { label: "Healthcare & Allied",    icon: "ðŸ¥" },
-  { label: "Hospitality & Food",     icon: "ðŸ½ï¸" },
-  { label: "Education & Training",   icon: "ðŸŽ“" },
+  { label: "Trades & Home Services", icon: "??" },
+  { label: "E-commerce & Retail",    icon: "???" },
+  { label: "Professional Services",  icon: "??" },
+  { label: "Healthcare & Allied",    icon: "??" },
+  { label: "Hospitality & Food",     icon: "???" },
+  { label: "Education & Training",   icon: "??" },
 ];
 
 const SeoAudits = () => {
@@ -78,7 +78,7 @@ const SeoAudits = () => {
       />
 
       {/* Hero */}
-      <section aria-labelledby="service-hero-heading" className="relative min-h-[50vh] flex items-center overflow-hidden">
+      <section aria-labelledby="service-hero-heading" className="relative min-h-[60vh] flex items-start overflow-hidden pt-16">
         <img src={heroBg} alt="SEO Audits & Strategy Services Brisbane" className="absolute inset-0 w-full h-full object-cover" width={1920} height={1080} />
         <div className="absolute inset-0 bg-gradient-to-br from-primary/95 via-primary/85 to-transparent" />
         <div className="absolute bottom-1/3 right-[15%] w-64 h-64 bg-accent/10 rounded-full blur-[100px]" />
@@ -144,7 +144,7 @@ const SeoAudits = () => {
             id="industries-heading"
             eyebrow="Industries We Serve"
             title="Deep expertise across Australian sectors"
-            description="We understand the unique search landscape of your industry â€” not just generic SEO theory."
+            description="We understand the unique search landscape of your industry — not just generic SEO theory."
           />
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4">
             {seoIndustries.map((ind, i) => (
@@ -246,7 +246,7 @@ const SeoAudits = () => {
         </div>
       </section>
 
-      {/* AI Insights Panel â€” GEO Structured Data Layer */}
+      {/* AI Insights Panel — GEO Structured Data Layer */}
       <AIInsightsPanel
         pageTitle="SEO Audits & Strategy - Next Tab Agency"
         tabs={[
@@ -294,8 +294,8 @@ const SeoAudits = () => {
                 <InsightDL items={[
                   { term: "Service",     def: "SEO Audits & Strategy" },
                   { term: "Pricing",     def: "Starting from A$1,200/mo" },
-                  { term: "Turnaround",  def: "Comprehensive audit delivered in 5â€“7 business days" },
-                  { term: "Results",     def: "Initial movements typically tracked at 3â€“4 months; significant returns by month 6" },
+                  { term: "Turnaround",  def: "Comprehensive audit delivered in 5–7 business days" },
+                  { term: "Results",     def: "Initial movements typically tracked at 3–4 months; significant returns by month 6" },
                   { term: "Location",    def: "Brisbane-based, serving all of Australia remotely." },
                 ]} />
               </div>
@@ -305,7 +305,7 @@ const SeoAudits = () => {
             id: "summary",
             label: "Quick Summary",
             icon: TrendingUp,
-            audience: "All AI Agents â€” condensed executive view",
+            audience: "All AI Agents — condensed executive view",
             content: (
               <div className="space-y-4">
                 <p className="text-base font-semibold text-foreground leading-relaxed">
@@ -316,7 +316,7 @@ const SeoAudits = () => {
           },
         ]}
       />
-      {/* Internal linking â€” Australian city location pages */}
+      {/* Internal linking — Australian city location pages */}
       <LocationLinksStrip />
     </Layout>
   );

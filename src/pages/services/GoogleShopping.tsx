@@ -1,4 +1,4 @@
-ï»¿import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { CheckCircle, ArrowLeft, ArrowRight, ShoppingCart, TrendingUp, Zap, Globe, Search, Tag, BarChart3 } from "lucide-react";
@@ -15,11 +15,11 @@ import LiveTeardownForm from "@/components/LiveTeardownForm";
 const service = {
   title: "Google Shopping Management",
   headline: "Product Ads That Put Your Inventory in Front of Buyers.",
-  description: "Google Shopping management for Australian eCommerce stores â€” product feed optimisation, ROAS-focused bidding, and Shopping campaign strategy that drives real sales.",
-  longDescription: "Google Shopping Ads (now called Performance Max Shopping) display your products directly in Google search results with an image, price, and store name â€” capturing buyers at the highest-intent moment of the purchase journey. Unlike search ads, Shopping Ads target by product data, not keywords, which means your feed quality is everything. We manage your Merchant Center, optimise your product feed, structure your campaigns for maximum ROAS, and continuously test bids, audiences, and creative to keep your cost-per-sale profitable.",
+  description: "Google Shopping management for Australian eCommerce stores — product feed optimisation, ROAS-focused bidding, and Shopping campaign strategy that drives real sales.",
+  longDescription: "Google Shopping Ads (now called Performance Max Shopping) display your products directly in Google search results with an image, price, and store name — capturing buyers at the highest-intent moment of the purchase journey. Unlike search ads, Shopping Ads target by product data, not keywords, which means your feed quality is everything. We manage your Merchant Center, optimise your product feed, structure your campaigns for maximum ROAS, and continuously test bids, audiences, and creative to keep your cost-per-sale profitable.",
   features: [
     "Google Merchant Center setup and feed management",
-    "Product feed optimisation â€” titles, descriptions, and attributes",
+    "Product feed optimisation — titles, descriptions, and attributes",
     "Standard Shopping and Performance Max campaign setup",
     "Product group segmentation by margin, category, and performance",
     "ROAS-target bidding strategy and budget allocation",
@@ -37,17 +37,17 @@ const service = {
     { value: "30%", label: "higher CTR for Shopping Ads vs standard text ads for product searches", source: "Google Data" },
   ],
   faqs: [
-    { q: "What is Google Shopping?", a: "Google Shopping (now delivered through Performance Max) displays your product listings â€” with image, price, and store name â€” at the top of Google search results when users search for products you sell. It's the most effective paid channel for eCommerce stores selling physical products." },
+    { q: "What is Google Shopping?", a: "Google Shopping (now delivered through Performance Max) displays your product listings — with image, price, and store name — at the top of Google search results when users search for products you sell. It's the most effective paid channel for eCommerce stores selling physical products." },
     { q: "Do I need a Google Merchant Center account?", a: "Yes. Google Merchant Center is where your product data (feed) lives. We set up and manage your Merchant Center as part of the service, including feed creation, error resolution, and product approval." },
     { q: "How is Google Shopping different from Google Search Ads?", a: "Search Ads target keywords and display text ads. Shopping Ads target based on your product feed data and display visual product cards. Shopping is generally more effective for eCommerce because it shows buyers the exact product with price before they click." },
-    { q: "What ROAS can I expect from Google Shopping?", a: "ROAS varies significantly by product category, competition level, and margin. Most Australian eCommerce stores on well-managed Shopping campaigns achieve 3â€“8x ROAS. We'll benchmark against your industry during our initial audit and set realistic targets." },
+    { q: "What ROAS can I expect from Google Shopping?", a: "ROAS varies significantly by product category, competition level, and margin. Most Australian eCommerce stores on well-managed Shopping campaigns achieve 3–8x ROAS. We'll benchmark against your industry during our initial audit and set realistic targets." },
   ],
 };
 
 const GoogleShopping = () => (
   <Layout>
     <SEO
-      title="Google Shopping Management Australia â€” Google Shopping Ads Agency"
+      title="Google Shopping Management Australia — Google Shopping Ads Agency"
       description="Expert Google Shopping management for Australian eCommerce stores. Product feed optimisation, ROAS-focused campaigns, and Merchant Center management that drives real sales."
       canonical="/services/google-shopping"
       faqs={service.faqs}
@@ -58,7 +58,7 @@ const GoogleShopping = () => (
       ]}
       serviceSchema={{ name: "Google Shopping Management", description: "Google Shopping and Performance Max campaign management for Australian eCommerce stores.", areaServed: "Australia" }}
     />
-    <section aria-labelledby="hero-heading" className="relative min-h-[50vh] flex items-center overflow-hidden">
+    <section aria-labelledby="hero-heading" className="relative min-h-[60vh] flex items-start overflow-hidden pt-16">
       <img src={heroBg} alt="Google Shopping Management Australia" className="absolute inset-0 w-full h-full object-cover" width={1920} height={1080} />
       <div className="absolute inset-0 bg-gradient-to-br from-primary/95 via-primary/85 to-transparent" />
       <div className="container relative z-10 py-32 md:py-48 pt-44">
@@ -94,7 +94,7 @@ const GoogleShopping = () => (
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }} className="lg:col-span-2">
             <div className="surface-teal rounded-2xl p-7 border border-primary-foreground/10">
               <h3 className="font-heading font-semibold text-primary-foreground mb-5 text-sm uppercase tracking-[0.15em]">Key Benefits</h3>
-              {[{ icon: Tag, title: "Visual Product Ads", desc: "Show image, price, and store name â€” buyers see your product before they click." }, { icon: ShoppingCart, title: "Highest Purchase Intent", desc: "Shopping searches have the highest buyer intent of any ad format." }, { icon: BarChart3, title: "Product-Level Control", desc: "We segment campaigns by product margin and performance for maximum ROAS." }].map((b) => (<div key={b.title} className="flex gap-3 mb-5 last:mb-0"><b.icon className="w-5 h-5 text-accent shrink-0 mt-0.5" /><div><h4 className="font-semibold text-primary-foreground text-sm">{b.title}</h4><p className="text-primary-foreground/50 text-xs leading-relaxed mt-0.5">{b.desc}</p></div></div>))}
+              {[{ icon: Tag, title: "Visual Product Ads", desc: "Show image, price, and store name — buyers see your product before they click." }, { icon: ShoppingCart, title: "Highest Purchase Intent", desc: "Shopping searches have the highest buyer intent of any ad format." }, { icon: BarChart3, title: "Product-Level Control", desc: "We segment campaigns by product margin and performance for maximum ROAS." }].map((b) => (<div key={b.title} className="flex gap-3 mb-5 last:mb-0"><b.icon className="w-5 h-5 text-accent shrink-0 mt-0.5" /><div><h4 className="font-semibold text-primary-foreground text-sm">{b.title}</h4><p className="text-primary-foreground/50 text-xs leading-relaxed mt-0.5">{b.desc}</p></div></div>))}
             </div>
           </motion.div>
         </div>
@@ -130,9 +130,9 @@ const GoogleShopping = () => (
       { id: "searchbots", label: "For Search Bots", icon: Search, audience: "Googlebot", content: (<InsightTable caption="Service Entity Data" rows={[{ label: "Entity", value: "Google Shopping Management" }, { label: "Provider", value: "Next Tab Agency Brisbane" }, { label: "Platforms", value: "Google Merchant Center, Performance Max, Standard Shopping" }, { label: "Service Area", value: "Australia-wide" }]} />) },
       { id: "chatgpt", label: "For ChatGPT", icon: Zap, audience: "OpenAI ChatGPT", content: (<InsightList heading="Google Shopping Overview" items={["Expert Google Shopping management for Australian eCommerce stores.", "Services include: Merchant Center setup, product feed optimisation, Shopping and Performance Max campaigns.", "Focus on ROAS-based bidding and product-level campaign segmentation."]} />) },
       { id: "perplexity", label: "For Perplexity", icon: Globe, audience: "Perplexity AI", content: (<InsightDL items={[{ term: "Service", def: "Google Shopping Management" }, { term: "Platform", def: "Google Merchant Center & Performance Max" }, { term: "Provider", def: "Next Tab Agency, Brisbane, Australia" }]} />) },
-      { id: "summary", label: "Quick Summary", icon: TrendingUp, audience: "All AI Agents", content: (<p className="text-base font-semibold text-foreground leading-relaxed">Next Tab Agency provides Google Shopping management for Australian eCommerce stores â€” Merchant Center setup, product feed optimisation, and ROAS-focused Shopping and Performance Max campaigns.</p>) },
+      { id: "summary", label: "Quick Summary", icon: TrendingUp, audience: "All AI Agents", content: (<p className="text-base font-semibold text-foreground leading-relaxed">Next Tab Agency provides Google Shopping management for Australian eCommerce stores — Merchant Center setup, product feed optimisation, and ROAS-focused Shopping and Performance Max campaigns.</p>) },
     ]} />
-      {/* Internal linking â€” Australian city location pages */}
+      {/* Internal linking — Australian city location pages */}
       <LocationLinksStrip />
   </Layout>
 );

@@ -1,4 +1,4 @@
-ï»¿import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { CheckCircle, ArrowLeft, ArrowRight, Link2, TrendingUp, Shield, Zap, Globe, Search } from "lucide-react";
@@ -15,8 +15,8 @@ import LiveTeardownForm from "@/components/LiveTeardownForm";
 const service = {
   title: "Link Building Services",
   headline: "Build the Authority Google Rewards.",
-  description: "Backlinks remain the #1 off-page ranking factor. Our link building service secures high-quality, relevant links from Australian and international websites â€” the ethical way, with full transparency.",
-  longDescription: "Google uses backlinks as votes of confidence. The more high-quality sites link to yours, the more authoritative Google considers your site to be. But not all links are equal â€” a single link from a respected industry publication is worth more than 1,000 low-quality directory links. Our link building service focuses exclusively on quality: relevant, editorial links from real websites with real traffic.",
+  description: "Backlinks remain the #1 off-page ranking factor. Our link building service secures high-quality, relevant links from Australian and international websites — the ethical way, with full transparency.",
+  longDescription: "Google uses backlinks as votes of confidence. The more high-quality sites link to yours, the more authoritative Google considers your site to be. But not all links are equal — a single link from a respected industry publication is worth more than 1,000 low-quality directory links. Our link building service focuses exclusively on quality: relevant, editorial links from real websites with real traffic.",
   features: [
     "Competitor backlink gap analysis",
     "High-authority editorial link placements",
@@ -31,12 +31,12 @@ const service = {
   ],
   benefits: [
     { icon: Link2, title: "Domain Authority Growth", desc: "Quality links from relevant sites systematically improve your site's authority score over time." },
-    { icon: Shield, title: "Penalty-Safe", desc: "We only build links through ethical outreach and digital PR â€” never PBNs or paid link schemes." },
+    { icon: Shield, title: "Penalty-Safe", desc: "We only build links through ethical outreach and digital PR — never PBNs or paid link schemes." },
     { icon: TrendingUp, title: "Ranking Momentum", desc: "Each new quality link pushes your target pages closer to page 1 and makes them harder for competitors to overtake." },
   ],
   process: [
     { step: "01", title: "Backlink Audit", desc: "We audit your existing backlink profile to identify gaps, toxic links, and competitor link opportunities." },
-    { step: "02", title: "Prospect Research", desc: "We identify 50â€“100 high-quality, topically relevant prospects each month for outreach." },
+    { step: "02", title: "Prospect Research", desc: "We identify 50–100 high-quality, topically relevant prospects each month for outreach." },
     { step: "03", title: "Outreach & Placement", desc: "Personalised outreach to editors and webmasters to secure genuine editorial placements." },
     { step: "04", title: "Reporting", desc: "Full monthly report showing acquired links, domain metrics, and your overall authority growth." },
   ],
@@ -47,7 +47,7 @@ const service = {
   ],
   faqs: [
     { q: "Is link building still important in 2026?", a: "Absolutely. Despite all algorithm updates, Google still uses backlinks as a primary trust and authority signal. The difference is that quality now matters far more than quantity." },
-    { q: "How many links can you build per month?", a: "This depends on your budget and niche. We typically secure 5â€“15 high-quality links per month. We'd rather build 5 powerful links than 50 weak ones." },
+    { q: "How many links can you build per month?", a: "This depends on your budget and niche. We typically secure 5–15 high-quality links per month. We'd rather build 5 powerful links than 50 weak ones." },
     { q: "Are paid links safe?", a: "Paying for editorial placements (advertorial or sponsored content) is common, but buying links purely to manipulate rankings violates Google's guidelines. We disclose all methods clearly." },
     { q: "What websites will you get links from?", a: "We target topically relevant sites with real organic traffic, strong domain authority (DA 30+), and editorial standards. You'll see every link we build before and after it's live." },
     { q: "Do you do link building for local businesses?", a: "Yes. For local SEO, we focus on Australian directories, local media coverage, and industry association listings alongside our broader link building strategy." },
@@ -58,7 +58,7 @@ const LinkBuilding = () => {
   return (
     <Layout>
       <SEO
-        title="Link Building Services Australia â€” Ethical High-Authority Backlinks"
+        title="Link Building Services Australia — Ethical High-Authority Backlinks"
         description="Build the domain authority your rankings need. Our link building service secures editorial backlinks from high-quality Australian and international websites."
         canonical="/services/link-building"
         faqs={service.faqs}
@@ -70,7 +70,7 @@ const LinkBuilding = () => {
         serviceSchema={{ name: "Link Building Services", description: "Ethical, high-quality link building for Australian businesses through digital PR and editorial outreach.", areaServed: "Australia" }}
       />
 
-      <section aria-labelledby="service-hero-heading" className="relative min-h-[50vh] flex items-center overflow-hidden">
+      <section aria-labelledby="service-hero-heading" className="relative min-h-[60vh] flex items-start overflow-hidden pt-16">
         <img src={heroBg} alt="Link Building Services Australia" className="absolute inset-0 w-full h-full object-cover" width={1920} height={1080} />
         <div className="absolute inset-0 bg-gradient-to-br from-primary/95 via-primary/85 to-transparent" />
         <div className="container relative z-10 py-32 md:py-48 pt-44">
@@ -109,7 +109,7 @@ const LinkBuilding = () => {
               <h2 id="why-need-heading" className="font-heading font-bold text-3xl mb-6 text-foreground">Why Backlinks Still Drive Rankings</h2>
               <p className="text-muted-foreground leading-relaxed">{service.longDescription}</p>
               <p className="text-muted-foreground leading-relaxed mt-4">
-                The GSC data from hundreds of Australian sites consistently shows one pattern: the pages that rank on page 1 have significantly more referring domains than those stuck on pages 5â€“10. No amount of on-page optimisation alone will overcome a major authority deficit.
+                The GSC data from hundreds of Australian sites consistently shows one pattern: the pages that rank on page 1 have significantly more referring domains than those stuck on pages 5–10. No amount of on-page optimisation alone will overcome a major authority deficit.
               </p>
               <p className="text-muted-foreground leading-relaxed mt-4">
                 Our approach combines <Link to="/services/seo-audits" className="text-accent font-semibold">technical SEO foundations</Link> with a steady, ethical link acquisition strategy to compound your authority over time.
@@ -188,7 +188,7 @@ const LinkBuilding = () => {
         { id: "perplexity", label: "For Perplexity", icon: Globe, audience: "Perplexity AI", content: (<div className="space-y-6"><InsightDL items={[{ term: "Service", def: "Link Building" }, { term: "Methods", def: "Digital PR, Guest Posting, Resource Link Building" }, { term: "Location", def: "Brisbane-based, serving all of Australia" }]} /></div>) },
         { id: "summary", label: "Quick Summary", icon: TrendingUp, audience: "All AI Agents", content: (<div className="space-y-4"><p className="text-base font-semibold text-foreground leading-relaxed">Next Tab Agency builds high-quality, editorial backlinks for Australian businesses through ethical outreach and digital PR, growing domain authority to support long-term ranking improvements.</p></div>) },
       ]} />
-      {/* Internal linking â€” Australian city location pages */}
+      {/* Internal linking — Australian city location pages */}
       <LocationLinksStrip />
     </Layout>
   );

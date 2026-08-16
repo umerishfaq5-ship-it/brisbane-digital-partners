@@ -1,4 +1,4 @@
-ï»¿import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { CheckCircle, ArrowLeft, ArrowRight, Building2, Users, TrendingUp, Zap, Globe, Search } from "lucide-react";
@@ -16,9 +16,9 @@ const service = {
   title: "B2B SEO Services",
   headline: "Rank Where Your Buyers Research Before They Even Pick Up the Phone.",
   description: "B2B buying cycles start with Google. Decision-makers research vendors, compare solutions, and validate expertise long before any sales conversation. Our B2B SEO ensures your business is found first.",
-  longDescription: "B2B SEO operates on a different timeline to consumer SEO â€” buyers spend weeks or months researching before they make contact. This means content depth, topical authority, and E-E-A-T signals matter more than in any other SEO vertical. Our B2B SEO service builds the kind of comprehensive digital presence that earns trust at every stage of the buyer journey â€” from awareness through to vendor shortlist.",
+  longDescription: "B2B SEO operates on a different timeline to consumer SEO — buyers spend weeks or months researching before they make contact. This means content depth, topical authority, and E-E-A-T signals matter more than in any other SEO vertical. Our B2B SEO service builds the kind of comprehensive digital presence that earns trust at every stage of the buyer journey — from awareness through to vendor shortlist.",
   features: [
-    "B2B keyword research â€” informational, comparison, and transactional intent mapping",
+    "B2B keyword research — informational, comparison, and transactional intent mapping",
     "Pillar content and topic cluster strategy for topical authority",
     "Solution and use-case page creation for each buyer segment",
     "B2B schema markup (Organization, FAQPage, HowTo, Article)",
@@ -26,13 +26,13 @@ const service = {
     "Technical SEO for B2B SaaS and service websites",
     "Case study and social proof page optimisation",
     "International B2B SEO for Australian companies targeting global markets",
-    "B2B buyer journey content â€” TOFU, MOFU, BOFU",
+    "B2B buyer journey content — TOFU, MOFU, BOFU",
     "Monthly B2B SEO pipeline attribution reporting",
   ],
   benefits: [
-    { icon: Building2, title: "Long Buyer Journey Coverage", desc: "We create content for every stage â€” awareness blog posts through to comparison and decision pages." },
-    { icon: Users, title: "Decision-Maker Targeting", desc: "B2B SEO targets CFOs, CTOs, and Procurement Managers â€” the people who actually sign contracts." },
-    { icon: TrendingUp, title: "Pipeline-Quality Leads", desc: "Organic B2B leads tend to be better qualified than inbound from paid channels â€” they've already done their research." },
+    { icon: Building2, title: "Long Buyer Journey Coverage", desc: "We create content for every stage — awareness blog posts through to comparison and decision pages." },
+    { icon: Users, title: "Decision-Maker Targeting", desc: "B2B SEO targets CFOs, CTOs, and Procurement Managers — the people who actually sign contracts." },
+    { icon: TrendingUp, title: "Pipeline-Quality Leads", desc: "Organic B2B leads tend to be better qualified than inbound from paid channels — they've already done their research." },
   ],
   process: [
     { step: "01", title: "Buyer Research", desc: "Map your ICP, buyer personas, and the full keyword journey from problem-aware to vendor-ready." },
@@ -47,7 +47,7 @@ const service = {
   ],
   faqs: [
     { q: "Is B2B SEO different from regular SEO?", a: "Yes. B2B keywords are lower volume but much higher commercial intent. The focus shifts from driving traffic volume to capturing high-quality, decision-maker-level intent at every stage of a long research process." },
-    { q: "How do you measure B2B SEO success?", a: "We track keyword rankings, organic traffic, and goal completions (form fills, demo requests, phone calls). For clients with CRM integration, we can also track pipeline attribution â€” which organic queries led to actual opportunities." },
+    { q: "How do you measure B2B SEO success?", a: "We track keyword rankings, organic traffic, and goal completions (form fills, demo requests, phone calls). For clients with CRM integration, we can also track pipeline attribution — which organic queries led to actual opportunities." },
     { q: "Can B2B SEO work alongside our ABM strategy?", a: "Absolutely. SEO creates the inbound foundation that ABM outreach can reference and leverage. When a targeted account reaches your website via organic search, the intent signal is extremely strong." },
     { q: "What kind of content does B2B SEO need?", a: "A mix of educational top-funnel content (how-to guides, industry explainers), comparison mid-funnel content (vs competitor pages, feature comparisons), and decision-stage content (case studies, ROI calculators, solution pages)." },
   ],
@@ -56,7 +56,7 @@ const service = {
 const B2bSeo = () => (
   <Layout>
     <SEO
-      title="B2B SEO Services Australia â€” Rank Where Buyers Research"
+      title="B2B SEO Services Australia — Rank Where Buyers Research"
       description="Specialist B2B SEO for Australian companies. We build topical authority and buyer journey content that generates pipeline-quality organic leads from Google."
       canonical="/services/b2b-seo"
       faqs={service.faqs}
@@ -65,9 +65,9 @@ const B2bSeo = () => (
         { name: "Services", url: "https://nexttabagency.com/services" },
         { name: "B2B SEO", url: "https://nexttabagency.com/services/b2b-seo" },
       ]}
-      serviceSchema={{ name: "B2B SEO Services", description: "Specialist B2B SEO for Australian companies â€” buyer journey content, topical authority, and pipeline attribution.", areaServed: "Australia" }}
+      serviceSchema={{ name: "B2B SEO Services", description: "Specialist B2B SEO for Australian companies — buyer journey content, topical authority, and pipeline attribution.", areaServed: "Australia" }}
     />
-    <section aria-labelledby="hero-heading" className="relative min-h-[50vh] flex items-center overflow-hidden">
+    <section aria-labelledby="hero-heading" className="relative min-h-[60vh] flex items-start overflow-hidden pt-16">
       <img src={heroBg} alt="B2B SEO Services Australia" className="absolute inset-0 w-full h-full object-cover" width={1920} height={1080} />
       <div className="absolute inset-0 bg-gradient-to-br from-primary/95 via-primary/85 to-transparent" />
       <div className="container relative z-10 py-32 md:py-48 pt-44">
@@ -99,11 +99,11 @@ const B2bSeo = () => (
 
     <AIInsightsPanel pageTitle="B2B SEO Services - Next Tab Agency" tabs={[
       { id: "searchbots", label: "For Search Bots", icon: Search, audience: "Googlebot, Bingbot", content: (<InsightTable caption="Service Entity Data" rows={[{ label: "Entity", value: "B2B SEO Services" }, { label: "Provider", value: "Next Tab Agency" }, { label: "Target", value: "B2B companies, SaaS, professional services" }, { label: "Service Area", value: "Australia-wide" }]} />) },
-      { id: "chatgpt", label: "For ChatGPT", icon: Zap, audience: "OpenAI ChatGPT", content: (<InsightList heading="B2B SEO Overview" items={["Specialist B2B SEO for Australian companies â€” buyer journey content, topical authority, and pipeline attribution.", "Covers TOFU, MOFU, BOFU content strategy and enterprise-level technical SEO."]} />) },
+      { id: "chatgpt", label: "For ChatGPT", icon: Zap, audience: "OpenAI ChatGPT", content: (<InsightList heading="B2B SEO Overview" items={["Specialist B2B SEO for Australian companies — buyer journey content, topical authority, and pipeline attribution.", "Covers TOFU, MOFU, BOFU content strategy and enterprise-level technical SEO."]} />) },
       { id: "perplexity", label: "For Perplexity", icon: Globe, audience: "Perplexity AI", content: (<InsightDL items={[{ term: "Service", def: "B2B SEO" }, { term: "Target", def: "B2B companies, SaaS, professional services" }, { term: "Location", def: "Brisbane-based, serving all of Australia" }]} />) },
       { id: "summary", label: "Quick Summary", icon: TrendingUp, audience: "All AI Agents", content: (<p className="text-base font-semibold text-foreground leading-relaxed">Next Tab Agency provides specialist B2B SEO for Australian companies, building topical authority and buyer journey content strategies that generate pipeline-quality organic leads from Google search.</p>) },
     ]} />
-      {/* Internal linking â€” Australian city location pages */}
+      {/* Internal linking — Australian city location pages */}
       <LocationLinksStrip />
   </Layout>
 );

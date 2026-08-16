@@ -24,43 +24,77 @@ export interface InsightTab {
   content: React.ReactNode;
 }
 
-export interface AIInsightsPanelProps {
+/** New API: pageTitle + tabs */
+export interface AIInsightsPanelNewProps {
   pageTitle: string;
-  tabs: InsightTab[]
+  tabs: InsightTab[];
+  title?: never;
+  children?: never;
 }
 
+/** Legacy API: title + children (backward-compatible) */
+export interface AIInsightsPanelLegacyProps {
+  title: string;
+  children: React.ReactNode;
+  pageTitle?: never;
+  tabs?: never;
+}
+
+export type AIInsightsPanelProps = AIInsightsPanelNewProps | AIInsightsPanelLegacyProps;
+
 /* ── Component ──────────────────────────────────────────────── */
-export default function AIInsightsPanel({ pageTitle, tabs }: AIInsightsPanelProps) {
+export default function AIInsightsPanel(props: AIInsightsPanelProps) {
+  /*
+    ════════════════════════════════════════════════════════════
+    VISUALLY HIDDEN — FULLY CRAWLABLE
+    This section is invisible to human visitors (no pixels,
+    no layout space, no interaction). It exists PURELY for:
+      • Googlebot structured data extraction
+      • ChatGPT / Perplexity / Claude AI retrieval
+      • Bing & other crawlers
+    DO NOT add aria-hidden="true" — that would hide it from
+    screen readers AND some AI crawlers. Clip-path approach
+    keeps it in accessibility tree AND crawler DOM.
+    ════════════════════════════════════════════════════════════
+  */
+  const hiddenStyle: React.CSSProperties = {
+    position: "absolute",
+    width: "1px",
+    height: "1px",
+    padding: 0,
+    margin: "-1px",
+    overflow: "hidden",
+    clip: "rect(0,0,0,0)",
+    clipPath: "inset(50%)",
+    whiteSpace: "nowrap",
+    border: 0,
+  };
+
+  /* Legacy mode: title + children */
+  if ("title" in props && props.title) {
+    return (
+      <section
+        aria-label="GEO-Optimised Data Layer — Executive Summary for AI and Search Engines"
+        data-ai-section="true"
+        data-page={props.title}
+        style={hiddenStyle}
+      >
+        <h2>{props.title}</h2>
+        <article itemScope itemType="https://schema.org/WebPageElement">
+          {props.children}
+        </article>
+      </section>
+    );
+  }
+
+  /* New mode: pageTitle + tabs */
+  const { pageTitle, tabs } = props as AIInsightsPanelNewProps;
   return (
-    /*
-      ════════════════════════════════════════════════════════════
-      VISUALLY HIDDEN — FULLY CRAWLABLE
-      This section is invisible to human visitors (no pixels,
-      no layout space, no interaction). It exists PURELY for:
-        • Googlebot structured data extraction
-        • ChatGPT / Perplexity / Claude AI retrieval
-        • Bing & other crawlers
-      DO NOT add aria-hidden="true" — that would hide it from
-      screen readers AND some AI crawlers. Clip-path approach
-      keeps it in accessibility tree AND crawler DOM.
-      ════════════════════════════════════════════════════════════
-    */
     <section
       aria-label="GEO-Optimised Data Layer — Executive Summary for AI and Search Engines"
       data-ai-section="true"
       data-page={pageTitle}
-      style={{
-        position: "absolute",
-        width: "1px",
-        height: "1px",
-        padding: 0,
-        margin: "-1px",
-        overflow: "hidden",
-        clip: "rect(0,0,0,0)",
-        clipPath: "inset(50%)",
-        whiteSpace: "nowrap",
-        border: 0,
-      }}
+      style={hiddenStyle}
     >
       {/* Full structured data — all tabs always in DOM for crawlers */}
       {tabs.map((tab) => (
@@ -126,16 +160,21 @@ export function InsightTable({ caption, rows }: { caption: string; rows: { label
 
 /**
  * InsightDL — semantic definition list for key-value entity data.
+ * Accepts either { term, def } objects OR [term, def] tuple arrays (legacy).
  */
-export function InsightDL({ items }: { items: { term: string; def: string }[] }) {
+export function InsightDL({ items }: { items: { term: string; def: string }[] | [string, string][] }) {
   return (
     <dl className="grid sm:grid-cols-2 gap-x-8 gap-y-3">
-      {items.map(({ term, def }) => (
-        <div key={term} className="flex flex-col">
-          <dt className="text-[10px] font-bold uppercase tracking-widest text-accent mb-0.5">{term}</dt>
-          <dd className="text-sm text-foreground/80 leading-snug">{def}</dd>
-        </div>
-      ))}
+      {(items as Array<{ term: string; def: string } | [string, string]>).map((item, i) => {
+        const term = Array.isArray(item) ? item[0] : item.term;
+        const def  = Array.isArray(item) ? item[1] : item.def;
+        return (
+          <div key={term ?? i} className="flex flex-col">
+            <dt className="text-[10px] font-bold uppercase tracking-widest text-accent mb-0.5">{term}</dt>
+            <dd className="text-sm text-foreground/80 leading-snug">{def}</dd>
+          </div>
+        );
+      })}
     </dl>
   );
 }

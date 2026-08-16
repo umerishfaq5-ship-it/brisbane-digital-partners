@@ -1,4 +1,4 @@
-ï»¿import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { CheckCircle, ArrowLeft, ArrowRight, MapPin, TrendingUp, Users, Zap, Globe, Search } from "lucide-react";
@@ -31,16 +31,16 @@ const features = [
 ];
 
 const faqs = [
-  { q: "Do you serve businesses across the entire Sunshine Coast?", a: "Yes â€” from Caloundra in the south to Noosa in the north, and all hinterland areas including Maleny and Montville. We target every suburb relevant to your business." },
-  { q: "What industries are you strongest in for the Sunshine Coast?", a: "We specialise in hospitality, tourism, trades, real estate, and professional services â€” the dominant industries in the Sunshine Coast economy. See our industry-specific SEO pages for more detail." },
+  { q: "Do you serve businesses across the entire Sunshine Coast?", a: "Yes — from Caloundra in the south to Noosa in the north, and all hinterland areas including Maleny and Montville. We target every suburb relevant to your business." },
+  { q: "What industries are you strongest in for the Sunshine Coast?", a: "We specialise in hospitality, tourism, trades, real estate, and professional services — the dominant industries in the Sunshine Coast economy. See our industry-specific SEO pages for more detail." },
   { q: "Is the Sunshine Coast growing fast enough to justify SEO investment?", a: "Absolutely. The Sunshine Coast is one of Australia's fastest-growing regions, with major infrastructure investment (airport expansion, hospital, light rail) driving significant population and business growth. Early SEO investment now builds authority that compounds as the market grows." },
-  { q: "Can you help with both Sunshine Coast and Brisbane for a multi-location business?", a: "Yes â€” multi-location SEO is a core service. We create location-specific pages and GBP profiles for each location, avoiding keyword cannibalisation between cities." },
+  { q: "Can you help with both Sunshine Coast and Brisbane for a multi-location business?", a: "Yes — multi-location SEO is a core service. We create location-specific pages and GBP profiles for each location, avoiding keyword cannibalisation between cities." },
 ];
 
 const SunshineCoastSeo = () => (
   <Layout>
     <SEO
-      title="SEO Sunshine Coast â€” SEO Agency for Sunshine Coast Businesses"
+      title="SEO Sunshine Coast — SEO Agency for Sunshine Coast Businesses"
       description="Expert SEO agency for Sunshine Coast businesses. We rank Sunshine Coast companies on Google with local SEO, Map Pack strategy, and suburb-level keyword targeting."
       canonical="/locations/sunshine-coast-seo"
       faqs={faqs}
@@ -49,9 +49,9 @@ const SunshineCoastSeo = () => (
         { name: "Locations", url: "https://nexttabagency.com/" },
         { name: "Sunshine Coast SEO", url: "https://nexttabagency.com/locations/sunshine-coast-seo" },
       ]}
-      serviceSchema={{ name: "SEO Services Sunshine Coast", description: "Expert SEO services for Sunshine Coast businesses â€” local SEO, Map Pack rankings, and suburb-level keyword strategy.", areaServed: "Sunshine Coast, Queensland" }}
+      serviceSchema={{ name: "SEO Services Sunshine Coast", description: "Expert SEO services for Sunshine Coast businesses — local SEO, Map Pack rankings, and suburb-level keyword strategy.", areaServed: "Sunshine Coast, Queensland" }}
     />
-    <section aria-labelledby="hero-heading" className="relative min-h-[50vh] flex items-center overflow-hidden">
+    <section aria-labelledby="hero-heading" className="relative min-h-[60vh] flex items-start overflow-hidden pt-16">
       <img src={heroBg} alt="SEO Agency Sunshine Coast" className="absolute inset-0 w-full h-full object-cover" width={1920} height={1080} />
       <div className="absolute inset-0 bg-gradient-to-br from-primary/95 via-primary/85 to-transparent" />
       <div className="container relative z-10 py-32 md:py-48 pt-44">
@@ -60,7 +60,7 @@ const SunshineCoastSeo = () => (
           <span className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-accent/20 text-accent text-xs font-bold uppercase tracking-widest mb-6"><MapPin className="w-3 h-3" /> Sunshine Coast, QLD</span>
           <h1 id="hero-heading" className="font-heading font-bold text-4xl md:text-5xl leading-[1.1] text-primary-foreground mb-6">SEO Agency Sunshine Coast</h1>
           <p className="text-xl md:text-2xl text-primary-foreground/80 font-medium leading-snug mb-6">Rank #1 on the Sunshine Coast. Grow With the Region.</p>
-          <p className="text-lg text-primary-foreground/60 leading-relaxed max-w-2xl">The Sunshine Coast is Australia's fastest-growing region. Be the business locals and tourists find first on Google â€” from Noosa to Caloundra.</p>
+          <p className="text-lg text-primary-foreground/60 leading-relaxed max-w-2xl">The Sunshine Coast is Australia's fastest-growing region. Be the business locals and tourists find first on Google — from Noosa to Caloundra.</p>
           <div className="flex flex-wrap gap-4 mt-8">
             <Button variant="accent" size="lg" asChild><Link to="/contact">Get a Free Sunshine Coast SEO Audit</Link></Button>
             <Button variant="outline" size="lg" className="border-white/30 text-white hover:bg-white/10" asChild><Link to="/services/local-seo">Local SEO Service</Link></Button>
@@ -95,13 +95,13 @@ const SunshineCoastSeo = () => (
         <div className="grid lg:grid-cols-5 gap-12 lg:gap-20">
           <div className="lg:col-span-3">
             <h2 className="font-heading font-bold text-3xl mb-6 text-foreground">The Sunshine Coast SEO Opportunity in 2026</h2>
-            <p className="text-muted-foreground leading-relaxed">The Sunshine Coast is experiencing unprecedented growth â€” new residents, new businesses, new infrastructure. This creates a rare window where early SEO investment builds the kind of authority that becomes very difficult for late-movers to displace. Businesses that rank now will dominate the expanded market of 2027 and beyond.</p>
-            <p className="text-muted-foreground leading-relaxed mt-4">Brisbane-based and serving all of South-East Queensland â€” including our <Link to="/locations/brisbane-seo" className="text-accent font-semibold">Brisbane SEO</Link> and <Link to="/locations/gold-coast-seo" className="text-accent font-semibold">Gold Coast SEO</Link> services.</p>
+            <p className="text-muted-foreground leading-relaxed">The Sunshine Coast is experiencing unprecedented growth — new residents, new businesses, new infrastructure. This creates a rare window where early SEO investment builds the kind of authority that becomes very difficult for late-movers to displace. Businesses that rank now will dominate the expanded market of 2027 and beyond.</p>
+            <p className="text-muted-foreground leading-relaxed mt-4">Brisbane-based and serving all of South-East Queensland — including our <Link to="/locations/brisbane-seo" className="text-accent font-semibold">Brisbane SEO</Link> and <Link to="/locations/gold-coast-seo" className="text-accent font-semibold">Gold Coast SEO</Link> services.</p>
           </div>
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: 0.2 }} className="lg:col-span-2">
             <div className="surface-teal rounded-2xl p-7 border border-primary-foreground/10">
               <h3 className="font-heading font-semibold text-primary-foreground mb-5 text-sm uppercase tracking-[0.15em]">Key Benefits</h3>
-              {[{ icon: MapPin, title: "Regional Growth Timing", desc: "Invest in SEO now and capture authority as the region's search volume grows." }, { icon: Users, title: "Tourism + Local Targeting", desc: "Target both the growing local population and millions of annual tourists." }, { icon: TrendingUp, title: "Less Competition", desc: "SEO is less contested on the Sunshine Coast than in Brisbane â€” more opportunity for faster results." }].map((b) => (
+              {[{ icon: MapPin, title: "Regional Growth Timing", desc: "Invest in SEO now and capture authority as the region's search volume grows." }, { icon: Users, title: "Tourism + Local Targeting", desc: "Target both the growing local population and millions of annual tourists." }, { icon: TrendingUp, title: "Less Competition", desc: "SEO is less contested on the Sunshine Coast than in Brisbane — more opportunity for faster results." }].map((b) => (
                 <div key={b.title} className="flex gap-3 mb-5 last:mb-0"><b.icon className="w-5 h-5 text-accent shrink-0 mt-0.5" /><div><h4 className="font-semibold text-primary-foreground text-sm">{b.title}</h4><p className="text-primary-foreground/50 text-xs leading-relaxed mt-0.5">{b.desc}</p></div></div>
               ))}
             </div>

@@ -1,4 +1,4 @@
-ï»¿import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { CheckCircle, ArrowLeft, ArrowRight, MapPin, TrendingUp, Users, Zap, Globe, Search } from "lucide-react";
@@ -31,16 +31,16 @@ const features = [
 ];
 
 const faqs = [
-  { q: "Do you have experience with Gold Coast businesses?", a: "Yes â€” we work with Gold Coast businesses across hospitality, tourism, real estate, trades, and professional services. The GC market has unique search patterns due to high tourism volume, which we account for in keyword strategy." },
+  { q: "Do you have experience with Gold Coast businesses?", a: "Yes — we work with Gold Coast businesses across hospitality, tourism, real estate, trades, and professional services. The GC market has unique search patterns due to high tourism volume, which we account for in keyword strategy." },
   { q: "Is Gold Coast SEO different from Brisbane SEO?", a: "Yes. Gold Coast has a heavily tourism-influenced search landscape alongside strong local residential demand. We tailor strategy to target both locals and tourist-intent searches simultaneously." },
-  { q: "Which Gold Coast suburbs do you target?", a: "We target all GC suburbs based on your business location and service area â€” Surfers Paradise, Broadbeach, Burleigh Heads, Robina, Southport, Coolangatta, and beyond. Our suburb page strategy covers every area you want to rank in." },
-  { q: "Can you help my Gold Coast business rank against larger national brands?", a: "Yes â€” through local SEO, Google Business Profile optimisation, and suburb-specific content, local businesses can outrank national brands for suburb-level searches. This is where local SEO creates the biggest advantage." },
+  { q: "Which Gold Coast suburbs do you target?", a: "We target all GC suburbs based on your business location and service area — Surfers Paradise, Broadbeach, Burleigh Heads, Robina, Southport, Coolangatta, and beyond. Our suburb page strategy covers every area you want to rank in." },
+  { q: "Can you help my Gold Coast business rank against larger national brands?", a: "Yes — through local SEO, Google Business Profile optimisation, and suburb-specific content, local businesses can outrank national brands for suburb-level searches. This is where local SEO creates the biggest advantage." },
 ];
 
 const GoldCoastSeo = () => (
   <Layout>
     <SEO
-      title="SEO Gold Coast â€” SEO Agency for Gold Coast Businesses"
+      title="SEO Gold Coast — SEO Agency for Gold Coast Businesses"
       description="Expert SEO agency for Gold Coast businesses. We rank Gold Coast companies on Google with local SEO, Map Pack strategy, and suburb-level keyword targeting."
       canonical="/locations/gold-coast-seo"
       faqs={faqs}
@@ -49,9 +49,9 @@ const GoldCoastSeo = () => (
         { name: "Locations", url: "https://nexttabagency.com/" },
         { name: "Gold Coast SEO", url: "https://nexttabagency.com/locations/gold-coast-seo" },
       ]}
-      serviceSchema={{ name: "SEO Services Gold Coast", description: "Expert SEO services for Gold Coast businesses â€” local SEO, Map Pack rankings, and suburb-level keyword strategy.", areaServed: "Gold Coast, Queensland" }}
+      serviceSchema={{ name: "SEO Services Gold Coast", description: "Expert SEO services for Gold Coast businesses — local SEO, Map Pack rankings, and suburb-level keyword strategy.", areaServed: "Gold Coast, Queensland" }}
     />
-    <section aria-labelledby="hero-heading" className="relative min-h-[50vh] flex items-center overflow-hidden">
+    <section aria-labelledby="hero-heading" className="relative min-h-[60vh] flex items-start overflow-hidden pt-16">
       <img src={heroBg} alt="SEO Agency Gold Coast" className="absolute inset-0 w-full h-full object-cover" width={1920} height={1080} />
       <div className="absolute inset-0 bg-gradient-to-br from-primary/95 via-primary/85 to-transparent" />
       <div className="container relative z-10 py-32 md:py-48 pt-44">
@@ -60,7 +60,7 @@ const GoldCoastSeo = () => (
           <span className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-accent/20 text-accent text-xs font-bold uppercase tracking-widest mb-6"><MapPin className="w-3 h-3" /> Gold Coast, QLD</span>
           <h1 id="hero-heading" className="font-heading font-bold text-4xl md:text-5xl leading-[1.1] text-primary-foreground mb-6">SEO Agency Gold Coast</h1>
           <p className="text-xl md:text-2xl text-primary-foreground/80 font-medium leading-snug mb-6">Rank #1 in the Gold Coast. Attract More Local Customers.</p>
-          <p className="text-lg text-primary-foreground/60 leading-relaxed max-w-2xl">Whether you're a tradie in Robina, a restaurant in Broadbeach, or a retailer in Surfers Paradise â€” we get Gold Coast businesses found on Google.</p>
+          <p className="text-lg text-primary-foreground/60 leading-relaxed max-w-2xl">Whether you're a tradie in Robina, a restaurant in Broadbeach, or a retailer in Surfers Paradise — we get Gold Coast businesses found on Google.</p>
           <div className="flex flex-wrap gap-4 mt-8">
             <Button variant="accent" size="lg" asChild><Link to="/contact">Get a Free Gold Coast SEO Audit</Link></Button>
             <Button variant="outline" size="lg" className="border-white/30 text-white hover:bg-white/10" asChild><Link to="/services/local-seo">Local SEO Service</Link></Button>
@@ -82,7 +82,7 @@ const GoldCoastSeo = () => (
       </div>
     </section>
 
-    <section className="py-20 md:py-28"><div className="container max-w-5xl"><div className="grid lg:grid-cols-5 gap-12 lg:gap-20"><div className="lg:col-span-3"><h2 className="font-heading font-bold text-3xl mb-6 text-foreground">Gold Coast SEO: What the Local Market Demands</h2><p className="text-muted-foreground leading-relaxed">The Gold Coast is one of Australia's fastest-growing regions â€” and one of its most competitive local markets. With over 700,000 residents and 12 million annual visitors, the search landscape blends local residential demand with high-volume tourism intent. Businesses that capture both win the GC market. Our Gold Coast SEO service is built for this unique dual-intent environment.</p><p className="text-muted-foreground leading-relaxed mt-4">Based in Brisbane, we serve the entire South-East Queensland corridor â€” including our <Link to="/locations/brisbane-seo" className="text-accent font-semibold">Brisbane SEO</Link> and <Link to="/locations/sunshine-coast-seo" className="text-accent font-semibold">Sunshine Coast SEO</Link> services.</p></div><motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: 0.2 }} className="lg:col-span-2"><div className="surface-teal rounded-2xl p-7 border border-primary-foreground/10"><h3 className="font-heading font-semibold text-primary-foreground mb-5 text-sm uppercase tracking-[0.15em]">Key Benefits</h3>{[{ icon: MapPin, title: "Local Market Expertise", desc: "We understand the GC's unique mix of residential and tourism search demand." }, { icon: Users, title: "Suburb-Level Targeting", desc: "Dedicated landing pages for every suburb you want to rank in." }, { icon: TrendingUp, title: "Sustainable Growth", desc: "Organic rankings compound over time â€” unlike ads that stop the moment you pause them." }].map((b) => (<div key={b.title} className="flex gap-3 mb-5 last:mb-0"><b.icon className="w-5 h-5 text-accent shrink-0 mt-0.5" /><div><h4 className="font-semibold text-primary-foreground text-sm">{b.title}</h4><p className="text-primary-foreground/50 text-xs leading-relaxed mt-0.5">{b.desc}</p></div></div>))}</div></motion.div></div></div></section>
+    <section className="py-20 md:py-28"><div className="container max-w-5xl"><div className="grid lg:grid-cols-5 gap-12 lg:gap-20"><div className="lg:col-span-3"><h2 className="font-heading font-bold text-3xl mb-6 text-foreground">Gold Coast SEO: What the Local Market Demands</h2><p className="text-muted-foreground leading-relaxed">The Gold Coast is one of Australia's fastest-growing regions — and one of its most competitive local markets. With over 700,000 residents and 12 million annual visitors, the search landscape blends local residential demand with high-volume tourism intent. Businesses that capture both win the GC market. Our Gold Coast SEO service is built for this unique dual-intent environment.</p><p className="text-muted-foreground leading-relaxed mt-4">Based in Brisbane, we serve the entire South-East Queensland corridor — including our <Link to="/locations/brisbane-seo" className="text-accent font-semibold">Brisbane SEO</Link> and <Link to="/locations/sunshine-coast-seo" className="text-accent font-semibold">Sunshine Coast SEO</Link> services.</p></div><motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: 0.2 }} className="lg:col-span-2"><div className="surface-teal rounded-2xl p-7 border border-primary-foreground/10"><h3 className="font-heading font-semibold text-primary-foreground mb-5 text-sm uppercase tracking-[0.15em]">Key Benefits</h3>{[{ icon: MapPin, title: "Local Market Expertise", desc: "We understand the GC's unique mix of residential and tourism search demand." }, { icon: Users, title: "Suburb-Level Targeting", desc: "Dedicated landing pages for every suburb you want to rank in." }, { icon: TrendingUp, title: "Sustainable Growth", desc: "Organic rankings compound over time — unlike ads that stop the moment you pause them." }].map((b) => (<div key={b.title} className="flex gap-3 mb-5 last:mb-0"><b.icon className="w-5 h-5 text-accent shrink-0 mt-0.5" /><div><h4 className="font-semibold text-primary-foreground text-sm">{b.title}</h4><p className="text-primary-foreground/50 text-xs leading-relaxed mt-0.5">{b.desc}</p></div></div>))}</div></motion.div></div></div></section>
 
     <section className="py-20 md:py-28 relative overflow-hidden"><div className="absolute inset-0 pattern-dots" /><div className="container max-w-5xl relative z-10"><SectionHeading eyebrow="What's Included" title="Complete Gold Coast SEO service" /><ul className="grid sm:grid-cols-2 gap-4">{features.map((f, i) => (<motion.li key={f} initial={fadeUp.hidden} whileInView={fadeUp.visible} viewport={{ once: true }} transition={{ delay: i * 0.05 }} className="flex items-start gap-4 p-5 rounded-xl border border-border bg-card"><CheckCircle className="w-5 h-5 text-accent shrink-0 mt-0.5" /><p className="text-sm text-foreground leading-relaxed">{f}</p></motion.li>))}</ul></div></section>
 

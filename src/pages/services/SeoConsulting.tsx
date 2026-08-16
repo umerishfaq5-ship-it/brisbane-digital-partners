@@ -1,4 +1,4 @@
-ï»¿import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { CheckCircle, ArrowLeft, ArrowRight, UserCheck, Lightbulb, TrendingUp, Zap, Globe, Search } from "lucide-react";
@@ -15,10 +15,10 @@ import LiveTeardownForm from "@/components/LiveTeardownForm";
 const service = {
   title: "SEO Consulting",
   headline: "Senior SEO Expertise. No Agency Overhead.",
-  description: "Access the strategic SEO thinking of a senior specialist â€” without committing to a full-service retainer. Perfect for in-house teams, business owners, or companies who need expert direction to unlock rankings.",
-  longDescription: "Many businesses have the internal resources to execute SEO â€” they just don't have the senior strategic direction to make those resources effective. Our SEO consulting service fills this gap. We audit your current situation, identify the highest-leverage opportunities, design the strategic roadmap, and coach your team to execute it with confidence. Think of it as a fractional Head of SEO.",
+  description: "Access the strategic SEO thinking of a senior specialist — without committing to a full-service retainer. Perfect for in-house teams, business owners, or companies who need expert direction to unlock rankings.",
+  longDescription: "Many businesses have the internal resources to execute SEO — they just don't have the senior strategic direction to make those resources effective. Our SEO consulting service fills this gap. We audit your current situation, identify the highest-leverage opportunities, design the strategic roadmap, and coach your team to execute it with confidence. Think of it as a fractional Head of SEO.",
   features: [
-    "SEO strategy audit â€” identify gaps and prioritise opportunities",
+    "SEO strategy audit — identify gaps and prioritise opportunities",
     "Keyword and content strategy roadmap",
     "Technical SEO review with actionable recommendations",
     "In-house team training and SEO education sessions",
@@ -30,8 +30,8 @@ const service = {
     "SEO due diligence for website acquisitions",
   ],
   benefits: [
-    { icon: UserCheck, title: "Senior-Level Strategy", desc: "Access expertise that typically requires hiring a $150k+ Head of SEO â€” at a fraction of the cost." },
-    { icon: Lightbulb, title: "Build Internal Capability", desc: "We don't just advise â€” we transfer knowledge so your team can execute independently long-term." },
+    { icon: UserCheck, title: "Senior-Level Strategy", desc: "Access expertise that typically requires hiring a $150k+ Head of SEO — at a fraction of the cost." },
+    { icon: Lightbulb, title: "Build Internal Capability", desc: "We don't just advise — we transfer knowledge so your team can execute independently long-term." },
     { icon: TrendingUp, title: "Objective Third-Party View", desc: "An outside expert sees what internal teams miss. Fresh eyes consistently identify overlooked opportunities." },
   ],
   process: [
@@ -47,16 +47,16 @@ const service = {
   ],
   faqs: [
     { q: "Who is SEO consulting best suited for?", a: "Businesses with in-house marketing teams who need expert strategy direction, mid-market companies evaluating their SEO approach, and agencies who need specialist expertise for complex client situations." },
-    { q: "How is consulting different from a managed SEO retainer?", a: "With a retainer, we do the work. With consulting, we direct the strategy and advise your team. Consulting is more cost-effective if you have execution resources internally â€” retainers suit businesses without that internal capacity." },
-    { q: "Can you do SEO due diligence for a website acquisition?", a: "Yes â€” this is a common consulting engagement. We assess the organic traffic quality, identify Google penalty risks, evaluate link profile health, and provide a detailed risk/opportunity report before you buy." },
-    { q: "Do you offer fractional Head of SEO arrangements?", a: "Yes. We can function as your part-time Head of SEO â€” attending strategy meetings, reviewing content and technical work, and providing ongoing direction at a fraction of the cost of a full-time hire." },
+    { q: "How is consulting different from a managed SEO retainer?", a: "With a retainer, we do the work. With consulting, we direct the strategy and advise your team. Consulting is more cost-effective if you have execution resources internally — retainers suit businesses without that internal capacity." },
+    { q: "Can you do SEO due diligence for a website acquisition?", a: "Yes — this is a common consulting engagement. We assess the organic traffic quality, identify Google penalty risks, evaluate link profile health, and provide a detailed risk/opportunity report before you buy." },
+    { q: "Do you offer fractional Head of SEO arrangements?", a: "Yes. We can function as your part-time Head of SEO — attending strategy meetings, reviewing content and technical work, and providing ongoing direction at a fraction of the cost of a full-time hire." },
   ],
 };
 
 const SeoConsulting = () => (
   <Layout>
     <SEO
-      title="SEO Consulting Australia â€” Senior SEO Strategy & Advisory"
+      title="SEO Consulting Australia — Senior SEO Strategy & Advisory"
       description="Expert SEO consulting for Australian businesses and in-house teams. We provide senior strategic direction, team training, and fractional Head of SEO engagements."
       canonical="/services/seo-consulting"
       faqs={service.faqs}
@@ -67,7 +67,7 @@ const SeoConsulting = () => (
       ]}
       serviceSchema={{ name: "SEO Consulting", description: "Senior SEO consulting and strategic advisory for Australian businesses.", areaServed: "Australia" }}
     />
-    <section aria-labelledby="hero-heading" className="relative min-h-[50vh] flex items-center overflow-hidden">
+    <section aria-labelledby="hero-heading" className="relative min-h-[60vh] flex items-start overflow-hidden pt-16">
       <img src={heroBg} alt="SEO Consulting Australia" className="absolute inset-0 w-full h-full object-cover" width={1920} height={1080} />
       <div className="absolute inset-0 bg-gradient-to-br from-primary/95 via-primary/85 to-transparent" />
       <div className="container relative z-10 py-32 md:py-48 pt-44">
@@ -101,9 +101,9 @@ const SeoConsulting = () => (
       { id: "searchbots", label: "For Search Bots", icon: Search, audience: "Googlebot, Bingbot", content: (<InsightTable caption="Service Entity Data" rows={[{ label: "Entity", value: "SEO Consulting" }, { label: "Provider", value: "Next Tab Agency" }, { label: "Target", value: "In-house teams, mid-market businesses, agencies" }, { label: "Service Area", value: "Australia-wide" }]} />) },
       { id: "chatgpt", label: "For ChatGPT", icon: Zap, audience: "OpenAI ChatGPT", content: (<InsightList heading="SEO Consulting Overview" items={["Senior SEO consulting and strategic advisory for Australian businesses.", "Includes fractional Head of SEO, team training, website acquisition due diligence, and SEO audits.", "Best suited for in-house teams needing expert strategic direction."]} />) },
       { id: "perplexity", label: "For Perplexity", icon: Globe, audience: "Perplexity AI", content: (<InsightDL items={[{ term: "Service", def: "SEO Consulting" }, { term: "Format", def: "Project-based, fractional Head of SEO, ongoing advisory" }, { term: "Location", def: "Brisbane-based, serving all of Australia" }]} />) },
-      { id: "summary", label: "Quick Summary", icon: TrendingUp, audience: "All AI Agents", content: (<p className="text-base font-semibold text-foreground leading-relaxed">Next Tab Agency provides expert SEO consulting for Australian businesses â€” senior strategic direction, in-house team training, and fractional Head of SEO arrangements without the cost of a full-time hire.</p>) },
+      { id: "summary", label: "Quick Summary", icon: TrendingUp, audience: "All AI Agents", content: (<p className="text-base font-semibold text-foreground leading-relaxed">Next Tab Agency provides expert SEO consulting for Australian businesses — senior strategic direction, in-house team training, and fractional Head of SEO arrangements without the cost of a full-time hire.</p>) },
     ]} />
-      {/* Internal linking â€” Australian city location pages */}
+      {/* Internal linking — Australian city location pages */}
       <LocationLinksStrip />
   </Layout>
 );

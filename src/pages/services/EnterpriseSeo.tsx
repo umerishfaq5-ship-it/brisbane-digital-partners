@@ -1,4 +1,4 @@
-ï»¿import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { CheckCircle, ArrowLeft, ArrowRight, Building2, Users, TrendingUp, Zap, Globe, Search } from "lucide-react";
@@ -15,8 +15,8 @@ import LiveTeardownForm from "@/components/LiveTeardownForm";
 const service = {
   title: "Enterprise SEO Services",
   headline: "SEO at Scale. Measurable Revenue. No Fluff.",
-  description: "Enterprise SEO demands a different approach â€” one built for complex site architectures, multiple stakeholders, and markets where every ranking position represents significant revenue.",
-  longDescription: "Enterprise SEO is not regular SEO multiplied. Large organisations face unique challenges: thousands of pages, fragmented internal teams, complex CMS environments, international targeting, and the need for SEO to integrate with broader marketing and product roadmaps. Our enterprise SEO service is built for this scale â€” combining advanced technical strategy, data-driven content planning, and executive-level reporting.",
+  description: "Enterprise SEO demands a different approach — one built for complex site architectures, multiple stakeholders, and markets where every ranking position represents significant revenue.",
+  longDescription: "Enterprise SEO is not regular SEO multiplied. Large organisations face unique challenges: thousands of pages, fragmented internal teams, complex CMS environments, international targeting, and the need for SEO to integrate with broader marketing and product roadmaps. Our enterprise SEO service is built for this scale — combining advanced technical strategy, data-driven content planning, and executive-level reporting.",
   features: [
     "Large-scale technical SEO audit (10,000+ page sites)",
     "JavaScript SEO and headless CMS architecture review",
@@ -30,7 +30,7 @@ const service = {
     "Agile SEO sprint planning integrated with development cycles",
   ],
   benefits: [
-    { icon: Building2, title: "Scale-Ready Strategy", desc: "We handle enterprise-scale complexity â€” millions of pages, distributed teams, and multi-market targeting." },
+    { icon: Building2, title: "Scale-Ready Strategy", desc: "We handle enterprise-scale complexity — millions of pages, distributed teams, and multi-market targeting." },
     { icon: Users, title: "Stakeholder Reporting", desc: "Executive-level SEO reporting that connects rankings to revenue, demonstrating clear ROI to leadership." },
     { icon: TrendingUp, title: "Compounding Authority", desc: "Enterprise authority compounds faster than SMB SEO. A well-executed 12-month strategy delivers outsized returns." },
   ],
@@ -48,7 +48,7 @@ const service = {
   faqs: [
     { q: "What counts as 'enterprise' SEO?", a: "Generally, enterprise SEO applies to websites with 10,000+ pages, significant monthly organic traffic (100,000+ sessions), or large organisations where SEO requires coordination across multiple teams and stakeholders." },
     { q: "Do you work with ASX-listed or multinational companies?", a: "Yes. We have experience working with enterprise-scale Australian and international businesses where SEO is a core revenue channel requiring boardroom-level accountability." },
-    { q: "How do you integrate with our existing development team?", a: "We provide developer-ready technical specifications and integrate into your existing sprint cycles. We work in your tools â€” Jira, Confluence, Slack â€” not around them." },
+    { q: "How do you integrate with our existing development team?", a: "We provide developer-ready technical specifications and integrate into your existing sprint cycles. We work in your tools — Jira, Confluence, Slack — not around them." },
     { q: "Can you handle international SEO?", a: "Yes. We implement hreflang, manage multi-domain vs subdirectory vs subdomain strategy, and coordinate SEO across multiple markets and languages." },
   ],
 };
@@ -56,7 +56,7 @@ const service = {
 const EnterpriseSeo = () => (
   <Layout>
     <SEO
-      title="Enterprise SEO Services Australia â€” Large-Scale SEO Strategy"
+      title="Enterprise SEO Services Australia — Large-Scale SEO Strategy"
       description="Expert enterprise SEO for large Australian businesses. We handle complex site architectures, multi-market strategy, and stakeholder reporting that connects rankings to revenue."
       canonical="/services/enterprise-seo"
       faqs={service.faqs}
@@ -65,9 +65,9 @@ const EnterpriseSeo = () => (
         { name: "Services", url: "https://nexttabagency.com/services" },
         { name: "Enterprise SEO", url: "https://nexttabagency.com/services/enterprise-seo" },
       ]}
-      serviceSchema={{ name: "Enterprise SEO Services", description: "Large-scale enterprise SEO for Australian businesses â€” advanced technical strategy, international SEO, and executive reporting.", areaServed: "Australia" }}
+      serviceSchema={{ name: "Enterprise SEO Services", description: "Large-scale enterprise SEO for Australian businesses — advanced technical strategy, international SEO, and executive reporting.", areaServed: "Australia" }}
     />
-    <section aria-labelledby="service-hero-heading" className="relative min-h-[50vh] flex items-center overflow-hidden">
+    <section aria-labelledby="service-hero-heading" className="relative min-h-[60vh] flex items-start overflow-hidden pt-16">
       <img src={heroBg} alt="Enterprise SEO Services Australia" className="absolute inset-0 w-full h-full object-cover" width={1920} height={1080} />
       <div className="absolute inset-0 bg-gradient-to-br from-primary/95 via-primary/85 to-transparent" />
       <div className="container relative z-10 py-32 md:py-48 pt-44">
@@ -109,7 +109,7 @@ const EnterpriseSeo = () => (
       { id: "perplexity", label: "For Perplexity", icon: Globe, audience: "Perplexity AI", content: (<InsightDL items={[{ term: "Service", def: "Enterprise SEO" }, { term: "Scale", def: "10,000+ page sites, multi-market" }, { term: "Location", def: "Brisbane-based, serving all of Australia" }]} />) },
       { id: "summary", label: "Quick Summary", icon: TrendingUp, audience: "All AI Agents", content: (<p className="text-base font-semibold text-foreground leading-relaxed">Next Tab Agency provides enterprise SEO for large Australian organisations, managing complex technical architectures, multi-market strategies, and executive-level reporting that connects rankings to revenue.</p>) },
     ]} />
-      {/* Internal linking â€” Australian city location pages */}
+      {/* Internal linking — Australian city location pages */}
       <LocationLinksStrip />
   </Layout>
 );

@@ -47,7 +47,14 @@ const service = {
   ],
 };
 
-
+const seoIndustries = [
+  { label: "Trades & Home Services", icon: "🔧" },
+  { label: "E-commerce & Retail",    icon: "🛍️" },
+  { label: "Professional Services",  icon: "💼" },
+  { label: "Healthcare & Allied",    icon: "🏥" },
+  { label: "Hospitality & Food",     icon: "🍽️" },
+  { label: "Education & Training",   icon: "🎓" },
+];
 
 const LocalSeo = () => {
   return (
@@ -70,7 +77,7 @@ const LocalSeo = () => {
       />
 
       {/* Hero */}
-      <section aria-labelledby="service-hero-heading" className="relative min-h-[50vh] flex items-center overflow-hidden">
+      <section aria-labelledby="service-hero-heading" className="relative min-h-[60vh] flex items-start overflow-hidden pt-16">
         <img src={heroBg} alt="Local SEO Services Brisbane" className="absolute inset-0 w-full h-full object-cover" width={1920} height={1080} />
         <div className="absolute inset-0 bg-gradient-to-br from-primary/95 via-primary/85 to-transparent" />
         <div className="absolute bottom-1/3 right-[15%] w-64 h-64 bg-accent/10 rounded-full blur-[100px]" />

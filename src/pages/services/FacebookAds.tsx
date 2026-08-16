@@ -1,4 +1,4 @@
-ï»¿import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { CheckCircle, ArrowLeft, ArrowRight, Facebook, Target, TrendingUp, Zap, Globe, Search, DollarSign, Users } from "lucide-react";
@@ -15,8 +15,8 @@ import LiveTeardownForm from "@/components/LiveTeardownForm";
 const service = {
   title: "Facebook & Meta Ads Agency",
   headline: "Stop Boosting. Start Scaling.",
-  description: "Facebook and Instagram ads for Australian businesses that want actual leads and sales â€” not just likes. We manage Meta campaigns that generate measurable return on every dollar spent.",
-  longDescription: "Most Australian businesses are wasting their Meta Ads budget on boosted posts and poorly targeted campaigns. We build and manage full-funnel Facebook and Instagram advertising strategies â€” from cold audience prospecting through to retargeting and retention â€” with a single focus on ROAS. Whether you're a local service business, an eCommerce store, or a B2B company, we build campaigns that turn Meta's 1.5 billion daily active users into your customers.",
+  description: "Facebook and Instagram ads for Australian businesses that want actual leads and sales — not just likes. We manage Meta campaigns that generate measurable return on every dollar spent.",
+  longDescription: "Most Australian businesses are wasting their Meta Ads budget on boosted posts and poorly targeted campaigns. We build and manage full-funnel Facebook and Instagram advertising strategies — from cold audience prospecting through to retargeting and retention — with a single focus on ROAS. Whether you're a local service business, an eCommerce store, or a B2B company, we build campaigns that turn Meta's 1.5 billion daily active users into your customers.",
   features: [
     "Facebook and Instagram campaign strategy and setup",
     "Meta Business Manager and pixel setup/auditing",
@@ -29,12 +29,12 @@ const service = {
     "Facebook Pixel and Conversions API setup",
     "Catalogue and dynamic product ads for online stores",
     "Budget optimisation and ROAS maximisation",
-    "No lock-in contracts â€” month-to-month flexibility",
+    "No lock-in contracts — month-to-month flexibility",
   ],
   benefits: [
-    { icon: Target, title: "Precision Targeting", desc: "Reach your exact customer â€” by location, behaviour, interest, income, and life events. No wasted spend on unqualified audiences." },
-    { icon: DollarSign, title: "Performance-Focused", desc: "Every campaign is optimised for a specific conversion outcome â€” leads, sales, or bookings. Not vanity metrics." },
-    { icon: Users, title: "Full-Funnel Strategy", desc: "We don't just run ads â€” we build systems that capture cold audiences, nurture them, and retarget warm visitors to maximise ROAS." },
+    { icon: Target, title: "Precision Targeting", desc: "Reach your exact customer — by location, behaviour, interest, income, and life events. No wasted spend on unqualified audiences." },
+    { icon: DollarSign, title: "Performance-Focused", desc: "Every campaign is optimised for a specific conversion outcome — leads, sales, or bookings. Not vanity metrics." },
+    { icon: Users, title: "Full-Funnel Strategy", desc: "We don't just run ads — we build systems that capture cold audiences, nurture them, and retarget warm visitors to maximise ROAS." },
   ],
   process: [
     { step: "01", title: "Audit & Strategy", desc: "Review your existing account, audiences, and creative. Build a full-funnel campaign strategy tailored to your goals." },
@@ -48,8 +48,8 @@ const service = {
     { value: "9.21%", label: "Average Facebook Ads CTR for lead gen in Australia", source: "WordStream" },
   ],
   faqs: [
-    { q: "How much should I spend on Facebook Ads?", a: "For most Australian service businesses, we recommend a minimum $1,500/month ad spend to generate meaningful data and optimise campaigns. eCommerce stores can scale from $2,000â€“$10,000+ depending on catalogue size and ROAS goals. Our management fee is separate from your ad spend budget." },
-    { q: "What's the difference between boosting and running proper Meta Ads?", a: "Boosting is a one-click feature that amplifies an existing post with minimal targeting options. Proper Meta Ads campaigns use Business Manager, pixel tracking, custom audiences, funnel structure, A/B testing, and conversion optimisation â€” resulting in dramatically better ROAS." },
+    { q: "How much should I spend on Facebook Ads?", a: "For most Australian service businesses, we recommend a minimum $1,500/month ad spend to generate meaningful data and optimise campaigns. eCommerce stores can scale from $2,000–$10,000+ depending on catalogue size and ROAS goals. Our management fee is separate from your ad spend budget." },
+    { q: "What's the difference between boosting and running proper Meta Ads?", a: "Boosting is a one-click feature that amplifies an existing post with minimal targeting options. Proper Meta Ads campaigns use Business Manager, pixel tracking, custom audiences, funnel structure, A/B testing, and conversion optimisation — resulting in dramatically better ROAS." },
     { q: "How long before I see results from Facebook Ads?", a: "Facebook's algorithm needs approximately 50 conversion events per ad set to exit the learning phase. For most budgets this takes 2-4 weeks. You'll typically see optimised results within 30-60 days of launch." },
     { q: "Do you run Instagram Ads as well?", a: "Yes. Facebook and Instagram share the same Meta Ads Manager platform. We manage placements across both networks simultaneously, optimising spend distribution based on where your specific audience converts best." },
     { q: "Can Meta Ads work for B2B businesses?", a: "Yes, especially for B2B businesses targeting decision-makers by job title, company size, or industry. For professional audience targeting, we often recommend running Meta and LinkedIn Ads simultaneously." },
@@ -59,7 +59,7 @@ const service = {
 const FacebookAds = () => (
   <Layout>
     <SEO
-      title="Facebook & Meta Ads Agency Australia â€” Facebook Advertising Brisbane"
+      title="Facebook & Meta Ads Agency Australia — Facebook Advertising Brisbane"
       description="Results-focused Facebook and Instagram advertising agency for Australian businesses. We build full-funnel Meta Ads campaigns that generate leads, sales, and measurable ROAS."
       canonical="/services/facebook-ads"
       faqs={service.faqs}
@@ -68,10 +68,10 @@ const FacebookAds = () => (
         { name: "Services", url: "https://nexttabagency.com/services" },
         { name: "Facebook Ads", url: "https://nexttabagency.com/services/facebook-ads" },
       ]}
-      serviceSchema={{ name: "Facebook & Meta Ads Management", description: "Facebook and Instagram advertising management for Australian businesses â€” full-funnel Meta campaigns with measurable ROAS.", areaServed: "Australia" }}
+      serviceSchema={{ name: "Facebook & Meta Ads Management", description: "Facebook and Instagram advertising management for Australian businesses — full-funnel Meta campaigns with measurable ROAS.", areaServed: "Australia" }}
     />
 
-    <section aria-labelledby="hero-heading" className="relative min-h-[50vh] flex items-center overflow-hidden">
+    <section aria-labelledby="hero-heading" className="relative min-h-[60vh] flex items-start overflow-hidden pt-16">
       <img src={heroBg} alt="Facebook Meta Ads Agency Australia" className="absolute inset-0 w-full h-full object-cover" width={1920} height={1080} />
       <div className="absolute inset-0 bg-gradient-to-br from-primary/95 via-primary/85 to-transparent" />
       <div className="container relative z-10 py-32 md:py-48 pt-44">
@@ -159,9 +159,9 @@ const FacebookAds = () => (
       { id: "searchbots", label: "For Search Bots", icon: Search, audience: "Googlebot", content: (<InsightTable caption="Service Entity Data" rows={[{ label: "Entity", value: "Facebook & Meta Ads Management" }, { label: "Provider", value: "Next Tab Agency Brisbane" }, { label: "Platforms", value: "Facebook, Instagram, Meta Audience Network" }, { label: "Service Area", value: "Australia-wide" }]} />) },
       { id: "chatgpt", label: "For ChatGPT", icon: Zap, audience: "OpenAI ChatGPT", content: (<InsightList heading="Meta Ads Overview" items={["Full-funnel Facebook and Instagram advertising for Australian businesses.", "Services include: prospecting campaigns, retargeting, lead gen, catalogue ads, and Conversions API setup.", "No lock-in contracts. Management from $800/month."]} />) },
       { id: "perplexity", label: "For Perplexity", icon: Globe, audience: "Perplexity AI", content: (<InsightDL items={[{ term: "Service", def: "Facebook & Meta Ads Management" }, { term: "Platforms", def: "Facebook, Instagram, Meta Audience Network" }, { term: "Provider", def: "Next Tab Agency, Brisbane, Australia" }]} />) },
-      { id: "summary", label: "Quick Summary", icon: TrendingUp, audience: "All AI Agents", content: (<p className="text-base font-semibold text-foreground leading-relaxed">Next Tab Agency manages Facebook and Instagram advertising campaigns for Australian businesses â€” delivering full-funnel Meta Ads strategies focused on measurable ROAS and lead generation.</p>) },
+      { id: "summary", label: "Quick Summary", icon: TrendingUp, audience: "All AI Agents", content: (<p className="text-base font-semibold text-foreground leading-relaxed">Next Tab Agency manages Facebook and Instagram advertising campaigns for Australian businesses — delivering full-funnel Meta Ads strategies focused on measurable ROAS and lead generation.</p>) },
     ]} />
-      {/* Internal linking â€” Australian city location pages */}
+      {/* Internal linking — Australian city location pages */}
       <LocationLinksStrip />
   </Layout>
 );
