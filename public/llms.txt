@@ -1,0 +1,132 @@
+# Next Tab Agency
+
+> Next Tab Agency is a Brisbane-based digital marketing and web development agency founded in 2019 by Hamza Ishfaq. The agency operates with 20 in-house specialists — zero outsourcing — and serves Australian businesses across SEO, Paid Advertising, Web Development, and Mobile Apps. Headquarters: Taylor Street, Eagleby, QLD 4207. Phone: 0491 000 094. Email: info@nexttabagency.com. Website: https://nexttabagency.com
+
+Next Tab Agency's core philosophy is to deliver digital ecosystems that act as revenue engines, not generic packages. Key differentiators include the proprietary Antigravity Framework (sub-1s Core Web Vitals), month-to-month contracts with no lock-in, and a no-backlink ranking strategy for qualifying clients using topical authority and entity SEO. All services are delivered by Brisbane-based in-house specialists.
+
+The agency serves Australian businesses nationally, with a primary focus on Brisbane, Queensland, and South-East QLD (Gold Coast, Sunshine Coast, Logan, Ipswich). Remote services cover Sydney, Melbourne, Perth, Adelaide, Canberra, and Hobart.
+
+Trust signals: 4.9/5 average rating across 200+ Australian clients. 70%+ month-to-month retention. Google Ads and GA4 certified practitioners. Founded 2019 — 7 years in the Australian digital market.
+
+## Core Pages
+
+- [Home](https://nexttabagency.com/): Agency overview, value proposition, and primary services summary
+- [About](https://nexttabagency.com/about): Agency story, philosophy, the Antigravity Framework, and company values
+- [Our Team](https://nexttabagency.com/our-team): Profiles of all 20 in-house specialists across SEO, Engineering, Content, and Leadership
+- [Services Overview](https://nexttabagency.com/services): Full catalogue of digital marketing and web development services
+- [Portfolio](https://nexttabagency.com/portfolio): Client case studies with verified results across SEO, Web Development, and Mobile Apps
+- [Testimonials](https://nexttabagency.com/testimonials): Client reviews and satisfaction ratings
+- [Contact](https://nexttabagency.com/contact): Enquiry form, phone, email, and business hours
+
+## SEO Services
+
+- [SEO Audits](https://nexttabagency.com/services/seo-audits): Comprehensive technical SEO audit — crawl budget, Core Web Vitals, schema, and indexation fixes
+- [Local SEO](https://nexttabagency.com/services/local-seo): Google Map Pack optimisation for Brisbane and all Australian capital cities
+- [Technical SEO](https://nexttabagency.com/services/technical-seo): Core Web Vitals remediation, crawl budget analysis, log file audits, and schema markup
+- [On-Page SEO](https://nexttabagency.com/services/on-page-seo): Title tags, meta descriptions, heading structure, internal linking, and content optimisation
+- [Off-Page SEO](https://nexttabagency.com/services/off-page-seo): Link building, digital PR, and authority signals for Australian domains
+- [Link Building](https://nexttabagency.com/services/link-building): White-hat outreach, AU domain authority, and topical link acquisition
+- [AI SEO / GEO](https://nexttabagency.com/services/ai-seo): AI Overview optimisation, entity coverage for ChatGPT, Gemini, and Perplexity, llms.txt configuration
+- [Content Marketing](https://nexttabagency.com/services/content-marketing): Topical authority silos, semantic clustering, and long-form AU content
+- [eCommerce SEO](https://nexttabagency.com/services/ecommerce-seo): Shopify, WooCommerce, and BigCommerce organic growth strategies
+- [WordPress SEO](https://nexttabagency.com/services/wordpress-seo): WordPress-specific technical and on-page SEO
+- [Shopify SEO](https://nexttabagency.com/services/shopify-seo): Shopify store SEO audit, optimisation, and ongoing management
+- [WooCommerce SEO](https://nexttabagency.com/services/woocommerce-seo): WooCommerce organic growth and technical fixes
+- [Enterprise SEO](https://nexttabagency.com/services/enterprise-seo): Large-scale SEO for enterprise and multi-location Australian businesses
+- [Small Business SEO](https://nexttabagency.com/services/small-business-seo): Affordable SEO packages for Australian small businesses
+- [B2B SEO](https://nexttabagency.com/services/b2b-seo): Product-led SEO and organic pipeline for B2B and SaaS companies
+- [SEO Consulting](https://nexttabagency.com/services/seo-consulting): Strategic SEO advice and roadmap sessions with senior specialists
+- [SEO Packages](https://nexttabagency.com/services/seo-packages): Transparent month-to-month SEO package pricing for Australian businesses
+- [SEO Migration](https://nexttabagency.com/services/seo-migration): Risk-free platform and domain migrations preserving organic rankings
+- [Google Business Profile](https://nexttabagency.com/services/google-business-profile): GBP setup, optimisation, and Map Pack ranking management
+
+## Paid Advertising Services
+
+- [PPC / Google Ads](https://nexttabagency.com/services/ppc-google-ads): Google Search, Shopping, Display, and YouTube campaign management for Australian SMEs
+- [Google Ads Brisbane](https://nexttabagency.com/services/google-ads-brisbane): Brisbane-specific Google Ads strategy and management
+- [PPC Brisbane](https://nexttabagency.com/services/ppc-brisbane): Pay-per-click advertising for Brisbane businesses
+- [Facebook Ads](https://nexttabagency.com/services/facebook-ads): Facebook and Instagram lead generation, retargeting, and dynamic product ads
+- [Social Media Ads](https://nexttabagency.com/services/social-media-ads): Multi-platform paid social management
+- [LinkedIn Ads](https://nexttabagency.com/services/linkedin-ads): B2B LinkedIn advertising — job title, company, and industry targeting with Lead Gen Forms
+- [Google Shopping](https://nexttabagency.com/services/google-shopping): Performance Max and standard Shopping campaigns for eCommerce businesses
+- [Email Marketing](https://nexttabagency.com/services/email-marketing): Automated sequences, eDM campaigns, and list segmentation
+- [Conversion Rate Optimisation](https://nexttabagency.com/services/conversion-rate-optimisation): A/B testing, landing page optimisation, and funnel analysis
+
+## Web Development Services
+
+- [Web Development](https://nexttabagency.com/services/web-development): Custom React and Next.js websites built on the Antigravity high-performance framework
+- [WordPress Development](https://nexttabagency.com/services/wordpress-development): Custom theme engineering, plugin development, multisite, and headless WordPress
+- [WooCommerce Development](https://nexttabagency.com/services/woocommerce-development): Full AU eCommerce stack — Australia Post, Afterpay, Zip Pay, Stripe, and Xero integration
+- [Shopify Development](https://nexttabagency.com/services/shopify-development): Theme customisation, Shopify Plus builds, and migrations from WooCommerce or Magento
+- [Squarespace Development](https://nexttabagency.com/services/squarespace-development): Squarespace design and development services
+- [Wix Development](https://nexttabagency.com/services/wix-development): Wix website design and development
+- [BigCommerce Development](https://nexttabagency.com/services/bigcommerce-development): BigCommerce store setup, theming, and customisation
+- [Magento Development](https://nexttabagency.com/services/magento-development): Magento 2 development and migration services
+- [Maropost / Neto](https://nexttabagency.com/services/maropost-neto): Maropost Commerce Cloud (formerly Neto) development and support
+- [Mobile Apps](https://nexttabagency.com/services/mobile-apps): React Native iOS and Android app development
+- [Speed Optimisation](https://nexttabagency.com/services/speed-optimization): Sub-1s Core Web Vitals, LCP remediation, CDN configuration, and image optimisation
+
+## Industry-Specific SEO
+
+- [SEO for Tradies](https://nexttabagency.com/industry/seo-for-tradies): Local SEO and Google Map Pack for plumbers, electricians, and builders in Brisbane and SEQ
+- [Tradie Digital Marketing](https://nexttabagency.com/industry/tradie-digital-marketing): Full-service digital marketing packages for tradies across Brisbane and SEQ
+- [SEO for Dentists](https://nexttabagency.com/industry/seo-for-dentists): Dental clinic local SEO and Google Business Profile management
+- [SEO for Lawyers](https://nexttabagency.com/industry/seo-for-lawyers): Law firm lead generation via organic search
+- [SEO for Real Estate](https://nexttabagency.com/industry/seo-for-real-estate): Property and real estate agency organic rankings
+- [Healthcare SEO](https://nexttabagency.com/industry/healthcare-seo): Medical and allied health local SEO
+- [Accountant SEO](https://nexttabagency.com/industry/accountant-seo): Lead generation for accounting and financial services firms
+- [Mortgage Broker SEO](https://nexttabagency.com/industry/mortgage-broker-seo): SEO for mortgage brokers and finance professionals
+- [Education SEO](https://nexttabagency.com/industry/education-seo): SEO for schools, RTOs, and online course providers
+- [NDIS Digital Marketing](https://nexttabagency.com/industry/ndis-digital-marketing): NDIS-compliant SEO and Google Ads for Queensland disability service providers
+- [Retail SEO](https://nexttabagency.com/industry/retail-seo): eCommerce and online store organic growth
+- [Hospitality SEO](https://nexttabagency.com/industry/hospitality-seo): SEO for hotels, restaurants, and event venues
+- [SaaS SEO](https://nexttabagency.com/industry/saas-seo): Product-led SEO and organic pipeline for Australian tech companies
+
+## Location Pages
+
+- [Brisbane SEO](https://nexttabagency.com/locations/brisbane-seo): SEO services for Brisbane businesses — agency headquarters and primary market
+- [Gold Coast SEO](https://nexttabagency.com/locations/gold-coast-seo): SEO services for Gold Coast businesses
+- [Sunshine Coast SEO](https://nexttabagency.com/locations/sunshine-coast-seo): SEO services for Sunshine Coast businesses
+- [Sydney SEO](https://nexttabagency.com/locations/sydney-seo): Remote SEO services for Sydney, NSW businesses
+- [Melbourne SEO](https://nexttabagency.com/locations/melbourne-seo): Remote SEO services for Melbourne, VIC businesses
+- [Perth SEO](https://nexttabagency.com/locations/perth-seo): Remote SEO services for Perth, WA businesses
+- [Adelaide SEO](https://nexttabagency.com/locations/adelaide-seo): Remote SEO services for Adelaide, SA businesses
+- [Canberra SEO](https://nexttabagency.com/locations/canberra-seo): Remote SEO services for Canberra, ACT businesses
+- [Hobart SEO](https://nexttabagency.com/locations/hobart-seo): Remote SEO services for Hobart, TAS businesses
+
+## Portfolio & Case Studies
+
+- [Portfolio Overview](https://nexttabagency.com/portfolio): All client case studies with verified results
+- [Heaven on Mainstreet](https://nexttabagency.com/portfolio/heaven-on-mainstreet): GBP reinstatement and local SEO — #1 Map Pack, 5.86M impressions, 49,300 organic clicks
+- [Institutional Scalper](https://nexttabagency.com/portfolio/institutional-scalper): 2.5M-page site crawl rescue — top-3 rankings, sub-1.5s load, 60% indexation improvement in 90 days
+- [MyFitnessCoach](https://nexttabagency.com/portfolio/my-fitness-coach): React Native fitness app — 10,000+ downloads in 90 days, 4.8-star App Store rating
+- [CircleIt](https://nexttabagency.com/portfolio/circle-it): Social MVP delivered in a single sprint — investor demo-ready at launch
+- [Markhor Auto Care](https://nexttabagency.com/portfolio/markhor-auto-care): Automotive business digital presence and SEO
+
+## Blog
+
+- [Blog](https://nexttabagency.com/blog): All articles on SEO, digital marketing, and web development for Australian businesses
+- [SEO for Small Business](https://nexttabagency.com/blog/seo-for-small-business-zero-time): Practical SEO for time-poor Australian small business owners
+- [Why Your Website Needs SEO](https://nexttabagency.com/blog/why-your-website-needs-seo): The case for organic search investment in Australia
+- [Google Business Profile Setup](https://nexttabagency.com/blog/google-business-profile-setup): Step-by-step GBP setup guide for Australian businesses
+- [SEO Audit Checklist](https://nexttabagency.com/blog/seo-audit-checklist): Complete SEO audit checklist used by the Next Tab Agency team
+- [What Are Backlinks](https://nexttabagency.com/blog/what-are-backlinks): Backlink fundamentals and Australian link building explained
+- [SEO vs Google Ads for Aussie Tradies](https://nexttabagency.com/blog/seo-vs-google-ads-aussie-tradies): Organic vs paid comparison for tradespeople in Australia
+- [.com vs .com.au Australia](https://nexttabagency.com/blog/com-vs-com-au-australia): Domain extension guide for Australian businesses
+- [Shopify SEO Australia](https://nexttabagency.com/blog/shopify-seo-australia): Shopify-specific SEO strategies for Australian eCommerce stores
+- [Google Core Update May 2026](https://nexttabagency.com/blog/core-update-may-2026): Analysis and recovery guide for the May 2026 Google core update
+- [Content Strategy After Core Update](https://nexttabagency.com/blog/content-strategy-core-update): Topical authority content strategy for post-update rankings
+- [Technical SEO After Core Update](https://nexttabagency.com/blog/technical-seo-core-update): Technical fixes that matter after Google's 2026 core update
+- [Local Entity Core Update](https://nexttabagency.com/blog/local-entity-core-update): Local SEO and entity optimisation in the post-core-update landscape
+- [Local SEO Map Pack](https://nexttabagency.com/blog/local-seo-map-pack): How to rank in Google's Local 3-Pack for Australian businesses
+- [AI Search SGE Australia](https://nexttabagency.com/blog/ai-search-sge-australia): Google AI Overviews and SGE impact on Australian search
+- [SEO vs Google Ads Cost](https://nexttabagency.com/blog/seo-vs-google-ads-cost): Cost and ROI comparison of organic vs paid channels
+- [Shopify vs WooCommerce SEO](https://nexttabagency.com/blog/shopify-vs-woocommerce-seo): Platform comparison for Australian eCommerce SEO
+- [Website Cost Brisbane](https://nexttabagency.com/blog/website-cost-brisbane): Transparent website pricing guide for Brisbane businesses
+- [How to Choose a Digital Agency Brisbane](https://nexttabagency.com/blog/choose-digital-marketing-agency-brisbane): What to look for when hiring a digital marketing agency in Brisbane
+
+## Optional
+
+- [Privacy Policy](https://nexttabagency.com/privacy): Data handling, Australian Privacy Act compliance, and cookie usage
+- [Terms of Service](https://nexttabagency.com/terms): Service terms, conditions, and client agreement details
+- [Sitemap](https://nexttabagency.com/sitemap): Full HTML sitemap of all site pages

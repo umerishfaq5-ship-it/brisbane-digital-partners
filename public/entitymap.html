@@ -1,0 +1,1013 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EntityMap v1.0 — Next Tab Agency</title>
+  <link rel="canonical" href="https://nexttabagency.com/entitymap.html">
+  <meta name="robots" content="index, follow">
+  <meta name="description" content="EntityMap v1.0 for Next Tab Agency — 18 entities, 72 chunks, 45 relations. Machine-readable entity declaration for LLM and AI retrieval.">
+  <meta property="og:title" content="EntityMap v1.0 — Next Tab Agency">
+  <meta property="og:description" content="Machine-readable entity declaration for Next Tab Agency — Brisbane digital marketing and web development agency.">
+  <meta property="og:url" content="https://nexttabagency.com/entitymap.html">
+  <link rel="alternate" type="application/json" href="https://nexttabagency.com/entitymap.json" title="EntityMap JSON">
+  <link rel="describedby" href="https://nexttabagency.com/llms.txt">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Sans:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --accent: #f97316;
+      --accent-dark: #c2500a;
+      --accent-deep: #4a1a00;
+      --bg: #0a0a0b;
+      --surface: #111113;
+      --surface2: #18181b;
+      --border: #27272a;
+      --text: #f4f4f5;
+      --text-muted: #a1a1aa;
+      --text-dim: #52525b;
+      --font-display: 'DM Serif Display', Georgia, serif;
+      --font-body: 'DM Sans', system-ui, sans-serif;
+      --font-mono: 'JetBrains Mono', monospace;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body { font-family: var(--font-body); background: var(--bg); color: var(--text); line-height: 1.6; font-size: 15px; }
+
+    /* Header */
+    header {
+      background: var(--surface);
+      border-bottom: 1px solid var(--border);
+      padding: 2rem 0 1.5rem;
+    }
+    .header-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 2rem;
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 2rem;
+      flex-wrap: wrap;
+    }
+    .header-brand { display: flex; align-items: center; gap: 1rem; }
+    .em-logo {
+      width: 48px; height: 48px;
+      background: var(--accent);
+      border-radius: 10px;
+      display: flex; align-items: center; justify-content: center;
+      font-family: var(--font-mono); font-size: 9px; font-weight: 500;
+      color: #000; flex-shrink: 0; text-align: center; line-height: 1.3;
+    }
+    .header-title h1 {
+      font-family: var(--font-display);
+      font-size: 1.45rem; color: var(--text); font-weight: 400; line-height: 1.2;
+    }
+    .header-title p { font-size: .78rem; color: var(--text-muted); margin-top: .25rem; }
+    .header-title a { color: var(--accent); text-decoration: none; }
+    .header-title a:hover { text-decoration: underline; }
+    .header-stats { display: flex; gap: 2rem; flex-wrap: wrap; align-items: center; }
+    .stat { text-align: center; }
+    .stat-number { font-family: var(--font-mono); font-size: 1.6rem; color: var(--accent); font-weight: 500; line-height: 1; }
+    .stat-label { font-size: .67rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: .06em; margin-top: .2rem; }
+
+    /* Meta bar */
+    .meta-bar {
+      background: var(--accent-deep);
+      border-bottom: 1px solid var(--border);
+      padding: .55rem 2rem;
+    }
+    .meta-bar-inner {
+      max-width: 1100px; margin: 0 auto;
+      display: flex; gap: 2rem;
+      font-size: .7rem; color: var(--text-muted);
+      font-family: var(--font-mono); flex-wrap: wrap;
+    }
+    .meta-bar-inner span { color: var(--accent); }
+
+    /* Layout */
+    .layout {
+      max-width: 1100px; margin: 0 auto;
+      padding: 2rem;
+      display: grid;
+      grid-template-columns: 220px 1fr;
+      gap: 2.5rem;
+      align-items: start;
+    }
+
+    /* Sidebar */
+    nav.sidebar {
+      position: sticky; top: 100px;
+      background: var(--surface); border: 1px solid var(--border);
+      border-radius: 10px; padding: 1rem 0;
+      max-height: calc(100vh - 130px); overflow-y: auto;
+    }
+    .nav-heading {
+      font-size: .63rem; text-transform: uppercase;
+      letter-spacing: .1em; color: var(--text-dim);
+      padding: .5rem 1rem .3rem;
+    }
+    nav.sidebar a {
+      display: block; padding: .35rem 1rem;
+      font-size: .75rem; color: var(--text-muted);
+      text-decoration: none; border-left: 2px solid transparent;
+      transition: all .15s; white-space: nowrap;
+      overflow: hidden; text-overflow: ellipsis;
+    }
+    nav.sidebar a:hover { color: var(--accent); border-left-color: var(--accent); background: rgba(249,115,22,.06); }
+    .nav-eid { font-family: var(--font-mono); font-size: .63rem; color: var(--text-dim); margin-right: .3rem; }
+
+    /* Entity cards */
+    main { min-width: 0; }
+    .entity-card {
+      background: var(--surface); border: 1px solid var(--border);
+      border-radius: 12px; padding: 2rem; margin-bottom: 1.5rem;
+      scroll-margin-top: 80px; transition: border-color .2s;
+    }
+    .entity-card:hover { border-color: var(--accent-dark); }
+    .entity-card:target { border-color: var(--accent); box-shadow: 0 0 0 1px var(--accent); }
+    .entity-header {
+      display: flex; align-items: center; gap: .75rem;
+      margin-bottom: .9rem; flex-wrap: wrap;
+    }
+    .entity-id {
+      font-family: var(--font-mono); font-size: .68rem;
+      color: var(--text-dim); background: var(--surface2);
+      padding: .2rem .5rem; border-radius: 4px; flex-shrink: 0;
+    }
+    .entity-name {
+      font-family: var(--font-display); font-size: 1.25rem;
+      font-weight: 400; color: var(--text); flex: 1;
+    }
+    .entity-desc { color: var(--text-muted); font-size: .875rem; margin-bottom: 1rem; line-height: 1.65; }
+    .entity-meta { display: flex; gap: .4rem; flex-wrap: wrap; margin-bottom: 1.2rem; }
+    .meta-pill {
+      font-size: .7rem; color: var(--text-muted);
+      background: var(--surface2); border: 1px solid var(--border);
+      padding: .2rem .55rem; border-radius: 20px;
+    }
+    .meta-pill strong { color: var(--text); }
+
+    /* Badges */
+    .badge {
+      display: inline-block; font-size: .62rem; font-weight: 600;
+      text-transform: uppercase; letter-spacing: .06em;
+      color: #fff; padding: .18rem .5rem; border-radius: 4px; flex-shrink: 0;
+    }
+    .badge-sm {
+      display: inline-block; font-size: .58rem; font-weight: 600;
+      text-transform: uppercase; letter-spacing: .05em;
+      color: #fff; padding: .12rem .35rem; border-radius: 3px;
+    }
+
+    /* Chunks */
+    .chunks-block, .relations-block { margin-top: 1.5rem; }
+    .chunks-block h4, .relations-block h4 {
+      font-size: .67rem; text-transform: uppercase;
+      letter-spacing: .1em; color: var(--text-dim);
+      margin-bottom: .7rem; font-weight: 600;
+    }
+    .chunk {
+      background: var(--surface2); border: 1px solid var(--border);
+      border-left: 3px solid var(--accent-dark); border-radius: 6px;
+      padding: .85rem 1rem; margin-bottom: .7rem;
+    }
+    .chunk-meta {
+      font-size: .7rem; color: var(--text-dim);
+      margin-bottom: .45rem; display: flex;
+      align-items: center; gap: .4rem; flex-wrap: wrap;
+    }
+    .chunk-meta a { color: var(--text-muted); text-decoration: none; }
+    .chunk-meta a:hover { color: var(--accent); }
+    .score { font-family: var(--font-mono); font-size: .63rem; color: var(--accent); }
+    blockquote.chunk-text {
+      font-size: .855rem; color: var(--text); line-height: 1.7;
+      border: none; padding: 0; margin: 0 0 .45rem; font-style: normal;
+    }
+    .chunk-footer {
+      font-size: .65rem; color: var(--text-dim);
+      font-family: var(--font-mono);
+    }
+    .chunk-footer strong { color: var(--text-muted); }
+
+    /* Relations */
+    .relation {
+      padding: .45rem .7rem; margin-bottom: .35rem;
+      background: var(--surface2); border-radius: 6px; font-size: .82rem;
+    }
+    .pred { font-family: var(--font-mono); font-size: .72rem; font-weight: 500; margin-right: .35rem; }
+    .rel-target { color: var(--text); text-decoration: none; border-bottom: 1px dotted var(--text-dim); }
+    .rel-target:hover { color: var(--accent); border-bottom-color: var(--accent); }
+    .conf { font-family: var(--font-mono); font-size: .63rem; color: var(--text-dim); margin-left: .5rem; }
+    .rel-context { font-size: .7rem; color: var(--text-dim); margin-top: .2rem; padding-left: 1rem; font-style: italic; }
+
+    /* Footer */
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 1.5rem 2rem; text-align: center;
+      font-size: .73rem; color: var(--text-dim); margin-top: 1rem;
+    }
+    footer a { color: var(--accent); text-decoration: none; }
+    footer p + p { margin-top: .4rem; }
+
+    /* Scrollbar */
+    ::-webkit-scrollbar { width: 6px; }
+    ::-webkit-scrollbar-track { background: var(--bg); }
+    ::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }
+
+    @media (max-width: 768px) {
+      .layout { grid-template-columns: 1fr; }
+      nav.sidebar { display: none; }
+      .header-inner { flex-direction: column; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <div class="header-brand">
+      <div class="em-logo">EM<br>v1.0</div>
+      <div class="header-title">
+        <h1>EntityMap — Next Tab Agency</h1>
+        <p>Machine-readable entity declaration &nbsp;·&nbsp; <a href="https://nexttabagency.com/entitymap.json">entitymap.json</a> &nbsp;·&nbsp; <a href="https://entitymap.org/spec/v1.0">Schema v1.0</a></p>
+      </div>
+    </div>
+    <div class="header-stats">
+      <div class="stat"><div class="stat-number">18</div><div class="stat-label">Entities</div></div>
+      <div class="stat"><div class="stat-number">72</div><div class="stat-label">Chunks</div></div>
+      <div class="stat"><div class="stat-number">45</div><div class="stat-label">Relations</div></div>
+    </div>
+  </div>
+</header>
+
+<div class="meta-bar">
+  <div class="meta-bar-inner">
+    <div>publisher: <span>Next Tab Agency</span></div>
+    <div>url: <span>https://nexttabagency.com</span></div>
+    <div>generated: <span>2026-08-16</span></div>
+    <div>status: <span>self-declared</span></div>
+    <div>profile: <span>core</span></div>
+  </div>
+</div>
+
+<div class="layout">
+  <nav class="sidebar" aria-label="Entity navigation">
+    <div class="nav-heading">Entities</div>
+    <a href="#e_001"><span class="nav-eid">e_001</span>Next Tab Agency</a>
+    <a href="#e_002"><span class="nav-eid">e_002</span>Technical SEO</a>
+    <a href="#e_003"><span class="nav-eid">e_003</span>AI SEO / GEO</a>
+    <a href="#e_004"><span class="nav-eid">e_004</span>Local SEO</a>
+    <a href="#e_005"><span class="nav-eid">e_005</span>PPC &amp; Google Ads</a>
+    <a href="#e_006"><span class="nav-eid">e_006</span>Social Media Advertising</a>
+    <a href="#e_007"><span class="nav-eid">e_007</span>Web Development</a>
+    <a href="#e_008"><span class="nav-eid">e_008</span>Antigravity Framework</a>
+    <a href="#e_009"><span class="nav-eid">e_009</span>eCommerce Development</a>
+    <a href="#e_010"><span class="nav-eid">e_010</span>Hamza Ishfaq</a>
+    <a href="#e_011"><span class="nav-eid">e_011</span>E-E-A-T</a>
+    <a href="#e_012"><span class="nav-eid">e_012</span>Topical Authority SEO</a>
+    <a href="#e_013"><span class="nav-eid">e_013</span>Heaven on Mainstreet Case Study</a>
+    <a href="#e_014"><span class="nav-eid">e_014</span>Institutional Scalper Case Study</a>
+    <a href="#e_015"><span class="nav-eid">e_015</span>Answer Engine Optimisation (AEO)</a>
+    <a href="#e_016"><span class="nav-eid">e_016</span>Entity SEO</a>
+    <a href="#e_017"><span class="nav-eid">e_017</span>Brisbane, Queensland</a>
+    <a href="#e_018"><span class="nav-eid">e_018</span>Mobile App Development</a>
+  </nav>
+
+  <main>
+
+    <!-- e_001 -->
+    <section class="entity-card" id="e_001">
+      <div class="entity-header">
+        <div class="entity-id">e_001</div>
+        <span class="badge" style="background:#c2500a">Organization</span>
+        <h2 class="entity-name">Next Tab Agency</h2>
+      </div>
+      <p class="entity-desc">Brisbane-based digital marketing and web development agency founded in 2019 by Hamza Ishfaq, operating with 20 in-house specialists delivering SEO, PPC, web development, and mobile apps exclusively for Australian businesses — zero outsourcing, zero offshoring.</p>
+      <div class="entity-meta">
+        <span class="meta-pill">Founded: <strong>2019</strong></span>
+        <span class="meta-pill">Location: <strong>Brisbane, QLD, Australia</strong></span>
+        <span class="meta-pill">Team size: <strong>20 in-house specialists</strong></span>
+        <span class="meta-pill">Maturity: <strong>established</strong></span>
+        <span class="meta-pill">Audience: <strong>general</strong></span>
+      </div>
+      <div class="chunks-block">
+        <h4>Evidence chunks (3)</h4>
+        <div class="chunk">
+          <div class="chunk-meta">
+            <span class="badge-sm" style="background:#1d4ed8">definition</span>
+            <span class="score">relevance 0.98</span> &nbsp;·&nbsp;
+            <a href="https://nexttabagency.com/about" target="_blank" rel="noopener">About Next Tab Agency — Brisbane Digital Marketing Agency</a>
+          </div>
+          <blockquote class="chunk-text">Next Tab Agency is a Brisbane-based digital marketing and web development agency with 20 in-house specialists. Founded in 2019 by Hamza Ishfaq, we operate on a single philosophy: Australian businesses with excellent products deserve the technical performance to compete and win in a search-first world.</blockquote>
+          <div class="chunk-footer">publisher: <strong>Next Tab Agency</strong> &nbsp;·&nbsp; retrieved: 2026-08-16</div>
+        </div>
+        <div class="chunk">
+          <div class="chunk-meta">
+            <span class="badge-sm" style="background:#065f46">evidence</span>
+            <span class="score">relevance 0.95</span> &nbsp;·&nbsp;
+            <a href="https://nexttabagency.com/about" target="_blank" rel="noopener">About Next Tab Agency</a>
+          </div>
+          <blockquote class="chunk-text">We don't believe in 'just another website' or generic SEO packages. We believe in digital ecosystems that act as revenue engines. Every specialist in our 20-person team is Brisbane-based — zero outsourcing, zero offshoring.</blockquote>
+          <div class="chunk-footer">publisher: <strong>Next Tab Agency</strong> &nbsp;·&nbsp; retrieved: 2026-08-16</div>
+        </div>
+        <div class="chunk">
+          <div class="chunk-meta">
+            <span class="badge-sm" style="background:#92400e">statistic</span>
+            <span class="score">relevance 0.92</span> &nbsp;·&nbsp;
+            <a href="https://nexttabagency.com" target="_blank" rel="noopener">Next Tab Agency — Home</a>
+          </div>
+          <blockquote class="chunk-text">4.9 out of 5 average rating across 200+ Australian clients. 70%+ month-to-month retainer renewal rate. Month-to-month contracts with no lock-in and a 30-day exit clause.</blockquote>
+          <div class="chunk-footer">publisher: <strong>Next Tab Agency</strong> &nbsp;·&nbsp; retrieved: 2026-08-16</div>
+        </div>
+      </div>
+      <div class="relations-block">
+        <h4>Relations</h4>
+        <div class="relation"><span class="pred" style="color:#a1a1aa">→ OFFERS</span> <a href="#e_002" class="rel-target">Technical SEO</a></div>
+        <div class="relation"><span class="pred" style="color:#a1a1aa">→ OFFERS</span> <a href="#e_003" class="rel-target">AI SEO / GEO</a></div>
+        <div class="relation"><span class="pred" style="color:#a1a1aa">→ OFFERS</span> <a href="#e_004" class="rel-target">Local SEO</a></div>
+        <div class="relation"><span class="pred" style="color:#a1a1aa">→ OFFERS</span> <a href="#e_005" class="rel-target">PPC &amp; Google Ads</a></div>
+        <div class="relation"><span class="pred" style="color:#a1a1aa">→ OFFERS</span> <a href="#e_006" class="rel-target">Social Media Advertising</a></div>
+        <div class="relation"><span class="pred" style="color:#a1a1aa">→ OFFERS</span> <a href="#e_007" class="rel-target">Web Development</a></div>
+        <div class="relation"><span class="pred" style="color:#a1a1aa">→ OFFERS</span> <a href="#e_018" class="rel-target">Mobile App Development</a></div>
+        <div class="relation"><span class="pred" style="color:#f97316">→ INCLUDES</span> <a href="#e_008" class="rel-target">Antigravity Framework</a></div>
+        <div class="relation"><span class="pred" style="color:#f97316">→ INCLUDES</span> <a href="#e_010" class="rel-target">Hamza Ishfaq</a></div>
+        <div class="relation"><span class="pred" style="color:#f97316">→ LOCATED_IN</span> <a href="#e_017" class="rel-target">Brisbane, Queensland</a></div>
+      </div>
+    </section>
+
+    <!-- e_002 -->
+    <section class="entity-card" id="e_002">
+      <div class="entity-header">
+        <div class="entity-id">e_002</div>
+        <span class="badge" style="background:#7c3aed">Service</span>
+        <h2 class="entity-name">Technical SEO</h2>
+      </div>
+      <p class="entity-desc">Specialist technical SEO delivering crawl budget analysis, Core Web Vitals remediation, schema markup strategy, log file audits, and indexation fixes for Australian businesses of all scales.</p>
+      <div class="entity-meta">
+        <span class="meta-pill">Maturity: <strong>established</strong></span>
+        <span class="meta-pill">Audience: <strong>technical</strong></span>
+      </div>
+      <div class="chunks-block">
+        <h4>Evidence chunks (3)</h4>
+        <div class="chunk">
+          <div class="chunk-meta">
+            <span class="badge-sm" style="background:#1d4ed8">definition</span>
+            <span class="score">relevance 0.97</span> &nbsp;·&nbsp;
+            <a href="https://nexttabagency.com/services/technical-seo" target="_blank" rel="noopener">Technical SEO Services — Next Tab Agency</a>
+          </div>
+          <blockquote class="chunk-text">Technical SEO is the foundation of every high-performing website. Our technical SEO specialists audit crawl budget allocation, Core Web Vitals (LCP, CLS, FID), schema markup implementation, and indexation health to ensure Google can discover, crawl, and rank your most important pages.</blockquote>
+          <div class="chunk-footer">publisher: <strong>Next Tab Agency</strong> &nbsp;·&nbsp; retrieved: 2026-08-16</div>
+        </div>
+        <div class="chunk">
+          <div class="chunk-meta">
+            <span class="badge-sm" style="background:#92400e">statistic</span>
+            <span class="score">relevance 0.95</span> &nbsp;·&nbsp;
+            <a href="https://nexttabagency.com/portfolio/institutional-scalper" target="_blank" rel="noopener">Institutional Scalper Case Study — Next Tab Agency</a>
+          </div>
+          <blockquote class="chunk-text">For a 2.5 million-page site with critical crawl budget failures: Top-3 rankings on target commercial pages. Sub-1.5s load times. 60% improvement in indexed pages within 90 days through crawl budget architecture, log file analysis, and canonical restructuring.</blockquote>
+          <div class="chunk-footer">publisher: <strong>Next Tab Agency</strong> &nbsp;·&nbsp; retrieved: 2026-08-16</div>
+        </div>
+        <div class="chunk">
+          <div class="chunk-meta">
+            <span class="badge-sm" style="background:#5b21b6">procedure</span>
+            <span class="score">relevance 0.89</span> &nbsp;·&nbsp;
+            <a href="https://nexttabagency.com/services/seo-audits" target="_blank" rel="noopener">SEO Audits — Next Tab Agency</a>
+          </div>
+          <blockquote class="chunk-text">Our SEO audit covers: crawl budget analysis using server log files, Core Web Vitals assessment via CrUX field data, schema markup gap analysis, internal link architecture review, indexation status checks, and canonicalisation validation across all page types.</blockquote>
+          <div class="chunk-footer">publisher: <strong>Next Tab Agency</strong> &nbsp;·&nbsp; retrieved: 2026-08-16</div>
+        </div>
+      </div>
+      <div class="relations-block">
+        <h4>Relations</h4>
+        <div class="relation"><span class="pred" style="color:#f97316">→ ENABLES</span> <a href="#e_003" class="rel-target">AI SEO / GEO</a><div class="rel-context">by providing the technical foundation for AI model crawling and structured data ingestion</div></div>
+        <div class="relation"><span class="pred" style="color:#a1a1aa">→ DESCRIBED_BY</span> <a href="#e_014" class="rel-target">Institutional Scalper Case Study</a></div>
+      </div>
+    </section>
+
+    <!-- e_003 -->
+    <section class="entity-card" id="e_003">
+      <div class="entity-header">
+        <div class="entity-id">e_003</div>
+        <span class="badge" style="background:#7c3aed">Service</span>
+        <h2 class="entity-name">AI SEO / GEO</h2>
+      </div>
+      <p class="entity-desc">AI visibility optimisation covering Google AI Overviews, ChatGPT, Gemini, and Perplexity — including llms.txt configuration, entity SEO, schema markup, and E-E-A-T reinforcement for Australian businesses.</p>
+      <div class="entity-meta">
+        <span class="meta-pill">Also known as: <strong>GEO, Generative Engine Optimisation, AIO</strong></span>
+        <span class="meta-pill">Canonical label: <strong>ai seo</strong></span>
+        <span class="meta-pill">Maturity: <strong>established</strong></span>
+        <span class="meta-pill">Audience: <strong>technical</strong></span>
+      </div>
+      <div class="chunks-block">
+        <h4>Evidence chunks (3)</h4>
+        <div class="chunk">
+          <div class="chunk-meta">
+            <span class="badge-sm" style="background:#1d4ed8">definition</span>
+            <span class="score">relevance 0.98</span> &nbsp;·&nbsp;
+            <a href="https://nexttabagency.com/services/ai-seo" target="_blank" rel="noopener">AI SEO Services — Next Tab Agency</a>
+          </div>
+          <blockquote class="chunk-text">AI SEO (Generative Engine Optimisation) is the practice of optimising your content so AI-powered search tools — ChatGPT, Google AI Overviews, Gemini, Perplexity — cite your business when answering user questions. Simply ranking on traditional search engines is no longer sufficient. Next Tab Agency's AI SEO service ensures your brand is the answer.</blockquote>
+          <div class="chunk-footer">publisher: <strong>Next Tab Agency</strong> &nbsp;·&nbsp; retrieved: 2026-08-16</div>
+        </div>
+        <div class="chunk">
+          <div class="chunk-meta">
+            <span class="badge-sm" style="background:#065f46">evidence</span>
+            <span class="score">relevance 0.95</span> &nbsp;·&nbsp;
+            <a href="https://nexttabagency.com/services/ai-seo" target="_blank" rel="noopener">AI SEO Services — Next Tab Agency</a>
+          </div>
+          <blockquote class="chunk-text">Our AI SEO methodology covers: llms.txt file configuration, entity schema markup (Person, Organisation, LocalBusiness, Service), topical authority content architecture, E-E-A-T signal reinforcement, and structured data optimised for LLM retrieval models.</blockquote>
+          <div class="chunk-footer">publisher: <strong>Next Tab Agency</strong> &nbsp;·&nbsp; retrieved: 2026-08-16</div>
+        </div>
+        <div class="chunk">
+          <div class="chunk-meta">
+            <span class="badge-sm" style="background:#065f46">evidence</span>
+            <span class="score">relevance 0.91</span> &nbsp;·&nbsp;
+            <a href="https://nexttabagency.com/blog/ai-search-sge-australia" target="_blank" rel="noopener">AI Search &amp; SGE Australia — Next Tab Agency Blog</a>
+          </div>
+          <blockquote class="chunk-text">Getting mentioned in an AI-generated answer puts your business in front of users even when they don't click through. For Australian businesses, AI Overview visibility is now as important as page-one rankings, particularly for commercial and informational queries where AI generates the first response users see.</blockquote>
+          <div class="chunk-footer">publisher: <strong>Next Tab Agency</strong> &nbsp;·&nbsp; retrieved: 2026-08-16</div>
+        </div>
+      </div>
+      <div class="relations-block">
+        <h4>Relations</h4>
+        <div class="relation"><span class="pred" style="color:#f97316">→ INCLUDES</span> <a href="#e_015" class="rel-target">Answer Engine Optimisation (AEO)</a></div>
+        <div class="relation"><span class="pred" style="color:#f97316">→ DEPENDS_ON</span> <a href="#e_002" class="rel-target">Technical SEO</a></div>
+        <div class="relation"><span class="pred" style="color:#f97316">→ DEPENDS_ON</span> <a href="#e_016" class="rel-target">Entity SEO</a></div>
+        <div class="relation"><span class="pred" style="color:#f97316">→ DEPENDS_ON</span> <a href="#e_012" class="rel-target">Topical Authority SEO</a></div>
+      </div>
+    </section>
+
+    <!-- e_004 -->
+    <section class="entity-card" id="e_004">
+      <div class="entity-header">
+        <div class="entity-id">e_004</div>
+        <span class="badge" style="background:#7c3aed">Service</span>
+        <h2 class="entity-name">Local SEO</h2>
+      </div>
+      <p class="entity-desc">Google Map Pack domination for Brisbane and all Australian capital cities — covering Google Business Profile management, local citation building, and local entity schema markup.</p>
+      <div class="entity-meta">
+        <span class="meta-pill">Maturity: <strong>established</strong></span>
+        <span class="meta-pill">Audience: <strong>general</strong></span>
+      </div>
+      <div class="chunks-block">
+        <h4>Evidence chunks (3)</h4>
+        <div class="chunk">
+          <div class="chunk-meta">
+            <span class="badge-sm" style="background:#1d4ed8">definition</span>
+            <span class="score">relevance 0.96</span> &nbsp;·&nbsp;
+            <a href="https://nexttabagency.com/services/local-seo" target="_blank" rel="noopener">Local SEO Services — Next Tab Agency</a>
+          </div>
+          <blockquote class="chunk-text">Local SEO optimises your online presence so your business appears prominently when nearby customers search. Our Brisbane-based local SEO team delivers Google Map Pack rankings, local citation rebuilds, and Google Business Profile optimisation for businesses across Queensland and all Australian capital cities.</blockquote>
+          <div class="chunk-footer">publisher: <strong>Next Tab Agency</strong> &nbsp;·&nbsp; retrieved: 2026-08-16</div>
+        </div>
+        <div class="chunk">
+          <div class="chunk-meta">
+            <span class="badge-sm" style="background:#92400e">statistic</span>
+            <span class="score">relevance 0.98</span> &nbsp;·&nbsp;
+            <a href="https://nexttabagency.com/portfolio/heaven-on-mainstreet" target="_blank" rel="noopener">Heaven on Mainstreet Case Study — Next Tab Agency</a>
+          </div>
+          <blockquote class="chunk-text">Heaven on Mainstreet local SEO campaign: #1 Google Map Pack ranking achieved. 5.86 million organic impressions. 49,300 organic clicks. Revenue-generating foot traffic fully restored through GBP reinstatement, citation rebuild, and on-page local SEO.</blockquote>
+          <div class="chunk-footer">publisher: <strong>Next Tab Agency</strong> &nbsp;·&nbsp; retrieved: 2026-08-16</div>
+        </div>
+        <div class="chunk">
+          <div class="chunk-meta">
+            <span class="badge-sm" style="background:#065f46">evidence</span>
+            <span class="score">relevance 0.90</span> &nbsp;·&nbsp;
+            <a href="https://nexttabagency.com/services/google-business-profile" target="_blank" rel="noopener">Google Business Profile Management — Next Tab Agency</a>
+          </div>
+          <blockquote class="chunk-text">Google Business Profile is the primary lever for local search visibility. Our GBP management covers: profile setup, category selection, review management, Q&amp;A moderation, post scheduling, and photo optimisation to maximise Map Pack prominence for Australian businesses.</blockquote>
+          <div class="chunk-footer">publisher: <strong>Next Tab Agency</strong> &nbsp;·&nbsp; retrieved: 2026-08-16</div>
+        </div>
+      </div>
+      <div class="relations-block">
+        <h4>Relations</h4>
+        <div class="relation"><span class="pred" style="color:#a1a1aa">→ DESCRIBED_BY</span> <a href="#e_013" class="rel-target">Heaven on Mainstreet Case Study</a></div>
+        <div class="relation"><span class="pred" style="color:#f97316">→ DEPENDS_ON</span> <a href="#e_016" class="rel-target">Entity SEO</a></div>
+      </div>
+    </section>
+
+    <!-- e_005 -->
+    <section class="entity-card" id="e_005">
+      <div class="entity-header">
+        <div class="entity-id">e_005</div>
+        <span class="badge" style="background:#7c3aed">Service</span>
+        <h2 class="entity-name">PPC &amp; Google Ads</h2>
+      </div>
+      <p class="entity-desc">Full-service pay-per-click management across Google Search, Shopping (Performance Max), Display, YouTube, and Microsoft Ads — managed by Google Ads certified Brisbane specialists.</p>
+      <div class="entity-meta">
+        <span class="meta-pill">Maturity: <strong>established</strong></span>
+        <span class="meta-pill">Audience: <strong>general</strong></span>
+      </div>
+      <div class="chunks-block">
+        <h4>Evidence chunks (2)</h4>
+        <div class="chunk">
+          <div class="chunk-meta">
+            <span class="badge-sm" style="background:#1d4ed8">definition</span>
+            <span class="score">relevance 0.94</span> &nbsp;·&nbsp;
+            <a href="https://nexttabagency.com/services/ppc-google-ads" target="_blank" rel="noopener">PPC &amp; Google Ads — Next Tab Agency</a>
+          </div>
+          <blockquote class="chunk-text">Our PPC service covers the full Google Ads ecosystem: Search campaigns for intent-driven lead generation, Performance Max for eCommerce, Display for brand awareness, and YouTube for video advertising — all managed by Google Ads certified Brisbane-based specialists with data-backed bid strategies.</blockquote>
+          <div class="chunk-footer">publisher: <strong>Next Tab Agency</strong> &nbsp;·&nbsp; retrieved: 2026-08-16</div>
+        </div>
+        <div class="chunk">
+          <div class="chunk-meta">
+            <span class="badge-sm" style="background:#065f46">evidence</span>
+            <span class="score">relevance 0.90</span> &nbsp;·&nbsp;
+            <a href="https://nexttabagency.com/services/google-ads-brisbane" target="_blank" rel="noopener">Google Ads Brisbane — Next Tab Agency</a>
+          </div>
+          <blockquote class="chunk-text">We manage Google Ads for Brisbane businesses across all industries — from tradies needing local service ads to eCommerce stores running Shopping campaigns. Every account is managed in-house by certified Brisbane-based specialists with deep knowledge of Australian consumer behaviour and search intent patterns.</blockquote>
+          <div class="chunk-footer">publisher: <strong>Next Tab Agency</strong> &nbsp;·&nbsp; retrieved: 2026-08-16</div>
+        </div>
+      </div>
+      <div class="relations-block">
+        <h4>Relations</h4>
+        <div class="relation"><span class="pred" style="color:#f97316">→ INCLUDES</span> <a href="#e_006" class="rel-target">Social Media Advertising</a></div>
+      </div>
+    </section>
+
+    <!-- e_006 -->
+    <section class="entity-card" id="e_006">
+      <div class="entity-header">
+        <div class="entity-id">e_006</div>
+        <span class="badge" style="background:#7c3aed">Service</span>
+        <h2 class="entity-name">Social Media Advertising</h2>
+      </div>
+      <p class="entity-desc">Paid advertising management across Facebook, Instagram, and LinkedIn for Australian businesses — lead generation, retargeting, dynamic product ads, and B2B Lead Gen Forms.</p>
+      <div class="entity-meta">
+        <span class="meta-pill">Maturity: <strong>established</strong></span>
+        <span class="meta-pill">Audience: <strong>general</strong></span>
+      </div>
+      <div class="chunks-block">
+        <h4>Evidence chunks (2)</h4>
+        <div class="chunk">
+          <div class="chunk-meta">
+            <span class="badge-sm" style="background:#1d4ed8">definition</span>
+            <span class="score">relevance 0.92</span> &nbsp;·&nbsp;
+            <a href="https://nexttabagency.com/services/facebook-ads" target="_blank" rel="noopener">Facebook Ads — Next Tab Agency</a>
+          </div>
+          <blockquote class="chunk-text">Our Meta Ads service covers Facebook and Instagram campaign management — audience targeting, creative development, lead generation campaigns, retargeting sequences, and dynamic product ads for eCommerce. All campaigns optimised against Australian conversion benchmarks.</blockquote>
+          <div class="chunk-footer">publisher: <strong>Next Tab Agency</strong> &nbsp;·&nbsp; retrieved: 2026-08-16</div>
+        </div>
+        <div class="chunk">
+          <div class="chunk-meta">
+            <span class="badge-sm" style="background:#065f46">evidence</span>
+            <span class="score">relevance 0.88</span> &nbsp;·&nbsp;
+            <a href="https://nexttabagency.com/services/linkedin-ads" target="_blank" rel="noopener">LinkedIn Ads — Next Tab Agency</a>
+          </div>
+          <blockquote class="chunk-text">LinkedIn advertising for B2B precision targeting by job title, company size, and industry. Sponsored Content, Message Ads, and Lead Gen Forms — ideal for Australian B2B companies targeting enterprise and mid-market buyers.</blockquote>
+          <div class="chunk-footer">publisher: <strong>Next Tab Agency</strong> &nbsp;·&nbsp; retrieved: 2026-08-16</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- e_007 -->
+    <section class="entity-card" id="e_007">
+      <div class="entity-header">
+        <div class="entity-id">e_007</div>
+        <span class="badge" style="background:#7c3aed">Service</span>
+        <h2 class="entity-name">Web Development</h2>
+      </div>
+      <p class="entity-desc">Custom React and Next.js website development built on the proprietary Antigravity Framework, delivering sub-1-second Core Web Vitals with SEO architecture built from day one.</p>
+      <div class="entity-meta">
+        <span class="meta-pill">Stack: <strong>React 18, Next.js, TypeScript</strong></span>
+        <span class="meta-pill">Maturity: <strong>established</strong></span>
+        <span class="meta-pill">Audience: <strong>technical</strong></span>
+      </div>
+      <div class="chunks-block">
+        <h4>Evidence chunks (2)</h4>
+        <div class="chunk">
+          <div class="chunk-meta">
+            <span class="badge-sm" style="background:#1d4ed8">definition</span>
+            <span class="score">relevance 0.96</span> &nbsp;·&nbsp;
+            <a href="https://nexttabagency.com/services/web-development" target="_blank" rel="noopener">Web Development Services — Next Tab Agency</a>
+          </div>
+          <blockquote class="chunk-text">Our custom web development is built on the Antigravity Framework — a proprietary React/Next.js performance methodology delivering sub-1-second LCP scores. Every site is built in-house by our Brisbane engineering team with SEO architecture, schema markup, and Core Web Vitals compliance built from day one, not retrofitted after launch.</blockquote>
+          <div class="chunk-footer">publisher: <strong>Next Tab Agency</strong> &nbsp;·&nbsp; retrieved: 2026-08-16</div>
+        </div>
+        <div class="chunk">
+          <div class="chunk-meta">
+            <span class="badge-sm" style="background:#065f46">evidence</span>
+            <span class="score">relevance 0.90</span> &nbsp;·&nbsp;
+            <a href="https://nexttabagency.com/services/speed-optimization" target="_blank" rel="noopener">Speed Optimisation — Next Tab Agency</a>
+          </div>
+          <blockquote class="chunk-text">The Antigravity Framework achieves: LCP under 1 second, CLS under 0.1, FID under 100ms — through optimised React builds, Australian CDN infrastructure, WebP/AVIF image pipelines, lazy loading, and server-side caching tuned for Australian hosting environments.</blockquote>
+          <div class="chunk-footer">publisher: <strong>Next Tab Agency</strong> &nbsp;·&nbsp; retrieved: 2026-08-16</div>
+        </div>
+      </div>
+      <div class="relations-block">
+        <h4>Relations</h4>
+        <div class="relation"><span class="pred" style="color:#f97316">→ USES</span> <a href="#e_008" class="rel-target">Antigravity Framework</a></div>
+        <div class="relation"><span class="pred" style="color:#f97316">→ ENABLES</span> <a href="#e_002" class="rel-target">Technical SEO</a></div>
+      </div>
+    </section>
+
+    <!-- e_008 -->
+    <section class="entity-card" id="e_008">
+      <div class="entity-header">
+        <div class="entity-id">e_008</div>
+        <span class="badge" style="background:#b45309">ProprietaryTerm</span>
+        <h2 class="entity-name">Antigravity Framework</h2>
+      </div>
+      <p class="entity-desc">Next Tab Agency's proprietary web performance methodology delivering sub-1-second Core Web Vitals through optimised React builds, Australian CDN infrastructure, and next-gen image pipelines.</p>
+      <div class="entity-meta">
+        <span class="meta-pill">Canonical label: <strong>web performance framework</strong></span>
+        <span class="meta-pill">Owner: <strong>Next Tab Agency</strong></span>
+        <span class="meta-pill">Maturity: <strong>established</strong></span>
+        <span class="meta-pill">Audience: <strong>technical</strong></span>
+      </div>
+      <div class="chunks-block">
+        <h4>Evidence chunks (2)</h4>
+        <div class="chunk">
+          <div class="chunk-meta">
+            <span class="badge-sm" style="background:#1d4ed8">definition</span>
+            <span class="score">relevance 0.99</span> &nbsp;·&nbsp;
+            <a href="https://nexttabagency.com/about" target="_blank" rel="noopener">About Next Tab Agency</a>
+          </div>
+          <blockquote class="chunk-text">The Antigravity Framework is Next Tab Agency's proprietary performance methodology: optimised React 18 builds with code splitting, Cloudflare and AWS CDN tuned for Australian data centre proximity, next-gen image formats (WebP/AVIF), and server-side caching — consistently achieving LCP &lt; 1s, CLS &lt; 0.1, FID &lt; 100ms.</blockquote>
+          <div class="chunk-footer">publisher: <strong>Next Tab Agency</strong> &nbsp;·&nbsp; retrieved: 2026-08-16</div>
+        </div>
+        <div class="chunk">
+          <div class="chunk-meta">
+            <span class="badge-sm" style="background:#92400e">statistic</span>
+            <span class="score">relevance 0.93</span> &nbsp;·&nbsp;
+            <a href="https://nexttabagency.com/portfolio/my-fitness-coach" target="_blank" rel="noopener">MyFitnessCoach Case Study — Next Tab Agency</a>
+          </div>
+          <blockquote class="chunk-text">The Antigravity Framework applied to the MyFitnessCoach React Native app build: 10,000+ downloads within 90 days of launch. 4.8-star App Store rating. Featured in Australian fitness media.</blockquote>
+          <div class="chunk-footer">publisher: <strong>Next Tab Agency</strong> &nbsp;·&nbsp; retrieved: 2026-08-16</div>
+        </div>
+      </div>
+      <div class="relations-block">
+        <h4>Relations</h4>
+        <div class="relation"><span class="pred" style="color:#f97316">→ ENABLES</span> <a href="#e_007" class="rel-target">Web Development</a></div>
+        <div class="relation"><span class="pred" style="color:#f97316">→ ENABLES</span> <a href="#e_018" class="rel-target">Mobile App Development</a></div>
+        <div class="relation"><span class="pred" style="color:#f97316">→ ENABLES</span> <a href="#e_002" class="rel-target">Technical SEO</a></div>
+      </div>
+    </section>
+
+    <!-- e_009 -->
+    <section class="entity-card" id="e_009">
+      <div class="entity-header">
+        <div class="entity-id">e_009</div>
+        <span class="badge" style="background:#7c3aed">Service</span>
+        <h2 class="entity-name">eCommerce Development</h2>
+      </div>
+      <p class="entity-desc">Full Australian eCommerce development across WooCommerce, Shopify, BigCommerce, Magento 2, and Maropost Neto — with Australian payment gateways, shipping, and tax compliance.</p>
+      <div class="entity-meta">
+        <span class="meta-pill">Platforms: <strong>WooCommerce, Shopify, BigCommerce, Magento, Maropost</strong></span>
+        <span class="meta-pill">Maturity: <strong>established</strong></span>
+        <span class="meta-pill">Audience: <strong>general</strong></span>
+      </div>
+      <div class="chunks-block">
+        <h4>Evidence chunks (2)</h4>
+        <div class="chunk">
+          <div class="chunk-meta">
+            <span class="badge-sm" style="background:#1d4ed8">definition</span>
+            <span class="score">relevance 0.94</span> &nbsp;·&nbsp;
+            <a href="https://nexttabagency.com/services/woocommerce-development" target="_blank" rel="noopener">WooCommerce Development — Next Tab Agency</a>
+          </div>
+          <blockquote class="chunk-text">Our WooCommerce development delivers the full Australian eCommerce stack: Australia Post shipping, Afterpay and Zip Pay BNPL gateways, Stripe and PayPal processing, Xero accounting integration, and GST-compliant tax configuration — built for Australian consumer expectations.</blockquote>
+          <div class="chunk-footer">publisher: <strong>Next Tab Agency</strong> &nbsp;·&nbsp; retrieved: 2026-08-16</div>
+        </div>
+        <div class="chunk">
+          <div class="chunk-meta">
+            <span class="badge-sm" style="background:#065f46">evidence</span>
+            <span class="score">relevance 0.91</span> &nbsp;·&nbsp;
+            <a href="https://nexttabagency.com/services/shopify-development" target="_blank" rel="noopener">Shopify Development — Next Tab Agency</a>
+          </div>
+          <blockquote class="chunk-text">We build Shopify and Shopify Plus stores for Australian retailers, including complex platform migrations from WooCommerce and Magento. Our builds include custom theme engineering, AU payment gateway setup, and post-launch SEO validation to preserve organic rankings through migrations.</blockquote>
+          <div class="chunk-footer">publisher: <strong>Next Tab Agency</strong> &nbsp;·&nbsp; retrieved: 2026-08-16</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- e_010 -->
+    <section class="entity-card" id="e_010">
+      <div class="entity-header">
+        <div class="entity-id">e_010</div>
+        <span class="badge" style="background:#0e7490">Person</span>
+        <h2 class="entity-name">Hamza Ishfaq</h2>
+      </div>
+      <p class="entity-desc">Founder and CEO of Next Tab Agency. Digital innovation specialist and architect of the Antigravity Framework. Based in Brisbane, Queensland, Australia. Founded the agency in 2019.</p>
+      <div class="entity-meta">
+        <span class="meta-pill">Role: <strong>Founder &amp; CEO</strong></span>
+        <span class="meta-pill">Specialisation: <strong>Digital Innovation, ROI-Driven Growth</strong></span>
+        <span class="meta-pill">Location: <strong>Brisbane, QLD, Australia</strong></span>
+        <span class="meta-pill">Maturity: <strong>established</strong></span>
+      </div>
+      <div class="chunks-block">
+        <h4>Evidence chunks (2)</h4>
+        <div class="chunk">
+          <div class="chunk-meta">
+            <span class="badge-sm" style="background:#1d4ed8">definition</span>
+            <span class="score">relevance 0.97</span> &nbsp;·&nbsp;
+            <a href="https://nexttabagency.com/our-team" target="_blank" rel="noopener">Our Team — Next Tab Agency</a>
+          </div>
+          <blockquote class="chunk-text">Hamza Ishfaq is the Founder and CEO of Next Tab Agency, founded in Brisbane in 2019. Hamza leads digital innovation strategy and developed the Antigravity Framework — the agency's proprietary performance methodology for sub-1s Core Web Vitals. He specialises in ROI-driven growth frameworks and the Australian digital market.</blockquote>
+          <div class="chunk-footer">publisher: <strong>Next Tab Agency</strong> &nbsp;·&nbsp; retrieved: 2026-08-16</div>
+        </div>
+        <div class="chunk">
+          <div class="chunk-meta">
+            <span class="badge-sm" style="background:#065f46">evidence</span>
+            <span class="score">relevance 0.90</span> &nbsp;·&nbsp;
+            <a href="https://nexttabagency.com/about" target="_blank" rel="noopener">About Next Tab Agency</a>
+          </div>
+          <blockquote class="chunk-text">Under Hamza Ishfaq's leadership, Next Tab Agency has grown to 20 in-house Brisbane-based specialists, maintained a 4.9/5 client satisfaction rating across 200+ Australian clients, and a 70%+ month-to-month retainer renewal rate — all on no lock-in, month-to-month contracts.</blockquote>
+          <div class="chunk-footer">publisher: <strong>Next Tab Agency</strong> &nbsp;·&nbsp; retrieved: 2026-08-16</div>
+        </div>
+      </div>
+      <div class="relations-block">
+        <h4>Relations</h4>
+        <div class="relation"><span class="pred" style="color:#f97316">→ FOUNDED</span> <a href="#e_001" class="rel-target">Next Tab Agency</a></div>
+        <div class="relation"><span class="pred" style="color:#f97316">→ CREATED</span> <a href="#e_008" class="rel-target">Antigravity Framework</a></div>
+      </div>
+    </section>
+
+    <!-- e_011 -->
+    <section class="entity-card" id="e_011">
+      <div class="entity-header">
+        <div class="entity-id">e_011</div>
+        <span class="badge" style="background:#2563a8">Concept</span>
+        <h2 class="entity-name">E-E-A-T</h2>
+      </div>
+      <p class="entity-desc">Google's quality assessment framework — Experience, Expertise, Authoritativeness, Trustworthiness — used by search quality raters and increasingly by AI retrieval models to evaluate content credibility and citation worthiness.</p>
+      <div class="entity-meta">
+        <span class="meta-pill">Canonical label: <strong>experience expertise authoritativeness trustworthiness</strong></span>
+        <span class="meta-pill">Maturity: <strong>established</strong></span>
+        <span class="meta-pill">Audience: <strong>technical</strong></span>
+      </div>
+      <div class="chunks-block">
+        <h4>Evidence chunks (2)</h4>
+        <div class="chunk">
+          <div class="chunk-meta">
+            <span class="badge-sm" style="background:#1d4ed8">definition</span>
+            <span class="score">relevance 0.97</span> &nbsp;·&nbsp;
+            <a href="https://nexttabagency.com/services/technical-seo" target="_blank" rel="noopener">Technical SEO — Next Tab Agency</a>
+          </div>
+          <blockquote class="chunk-text">E-E-A-T (Experience, Expertise, Authoritativeness, Trustworthiness) is Google's framework for evaluating content quality. For Australian businesses, particularly YMYL sectors (finance, health, legal), demonstrating E-E-A-T through author credentials, structured data, and verifiable business signals is essential for traditional rankings and AI citation inclusion.</blockquote>
+          <div class="chunk-footer">publisher: <strong>Next Tab Agency</strong> &nbsp;·&nbsp; retrieved: 2026-08-16</div>
+        </div>
+        <div class="chunk">
+          <div class="chunk-meta">
+            <span class="badge-sm" style="background:#065f46">evidence</span>
+            <span class="score">relevance 0.93</span> &nbsp;·&nbsp;
+            <a href="https://nexttabagency.com/services/ai-seo" target="_blank" rel="noopener">AI SEO — Next Tab Agency</a>
+          </div>
+          <blockquote class="chunk-text">AI retrieval models use quality signals similar to E-E-A-T when selecting sources to cite in generated answers. Strengthening E-E-A-T through author schema, organisation structured data, review signals, and topical authority content directly improves the likelihood of AI Overview and ChatGPT citation inclusion.</blockquote>
+          <div class="chunk-footer">publisher: <strong>Next Tab Agency</strong> &nbsp;·&nbsp; retrieved: 2026-08-16</div>
+        </div>
+      </div>
+      <div class="relations-block">
+        <h4>Relations</h4>
+        <div class="relation"><span class="pred" style="color:#d97706">→ IMPROVES</span> <a href="#e_003" class="rel-target">AI SEO / GEO</a><span class="conf">confidence: declared</span><div class="rel-context">when E-E-A-T signals are enhanced, increasing AI model confidence in citing the brand</div></div>
+      </div>
+    </section>
+
+    <!-- e_012 -->
+    <section class="entity-card" id="e_012">
+      <div class="entity-header">
+        <div class="entity-id">e_012</div>
+        <span class="badge" style="background:#2563a8">Concept</span>
+        <h2 class="entity-name">Topical Authority SEO</h2>
+      </div>
+      <p class="entity-desc">An SEO methodology building comprehensive, interconnected content coverage of a topic to establish domain expertise with search engines and AI retrieval models through semantic clustering and content silo architecture.</p>
+      <div class="entity-meta">
+        <span class="meta-pill">Also known as: <strong>topical authority, semantic SEO, content silos</strong></span>
+        <span class="meta-pill">Maturity: <strong>established</strong></span>
+        <span class="meta-pill">Audience: <strong>technical</strong></span>
+      </div>
+      <div class="chunks-block">
+        <h4>Evidence chunks (2)</h4>
+        <div class="chunk">
+          <div class="chunk-meta">
+            <span class="badge-sm" style="background:#1d4ed8">definition</span>
+            <span class="score">relevance 0.96</span> &nbsp;·&nbsp;
+            <a href="https://nexttabagency.com/services/content-marketing" target="_blank" rel="noopener">Content Marketing — Next Tab Agency</a>
+          </div>
+          <blockquote class="chunk-text">Topical authority SEO involves building comprehensive content silos — interconnected clusters covering every facet of a topic — so search engines and AI models recognise your domain as the definitive subject-matter expert. Our methodology uses semantic clustering, internal link restructuring, and entity-aligned content to establish topical authority.</blockquote>
+          <div class="chunk-footer">publisher: <strong>Next Tab Agency</strong> &nbsp;·&nbsp; retrieved: 2026-08-16</div>
+        </div>
+        <div class="chunk">
+          <div class="chunk-meta">
+            <span class="badge-sm" style="background:#065f46">evidence</span>
+            <span class="score">relevance 0.90</span> &nbsp;·&nbsp;
+            <a href="https://nexttabagency.com/blog/content-strategy-core-update" target="_blank" rel="noopener">Content Strategy After Core Update — Next Tab Agency Blog</a>
+          </div>
+          <blockquote class="chunk-text">After Google's May 2026 core update, topical authority became the primary content signal. Thin, isolated pages lost rankings regardless of link profiles. Businesses with comprehensive content silos — covering parent topics, subtopics, and entity-level detail — maintained and improved rankings across the update period.</blockquote>
+          <div class="chunk-footer">publisher: <strong>Next Tab Agency</strong> &nbsp;·&nbsp; retrieved: 2026-08-16</div>
+        </div>
+      </div>
+      <div class="relations-block">
+        <h4>Relations</h4>
+        <div class="relation"><span class="pred" style="color:#d97706">→ ENABLES</span> <a href="#e_003" class="rel-target">AI SEO / GEO</a></div>
+        <div class="relation"><span class="pred" style="color:#d97706">→ IMPROVES</span> <a href="#e_011" class="rel-target">E-E-A-T</a></div>
+      </div>
+    </section>
+
+    <!-- e_013 -->
+    <section class="entity-card" id="e_013">
+      <div class="entity-header">
+        <div class="entity-id">e_013</div>
+        <span class="badge" style="background:#1d6538">CaseStudy</span>
+        <h2 class="entity-name">Heaven on Mainstreet — Local SEO</h2>
+      </div>
+      <p class="entity-desc">Brisbane local business GBP reinstatement and local SEO campaign: #1 Map Pack, 5.86M organic impressions, and 49,300 organic clicks achieved by Next Tab Agency.</p>
+      <div class="entity-meta">
+        <span class="meta-pill">Service: <strong>Local SEO &amp; GBP</strong></span>
+        <span class="meta-pill">Location: <strong>Brisbane, QLD</strong></span>
+        <span class="meta-pill">Maturity: <strong>established</strong></span>
+      </div>
+      <div class="chunks-block">
+        <h4>Evidence chunks (1)</h4>
+        <div class="chunk">
+          <div class="chunk-meta">
+            <span class="badge-sm" style="background:#92400e">statistic</span>
+            <span class="score">relevance 0.98</span> &nbsp;·&nbsp;
+            <a href="https://nexttabagency.com/portfolio/heaven-on-mainstreet" target="_blank" rel="noopener">Heaven on Mainstreet Case Study — Next Tab Agency</a>
+          </div>
+          <blockquote class="chunk-text">Problem: GBP suspended, losing all local traffic. Solution: GBP reinstatement, Map Pack optimisation, local citation rebuild across 60+ AU directories, on-page local SEO, and review generation. Result: #1 Google Map Pack. 5.86 million organic impressions. 49,300 organic clicks. Revenue-generating foot traffic restored.</blockquote>
+          <div class="chunk-footer">publisher: <strong>Next Tab Agency</strong> &nbsp;·&nbsp; retrieved: 2026-08-16</div>
+        </div>
+      </div>
+      <div class="relations-block">
+        <h4>Relations</h4>
+        <div class="relation"><span class="pred" style="color:#a1a1aa">→ DEMONSTRATES</span> <a href="#e_004" class="rel-target">Local SEO</a></div>
+      </div>
+    </section>
+
+    <!-- e_014 -->
+    <section class="entity-card" id="e_014">
+      <div class="entity-header">
+        <div class="entity-id">e_014</div>
+        <span class="badge" style="background:#1d6538">CaseStudy</span>
+        <h2 class="entity-name">Institutional Scalper — Technical SEO</h2>
+      </div>
+      <p class="entity-desc">2.5 million-page website crawl budget rescue: top-3 rankings, sub-1.5s load times, and 60% indexation improvement within 90 days.</p>
+      <div class="entity-meta">
+        <span class="meta-pill">Service: <strong>Technical SEO</strong></span>
+        <span class="meta-pill">Scale: <strong>2.5 million pages</strong></span>
+        <span class="meta-pill">Maturity: <strong>established</strong></span>
+      </div>
+      <div class="chunks-block">
+        <h4>Evidence chunks (1)</h4>
+        <div class="chunk">
+          <div class="chunk-meta">
+            <span class="badge-sm" style="background:#92400e">statistic</span>
+            <span class="score">relevance 0.98</span> &nbsp;·&nbsp;
+            <a href="https://nexttabagency.com/portfolio/institutional-scalper" target="_blank" rel="noopener">Institutional Scalper Case Study — Next Tab Agency</a>
+          </div>
+          <blockquote class="chunk-text">Problem: 2.5M-page site, critical crawl budget failures, Google not indexing revenue pages. Solution: Crawl budget architecture, server log analysis, canonical restructuring, Core Web Vitals remediation. Result: Top-3 rankings on all target commercial pages. Sub-1.5s load times. 60% indexation improvement within 90 days.</blockquote>
+          <div class="chunk-footer">publisher: <strong>Next Tab Agency</strong> &nbsp;·&nbsp; retrieved: 2026-08-16</div>
+        </div>
+      </div>
+      <div class="relations-block">
+        <h4>Relations</h4>
+        <div class="relation"><span class="pred" style="color:#a1a1aa">→ DEMONSTRATES</span> <a href="#e_002" class="rel-target">Technical SEO</a></div>
+      </div>
+    </section>
+
+    <!-- e_015 -->
+    <section class="entity-card" id="e_015">
+      <div class="entity-header">
+        <div class="entity-id">e_015</div>
+        <span class="badge" style="background:#2563a8">Concept</span>
+        <h2 class="entity-name">Answer Engine Optimisation (AEO)</h2>
+      </div>
+      <p class="entity-desc">Structuring content to appear as direct answers in AI-generated responses, voice search, and featured snippets — a subset of AI SEO focused on question-answer content architecture and FAQ schema.</p>
+      <div class="entity-meta">
+        <span class="meta-pill">Also known as: <strong>AEO</strong></span>
+        <span class="meta-pill">Maturity: <strong>established</strong></span>
+        <span class="meta-pill">Audience: <strong>technical</strong></span>
+      </div>
+      <div class="chunks-block">
+        <h4>Evidence chunks (1)</h4>
+        <div class="chunk">
+          <div class="chunk-meta">
+            <span class="badge-sm" style="background:#1d4ed8">definition</span>
+            <span class="score">relevance 0.95</span> &nbsp;·&nbsp;
+            <a href="https://nexttabagency.com/services/ai-seo" target="_blank" rel="noopener">AI SEO — Next Tab Agency</a>
+          </div>
+          <blockquote class="chunk-text">Answer Engine Optimisation (AEO) structures content to appear as direct answers in AI-generated responses — Google AI Overviews, ChatGPT, and voice assistants. AEO techniques: FAQ schema markup, concise Q&amp;A content blocks, entity disambiguation through structured data, and conversational content aligned to user intent patterns.</blockquote>
+          <div class="chunk-footer">publisher: <strong>Next Tab Agency</strong> &nbsp;·&nbsp; retrieved: 2026-08-16</div>
+        </div>
+      </div>
+      <div class="relations-block">
+        <h4>Relations</h4>
+        <div class="relation"><span class="pred" style="color:#f97316">→ PART_OF</span> <a href="#e_003" class="rel-target">AI SEO / GEO</a></div>
+      </div>
+    </section>
+
+    <!-- e_016 -->
+    <section class="entity-card" id="e_016">
+      <div class="entity-header">
+        <div class="entity-id">e_016</div>
+        <span class="badge" style="background:#2563a8">Concept</span>
+        <h2 class="entity-name">Entity SEO</h2>
+      </div>
+      <p class="entity-desc">SEO methodology establishing a business as a clearly defined entity in Google's Knowledge Graph through structured data, Wikidata, and consistent NAP signals — critical for AI citation and local search.</p>
+      <div class="entity-meta">
+        <span class="meta-pill">Also known as: <strong>entity-based SEO, knowledge graph optimisation</strong></span>
+        <span class="meta-pill">Maturity: <strong>established</strong></span>
+        <span class="meta-pill">Audience: <strong>technical</strong></span>
+      </div>
+      <div class="chunks-block">
+        <h4>Evidence chunks (1)</h4>
+        <div class="chunk">
+          <div class="chunk-meta">
+            <span class="badge-sm" style="background:#1d4ed8">definition</span>
+            <span class="score">relevance 0.96</span> &nbsp;·&nbsp;
+            <a href="https://nexttabagency.com/services/local-seo" target="_blank" rel="noopener">Local SEO — Next Tab Agency</a>
+          </div>
+          <blockquote class="chunk-text">Entity SEO establishes your business as a clearly defined, verified entity in Google's Knowledge Graph via Schema.org structured data (Organisation, LocalBusiness, Person), consistent NAP signals across AU citation networks, and Wikidata disambiguation — ensuring Google and AI models can accurately identify and represent your business in generated answers.</blockquote>
+          <div class="chunk-footer">publisher: <strong>Next Tab Agency</strong> &nbsp;·&nbsp; retrieved: 2026-08-16</div>
+        </div>
+      </div>
+      <div class="relations-block">
+        <h4>Relations</h4>
+        <div class="relation"><span class="pred" style="color:#f97316">→ ENABLES</span> <a href="#e_003" class="rel-target">AI SEO / GEO</a></div>
+        <div class="relation"><span class="pred" style="color:#f97316">→ ENABLES</span> <a href="#e_004" class="rel-target">Local SEO</a></div>
+      </div>
+    </section>
+
+    <!-- e_017 -->
+    <section class="entity-card" id="e_017">
+      <div class="entity-header">
+        <div class="entity-id">e_017</div>
+        <span class="badge" style="background:#374151">Location</span>
+        <h2 class="entity-name">Brisbane, Queensland</h2>
+      </div>
+      <p class="entity-desc">Primary market and headquarters location of Next Tab Agency. Taylor Street, Eagleby, QLD 4207, Brisbane, Queensland, Australia.</p>
+      <div class="entity-meta">
+        <span class="meta-pill">Address: <strong>Taylor Street, Eagleby QLD 4207</strong></span>
+        <span class="meta-pill">State: <strong>Queensland, Australia</strong></span>
+        <span class="meta-pill">Maturity: <strong>established</strong></span>
+      </div>
+      <div class="chunks-block">
+        <h4>Evidence chunks (1)</h4>
+        <div class="chunk">
+          <div class="chunk-meta">
+            <span class="badge-sm" style="background:#1d4ed8">definition</span>
+            <span class="score">relevance 0.95</span> &nbsp;·&nbsp;
+            <a href="https://nexttabagency.com/locations/brisbane-seo" target="_blank" rel="noopener">Brisbane SEO — Next Tab Agency</a>
+          </div>
+          <blockquote class="chunk-text">Next Tab Agency is headquartered in Brisbane, Queensland at Taylor Street, Eagleby QLD 4207. All 20 in-house specialists are Brisbane-based. Primary service suburbs: CBD, South Brisbane, Fortitude Valley, West End, Chermside, Carindale, and outer Brisbane including Logan, Beenleigh, Ipswich, and Redlands.</blockquote>
+          <div class="chunk-footer">publisher: <strong>Next Tab Agency</strong> &nbsp;·&nbsp; retrieved: 2026-08-16</div>
+        </div>
+      </div>
+      <div class="relations-block">
+        <h4>Relations</h4>
+        <div class="relation"><span class="pred" style="color:#f97316">→ HOME_OF</span> <a href="#e_001" class="rel-target">Next Tab Agency</a></div>
+      </div>
+    </section>
+
+    <!-- e_018 -->
+    <section class="entity-card" id="e_018">
+      <div class="entity-header">
+        <div class="entity-id">e_018</div>
+        <span class="badge" style="background:#7c3aed">Service</span>
+        <h2 class="entity-name">Mobile App Development</h2>
+      </div>
+      <p class="entity-desc">React Native iOS and Android mobile app development for Australian businesses — from MVP to production-grade apps with Firebase backends, AI integrations, and App Store submission.</p>
+      <div class="entity-meta">
+        <span class="meta-pill">Stack: <strong>React Native, Expo, Firebase</strong></span>
+        <span class="meta-pill">Platforms: <strong>iOS &amp; Android</strong></span>
+        <span class="meta-pill">Maturity: <strong>established</strong></span>
+        <span class="meta-pill">Audience: <strong>general</strong></span>
+      </div>
+      <div class="chunks-block">
+        <h4>Evidence chunks (2)</h4>
+        <div class="chunk">
+          <div class="chunk-meta">
+            <span class="badge-sm" style="background:#1d4ed8">definition</span>
+            <span class="score">relevance 0.93</span> &nbsp;·&nbsp;
+            <a href="https://nexttabagency.com/services/mobile-apps" target="_blank" rel="noopener">Mobile App Development — Next Tab Agency</a>
+          </div>
+          <blockquote class="chunk-text">Our mobile app development team builds React Native cross-platform iOS and Android apps for Australian businesses — from MVP builds with Firebase backends and real-time features to production-grade apps with AI integrations, all delivered by our Brisbane-based engineering team.</blockquote>
+          <div class="chunk-footer">publisher: <strong>Next Tab Agency</strong> &nbsp;·&nbsp; retrieved: 2026-08-16</div>
+        </div>
+        <div class="chunk">
+          <div class="chunk-meta">
+            <span class="badge-sm" style="background:#92400e">statistic</span>
+            <span class="score">relevance 0.95</span> &nbsp;·&nbsp;
+            <a href="https://nexttabagency.com/portfolio/my-fitness-coach" target="_blank" rel="noopener">MyFitnessCoach Case Study — Next Tab Agency</a>
+          </div>
+          <blockquote class="chunk-text">MyFitnessCoach React Native app: 10,000+ downloads within 90 days. 4.8-star App Store rating. Featured in Australian fitness media. Built with AI coaching integration, custom UI/UX, and managed App Store submission.</blockquote>
+          <div class="chunk-footer">publisher: <strong>Next Tab Agency</strong> &nbsp;·&nbsp; retrieved: 2026-08-16</div>
+        </div>
+      </div>
+      <div class="relations-block">
+        <h4>Relations</h4>
+        <div class="relation"><span class="pred" style="color:#f97316">→ USES</span> <a href="#e_008" class="rel-target">Antigravity Framework</a></div>
+      </div>
+    </section>
+
+  </main>
+</div>
+
+<footer>
+  <p>EntityMap v1.0 &nbsp;·&nbsp; <a href="https://nexttabagency.com">Next Tab Agency</a> &nbsp;·&nbsp; Brisbane, QLD, Australia &nbsp;·&nbsp; Generated: 2026-08-16</p>
+  <p><a href="https://nexttabagency.com/entitymap.json">entitymap.json</a> &nbsp;·&nbsp; <a href="https://nexttabagency.com/llms.txt">llms.txt</a> &nbsp;·&nbsp; <a href="https://entitymap.org/spec/v1.0">EntityMap Schema v1.0</a></p>
+</footer>
+
+</body>
+</html>
