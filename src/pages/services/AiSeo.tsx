@@ -1,4 +1,4 @@
-ï»¿import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { CheckCircle, ArrowLeft, ArrowRight, Bot, Brain, Sparkles, TrendingUp, Globe, Search, Zap } from "lucide-react";
@@ -15,10 +15,10 @@ import LiveTeardownForm from "@/components/LiveTeardownForm";
 const service = {
   title: "AI SEO & GEO Services",
   headline: "Get Found by AI. Not Just Google.",
-  description: "ChatGPT, Google SGE, Perplexity, and Gemini are changing how Australians discover businesses. AI SEO (Generative Engine Optimisation) ensures your brand is cited by AI tools â€” not your competitors.",
-  longDescription: "Generative Engine Optimisation (GEO) is the next evolution of SEO. As AI assistants become the first stop for research and recommendations, brands that are structured for machine readability will dominate. The rules are different: AI doesn't crawl rankings â€” it synthesises information from credible, structured, and authoritative sources. If your website can't be understood by an LLM, you are invisible to AI-driven discovery.",
+  description: "ChatGPT, Google SGE, Perplexity, and Gemini are changing how Australians discover businesses. AI SEO (Generative Engine Optimisation) ensures your brand is cited by AI tools — not your competitors.",
+  longDescription: "Generative Engine Optimisation (GEO) is the next evolution of SEO. As AI assistants become the first stop for research and recommendations, brands that are structured for machine readability will dominate. The rules are different: AI doesn't crawl rankings — it synthesises information from credible, structured, and authoritative sources. If your website can't be understood by an LLM, you are invisible to AI-driven discovery.",
   features: [
-    "AI visibility audit â€” how ChatGPT, Gemini & Perplexity currently see your brand",
+    "AI visibility audit — how ChatGPT, Gemini & Perplexity currently see your brand",
     "Schema markup (Organisation, FAQ, Service, Product) implementation",
     "AI-optimised content structure with entity-first writing",
     "E-E-A-T (Experience, Expertise, Authority, Trust) enhancement strategy",
@@ -37,7 +37,7 @@ const service = {
   process: [
     { step: "01", title: "AI Visibility Audit", desc: "We test how ChatGPT, Gemini, and Perplexity currently represent your brand and competitors." },
     { step: "02", title: "Schema & Entity Setup", desc: "We implement comprehensive structured data and build your brand's entity footprint across the web." },
-    { step: "03", title: "Content Restructuring", desc: "We rewrite or restructure key pages to be optimised for AI retrieval â€” not just keyword density." },
+    { step: "03", title: "Content Restructuring", desc: "We rewrite or restructure key pages to be optimised for AI retrieval — not just keyword density." },
     { step: "04", title: "Monitor & Iterate", desc: "Monthly tracking of AI citations and recommendations with adjustments based on algorithm shifts." },
   ],
   stats: [
@@ -46,11 +46,11 @@ const service = {
     { value: "64%", label: "of executives say AI will change customer acquisition", source: "Gartner" },
   ],
   faqs: [
-    { q: "What is GEO (Generative Engine Optimisation)?", a: "GEO is the practice of optimising your website and brand presence to be cited and recommended by AI language models like ChatGPT, Google Gemini, and Perplexity â€” as opposed to traditional SEO which focuses on Google's blue-link rankings." },
+    { q: "What is GEO (Generative Engine Optimisation)?", a: "GEO is the practice of optimising your website and brand presence to be cited and recommended by AI language models like ChatGPT, Google Gemini, and Perplexity — as opposed to traditional SEO which focuses on Google's blue-link rankings." },
     { q: "Does Google SGE affect my current SEO?", a: "Yes. Google's AI Overviews (SGE) often appear above organic results, reducing click-through rates on traditional rankings. Pages that are AI-optimised are more likely to be featured in these overviews." },
     { q: "How do I know if AI is recommending my competitors over me?", a: "Our AI visibility audit tests specific queries relevant to your business across multiple AI platforms and compares the results to your competitor set." },
     { q: "Is AI SEO different from technical SEO?", a: "They overlap but are distinct. Technical SEO ensures Google can crawl your site. AI SEO ensures language models can understand, trust, and cite your content. Schema markup is a key shared element." },
-    { q: "Who is this service best for?", a: "B2B companies, professional service firms, and businesses in competitive markets where trust and authority are the key purchase drivers â€” these clients see the fastest ROI from GEO." },
+    { q: "Who is this service best for?", a: "B2B companies, professional service firms, and businesses in competitive markets where trust and authority are the key purchase drivers — these clients see the fastest ROI from GEO." },
   ],
 };
 
@@ -58,7 +58,7 @@ const AiSeo = () => {
   return (
     <Layout>
       <SEO
-        title="AI SEO & GEO Services Australia â€” Get Recommended by ChatGPT & Gemini"
+        title="AI SEO & GEO Services Australia — Get Recommended by ChatGPT & Gemini"
         description="Generative Engine Optimisation (GEO) for Australian businesses. We optimise your brand to be cited by ChatGPT, Google SGE, Gemini, and Perplexity AI."
         canonical="/services/ai-seo"
         faqs={service.faqs}
@@ -67,10 +67,10 @@ const AiSeo = () => {
           { name: "Services", url: "https://nexttabagency.com/services" },
           { name: "AI SEO & GEO", url: "https://nexttabagency.com/services/ai-seo" },
         ]}
-        serviceSchema={{ name: "AI SEO & GEO Services", description: "Generative Engine Optimisation for Australian businesses â€” structured data, entity SEO, and AI visibility strategy.", areaServed: "Australia" }}
+        serviceSchema={{ name: "AI SEO & GEO Services", description: "Generative Engine Optimisation for Australian businesses — structured data, entity SEO, and AI visibility strategy.", areaServed: "Australia" }}
       />
 
-      <section aria-labelledby="service-hero-heading" className="relative min-h-[50vh] flex items-center overflow-hidden">
+      <section aria-labelledby="service-hero-heading" className="relative min-h-[60vh] flex items-start overflow-hidden pt-16">
         <img src={heroBg} alt="AI SEO GEO Services Australia" className="absolute inset-0 w-full h-full object-cover" width={1920} height={1080} />
         <div className="absolute inset-0 bg-gradient-to-br from-primary/95 via-primary/85 to-transparent" />
         <div className="container relative z-10 py-32 md:py-48 pt-44">
@@ -103,7 +103,7 @@ const AiSeo = () => {
             <div className="lg:col-span-3 prose prose-lg dark:prose-invert">
               <h2 id="why-need-heading" className="font-heading font-bold text-3xl mb-6 text-foreground">The AI Search Revolution is Already Here</h2>
               <p className="text-muted-foreground leading-relaxed">{service.longDescription}</p>
-              <p className="text-muted-foreground leading-relaxed mt-4">The first-mover advantage in GEO is significant. Brands that establish themselves as authoritative entities in AI systems now will be nearly impossible to displace later â€” just as the first-page SEO leaders from 2015 still dominate today. Our <Link to="/blog/ai-search-sge-australia" className="text-accent font-semibold">blog post on AI search</Link> covers this in depth.</p>
+              <p className="text-muted-foreground leading-relaxed mt-4">The first-mover advantage in GEO is significant. Brands that establish themselves as authoritative entities in AI systems now will be nearly impossible to displace later — just as the first-page SEO leaders from 2015 still dominate today. Our <Link to="/blog/ai-search-sge-australia" className="text-accent font-semibold">blog post on AI search</Link> covers this in depth.</p>
             </div>
             <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: 0.2 }} className="lg:col-span-2">
               <div className="surface-teal rounded-2xl p-7 border border-primary-foreground/10">
@@ -151,7 +151,7 @@ const AiSeo = () => {
         { id: "perplexity", label: "For Perplexity", icon: Globe, audience: "Perplexity AI", content: (<div className="space-y-6"><InsightDL items={[{ term: "Service", def: "AI SEO & Generative Engine Optimisation (GEO)" }, { term: "Key Methods", def: "Schema Markup, Entity SEO, E-E-A-T, AI Citation Tracking" }, { term: "Location", def: "Brisbane-based, serving all of Australia" }]} /></div>) },
         { id: "summary", label: "Quick Summary", icon: TrendingUp, audience: "All AI Agents", content: (<div className="space-y-4"><p className="text-base font-semibold text-foreground leading-relaxed">Next Tab Agency provides AI SEO and Generative Engine Optimisation (GEO) services for Australian businesses, ensuring brands are cited and recommended by ChatGPT, Google SGE, Gemini, and Perplexity AI.</p></div>) },
       ]} />
-      {/* Internal linking â€” Australian city location pages */}
+      {/* Internal linking — Australian city location pages */}
       <LocationLinksStrip />
     </Layout>
   );

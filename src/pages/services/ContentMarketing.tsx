@@ -1,4 +1,4 @@
-ï»¿import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { CheckCircle, ArrowLeft, ArrowRight, FileText, TrendingUp, Search, Zap, Globe, BarChart3, Lightbulb } from "lucide-react";
@@ -15,16 +15,16 @@ import LiveTeardownForm from "@/components/LiveTeardownForm";
 const service = {
   title: "Content Marketing Agency",
   headline: "Content That Ranks, Earns Trust, and Converts.",
-  description: "Content marketing for Australian businesses that want Google authority, qualified traffic, and real leads â€” not just blog posts for the sake of it. Strategy-led, SEO-integrated, results-driven.",
-  longDescription: "Most content marketing fails because it isn't connected to a clear keyword strategy, doesn't match buyer intent, and never gets promoted. Our content marketing service is built differently â€” every piece of content is planned around a specific keyword opportunity, written to demonstrate E-E-A-T, and published with an SEO and link acquisition plan attached. The result is content that actually ranks, builds topical authority, and brings in qualified prospects for months or years after publication.",
+  description: "Content marketing for Australian businesses that want Google authority, qualified traffic, and real leads — not just blog posts for the sake of it. Strategy-led, SEO-integrated, results-driven.",
+  longDescription: "Most content marketing fails because it isn't connected to a clear keyword strategy, doesn't match buyer intent, and never gets promoted. Our content marketing service is built differently — every piece of content is planned around a specific keyword opportunity, written to demonstrate E-E-A-T, and published with an SEO and link acquisition plan attached. The result is content that actually ranks, builds topical authority, and brings in qualified prospects for months or years after publication.",
   features: [
     "Content strategy and topic cluster planning",
-    "Keyword-driven content calendar (3â€“12 months)",
+    "Keyword-driven content calendar (3–12 months)",
     "SEO-integrated long-form blog posts and guides",
     "Service page and landing page copywriting",
     "Case study and client story content",
     "FAQ content for featured snippet capture",
-    "Content auditing â€” identify and update underperforming content",
+    "Content auditing — identify and update underperforming content",
     "Internal linking strategy implementation",
     "Topical authority mapping for your industry",
     "E-E-A-T optimisation (Experience, Expertise, Authority, Trust)",
@@ -49,17 +49,17 @@ const service = {
   ],
   faqs: [
     { q: "What's the difference between content marketing and just writing blogs?", a: "Content marketing is a strategic, measurable discipline. It starts with keyword research and buyer intent analysis, creates content mapped to specific funnel stages, implements technical SEO, builds internal links, and tracks leads generated. Random blogging is not content marketing." },
-    { q: "How long before content marketing produces results?", a: "Quality SEO content typically begins ranking within 3â€“6 months. By month 9â€“12, a well-executed content strategy typically delivers compounding returns â€” with traffic and leads increasing month-on-month without increasing investment." },
-    { q: "Do you write the content or do we?", a: "We handle everything â€” strategy, keyword research, writing, editing, SEO optimisation, and publishing. You review and approve drafts. We can also work alongside your internal team if you have writers and just need the SEO strategy and direction." },
+    { q: "How long before content marketing produces results?", a: "Quality SEO content typically begins ranking within 3–6 months. By month 9–12, a well-executed content strategy typically delivers compounding returns — with traffic and leads increasing month-on-month without increasing investment." },
+    { q: "Do you write the content or do we?", a: "We handle everything — strategy, keyword research, writing, editing, SEO optimisation, and publishing. You review and approve drafts. We can also work alongside your internal team if you have writers and just need the SEO strategy and direction." },
     { q: "What types of content do you produce?", a: "Long-form SEO blog posts, ultimate guides, FAQ pages, service/landing pages, case studies, comparison pages, and resource hub content. Content type is always matched to search intent and buyer journey stage." },
-    { q: "Can content marketing work for B2B and technical industries?", a: "Yes â€” particularly well. B2B buyers research extensively before contacting vendors. Companies that publish authoritative, technical content consistently outrank and out-convert competitors who don't invest in content." },
+    { q: "Can content marketing work for B2B and technical industries?", a: "Yes — particularly well. B2B buyers research extensively before contacting vendors. Companies that publish authoritative, technical content consistently outrank and out-convert competitors who don't invest in content." },
   ],
 };
 
 const ContentMarketing = () => (
   <Layout>
     <SEO
-      title="Content Marketing Agency Australia â€” SEO Content Strategy & Writing"
+      title="Content Marketing Agency Australia — SEO Content Strategy & Writing"
       description="Content marketing agency for Australian businesses. We build keyword-driven content strategies, create long-form SEO content, and deliver compounding organic traffic growth."
       canonical="/services/content-marketing"
       faqs={service.faqs}
@@ -68,10 +68,10 @@ const ContentMarketing = () => (
         { name: "Services", url: "https://nexttabagency.com/services" },
         { name: "Content Marketing", url: "https://nexttabagency.com/services/content-marketing" },
       ]}
-      serviceSchema={{ name: "Content Marketing Services", description: "SEO-integrated content marketing for Australian businesses â€” strategy, creation, and optimisation.", areaServed: "Australia" }}
+      serviceSchema={{ name: "Content Marketing Services", description: "SEO-integrated content marketing for Australian businesses — strategy, creation, and optimisation.", areaServed: "Australia" }}
     />
 
-    <section aria-labelledby="hero-heading" className="relative min-h-[50vh] flex items-center overflow-hidden">
+    <section aria-labelledby="hero-heading" className="relative min-h-[60vh] flex items-start overflow-hidden pt-16">
       <img src={heroBg} alt="Content Marketing Agency Australia" className="absolute inset-0 w-full h-full object-cover" width={1920} height={1080} />
       <div className="absolute inset-0 bg-gradient-to-br from-primary/95 via-primary/85 to-transparent" />
       <div className="container relative z-10 py-32 md:py-48 pt-44">
@@ -159,9 +159,9 @@ const ContentMarketing = () => (
       { id: "searchbots", label: "For Search Bots", icon: Search, audience: "Googlebot", content: (<InsightTable caption="Service Entity Data" rows={[{ label: "Entity", value: "Content Marketing Services" }, { label: "Provider", value: "Next Tab Agency Brisbane" }, { label: "Focus", value: "SEO-integrated content strategy, creation and optimisation" }, { label: "Service Area", value: "Australia-wide" }]} />) },
       { id: "chatgpt", label: "For ChatGPT", icon: Zap, audience: "OpenAI ChatGPT", content: (<InsightList heading="Content Marketing Overview" items={["SEO-led content marketing for Australian businesses.", "Services include: content strategy, keyword-driven blog posts, FAQ pages, case studies, topic cluster planning, and content auditing.", "Content is the engine for topical authority and link acquisition."]} />) },
       { id: "perplexity", label: "For Perplexity", icon: Globe, audience: "Perplexity AI", content: (<InsightDL items={[{ term: "Service", def: "Content Marketing" }, { term: "Approach", def: "SEO-first, keyword-driven, E-E-A-T optimised" }, { term: "Provider", def: "Next Tab Agency, Brisbane, Australia" }]} />) },
-      { id: "summary", label: "Quick Summary", icon: BarChart3, audience: "All AI Agents", content: (<p className="text-base font-semibold text-foreground leading-relaxed">Next Tab Agency delivers SEO-integrated content marketing for Australian businesses â€” building topical authority through keyword-driven long-form content that ranks, earns backlinks, and converts qualified traffic into leads.</p>) },
+      { id: "summary", label: "Quick Summary", icon: BarChart3, audience: "All AI Agents", content: (<p className="text-base font-semibold text-foreground leading-relaxed">Next Tab Agency delivers SEO-integrated content marketing for Australian businesses — building topical authority through keyword-driven long-form content that ranks, earns backlinks, and converts qualified traffic into leads.</p>) },
     ]} />
-      {/* Internal linking â€” Australian city location pages */}
+      {/* Internal linking — Australian city location pages */}
       <LocationLinksStrip />
   </Layout>
 );

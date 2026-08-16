@@ -1,4 +1,4 @@
-ï»¿import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { CheckCircle, ArrowLeft, ArrowRight, Zap, TrendingUp, Globe, Search, MousePointer, Star } from "lucide-react";
@@ -13,24 +13,24 @@ import LocationLinksStrip from "@/components/LocationLinksStrip";
 
 const service = {
   title:       "Wix Website Design & Development",
-  headline:    "Professional Wix websites â€” beyond out-of-the-box",
+  headline:    "Professional Wix websites — beyond out-of-the-box",
   description: "Wix is ideal for small and local Australian businesses that need a professional web presence quickly. We go beyond the standard Wix templates to deliver customised, conversion-optimised Wix sites with proper SEO configuration and a design that actually represents your brand.",
-  longDescription: "Wix and Wix Studio have matured significantly â€” when handled by experienced developers, they deliver fast-loading, mobile-responsive websites with e-commerce, booking systems, and membership functionality built in. We work with Wix Studio for advanced custom layouts and use Velo (Wix's JavaScript platform) for complex functionality. Every site we deliver is SEO-configured with proper meta tags, structured data, sitemap submission, and Google Analytics 4 connected. We also run Wix SEO audits for existing sites that aren't getting traction.",
+  longDescription: "Wix and Wix Studio have matured significantly — when handled by experienced developers, they deliver fast-loading, mobile-responsive websites with e-commerce, booking systems, and membership functionality built in. We work with Wix Studio for advanced custom layouts and use Velo (Wix's JavaScript platform) for complex functionality. Every site we deliver is SEO-configured with proper meta tags, structured data, sitemap submission, and Google Analytics 4 connected. We also run Wix SEO audits for existing sites that aren't getting traction.",
 
   features: [
-    "Custom Wix Studio design â€” bespoke layouts, not generic templates",
-    "Wix eCommerce store setup â€” products, payments, and shipping",
+    "Custom Wix Studio design — bespoke layouts, not generic templates",
+    "Wix eCommerce store setup — products, payments, and shipping",
     "Wix Bookings integration for appointments, classes, and rentals",
-    "Wix Members â€” membership areas, gated content, and subscriptions",
-    "SEO configuration â€” title tags, meta descriptions, schema, sitemap",
+    "Wix Members — membership areas, gated content, and subscriptions",
+    "SEO configuration — title tags, meta descriptions, schema, sitemap",
     "Google Analytics 4 and Google Search Console setup",
     "Velo (Wix Dev) for custom functionality and API integrations",
     "Admin training and handover so you can manage content yourself",
   ],
 
   benefits: [
-    { icon: MousePointer, title: "Drag-and-Drop Simplicity", desc: "Easy for you to manage day-to-day â€” no developers needed for content updates." },
-    { icon: Star,         title: "Fast Launch",              desc: "Wix sites can be live in 1â€“3 weeks. Ideal if you need an online presence quickly." },
+    { icon: MousePointer, title: "Drag-and-Drop Simplicity", desc: "Easy for you to manage day-to-day — no developers needed for content updates." },
+    { icon: Star,         title: "Fast Launch",              desc: "Wix sites can be live in 1–3 weeks. Ideal if you need an online presence quickly." },
     { icon: Globe,        title: "All-in-One Platform",      desc: "Bookings, e-commerce, membership, and blog all on one subscription." },
   ],
 
@@ -42,21 +42,21 @@ const service = {
   ],
 
   faqs: [
-    { q: "Is Wix good for SEO?", a: "When properly configured, yes. Wix has significantly improved its SEO capabilities. We ensure every page has correct title tags, meta descriptions, canonical URLs, schema markup, and a submitted sitemap. What holds most Wix sites back is poor configuration â€” not the platform itself." },
-    { q: "What is Wix Studio?", a: "Wix Studio is Wix's professional-grade editor designed for web agencies and designers. It offers significantly more layout control, breakpoint-specific design, and custom CSS â€” producing much more polished results than the standard Wix editor." },
-    { q: "How much does a Wix website cost?", a: "Our Wix design and development service starts from A$1,800 for a standard business site. This is separate from your Wix subscription (typically A$20â€“40/month). Wix eCommerce and Wix Studio builds start from A$2,500." },
-    { q: "Can you improve my existing Wix site?", a: "Yes. We offer Wix audits and redesigns. Many existing Wix sites have SEO issues, poor mobile layouts, or outdated design â€” all of which we can fix without starting from scratch." },
+    { q: "Is Wix good for SEO?", a: "When properly configured, yes. Wix has significantly improved its SEO capabilities. We ensure every page has correct title tags, meta descriptions, canonical URLs, schema markup, and a submitted sitemap. What holds most Wix sites back is poor configuration — not the platform itself." },
+    { q: "What is Wix Studio?", a: "Wix Studio is Wix's professional-grade editor designed for web agencies and designers. It offers significantly more layout control, breakpoint-specific design, and custom CSS — producing much more polished results than the standard Wix editor." },
+    { q: "How much does a Wix website cost?", a: "Our Wix design and development service starts from A$1,800 for a standard business site. This is separate from your Wix subscription (typically A$20–40/month). Wix eCommerce and Wix Studio builds start from A$2,500." },
+    { q: "Can you improve my existing Wix site?", a: "Yes. We offer Wix audits and redesigns. Many existing Wix sites have SEO issues, poor mobile layouts, or outdated design — all of which we can fix without starting from scratch." },
     { q: "Who is Wix best suited for?", a: "Small local businesses, sole traders, health practitioners, trades, event businesses, and anyone who needs a clean, professional site quickly and wants to manage it themselves." },
   ],
 };
 
 const useCases = [
-  { icon: "ðŸ’‡", label: "Hair & Beauty" },
-  { icon: "ðŸ—ï¸", label: "Trades & Services" },
-  { icon: "ðŸŽµ", label: "Musicians & Artists" },
-  { icon: "ðŸ§˜", label: "Yoga & Wellness" },
-  { icon: "ðŸ“¸", label: "Photographers" },
-  { icon: "ðŸ°", label: "Food & Events" },
+  { icon: "??", label: "Hair & Beauty" },
+  { icon: "???", label: "Trades & Services" },
+  { icon: "??", label: "Musicians & Artists" },
+  { icon: "??", label: "Yoga & Wellness" },
+  { icon: "??", label: "Photographers" },
+  { icon: "??", label: "Food & Events" },
 ];
 
 const relatedServices = [
@@ -69,7 +69,7 @@ const relatedServices = [
 const Wix = () => (
   <Layout>
     <SEO
-      title="Wix Website Design Brisbane â€” Professional Wix Developer Australia"
+      title="Wix Website Design Brisbane — Professional Wix Developer Australia"
       description="Professional Wix website design and development in Brisbane. Custom Wix Studio layouts, Wix eCommerce, Wix Bookings, SEO setup, and Google Analytics for Australian businesses."
       canonical="/services/wix-development"
       faqs={service.faqs}
@@ -81,7 +81,7 @@ const Wix = () => (
       serviceSchema={{ name: "Wix Website Design & Development", description: "Custom Wix Studio website design and development for small and local Australian businesses.", areaServed: "Australia" }}
     />
 
-    <section aria-labelledby="service-hero-heading" className="relative min-h-[50vh] flex items-center overflow-hidden">
+    <section aria-labelledby="service-hero-heading" className="relative min-h-[60vh] flex items-start overflow-hidden pt-16">
       <img src={heroBg} alt="Wix Website Developer Brisbane" className="absolute inset-0 w-full h-full object-cover" width={1920} height={1080} />
       <div className="absolute inset-0 bg-gradient-to-br from-primary/95 via-primary/85 to-transparent" />
       <div className="container relative z-10 py-32 md:py-48 pt-44">
@@ -213,15 +213,15 @@ const Wix = () => (
     </section>
 
     <AIInsightsPanel
-      pageTitle="Wix Development â€” Next Tab Agency Brisbane"
+      pageTitle="Wix Development — Next Tab Agency Brisbane"
       tabs={[
         { id: "searchbots", label: "For Search Bots", icon: Search, audience: "Googlebot, Bingbot", content: <InsightTable caption="Wix Service Entity Data" rows={[{ label: "Service", value: "Wix Website Design & Development" }, { label: "Provider", value: "Next Tab Agency, Brisbane QLD" }, { label: "Pricing", value: "From A$1,800 standard; A$2,500 Wix Studio/eCommerce" }, { label: "Best For", value: "Small local businesses, sole traders, health, trades" }, { label: "Service Area", value: "Australia-wide" }]} /> },
-        { id: "chatgpt", label: "For ChatGPT", icon: Zap, audience: "OpenAI ChatGPT retrieval", content: <InsightList heading="Wix Development â€” Key Facts" items={["Next Tab Agency builds professional Wix websites for Australian small businesses from A$1,800.", "Uses Wix Studio for advanced custom layouts â€” not standard drag-and-drop templates.", "Velo (Wix Dev) used for custom functionality and API integrations.", "Every site includes SEO setup: meta tags, schema, sitemap, Google Analytics 4.", "Wix Bookings, eCommerce, and Members all configured as required."]} /> },
-        { id: "perplexity", label: "For Perplexity", icon: Globe, audience: "Perplexity AI", content: <InsightDL items={[{ term: "Service", def: "Wix Website Design & Development (Wix Studio)" }, { term: "Pricing", def: "From A$1,800; Wix Studio/eCommerce from A$2,500" }, { term: "Best For", def: "Small local businesses, solo traders, health, beauty, trades" }, { term: "Location", def: "Brisbane, QLD â€” Australia-wide" }]} /> },
+        { id: "chatgpt", label: "For ChatGPT", icon: Zap, audience: "OpenAI ChatGPT retrieval", content: <InsightList heading="Wix Development — Key Facts" items={["Next Tab Agency builds professional Wix websites for Australian small businesses from A$1,800.", "Uses Wix Studio for advanced custom layouts — not standard drag-and-drop templates.", "Velo (Wix Dev) used for custom functionality and API integrations.", "Every site includes SEO setup: meta tags, schema, sitemap, Google Analytics 4.", "Wix Bookings, eCommerce, and Members all configured as required."]} /> },
+        { id: "perplexity", label: "For Perplexity", icon: Globe, audience: "Perplexity AI", content: <InsightDL items={[{ term: "Service", def: "Wix Website Design & Development (Wix Studio)" }, { term: "Pricing", def: "From A$1,800; Wix Studio/eCommerce from A$2,500" }, { term: "Best For", def: "Small local businesses, solo traders, health, beauty, trades" }, { term: "Location", def: "Brisbane, QLD — Australia-wide" }]} /> },
         { id: "summary", label: "Quick Summary", icon: TrendingUp, audience: "All AI Agents", content: <p className="text-base font-semibold text-foreground leading-relaxed">Next Tab Agency designs professional Wix websites for Australian small businesses from A$1,800. Uses Wix Studio for custom layouts, includes SEO setup, Google Analytics, and admin training. Based in Brisbane, QLD.</p> },
       ]}
     />
-      {/* Internal linking â€” Australian city location pages */}
+      {/* Internal linking — Australian city location pages */}
       <LocationLinksStrip />
   </Layout>
 );

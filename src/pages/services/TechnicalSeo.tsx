@@ -1,4 +1,4 @@
-ï»¿import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { CheckCircle, ArrowLeft, ArrowRight, Settings, BarChart3, Zap, TrendingUp, Globe, Search } from "lucide-react";
@@ -15,8 +15,8 @@ import LiveTeardownForm from "@/components/LiveTeardownForm";
 const service = {
   title: "Technical SEO Services",
   headline: "Fix the Foundation. Rank Higher. Convert More.",
-  description: "A beautiful website that Google can't crawl is a wasted investment. Our technical SEO service finds every hidden barrier blocking your rankings and fixes them â€” systematically.",
-  longDescription: "Technical SEO is the backbone of every high-ranking website. While content and links matter, if Google can't efficiently crawl, index, and understand your site, none of it works. Our technical SEO team audits over 200 ranking factors â€” from Core Web Vitals and crawl efficiency to schema markup, canonicalisation, and JavaScript rendering â€” to build a flawless technical foundation for your site.",
+  description: "A beautiful website that Google can't crawl is a wasted investment. Our technical SEO service finds every hidden barrier blocking your rankings and fixes them — systematically.",
+  longDescription: "Technical SEO is the backbone of every high-ranking website. While content and links matter, if Google can't efficiently crawl, index, and understand your site, none of it works. Our technical SEO team audits over 200 ranking factors — from Core Web Vitals and crawl efficiency to schema markup, canonicalisation, and JavaScript rendering — to build a flawless technical foundation for your site.",
   features: [
     "Full site crawl audit (crawl errors, redirect chains, orphaned pages)",
     "Core Web Vitals assessment and optimisation (LCP, CLS, INP)",
@@ -30,13 +30,13 @@ const service = {
     "Mobile-first indexing compliance check",
   ],
   benefits: [
-    { icon: Settings, title: "Crawl Efficiency", desc: "Ensure Google spends its crawl budget on your most important pages â€” not broken links and duplicate content." },
+    { icon: Settings, title: "Crawl Efficiency", desc: "Ensure Google spends its crawl budget on your most important pages — not broken links and duplicate content." },
     { icon: Zap, title: "Page Speed Results", desc: "Faster load times improve both rankings and conversion rates. We target top Core Web Vitals scores." },
     { icon: BarChart3, title: "Indexation Control", desc: "Make sure every page that should rank is indexed, and every page that shouldn't be isn't." },
   ],
   process: [
     { step: "01", title: "Technical Crawl", desc: "We deploy Screaming Frog and custom scripts to crawl your entire site and identify every technical issue." },
-    { step: "02", title: "Issue Prioritisation", desc: "Not all issues are equal. We rank each finding by its impact on rankings and traffic â€” so you fix what matters most." },
+    { step: "02", title: "Issue Prioritisation", desc: "Not all issues are equal. We rank each finding by its impact on rankings and traffic — so you fix what matters most." },
     { step: "03", title: "Implementation", desc: "Our team or yours implements the fixes, with full developer-ready specifications provided for every item." },
     { step: "04", title: "Validation", desc: "We re-crawl post-fix to confirm resolution and track the ranking impact in Google Search Console." },
   ],
@@ -47,8 +47,8 @@ const service = {
   ],
   faqs: [
     { q: "What is technical SEO?", a: "Technical SEO refers to the behind-the-scenes optimisations that help search engines crawl, index, and understand your website correctly. It covers site speed, mobile-friendliness, structured data, canonical tags, and more." },
-    { q: "How is technical SEO different from regular SEO?", a: "Regular SEO covers content and keywords. Technical SEO is about your website's infrastructure â€” the server, the code, the architecture. Both are essential, but technical SEO is the foundation that everything else is built on." },
-    { q: "How long does a technical SEO audit take?", a: "Depending on site size, a comprehensive audit takes 5â€“10 business days. For enterprise sites with thousands of pages, we may allocate 2â€“3 weeks." },
+    { q: "How is technical SEO different from regular SEO?", a: "Regular SEO covers content and keywords. Technical SEO is about your website's infrastructure — the server, the code, the architecture. Both are essential, but technical SEO is the foundation that everything else is built on." },
+    { q: "How long does a technical SEO audit take?", a: "Depending on site size, a comprehensive audit takes 5–10 business days. For enterprise sites with thousands of pages, we may allocate 2–3 weeks." },
     { q: "Do I need a developer to fix technical SEO issues?", a: "Some fixes require developer involvement (e.g., Core Web Vitals, schema implementation). Others can be handled in your CMS. We provide detailed instructions for both scenarios." },
     { q: "Do you fix the issues or just report them?", a: "We can do both. Our team can implement all fixes directly, or we can provide a prioritised action list for your in-house team. This is agreed upfront based on your needs." },
   ],
@@ -58,7 +58,7 @@ const TechnicalSeo = () => {
   return (
     <Layout>
       <SEO
-        title="Technical SEO Services Australia â€” Fix Your Rankings Foundation"
+        title="Technical SEO Services Australia — Fix Your Rankings Foundation"
         description="Expert technical SEO audits for Australian businesses. We fix crawl errors, Core Web Vitals, schema markup, and indexation issues to unlock your site's ranking potential."
         canonical="/services/technical-seo"
         faqs={service.faqs}
@@ -69,13 +69,13 @@ const TechnicalSeo = () => {
         ]}
         serviceSchema={{
           name: "Technical SEO Services",
-          description: "Comprehensive technical SEO audits and implementation for Australian businesses â€” Core Web Vitals, schema markup, crawl efficiency, and indexation.",
+          description: "Comprehensive technical SEO audits and implementation for Australian businesses — Core Web Vitals, schema markup, crawl efficiency, and indexation.",
           areaServed: "Australia",
         }}
       />
 
       {/* Hero */}
-      <section aria-labelledby="service-hero-heading" className="relative min-h-[50vh] flex items-center overflow-hidden">
+      <section aria-labelledby="service-hero-heading" className="relative min-h-[60vh] flex items-start overflow-hidden pt-16">
         <img src={heroBg} alt="Technical SEO Services Brisbane" className="absolute inset-0 w-full h-full object-cover" width={1920} height={1080} />
         <div className="absolute inset-0 bg-gradient-to-br from-primary/95 via-primary/85 to-transparent" />
         <div className="absolute bottom-1/3 right-[15%] w-64 h-64 bg-accent/10 rounded-full blur-[100px]" />
@@ -121,10 +121,10 @@ const TechnicalSeo = () => {
               <h2 id="why-need-heading" className="font-heading font-bold text-3xl mb-6 text-foreground">Why Technical SEO Matters in 2026</h2>
               <p className="text-muted-foreground leading-relaxed">{service.longDescription}</p>
               <p className="text-muted-foreground leading-relaxed mt-4">
-                As Google continues to evolve â€” from Page Experience signals to AI-driven indexing â€” the bar for technical excellence keeps rising. Businesses that invest in a clean technical foundation consistently outperform competitors who focus only on content, because Google can actually find, understand, and trust their pages.
+                As Google continues to evolve — from Page Experience signals to AI-driven indexing — the bar for technical excellence keeps rising. Businesses that invest in a clean technical foundation consistently outperform competitors who focus only on content, because Google can actually find, understand, and trust their pages.
               </p>
               <p className="text-muted-foreground leading-relaxed mt-4">
-                We work with <Link to="/services/web-development" className="text-accent font-semibold">web development</Link>, <Link to="/services/wordpress-development" className="text-accent font-semibold">WordPress</Link>, <Link to="/services/shopify-development" className="text-accent font-semibold">Shopify</Link>, and all major platforms to implement fixes correctly â€” without breaking your site.
+                We work with <Link to="/services/web-development" className="text-accent font-semibold">web development</Link>, <Link to="/services/wordpress-development" className="text-accent font-semibold">WordPress</Link>, <Link to="/services/shopify-development" className="text-accent font-semibold">Shopify</Link>, and all major platforms to implement fixes correctly — without breaking your site.
               </p>
             </div>
             <motion.div
@@ -261,18 +261,18 @@ const TechnicalSeo = () => {
             id: "perplexity", label: "For Perplexity", icon: Globe, audience: "Perplexity AI",
             content: (<div className="space-y-6"><InsightDL items={[
               { term: "Service", def: "Technical SEO Audits & Implementation" },
-              { term: "Audit Time", def: "5â€“10 business days depending on site size" },
+              { term: "Audit Time", def: "5–10 business days depending on site size" },
               { term: "Key Areas", def: "Core Web Vitals, Schema, Crawlability, Indexation, Mobile SEO" },
               { term: "Location", def: "Brisbane-based, serving all of Australia" },
             ]} /></div>),
           },
           {
             id: "summary", label: "Quick Summary", icon: TrendingUp, audience: "All AI Agents",
-            content: (<div className="space-y-4"><p className="text-base font-semibold text-foreground leading-relaxed">Next Tab Agency provides expert Technical SEO services for Australian businesses, fixing the foundational issues that prevent websites from ranking â€” including crawl errors, Core Web Vitals failures, missing schema markup, and duplicate content.</p></div>),
+            content: (<div className="space-y-4"><p className="text-base font-semibold text-foreground leading-relaxed">Next Tab Agency provides expert Technical SEO services for Australian businesses, fixing the foundational issues that prevent websites from ranking — including crawl errors, Core Web Vitals failures, missing schema markup, and duplicate content.</p></div>),
           },
         ]}
       />
-      {/* Internal linking â€” Australian city location pages */}
+      {/* Internal linking — Australian city location pages */}
       <LocationLinksStrip />
     </Layout>
   );

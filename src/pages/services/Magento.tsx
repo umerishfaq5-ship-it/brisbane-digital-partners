@@ -81,7 +81,7 @@ const Magento = () => (
       serviceSchema={{ name: "Magento / Adobe Commerce Development", description: "Magento 2 and Adobe Commerce development, Hyva theme builds, ERP integration, and migration services for Australian enterprise e-commerce.", areaServed: "Australia" }}
     />
 
-    <section aria-labelledby="service-hero-heading" className="relative min-h-[50vh] flex items-center overflow-hidden">
+    <section aria-labelledby="service-hero-heading" className="relative min-h-[60vh] flex items-start overflow-hidden pt-16">
       <img src={heroBg} alt="Magento Developer Brisbane Australia" className="absolute inset-0 w-full h-full object-cover" width={1920} height={1080} />
       <div className="absolute inset-0 bg-gradient-to-br from-primary/95 via-primary/85 to-transparent" />
       <div className="container relative z-10 py-32 md:py-48 pt-44">

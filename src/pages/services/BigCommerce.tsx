@@ -81,7 +81,7 @@ const BigCommerce = () => (
       serviceSchema={{ name: "BigCommerce Development", description: "Custom BigCommerce e-commerce development, headless builds, and migrations for Australian retailers and wholesalers.", areaServed: "Australia" }}
     />
 
-    <section aria-labelledby="service-hero-heading" className="relative min-h-[50vh] flex items-center overflow-hidden">
+    <section aria-labelledby="service-hero-heading" className="relative min-h-[60vh] flex items-start overflow-hidden pt-16">
       <img src={heroBg} alt="BigCommerce Development Brisbane Australia" className="absolute inset-0 w-full h-full object-cover" width={1920} height={1080} />
       <div className="absolute inset-0 bg-gradient-to-br from-primary/95 via-primary/85 to-transparent" />
       <div className="container relative z-10 py-32 md:py-48 pt-44">

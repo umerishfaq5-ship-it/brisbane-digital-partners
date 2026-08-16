@@ -70,7 +70,7 @@ const EmailMarketing = () => (
       serviceSchema={{ name: "Email Marketing Agency Brisbane", description: "Email marketing strategy, automation, and campaign management for Brisbane and Australian businesses. Klaviyo, Mailchimp, ActiveCampaign. SPAM Act 2003 compliant.", areaServed: "Brisbane, Australia" }}
     />
 
-    <section aria-labelledby="hero-heading" className="relative min-h-[50vh] flex items-center overflow-hidden">
+    <section aria-labelledby="hero-heading" className="relative min-h-[60vh] flex items-start overflow-hidden pt-16">
       <img src={heroBg} alt="Email Marketing Agency Australia" className="absolute inset-0 w-full h-full object-cover" width={1920} height={1080} />
       <div className="absolute inset-0 bg-gradient-to-br from-primary/95 via-primary/85 to-transparent" />
       <div className="container relative z-10 py-32 md:py-48 pt-44">

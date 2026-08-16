@@ -63,7 +63,7 @@ const OffPageSeo = () => (
       ]}
       serviceSchema={{ name: "Off-Page SEO Brisbane", description: "Off-page SEO, link building, and digital PR for Brisbane and Australian businesses. Australian-earned editorial links only.", areaServed: "Brisbane, Australia" }}
     />
-    <section aria-labelledby="hero-heading" className="relative min-h-[50vh] flex items-center overflow-hidden">
+    <section aria-labelledby="hero-heading" className="relative min-h-[60vh] flex items-start overflow-hidden pt-16">
       <img src={heroBg} alt="Off-Page SEO Australia" className="absolute inset-0 w-full h-full object-cover" width={1920} height={1080} />
       <div className="absolute inset-0 bg-gradient-to-br from-primary/95 via-primary/85 to-transparent" />
       <div className="container relative z-10 py-32 md:py-48 pt-44">

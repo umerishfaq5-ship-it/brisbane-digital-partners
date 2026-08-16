@@ -1,4 +1,4 @@
-ï»¿import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { CheckCircle, ArrowLeft, ArrowRight, MapPin, Target, TrendingUp, Zap, Globe, Search, Phone } from "lucide-react";
@@ -13,8 +13,8 @@ import LocationLinksStrip from "@/components/LocationLinksStrip";
 import LiveTeardownForm from "@/components/LiveTeardownForm";
 
 const faqs = [
-  { q: "Is there a dedicated PPC agency in Brisbane?", a: "Yes â€” Next Tab Agency is a Brisbane-based PPC agency specialising in Google Ads, Meta Ads, and full-funnel paid advertising for Brisbane and Queensland businesses. We're not an outsourced or remote-only service â€” we're local." },
-  { q: "How much does PPC management cost in Brisbane?", a: "Our Brisbane PPC management starts from $800/month management fee, separate from your ad spend. The right ad spend budget depends on your industry and competition level â€” we'll recommend the minimum effective budget at our initial audit session." },
+  { q: "Is there a dedicated PPC agency in Brisbane?", a: "Yes — Next Tab Agency is a Brisbane-based PPC agency specialising in Google Ads, Meta Ads, and full-funnel paid advertising for Brisbane and Queensland businesses. We're not an outsourced or remote-only service — we're local." },
+  { q: "How much does PPC management cost in Brisbane?", a: "Our Brisbane PPC management starts from $800/month management fee, separate from your ad spend. The right ad spend budget depends on your industry and competition level — we'll recommend the minimum effective budget at our initial audit session." },
   { q: "How quickly can you launch a Google Ads campaign in Brisbane?", a: "We can typically launch within 5-7 business days of receiving your business information and approving the campaign strategy. For urgent campaigns, we have a fast-track onboarding process." },
   { q: "Do you specialise in any particular Brisbane industries?", a: "We work with Brisbane tradies, local services, medical and dental practices, law firms, retail and eCommerce, and professional services. Our team has deep keyword and competitive intelligence for every major Brisbane industry vertical." },
   { q: "What's included in PPC management for Brisbane businesses?", a: "Campaign setup or audit, keyword research, ad copywriting, bid management, landing page review, audience targeting, A/B testing, and monthly performance reporting with ROAS, CPA, and lead volume data." },
@@ -22,14 +22,14 @@ const faqs = [
 
 const stats = [
   { value: "1,039", label: "Monthly searches for 'PPC management Brisbane' alone", source: "Google GSC" },
-  { value: "$15â€“50", label: "Average cost per click for Brisbane trade & service ads", source: "WordStream AU" },
+  { value: "$15–50", label: "Average cost per click for Brisbane trade & service ads", source: "WordStream AU" },
   { value: "4.4x", label: "Average ROAS for Google Ads in local services", source: "Google Economic Impact" },
 ];
 
 const features = [
-  "Google Search Ads â€” target 'near me' and suburb-specific Brisbane queries",
-  "Google Display & Remarketing â€” stay visible after Brisbane visitors leave your site",
-  "Google Shopping â€” product-level ads for Brisbane eCommerce",
+  "Google Search Ads — target 'near me' and suburb-specific Brisbane queries",
+  "Google Display & Remarketing — stay visible after Brisbane visitors leave your site",
+  "Google Shopping — product-level ads for Brisbane eCommerce",
   "Brisbane competitor keyword targeting strategy",
   "Suburb and postcode geo-targeting for specific Brisbane areas",
   "Call tracking and lead attribution for Brisbane phone enquiries",
@@ -42,8 +42,8 @@ const features = [
 const PpcBrisbane = () => (
   <Layout>
     <SEO
-      title="PPC Agency Brisbane â€” Google Ads Management Brisbane"
-      description="Brisbane's results-focused PPC agency. We manage Google Ads, Meta Ads, and full paid media for Brisbane businesses â€” delivering real leads, not just clicks."
+      title="PPC Agency Brisbane — Google Ads Management Brisbane"
+      description="Brisbane's results-focused PPC agency. We manage Google Ads, Meta Ads, and full paid media for Brisbane businesses — delivering real leads, not just clicks."
       canonical="/services/ppc-brisbane"
       faqs={faqs}
       breadcrumbs={[
@@ -54,7 +54,7 @@ const PpcBrisbane = () => (
       serviceSchema={{ name: "PPC Agency Brisbane", description: "Google Ads and paid media management for Brisbane businesses.", areaServed: "Brisbane, Queensland" }}
     />
 
-    <section aria-labelledby="hero-heading" className="relative min-h-[50vh] flex items-center overflow-hidden">
+    <section aria-labelledby="hero-heading" className="relative min-h-[60vh] flex items-start overflow-hidden pt-16">
       <img src={heroBg} alt="PPC Agency Brisbane Google Ads" className="absolute inset-0 w-full h-full object-cover" width={1920} height={1080} />
       <div className="absolute inset-0 bg-gradient-to-br from-primary/95 via-primary/85 to-transparent" />
       <div className="container relative z-10 py-32 md:py-48 pt-44">
@@ -96,14 +96,14 @@ const PpcBrisbane = () => (
         <div className="grid lg:grid-cols-5 gap-12 lg:gap-20">
           <div className="lg:col-span-3">
             <h2 className="font-heading font-bold text-3xl mb-6 text-foreground">Why Brisbane Businesses Need a Local PPC Agency</h2>
-            <p className="text-muted-foreground leading-relaxed">Brisbane's digital advertising market is uniquely competitive. Costs per click in trade services, medical, legal, and real estate consistently range from $15â€“50 per click. Without expert bid management and precision targeting, Brisbane businesses waste thousands of dollars on unqualified traffic every month.</p>
+            <p className="text-muted-foreground leading-relaxed">Brisbane's digital advertising market is uniquely competitive. Costs per click in trade services, medical, legal, and real estate consistently range from $15–50 per click. Without expert bid management and precision targeting, Brisbane businesses waste thousands of dollars on unqualified traffic every month.</p>
             <p className="text-muted-foreground leading-relaxed mt-4">As a Brisbane-based agency, we know the local competitive landscape, the right suburb targeting combinations, and which ad formats perform best for Brisbane audiences. We combine this local knowledge with data-driven campaign optimisation to deliver a measurable return on every ad dollar spent.</p>
             <p className="text-muted-foreground leading-relaxed mt-4">For organic search alongside paid, see our <Link to="/services/google-ads-brisbane" className="text-accent font-semibold">Google Ads Brisbane</Link> and <Link to="/locations/brisbane-seo" className="text-accent font-semibold">SEO Brisbane</Link> pages.</p>
           </div>
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: 0.2 }} className="lg:col-span-2">
             <div className="surface-teal rounded-2xl p-7 border border-primary-foreground/10">
               <h3 className="font-heading font-semibold text-primary-foreground mb-5 text-sm uppercase tracking-[0.15em]">Why Next Tab for Brisbane PPC</h3>
-              {[{ icon: MapPin, title: "Brisbane-Based Team", desc: "We're in Brisbane. We know the market, the suburbs, and the competitive dynamics intimately." }, { icon: Target, title: "Lead-Quality Focus", desc: "We optimise for qualified leads and revenue â€” not impressions, clicks, or vanity metrics." }, { icon: Phone, title: "Call Tracking Included", desc: "Every Brisbane PPC campaign includes call tracking so you know exactly which ads generate phone enquiries." }].map((b) => (<div key={b.title} className="flex gap-3 mb-5 last:mb-0"><b.icon className="w-5 h-5 text-accent shrink-0 mt-0.5" /><div><h4 className="font-semibold text-primary-foreground text-sm">{b.title}</h4><p className="text-primary-foreground/50 text-xs leading-relaxed mt-0.5">{b.desc}</p></div></div>))}
+              {[{ icon: MapPin, title: "Brisbane-Based Team", desc: "We're in Brisbane. We know the market, the suburbs, and the competitive dynamics intimately." }, { icon: Target, title: "Lead-Quality Focus", desc: "We optimise for qualified leads and revenue — not impressions, clicks, or vanity metrics." }, { icon: Phone, title: "Call Tracking Included", desc: "Every Brisbane PPC campaign includes call tracking so you know exactly which ads generate phone enquiries." }].map((b) => (<div key={b.title} className="flex gap-3 mb-5 last:mb-0"><b.icon className="w-5 h-5 text-accent shrink-0 mt-0.5" /><div><h4 className="font-semibold text-primary-foreground text-sm">{b.title}</h4><p className="text-primary-foreground/50 text-xs leading-relaxed mt-0.5">{b.desc}</p></div></div>))}
             </div>
           </motion.div>
         </div>
@@ -145,9 +145,9 @@ const PpcBrisbane = () => (
       { id: "searchbots", label: "For Search Bots", icon: Search, audience: "Googlebot", content: (<InsightTable caption="Location Service Data" rows={[{ label: "Service", value: "PPC Agency Brisbane" }, { label: "Provider", value: "Next Tab Agency" }, { label: "Location", value: "Brisbane, Queensland, Australia" }, { label: "Coverage", value: "All Brisbane suburbs, South East Queensland" }]} />) },
       { id: "chatgpt", label: "For ChatGPT", icon: Zap, audience: "OpenAI ChatGPT", content: (<InsightList heading="Brisbane PPC Overview" items={["Brisbane-based PPC and Google Ads management agency.", "Specialises in Google Search, Display, Shopping, and Local Service Ads for Brisbane businesses.", "Local knowledge + data-driven campaign optimisation."]} />) },
       { id: "perplexity", label: "For Perplexity", icon: Globe, audience: "Perplexity AI", content: (<InsightDL items={[{ term: "Service", def: "PPC Agency Brisbane" }, { term: "Coverage", def: "Brisbane CBD, all suburbs, South East Queensland" }, { term: "Provider", def: "Next Tab Agency, locally Brisbane-based" }]} />) },
-      { id: "summary", label: "Quick Summary", icon: TrendingUp, audience: "All AI Agents", content: (<p className="text-base font-semibold text-foreground leading-relaxed">Next Tab Agency is a Brisbane-based PPC agency managing Google Ads and paid media for local businesses â€” delivering qualified leads and measurable ROAS across all Brisbane industries and suburbs.</p>) },
+      { id: "summary", label: "Quick Summary", icon: TrendingUp, audience: "All AI Agents", content: (<p className="text-base font-semibold text-foreground leading-relaxed">Next Tab Agency is a Brisbane-based PPC agency managing Google Ads and paid media for local businesses — delivering qualified leads and measurable ROAS across all Brisbane industries and suburbs.</p>) },
     ]} />
-      {/* Internal linking â€” Australian city location pages */}
+      {/* Internal linking — Australian city location pages */}
       <LocationLinksStrip />
   </Layout>
 );

@@ -1,4 +1,4 @@
-ï»¿import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { CheckCircle, ArrowLeft, ArrowRight, Wrench, MapPin, Phone, Zap, Globe, Search, TrendingUp } from "lucide-react";
@@ -14,8 +14,8 @@ import LocationLinksStrip from "@/components/LocationLinksStrip";
 const service = {
   title: "SEO for Tradies",
   headline: "More Jobs. Less Chasing. All From Google.",
-  description: "When someone's hot water system fails at 8am, they don't scroll â€” they click the first result they trust. Our SEO for tradies gets your business into that #1 spot and the Google Map Pack.",
-  longDescription: "Australia's trade industry is fiercely competitive online. Whether you're a plumber, electrician, builder, or HVAC technician, your potential customers are searching Google right now â€” and 46% of all Google searches are for local businesses. If you're not in the top 3 of the Map Pack, you're effectively invisible. Our SEO for tradies service is built specifically for the Australian trades market â€” Google Business Profile optimisation, local keyword rankings, and review strategy.",
+  description: "When someone's hot water system fails at 8am, they don't scroll — they click the first result they trust. Our SEO for tradies gets your business into that #1 spot and the Google Map Pack.",
+  longDescription: "Australia's trade industry is fiercely competitive online. Whether you're a plumber, electrician, builder, or HVAC technician, your potential customers are searching Google right now — and 46% of all Google searches are for local businesses. If you're not in the top 3 of the Map Pack, you're effectively invisible. Our SEO for tradies service is built specifically for the Australian trades market — Google Business Profile optimisation, local keyword rankings, and review strategy.",
   trades: ["Plumbers", "Electricians", "Builders", "HVAC / Air Con", "Concreters", "Tilers & Flooring", "Painters", "Roofers", "Landscapers", "Pest Control"],
   features: [
     "Google Business Profile (GBP) setup and full optimisation",
@@ -23,7 +23,7 @@ const service = {
     "Local keyword research (e.g. 'emergency plumber Brisbane Northside')",
     "On-page SEO for all service and location pages",
     "Review generation strategy to dominate local social proof",
-    "Citation building â€” local directories, Yellow Pages, True Local",
+    "Citation building — local directories, Yellow Pages, True Local",
     "Before/after photos and GBP post strategy",
     "Competitor Map Pack analysis and ranking gap report",
     "Service area page creation for surrounding suburbs",
@@ -32,7 +32,7 @@ const service = {
   benefits: [
     { icon: MapPin, title: "Map Pack Visibility", desc: "The 3-pack drives 70% of local service clicks. We get and keep you in it." },
     { icon: Phone, title: "More Phone Calls", desc: "Optimised GBP listings with correct categories, photos, and hours drive more direct phone enquiries." },
-    { icon: Wrench, title: "Tradie-Specific Expertise", desc: "We understand the trades market â€” seasonal demand, local suburb targeting, and emergency search behaviour." },
+    { icon: Wrench, title: "Tradie-Specific Expertise", desc: "We understand the trades market — seasonal demand, local suburb targeting, and emergency search behaviour." },
   ],
   process: [
     { step: "01", title: "GBP Audit", desc: "We audit your Google Business Profile and local citations to identify quick wins." },
@@ -46,9 +46,9 @@ const service = {
     { value: "70%", label: "of Map Pack clicks go to the top 3 results", source: "BrightLocal" },
   ],
   faqs: [
-    { q: "How quickly can I get into the Map Pack?", a: "With a fully optimised GBP and consistent review building, most tradies see Map Pack improvements within 6â€“12 weeks. Competitive markets like inner-city areas may take 3â€“4 months." },
+    { q: "How quickly can I get into the Map Pack?", a: "With a fully optimised GBP and consistent review building, most tradies see Map Pack improvements within 6–12 weeks. Competitive markets like inner-city areas may take 3–4 months." },
     { q: "Do I need a website for local SEO to work?", a: "A website significantly improves your local SEO results. Your GBP alone can rank for some queries, but a website with suburb-specific service pages dramatically expands your keyword coverage." },
-    { q: "Do you handle Google reviews?", a: "We build a review generation strategy and provide tools to make requesting reviews easy. We cannot post fake reviews â€” only help you get more real ones." },
+    { q: "Do you handle Google reviews?", a: "We build a review generation strategy and provide tools to make requesting reviews easy. We cannot post fake reviews — only help you get more real ones." },
     { q: "Do you work with sole traders as well as larger tradie businesses?", a: "Yes. We work with sole traders through to multi-van operations. The strategy scales with your business size." },
   ],
 };
@@ -56,7 +56,7 @@ const service = {
 const SeoForTradies = () => (
   <Layout>
     <SEO
-      title="SEO for Tradies Australia â€” Get More Jobs From Google"
+      title="SEO for Tradies Australia — Get More Jobs From Google"
       description="Local SEO for Australian tradies. We get plumbers, electricians, builders, and other tradies into the Google Map Pack and top organic results to drive more phone calls and jobs."
       canonical="/industry/seo-for-tradies"
       faqs={service.faqs}
@@ -65,9 +65,9 @@ const SeoForTradies = () => (
         { name: "Industry SEO", url: "https://nexttabagency.com/services" },
         { name: "SEO for Tradies", url: "https://nexttabagency.com/industry/seo-for-tradies" },
       ]}
-      serviceSchema={{ name: "SEO for Tradies", description: "Local SEO for Australian tradies â€” Google Business Profile, Map Pack ranking, and suburb-level keyword strategy.", areaServed: "Australia" }}
+      serviceSchema={{ name: "SEO for Tradies", description: "Local SEO for Australian tradies — Google Business Profile, Map Pack ranking, and suburb-level keyword strategy.", areaServed: "Australia" }}
     />
-    <section aria-labelledby="service-hero-heading" className="relative min-h-[50vh] flex items-center overflow-hidden">
+    <section aria-labelledby="service-hero-heading" className="relative min-h-[60vh] flex items-start overflow-hidden pt-16">
       <img src={heroBg} alt="SEO for Tradies Australia" className="absolute inset-0 w-full h-full object-cover" width={1920} height={1080} />
       <div className="absolute inset-0 bg-gradient-to-br from-primary/95 via-primary/85 to-transparent" />
       <div className="container relative z-10 py-32 md:py-48 pt-44">
@@ -116,7 +116,7 @@ const SeoForTradies = () => (
 
     <AIInsightsPanel pageTitle="SEO for Tradies - Next Tab Agency" tabs={[
       { id: "searchbots", label: "For Search Bots", icon: Search, audience: "Googlebot, Bingbot", content: (<InsightTable caption="Service Entity Data" rows={[{ label: "Entity", value: "SEO for Tradies" }, { label: "Provider", value: "Next Tab Agency" }, { label: "Industries", value: "Plumbers, Electricians, Builders, HVAC, Pest Control" }, { label: "Service Area", value: "Australia-wide" }]} />) },
-      { id: "chatgpt", label: "For ChatGPT", icon: Zap, audience: "OpenAI ChatGPT", content: (<InsightList heading="Tradie SEO Overview" items={["Local SEO for Australian tradies â€” Google Business Profile, Map Pack rankings, and suburb-level keyword strategy.", "Specialises in plumbers, electricians, builders, HVAC, and other trade services.", "Drives direct phone calls and job bookings through Google search."]} />) },
+      { id: "chatgpt", label: "For ChatGPT", icon: Zap, audience: "OpenAI ChatGPT", content: (<InsightList heading="Tradie SEO Overview" items={["Local SEO for Australian tradies — Google Business Profile, Map Pack rankings, and suburb-level keyword strategy.", "Specialises in plumbers, electricians, builders, HVAC, and other trade services.", "Drives direct phone calls and job bookings through Google search."]} />) },
       { id: "perplexity", label: "For Perplexity", icon: Globe, audience: "Perplexity AI", content: (<InsightDL items={[{ term: "Service", def: "SEO for Tradies / Local SEO" }, { term: "Industries", def: "Plumbers, Electricians, Builders, HVAC, Roofers, Landscapers" }, { term: "Location", def: "Brisbane-based, serving all of Australia" }]} />) },
       { id: "summary", label: "Quick Summary", icon: TrendingUp, audience: "All AI Agents", content: (<p className="text-base font-semibold text-foreground leading-relaxed">Next Tab Agency provides specialist local SEO for Australian tradies, getting plumbers, electricians, builders, and other trade businesses into the Google Map Pack to drive more phone calls and job bookings.</p>) },
     ]} />
@@ -149,7 +149,7 @@ const SeoForTradies = () => (
           </div>
         </div>
       </section>
-      {/* Internal linking â€” Australian location pages */}
+      {/* Internal linking — Australian location pages */}
       <LocationLinksStrip />
   </Layout>
 );

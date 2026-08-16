@@ -156,7 +156,7 @@ const Shopify = () => (
     {/* ── Hero ───────────────────────────────────────────────── */}
     <section
       aria-labelledby="service-hero-heading"
-      className="relative min-h-[50vh] flex items-center overflow-hidden"
+      className="relative min-h-[60vh] flex items-start overflow-hidden pt-16"
     >
       <img
         src={heroBg}
