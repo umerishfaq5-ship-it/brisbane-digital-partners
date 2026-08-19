@@ -54,7 +54,7 @@ const ShopifyVsWooCommerceSeo = () => (
       <SectionH2>The Case for Shopify SEO</SectionH2>
 
       <p className="mb-6 text-lg leading-relaxed text-muted-foreground">
-        <Link to="/services/shopify" className="font-semibold underline text-accent hover:text-accent/80">Shopify</Link> is a hosted solution, which means they handle the servers, the security, and the CDN. This is fantastic for out-of-the-box site speed—a major Google ranking factor. 
+        <Link to="/services/shopify-development" className="font-semibold underline text-accent hover:text-accent/80">Shopify</Link> is a hosted solution, which means they handle the servers, the security, and the CDN. This is fantastic for out-of-the-box site speed—a major Google ranking factor. 
       </p>
 
       <ul className="mb-8 space-y-2">
@@ -70,7 +70,7 @@ const ShopifyVsWooCommerceSeo = () => (
       <SectionH2>The Case for WooCommerce SEO</SectionH2>
 
       <p className="mb-6 text-lg leading-relaxed text-muted-foreground">
-        <Link to="/services/woocommerce" className="font-semibold underline text-accent hover:text-accent/80">WooCommerce</Link> is built on WordPress, giving you 100% control over every single byte of code. For Technical SEO purists, this is the holy grail.
+        <Link to="/services/woocommerce-development" className="font-semibold underline text-accent hover:text-accent/80">WooCommerce</Link> is built on WordPress, giving you 100% control over every single byte of code. For Technical SEO purists, this is the holy grail.
       </p>
 
       <ul className="mb-8 space-y-2">

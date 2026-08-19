@@ -47,16 +47,12 @@ export default function SEO({
   serviceSchema,
 }: SEOProps) {
   const fullTitle = `${title} | ${SITE_NAME}`;
-  // Ensure canonical always uses trailing slash to match prerendered directory structure
-  // e.g. /about → https://nexttabagency.com/about/  (avoids 301 redirect in GSC)
+  // No-slash policy: use canonical path exactly as passed — no trailing slash appended.
+  // vercel.json has trailingSlash:false so /about serves 200, /about/ would redirect.
   const rawPath = canonical ?? '';
-  const normalizedPath =
-    rawPath === '' || rawPath === '/'
-      ? ''
-      : rawPath.endsWith('/')
-        ? rawPath
-        : `${rawPath}/`;
-  const canonicalUrl = `${BASE_URL}${normalizedPath || '/'}`;
+  const canonicalUrl = rawPath === '' || rawPath === '/'
+    ? `${BASE_URL}/`
+    : `${BASE_URL}${rawPath}`;
 
   const image = ogImage ?? DEFAULT_OG_IMAGE;
 
