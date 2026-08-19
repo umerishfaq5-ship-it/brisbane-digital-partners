@@ -43,7 +43,7 @@ const SeoVsGoogleAdsCost = () => (
       </p>
 
       <p className="mb-10 text-lg leading-relaxed text-muted-foreground">
-        While <Link to="/services/ppc-ads" className="font-semibold underline text-accent hover:text-accent/80">Google Ads</Link> can provide immediate visibility, relying on them as your sole source of lead generation is financially dangerous. It's time to talk about sustainable growth.
+        While <Link to="/services/ppc-google-ads" className="font-semibold underline text-accent hover:text-accent/80">Google Ads</Link> can provide immediate visibility, relying on them as your sole source of lead generation is financially dangerous. It's time to talk about sustainable growth.
       </p>
 
       <div className="grid gap-6 mb-10 md:grid-cols-2">

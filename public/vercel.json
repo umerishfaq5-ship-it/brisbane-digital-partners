@@ -1,5 +1,11 @@
 {
-  "trailingSlash": true,
+  "trailingSlash": false,
+  "redirects": [
+    { "source": "/services/shopify",              "destination": "/services/shopify-development",    "permanent": true },
+    { "source": "/services/woocommerce",           "destination": "/services/woocommerce-development","permanent": true },
+    { "source": "/services/ppc-ads",               "destination": "/services/ppc-google-ads",        "permanent": true },
+    { "source": "/services/performance-marketing", "destination": "/services/ppc-google-ads",        "permanent": true }
+  ],
   "rewrites": [
     { "source": "/(.*)", "destination": "/index.html" }
   ]

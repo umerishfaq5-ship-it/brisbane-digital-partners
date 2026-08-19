@@ -71,7 +71,7 @@ const Magento = () => (
     <SEO
       title="Magento Developer Brisbane | Adobe Commerce Development Australia | Next Tab Agency"
       description="Brisbane's Magento 2 & Adobe Commerce developers. Hyva theme builds, ERP integrations, M1→M2 migrations. Projects from A$25,000. Free scoping call — no obligation."
-      canonical="/services/magento-development/"
+      canonical="/services/magento-development"
       faqs={service.faqs}
       breadcrumbs={[
         { name: "Home",     url: "https://nexttabagency.com/" },

@@ -71,7 +71,7 @@ const Maropost = () => (
     <SEO
       title="Maropost Commerce / Neto Developer Brisbane — Australia's E-commerce Platform"
       description="Expert Maropost Commerce Cloud (Neto) development in Brisbane. Custom storefronts, multi-channel setup, 3PL integration, and migration for Australian retailers and wholesalers."
-      canonical="/services/maropost-neto/"
+      canonical="/services/maropost-neto"
       faqs={service.faqs}
       breadcrumbs={[
         { name: "Home",     url: "https://nexttabagency.com/" },
