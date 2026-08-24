@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { format, addDays, parseISO, eachDayOfInterval, isWeekend } from 'date-fns';
 import {
   CalendarIcon, Plus, Trash2, Save, Printer,
-  Settings, ClipboardList, Copy, Check, ChevronRight
+  ClipboardList
 } from 'lucide-react';
 import { Calendar } from '@/components/ui/calendar';
 import { Popover, PopoverContent, PopoverTrigger } from '@/components/ui/popover';
@@ -12,16 +12,10 @@ import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { Switch } from '@/components/ui/switch';
 import { Label } from '@/components/ui/label';
-import { Dialog, DialogContent, DialogHeader, DialogTitle } from '@/components/ui/dialog';
-import { Badge } from '@/components/ui/badge';
 import { toast } from 'sonner';
 import {
-  getSettings,
-  saveSettings,
   saveLocalInvoice,
   getNextInvoiceNumber,
-  syncToGoogleSheets,
-  APPS_SCRIPT_CODE,
   type Invoice,
   type LineItem,
 } from '@/lib/sheetsApi';
@@ -68,14 +62,9 @@ export default function HamzaInvoice() {
   const [invDateOpen,   setInvDateOpen]   = useState(false);
   const [dueDateOpen,   setDueDateOpen]   = useState(false);
   const [isSaving,      setIsSaving]      = useState(false);
-  const [showSettings,  setShowSettings]  = useState(false);
-  const [showScript,    setShowScript]    = useState(false);
-  const [copied,        setCopied]        = useState(false);
-  const [scriptUrl,     setScriptUrl]     = useState('');
 
   useEffect(() => {
     setInvoiceNumber(getNextInvoiceNumber());
-    setScriptUrl(getSettings().appsScriptUrl);
   }, []);
 
   // ─ Calculations ──────────────────────────────────────────
@@ -126,22 +115,12 @@ export default function HamzaInvoice() {
     };
 
     saveLocalInvoice(invoice);
-    const syncResult = await syncToGoogleSheets(invoice);
     setIsSaving(false);
 
-    if (syncResult.success) {
-      toast.success(`${invoiceNumber} — ${clientName}`, {
-        description: 'Saved & synced to Google Sheets ✅',
-        icon: '🧾',
-      });
-    } else {
-      toast.success(`${invoiceNumber} — ${clientName}`, {
-        description: syncResult.error === 'no-url'
-          ? 'Saved locally · Set up Google Sheets in ⚙ Settings to sync'
-          : `Saved locally · Sheets sync failed: ${syncResult.error}`,
-        icon: '💾',
-      });
-    }
+    toast.success(`${invoiceNumber} — ${clientName}`, {
+      description: 'Invoice saved locally 💾',
+      icon: '🧾',
+    });
 
     // Advance invoice number for next creation
     setInvoiceNumber(getNextInvoiceNumber());
@@ -155,17 +134,7 @@ export default function HamzaInvoice() {
     setTimeout(() => { document.title = prev; }, 1000);
   }
 
-  function handleSaveSettings() {
-    saveSettings({ appsScriptUrl: scriptUrl });
-    setShowSettings(false);
-    toast.success('Settings saved!');
-  }
 
-  async function handleCopyScript() {
-    await navigator.clipboard.writeText(APPS_SCRIPT_CODE);
-    setCopied(true);
-    setTimeout(() => setCopied(false), 2000);
-  }
 
   // ── Render ─────────────────────────────────────────────────
   return (
@@ -219,14 +188,6 @@ export default function HamzaInvoice() {
               <ClipboardList className="w-4 h-4 mr-1.5" />
               Past Records
             </Button>
-            <Button
-              variant="ghost"
-              size="sm"
-              className="text-slate-600"
-              onClick={() => setShowSettings(true)}
-            >
-              <Settings className="w-4 h-4" />
-            </Button>
           </div>
         </div>
       </div>
@@ -256,14 +217,7 @@ export default function HamzaInvoice() {
             </button>
           </div>
 
-          {!getSettings().appsScriptUrl && (
-            <button
-              onClick={() => setShowSettings(true)}
-              className="text-xs text-amber-600 bg-amber-50 border border-amber-200 rounded-md px-2.5 py-1 hover:bg-amber-100 transition-colors"
-            >
-              ⚠ Google Sheets not configured — click to set up
-            </button>
-          )}
+
 
           <div className="ml-auto flex items-center gap-2">
             <Button variant="outline" size="sm" onClick={addRow} className="border-slate-200">
@@ -327,78 +281,7 @@ export default function HamzaInvoice() {
         </div>
       </div>
 
-      {/* ── Settings Dialog ──────────────────────────────────── */}
-      <Dialog open={showSettings} onOpenChange={setShowSettings}>
-        <DialogContent className="max-w-2xl max-h-[90vh] overflow-y-auto">
-          <DialogHeader>
-            <DialogTitle className="flex items-center gap-2">
-              <Settings className="w-5 h-5" />
-              Google Sheets Setup
-            </DialogTitle>
-          </DialogHeader>
 
-          <div className="space-y-5 mt-2">
-            <div className="bg-blue-50 border border-blue-100 rounded-lg p-3 text-sm text-blue-800">
-              Invoices are always saved on this device. Setting up Google Sheets lets you access them from anywhere.
-            </div>
-
-            <div className="space-y-1.5">
-              <Label className="text-sm font-medium">Apps Script Web App URL</Label>
-              <Input
-                placeholder="https://script.google.com/macros/s/…/exec"
-                value={scriptUrl}
-                onChange={e => setScriptUrl(e.target.value)}
-              />
-              <p className="text-xs text-slate-500">Paste your deployed Apps Script URL here</p>
-            </div>
-
-            {/* How-to instructions */}
-            <div className="border border-slate-200 rounded-lg overflow-hidden">
-              <button
-                className="w-full flex items-center justify-between px-4 py-3 bg-slate-50 text-sm font-medium text-slate-700 hover:bg-slate-100 transition-colors"
-                onClick={() => setShowScript(s => !s)}
-              >
-                <span>📋 How to set up (step-by-step)</span>
-                <ChevronRight className={`w-4 h-4 transition-transform ${showScript ? 'rotate-90' : ''}`} />
-              </button>
-              {showScript && (
-                <div className="p-4 space-y-3 text-sm">
-                  <ol className="list-decimal list-inside space-y-1.5 text-slate-600">
-                    <li>Open your Google Sheet</li>
-                    <li>Go to <strong>Extensions → Apps Script</strong></li>
-                    <li>Delete all existing code, paste the script below</li>
-                    <li>Click <strong>Deploy → New deployment</strong></li>
-                    <li>Select type: <strong>Web app</strong></li>
-                    <li>Execute as: <strong>Me</strong></li>
-                    <li>Who has access: <strong>Anyone</strong></li>
-                    <li>Click <strong>Deploy</strong>, copy the URL, paste above</li>
-                  </ol>
-
-                  <div className="relative">
-                    <pre className="bg-slate-900 text-emerald-300 rounded-lg p-4 text-xs overflow-x-auto max-h-64 leading-relaxed">
-                      {APPS_SCRIPT_CODE}
-                    </pre>
-                    <button
-                      onClick={handleCopyScript}
-                      className="absolute top-2 right-2 bg-slate-700 hover:bg-slate-600 text-white rounded-md px-2.5 py-1 text-xs flex items-center gap-1 transition-colors"
-                    >
-                      {copied ? <Check className="w-3 h-3" /> : <Copy className="w-3 h-3" />}
-                      {copied ? 'Copied!' : 'Copy'}
-                    </button>
-                  </div>
-                </div>
-              )}
-            </div>
-
-            <div className="flex justify-end gap-2 pt-1">
-              <Button variant="outline" onClick={() => setShowSettings(false)}>Cancel</Button>
-              <Button onClick={handleSaveSettings} className="bg-indigo-600 hover:bg-indigo-700 text-white">
-                Save Settings
-              </Button>
-            </div>
-          </div>
-        </DialogContent>
-      </Dialog>
     </>
   );
 }

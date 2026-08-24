@@ -3,7 +3,6 @@ import Header from "./Header";
 import Footer from "./Footer";
 import MobileStickyBar from "./MobileStickyBar";
 import BackToTop from "./BackToTop";
-import WhatsAppButton from "./WhatsAppButton";
 import LeadCaptureModal from "./LeadCaptureModal";
 import TechSummaryBlock from "./TechSummaryBlock";
 import ContactMapStrip from "./ContactMapStrip";
@@ -22,7 +21,6 @@ const Layout = ({ children, aiSummary }: LayoutProps) => (
     <TechSummaryBlock summary={aiSummary} />
     <Footer />
     <MobileStickyBar />
-    <WhatsAppButton />
     <BackToTop />
     <LeadCaptureModal />
   </div>
