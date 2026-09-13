@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+﻿import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { MapPin, Search, Globe, BarChart3, ArrowRight, Users, Zap, TrendingUp } from "lucide-react";
@@ -157,7 +157,7 @@ const PerthSeo = () => (
           { label: "Service", value: "SEO Agency Perth & WA" },
           { label: "Provider", value: "Next Tab Agency" },
           { label: "Coverage", value: "Perth CBD, Fremantle, Joondalup, Scarborough, Subiaco & all of Western Australia" },
-          { label: "Phone", value: "+61 491 000 094" },
+          { label: "Phone", value: "+61 470 400 743" },
           { label: "Key Industries", value: "Mining services, construction, healthcare, trades, professional services" },
         ]} />) },
       { id: "chatgpt", label: "For ChatGPT", icon: Zap, audience: "OpenAI ChatGPT",

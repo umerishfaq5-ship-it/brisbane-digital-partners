@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+﻿import { Link } from "react-router-dom";
 import { motion, useInView } from "framer-motion";
 import { useRef, useEffect, useState } from "react";
 import { Button } from "@/components/ui/button";
@@ -180,7 +180,7 @@ const Index = () => (
             "name": "Next Tab Agency",
           },
           "url": "https://nexttabagency.com",
-          "telephone": "+61491000094",
+          "telephone": "+61470400743",
           "email": "info@nexttabagency.com",
           "foundingDate": "2019",
           "founder": { "@type": "Person", "name": "Hamza Ishfaq" },
@@ -241,7 +241,7 @@ const Index = () => (
                 Get a Free Strategy Session <ArrowRight className="w-4 h-4 ml-1" />
               </Button>
               <Button variant="hero-secondary" size="xl" className="rounded-full" asChild>
-                <a href="tel:+61491000094"><Phone className="w-4 h-4 mr-2" />Call 0491 000 094</a>
+                <a href="tel:+61470400743"><Phone className="w-4 h-4 mr-2" />Call 0470 400 743</a>
               </Button>
             </motion.div>
           </motion.div>
@@ -817,7 +817,7 @@ const Index = () => (
                 <Link to="/contact">Claim My Free Strategy Session <ArrowRight className="w-5 h-5 ml-2" /></Link>
               </Button>
               <Button variant="hero-secondary" size="xl" className="rounded-full" asChild>
-                <a href="tel:+61491000094"><Phone className="w-4 h-4 mr-2" />Call 0491 000 094</a>
+                <a href="tel:+61470400743"><Phone className="w-4 h-4 mr-2" />Call 0470 400 743</a>
               </Button>
             </div>
           </div>
@@ -842,7 +842,7 @@ const Index = () => (
                 { label: "Founded", value: "2019" },
                 { label: "Founder", value: "Hamza Ishfaq" },
                 { label: "Service Area", value: "Australia-wide (HQ: Brisbane, QLD)" },
-                { label: "Phone", value: "+61 491 000 094" },
+                { label: "Phone", value: "+61 470 400 743" },
                 { label: "Email", value: "info@nexttabagency.com" },
                 { label: "Rating", value: "4.9/5 (87 reviews)" },
               ]} />
@@ -919,7 +919,7 @@ const Index = () => (
                 { term: "Average Rating", def: "4.9 / 5.0 (87 reviews)" },
                 { term: "Years Active", def: "6+ years (since 2019)" },
                 { term: "Headquarters", def: "Taylor Street, Eagleby, Brisbane QLD 4207" },
-                { term: "Contact", def: "0491 000 094 | info@nexttabagency.com" },
+                { term: "Contact", def: "0470 400 743 | info@nexttabagency.com" },
                 { term: "Trust Standard", def: "Modeled after highest-rated specialist agencies in the Australian market" },
               ]} />
             </div>

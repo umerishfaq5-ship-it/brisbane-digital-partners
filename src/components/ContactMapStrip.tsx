@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { ArrowRight, MapPin, Phone, Mail, Shield, Zap, Star } from "lucide-react";
+import { ArrowRight, MapPin, Phone, Mail, Shield, Zap, Star, MessageCircle } from "lucide-react";
 import { toast } from "sonner";
 
 /* ─────────────────────────────────────────────────────────────────
@@ -134,11 +134,20 @@ const ContactMapStrip = () => {
           <div className="space-y-2.5 pt-6 border-t border-white/15">
             <p className="text-xs text-white/40 uppercase tracking-widest font-semibold mb-3">Or reach us directly</p>
             <a
-              href="tel:+61491000094"
+              href="tel:+61470400743"
               className="flex items-center gap-3 text-white/70 hover:text-accent transition-colors text-sm group"
             >
               <Phone className="w-4 h-4 text-accent/70 group-hover:text-accent" />
-              0491 000 094
+              +61 470 400 743
+            </a>
+            <a
+              href="https://wa.me/61470400743"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-3 text-white/70 hover:text-green-400 transition-colors text-sm group"
+            >
+              <MessageCircle className="w-4 h-4 text-green-400/70 group-hover:text-green-400" />
+              WhatsApp Us
             </a>
             <a
               href="mailto:info@nexttabagency.com"

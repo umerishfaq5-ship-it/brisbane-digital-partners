@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+﻿import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import Layout from "@/components/Layout";
 import SEO from "@/components/SEO";
@@ -127,7 +127,7 @@ const Privacy = () => (
               <p><strong>Next Tab Agency</strong></p>
               <p>Taylor Street, Eagleby, QLD 4207, Brisbane, Australia</p>
               <p>Email: <a href="mailto:info@nexttabagency.com" className="text-accent hover:underline">info@nexttabagency.com</a></p>
-              <p>Phone: <a href="tel:+61491000094" className="text-accent hover:underline">0491 000 094</a></p>
+              <p>Phone: <a href="tel:+61470400743" className="text-accent hover:underline">0470 400 743</a></p>
             </address>
             <p className="text-muted-foreground leading-relaxed mt-4">
               You may also contact the Office of the Australian Information Commissioner (OAIC) at{" "}

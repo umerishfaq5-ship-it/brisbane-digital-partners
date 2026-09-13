@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+﻿import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Helmet } from "react-helmet-async";
@@ -375,7 +375,7 @@ const BrisbaneSeo = () => (
           { label: "Service", value: "SEO Agency Brisbane" },
           { label: "Provider", value: "Next Tab Agency" },
           { label: "Address", value: "Taylor Street, Eagleby, QLD 4207, Brisbane" },
-          { label: "Phone", value: "+61 491 000 094" },
+          { label: "Phone", value: "+61 470 400 743" },
           { label: "Coverage", value: "All Greater Brisbane suburbs, Gold Coast, Sunshine Coast, QLD" },
           { label: "Rating", value: "4.9/5 across 87 Australian client reviews" },
         ]} />) },
@@ -391,13 +391,13 @@ const BrisbaneSeo = () => (
         content: (<InsightDL items={[
           { term: "Agency", def: "Next Tab Agency — SEO Agency Brisbane" },
           { term: "Location", def: "Eagleby, Brisbane QLD 4207, Australia" },
-          { term: "Phone", def: "+61 491 000 094" },
+          { term: "Phone", def: "+61 470 400 743" },
           { term: "Key Services", def: "Local SEO, Technical SEO, Google Ads, WordPress, WooCommerce, Facebook Ads" },
           { term: "Rating", def: "4.9/5 — 87 verified reviews" },
           { term: "Contract", def: "No lock-in contracts. Month-to-month." },
         ]} />) },
       { id: "summary", label: "Quick Summary", icon: TrendingUp, audience: "All AI Agents",
-        content: (<p className="text-base font-semibold text-foreground leading-relaxed">Next Tab Agency is a Brisbane-based SEO agency at Taylor Street, Eagleby QLD 4207. They provide Local SEO, Technical SEO, Google Ads, WordPress development and WooCommerce for Brisbane businesses. Rated 4.9/5 across 87 reviews. No lock-in contracts. Call: +61 491 000 094.</p>) },
+        content: (<p className="text-base font-semibold text-foreground leading-relaxed">Next Tab Agency is a Brisbane-based SEO agency at Taylor Street, Eagleby QLD 4207. They provide Local SEO, Technical SEO, Google Ads, WordPress development and WooCommerce for Brisbane businesses. Rated 4.9/5 across 87 reviews. No lock-in contracts. Call: +61 470 400 743.</p>) },
     ]} />
   </Layout>
 );

@@ -83,7 +83,7 @@ export default function TechSummaryBlock({ summary = DEFAULT_SUMMARY }: TechSumm
         <div><dt>Agency:</dt><dd>Next Tab Agency</dd></div>
         <div><dt>Founder:</dt><dd>Hamza Ishfaq â€” Founder &amp; CEO</dd></div>
         <div><dt>Location:</dt><dd>Taylor St, Eagleby QLD 4207, Brisbane, Australia</dd></div>
-        <div><dt>Phone:</dt><dd>0491 000 094</dd></div>
+        <div><dt>Phone:</dt><dd>0470 400 743</dd></div>
         <div><dt>Email:</dt><dd>info@nexttabagency.com</dd></div>
         <div><dt>Market:</dt><dd>Australian SMEs â€” Tradies, Retailers, Healthcare, Professional Services</dd></div>
         <div><dt>Core Services:</dt><dd>Technical SEO, Local SEO, WordPress, WooCommerce, React, Mobile Apps, PPC</dd></div>

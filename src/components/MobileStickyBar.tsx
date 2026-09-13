@@ -8,7 +8,7 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
-import { Phone, ArrowRight } from "lucide-react";
+import { Phone, ArrowRight, MessageCircle } from "lucide-react";
 
 export default function MobileStickyBar() {
   const [visible, setVisible] = useState(false);
@@ -34,20 +34,30 @@ export default function MobileStickyBar() {
           {/* Top border accent */}
           <div className="h-px bg-gradient-to-r from-transparent via-accent/50 to-transparent" />
 
-          <div className="glass border-t border-border/50 px-4 py-3 flex items-center gap-3">
+          <div className="glass border-t border-border/50 px-3 py-3 flex items-center gap-2">
             <a
-              href="tel:0491000094"
-              className="flex items-center gap-2 px-4 py-2.5 rounded-full border border-primary/20 bg-primary/5 text-primary text-sm font-semibold flex-1 justify-center hover:bg-primary/10 transition-colors"
+              href="tel:+61470400743"
+              className="flex items-center gap-2 px-3 py-2.5 rounded-full border border-primary/20 bg-primary/5 text-primary text-sm font-semibold flex-1 justify-center hover:bg-primary/10 transition-colors"
               aria-label="Call us"
             >
               <Phone className="w-4 h-4 shrink-0" />
-              Call Us
+              Call
+            </a>
+            <a
+              href="https://wa.me/61470400743"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 px-3 py-2.5 rounded-full border border-green-500/30 bg-green-500/10 text-green-500 text-sm font-semibold flex-1 justify-center hover:bg-green-500/20 transition-colors"
+              aria-label="WhatsApp us"
+            >
+              <MessageCircle className="w-4 h-4 shrink-0" />
+              WhatsApp
             </a>
             <Link
               to="/contact"
-              className="flex items-center gap-2 px-4 py-2.5 rounded-full bg-accent text-accent-foreground text-sm font-semibold flex-1 justify-center hover:bg-accent/90 transition-colors shadow-sm"
+              className="flex items-center gap-2 px-3 py-2.5 rounded-full bg-accent text-accent-foreground text-sm font-semibold flex-1 justify-center hover:bg-accent/90 transition-colors shadow-sm"
             >
-              Free Consultation
+              Get Quote
               <ArrowRight className="w-4 h-4 shrink-0" />
             </Link>
           </div>

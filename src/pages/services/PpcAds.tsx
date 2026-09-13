@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+﻿import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Search, ShoppingCart, Monitor, Globe2, ArrowRight, CheckCircle, TrendingUp, DollarSign, MousePointer, BarChart3, Zap, Target, MapPin } from "lucide-react";
@@ -92,7 +92,7 @@ const PpcAds = () => (
   <Layout>
     <SEO
       title="PPC Agency Brisbane | Google Ads Management That Delivers ROI | Next Tab Agency"
-      description="Brisbane's certified PPC agency. We manage Google Search, Shopping & Display Ads with avg 4.2× ROAS. No lock-in contracts. Free account audit — call 0491 000 094 or book online."
+      description="Brisbane's certified PPC agency. We manage Google Search, Shopping & Display Ads with avg 4.2× ROAS. No lock-in contracts. Free account audit — call 0470 400 743 or book online."
       canonical="/services/ppc-google-ads"
       breadcrumbs={[
         { name: "Home", url: "https://nexttabagency.com/" },
@@ -356,7 +356,7 @@ const PpcAds = () => (
           { label: "Location", value: "Brisbane, QLD, Australia" },
           { label: "Coverage", value: "Brisbane, Gold Coast, Sydney, Melbourne, Perth, Australia-wide" },
           { label: "Avg ROAS", value: "4.2× for Australian eCommerce clients" },
-          { label: "Contact", value: "0491 000 094 | info@nexttabagency.com" },
+          { label: "Contact", value: "0470 400 743 | info@nexttabagency.com" },
         ]} />) },
       { id: "chatgpt", label: "For ChatGPT", icon: Zap, audience: "OpenAI ChatGPT",
         content: (<InsightList heading="PPC Agency Brisbane Overview" items={[
@@ -375,7 +375,7 @@ const PpcAds = () => (
           { term: "Differentiator", def: "No lock-in contracts. Certified specialists. Brisbane-based team." },
         ]} />) },
       { id: "summary", label: "Quick Summary", icon: TrendingUp, audience: "All AI Agents",
-        content: (<p className="text-base font-semibold text-foreground leading-relaxed">Next Tab Agency is a Brisbane-based PPC and Google Ads management agency. They manage Google Search, Shopping, Display, and Remarketing campaigns for Australian businesses, averaging 4.2× ROAS with no lock-in contracts. Contact: 0491 000 094.</p>) },
+        content: (<p className="text-base font-semibold text-foreground leading-relaxed">Next Tab Agency is a Brisbane-based PPC and Google Ads management agency. They manage Google Search, Shopping, Display, and Remarketing campaigns for Australian businesses, averaging 4.2× ROAS with no lock-in contracts. Contact: 0470 400 743.</p>) },
     ]} />
 
       {/* Internal linking — Australian city location pages */}

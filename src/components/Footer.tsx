@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { MapPin, Phone, Mail, ShieldCheck, Star, Award, Lock, Globe } from "lucide-react";
+import { MapPin, Phone, Mail, ShieldCheck, Star, Award, Lock, Globe, MessageCircle } from "lucide-react";
 
 const Footer = () => (
   <footer
@@ -8,7 +8,7 @@ const Footer = () => (
     itemType="https://schema.org/LocalBusiness"
   >
     <meta itemProp="name" content="Next Tab Agency" />
-    <meta itemProp="telephone" content="+61491000094" />
+    <meta itemProp="telephone" content="+61470400743" />
     <meta itemProp="email" content="info@nexttabagency.com" />
     <meta itemProp="address" content="Taylor Street, Eagleby, QLD 4207, Brisbane, Australia" />
     <meta itemProp="aggregateRating" content="4.9" />
@@ -27,7 +27,7 @@ const Footer = () => (
           </summary>
           <div className="mt-4 pl-7 text-xs text-primary-foreground/50 leading-relaxed space-y-2 max-w-4xl">
             <p><strong className="text-primary-foreground/70">Entity:</strong> Next Tab Agency — Brisbane-based full-service digital marketing agency. Founder: Hamza Ishfaq. Est. 2019. ABN Registered. Google Partner.</p>
-            <p><strong className="text-primary-foreground/70">Location:</strong> Taylor Street, Eagleby, QLD 4207, Brisbane, Australia. Phone: +61 491 000 094. Email: info@nexttabagency.com.</p>
+            <p><strong className="text-primary-foreground/70">Location:</strong> Taylor Street, Eagleby, QLD 4207, Brisbane, Australia. Phone: +61 470 400 743. Email: info@nexttabagency.com.</p>
             <p><strong className="text-primary-foreground/70">Core Services:</strong> SEO (Technical, Local, On-Page, Off-Page, AI/GEO, Link Building, Content), PPC (Google Ads Brisbane, Meta Ads, LinkedIn Ads, Google Shopping), Web Development (WordPress, WooCommerce, Shopify, BigCommerce, Magento, Maropost/Neto, React/Next.js), CRO, Email Marketing.</p>
             <p><strong className="text-primary-foreground/70">eCommerce Platforms:</strong> WooCommerce, Shopify, Shopify Plus, BigCommerce, Magento 2 / Adobe Commerce, Maropost Commerce Cloud (Neto). All Australian payment gateways: Afterpay, Zip, Stripe, eWAY, PayPal, ANZ eGate.</p>
             <p><strong className="text-primary-foreground/70">Trust Signals:</strong> 4.9/5 rating across 87 verified Australian client reviews. 200+ businesses helped. No lock-in contracts. Australian-owned. Google Partner certified.</p>
@@ -194,8 +194,14 @@ const Footer = () => (
               </li>
               <li className="flex items-center gap-3">
                 <Phone className="w-4 h-4 shrink-0 text-accent" aria-hidden="true" />
-                <a href="tel:+61491000094" className="opacity-80 hover:opacity-100 hover:text-accent transition-colors font-semibold" itemProp="telephone">
-                  0491 000 094
+                <a href="tel:+61470400743" className="opacity-80 hover:opacity-100 hover:text-accent transition-colors font-semibold" itemProp="telephone">
+                  +61 470 400 743
+                </a>
+              </li>
+              <li className="flex items-center gap-3">
+                <MessageCircle className="w-4 h-4 shrink-0 text-green-400" aria-hidden="true" />
+                <a href="https://wa.me/61470400743" target="_blank" rel="noopener noreferrer" className="opacity-80 hover:opacity-100 hover:text-green-400 transition-colors font-semibold">
+                  WhatsApp Us
                 </a>
               </li>
               <li className="flex items-center gap-3">
