@@ -1,4 +1,4 @@
-﻿import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { MapPin, Search, Globe, Smartphone, BarChart3, ArrowRight, Users } from "lucide-react";
@@ -25,9 +25,16 @@ const fadeUp = { hidden: { opacity: 0, y: 28 }, visible: { opacity: 1, y: 0, tra
 const MelbourneSeo = () => (
   <Layout>
     <SEO
-      title="SEO Agency Melbourne VIC — Local SEO, Google Ads & Web Development"
-      description="Expert SEO & digital marketing for Melbourne businesses. Local SEO, Google Ads, social media advertising & web development. Free consultation for Victorian businesses."
+      title="SEO Agency Melbourne VIC | Top-Rated Local SEO Experts | Next Tab Agency"
+      description="Expert SEO & digital marketing for Melbourne businesses. Local SEO, Google Ads, social media advertising & web development. 4.9★ rated. Free consultation — call +61 470 400 743."
       canonical="/locations/melbourne-seo"
+      faqs={[
+        { q: "How much does SEO cost in Melbourne?", a: "SEO services in Melbourne at Next Tab Agency start from A$1,200/month for local SEO. Competitive Melbourne CBD markets typically require A$2,500–$4,000/month. All plans are month-to-month with no lock-in contracts." },
+        { q: "How long does SEO take to show results in Melbourne?", a: "Melbourne businesses typically see meaningful ranking improvements within 3–6 months. Local SEO for outer Melbourne suburbs like Dandenong, Frankston, and Box Hill can show results faster, in 6–10 weeks." },
+        { q: "Do you offer Local SEO for Melbourne businesses?", a: "Yes. We specialise in Local SEO for Melbourne businesses — Google Business Profile optimisation, Google Maps rankings (Map Pack), and suburb-specific content for areas including Southbank, Richmond, St Kilda, and Fitzroy." },
+        { q: "What industries do you do SEO for in Melbourne?", a: "We provide SEO services for Melbourne businesses in legal, medical, trades, hospitality, real estate, eCommerce, SaaS, and professional services. We have extensive experience in Melbourne's competitive inner-city and eastern suburbs markets." },
+        { q: "Which Melbourne suburbs do you serve?", a: "We serve all Melbourne suburbs including Melbourne CBD, Southbank, St Kilda, Richmond, Fitzroy, Collingwood, Carlton, Brunswick, Footscray, Docklands, South Yarra, Prahran, Glen Waverley, Box Hill, Dandenong, Frankston, Essendon, and Moonee Ponds." },
+      ]}
       breadcrumbs={[
         { name: "Home", url: "https://nexttabagency.com/" },
         { name: "Locations", url: "https://nexttabagency.com/locations/melbourne-seo" },

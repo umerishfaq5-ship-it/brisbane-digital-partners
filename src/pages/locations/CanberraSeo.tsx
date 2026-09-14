@@ -1,4 +1,4 @@
-﻿import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { MapPin, Search, Globe, BarChart3, ArrowRight, Users } from "lucide-react";
@@ -25,9 +25,16 @@ const fadeUp = { hidden: { opacity: 0, y: 28 }, visible: { opacity: 1, y: 0, tra
 const CanberraSeo = () => (
   <Layout>
     <SEO
-      title="SEO Agency Canberra ACT — Local SEO, Google Ads & Web Development"
-      description="Expert SEO & digital marketing for Canberra businesses. Local SEO, Google Ads, social media advertising & web development tailored for the ACT market. Free consultation available."
+      title="SEO Agency Canberra ACT | Top-Rated Local SEO Experts | Next Tab Agency"
+      description="Expert SEO & digital marketing for Canberra businesses. Local SEO, Google Ads, social media advertising & web development tailored for the ACT market. 4.9★ rated. Free consultation."
       canonical="/locations/canberra-seo"
+      faqs={[
+        { q: "How much does SEO cost in Canberra?", a: "SEO services for Canberra businesses at Next Tab Agency start from A$1,200/month for local SEO. The Canberra ACT market is less competitive than Sydney or Melbourne, which often means more affordable and faster results." },
+        { q: "How long does SEO take for Canberra businesses?", a: "Canberra businesses typically see ranking improvements in 2–4 months for local keywords. The ACT market is smaller and less saturated, which means our SEO campaigns often deliver results faster than in capital cities like Sydney or Melbourne." },
+        { q: "Do you offer Local SEO for Canberra government and professional services?", a: "Yes. We specialise in Local SEO for Canberra's professional services sector including government contractors, legal firms, accounting practices, and consultancies. We understand how ACT businesses need to be positioned online." },
+        { q: "Which Canberra suburbs do you target with Local SEO?", a: "We target all Canberra suburbs and surrounding ACT areas including Canberra CBD, Braddon, Belconnen, Gungahlin, Tuggeranong, Woden, Weston Creek, and the ACT-NSW border regions." },
+        { q: "Can you help Canberra businesses rank nationally, not just locally?", a: "Yes. Many Canberra-based businesses (especially government contractors and professional services) need to rank nationally. We offer both local ACT SEO and national Australian SEO strategies tailored to your growth goals." },
+      ]}
       breadcrumbs={[
         { name: "Home", url: "https://nexttabagency.com/" },
         { name: "Locations", url: "https://nexttabagency.com/locations/canberra-seo" },

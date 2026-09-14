@@ -1,4 +1,4 @@
-﻿import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { MapPin, Search, Globe, Smartphone, BarChart3, TrendingUp, Star, ArrowRight, Users, Zap, DollarSign } from "lucide-react";
@@ -25,9 +25,16 @@ const fadeUp = { hidden: { opacity: 0, y: 28 }, visible: { opacity: 1, y: 0, tra
 const SydneySeo = () => (
   <Layout>
     <SEO
-      title="SEO Agency Sydney NSW — Local SEO, Google Ads & Web Development"
-      description="Expert SEO & digital marketing for Sydney businesses. Local SEO, Google Ads, social media advertising & high-performance web development. Get a free consultation today."
+      title="SEO Agency Sydney NSW | Top-Rated Local SEO Experts | Next Tab Agency"
+      description="Expert SEO & digital marketing for Sydney businesses. Local SEO, Google Ads, social media advertising & high-performance web development. 4.9★ rated. Free consultation — call +61 470 400 743."
       canonical="/locations/sydney-seo"
+      faqs={[
+        { q: "How much does SEO cost in Sydney?", a: "SEO services in Sydney at Next Tab Agency start from A$1,200/month for local SEO. Competitive Sydney CBD markets typically require A$2,500–$4,000/month. All plans are month-to-month with no lock-in contracts." },
+        { q: "How long does SEO take to work in Sydney?", a: "Sydney businesses typically see meaningful ranking improvements in 3–6 months. Local SEO for suburban Sydney markets (Parramatta, Chatswood, Bondi) can show results in 6–10 weeks for less competitive niches." },
+        { q: "Do you offer Local SEO for Sydney small businesses?", a: "Yes. We specialise in Local SEO for Sydney small businesses — covering Google Business Profile optimisation, Google Maps rankings, and suburb-specific content targeting areas like North Sydney, Parramatta, Bondi, and Surry Hills." },
+        { q: "Can you manage Google Ads and SEO for Sydney businesses simultaneously?", a: "Absolutely. Our integrated SEO + Google Ads strategy for Sydney businesses is one of our most popular services. Running both together typically reduces overall cost-per-lead by 25–40% while maximising search coverage." },
+        { q: "Which Sydney suburbs do you serve?", a: "We serve all Sydney suburbs including Sydney CBD, North Sydney, Parramatta, Chatswood, Bondi, Surry Hills, Newtown, Pyrmont, Manly, Cronulla, Liverpool, Bankstown, Blacktown, Penrith, Castle Hill, Hornsby, Mascot, and Ultimo." },
+      ]}
       breadcrumbs={[
         { name: "Home", url: "https://nexttabagency.com/" },
         { name: "Locations", url: "https://nexttabagency.com/locations/sydney-seo" },

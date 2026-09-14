@@ -1,4 +1,4 @@
-﻿import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { MapPin, Search, Globe, BarChart3, ArrowRight, Users } from "lucide-react";
@@ -25,9 +25,16 @@ const fadeUp = { hidden: { opacity: 0, y: 28 }, visible: { opacity: 1, y: 0, tra
 const AdelaideSeo = () => (
   <Layout>
     <SEO
-      title="SEO Agency Adelaide SA — Local SEO, Google Ads & Web Development"
-      description="Expert SEO & digital marketing for Adelaide businesses. Local SEO, Google Ads, social media advertising & web development. Free consultation for South Australian businesses."
+      title="SEO Agency Adelaide SA | Top-Rated Local SEO Experts | Next Tab Agency"
+      description="Expert SEO & digital marketing for Adelaide businesses. Local SEO, Google Ads, social media advertising & web development. 4.9★ rated. Free consultation — call +61 470 400 743."
       canonical="/locations/adelaide-seo"
+      faqs={[
+        { q: "How much does SEO cost in Adelaide?", a: "SEO services in Adelaide at Next Tab Agency start from A$1,200/month for local SEO. Competitive Adelaide CBD markets typically require A$2,000–$3,500/month. All plans are month-to-month with no lock-in contracts." },
+        { q: "How long does SEO take in Adelaide?", a: "Most Adelaide businesses see ranking improvements in 3–5 months. Adelaide's digital market is less saturated than Sydney or Melbourne, which often means faster results — particularly for suburb-targeted Local SEO." },
+        { q: "Do you do Local SEO for Adelaide small businesses?", a: "Yes. We help Adelaide small businesses rank in Google Maps and local search results for suburbs including Adelaide CBD, Norwood, Unley, Glenelg, Prospect, and surrounding areas." },
+        { q: "What SEO services do you offer for Adelaide businesses?", a: "We offer Technical SEO, Local SEO, On-Page SEO, Link Building, Content Marketing, and Google Ads management for Adelaide businesses. Every campaign is customised to the South Australian market." },
+        { q: "Do you offer SEO for Adelaide eCommerce businesses?", a: "Yes. We have experience with eCommerce SEO on WooCommerce, Shopify, and Magento platforms for South Australian retailers targeting both local Adelaide customers and national Australian audiences." },
+      ]}
       breadcrumbs={[
         { name: "Home", url: "https://nexttabagency.com/" },
         { name: "Locations", url: "https://nexttabagency.com/locations/adelaide-seo" },

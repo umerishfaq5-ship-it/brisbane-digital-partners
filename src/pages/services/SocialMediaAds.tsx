@@ -1,7 +1,7 @@
-﻿import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
-import { Facebook, Instagram, Linkedin, Youtube, ArrowRight, CheckCircle, BarChart3, Target, TrendingUp, Zap, DollarSign, Users, Eye, MousePointer } from "lucide-react";
+import { Facebook, Instagram, Linkedin, Youtube, ArrowRight, CheckCircle, BarChart3, Target, TrendingUp, Zap, DollarSign, Users, Eye, MousePointer, MessageCircle } from "lucide-react";
 import Layout from "@/components/Layout";
 import SectionHeading from "@/components/SectionHeading";
 import heroBg from "@/assets/hero-bg.jpg";
@@ -86,9 +86,17 @@ const fadeUp = {
 const SocialMediaAds = () => (
   <Layout>
     <SEO
-      title="Social Media Advertising Agency Australia — Facebook, Instagram, TikTok, LinkedIn Ads"
-      description="Expert social media advertising for Australian businesses. Facebook Ads, Instagram Ads, LinkedIn Ads, YouTube & TikTok campaigns managed by specialists. Real ROI, transparent reporting."
+      title="Social Media Advertising Agency Brisbane & Australia — Facebook, Instagram, TikTok, LinkedIn Ads"
+      description="Expert social media advertising for Australian businesses. Facebook Ads, Instagram Ads, LinkedIn Ads, YouTube & TikTok campaigns. Avg 3.8× ROAS. No lock-in contracts. Free ad audit — call +61 470 400 743."
       canonical="/services/social-media-ads"
+      faqs={[
+        { q: "How much do social media ads cost in Australia?", a: "Social media ad management at Next Tab Agency starts from A$800/month plus your ad spend budget. We recommend a minimum of A$1,500/month in ad spend for Facebook and Instagram campaigns to get statistically meaningful data. LinkedIn campaigns typically require A$2,000+/month in ad spend." },
+        { q: "What is the average ROAS for Facebook Ads in Australia?", a: "Our Australian clients average 3.8× ROAS (Return on Ad Spend) across Facebook and Instagram campaigns. Results vary by industry — eCommerce typically sees 4–6× ROAS while lead generation businesses see 2–3× ROAS on average." },
+        { q: "Do you manage Facebook Ads, Instagram Ads, and TikTok Ads together?", a: "Yes. We offer a full-platform social advertising service covering Facebook, Instagram, LinkedIn, YouTube, and TikTok. We build an integrated strategy so your budget is allocated to the platforms where your customers actually spend time." },
+        { q: "How long before social media ads show results?", a: "Facebook and Instagram campaigns typically need 2–4 weeks of data before we can optimise effectively. Most clients see positive ROAS within the first 30 days, with peak performance usually reached by month 2–3 after continuous A/B testing." },
+        { q: "Which industries do you run social media ads for in Brisbane?", a: "We run paid social campaigns for eCommerce, real estate, legal, medical, fitness, SaaS, trades, and hospitality businesses across Brisbane, Melbourne, Sydney, and Australia-wide. No industry is too niche — we tailor creative and targeting to your specific audience." },
+        { q: "Can you run social media ads without a big budget?", a: "Yes. We work with budgets from A$1,500/month in ad spend. For smaller budgets, we focus on one or two platforms (usually Facebook + Instagram) and one campaign objective to maximise efficiency before scaling." },
+      ]}
       breadcrumbs={[
         { name: "Home", url: "https://nexttabagency.com/" },
         { name: "Services", url: "https://nexttabagency.com/services" },
@@ -126,6 +134,25 @@ const SocialMediaAds = () => (
         </motion.div>
       </div>
       <div className="absolute bottom-0 left-0 right-0 h-40 bg-gradient-to-t from-background to-transparent" />
+    </section>
+
+    {/* Social Proof Trust Bar */}
+    <section aria-label="Social Media Advertising Results" className="py-5 bg-accent/5 border-y border-accent/20">
+      <div className="container">
+        <div className="flex flex-wrap items-center justify-center gap-x-8 gap-y-3 text-sm">
+          {[
+            { icon: "⭐", text: "4.9/5 rated by 87+ Australian clients" },
+            { icon: "📈", text: "3.8× average ROAS across all campaigns" },
+            { icon: "🇦🇺", text: "2M+ Australians reached monthly" },
+            { icon: "🔓", text: "No lock-in contracts — ever" },
+          ].map((item) => (
+            <div key={item.text} className="flex items-center gap-2 text-foreground/70">
+              <span>{item.icon}</span>
+              <span className="font-medium">{item.text}</span>
+            </div>
+          ))}
+        </div>
+      </div>
     </section>
 
     {/* Results Stats */}
@@ -242,6 +269,35 @@ const SocialMediaAds = () => (
       </div>
     </section>
 
+    {/* FAQ Section */}
+    <section aria-labelledby="social-ads-faq-heading" className="py-16 md:py-20 bg-muted/10 border-t border-border/40">
+      <div className="container max-w-3xl">
+        <SectionHeading
+          id="social-ads-faq-heading"
+          eyebrow="Common Questions"
+          title="Social media advertising FAQs"
+          description="Everything Australian businesses ask before getting started with paid social."
+        />
+        <div className="space-y-4">
+          {[
+            { q: "How much do social media ads cost in Australia?", a: "Management starts from A$800/month plus your ad spend. We recommend a minimum of A$1,500/month in ad spend for Facebook/Instagram to get meaningful data. LinkedIn requires A$2,000+/month in ad spend." },
+            { q: "What ROAS can I expect from Facebook Ads?", a: "Our Australian clients average 3.8× ROAS. eCommerce typically sees 4–6× ROAS while lead generation businesses average 2–3×. Results depend on your offer, creative quality, and audience targeting." },
+            { q: "How long before social media ads show results?", a: "Facebook and Instagram campaigns need 2–4 weeks of data before we can fully optimise. Most clients see positive ROAS within 30 days, with peak performance by month 2–3." },
+            { q: "Do you manage Facebook, Instagram, and TikTok together?", a: "Yes — we offer full-platform management across Facebook, Instagram, LinkedIn, YouTube, and TikTok under one integrated strategy, so your budget always goes to where your audience is." },
+            { q: "Can you run social ads without a big budget?", a: "Yes. We work with ad spend budgets from A$1,500/month. For smaller budgets we focus on one or two platforms and one campaign objective to maximise efficiency before scaling." },
+          ].map((item, i) => (
+            <details key={i} className="group card-premium rounded-2xl overflow-hidden">
+              <summary className="flex items-center justify-between gap-4 p-6 cursor-pointer font-heading font-semibold text-foreground list-none">
+                {item.q}
+                <span className="shrink-0 w-6 h-6 rounded-full border border-border flex items-center justify-center text-accent group-open:rotate-45 transition-transform duration-200">+</span>
+              </summary>
+              <p className="px-6 pb-6 text-muted-foreground leading-relaxed text-sm">{item.a}</p>
+            </details>
+          ))}
+        </div>
+      </div>
+    </section>
+
     {/* CTA */}
     <section aria-labelledby="social-cta-heading" className="py-16 pb-24">
       <div className="container">
@@ -253,15 +309,28 @@ const SocialMediaAds = () => (
         >
           <div className="absolute inset-0 pattern-lines opacity-20" />
           <div className="relative z-10">
+            <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/10 text-white/80 text-xs font-semibold mb-4 border border-white/20">
+              🔥 Only 3 new client spots available this month
+            </span>
             <h2 id="social-cta-heading" className="font-heading font-bold text-2xl md:text-3xl text-primary-foreground mb-4">
               Ready to grow with social ads?
             </h2>
             <p className="text-primary-foreground/50 max-w-md mx-auto mb-8">
               Get a free audit of your current social ad performance — or start from scratch. We'll show you exactly where your budget is going and how to get more from it.
             </p>
-            <Button variant="hero-primary" size="xl" className="rounded-full" asChild>
-              <Link to="/contact">Book a Free Strategy Call</Link>
-            </Button>
+            <div className="flex flex-wrap gap-4 justify-center">
+              <Button variant="hero-primary" size="xl" className="rounded-full" asChild>
+                <Link to="/contact">Book a Free Strategy Call <ArrowRight className="w-4 h-4 ml-1" /></Link>
+              </Button>
+              <a
+                href="https://wa.me/61470400743?text=Hi%2C%20I%27d%20like%20a%20free%20social%20media%20ads%20audit"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 px-8 py-4 rounded-full bg-green-500 hover:bg-green-400 text-white font-semibold transition-colors text-base"
+              >
+                <MessageCircle className="w-5 h-5" /> WhatsApp Us
+              </a>
+            </div>
           </div>
         </motion.div>
       </div>

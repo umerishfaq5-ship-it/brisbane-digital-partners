@@ -1,4 +1,4 @@
-﻿import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Helmet } from "react-helmet-async";
@@ -50,12 +50,23 @@ const BrisbaneSeo = () => (
           "@context": "https://schema.org",
           "@type": "LocalBusiness",
           "name": "Next Tab Agency",
+          "telephone": "+61470400743",
+          "email": "info@nexttabagency.com",
+          "url": "https://nexttabagency.com/locations/brisbane-seo",
+          "priceRange": "$$",
+          "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.9",
+            "reviewCount": "87",
+            "bestRating": "5"
+          },
           "address": {
             "@type": "PostalAddress",
-            "addressLocality": "Brisbane",
+            "streetAddress": "Taylor Street",
+            "addressLocality": "Eagleby",
             "addressRegion": "QLD",
             "addressCountry": "AU",
-            "postalCode": "4000"
+            "postalCode": "4207"
           },
           "areaServed": [
             {"@type": "PostalAddress", "postalCode": "4000", "name": "Brisbane CBD"},
@@ -71,8 +82,8 @@ const BrisbaneSeo = () => (
       </script>
     </Helmet>
     <SEO
-      title="SEO Agency Brisbane | Local SEO Experts That Actually Rank | Next Tab Agency"
-      description="Brisbane's top-rated SEO agency. 200+ businesses ranked. Technical SEO, Local SEO & content marketing. 4.9★ rated. No lock-in contracts. Free SEO audit for Brisbane businesses — book now."
+      title="SEO Agency Brisbane | #1 Rated Local SEO Experts | Next Tab Agency"
+      description="Brisbane's top-rated SEO agency. 87+ businesses ranked. Technical SEO, Local SEO & content marketing. 4.9★ rated. No lock-in contracts. Free SEO audit — call +61 470 400 743."
       canonical="/locations/brisbane-seo"
       faqs={[
         { q: "How much does SEO cost in Brisbane?", a: "SEO packages at Next Tab Agency start from A$1,200/month for local SEO and A$2,500/month for competitive Brisbane markets. We provide transparent, month-to-month pricing with no lock-in contracts." },
@@ -83,6 +94,9 @@ const BrisbaneSeo = () => (
         { q: "Do you do SEO for Brisbane eCommerce stores?", a: "Yes. We have extensive experience with eCommerce SEO for WooCommerce, Shopify, BigCommerce, and Magento stores targeting Brisbane and Australia-wide customers." },
         { q: "Which Brisbane suburbs do you serve?", a: "We serve the entire Greater Brisbane area including Brisbane CBD, Fortitude Valley, South Brisbane, West End, Chermside, Carindale, Springwood, Logan, Ipswich, Beenleigh, Eagleby, Redlands, Wynnum, Manly, Brendale, and surrounding suburbs." },
         { q: "Can Next Tab Agency manage Google Ads and SEO together?", a: "Yes. We offer combined SEO + PPC strategies for Brisbane businesses that want to dominate both organic and paid search results. Integrated campaigns typically reduce overall cost-per-lead by 25–40%." },
+        { q: "Who is the best SEO agency in Brisbane?", a: "Next Tab Agency is consistently rated Brisbane's top boutique SEO agency with a 4.9/5 score across 87+ verified client reviews. Unlike larger agencies, every campaign is managed by a senior specialist, not outsourced." },
+        { q: "How do I choose an SEO agency in Brisbane?", a: "Look for an agency with verified Google reviews, transparent month-to-month contracts, case studies from Brisbane businesses, and specialists who explain their strategy clearly. Next Tab Agency ticks all these boxes — ask us for references." },
+        { q: "What is the difference between Local SEO and national SEO in Brisbane?", a: "Local SEO targets customers in specific Brisbane suburbs and Google Maps, while national SEO targets Australia-wide keywords. Most Brisbane small businesses need Local SEO first to dominate their suburb before scaling nationally." },
       ]}
       breadcrumbs={[
         { name: "Home", url: "https://nexttabagency.com/" },
@@ -103,10 +117,10 @@ const BrisbaneSeo = () => (
             Brisbane, QLD — Home Base
           </span>
           <h1 id="brisbane-hero-heading" className="font-heading font-bold text-4xl md:text-[3.5rem] leading-[1.08] text-primary-foreground mb-6">
-            Result-Oriented <span className="text-gradient">SEO Agency Brisbane:</span> No-Link Ranking Experts.
+            Brisbane's <span className="text-gradient">#1 Rated SEO Agency</span> — Results, Not Excuses.
           </h1>
           <p className="text-lg md:text-xl text-primary-foreground/60 max-w-2xl mb-10 leading-relaxed">
-            We're Brisbane-based and proud of it. We rank local businesses without spammy backlink schemes — using entity authority, content siloing, and technical architecture that out-performs what OMG and Dejan charge 3x more for.
+            We're a Brisbane-based SEO agency helping local businesses rank on Google Page 1. 87+ clients, 4.9★ rating, no lock-in contracts. Technical SEO, Local SEO, and Google Ads — all under one roof.
           </p>
           <div className="flex flex-wrap gap-4">
             <Button variant="hero-primary" size="xl" className="rounded-full" asChild>
@@ -119,6 +133,70 @@ const BrisbaneSeo = () => (
         </motion.div>
       </div>
       <div className="absolute bottom-0 left-0 right-0 h-40 bg-gradient-to-t from-background to-transparent" />
+    </section>
+
+    {/* Trust Stats Bar */}
+    <section aria-label="Brisbane SEO Agency Trust Signals" className="py-8 border-b border-border/40 bg-card/60 backdrop-blur-sm">
+      <div className="container">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+          {[
+            { value: "87+", label: "Brisbane Clients Ranked" },
+            { value: "4.9★", label: "Google Rating" },
+            { value: "6+", label: "Years in Brisbane" },
+            { value: "No", label: "Lock-in Contracts" },
+          ].map((stat) => (
+            <div key={stat.label}>
+              <p className="font-heading font-bold text-2xl md:text-3xl text-accent">{stat.value}</p>
+              <p className="text-xs text-muted-foreground mt-1 font-medium">{stat.label}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    {/* Competitor Comparison Table */}
+    <section aria-labelledby="brisbane-compare-heading" className="py-16 bg-muted/10">
+      <div className="container max-w-4xl">
+        <SectionHeading
+          id="brisbane-compare-heading"
+          eyebrow="Why Switch?"
+          title="How we compare to other Brisbane SEO agencies"
+          description="Transparent comparison — no fluff. See why Brisbane businesses switch to Next Tab Agency."
+        />
+        <div className="overflow-x-auto rounded-2xl border border-border">
+          <table className="w-full text-sm">
+            <thead>
+              <tr className="bg-primary text-primary-foreground">
+                <th className="text-left p-4 font-semibold">Feature</th>
+                <th className="p-4 font-semibold text-center">Next Tab Agency</th>
+                <th className="p-4 font-semibold text-center text-primary-foreground/60">Typical Big Agency</th>
+              </tr>
+            </thead>
+            <tbody>
+              {[
+                ["Lock-in contracts", "❌ None — month-to-month", "✅ 12–24 month contracts"],
+                ["Who manages your campaign", "Senior specialist (founder-led)", "Junior account manager"],
+                ["Reporting", "Plain-English, monthly", "Confusing dashboards"],
+                ["Brisbane local knowledge", "✅ Based in Eagleby, QLD", "Often interstate or offshore"],
+                ["Starting price", "From A$1,200/month", "From A$2,500+/month"],
+                ["Response time", "Same business day", "48–72 hours"],
+                ["Free audit", "✅ Yes, always", "Paid or generic"],
+              ].map(([feature, us, them], i) => (
+                <tr key={feature} className={i % 2 === 0 ? "bg-card" : "bg-muted/30"}>
+                  <td className="p-4 font-medium text-foreground">{feature}</td>
+                  <td className="p-4 text-center text-accent font-semibold">{us}</td>
+                  <td className="p-4 text-center text-muted-foreground">{them}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+        <p className="text-center mt-6">
+          <a href="/contact" className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-accent text-accent-foreground font-semibold text-sm hover:bg-accent/90 transition-colors">
+            Get Your Free SEO Audit <ArrowRight className="w-4 h-4" />
+          </a>
+        </p>
+      </div>
     </section>
 
     {/* Services Grid */}
