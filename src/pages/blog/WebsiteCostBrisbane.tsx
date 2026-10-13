@@ -7,7 +7,7 @@ import BlogPostLayout, {
 const schema = {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://nexttabagency.com/blog/website-cost-brisbane" },
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://nexttabagency.com/blog/website-cost-brisbane/" },
   "headline": "How Much Does a Website Cost in Brisbane in 2026? Honest Pricing Guide",
   "description": "Real Brisbane website pricing from a local agency. Template sites from $800, custom WordPress from $3,500, eCommerce from $4,500. No fluff, no hidden fees.",
   "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2015&fm=webp&fit=crop",
@@ -35,6 +35,7 @@ const faqSchema = {
 const WebsiteCostBrisbane = () => (
   <>
     <Helmet>
+      <link rel="canonical" href="https://nexttabagency.com/blog/website-cost-brisbane/" />
       <title>How Much Does a Website Cost in Brisbane in 2026? | Next Tab Agency</title>
       <meta name="description" content="Real Brisbane website pricing from a local agency. Template sites from $800, custom WordPress from $3,500, eCommerce from $4,500. Honest guide with no hidden fees." />
       <script type="application/ld+json">{JSON.stringify(schema)}</script>
@@ -146,9 +147,9 @@ const WebsiteCostBrisbane = () => (
           <div>
             <p className="text-xs font-bold uppercase tracking-wider text-muted-foreground mb-2">Typical platforms</p>
             <ul className="space-y-1 text-sm text-muted-foreground">
-              <li><Link to="/services/shopify-development" className="text-accent underline">Shopify</Link> — $4,500–$9,000</li>
-              <li><Link to="/services/woocommerce-development" className="text-accent underline">WooCommerce</Link> — $4,000–$8,000</li>
-              <li><Link to="/services/bigcommerce-development" className="text-accent underline">BigCommerce</Link> — $6,000–$12,000</li>
+              <li><Link to="/services/shopify-development/" className="text-accent underline">Shopify</Link> — $4,500–$9,000</li>
+              <li><Link to="/services/woocommerce-development/" className="text-accent underline">WooCommerce</Link> — $4,000–$8,000</li>
+              <li><Link to="/services/bigcommerce-development/" className="text-accent underline">BigCommerce</Link> — $6,000–$12,000</li>
             </ul>
           </div>
         </div>
@@ -159,7 +160,7 @@ const WebsiteCostBrisbane = () => (
           <span className="px-3 py-1 rounded-full bg-muted text-xs font-bold uppercase tracking-wider text-muted-foreground">Tier 4</span>
           <h3 className="font-heading font-bold text-xl text-foreground">Enterprise eCommerce — $12,000–$30,000</h3>
         </div>
-        <p className="text-muted-foreground leading-relaxed mb-4">Large product catalogues (1,000+ SKUs), B2B wholesale portals, ERP integration (MYOB, Xero, SAP), or complex booking systems. <Link to="/services/magento-development" className="text-accent underline">Magento 2 / Adobe Commerce</Link> and <Link to="/services/bigcommerce-development" className="text-accent underline">BigCommerce B2B Edition</Link> typically sit here. Requires a full discovery phase before quoting.</p>
+        <p className="text-muted-foreground leading-relaxed mb-4">Large product catalogues (1,000+ SKUs), B2B wholesale portals, ERP integration (MYOB, Xero, SAP), or complex booking systems. <Link to="/services/magento-development/" className="text-accent underline">Magento 2 / Adobe Commerce</Link> and <Link to="/services/bigcommerce-development/" className="text-accent underline">BigCommerce B2B Edition</Link> typically sit here. Requires a full discovery phase before quoting.</p>
       </div>
 
       <div className="mb-12 rounded-2xl border border-border bg-card p-6 md:p-8">
@@ -239,15 +240,15 @@ const WebsiteCostBrisbane = () => (
 
       <SectionH2>Related Reading</SectionH2>
       <ul className="mb-10 space-y-2 text-muted-foreground">
-        <li>→ <Link to="/services/wordpress-development" className="text-accent underline">WordPress Developer Brisbane — Custom Sites & WooCommerce</Link></li>
-        <li>→ <Link to="/services/shopify-development" className="text-accent underline">Shopify Development Brisbane — Prices & Process</Link></li>
-        <li>→ <Link to="/services/woocommerce-development" className="text-accent underline">WooCommerce Developer Brisbane — What We Build</Link></li>
-        <li>→ <Link to="/blog/shopify-vs-woocommerce-seo" className="text-accent underline">Shopify vs WooCommerce: Which Ranks Better on Google?</Link></li>
-        <li>→ <Link to="/locations/brisbane-seo" className="text-accent underline">SEO Agency Brisbane — Rank Higher, Get More Clients</Link></li>
+        <li>→ <Link to="/services/wordpress-development/" className="text-accent underline">WordPress Developer Brisbane — Custom Sites & WooCommerce</Link></li>
+        <li>→ <Link to="/services/shopify-development/" className="text-accent underline">Shopify Development Brisbane — Prices & Process</Link></li>
+        <li>→ <Link to="/services/woocommerce-development/" className="text-accent underline">WooCommerce Developer Brisbane — What We Build</Link></li>
+        <li>→ <Link to="/blog/shopify-vs-woocommerce-seo/" className="text-accent underline">Shopify vs WooCommerce: Which Ranks Better on Google?</Link></li>
+        <li>→ <Link to="/locations/brisbane-seo/" className="text-accent underline">SEO Agency Brisbane — Rank Higher, Get More Clients</Link></li>
       </ul>
 
       <ActionItem>
-        Ready to get a real price? Next Tab Agency provides fixed-price Brisbane website quotes with a detailed scope before you commit. No vague ranges. <Link to="/contact" className="text-accent underline font-semibold">Request your free scoping call →</Link>
+        Ready to get a real price? Next Tab Agency provides fixed-price Brisbane website quotes with a detailed scope before you commit. No vague ranges. <Link to="/contact/" className="text-accent underline font-semibold">Request your free scoping call →</Link>
       </ActionItem>
 
     </BlogPostLayout>

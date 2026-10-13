@@ -67,8 +67,8 @@ const SeoMigration = () => {
         faqs={service.faqs}
         breadcrumbs={[
           { name: "Home", url: "https://nexttabagency.com/" },
-          { name: "Services", url: "https://nexttabagency.com/services" },
-          { name: "SEO Migration", url: "https://nexttabagency.com/services/seo-migration" },
+          { name: "Services", url: "https://nexttabagency.com/services/" },
+          { name: "SEO Migration", url: "https://nexttabagency.com/services/seo-migration/" },
         ]}
         serviceSchema={{
           name: "SEO Migration Services",
@@ -83,7 +83,7 @@ const SeoMigration = () => {
         <div className="absolute inset-0 bg-gradient-to-br from-primary/96 via-primary/87 to-transparent" />
         <div className="absolute bottom-1/3 right-[15%] w-64 h-64 bg-accent/10 rounded-full blur-[100px]" />
         <div className="container relative z-10 py-32 md:py-48 pt-44">
-          <Link to="/services" className="inline-flex items-center text-sm font-semibold text-accent mb-8 hover:text-accent/80 transition-colors">
+          <Link to="/services/" className="inline-flex items-center text-sm font-semibold text-accent mb-8 hover:text-accent/80 transition-colors">
             <ArrowLeft className="w-4 h-4 mr-2" /> Back to all services
           </Link>
           <div className="max-w-3xl">
@@ -143,7 +143,7 @@ const SeoMigration = () => {
               <div className="mt-5 rounded-2xl border border-accent/30 bg-accent/5 p-5">
                 <p className="text-xs text-muted-foreground leading-relaxed">
                   🛠️ Moving to a new platform?{" "}
-                  <Link to="/services/web-development" className="text-accent font-semibold hover:underline">
+                  <Link to="/services/web-development/" className="text-accent font-semibold hover:underline">
                     Our Web Development service
                   </Link>{" "}
                   pairs perfectly with migration — new platform, properly built from the start.
@@ -276,7 +276,7 @@ const SeoMigration = () => {
                 Before you touch a single redirect, get a free pre-migration SEO risk assessment from our Brisbane team. We'll tell you exactly what to watch out for.
               </p>
               <Button variant="hero-primary" size="xl" className="rounded-full" asChild>
-                <Link to="/contact">Get My Free Migration Assessment</Link>
+                <Link to="/contact/">Get My Free Migration Assessment</Link>
               </Button>
             </div>
           </motion.div>

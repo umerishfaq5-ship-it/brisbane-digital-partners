@@ -7,7 +7,7 @@ import BlogPostLayout, {
 const schema = {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://nexttabagency.com/blog/local-entity-core-update" },
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://nexttabagency.com/blog/local-entity-core-update/" },
   "headline": "Losing Organic Traffic? Use the Google Map Pack to Bypass Core Update Drops",
   "description": "If your traditional website rankings fluctuate, your Google Business Profile (GBP) is your ultimate safety net.",
   "image": "https://images.unsplash.com/photo-1524661135-423995f22d0b?q=80&w=2074",
@@ -22,6 +22,7 @@ const schema = {
 const LocalEntityCoreUpdate = () => (
   <>
     <Helmet>
+      <link rel="canonical" href="https://nexttabagency.com/blog/local-entity-core-update/" />
       <title>Use the Google Map Pack to Bypass Core Update Drops | Next Tab Agency</title>
       <meta name="description" content="If your traditional website rankings fluctuate, your Google Business Profile (GBP) is your ultimate safety net." />
     </Helmet>
@@ -113,7 +114,7 @@ const LocalEntityCoreUpdate = () => (
       <div className="p-8 my-12 text-center border bg-muted/40 rounded-2xl border-border/50">
         <h3 className="mb-3 text-2xl font-bold font-heading text-foreground">Dominate the Map Pack</h3>
         <p className="mb-5 text-muted-foreground">Let our Australian team audit your Local SEO footprint and build an Entity strategy to secure the top 3 positions.</p>
-        <Link to="/services/local-seo" className="inline-flex items-center gap-2 px-6 py-3 font-bold rounded-full bg-accent text-accent-foreground hover:bg-accent/90">
+        <Link to="/services/local-seo/" className="inline-flex items-center gap-2 px-6 py-3 font-bold rounded-full bg-accent text-accent-foreground hover:bg-accent/90">
           Get a Local SEO Strategy →
         </Link>
       </div>

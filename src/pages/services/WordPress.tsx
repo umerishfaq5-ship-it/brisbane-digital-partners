@@ -142,8 +142,8 @@ const WordPress = () => (
       faqs={service.faqs}
       breadcrumbs={[
         { name: "Home",     url: "https://nexttabagency.com/" },
-        { name: "Services", url: "https://nexttabagency.com/services" },
-        { name: "WordPress Developer Brisbane", url: "https://nexttabagency.com/services/wordpress-development" },
+        { name: "Services", url: "https://nexttabagency.com/services/" },
+        { name: "WordPress Developer Brisbane", url: "https://nexttabagency.com/services/wordpress-development/" },
       ]}
       serviceSchema={{
         name:        "WordPress Developer Brisbane",
@@ -169,7 +169,7 @@ const WordPress = () => (
 
       <div className="container relative z-10 py-32 md:py-48 pt-44">
         <Link
-          to="/services"
+          to="/services/"
           className="inline-flex items-center text-sm font-semibold text-accent mb-8 hover:text-accent/80 transition-colors"
         >
           <ArrowLeft className="w-4 h-4 mr-2" />
@@ -245,7 +245,7 @@ const WordPress = () => (
               <p className="text-xs text-muted-foreground leading-relaxed">
                 🛒 Need an online store on your WordPress site?{" "}
                 <Link
-                  to="/services/woocommerce-development"
+                  to="/services/woocommerce-development/"
                   className="text-accent font-semibold hover:underline"
                 >
                   Need a shop? Upgrade to WooCommerce
@@ -416,10 +416,10 @@ const WordPress = () => (
         </p>
         <div className="flex flex-wrap gap-3 justify-center">
           {[
-            { label: "Squarespace Development", to: "/services/squarespace-development" },
-            { label: "Custom Web Development",  to: "/services/web-development" },
-            { label: "SEO Audits & Strategy",   to: "/services/seo-audits" },
-            { label: "Local SEO",               to: "/services/local-seo" },
+            { label: "Squarespace Development", to: "/services/squarespace-development/" },
+            { label: "Custom Web Development",  to: "/services/web-development/" },
+            { label: "SEO Audits & Strategy",   to: "/services/seo-audits/" },
+            { label: "Local SEO",               to: "/services/local-seo/" },
           ].map((s) => (
             <Link
               key={s.to}
@@ -454,7 +454,7 @@ const WordPress = () => (
               Let's have a straight conversation about what a great WordPress site can do for your business.
             </p>
             <Button variant="hero-primary" size="xl" className="rounded-full" asChild>
-              <Link to="/contact">Get a Free Consultation</Link>
+              <Link to="/contact/">Get a Free Consultation</Link>
             </Button>
           </div>
         </motion.div>
@@ -540,13 +540,13 @@ const WordPress = () => (
         <p className="text-xs font-bold uppercase tracking-[0.2em] text-accent mb-6 text-center">Related Services</p>
         <div className="flex flex-wrap gap-3 justify-center">
           {[
-            { label: "WooCommerce Developer Brisbane", href: "/services/woocommerce-development" },
-            { label: "WordPress SEO", href: "/services/wordpress-seo" },
-            { label: "Shopify Development", href: "/services/shopify-development" },
-            { label: "Web Development Brisbane", href: "/services/web-development" },
-            { label: "BigCommerce Development", href: "/services/bigcommerce-development" },
-            { label: "Speed Optimisation", href: "/services/speed-optimization" },
-            { label: "Brisbane SEO Agency", href: "/locations/brisbane-seo" },
+            { label: "WooCommerce Developer Brisbane", href: "/services/woocommerce-development/" },
+            { label: "WordPress SEO", href: "/services/wordpress-seo/" },
+            { label: "Shopify Development", href: "/services/shopify-development/" },
+            { label: "Web Development Brisbane", href: "/services/web-development/" },
+            { label: "BigCommerce Development", href: "/services/bigcommerce-development/" },
+            { label: "Speed Optimisation", href: "/services/speed-optimization/" },
+            { label: "Brisbane SEO Agency", href: "/locations/brisbane-seo/" },
           ].map((s) => (
             <Link key={s.href} to={s.href}
               className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full border border-border bg-card text-sm font-semibold text-foreground hover:border-accent hover:text-accent transition-colors">

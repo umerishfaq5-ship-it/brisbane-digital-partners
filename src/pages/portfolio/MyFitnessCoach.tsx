@@ -36,8 +36,8 @@ export default function MyFitnessCoach() {
         canonical="/portfolio/my-fitness-coach"
         breadcrumbs={[
           { name: "Home", url: "https://nexttabagency.com/" },
-          { name: "Portfolio", url: "https://nexttabagency.com/portfolio" },
-          { name: "MyFitnessCoach", url: "https://nexttabagency.com/portfolio/my-fitness-coach" },
+          { name: "Portfolio", url: "https://nexttabagency.com/portfolio/" },
+          { name: "MyFitnessCoach", url: "https://nexttabagency.com/portfolio/my-fitness-coach/" },
         ]}
       />
 
@@ -57,7 +57,7 @@ export default function MyFitnessCoach() {
             <motion.div initial="hidden" animate="visible" variants={fadeUp}>
               <div className="flex items-center gap-3 mb-6">
                 <Link
-                  to="/portfolio"
+                  to="/portfolio/"
                   className="text-xs text-white/40 hover:text-white/70 transition-colors"
                 >
                   ← Portfolio
@@ -121,7 +121,7 @@ export default function MyFitnessCoach() {
               </div>
 
               <Button variant="accent" size="lg" className="rounded-full" asChild>
-                <Link to="/contact">
+                <Link to="/contact/">
                   Build Your App <ArrowRight className="w-4 h-4 ml-2" />
                 </Link>
               </Button>
@@ -330,7 +330,7 @@ export default function MyFitnessCoach() {
               <p className="text-primary-foreground/80 text-sm mb-2">
                 <strong className="text-white">Need a similar App solution for your business?</strong>
               </p>
-              <Link to="/contact" className="inline-flex items-center gap-2 text-sm font-bold text-green-400 hover:text-green-300 transition-colors">
+              <Link to="/contact/" className="inline-flex items-center gap-2 text-sm font-bold text-green-400 hover:text-green-300 transition-colors">
                 Contact us <ArrowRight className="w-4 h-4" />
               </Link>
             </div>
@@ -341,7 +341,7 @@ export default function MyFitnessCoach() {
               className="rounded-full"
               asChild
             >
-              <Link to="/contact">
+              <Link to="/contact/">
                 Start Your App Project <ArrowRight className="w-4 h-4 ml-2" />
               </Link>
             </Button>

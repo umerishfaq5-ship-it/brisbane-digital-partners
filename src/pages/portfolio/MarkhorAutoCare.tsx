@@ -119,8 +119,8 @@ export default function MarkhorAutoCare() {
         canonical="/portfolio/markhor-auto-care"
         breadcrumbs={[
           { name: "Home",             url: "https://nexttabagency.com/" },
-          { name: "Case Studies",     url: "https://nexttabagency.com/portfolio" },
-          { name: "Markhor Auto Care",url: "https://nexttabagency.com/portfolio/markhor-auto-care" },
+          { name: "Case Studies",     url: "https://nexttabagency.com/portfolio/" },
+          { name: "Markhor Auto Care",url: "https://nexttabagency.com/portfolio/markhor-auto-care/" },
         ]}
       />
 
@@ -137,7 +137,7 @@ export default function MarkhorAutoCare() {
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <motion.div initial="hidden" animate="visible" variants={fadeUp}>
               <div className="flex items-center gap-3 mb-6">
-                <Link to="/portfolio" className="text-xs text-white/40 hover:text-white/70 transition-colors">Back to Case Studies</Link>
+                <Link to="/portfolio/" className="text-xs text-white/40 hover:text-white/70 transition-colors">Back to Case Studies</Link>
                 <span className="text-white/20">/</span>
                 <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-blue-500/15 text-blue-300 text-xs font-semibold border border-blue-500/20">
                   <Globe className="w-3 h-3" /> WordPress + GBP
@@ -149,7 +149,7 @@ export default function MarkhorAutoCare() {
                 <span className="block text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-300">Auto Care</span>
               </h1>
               <p className="text-white/50 text-base mb-6">
-                Car Detailing & Repairs — <Link to="/locations/brisbane-seo" className="text-blue-300/70 hover:text-blue-300 transition-colors">Rocklea, Brisbane</Link> · WordPress + Google Business Profile
+                Car Detailing & Repairs — <Link to="/locations/brisbane-seo/" className="text-blue-300/70 hover:text-blue-300 transition-colors">Rocklea, Brisbane</Link> · WordPress + Google Business Profile
               </p>
 
               <div className="mb-6 p-4 rounded-xl border border-orange-500/30 bg-orange-500/8">
@@ -169,7 +169,7 @@ export default function MarkhorAutoCare() {
 
               <div className="flex flex-wrap gap-3">
                 <Button variant="accent" size="lg" className="rounded-full" asChild>
-                  <Link to="/contact">Build My Website <ArrowRight className="w-4 h-4 ml-2" /></Link>
+                  <Link to="/contact/">Build My Website <ArrowRight className="w-4 h-4 ml-2" /></Link>
                 </Button>
                 <Button variant="outline" size="lg" className="rounded-full border-white/20 text-white hover:bg-white/5" asChild>
                   <a href="https://markhorautocare.com.au" target="_blank" rel="noopener noreferrer">
@@ -237,7 +237,7 @@ export default function MarkhorAutoCare() {
               <span className="text-red-500">Zero online presence.</span>
             </h2>
             <p className="text-muted-foreground text-lg leading-relaxed mb-8 max-w-3xl">
-              Markhor Auto Care offers premium car detailing, paint protection, mechanical repairs, brakes, and suspension services in Rocklea, <Link to="/locations/brisbane-seo" className="text-accent hover:underline font-semibold">Brisbane</Link>. But without a website or Google Business Profile, they were completely invisible to local customers searching for auto services online.
+              Markhor Auto Care offers premium car detailing, paint protection, mechanical repairs, brakes, and suspension services in Rocklea, <Link to="/locations/brisbane-seo/" className="text-accent hover:underline font-semibold">Brisbane</Link>. But without a website or Google Business Profile, they were completely invisible to local customers searching for auto services online.
             </p>
             <div className="mb-8">
               <p className="text-xs text-muted-foreground uppercase tracking-[0.15em] font-bold mb-4 flex items-center gap-2">
@@ -378,17 +378,17 @@ export default function MarkhorAutoCare() {
               <p className="text-sm text-muted-foreground mb-2">
                 <strong className="text-foreground">Need a similar WordPress & SEO solution for your business?</strong>
               </p>
-              <Link to="/contact" className="inline-flex items-center gap-2 text-sm font-bold text-accent hover:text-accent/80 transition-colors">
+              <Link to="/contact/" className="inline-flex items-center gap-2 text-sm font-bold text-accent hover:text-accent/80 transition-colors">
                 Contact us <ArrowRight className="w-4 h-4" />
               </Link>
             </div>
 
             <div className="flex gap-4 flex-wrap">
               <Button variant="accent" size="lg" className="rounded-full" asChild>
-                <Link to="/contact">Start My Project <ArrowRight className="w-4 h-4 ml-2" /></Link>
+                <Link to="/contact/">Start My Project <ArrowRight className="w-4 h-4 ml-2" /></Link>
               </Button>
               <Button variant="outline" size="lg" className="rounded-full" asChild>
-                <Link to="/portfolio">Back to Case Studies</Link>
+                <Link to="/portfolio/">Back to Case Studies</Link>
               </Button>
             </div>
           </motion.div>
@@ -515,12 +515,12 @@ export default function MarkhorAutoCare() {
                 <div>
                   <p className="text-xs font-bold text-foreground mb-0.5">Next Tab Agency — Servicing Office</p>
                   <address className="not-italic text-xs text-muted-foreground">
-                    Taylor Street, Eagleby, QLD 4207, <Link to="/locations/brisbane-seo" className="text-accent hover:underline">Brisbane</Link>, Australia
+                    Taylor Street, Eagleby, QLD 4207, <Link to="/locations/brisbane-seo/" className="text-accent hover:underline">Brisbane</Link>, Australia
                   </address>
                   <p className="text-xs text-muted-foreground mt-1">
-                    <Link to="/locations/brisbane-seo" className="text-accent hover:underline">Brisbane</Link> web development experts — WordPress, WooCommerce, GBP setup, and Local SEO for Australian tradespeople.{" "}
-                    <Link to="/services/web-development" className="text-accent hover:underline">Web Development service</Link> |{" "}
-                    <Link to="/services/google-business-profile" className="text-accent hover:underline">GBP Setup service</Link>
+                    <Link to="/locations/brisbane-seo/" className="text-accent hover:underline">Brisbane</Link> web development experts — WordPress, WooCommerce, GBP setup, and Local SEO for Australian tradespeople.{" "}
+                    <Link to="/services/web-development/" className="text-accent hover:underline">Web Development service</Link> |{" "}
+                    <Link to="/services/google-business-profile/" className="text-accent hover:underline">GBP Setup service</Link>
                   </p>
                 </div>
               </div>

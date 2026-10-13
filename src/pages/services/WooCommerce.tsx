@@ -125,10 +125,10 @@ const industries = [
 ];
 
 const relatedServices = [
-  { label: "WordPress Development",   to: "/services/wordpress-development" },
-  { label: "Shopify Development",     to: "/services/shopify-development" },
-  { label: "BigCommerce Development", to: "/services/bigcommerce-development" },
-  { label: "SEO Audits & Strategy",   to: "/services/seo-audits" },
+  { label: "WordPress Development",   to: "/services/wordpress-development/" },
+  { label: "Shopify Development",     to: "/services/shopify-development/" },
+  { label: "BigCommerce Development", to: "/services/bigcommerce-development/" },
+  { label: "SEO Audits & Strategy",   to: "/services/seo-audits/" },
 ];
 
 import RoiSpeedSlider from "@/components/RoiSpeedSlider";
@@ -141,14 +141,14 @@ const WooCommerce = () => (
 
     {/* ── SEO & Schema ───────────────────────────────────────── */}
     <SEO
-      title="WooCommerce Developer Brisbane | Custom eCommerce & Online Stores | Next Tab Agency"
+      title="WooCommerce Developer Brisbane | Custom Online Stores"
       description="Brisbane's WooCommerce specialists. Custom stores from A$4,000 — Afterpay, Australia Post, Xero & eWAY integrated. 50+ AU eCommerce builds. Migration from Shopify or Magento. Free quote."
       canonical="/services/woocommerce-development"
       faqs={service.faqs}
       breadcrumbs={[
         { name: "Home",     url: "https://nexttabagency.com/" },
-        { name: "Services", url: "https://nexttabagency.com/services" },
-        { name: "WooCommerce Developer Brisbane", url: "https://nexttabagency.com/services/woocommerce-development" },
+        { name: "Services", url: "https://nexttabagency.com/services/" },
+        { name: "WooCommerce Developer Brisbane", url: "https://nexttabagency.com/services/woocommerce-development/" },
       ]}
       serviceSchema={{
         name:        "WooCommerce Developer Brisbane",
@@ -174,7 +174,7 @@ const WooCommerce = () => (
 
       <div className="container relative z-10 py-32 md:py-48 pt-44">
         <Link
-          to="/services"
+          to="/services/"
           className="inline-flex items-center text-sm font-semibold text-accent mb-8 hover:text-accent/80 transition-colors"
         >
           <ArrowLeft className="w-4 h-4 mr-2" />
@@ -300,7 +300,7 @@ const WooCommerce = () => (
         >
           <p className="text-sm text-muted-foreground">
             📈 Drive traffic to your new WooCommerce store from day one.{" "}
-            <Link to="/services/seo-audits" className="text-accent font-semibold hover:underline">
+            <Link to="/services/seo-audits/" className="text-accent font-semibold hover:underline">
               Drive traffic to your new store with our data-driven SEO Services for eCommerce
             </Link>
             {" "}— a technical audit finds exactly what's blocking your rankings.
@@ -344,7 +344,7 @@ const WooCommerce = () => (
         </div>
         <p className="text-center text-sm text-muted-foreground">
           Every migration includes a full 301 redirect map, post-migration audit, and 30-day monitoring.{" "}
-          <Link to="/services/seo-migration" className="text-accent font-semibold hover:underline">Learn more about our SEO Migration service →</Link>
+          <Link to="/services/seo-migration/" className="text-accent font-semibold hover:underline">Learn more about our SEO Migration service →</Link>
         </p>
       </div>
     </section>
@@ -447,7 +447,7 @@ const WooCommerce = () => (
           See how we helped a local brand scale their operations and increase revenue through a custom-built, highly-optimised platform.
         </p>
         <Button variant="outline" size="xl" className="rounded-full bg-card hover:bg-accent/5 hover:text-accent border-border" asChild>
-          <Link to="/portfolio/circle-it">Read the Full Case Study <ArrowRight className="w-4 h-4 ml-2" /></Link>
+          <Link to="/portfolio/circle-it/">Read the Full Case Study <ArrowRight className="w-4 h-4 ml-2" /></Link>
         </Button>
       </div>
     </section>
@@ -555,7 +555,7 @@ const WooCommerce = () => (
               Let's discuss your products and build a store you own — with no platform lock-in.
             </p>
             <Button variant="hero-primary" size="xl" className="rounded-full" asChild>
-              <Link to="/contact">Get a Free Consultation</Link>
+              <Link to="/contact/">Get a Free Consultation</Link>
             </Button>
           </div>
         </motion.div>

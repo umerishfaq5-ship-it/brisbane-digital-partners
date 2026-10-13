@@ -40,8 +40,6 @@ import B2bSeo from "./pages/services/B2bSeo.tsx";
 import SeoConsulting from "./pages/services/SeoConsulting.tsx";
 import FacebookAds from "./pages/services/FacebookAds.tsx";
 import ContentMarketing from "./pages/services/ContentMarketing.tsx";
-import PpcBrisbane from "./pages/services/PpcBrisbane.tsx";
-import GoogleAdsBrisbane from "./pages/services/GoogleAdsBrisbane.tsx";
 import ConversionRateOptimisation from "./pages/services/ConversionRateOptimisation.tsx";
 import EmailMarketing from "./pages/services/EmailMarketing.tsx";
 import OnPageSeo from "./pages/services/OnPageSeo.tsx";
@@ -61,7 +59,6 @@ import AccountantSeo from "./pages/industry/AccountantSeo.tsx";
 import MortgageBrokerSeo from "./pages/industry/MortgageBrokerSeo.tsx";
 import EducationSeo from "./pages/industry/EducationSeo.tsx";
 import NdisDigitalMarketing from "./pages/industry/NdisDigitalMarketing.tsx";
-import TradieDigitalMarketing from "./pages/industry/TradieDigitalMarketing.tsx";
 import SaasSeo from "./pages/industry/SaasSeo.tsx";
 import BrisbaneSeo  from "./pages/locations/BrisbaneSeo.tsx";
 import SydneySeo    from "./pages/locations/SydneySeo.tsx";
@@ -155,8 +152,6 @@ const App = () => (
             <Route path="/services/seo-consulting" element={<SeoConsulting />} />
             <Route path="/services/facebook-ads" element={<FacebookAds />} />
             <Route path="/services/content-marketing" element={<ContentMarketing />} />
-            <Route path="/services/ppc-brisbane" element={<PpcBrisbane />} />
-            <Route path="/services/google-ads-brisbane" element={<GoogleAdsBrisbane />} />
             <Route path="/services/conversion-rate-optimisation" element={<ConversionRateOptimisation />} />
             <Route path="/services/email-marketing" element={<EmailMarketing />} />
             <Route path="/services/on-page-seo" element={<OnPageSeo />} />
@@ -176,7 +171,6 @@ const App = () => (
             <Route path="/industry/mortgage-broker-seo" element={<MortgageBrokerSeo />} />
             <Route path="/industry/education-seo" element={<EducationSeo />} />
             <Route path="/industry/ndis-digital-marketing" element={<NdisDigitalMarketing />} />
-            <Route path="/industry/tradie-digital-marketing" element={<TradieDigitalMarketing />} />
             <Route path="/industry/saas-seo" element={<SaasSeo />} />
             {/* Location Pages */}
             <Route path="/locations/brisbane-seo"  element={<BrisbaneSeo />} />

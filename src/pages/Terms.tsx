@@ -11,7 +11,7 @@ const Terms = () => (
       canonical="/terms"
       breadcrumbs={[
         { name: "Home", url: "https://nexttabagency.com/" },
-        { name: "Terms of Service", url: "https://nexttabagency.com/terms" },
+        { name: "Terms of Service", url: "https://nexttabagency.com/terms/" },
       ]}
     />
 
@@ -137,7 +137,7 @@ const Terms = () => (
           </div>
 
           <div className="pt-6 border-t border-border">
-            <Link to="/contact" className="inline-flex items-center gap-2 text-accent font-semibold hover:underline">
+            <Link to="/contact/" className="inline-flex items-center gap-2 text-accent font-semibold hover:underline">
               ← Back to Contact
             </Link>
           </div>

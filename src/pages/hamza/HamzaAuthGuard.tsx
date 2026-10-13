@@ -1,5 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import { Lock, Loader2 } from 'lucide-react';
+import { Helmet } from 'react-helmet-async';
+
+// Private area: keep every Hamza page out of search results
+const NoIndex = () => (
+  <Helmet>
+    <meta name="robots" content="noindex, nofollow" />
+  </Helmet>
+);
 
 export default function HamzaAuthGuard({ children }: { children: React.ReactNode }) {
   // Start as 'loading' — we don't know auth state until localStorage is read client-side
@@ -29,6 +37,7 @@ export default function HamzaAuthGuard({ children }: { children: React.ReactNode
   if (status === 'loading') {
     return (
       <div className="min-h-screen bg-slate-50 flex items-center justify-center">
+        <NoIndex />
         <Loader2 className="w-8 h-8 text-indigo-500 animate-spin" />
       </div>
     );
@@ -36,12 +45,13 @@ export default function HamzaAuthGuard({ children }: { children: React.ReactNode
 
   // Authenticated — render the protected page with no wrapper
   if (status === 'authenticated') {
-    return <>{children}</>;
+    return <><NoIndex />{children}</>;
   }
 
   // Unauthenticated — show ONLY the login form (no children rendered at all)
   return (
     <div className="min-h-screen bg-slate-50 flex flex-col items-center justify-center p-4 font-sans">
+      <NoIndex />
       <div className="bg-white p-8 rounded-2xl shadow-xl w-full max-w-sm border border-slate-100">
         <div className="flex justify-center mb-6">
           <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-indigo-500 to-purple-600 flex items-center justify-center shadow-md">

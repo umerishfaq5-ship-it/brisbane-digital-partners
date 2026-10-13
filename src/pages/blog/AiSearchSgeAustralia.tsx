@@ -21,6 +21,7 @@ const schema = {
 const AiSearchSgeAustralia = () => (
   <>
     <Helmet>
+      <link rel="canonical" href="https://nexttabagency.com/blog/ai-search-sge-australia/" />
       <title>How AI Search is Changing Business Discovery | Brisbane Digital Partners</title>
       <meta name="description" content="Google SGE and ChatGPT are changing how Australians search. Learn how schema markup and technical SEO are required for AI visibility." />
     </Helmet>
@@ -69,7 +70,7 @@ const AiSearchSgeAustralia = () => (
       <SectionH2>The Critical Role of Schema Markup</SectionH2>
 
       <p className="mb-6 text-lg leading-relaxed text-muted-foreground">
-        The most powerful weapon in the age of AI search is <Link to="/services/seo-audits" className="font-semibold underline text-accent hover:text-accent/80">Technical SEO</Link> and, specifically, Schema Markup (JSON-LD). Schema acts as a direct translator between your website and the AI.
+        The most powerful weapon in the age of AI search is <Link to="/services/seo-audits/" className="font-semibold underline text-accent hover:text-accent/80">Technical SEO</Link> and, specifically, Schema Markup (JSON-LD). Schema acts as a direct translator between your website and the AI.
       </p>
 
       <ul className="mb-8 space-y-2">
@@ -86,7 +87,7 @@ const AiSearchSgeAustralia = () => (
       </p>
 
       <ActionItem>
-        <strong>Next Steps for B2B Leaders:</strong> Stop optimizing for 2023. You need to assess how AI currently views your brand. We highly recommend undergoing a comprehensive <Link to="/services/seo-audits" className="font-semibold underline text-accent hover:text-accent/80">Technical SEO Audit</Link> to uncover your machine-readability score and implement advanced schema architecture.
+        <strong>Next Steps for B2B Leaders:</strong> Stop optimizing for 2023. You need to assess how AI currently views your brand. We highly recommend undergoing a comprehensive <Link to="/services/seo-audits/" className="font-semibold underline text-accent hover:text-accent/80">Technical SEO Audit</Link> to uncover your machine-readability score and implement advanced schema architecture.
       </ActionItem>
 
     </BlogPostLayout>

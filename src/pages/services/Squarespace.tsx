@@ -136,8 +136,8 @@ const Squarespace = () => (
       faqs={service.faqs}
       breadcrumbs={[
         { name: "Home",     url: "https://nexttabagency.com/" },
-        { name: "Services", url: "https://nexttabagency.com/services" },
-        { name: "Squarespace Development", url: "https://nexttabagency.com/services/squarespace-development" },
+        { name: "Services", url: "https://nexttabagency.com/services/" },
+        { name: "Squarespace Development", url: "https://nexttabagency.com/services/squarespace-development/" },
       ]}
       serviceSchema={{
         name:        "Squarespace Design & Development",
@@ -163,7 +163,7 @@ const Squarespace = () => (
 
       <div className="container relative z-10 py-32 md:py-48 pt-44">
         <Link
-          to="/services"
+          to="/services/"
           className="inline-flex items-center text-sm font-semibold text-accent mb-8 hover:text-accent/80 transition-colors"
         >
           <ArrowLeft className="w-4 h-4 mr-2" />
@@ -388,10 +388,10 @@ const Squarespace = () => (
         </p>
         <div className="flex flex-wrap gap-3 justify-center">
           {[
-            { label: "WordPress Development",  to: "/services/wordpress-development" },
-            { label: "Custom Web Development", to: "/services/web-development" },
-            { label: "SEO Audits & Strategy",  to: "/services/seo-audits" },
-            { label: "Local SEO",              to: "/services/local-seo" },
+            { label: "WordPress Development",  to: "/services/wordpress-development/" },
+            { label: "Custom Web Development", to: "/services/web-development/" },
+            { label: "SEO Audits & Strategy",  to: "/services/seo-audits/" },
+            { label: "Local SEO",              to: "/services/local-seo/" },
           ].map((s) => (
             <Link
               key={s.to}
@@ -426,7 +426,7 @@ const Squarespace = () => (
               Let's talk about what a standout Squarespace site can do for your business.
             </p>
             <Button variant="hero-primary" size="xl" className="rounded-full" asChild>
-              <Link to="/contact">Get a Free Consultation</Link>
+              <Link to="/contact/">Get a Free Consultation</Link>
             </Button>
           </div>
         </motion.div>

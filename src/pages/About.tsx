@@ -386,7 +386,7 @@ const About = () => (
         <div className="mt-8 text-center">
           <p className="text-sm text-muted-foreground">
             Want to see our team in action?{" "}
-            <Link to="/our-team" className="text-accent font-semibold hover:underline">Visit our full Team page →</Link>
+            <Link to="/our-team/" className="text-accent font-semibold hover:underline">Visit our full Team page →</Link>
           </p>
         </div>
       </div>
@@ -499,24 +499,24 @@ const About = () => (
           <h2 id="authority-heading" className="font-heading font-bold text-xl text-foreground mb-4">See Our Team In Action</h2>
           <p className="text-muted-foreground leading-relaxed">
             The best way to understand what Next Tab Agency delivers is to look at what we've actually built. Check out our{" "}
-            <Link to="/services/web-development" className="text-accent font-semibold hover:underline">
+            <Link to="/services/web-development/" className="text-accent font-semibold hover:underline">
               Custom Web Development Services
             </Link>
             {" "}to see the technical standards we hold every project to — React, Next.js, and Antigravity frameworks delivering sub-1.5s load times. Then explore our{" "}
-            <Link to="/portfolio" className="text-accent font-semibold hover:underline">
+            <Link to="/portfolio/" className="text-accent font-semibold hover:underline">
               Brisbane SEO Case Studies
             </Link>
             {" "}to see real, measurable results: organic impressions up 340%, direct bookings up 62%, and Lighthouse scores of 100/100. That's not agency brochure copy — that's documented, verifiable client work.
           </p>
           <div className="mt-6 flex flex-wrap gap-3">
             <Button variant="accent" size="sm" className="rounded-full" asChild>
-              <Link to="/services/web-development">View Web Dev Services</Link>
+              <Link to="/services/web-development/">View Web Dev Services</Link>
             </Button>
             <Button variant="outline" size="sm" className="rounded-full" asChild>
-              <Link to="/portfolio">See Case Studies</Link>
+              <Link to="/portfolio/">See Case Studies</Link>
             </Button>
             <Button variant="outline" size="sm" className="rounded-full" asChild>
-              <Link to="/contact">Work With Us</Link>
+              <Link to="/contact/">Work With Us</Link>
             </Button>
           </div>
         </motion.div>

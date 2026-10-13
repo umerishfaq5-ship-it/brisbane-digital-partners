@@ -7,7 +7,7 @@ import BlogPostLayout, {
 const schema = {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://nexttabagency.com/blog/shopify-seo-australia" },
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://nexttabagency.com/blog/shopify-seo-australia/" },
   "headline": "SEO for E-Commerce: How to Boost Your Shopify Sales in Australia",
   "description": "Your Shopify store is live but traffic is dead. Here's the step-by-step SEO playbook for Australian e-commerce businesses to rank on Google and drive consistent, free sales.",
   "image": "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?q=80&w=2070",
@@ -32,6 +32,7 @@ const faqSchema = {
 const ShopifySeoAustralia = () => (
   <>
     <Helmet>
+      <link rel="canonical" href="https://nexttabagency.com/blog/shopify-seo-australia/" />
       <title>SEO for E-Commerce: How to Boost Your Shopify Sales in Australia | Next Tab Agency</title>
       <meta name="description" content="Your Shopify store is live but traffic is dead. Here's the step-by-step SEO playbook for Australian e-commerce businesses to rank on Google and drive consistent, free sales." />
       <script type="application/ld+json">{JSON.stringify(faqSchema)}</script>
@@ -133,7 +134,7 @@ const ShopifySeoAustralia = () => (
       </p>
       <p className="mb-6 text-lg leading-relaxed text-muted-foreground">
         For Shopify stores, apps like <strong className="text-foreground">JSON-LD for SEO</strong> or <strong className="text-foreground">Schema Plus</strong> handle this without requiring any code. Our team of{" "}
-        <Link to="/services/shopify-development" className="font-semibold text-accent hover:underline">Shopify Development</Link>{" "}
+        <Link to="/services/shopify-development/" className="font-semibold text-accent hover:underline">Shopify Development</Link>{" "}
         experts implement this as standard on every Shopify build we deliver for Australian e-commerce stores.
       </p>
 
@@ -162,12 +163,12 @@ const ShopifySeoAustralia = () => (
         Australian shoppers search differently. They add qualifiers like "Australia," "AU," "free shipping Australia," "buy online Australia," or specific city names. These long-tail variations often have <strong className="text-foreground">lower competition and higher purchase intent</strong> than broad terms.
       </p>
       <p className="mb-6 text-lg leading-relaxed text-muted-foreground">
-        Incorporate these naturally into your product pages, collection pages, and blog content. A <Link to="/services/seo-audits" className="font-semibold text-accent hover:underline">professional SEO audit</Link> will map out exactly which Australian-specific keywords your competitors are ranking for that you're not.
+        Incorporate these naturally into your product pages, collection pages, and blog content. A <Link to="/services/seo-audits/" className="font-semibold text-accent hover:underline">professional SEO audit</Link> will map out exactly which Australian-specific keywords your competitors are ranking for that you're not.
       </p>
 
       <ActionItem>
         <p>
-          Install Google Search Console on your Shopify store right now (it's free). Go to 'Performance' and look at which queries are generating impressions but no clicks (positions 5–20). These are your fastest ranking opportunities — pages that just need small improvements to jump to page 1. Want us to do this analysis for you? Our <Link to="/services/seo-audits" className="font-semibold text-accent hover:underline">SEO Audit</Link> covers your full Shopify store.
+          Install Google Search Console on your Shopify store right now (it's free). Go to 'Performance' and look at which queries are generating impressions but no clicks (positions 5–20). These are your fastest ranking opportunities — pages that just need small improvements to jump to page 1. Want us to do this analysis for you? Our <Link to="/services/seo-audits/" className="font-semibold text-accent hover:underline">SEO Audit</Link> covers your full Shopify store.
         </p>
       </ActionItem>
 

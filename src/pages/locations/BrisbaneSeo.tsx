@@ -13,13 +13,13 @@ import AIInsightsPanel, { InsightDL, InsightList, InsightTable } from "@/compone
 
 
 const services = [
-  { icon: Search, title: "SEO Audits & Strategy", href: "/services/seo-audits", desc: "Technical SEO audits, keyword research & actionable ranking roadmaps tailored to the Brisbane market." },
-  { icon: MapPin, title: "Local SEO", href: "/services/local-seo", desc: "Google Business Profile optimisation, citation building & Map Pack rankings for Brisbane businesses." },
-  { icon: Globe, title: "Google Business Profile", href: "/services/google-business-profile", desc: "Complete GBP setup, photo strategy, review management & weekly posting for Brisbane listings." },
-  { icon: BarChart3, title: "PPC & Google Ads", href: "/services/ppc-google-ads", desc: "Google Search, Shopping & Display campaigns for Brisbane businesses — managed for maximum ROI." },
-  { icon: Users, title: "Social Media Ads", href: "/services/social-media-ads", desc: "Facebook, Instagram, LinkedIn & TikTok advertising campaigns targeting Brisbane audiences." },
-  { icon: Globe, title: "Web Development", href: "/services/web-development", desc: "Fast, SEO-ready websites and e-commerce stores for Brisbane businesses." },
-  { icon: Smartphone, title: "Mobile App Development", href: "/services/mobile-apps", desc: "React Native iOS & Android apps — built and launched right here in Brisbane." },
+  { icon: Search, title: "SEO Audits & Strategy", href: "/services/seo-audits/", desc: "Technical SEO audits, keyword research & actionable ranking roadmaps tailored to the Brisbane market." },
+  { icon: MapPin, title: "Local SEO", href: "/services/local-seo/", desc: "Google Business Profile optimisation, citation building & Map Pack rankings for Brisbane businesses." },
+  { icon: Globe, title: "Google Business Profile", href: "/services/google-business-profile/", desc: "Complete GBP setup, photo strategy, review management & weekly posting for Brisbane listings." },
+  { icon: BarChart3, title: "PPC & Google Ads", href: "/services/ppc-google-ads/", desc: "Google Search, Shopping & Display campaigns for Brisbane businesses — managed for maximum ROI." },
+  { icon: Users, title: "Social Media Ads", href: "/services/social-media-ads/", desc: "Facebook, Instagram, LinkedIn & TikTok advertising campaigns targeting Brisbane audiences." },
+  { icon: Globe, title: "Web Development", href: "/services/web-development/", desc: "Fast, SEO-ready websites and e-commerce stores for Brisbane businesses." },
+  { icon: Smartphone, title: "Mobile App Development", href: "/services/mobile-apps/", desc: "React Native iOS & Android apps — built and launched right here in Brisbane." },
 ];
 
 const whyUs = [
@@ -52,14 +52,8 @@ const BrisbaneSeo = () => (
           "name": "Next Tab Agency",
           "telephone": "+61470400743",
           "email": "info@nexttabagency.com",
-          "url": "https://nexttabagency.com/locations/brisbane-seo",
+          "url": "https://nexttabagency.com/locations/brisbane-seo/",
           "priceRange": "$$",
-          "aggregateRating": {
-            "@type": "AggregateRating",
-            "ratingValue": "4.9",
-            "reviewCount": "87",
-            "bestRating": "5"
-          },
           "address": {
             "@type": "PostalAddress",
             "streetAddress": "Taylor Street",
@@ -82,8 +76,8 @@ const BrisbaneSeo = () => (
       </script>
     </Helmet>
     <SEO
-      title="SEO Agency Brisbane | #1 Rated Local SEO Experts | Next Tab Agency"
-      description="Brisbane's top-rated SEO agency. 87+ businesses ranked. Technical SEO, Local SEO & content marketing. 4.9★ rated. No lock-in contracts. Free SEO audit — call +61 470 400 743."
+      title="SEO Company Brisbane | Local SEO Agency"
+      description="Brisbane SEO company helping trades and local service businesses win more calls from Google. Technical, local and content SEO. No lock-in. Free SEO audit — 0470 400 743."
       canonical="/locations/brisbane-seo"
       faqs={[
         { q: "How much does SEO cost in Brisbane?", a: "SEO packages at Next Tab Agency start from A$1,200/month for local SEO and A$2,500/month for competitive Brisbane markets. We provide transparent, month-to-month pricing with no lock-in contracts." },
@@ -100,8 +94,8 @@ const BrisbaneSeo = () => (
       ]}
       breadcrumbs={[
         { name: "Home", url: "https://nexttabagency.com/" },
-        { name: "Locations", url: "https://nexttabagency.com/locations/brisbane-seo" },
-        { name: "SEO Agency Brisbane", url: "https://nexttabagency.com/locations/brisbane-seo" },
+        { name: "Locations", url: "https://nexttabagency.com/locations/brisbane-seo/" },
+        { name: "SEO Agency Brisbane", url: "https://nexttabagency.com/locations/brisbane-seo/" },
       ]}
     />
 
@@ -117,17 +111,17 @@ const BrisbaneSeo = () => (
             Brisbane, QLD — Home Base
           </span>
           <h1 id="brisbane-hero-heading" className="font-heading font-bold text-4xl md:text-[3.5rem] leading-[1.08] text-primary-foreground mb-6">
-            Brisbane's <span className="text-gradient">#1 Rated SEO Agency</span> — Results, Not Excuses.
+            SEO Company <span className="text-gradient">Brisbane</span> — Results, Not Excuses.
           </h1>
           <p className="text-lg md:text-xl text-primary-foreground/60 max-w-2xl mb-10 leading-relaxed">
             We're a Brisbane-based SEO agency helping local businesses rank on Google Page 1. 87+ clients, 4.9★ rating, no lock-in contracts. Technical SEO, Local SEO, and Google Ads — all under one roof.
           </p>
           <div className="flex flex-wrap gap-4">
             <Button variant="hero-primary" size="xl" className="rounded-full" asChild>
-              <Link to="/contact">Get a Free Brisbane SEO Audit <ArrowRight className="w-4 h-4 ml-1" /></Link>
+              <Link to="/contact/">Get a Free Brisbane SEO Audit <ArrowRight className="w-4 h-4 ml-1" /></Link>
             </Button>
             <Button variant="hero-secondary" size="xl" className="rounded-full" asChild>
-              <Link to="/services">Our Services</Link>
+              <Link to="/services/">Our Services</Link>
             </Button>
           </div>
         </motion.div>
@@ -192,7 +186,7 @@ const BrisbaneSeo = () => (
           </table>
         </div>
         <p className="text-center mt-6">
-          <a href="/contact" className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-accent text-accent-foreground font-semibold text-sm hover:bg-accent/90 transition-colors">
+          <a href="/contact/" className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-accent text-accent-foreground font-semibold text-sm hover:bg-accent/90 transition-colors">
             Get Your Free SEO Audit <ArrowRight className="w-4 h-4" />
           </a>
         </p>
@@ -284,7 +278,7 @@ const BrisbaneSeo = () => (
               </li>
             </ul>
             <Button variant="outline" size="lg" className="rounded-full bg-card hover:bg-accent/5 hover:text-accent" asChild>
-              <Link to="/portfolio/my-fitness-coach">View Full Case Study <ArrowRight className="w-4 h-4 ml-2" /></Link>
+              <Link to="/portfolio/my-fitness-coach/">View Full Case Study <ArrowRight className="w-4 h-4 ml-2" /></Link>
             </Button>
           </motion.div>
           <motion.div
@@ -337,7 +331,7 @@ const BrisbaneSeo = () => (
         <div className="max-w-2xl mx-auto rounded-2xl border border-accent/30 bg-accent/5 p-6 text-center">
           <p className="text-sm text-muted-foreground leading-relaxed">
             🔍 Not sure why you're not ranking in your suburb?{" "}
-            <Link to="/services/seo-audits" className="text-accent font-semibold hover:underline">
+            <Link to="/services/seo-audits/" className="text-accent font-semibold hover:underline">
               Start with a professional Technical SEO Audit to find your site's bottlenecks
             </Link>
             {" "}— we'll identify every reason Google isn't showing you to customers in your area.
@@ -367,7 +361,7 @@ const BrisbaneSeo = () => (
               </div>
             </div>
             <Button variant="outline" className="mt-4 rounded-full" asChild>
-              <Link to="/contact">Contact Us</Link>
+              <Link to="/contact/">Contact Us</Link>
             </Button>
           </div>
           <div className="h-[400px] rounded-2xl overflow-hidden shadow-xl border border-border">
@@ -413,7 +407,7 @@ const BrisbaneSeo = () => (
               Get a free, no-obligation strategy session. We'll analyse your current online presence and show you exactly how to rank higher and get more local customers.
             </p>
             <Button variant="hero-primary" size="xl" className="rounded-full" asChild>
-              <Link to="/contact">Book Your Free Brisbane SEO Consultation</Link>
+              <Link to="/contact/">Book Your Free Brisbane SEO Consultation</Link>
             </Button>
           </div>
         </motion.div>
@@ -426,16 +420,16 @@ const BrisbaneSeo = () => (
         <p className="text-xs font-bold uppercase tracking-[0.2em] text-accent mb-6 text-center">All Brisbane Digital Marketing Services</p>
         <div className="flex flex-wrap gap-3 justify-center">
           {[
-            { label: "PPC Agency Brisbane", href: "/services/ppc-google-ads" },
-            { label: "Google Ads Brisbane", href: "/services/google-ads-brisbane" },
-            { label: "WordPress Developer Brisbane", href: "/services/wordpress-development" },
-            { label: "WooCommerce Developer Brisbane", href: "/services/woocommerce-development" },
-            { label: "Shopify Developer Brisbane", href: "/services/shopify-development" },
-            { label: "Facebook Ads Brisbane", href: "/services/facebook-ads" },
-            { label: "LinkedIn Ads", href: "/services/linkedin-ads" },
-            { label: "SEO Packages Brisbane", href: "/services/seo-packages" },
-            { label: "Web Development Brisbane", href: "/services/web-development" },
-            { label: "Local SEO", href: "/services/local-seo" },
+            { label: "PPC Agency Brisbane", href: "/services/ppc-google-ads/" },
+            { label: "Google Ads Brisbane", href: "/services/ppc-google-ads/" },
+            { label: "WordPress Developer Brisbane", href: "/services/wordpress-development/" },
+            { label: "WooCommerce Developer Brisbane", href: "/services/woocommerce-development/" },
+            { label: "Shopify Developer Brisbane", href: "/services/shopify-development/" },
+            { label: "Facebook Ads Brisbane", href: "/services/facebook-ads/" },
+            { label: "LinkedIn Ads", href: "/services/linkedin-ads/" },
+            { label: "SEO Packages Brisbane", href: "/services/seo-packages/" },
+            { label: "Web Development Brisbane", href: "/services/web-development/" },
+            { label: "Local SEO", href: "/services/local-seo/" },
           ].map((s) => (
             <Link key={s.href} to={s.href}
               className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full border border-border bg-card text-sm font-semibold text-foreground hover:border-accent hover:text-accent transition-colors">

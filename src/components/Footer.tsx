@@ -94,17 +94,17 @@ const Footer = () => (
           <p className="font-heading font-semibold mb-5 text-xs uppercase tracking-[0.2em] text-accent">SEO Services</p>
           <nav aria-label="Footer SEO Services Navigation">
             <ul className="space-y-2.5 text-sm">
-              <li><Link to="/services/technical-seo" className="opacity-60 hover:opacity-100 hover:text-accent transition-all duration-300">Technical SEO</Link></li>
-              <li><Link to="/services/local-seo" className="opacity-60 hover:opacity-100 hover:text-accent transition-all duration-300">Local SEO Brisbane</Link></li>
-              <li><Link to="/services/on-page-seo" className="opacity-60 hover:opacity-100 hover:text-accent transition-all duration-300">On-Page SEO</Link></li>
-              <li><Link to="/services/link-building" className="opacity-60 hover:opacity-100 hover:text-accent transition-all duration-300">Link Building</Link></li>
-              <li><Link to="/services/ai-seo" className="opacity-60 hover:opacity-100 hover:text-accent transition-all duration-300">AI SEO / GEO</Link></li>
-              <li><Link to="/services/seo-audits" className="opacity-60 hover:opacity-100 hover:text-accent transition-all duration-300">SEO Audits</Link></li>
-              <li><Link to="/services/content-marketing" className="opacity-60 hover:opacity-100 hover:text-accent transition-all duration-300">Content Marketing</Link></li>
-              <li><Link to="/services/seo-packages" className="opacity-60 hover:opacity-100 hover:text-accent transition-all duration-300">SEO Packages</Link></li>
-              <li><Link to="/services/shopify-seo" className="opacity-60 hover:opacity-100 hover:text-accent transition-all duration-300">Shopify SEO</Link></li>
-              <li><Link to="/services/wordpress-seo" className="opacity-60 hover:opacity-100 hover:text-accent transition-all duration-300">WordPress SEO</Link></li>
-              <li><Link to="/services/small-business-seo" className="opacity-60 hover:opacity-100 hover:text-accent transition-all duration-300">Small Business SEO</Link></li>
+              <li><Link to="/services/technical-seo/" className="opacity-60 hover:opacity-100 hover:text-accent transition-all duration-300">Technical SEO</Link></li>
+              <li><Link to="/services/local-seo/" className="opacity-60 hover:opacity-100 hover:text-accent transition-all duration-300">Local SEO Brisbane</Link></li>
+              <li><Link to="/services/on-page-seo/" className="opacity-60 hover:opacity-100 hover:text-accent transition-all duration-300">On-Page SEO</Link></li>
+              <li><Link to="/services/link-building/" className="opacity-60 hover:opacity-100 hover:text-accent transition-all duration-300">Link Building</Link></li>
+              <li><Link to="/services/ai-seo/" className="opacity-60 hover:opacity-100 hover:text-accent transition-all duration-300">AI SEO / GEO</Link></li>
+              <li><Link to="/services/seo-audits/" className="opacity-60 hover:opacity-100 hover:text-accent transition-all duration-300">SEO Audits</Link></li>
+              <li><Link to="/services/content-marketing/" className="opacity-60 hover:opacity-100 hover:text-accent transition-all duration-300">Content Marketing</Link></li>
+              <li><Link to="/services/seo-packages/" className="opacity-60 hover:opacity-100 hover:text-accent transition-all duration-300">SEO Packages</Link></li>
+              <li><Link to="/services/shopify-seo/" className="opacity-60 hover:opacity-100 hover:text-accent transition-all duration-300">Shopify SEO</Link></li>
+              <li><Link to="/services/wordpress-seo/" className="opacity-60 hover:opacity-100 hover:text-accent transition-all duration-300">WordPress SEO</Link></li>
+              <li><Link to="/services/small-business-seo/" className="opacity-60 hover:opacity-100 hover:text-accent transition-all duration-300">Small Business SEO</Link></li>
             </ul>
           </nav>
         </div>
@@ -114,20 +114,20 @@ const Footer = () => (
           <p className="font-heading font-semibold mb-5 text-xs uppercase tracking-[0.2em] text-accent">PPC &amp; Paid Media</p>
           <nav aria-label="Footer PPC Navigation">
             <ul className="space-y-2.5 text-sm">
-              <li><Link to="/services/ppc-google-ads" className="opacity-60 hover:opacity-100 hover:text-accent transition-all duration-300">Google Ads Management</Link></li>
-              <li><Link to="/services/google-ads-brisbane" className="opacity-60 hover:opacity-100 hover:text-accent transition-all duration-300">Google Ads Brisbane</Link></li>
-              <li><Link to="/services/facebook-ads" className="opacity-60 hover:opacity-100 hover:text-accent transition-all duration-300">Facebook &amp; Meta Ads</Link></li>
-              <li><Link to="/services/linkedin-ads" className="opacity-60 hover:opacity-100 hover:text-accent transition-all duration-300">LinkedIn Advertising</Link></li>
-              <li><Link to="/services/social-media-ads" className="opacity-60 hover:opacity-100 hover:text-accent transition-all duration-300">Social Media Ads</Link></li>
-              <li><Link to="/services/email-marketing" className="opacity-60 hover:opacity-100 hover:text-accent transition-all duration-300">Email Marketing</Link></li>
-              <li><Link to="/services/conversion-rate-optimisation" className="opacity-60 hover:opacity-100 hover:text-accent transition-all duration-300">CRO</Link></li>
-              <li><Link to="/services/google-shopping" className="opacity-60 hover:opacity-100 hover:text-accent transition-all duration-300">Google Shopping</Link></li>
-              <li><Link to="/services/web-development" className="opacity-60 hover:opacity-100 hover:text-accent transition-all duration-300">Web Development</Link></li>
-              <li><Link to="/services/wordpress-development" className="opacity-60 hover:opacity-100 hover:text-accent transition-all duration-300">WordPress Specialists</Link></li>
-              <li><Link to="/services/shopify-development" className="opacity-60 hover:opacity-100 hover:text-accent transition-all duration-300">Shopify Development</Link></li>
-              <li><Link to="/services/woocommerce-development" className="opacity-60 hover:opacity-100 hover:text-accent transition-all duration-300">WooCommerce Development</Link></li>
-              <li><Link to="/services/bigcommerce-development" className="opacity-60 hover:opacity-100 hover:text-accent transition-all duration-300">BigCommerce Development</Link></li>
-              <li><Link to="/services/maropost-neto" className="opacity-60 hover:opacity-100 hover:text-accent transition-all duration-300">Maropost / Neto</Link></li>
+              <li><Link to="/services/ppc-google-ads/" className="opacity-60 hover:opacity-100 hover:text-accent transition-all duration-300">Google Ads Management</Link></li>
+              <li><Link to="/services/ppc-google-ads/" className="opacity-60 hover:opacity-100 hover:text-accent transition-all duration-300">Google Ads Brisbane</Link></li>
+              <li><Link to="/services/facebook-ads/" className="opacity-60 hover:opacity-100 hover:text-accent transition-all duration-300">Facebook &amp; Meta Ads</Link></li>
+              <li><Link to="/services/linkedin-ads/" className="opacity-60 hover:opacity-100 hover:text-accent transition-all duration-300">LinkedIn Advertising</Link></li>
+              <li><Link to="/services/social-media-ads/" className="opacity-60 hover:opacity-100 hover:text-accent transition-all duration-300">Social Media Ads</Link></li>
+              <li><Link to="/services/email-marketing/" className="opacity-60 hover:opacity-100 hover:text-accent transition-all duration-300">Email Marketing</Link></li>
+              <li><Link to="/services/conversion-rate-optimisation/" className="opacity-60 hover:opacity-100 hover:text-accent transition-all duration-300">CRO</Link></li>
+              <li><Link to="/services/google-shopping/" className="opacity-60 hover:opacity-100 hover:text-accent transition-all duration-300">Google Shopping</Link></li>
+              <li><Link to="/services/web-development/" className="opacity-60 hover:opacity-100 hover:text-accent transition-all duration-300">Web Development</Link></li>
+              <li><Link to="/services/wordpress-development/" className="opacity-60 hover:opacity-100 hover:text-accent transition-all duration-300">WordPress Specialists</Link></li>
+              <li><Link to="/services/shopify-development/" className="opacity-60 hover:opacity-100 hover:text-accent transition-all duration-300">Shopify Development</Link></li>
+              <li><Link to="/services/woocommerce-development/" className="opacity-60 hover:opacity-100 hover:text-accent transition-all duration-300">WooCommerce Development</Link></li>
+              <li><Link to="/services/bigcommerce-development/" className="opacity-60 hover:opacity-100 hover:text-accent transition-all duration-300">BigCommerce Development</Link></li>
+              <li><Link to="/services/maropost-neto/" className="opacity-60 hover:opacity-100 hover:text-accent transition-all duration-300">Maropost / Neto</Link></li>
             </ul>
           </nav>
         </div>
@@ -137,18 +137,18 @@ const Footer = () => (
           <p className="font-heading font-semibold mb-5 text-xs uppercase tracking-[0.2em] text-accent">Industry Verticals</p>
           <nav aria-label="Footer Industry Verticals Navigation">
             <ul className="space-y-2.5 text-sm">
-              <li><Link to="/industry/seo-for-tradies" className="opacity-60 hover:opacity-100 hover:text-accent transition-all duration-300">SEO for Tradies</Link></li>
-              <li><Link to="/industry/ndis-digital-marketing" className="opacity-60 hover:opacity-100 hover:text-accent transition-all duration-300">NDIS Digital Marketing</Link></li>
-              <li><Link to="/industry/saas-seo" className="opacity-60 hover:opacity-100 hover:text-accent transition-all duration-300">B2B &amp; SaaS SEO</Link></li>
-              <li><Link to="/industry/seo-for-dentists" className="opacity-60 hover:opacity-100 hover:text-accent transition-all duration-300">SEO for Dentists</Link></li>
-              <li><Link to="/industry/seo-for-lawyers" className="opacity-60 hover:opacity-100 hover:text-accent transition-all duration-300">SEO for Lawyers</Link></li>
-              <li><Link to="/industry/healthcare-seo" className="opacity-60 hover:opacity-100 hover:text-accent transition-all duration-300">Healthcare SEO</Link></li>
-              <li><Link to="/industry/seo-for-real-estate" className="opacity-60 hover:opacity-100 hover:text-accent transition-all duration-300">Real Estate SEO</Link></li>
-              <li><Link to="/industry/accountant-seo" className="opacity-60 hover:opacity-100 hover:text-accent transition-all duration-300">Accountant SEO</Link></li>
-              <li><Link to="/industry/education-seo" className="opacity-60 hover:opacity-100 hover:text-accent transition-all duration-300">Education SEO</Link></li>
-              <li><Link to="/industry/retail-seo" className="opacity-60 hover:opacity-100 hover:text-accent transition-all duration-300">Retail &amp; eCommerce SEO</Link></li>
-              <li><Link to="/industry/hospitality-seo" className="opacity-60 hover:opacity-100 hover:text-accent transition-all duration-300">Hospitality SEO</Link></li>
-              <li><Link to="/industry/mortgage-broker-seo" className="opacity-60 hover:opacity-100 hover:text-accent transition-all duration-300">Mortgage Broker SEO</Link></li>
+              <li><Link to="/industry/seo-for-tradies/" className="opacity-60 hover:opacity-100 hover:text-accent transition-all duration-300">SEO for Tradies</Link></li>
+              <li><Link to="/industry/ndis-digital-marketing/" className="opacity-60 hover:opacity-100 hover:text-accent transition-all duration-300">NDIS Digital Marketing</Link></li>
+              <li><Link to="/industry/saas-seo/" className="opacity-60 hover:opacity-100 hover:text-accent transition-all duration-300">B2B &amp; SaaS SEO</Link></li>
+              <li><Link to="/industry/seo-for-dentists/" className="opacity-60 hover:opacity-100 hover:text-accent transition-all duration-300">SEO for Dentists</Link></li>
+              <li><Link to="/industry/seo-for-lawyers/" className="opacity-60 hover:opacity-100 hover:text-accent transition-all duration-300">SEO for Lawyers</Link></li>
+              <li><Link to="/industry/healthcare-seo/" className="opacity-60 hover:opacity-100 hover:text-accent transition-all duration-300">Healthcare SEO</Link></li>
+              <li><Link to="/industry/seo-for-real-estate/" className="opacity-60 hover:opacity-100 hover:text-accent transition-all duration-300">Real Estate SEO</Link></li>
+              <li><Link to="/industry/accountant-seo/" className="opacity-60 hover:opacity-100 hover:text-accent transition-all duration-300">Accountant SEO</Link></li>
+              <li><Link to="/industry/education-seo/" className="opacity-60 hover:opacity-100 hover:text-accent transition-all duration-300">Education SEO</Link></li>
+              <li><Link to="/industry/retail-seo/" className="opacity-60 hover:opacity-100 hover:text-accent transition-all duration-300">Retail &amp; eCommerce SEO</Link></li>
+              <li><Link to="/industry/hospitality-seo/" className="opacity-60 hover:opacity-100 hover:text-accent transition-all duration-300">Hospitality SEO</Link></li>
+              <li><Link to="/industry/mortgage-broker-seo/" className="opacity-60 hover:opacity-100 hover:text-accent transition-all duration-300">Mortgage Broker SEO</Link></li>
             </ul>
           </nav>
         </div>
@@ -159,15 +159,15 @@ const Footer = () => (
           <p className="text-xs text-primary-foreground/40 mb-3 leading-tight">Brisbane-based. Serving all of Australia:</p>
           <nav aria-label="Footer Service Areas Navigation">
             <ul className="space-y-2 text-sm mb-5">
-              <li><Link to="/locations/brisbane-seo" className="opacity-60 hover:opacity-100 hover:text-accent transition-all duration-300">Brisbane, QLD (Home Base)</Link></li>
-              <li><Link to="/locations/gold-coast-seo" className="opacity-60 hover:opacity-100 hover:text-accent transition-all duration-300">Gold Coast &amp; Southport</Link></li>
-              <li><Link to="/locations/sunshine-coast-seo" className="opacity-60 hover:opacity-100 hover:text-accent transition-all duration-300">Sunshine Coast &amp; Noosa</Link></li>
-              <li><Link to="/locations/sydney-seo" className="opacity-60 hover:opacity-100 hover:text-accent transition-all duration-300">Sydney, NSW</Link></li>
-              <li><Link to="/locations/melbourne-seo" className="opacity-60 hover:opacity-100 hover:text-accent transition-all duration-300">Melbourne, VIC</Link></li>
-              <li><Link to="/locations/perth-seo" className="opacity-60 hover:opacity-100 hover:text-accent transition-all duration-300">Perth, WA</Link></li>
-              <li><Link to="/locations/adelaide-seo" className="opacity-60 hover:opacity-100 hover:text-accent transition-all duration-300">Adelaide, SA</Link></li>
-              <li><Link to="/locations/canberra-seo" className="opacity-60 hover:opacity-100 hover:text-accent transition-all duration-300">Canberra, ACT</Link></li>
-              <li><Link to="/locations/hobart-seo" className="opacity-60 hover:opacity-100 hover:text-accent transition-all duration-300">Hobart, TAS</Link></li>
+              <li><Link to="/locations/brisbane-seo/" className="opacity-60 hover:opacity-100 hover:text-accent transition-all duration-300">Brisbane, QLD (Home Base)</Link></li>
+              <li><Link to="/locations/gold-coast-seo/" className="opacity-60 hover:opacity-100 hover:text-accent transition-all duration-300">Gold Coast &amp; Southport</Link></li>
+              <li><Link to="/locations/sunshine-coast-seo/" className="opacity-60 hover:opacity-100 hover:text-accent transition-all duration-300">Sunshine Coast &amp; Noosa</Link></li>
+              <li><Link to="/locations/sydney-seo/" className="opacity-60 hover:opacity-100 hover:text-accent transition-all duration-300">Sydney, NSW</Link></li>
+              <li><Link to="/locations/melbourne-seo/" className="opacity-60 hover:opacity-100 hover:text-accent transition-all duration-300">Melbourne, VIC</Link></li>
+              <li><Link to="/locations/perth-seo/" className="opacity-60 hover:opacity-100 hover:text-accent transition-all duration-300">Perth, WA</Link></li>
+              <li><Link to="/locations/adelaide-seo/" className="opacity-60 hover:opacity-100 hover:text-accent transition-all duration-300">Adelaide, SA</Link></li>
+              <li><Link to="/locations/canberra-seo/" className="opacity-60 hover:opacity-100 hover:text-accent transition-all duration-300">Canberra, ACT</Link></li>
+              <li><Link to="/locations/hobart-seo/" className="opacity-60 hover:opacity-100 hover:text-accent transition-all duration-300">Hobart, TAS</Link></li>
             </ul>
           </nav>
           <div className="mb-5 pt-4 border-t border-primary-foreground/10">
@@ -221,12 +221,12 @@ const Footer = () => (
       <div className="flex flex-col sm:flex-row items-center justify-between gap-4 text-xs opacity-40">
         <span>© {new Date().getFullYear()} Next Tab Agency. All rights reserved. ABN: Brisbane, QLD, Australia.</span>
         <div className="flex items-center gap-5 flex-wrap justify-center">
-          <Link to="/about" className="hover:opacity-100 hover:text-accent transition-all duration-200">About</Link>
-          <Link to="/portfolio" className="hover:opacity-100 hover:text-accent transition-all duration-200">Portfolio</Link>
-          <Link to="/blog" className="hover:opacity-100 hover:text-accent transition-all duration-200">Blog</Link>
-          <Link to="/sitemap" className="hover:opacity-100 hover:text-accent transition-all duration-200">Sitemap</Link>
-          <Link to="/privacy" className="hover:opacity-100 hover:text-accent transition-all duration-200">Privacy</Link>
-          <Link to="/terms" className="hover:opacity-100 hover:text-accent transition-all duration-200">Terms</Link>
+          <Link to="/about/" className="hover:opacity-100 hover:text-accent transition-all duration-200">About</Link>
+          <Link to="/portfolio/" className="hover:opacity-100 hover:text-accent transition-all duration-200">Portfolio</Link>
+          <Link to="/blog/" className="hover:opacity-100 hover:text-accent transition-all duration-200">Blog</Link>
+          <Link to="/sitemap/" className="hover:opacity-100 hover:text-accent transition-all duration-200">Sitemap</Link>
+          <Link to="/privacy/" className="hover:opacity-100 hover:text-accent transition-all duration-200">Privacy</Link>
+          <Link to="/terms/" className="hover:opacity-100 hover:text-accent transition-all duration-200">Terms</Link>
           <span>Made with ❤️ in Brisbane, Australia 🇦🇺</span>
         </div>
       </div>

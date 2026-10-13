@@ -20,14 +20,14 @@ const projects = [
     url: null,
     iosUrl: "https://apps.apple.com/pk/app/my-fitness-coach-gym-workouts/id1670136195",
     androidUrl: "https://play.google.com/store/apps/details?id=com.myfitnesscoach",
-    detailLink: "/portfolio/my-fitness-coach",
+    detailLink: "/portfolio/my-fitness-coach/",
     iconUrl: "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/44/aa/2a/44aa2a30-2c58-4bc4-7d97-d3996b4c7bb5/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/460x0w.webp",
     iconBg: "linear-gradient(135deg, #14212D 0%, #0b302d 100%)",
     challenge: "The client needed a cross-platform fitness coaching app with AI-powered workout & diet tracking, third-party SDK integrations, and custom UI — without the budget for two separate native builds.",
     solution: "We built a single React Native codebase for both iOS and Android. Integrated AI calorie tracking, barcode food scanner, HRV monitoring, and a custom video workout player. Published to both App Store and Google Play.",
     result: "4.8★ App Store",
     resultDetail: "Live on App Store & Google Play · AI-powered diet & gym tracker · 42 verified ratings.",
-    serviceLink: "/services/mobile-apps",
+    serviceLink: "/services/mobile-apps/",
     serviceLabel: "Mobile App Development",
   },
   {
@@ -38,14 +38,14 @@ const projects = [
     url: null,
     iosUrl: "https://apps.apple.com/us/app/circleit/id1329263554",
     androidUrl: "https://play.google.com/store/apps/details?id=com.circleit",
-    detailLink: "/portfolio/circle-it",
+    detailLink: "/portfolio/circle-it/",
     iconUrl: "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/5c/7a/b9/5c7ab900-4e87-46e1-bc23-03a04d6f1b1e/AppIcon-0-0-1x_U007emarketing-0-7-0-85-220.png/460x0w.webp",
     iconBg: "linear-gradient(135deg, #1a0040 0%, #2d0060 100%)",
     challenge: "A social networking startup needed a real-time community platform — events, interactive features, and real-time notifications — fast enough to validate product-market fit without burning their seed round.",
     solution: "Architected a Firebase-backed real-time system with optimistic UI updates. Community boards, event RSVP, direct messaging, and real-time notifications were all delivered in a single MVP sprint, published to both stores.",
     result: "5K+ Active Users",
     resultDetail: "Live on App Store & Google Play · Real-time social engagement · Growing user base.",
-    serviceLink: "/services/mobile-apps",
+    serviceLink: "/services/mobile-apps/",
     serviceLabel: "Mobile App Development",
   },
   {
@@ -56,14 +56,14 @@ const projects = [
     url: null,
     iosUrl: null,
     androidUrl: "https://play.google.com/store/apps/details?id=com.leadtime.vacancies&hl=en_US",
-    detailLink: "/portfolio/vacancies",
+    detailLink: "/portfolio/vacancies/",
     iconUrl: "https://play-lh.googleusercontent.com/kkfRUbmDWblw1bFhlYiXiKUYSLmKGC63NeVYhOtxSYnZBGwEXt49RFIH-MwbZJaVBA=w240-h480-rw",
     iconBg: "linear-gradient(135deg, #061e10 0%, #0a2240 100%)",
     challenge: "A job marketplace startup needed an intelligent candidate-recruiter matching engine with a user-friendly interface and real-time job listing updates for Australian job seekers.",
     solution: "Built a user-friendly job listing app with real-time updates, clean card-based UI, and an intelligent job-seeker interface. Published on Google Play for Android users.",
     result: "Live on Play Store",
     resultDetail: "Android app · Real-time job updates · User-friendly interface for job seekers.",
-    serviceLink: "/services/mobile-apps",
+    serviceLink: "/services/mobile-apps/",
     serviceLabel: "Mobile App Development",
   },
 
@@ -73,12 +73,12 @@ const projects = [
     category: "SEO" as Category,
     tech: "SEO Audit · Technical SEO · Content Strategy",
     url: "https://institutionalscalper.com",
-    detailLink: "/portfolio/institutional-scalper",
+    detailLink: "/portfolio/institutional-scalper/",
     challenge: "A proprietary trading education platform needed to establish authority in a highly competitive, reputation-sensitive niche — all organic, no paid ads.",
     solution: "Full technical SEO audit addressing crawlability, page speed, and structured data. Built a content pillar strategy around high-volume trading education keywords and established E-E-A-T signals through author schema and trust content.",
     result: "Top-3 Rankings",
     resultDetail: "Target keywords moved from unranked to top 3 positions on Google within 5 months.",
-    serviceLink: "/services/seo-audits",
+    serviceLink: "/services/seo-audits/",
     serviceLabel: "SEO Audits & Strategy",
   },
   {
@@ -86,12 +86,12 @@ const projects = [
     category: "SEO" as Category,
     tech: "Local SEO · Google Business · Map Pack",
     url: "https://heavenonmainstreet.com",
-    detailLink: "/portfolio/heaven-on-mainstreet",
+    detailLink: "/portfolio/heaven-on-mainstreet/",
     challenge: "An e-commerce skincare brand needed stronger local and organic visibility to compete with larger players dominating their search results.",
     solution: "Implemented a comprehensive local SEO strategy — Google Business Profile revamp, local citation cleanup, review acquisition strategy, and geo-targeted structured data. Technical SEO audit fixing crawlability and Core Web Vitals.",
     result: "Map Pack #1",
     resultDetail: "Achieved Google Map Pack position #1 for primary keywords. Organic impressions spiked massively within 3 months.",
-    serviceLink: "/services/local-seo",
+    serviceLink: "/services/local-seo/",
     serviceLabel: "Local SEO",
   },
 
@@ -102,7 +102,7 @@ const projects = [
     category: "Web Development" as Category,
     tech: "WordPress · WooCommerce · Local SEO · Google Business Profile",
     url: "https://markhorautocare.com.au",
-    detailLink: "/portfolio/markhor-auto-care",
+    detailLink: "/portfolio/markhor-auto-care/",
     webBg: "linear-gradient(135deg, #0a1628 0%, #0d0d0d 60%, #1a0a0a 100%)",
     webDomain: "markhorautocare.com.au",
     webScores: { perf: 95, access: 97, bp: 100, seo: 100 },
@@ -111,7 +111,7 @@ const projects = [
     solution: "Built a fast, mobile-first WordPress site with service pages, online booking, and WooCommerce. Set up and optimised the Google Business Profile — local schema, NAP citations, and review strategy for Map Pack visibility.",
     result: "GBP Top-3 + 85% More Enquiries",
     resultDetail: "Google Map Pack Top-3 for Rocklea car detailing. 85% increase in contact enquiries. 95 Lighthouse score.",
-    serviceLink: "/services/web-development",
+    serviceLink: "/services/web-development/",
     serviceLabel: "Web Development",
   },
 ];
@@ -133,7 +133,7 @@ export default function Portfolio() {
         canonical="/portfolio"
         breadcrumbs={[
           { name: "Home", url: "https://nexttabagency.com/" },
-          { name: "Portfolio", url: "https://nexttabagency.com/portfolio" },
+          { name: "Portfolio", url: "https://nexttabagency.com/portfolio/" },
         ]}
       />
 
@@ -464,10 +464,10 @@ export default function Portfolio() {
           <p className="text-center text-xs font-bold uppercase tracking-[0.2em] text-muted-foreground mb-6">Explore the services behind these results</p>
           <div className="flex flex-wrap gap-3 justify-center">
             {[
-              { label: "Mobile App Development", to: "/services/mobile-apps" },
-              { label: "SEO Audits & Strategy", to: "/services/seo-audits" },
-              { label: "Local SEO", to: "/services/local-seo" },
-              { label: "Web Development", to: "/services/web-development" },
+              { label: "Mobile App Development", to: "/services/mobile-apps/" },
+              { label: "SEO Audits & Strategy", to: "/services/seo-audits/" },
+              { label: "Local SEO", to: "/services/local-seo/" },
+              { label: "Web Development", to: "/services/web-development/" },
             ].map((s) => (
               <Link
                 key={s.to}
@@ -495,7 +495,7 @@ export default function Portfolio() {
               <h2 id="cta-heading" className="font-heading font-bold text-2xl md:text-3xl text-primary-foreground mb-3">Have a project in mind?</h2>
               <p className="text-primary-foreground/50 mb-8 max-w-md mx-auto">We'd love to hear about it. Every engagement starts with a free, no-obligation strategy conversation.</p>
               <Button variant="hero-primary" size="xl" className="rounded-full" asChild>
-                <Link to="/contact">Start a Conversation <ArrowRight className="w-4 h-4 ml-2" /></Link>
+                <Link to="/contact/">Start a Conversation <ArrowRight className="w-4 h-4 ml-2" /></Link>
               </Button>
             </div>
           </motion.div>

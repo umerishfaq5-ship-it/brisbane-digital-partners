@@ -11,10 +11,20 @@
 # ============================================================
 
 Options -MultiViews
+ErrorDocument 404 /404.html
 
 <IfModule mod_rewrite.c>
   RewriteEngine On
   RewriteBase /
+
+  # ── 0. Force https + non-www (one canonical host)
+  RewriteCond %{HTTPS} off [OR]
+  RewriteCond %{HTTP_HOST} ^www\. [NC]
+  RewriteRule ^ https://nexttabagency.com%{REQUEST_URI} [R=301,L]
+
+  # ── 0b. Merged pages (consolidated to stop keyword cannibalisation)
+  RewriteRule ^services/(ppc-brisbane|google-ads-brisbane)/?$ /services/ppc-google-ads/ [R=301,L]
+  RewriteRule ^industry/tradie-digital-marketing/?$ /industry/seo-for-tradies/ [R=301,L]
 
   # ── 1. Let real files pass through (JS, CSS, images, fonts, etc.)
   RewriteCond %{REQUEST_FILENAME} -f
@@ -25,10 +35,11 @@ Options -MultiViews
   RewriteCond %{REQUEST_FILENAME} -d
   RewriteRule ^ - [L]
 
-  # ── 3. Everything else → index.html (React Router takes over)
-  #       Using absolute path with [L,QSA] ensures LiteSpeed
-  #       doesn't re-enter the ruleset and cause redirect loops.
-  RewriteRule ^ /index.html [L,QSA]
+  # ── 3. Client-only private routes (/hamza/invoice/:id) → bare SPA shell
+  RewriteRule ^hamza(/.*)?$ /_spa.html [L,QSA]
+
+  # ── 4. Everything else is a real 404 (no more soft-404 homepage clones)
+  RewriteRule ^ - [R=404,L]
 </IfModule>
 
 # ── MIME types ──────────────────────────────────────────────

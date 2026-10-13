@@ -124,8 +124,8 @@ export default function HeavenOnMainstreet() {
         canonical="/portfolio/heaven-on-mainstreet"
         breadcrumbs={[
           { name: "Home",                 url: "https://nexttabagency.com/" },
-          { name: "Portfolio",            url: "https://nexttabagency.com/portfolio" },
-          { name: "Heaven on Mainstreet", url: "https://nexttabagency.com/portfolio/heaven-on-mainstreet" },
+          { name: "Portfolio",            url: "https://nexttabagency.com/portfolio/" },
+          { name: "Heaven on Mainstreet", url: "https://nexttabagency.com/portfolio/heaven-on-mainstreet/" },
         ]}
       />
 
@@ -141,7 +141,7 @@ export default function HeavenOnMainstreet() {
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <motion.div initial="hidden" animate="visible" variants={fadeUp}>
               <div className="flex items-center gap-3 mb-6">
-                <Link to="/portfolio" className="text-xs text-white/40 hover:text-white/70 transition-colors">Back to Case Studies</Link>
+                <Link to="/portfolio/" className="text-xs text-white/40 hover:text-white/70 transition-colors">Back to Case Studies</Link>
                 <span className="text-white/20">/</span>
                 <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-amber-500/15 text-amber-300 text-xs font-semibold border border-amber-500/20">
                   <MapPin className="w-3 h-3" /> Local SEO + Map Pack
@@ -167,10 +167,10 @@ export default function HeavenOnMainstreet() {
               </div>
               <div className="flex flex-wrap gap-3">
                 <Button variant="accent" size="lg" className="rounded-full" asChild>
-                  <Link to="/contact">Get Map Pack #1 <ArrowRight className="w-4 h-4 ml-2" /></Link>
+                  <Link to="/contact/">Get Map Pack #1 <ArrowRight className="w-4 h-4 ml-2" /></Link>
                 </Button>
                 <Button variant="outline" size="lg" className="rounded-full border-white/20 text-white hover:bg-white/5" asChild>
-                  <Link to="/services/local-seo">Local SEO Service <ArrowRight className="w-4 h-4 ml-2" /></Link>
+                  <Link to="/services/local-seo/">Local SEO Service <ArrowRight className="w-4 h-4 ml-2" /></Link>
                 </Button>
               </div>
             </motion.div>
@@ -304,16 +304,16 @@ export default function HeavenOnMainstreet() {
               <p className="text-primary-foreground/80 text-sm mb-2">
                 <strong className="text-white">Need a similar SEO & WordPress solution for your business?</strong>
               </p>
-              <Link to="/contact" className="inline-flex items-center gap-2 text-sm font-bold text-amber-400 hover:text-amber-300 transition-colors">
+              <Link to="/contact/" className="inline-flex items-center gap-2 text-sm font-bold text-amber-400 hover:text-amber-300 transition-colors">
                 Contact us <ArrowRight className="w-4 h-4" />
               </Link>
             </div>
             <div className="flex flex-wrap gap-3">
               <Button variant="hero-primary" size="lg" className="rounded-full" asChild>
-                <Link to="/contact">Start Your Local SEO <ArrowRight className="w-4 h-4 ml-2" /></Link>
+                <Link to="/contact/">Start Your Local SEO <ArrowRight className="w-4 h-4 ml-2" /></Link>
               </Button>
               <Button variant="ghost" size="lg" className="rounded-full text-white border-white/20 hover:bg-white/10" asChild>
-                <Link to="/portfolio">Back to Portfolio</Link>
+                <Link to="/portfolio/">Back to Portfolio</Link>
               </Button>
             </div>
           </motion.div>
@@ -440,10 +440,10 @@ export default function HeavenOnMainstreet() {
                 <MapPin className="w-4 h-4 text-accent shrink-0 mt-0.5" />
                 <div>
                   <p className="text-xs font-bold text-foreground mb-0.5">Next Tab Agency - Servicing Office</p>
-                  <address className="not-italic text-xs text-muted-foreground">Taylor Street, Eagleby, QLD 4207, <Link to="/locations/brisbane-seo" className="text-accent hover:underline">Brisbane</Link>, Australia</address>
+                  <address className="not-italic text-xs text-muted-foreground">Taylor Street, Eagleby, QLD 4207, <Link to="/locations/brisbane-seo/" className="text-accent hover:underline">Brisbane</Link>, Australia</address>
                   <p className="text-xs text-muted-foreground mt-1">
                     Brisbane-based Local SEO experts - GBP management, citation cleanup, Map Pack domination.{" "}
-                    <Link to="/services/local-seo" className="text-accent hover:underline">Local SEO service</Link>
+                    <Link to="/services/local-seo/" className="text-accent hover:underline">Local SEO service</Link>
                   </p>
                 </div>
               </div>

@@ -64,8 +64,8 @@ const EmailMarketing = () => (
       faqs={service.faqs}
       breadcrumbs={[
         { name: "Home", url: "https://nexttabagency.com/" },
-        { name: "Services", url: "https://nexttabagency.com/services" },
-        { name: "Email Marketing Agency Brisbane", url: "https://nexttabagency.com/services/email-marketing" },
+        { name: "Services", url: "https://nexttabagency.com/services/" },
+        { name: "Email Marketing Agency Brisbane", url: "https://nexttabagency.com/services/email-marketing/" },
       ]}
       serviceSchema={{ name: "Email Marketing Agency Brisbane", description: "Email marketing strategy, automation, and campaign management for Brisbane and Australian businesses. Klaviyo, Mailchimp, ActiveCampaign. SPAM Act 2003 compliant.", areaServed: "Brisbane, Australia" }}
     />
@@ -74,15 +74,15 @@ const EmailMarketing = () => (
       <img src={heroBg} alt="Email Marketing Agency Australia" className="absolute inset-0 w-full h-full object-cover" width={1920} height={1080} />
       <div className="absolute inset-0 bg-gradient-to-br from-primary/95 via-primary/85 to-transparent" />
       <div className="container relative z-10 py-32 md:py-48 pt-44">
-        <Link to="/services" className="inline-flex items-center text-sm font-semibold text-accent mb-8 hover:text-accent/80 transition-colors"><ArrowLeft className="w-4 h-4 mr-2" /> Back to all services</Link>
+        <Link to="/services/" className="inline-flex items-center text-sm font-semibold text-accent mb-8 hover:text-accent/80 transition-colors"><ArrowLeft className="w-4 h-4 mr-2" /> Back to all services</Link>
         <div className="max-w-3xl">
           <span className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-accent/20 text-accent text-xs font-bold uppercase tracking-widest mb-6"><Mail className="w-3 h-3" /> Email Marketing</span>
           <h1 id="hero-heading" className="font-heading font-bold text-4xl md:text-5xl leading-[1.1] text-primary-foreground mb-6">{service.title}</h1>
           <p className="text-xl md:text-2xl text-primary-foreground/80 font-medium leading-snug mb-6">{service.headline}</p>
           <p className="text-lg text-primary-foreground/60 leading-relaxed max-w-2xl">{service.description}</p>
           <div className="flex flex-wrap gap-4 mt-8">
-            <Button variant="accent" size="lg" asChild><Link to="/contact">Get an Email Marketing Audit</Link></Button>
-            <Button variant="outline" size="lg" className="border-white/30 text-white hover:bg-white/10" asChild><Link to="/services/content-marketing">Content Marketing</Link></Button>
+            <Button variant="accent" size="lg" asChild><Link to="/contact/">Get an Email Marketing Audit</Link></Button>
+            <Button variant="outline" size="lg" className="border-white/30 text-white hover:bg-white/10" asChild><Link to="/services/content-marketing/">Content Marketing</Link></Button>
           </div>
         </div>
       </div>
@@ -103,7 +103,7 @@ const EmailMarketing = () => (
           <div className="lg:col-span-3">
             <h2 className="font-heading font-bold text-3xl mb-6 text-foreground">The Highest-ROI Channel Most Businesses Underuse</h2>
             <p className="text-muted-foreground leading-relaxed">{service.longDescription}</p>
-            <p className="text-muted-foreground leading-relaxed mt-4">Email works best as part of a connected strategy. Pair it with <Link to="/services/content-marketing" className="text-accent font-semibold">Content Marketing</Link> to grow your list, and <Link to="/services/conversion-rate-optimisation" className="text-accent font-semibold">CRO</Link> to maximise conversions from email traffic.</p>
+            <p className="text-muted-foreground leading-relaxed mt-4">Email works best as part of a connected strategy. Pair it with <Link to="/services/content-marketing/" className="text-accent font-semibold">Content Marketing</Link> to grow your list, and <Link to="/services/conversion-rate-optimisation/" className="text-accent font-semibold">CRO</Link> to maximise conversions from email traffic.</p>
           </div>
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: 0.2 }} className="lg:col-span-2">
             <div className="surface-teal rounded-2xl p-7 border border-primary-foreground/10">

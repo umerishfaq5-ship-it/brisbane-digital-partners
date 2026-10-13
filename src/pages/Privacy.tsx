@@ -11,7 +11,7 @@ const Privacy = () => (
       canonical="/privacy"
       breadcrumbs={[
         { name: "Home", url: "https://nexttabagency.com/" },
-        { name: "Privacy Policy", url: "https://nexttabagency.com/privacy" },
+        { name: "Privacy Policy", url: "https://nexttabagency.com/privacy/" },
       ]}
     />
 
@@ -139,7 +139,7 @@ const Privacy = () => (
           </div>
 
           <div className="pt-6 border-t border-border">
-            <Link to="/contact" className="inline-flex items-center gap-2 text-accent font-semibold hover:underline">
+            <Link to="/contact/" className="inline-flex items-center gap-2 text-accent font-semibold hover:underline">
               ← Back to Contact
             </Link>
           </div>

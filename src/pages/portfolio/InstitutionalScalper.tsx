@@ -130,8 +130,8 @@ export default function InstitutionalScalper() {
         canonical="/portfolio/institutional-scalper"
         breadcrumbs={[
           { name: "Home",                  url: "https://nexttabagency.com/" },
-          { name: "Portfolio",             url: "https://nexttabagency.com/portfolio" },
-          { name: "Institutional Scalper", url: "https://nexttabagency.com/portfolio/institutional-scalper" },
+          { name: "Portfolio",             url: "https://nexttabagency.com/portfolio/" },
+          { name: "Institutional Scalper", url: "https://nexttabagency.com/portfolio/institutional-scalper/" },
         ]}
       />
 
@@ -147,7 +147,7 @@ export default function InstitutionalScalper() {
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <motion.div initial="hidden" animate="visible" variants={fadeUp}>
               <div className="flex items-center gap-3 mb-6">
-                <Link to="/portfolio" className="text-xs text-white/40 hover:text-white/70 transition-colors">Back to Case Studies</Link>
+                <Link to="/portfolio/" className="text-xs text-white/40 hover:text-white/70 transition-colors">Back to Case Studies</Link>
                 <span className="text-white/20">/</span>
                 <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-yellow-500/15 text-yellow-300 text-xs font-semibold border border-yellow-500/20">
                   <Globe className="w-3 h-3" /> WordPress Development
@@ -173,10 +173,10 @@ export default function InstitutionalScalper() {
               </div>
               <div className="flex flex-wrap gap-3">
                 <Button variant="accent" size="lg" className="rounded-full" asChild>
-                  <Link to="/contact">Fix My SEO <ArrowRight className="w-4 h-4 ml-2" /></Link>
+                  <Link to="/contact/">Fix My SEO <ArrowRight className="w-4 h-4 ml-2" /></Link>
                 </Button>
                 <Button variant="outline" size="lg" className="rounded-full border-white/20 text-white hover:bg-white/5" asChild>
-                  <Link to="/services/seo-audits">SEO Audit Service <ArrowRight className="w-4 h-4 ml-2" /></Link>
+                  <Link to="/services/seo-audits/">SEO Audit Service <ArrowRight className="w-4 h-4 ml-2" /></Link>
                 </Button>
               </div>
             </motion.div>
@@ -303,16 +303,16 @@ export default function InstitutionalScalper() {
               <p className="text-sm text-muted-foreground mb-2">
                 <strong className="text-foreground">Need a similar SEO solution for your business?</strong>
               </p>
-              <Link to="/contact" className="inline-flex items-center gap-2 text-sm font-bold text-accent hover:text-accent/80 transition-colors">
+              <Link to="/contact/" className="inline-flex items-center gap-2 text-sm font-bold text-accent hover:text-accent/80 transition-colors">
                 Contact us <ArrowRight className="w-4 h-4" />
               </Link>
             </div>
             <div className="flex gap-4 flex-wrap">
               <Button variant="accent" size="lg" className="rounded-full" asChild>
-                <Link to="/contact">Start Your Project <ArrowRight className="w-4 h-4 ml-2" /></Link>
+                <Link to="/contact/">Start Your Project <ArrowRight className="w-4 h-4 ml-2" /></Link>
               </Button>
               <Button variant="outline" size="lg" className="rounded-full" asChild>
-                <Link to="/portfolio">Back to Portfolio</Link>
+                <Link to="/portfolio/">Back to Portfolio</Link>
               </Button>
             </div>
           </motion.div>
@@ -437,10 +437,10 @@ export default function InstitutionalScalper() {
                 <MapPin className="w-4 h-4 text-accent shrink-0 mt-0.5" />
                 <div>
                   <p className="text-xs font-bold text-foreground mb-0.5">Next Tab Agency - Servicing Office</p>
-                  <address className="not-italic text-xs text-muted-foreground">Taylor Street, Eagleby, QLD 4207, <Link to="/locations/brisbane-seo" className="text-accent hover:underline">Brisbane</Link>, Australia</address>
+                  <address className="not-italic text-xs text-muted-foreground">Taylor Street, Eagleby, QLD 4207, <Link to="/locations/brisbane-seo/" className="text-accent hover:underline">Brisbane</Link>, Australia</address>
                   <p className="text-xs text-muted-foreground mt-1">
                     Expert Technical SEO, WordPress development, and Local SEO for Australian businesses.{" "}
-                    <Link to="/services/seo-audits" className="text-accent hover:underline">SEO Audit service</Link>
+                    <Link to="/services/seo-audits/" className="text-accent hover:underline">SEO Audit service</Link>
                   </p>
                 </div>
               </div>

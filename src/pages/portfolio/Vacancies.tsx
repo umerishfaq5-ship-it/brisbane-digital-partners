@@ -1,9 +1,10 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import {
   ArrowRight, Smartphone, Briefcase, TrendingUp,
   CheckCircle, Search, Zap,
-  Building2, Star, Users
+  Building2, Star, Users, ChevronLeft, ChevronRight
 } from "lucide-react";
 import Layout from "@/components/Layout";
 import SEO from "@/components/SEO";
@@ -205,8 +206,8 @@ export default function Vacancies() {
         canonical="/portfolio/vacancies"
         breadcrumbs={[
           { name: "Home",       url: "https://nexttabagency.com/" },
-          { name: "Portfolio",  url: "https://nexttabagency.com/portfolio" },
-          { name: "Vacancies",  url: "https://nexttabagency.com/portfolio/vacancies" },
+          { name: "Portfolio",  url: "https://nexttabagency.com/portfolio/" },
+          { name: "Vacancies",  url: "https://nexttabagency.com/portfolio/vacancies/" },
         ]}
       />
 
@@ -226,7 +227,7 @@ export default function Vacancies() {
             {/* Left — copy */}
             <motion.div initial="hidden" animate="visible" variants={fadeUp}>
               <div className="flex items-center gap-3 mb-6">
-                <Link to="/portfolio" className="text-xs text-white/40 hover:text-white/70 transition-colors">
+                <Link to="/portfolio/" className="text-xs text-white/40 hover:text-white/70 transition-colors">
                   ← Portfolio
                 </Link>
                 <span className="text-white/20">/</span>
@@ -281,7 +282,7 @@ export default function Vacancies() {
               </div>
 
               <Button variant="accent" size="lg" className="rounded-full" asChild>
-                <Link to="/contact">
+                <Link to="/contact/">
                   Build Your App <ArrowRight className="w-4 h-4 ml-2" />
                 </Link>
               </Button>
@@ -499,14 +500,14 @@ export default function Vacancies() {
               <p className="text-primary-foreground/80 text-sm mb-2">
                 <strong className="text-white">Need a similar App solution for your business?</strong>
               </p>
-              <Link to="/contact" className="inline-flex items-center gap-2 text-sm font-bold text-blue-400 hover:text-blue-300 transition-colors">
+              <Link to="/contact/" className="inline-flex items-center gap-2 text-sm font-bold text-blue-400 hover:text-blue-300 transition-colors">
                 Contact us <ArrowRight className="w-4 h-4" />
               </Link>
             </div>
 
             <div className="flex flex-wrap gap-4">
               <Button variant="hero-primary" size="lg" className="rounded-full" asChild>
-                <Link to="/contact">
+                <Link to="/contact/">
                   Start Your App Project <ArrowRight className="w-4 h-4 ml-2" />
                 </Link>
               </Button>

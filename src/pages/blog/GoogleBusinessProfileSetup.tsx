@@ -7,7 +7,7 @@ import BlogPostLayout, {
 const schema = {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://nexttabagency.com/blog/google-business-profile-setup" },
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://nexttabagency.com/blog/google-business-profile-setup/" },
   "headline": "The 'Near Me' Secret: How to Set Up Your Google Business Profile Like a Pro",
   "description": "76% of people who do a local search visit a business within 24 hours. Learn how to set up your Google Business Profile to capture every single one of those customers.",
   "image": "https://images.unsplash.com/photo-1573804633927-bfcbcd909acd?q=80&w=2027",
@@ -32,6 +32,7 @@ const faqSchema = {
 const GoogleBusinessProfileSetup = () => (
   <>
     <Helmet>
+      <link rel="canonical" href="https://nexttabagency.com/blog/google-business-profile-setup/" />
       <title>The 'Near Me' Secret: Set Up Your Google Business Profile Like a Pro | Next Tab Agency</title>
       <meta name="description" content="76% of people who do a local search visit a business within 24 hours. Learn how to set up your Google Business Profile to capture every single one of those customers." />
       <script type="application/ld+json">{JSON.stringify(faqSchema)}</script>
@@ -107,7 +108,7 @@ const GoogleBusinessProfileSetup = () => (
         NAP stands for Name, Address, Phone Number. Your NAP must be <strong className="text-foreground">100% identical</strong> everywhere it appears online — your website, your GBP, Yelp, Yellow Pages, Facebook, LinkedIn. Even a small inconsistency (e.g. "St" vs "Street") confuses Google and tanks your local ranking.
       </p>
       <ActionItem>
-        <p>Search your business name on Google right now. Check that the name, address, and phone match your website exactly. Our <Link to="/services/local-seo" className="font-semibold text-accent hover:underline">Local SEO Management</Link> package includes a full NAP audit across 40+ directories.</p>
+        <p>Search your business name on Google right now. Check that the name, address, and phone match your website exactly. Our <Link to="/services/local-seo/" className="font-semibold text-accent hover:underline">Local SEO Management</Link> package includes a full NAP audit across 40+ directories.</p>
       </ActionItem>
 
       <StepBadge n={4} title="Write a Keyword-Rich Business Description" />
@@ -121,7 +122,7 @@ const GoogleBusinessProfileSetup = () => (
 
       <StepBadge n={5} title="Collect and Respond to Reviews — Every Week" />
       <p className="mb-6 text-lg leading-relaxed text-muted-foreground">
-        Reviews are a confirmed <Link to="/services/google-business-profile" className="font-semibold text-accent hover:underline">Google ranking factor</Link>. The quantity, quality, and recency of reviews all affect your Map Pack position. More importantly, <strong className="text-foreground">98% of consumers read reviews</strong> before choosing a local business.
+        Reviews are a confirmed <Link to="/services/google-business-profile/" className="font-semibold text-accent hover:underline">Google ranking factor</Link>. The quantity, quality, and recency of reviews all affect your Map Pack position. More importantly, <strong className="text-foreground">98% of consumers read reviews</strong> before choosing a local business.
       </p>
       <p className="mb-6 text-lg leading-relaxed text-muted-foreground">
         Respond to every review — positive and negative. Google actively rewards businesses that engage with their customers.

@@ -52,7 +52,7 @@ const caseStudies = [
     metric: "5.86M",
     label: "Total Impressions",
     sub: "Recovered suspended GBP, achieved #1 Map Pack, 49,000+ organic clicks generated",
-    href: "/portfolio/heaven-on-mainstreet",
+    href: "/portfolio/heaven-on-mainstreet/",
     badge: "Local SEO",
   },
   {
@@ -61,7 +61,7 @@ const caseStudies = [
     metric: "2.5M",
     label: "Crawl Issues Fixed",
     sub: "Resolved catastrophic crawl budget waste, restored indexing, secured Top-3 rankings",
-    href: "/portfolio/institutional-scalper",
+    href: "/portfolio/institutional-scalper/",
     badge: "Technical SEO",
   },
   {
@@ -70,7 +70,7 @@ const caseStudies = [
     metric: "12×",
     label: "Return on Ad Spend",
     sub: "New site + Google Ads live in 30 days — 12× ROAS achieved within first 90 days",
-    href: "/portfolio/markhor-auto-care",
+    href: "/portfolio/markhor-auto-care/",
     badge: "Google Ads",
   },
 ];
@@ -159,8 +159,8 @@ const comparisonRows = [
 const Index = () => (
   <Layout>
     <SEO
-      title="Next Tab Agency | Brisbane's #1 SEO & Digital Marketing Agency QLD"
-      description="Next Tab Agency — Brisbane's top-rated specialist digital agency. Expert SEO, Google Ads, and web development teams working together. 200+ Australian businesses helped. Eagleby QLD. No lock-in contracts. Free strategy session."
+      title="Digital Marketing & SEO Agency Brisbane"
+      description="SEO, Google Ads and websites for Brisbane, Logan & Gold Coast businesses. Month-to-month, no lock-in contracts. Book a free 20-minute website review."
       canonical="/"
       breadcrumbs={[{ name: "Home", url: "https://nexttabagency.com/" }]}
     />
@@ -193,12 +193,6 @@ const Index = () => (
             "addressCountry": "AU",
           },
           "geo": { "@type": "GeoCoordinates", "latitude": -27.7172, "longitude": 153.1830 },
-          "aggregateRating": {
-            "@type": "AggregateRating",
-            "ratingValue": "4.9",
-            "reviewCount": "87",
-            "bestRating": "5",
-          },
           "areaServed": "Australia",
           "knowsAbout": ["SEO", "Google Ads", "WordPress", "Local SEO Brisbane", "Digital Marketing", "Next Tab Agency"],
           "slogan": "Brisbane's Specialist Digital Agency",
@@ -404,7 +398,7 @@ const Index = () => (
         </div>
         <div className="text-center mt-10">
           <Button variant="outline" className="border-primary-foreground/20 text-primary-foreground hover:bg-primary-foreground/10 rounded-full" asChild>
-            <Link to="/portfolio">View All Case Studies <ArrowRight className="w-4 h-4 ml-1" /></Link>
+            <Link to="/portfolio/">View All Case Studies <ArrowRight className="w-4 h-4 ml-1" /></Link>
           </Button>
         </div>
       </div>
@@ -425,19 +419,19 @@ const Index = () => (
               icon: Search, iconCls: "text-accent", bgCls: "bg-accent/10",
               tag: "SEO Specialists", title: "Search is our foundation.",
               body: "Topical authority, entity SEO, AI search readiness (ChatGPT, Gemini, Perplexity), and deep technical on-site work — built in-house, never outsourced.",
-              links: [{ l: "Local SEO", h: "/services/local-seo" }, { l: "Technical SEO", h: "/services/technical-seo" }, { l: "AI SEO", h: "/services/ai-seo" }],
+              links: [{ l: "Local SEO", h: "/services/local-seo/" }, { l: "Technical SEO", h: "/services/technical-seo/" }, { l: "AI SEO", h: "/services/ai-seo/" }],
             },
             {
               icon: Target, iconCls: "text-orange-500", bgCls: "bg-orange-500/10",
               tag: "PPC Specialists", title: "Every dollar tracked.",
               body: "Google Ads, Meta, LinkedIn — managed by accredited practitioners who obsess over cost per lead. Full call tracking. No unexplained spend increases.",
-              links: [{ l: "Google Ads", h: "/services/ppc-google-ads" }, { l: "Facebook Ads", h: "/services/facebook-ads" }, { l: "LinkedIn Ads", h: "/services/linkedin-ads" }],
+              links: [{ l: "Google Ads", h: "/services/ppc-google-ads/" }, { l: "Facebook Ads", h: "/services/facebook-ads/" }, { l: "LinkedIn Ads", h: "/services/linkedin-ads/" }],
             },
             {
               icon: Code, iconCls: "text-teal-500", bgCls: "bg-teal-500/10",
               tag: "Web Specialists", title: "Sub-1s load times. Built to convert.",
               body: "React, Next.js, WordPress, Shopify — our Antigravity Framework for websites that pass Core Web Vitals, rank on day one, and convert visitors to paying customers.",
-              links: [{ l: "WordPress", h: "/services/wordpress-development" }, { l: "Shopify", h: "/services/shopify-development" }, { l: "Web Dev", h: "/services/web-development" }],
+              links: [{ l: "WordPress", h: "/services/wordpress-development/" }, { l: "Shopify", h: "/services/shopify-development/" }, { l: "Web Dev", h: "/services/web-development/" }],
             },
           ].map((team, i) => (
             <motion.div key={i} initial={{ opacity: 0, y: 24 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.1 }}
@@ -616,7 +610,7 @@ const Index = () => (
           ))}
         </div>
         <div className="text-center mt-10">
-          <Link to="/testimonials" className="inline-flex items-center gap-2 text-accent font-semibold text-sm hover:text-accent/80 transition-colors">
+          <Link to="/testimonials/" className="inline-flex items-center gap-2 text-accent font-semibold text-sm hover:text-accent/80 transition-colors">
             Read all 87+ Google reviews <ArrowRight className="w-4 h-4" />
           </Link>
         </div>
@@ -633,7 +627,7 @@ const Index = () => (
           description="End-to-end digital engineering to solve the specific bottlenecks holding your Brisbane business back from market dominance."
         />
         <div className="grid md:grid-cols-2 gap-6 mt-12">
-          <Link to="/services/seo-audits" className="group card-premium p-8 rounded-3xl bg-card border border-border/50 hover:border-accent/30 transition-all duration-300">
+          <Link to="/services/seo-audits/" className="group card-premium p-8 rounded-3xl bg-card border border-border/50 hover:border-accent/30 transition-all duration-300">
             <div className="w-14 h-14 rounded-2xl bg-accent/10 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
               <Search className="w-6 h-6 text-accent" />
             </div>
@@ -646,7 +640,7 @@ const Index = () => (
             </span>
           </Link>
 
-          <Link to="/services/web-development" className="group card-premium p-8 rounded-3xl bg-card border border-border/50 hover:border-accent/30 transition-all duration-300">
+          <Link to="/services/web-development/" className="group card-premium p-8 rounded-3xl bg-card border border-border/50 hover:border-accent/30 transition-all duration-300">
             <div className="w-14 h-14 rounded-2xl bg-teal-500/10 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
               <Code className="w-6 h-6 text-teal-500" />
             </div>
@@ -659,7 +653,7 @@ const Index = () => (
             </span>
           </Link>
 
-          <Link to="/services/ppc-google-ads" className="group card-premium p-8 rounded-3xl bg-card border border-border/50 hover:border-accent/30 transition-all duration-300">
+          <Link to="/services/ppc-google-ads/" className="group card-premium p-8 rounded-3xl bg-card border border-border/50 hover:border-accent/30 transition-all duration-300">
             <div className="w-14 h-14 rounded-2xl bg-orange-500/10 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
               <Target className="w-6 h-6 text-orange-500" />
             </div>
@@ -672,7 +666,7 @@ const Index = () => (
             </span>
           </Link>
 
-          <Link to="/services/mobile-apps" className="group card-premium p-8 rounded-3xl bg-card border border-border/50 hover:border-accent/30 transition-all duration-300">
+          <Link to="/services/mobile-apps/" className="group card-premium p-8 rounded-3xl bg-card border border-border/50 hover:border-accent/30 transition-all duration-300">
             <div className="w-14 h-14 rounded-2xl bg-violet-500/10 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
               <Smartphone className="w-6 h-6 text-violet-500" />
             </div>
@@ -702,7 +696,7 @@ const Index = () => (
             </p>
           </div>
           <Button variant="accent" size="lg" className="rounded-full shrink-0" asChild>
-            <Link to="/services/ai-seo">Get AI Readiness Audit</Link>
+            <Link to="/services/ai-seo/">Get AI Readiness Audit</Link>
           </Button>
         </div>
       </div>
@@ -750,12 +744,12 @@ const Index = () => (
         />
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
           {[
-            { city: "Brisbane, QLD", href: "/locations/brisbane-seo", desc: "Our home base — serving all of Greater Brisbane and Queensland.", badge: "Home Base" },
-            { city: "Gold Coast, QLD", href: "/locations/gold-coast-seo", desc: "SEO and Google Ads for thriving Gold Coast businesses." },
-            { city: "Sydney, NSW", href: "/locations/sydney-seo", desc: "Top-rated digital agency services for Sydney businesses." },
-            { city: "Melbourne, VIC", href: "/locations/melbourne-seo", desc: "Full-service digital agency support for Melbourne businesses." },
-            { city: "Perth, WA", href: "/locations/perth-seo", desc: "Local SEO and paid ads for WA businesses looking to grow." },
-            { city: "Adelaide, SA", href: "/locations/adelaide-seo", desc: "SEO and digital marketing for South Australian businesses." },
+            { city: "Brisbane, QLD", href: "/locations/brisbane-seo/", desc: "Our home base — serving all of Greater Brisbane and Queensland.", badge: "Home Base" },
+            { city: "Gold Coast, QLD", href: "/locations/gold-coast-seo/", desc: "SEO and Google Ads for thriving Gold Coast businesses." },
+            { city: "Sydney, NSW", href: "/locations/sydney-seo/", desc: "Top-rated digital agency services for Sydney businesses." },
+            { city: "Melbourne, VIC", href: "/locations/melbourne-seo/", desc: "Full-service digital agency support for Melbourne businesses." },
+            { city: "Perth, WA", href: "/locations/perth-seo/", desc: "Local SEO and paid ads for WA businesses looking to grow." },
+            { city: "Adelaide, SA", href: "/locations/adelaide-seo/", desc: "SEO and digital marketing for South Australian businesses." },
           ].map((loc, i) => (
             <motion.div key={loc.city} initial={{ opacity: 0, y: 24 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.5, delay: i * 0.08 }}>
               <Link to={loc.href} className="group card-premium rounded-2xl p-7 block h-full">
@@ -814,7 +808,7 @@ const Index = () => (
             </div>
             <div className="flex flex-wrap gap-4 justify-center">
               <Button variant="hero-primary" size="xl" className="rounded-full font-bold shadow-xl shadow-accent/20" asChild>
-                <Link to="/contact">Claim My Free Strategy Session <ArrowRight className="w-5 h-5 ml-2" /></Link>
+                <Link to="/contact/">Claim My Free Strategy Session <ArrowRight className="w-5 h-5 ml-2" /></Link>
               </Button>
               <Button variant="hero-secondary" size="xl" className="rounded-full" asChild>
                 <a href="tel:+61470400743"><Phone className="w-4 h-4 mr-2" />Call 0470 400 743</a>

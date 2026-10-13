@@ -21,6 +21,7 @@ const schema = {
 const LocalSeoMapPack = () => (
   <>
     <Helmet>
+      <link rel="canonical" href="https://nexttabagency.com/blog/local-seo-map-pack/" />
       <title>Why Your Local Competitor gets all the Calls | Brisbane Digital Partners</title>
       <meta name="description" content="Tired of losing local customers to competitors? Discover how the Google Map Pack drives 46% of local search traffic and how to secure your spot." />
     </Helmet>
@@ -69,7 +70,7 @@ const LocalSeoMapPack = () => (
       <SectionH2>Why Your Competitor is Winning</SectionH2>
 
       <p className="mb-6 text-lg leading-relaxed text-muted-foreground">
-        Your competitor isn't getting calls because they are better at what they do. They are getting calls because they have optimized their <Link to="/services/google-business-profile" className="font-semibold underline text-accent hover:text-accent/80">Google Business Profile (GBP)</Link>.
+        Your competitor isn't getting calls because they are better at what they do. They are getting calls because they have optimized their <Link to="/services/google-business-profile/" className="font-semibold underline text-accent hover:text-accent/80">Google Business Profile (GBP)</Link>.
       </p>
 
       <ul className="mb-8 space-y-2">
@@ -82,11 +83,11 @@ const LocalSeoMapPack = () => (
       <SectionH2>How to Reclaim Your Leads</SectionH2>
 
       <p className="mb-6 text-lg leading-relaxed text-muted-foreground">
-        To get back in the game and dominate your local area, you need a targeted <Link to="/services/local-seo" className="font-semibold underline text-accent hover:text-accent/80">Local SEO strategy</Link>. This isn't just about having a website; it's about building local authority and trust signals that Google recognizes.
+        To get back in the game and dominate your local area, you need a targeted <Link to="/services/local-seo/" className="font-semibold underline text-accent hover:text-accent/80">Local SEO strategy</Link>. This isn't just about having a website; it's about building local authority and trust signals that Google recognizes.
       </p>
 
       <ActionItem>
-        <strong>Immediate Action:</strong> Audit your Google Business Profile. Ensure all your information is 100% accurate, add high-quality photos of your team and work, and start asking every happy customer for a review. If you need expert help scaling this, explore our <Link to="/locations/brisbane-seo" className="font-semibold underline text-accent hover:text-accent/80">Brisbane SEO</Link> services tailored for local dominance.
+        <strong>Immediate Action:</strong> Audit your Google Business Profile. Ensure all your information is 100% accurate, add high-quality photos of your team and work, and start asking every happy customer for a review. If you need expert help scaling this, explore our <Link to="/locations/brisbane-seo/" className="font-semibold underline text-accent hover:text-accent/80">Brisbane SEO</Link> services tailored for local dominance.
       </ActionItem>
 
     </BlogPostLayout>

@@ -7,7 +7,7 @@ import BlogPostLayout, {
 const schema = {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://nexttabagency.com/blog/why-your-website-needs-seo" },
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://nexttabagency.com/blog/why-your-website-needs-seo/" },
   "headline": "Why Brisbane Businesses Need Local SEO in 2024 — 5 Reasons You Can't Ignore",
   "description": "Brisbane businesses that invest in Local SEO are 4x more likely to appear in the Google Map Pack. Here's why your Brisbane business needs Local SEO now — not later.",
   "image": "https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a?q=80&w=2074",
@@ -33,6 +33,7 @@ const faqSchema = {
 const WhyYourWebsiteNeedsSeo = () => (
   <>
     <Helmet>
+      <link rel="canonical" href="https://nexttabagency.com/blog/why-your-website-needs-seo/" />
       <title>Why Brisbane Businesses Need Local SEO in 2024 | Next Tab Agency</title>
       <meta name="description" content="Brisbane businesses investing in Local SEO are 4x more likely to appear in the Google Map Pack. Discover 5 reasons why Local SEO is non-negotiable for your Brisbane business." />
       <script type="application/ld+json">{JSON.stringify(faqSchema)}</script>
@@ -55,7 +56,7 @@ const WhyYourWebsiteNeedsSeo = () => (
         Imagine printing 5,000 business cards, then locking them all in your desk drawer. No one sees them. No calls. No customers.
       </p>
       <p className="mb-6 text-lg leading-relaxed text-muted-foreground">
-        That's exactly what a Brisbane business without <Link to="/services/local-seo" className="text-accent font-semibold underline decoration-accent/40 hover:decoration-accent transition-colors">Local SEO</Link> does. It exists, but nobody in Brisbane can find it. And if nobody can find it, it cannot make you money.
+        That's exactly what a Brisbane business without <Link to="/services/local-seo/" className="text-accent font-semibold underline decoration-accent/40 hover:decoration-accent transition-colors">Local SEO</Link> does. It exists, but nobody in Brisbane can find it. And if nobody can find it, it cannot make you money.
       </p>
       <p className="mb-10 text-lg leading-relaxed text-muted-foreground">
         With over 2.6 million people in Greater Brisbane, and every suburb's searches becoming hyper-competitive, ranking on page 1 is no longer optional — it's the difference between a thriving business and an empty phone.
@@ -92,7 +93,7 @@ const WhyYourWebsiteNeedsSeo = () => (
         People don't search Google to browse for fun. When someone types "emergency plumber near me" at 11pm, <strong className="text-foreground">they are ready to pay</strong>. That is intent-driven traffic — worth 10x more than a social media ad that interrupts someone's scrolling.
       </p>
       <p className="mb-6 text-lg leading-relaxed text-muted-foreground">
-        Our <Link to="/services/seo-audits" className="font-semibold text-accent hover:underline">SEO strategy</Link> is specifically designed to put your business in front of people at exactly this moment.
+        Our <Link to="/services/seo-audits/" className="font-semibold text-accent hover:underline">SEO strategy</Link> is specifically designed to put your business in front of people at exactly this moment.
       </p>
 
       <InlineImage
@@ -113,7 +114,7 @@ const WhyYourWebsiteNeedsSeo = () => (
         You might have a beautiful website, but Google sees something completely different. Slow load times, broken links, missing meta tags, poorly structured headings — these are invisible to the human eye but completely visible to a search engine crawler.
       </p>
       <ActionItem>
-        <p>Run a quick test right now: go to <strong>PageSpeed Insights</strong> (pagespeed.web.dev) and type in your URL. If your score is below 70 on mobile, you have a serious problem. Our <Link to="/services/seo-audits" className="font-semibold text-accent hover:underline">professional SEO audit</Link> finds every hidden issue.</p>
+        <p>Run a quick test right now: go to <strong>PageSpeed Insights</strong> (pagespeed.web.dev) and type in your URL. If your score is below 70 on mobile, you have a serious problem. Our <Link to="/services/seo-audits/" className="font-semibold text-accent hover:underline">professional SEO audit</Link> finds every hidden issue.</p>
       </ActionItem>
 
       <SectionH2>Reason 5: If You Don't Do SEO, Your Competitors Will</SectionH2>
@@ -121,13 +122,13 @@ const WhyYourWebsiteNeedsSeo = () => (
         SEO is not optional anymore. Your competitors are already investing in it. Every month you wait is another month they move further up the page and take clients that should have been yours.
       </p>
       <p className="mb-6 text-lg leading-relaxed text-muted-foreground">
-        The good news? It is never too late to start. And with a proper <Link to="/services/local-seo" className="font-semibold text-accent hover:underline">Local SEO strategy</Link>, small businesses can rank above large national chains because Google rewards relevance and proximity.
+        The good news? It is never too late to start. And with a proper <Link to="/services/local-seo/" className="font-semibold text-accent hover:underline">Local SEO strategy</Link>, small businesses can rank above large national chains because Google rewards relevance and proximity.
       </p>
 
       <div className="p-8 my-12 text-center border bg-muted/40 rounded-2xl border-border/50">
         <h3 className="mb-3 text-2xl font-bold font-heading text-foreground">Ready to stop being invisible?</h3>
         <p className="mb-5 text-muted-foreground">We'll analyse your site and show you exactly what needs to fix — completely free.</p>
-        <Link to="/contact" className="inline-flex items-center gap-2 px-6 py-3 font-bold rounded-full bg-accent text-accent-foreground hover:bg-accent/90">
+        <Link to="/contact/" className="inline-flex items-center gap-2 px-6 py-3 font-bold rounded-full bg-accent text-accent-foreground hover:bg-accent/90">
           Get My Free Visibility Report →
         </Link>
       </div>

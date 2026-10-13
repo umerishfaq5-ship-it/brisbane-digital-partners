@@ -40,7 +40,7 @@ const leadership: TeamMember[] = [
     seed: "Sarah",
     photo: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=400&h=400&fit=crop&crop=face&auto=format&q=80",
     tag: "Operations",
-    serviceLink: { href: "/portfolio", label: "View Portfolio Management" },
+    serviceLink: { href: "/portfolio/", label: "View Portfolio Management" },
   },
 ];
 
@@ -58,7 +58,7 @@ const divisions: { label: string; icon: typeof Users; color: string; members: Te
         seed: "Marcus",
         photo: "https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?w=400&h=400&fit=crop&crop=face&auto=format&q=80",
         tag: "Technical SEO",
-        serviceLink: { href: "/services/seo-audits", label: "View SEO Audit Services" },
+        serviceLink: { href: "/services/seo-audits/", label: "View SEO Audit Services" },
       },
       {
         name: "Elena Rodriguez",
@@ -68,7 +68,7 @@ const divisions: { label: string; icon: typeof Users; color: string; members: Te
         seed: "Elena",
         photo: "https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=400&h=400&fit=crop&crop=face&auto=format&q=80",
         tag: "Topical Authority",
-        serviceLink: { href: "/services/web-development", label: "View Semantic Architecture" },
+        serviceLink: { href: "/services/web-development/", label: "View Semantic Architecture" },
       },
       {
         name: "Liam O'Connor",
@@ -78,7 +78,7 @@ const divisions: { label: string; icon: typeof Users; color: string; members: Te
         seed: "Liam",
         photo: "https://images.unsplash.com/photo-1552058544-f2b08422138a?w=400&h=400&fit=crop&crop=face&auto=format&q=80",
         tag: "Local SEO",
-        serviceLink: { href: "/locations/brisbane-seo", label: "View Brisbane SEO" },
+        serviceLink: { href: "/locations/brisbane-seo/", label: "View Brisbane SEO" },
       },
       {
         name: "Priya Das",
@@ -88,7 +88,7 @@ const divisions: { label: string; icon: typeof Users; color: string; members: Te
         seed: "Priya",
         photo: "https://images.unsplash.com/photo-1592621385612-4d7129426394?w=400&h=400&fit=crop&crop=face&auto=format&q=80",
         tag: "Analytics",
-        serviceLink: { href: "/services/seo-audits", label: "View SEO Audit Services" },
+        serviceLink: { href: "/services/seo-audits/", label: "View SEO Audit Services" },
       },
       {
         name: "Ethan Hunt",
@@ -98,7 +98,7 @@ const divisions: { label: string; icon: typeof Users; color: string; members: Te
         seed: "Ethan",
         photo: "https://images.unsplash.com/photo-1568602471122-7832951cc4c5?w=400&h=400&fit=crop&crop=face&auto=format&q=80",
         tag: "PPC / Ads",
-        serviceLink: { href: "/services/ppc-google-ads", label: "View PPC Services" },
+        serviceLink: { href: "/services/ppc-google-ads/", label: "View PPC Services" },
       },
       {
         name: "Nathaniel Wu",
@@ -108,7 +108,7 @@ const divisions: { label: string; icon: typeof Users; color: string; members: Te
         seed: "Nathaniel",
         photo: "https://images.unsplash.com/photo-1507591064344-4c6ce005b128?w=400&h=400&fit=crop&crop=face&auto=format&q=80",
         tag: "Digital PR",
-        serviceLink: { href: "/blog/what-are-backlinks", label: "Learn About Backlinks" },
+        serviceLink: { href: "/blog/what-are-backlinks/", label: "Learn About Backlinks" },
       },
       {
         name: "Chloe Bennett",
@@ -143,7 +143,7 @@ const divisions: { label: string; icon: typeof Users; color: string; members: Te
         seed: "Rohan",
         photo: "https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?w=400&h=400&fit=crop&crop=face&auto=format&q=80",
         tag: "React / Antigravity",
-        serviceLink: { href: "/services/web-development", label: "View Web Development Services" },
+        serviceLink: { href: "/services/web-development/", label: "View Web Development Services" },
       },
       {
         name: "Isabella Rossi",
@@ -153,7 +153,7 @@ const divisions: { label: string; icon: typeof Users; color: string; members: Te
         seed: "Isabella",
         photo: "https://images.unsplash.com/photo-1485893086445-ed75865251e0?w=400&h=400&fit=crop&crop=face&auto=format&q=80",
         tag: "WooCommerce",
-        serviceLink: { href: "/services/woocommerce-development", label: "View WooCommerce Services" },
+        serviceLink: { href: "/services/woocommerce-development/", label: "View WooCommerce Services" },
       },
       {
         name: "Tom Harrison",
@@ -181,7 +181,7 @@ const divisions: { label: string; icon: typeof Users; color: string; members: Te
         seed: "Oliver",
         photo: "https://images.unsplash.com/photo-1517849845537-4d257902454a?w=400&h=400&fit=crop&crop=face&auto=format&q=80",
         tag: "Mobile Apps",
-        serviceLink: { href: "/services/mobile-apps", label: "View Mobile App Services" },
+        serviceLink: { href: "/services/mobile-apps/", label: "View Mobile App Services" },
       },
       {
         name: "Sophie Taylor",
@@ -191,7 +191,7 @@ const divisions: { label: string; icon: typeof Users; color: string; members: Te
         seed: "Sophie",
         photo: "https://images.unsplash.com/photo-1488716820095-cbe80883c496?w=400&h=400&fit=crop&crop=face&auto=format&q=80",
         tag: "Migration",
-        serviceLink: { href: "/services/shopify-development", label: "View Shopify Services" },
+        serviceLink: { href: "/services/shopify-development/", label: "View Shopify Services" },
       },
     ],
   },
@@ -226,7 +226,7 @@ const divisions: { label: string; icon: typeof Users; color: string; members: Te
         seed: "Ava",
         photo: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&h=400&fit=crop&crop=face&auto=format&q=80",
         tag: "Client Success",
-        serviceLink: { href: "/contact", label: "Speak to Ava Today" },
+        serviceLink: { href: "/contact/", label: "Speak to Ava Today" },
       },
       {
         name: "Mia Henderson",
@@ -387,7 +387,7 @@ const OurTeam = () => (
       canonical="/our-team"
       breadcrumbs={[
         { name: "Home", url: "https://nexttabagency.com/" },
-        { name: "Our Team", url: "https://nexttabagency.com/our-team" },
+        { name: "Our Team", url: "https://nexttabagency.com/our-team/" },
       ]}
     />
 
@@ -599,7 +599,7 @@ const OurTeam = () => (
             </div>
 
             <Button variant="accent" size="lg" className="rounded-full" asChild>
-              <Link to="/contact">
+              <Link to="/contact/">
                 Work With Our Team <ArrowRight className="w-4 h-4 ml-2" />
               </Link>
             </Button>

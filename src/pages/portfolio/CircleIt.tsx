@@ -36,8 +36,8 @@ export default function CircleIt() {
         canonical="/portfolio/circle-it"
         breadcrumbs={[
           { name: "Home", url: "https://nexttabagency.com/" },
-          { name: "Portfolio", url: "https://nexttabagency.com/portfolio" },
-          { name: "CircleIt", url: "https://nexttabagency.com/portfolio/circle-it" },
+          { name: "Portfolio", url: "https://nexttabagency.com/portfolio/" },
+          { name: "CircleIt", url: "https://nexttabagency.com/portfolio/circle-it/" },
         ]}
       />
 
@@ -54,7 +54,7 @@ export default function CircleIt() {
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <motion.div initial="hidden" animate="visible" variants={fadeUp}>
               <div className="flex items-center gap-3 mb-6">
-                <Link to="/portfolio" className="text-xs text-white/40 hover:text-white/70 transition-colors">
+                <Link to="/portfolio/" className="text-xs text-white/40 hover:text-white/70 transition-colors">
                   ← Portfolio
                 </Link>
                 <span className="text-white/20">/</span>
@@ -115,7 +115,7 @@ export default function CircleIt() {
               </div>
 
               <Button variant="accent" size="lg" className="rounded-full" asChild>
-                <Link to="/contact">
+                <Link to="/contact/">
                   Build Your App <ArrowRight className="w-4 h-4 ml-2" />
                 </Link>
               </Button>
@@ -305,13 +305,13 @@ export default function CircleIt() {
               <p className="text-primary-foreground/60 text-xs leading-relaxed mb-3">
                 CircleIt proves what our React Native team delivers: a fully-featured social platform, 5,000+ users, and 68% 30-day retention — all in a single MVP sprint. If you have an app idea, we know how to execute it.
               </p>
-              <Link to="/contact" className="inline-flex items-center gap-2 text-sm font-bold text-blue-400 hover:text-blue-300 transition-colors">
+              <Link to="/contact/" className="inline-flex items-center gap-2 text-sm font-bold text-blue-400 hover:text-blue-300 transition-colors">
                 Start Your App Project <ArrowRight className="w-4 h-4" />
               </Link>
             </div>
 
             <Button variant="hero-primary" size="lg" className="rounded-full" asChild>
-              <Link to="/contact">
+              <Link to="/contact/">
                 Start Your App Project <ArrowRight className="w-4 h-4 ml-2" />
               </Link>
             </Button>

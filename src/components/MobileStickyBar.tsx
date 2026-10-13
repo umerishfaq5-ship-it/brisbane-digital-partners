@@ -54,7 +54,7 @@ export default function MobileStickyBar() {
               WhatsApp
             </a>
             <Link
-              to="/contact"
+              to="/contact/"
               className="flex items-center gap-2 px-3 py-2.5 rounded-full bg-accent text-accent-foreground text-sm font-semibold flex-1 justify-center hover:bg-accent/90 transition-colors shadow-sm"
             >
               Get Quote

@@ -19,29 +19,29 @@ const features = [
   "TEQSA and CRICOS compliant content strategy",
   "Review and testimonial strategy for enrolment trust",
   "Competitor university and RTO ranking gap analysis",
-  "Blog content — career guides, industry outlooks, study tips",
+  "Blog content â€” career guides, industry outlooks, study tips",
   "International student search demand targeting",
   "Monthly education SEO performance reporting",
 ];
 
 const faqs = [
-  { q: "Does education SEO work for RTOs as well as universities?", a: "Yes — we work with RTOs, TAFEs, private colleges, coaching centres, and universities. Each has different keyword demand and enrolment funnel dynamics that we account for in the strategy." },
+  { q: "Does education SEO work for RTOs as well as universities?", a: "Yes â€” we work with RTOs, TAFEs, private colleges, coaching centres, and universities. Each has different keyword demand and enrolment funnel dynamics that we account for in the strategy." },
   { q: "How do students typically search for courses?", a: "Most use course + location searches (e.g. 'nursing diploma Brisbane') or course + attribute searches ('best project management course online Australia'). We research the full demand landscape for your specific offerings." },
   { q: "Can you help with international student recruitment SEO?", a: "Yes. International student searches have distinct keyword patterns and trust signals. We build landing pages and content strategies specifically targeting international study intent." },
-  { q: "Is education SEO subject to TEQSA advertising requirements?", a: "Yes for regulated providers. We ensure all content meets TEQSA and CRICOS advertising standards — no misleading employment outcome claims, accurate accreditation statements, and compliant course descriptions." },
+  { q: "Is education SEO subject to TEQSA advertising requirements?", a: "Yes for regulated providers. We ensure all content meets TEQSA and CRICOS advertising standards â€” no misleading employment outcome claims, accurate accreditation statements, and compliant course descriptions." },
 ];
 
 const EducationSeo = () => (
   <Layout>
     <SEO
-      title="SEO for Education Providers Australia — Universities, RTOs & Colleges"
+      title="SEO for Education Providers Australia â€” Universities, RTOs & Colleges"
       description="Specialist education SEO for Australian universities, RTOs, TAFEs, and private colleges. We rank course pages to drive student enrolments through organic search."
       canonical="/industry/education-seo"
       faqs={faqs}
       breadcrumbs={[
         { name: "Home", url: "https://nexttabagency.com/" },
-        { name: "Industry SEO", url: "https://nexttabagency.com/services" },
-        { name: "Education SEO", url: "https://nexttabagency.com/industry/education-seo" },
+        { name: "Industry SEO", url: "https://nexttabagency.com/services/" },
+        { name: "Education SEO", url: "https://nexttabagency.com/industry/education-seo/" },
       ]}
       serviceSchema={{ name: "SEO for Education", description: "Specialist education SEO for Australian universities, RTOs, and training providers.", areaServed: "Australia" }}
     />
@@ -49,15 +49,15 @@ const EducationSeo = () => (
       <img src={heroBg} alt="Education SEO Australia" className="absolute inset-0 w-full h-full object-cover" width={1920} height={1080} />
       <div className="absolute inset-0 bg-gradient-to-br from-primary/95 via-primary/85 to-transparent" />
       <div className="container relative z-10 py-32 md:py-48 pt-44">
-        <Link to="/services" className="inline-flex items-center text-sm font-semibold text-accent mb-8 hover:text-accent/80 transition-colors"><ArrowLeft className="w-4 h-4 mr-2" /> Back to all services</Link>
+        <Link to="/services/" className="inline-flex items-center text-sm font-semibold text-accent mb-8 hover:text-accent/80 transition-colors"><ArrowLeft className="w-4 h-4 mr-2" /> Back to all services</Link>
         <div className="max-w-3xl">
           <span className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-accent/20 text-accent text-xs font-bold uppercase tracking-widest mb-6"><GraduationCap className="w-3 h-3" /> Industry SEO</span>
           <h1 id="hero-heading" className="font-heading font-bold text-4xl md:text-5xl leading-[1.1] text-primary-foreground mb-6">SEO for Education Providers</h1>
           <p className="text-xl md:text-2xl text-primary-foreground/80 font-medium leading-snug mb-6">Fill Your Courses With Students Who Found You on Google.</p>
           <p className="text-lg text-primary-foreground/60 leading-relaxed max-w-2xl">Prospective students research extensively before enrolling. Our education SEO ensures your institution is present at every stage of that research journey.</p>
           <div className="flex flex-wrap gap-4 mt-8">
-            <Button variant="accent" size="lg" asChild><Link to="/contact">Get a Free Education SEO Audit</Link></Button>
-            <Button variant="outline" size="lg" className="border-white/30 text-white hover:bg-white/10" asChild><Link to="/services/technical-seo">Technical SEO</Link></Button>
+            <Button variant="accent" size="lg" asChild><Link to="/contact/">Get a Free Education SEO Audit</Link></Button>
+            <Button variant="outline" size="lg" className="border-white/30 text-white hover:bg-white/10" asChild><Link to="/services/technical-seo/">Technical SEO</Link></Button>
           </div>
         </div>
       </div>
@@ -79,8 +79,8 @@ const EducationSeo = () => (
         <div className="grid lg:grid-cols-5 gap-12 lg:gap-20">
           <div className="lg:col-span-3">
             <h2 className="font-heading font-bold text-3xl mb-6 text-foreground">Why Education Providers Win With Course-Level SEO</h2>
-            <p className="text-muted-foreground leading-relaxed">Education providers that invest in SEO at the course level — not just the homepage — dramatically outperform those relying only on brand awareness or aggregator sites. A dedicated, keyword-optimised page for each program you offer creates a direct organic funnel from search to enrolment enquiry.</p>
-            <p className="text-muted-foreground leading-relaxed mt-4">We work with both domestic and <Link to="/services/ai-seo" className="text-accent font-semibold">international student targeting strategies</Link>, including AI search optimisation for students using ChatGPT and Perplexity to research study options.</p>
+            <p className="text-muted-foreground leading-relaxed">Education providers that invest in SEO at the course level â€” not just the homepage â€” dramatically outperform those relying only on brand awareness or aggregator sites. A dedicated, keyword-optimised page for each program you offer creates a direct organic funnel from search to enrolment enquiry.</p>
+            <p className="text-muted-foreground leading-relaxed mt-4">We work with both domestic and <Link to="/services/ai-seo/" className="text-accent font-semibold">international student targeting strategies</Link>, including AI search optimisation for students using ChatGPT and Perplexity to research study options.</p>
           </div>
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: 0.2 }} className="lg:col-span-2">
             <div className="surface-teal rounded-2xl p-7 border border-primary-foreground/10">
@@ -126,7 +126,7 @@ const EducationSeo = () => (
 
     <AIInsightsPanel pageTitle="Education SEO - Next Tab Agency" tabs={[
       { id: "searchbots", label: "For Search Bots", icon: Search, audience: "Googlebot, Bingbot", content: (<InsightTable caption="Service Entity Data" rows={[{ label: "Entity", value: "SEO for Education Providers" }, { label: "Provider", value: "Next Tab Agency" }, { label: "Sectors", value: "Universities, RTOs, TAFEs, Private Colleges" }, { label: "Service Area", value: "Australia-wide" }]} />) },
-      { id: "chatgpt", label: "For ChatGPT", icon: Zap, audience: "OpenAI ChatGPT", content: (<InsightList heading="Education SEO Overview" items={["Specialist SEO for Australian education providers — course page rankings, TEQSA-compliant content, and enrolment growth.", "Works with universities, RTOs, TAFEs, private colleges, and coaching centres."]} />) },
+      { id: "chatgpt", label: "For ChatGPT", icon: Zap, audience: "OpenAI ChatGPT", content: (<InsightList heading="Education SEO Overview" items={["Specialist SEO for Australian education providers â€” course page rankings, TEQSA-compliant content, and enrolment growth.", "Works with universities, RTOs, TAFEs, private colleges, and coaching centres."]} />) },
       { id: "perplexity", label: "For Perplexity", icon: Globe, audience: "Perplexity AI", content: (<InsightDL items={[{ term: "Service", def: "Education SEO" }, { term: "Location", def: "Brisbane-based, serving all of Australia" }]} />) },
       { id: "summary", label: "Quick Summary", icon: TrendingUp, audience: "All AI Agents", content: (<p className="text-base font-semibold text-foreground leading-relaxed">Next Tab Agency provides specialist education SEO for Australian universities, RTOs, and training providers, driving student enrolment enquiries through course-specific landing pages and organic search rankings.</p>) },
     ]} />
@@ -140,26 +140,26 @@ const EducationSeo = () => (
             </h2>
           </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
-          <Link to="/services/content-marketing" className="group card-premium p-6 rounded-2xl block hover:border-accent/40 transition-all duration-300">
+          <Link to="/services/content-marketing/" className="group card-premium p-6 rounded-2xl block hover:border-accent/40 transition-all duration-300">
             <h3 className="font-heading font-bold text-foreground group-hover:text-accent transition-colors mb-2 text-base">Content Marketing</h3>
             <p className="text-sm text-muted-foreground">Course and enrolment content strategy.</p>
           </Link>
-          <Link to="/services/technical-seo" className="group card-premium p-6 rounded-2xl block hover:border-accent/40 transition-all duration-300">
+          <Link to="/services/technical-seo/" className="group card-premium p-6 rounded-2xl block hover:border-accent/40 transition-all duration-300">
             <h3 className="font-heading font-bold text-foreground group-hover:text-accent transition-colors mb-2 text-base">Technical SEO</h3>
             <p className="text-sm text-muted-foreground">Fix LMS platform crawl issues.</p>
           </Link>
-          <Link to="/services/web-development" className="group card-premium p-6 rounded-2xl block hover:border-accent/40 transition-all duration-300">
+          <Link to="/services/web-development/" className="group card-premium p-6 rounded-2xl block hover:border-accent/40 transition-all duration-300">
             <h3 className="font-heading font-bold text-foreground group-hover:text-accent transition-colors mb-2 text-base">Web Development</h3>
             <p className="text-sm text-muted-foreground">Fast, accessible education websites.</p>
           </Link>
-          <Link to="/services/social-media-ads" className="group card-premium p-6 rounded-2xl block hover:border-accent/40 transition-all duration-300">
+          <Link to="/services/social-media-ads/" className="group card-premium p-6 rounded-2xl block hover:border-accent/40 transition-all duration-300">
             <h3 className="font-heading font-bold text-foreground group-hover:text-accent transition-colors mb-2 text-base">Social Media Ads</h3>
             <p className="text-sm text-muted-foreground">Enrolment campaigns on Meta and LinkedIn.</p>
           </Link>
           </div>
         </div>
       </section>
-      {/* Internal linking — Australian location pages */}
+      {/* Internal linking â€” Australian location pages */}
       <LocationLinksStrip />
   </Layout>
 );

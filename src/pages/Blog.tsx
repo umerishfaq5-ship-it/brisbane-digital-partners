@@ -225,7 +225,7 @@ const Blog = () => {
       <section className="container py-8 md:py-12">
         <p className="mb-6 text-xs font-bold tracking-widest uppercase text-accent">⭐ Featured Article</p>
         <Link
-          to={`/blog/${featured.slug}`}
+          to={`/blog/${featured.slug}/`}
           className="group grid gap-0 overflow-hidden border rounded-2xl shadow-premium bg-card border-border/50 md:grid-cols-2 hover:border-accent/40 transition-all duration-300"
         >
           <div className="overflow-hidden">
@@ -262,7 +262,7 @@ const Blog = () => {
             {rest.map((post) => (
               <Link
                 key={post.slug}
-                to={`/blog/${post.slug}`}
+                to={`/blog/${post.slug}/`}
                 className="group flex flex-col overflow-hidden border rounded-2xl bg-card border-border/50 shadow-sm hover:shadow-premium hover:-translate-y-1.5 hover:border-accent/40 transition-all duration-300"
               >
                 <div className="relative overflow-hidden h-52">
@@ -307,7 +307,7 @@ const Blog = () => {
             Get a free, no-jargon SEO audit and find out exactly why your site isn't ranking — in plain English, delivered within 24 hours.
           </p>
           <Link
-            to="/contact"
+            to="/contact/"
             className="inline-flex items-center justify-center gap-2 px-8 py-4 text-base font-bold transition-all rounded-full bg-accent text-accent-foreground hover:bg-accent/90 hover:scale-105"
           >
             Get My Free Aussie SEO Audit <ArrowRight className="w-5 h-5" />

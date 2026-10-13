@@ -60,23 +60,23 @@ const industries = [
 ];
 
 const relatedServices = [
-  { label: "BigCommerce Development",  to: "/services/bigcommerce-development" },
-  { label: "Shopify Development",      to: "/services/shopify-development" },
-  { label: "Maropost / Neto",          to: "/services/maropost-neto" },
-  { label: "Custom Web Development",   to: "/services/web-development" },
+  { label: "BigCommerce Development",  to: "/services/bigcommerce-development/" },
+  { label: "Shopify Development",      to: "/services/shopify-development/" },
+  { label: "Maropost / Neto",          to: "/services/maropost-neto/" },
+  { label: "Custom Web Development",   to: "/services/web-development/" },
 ];
 
 const Magento = () => (
   <Layout>
     <SEO
-      title="Magento Developer Brisbane | Adobe Commerce Development Australia | Next Tab Agency"
+      title="Magento Developer Brisbane | Adobe Commerce Experts"
       description="Brisbane's Magento 2 & Adobe Commerce developers. Hyva theme builds, ERP integrations, M1→M2 migrations. Projects from A$25,000. Free scoping call — no obligation."
       canonical="/services/magento-development"
       faqs={service.faqs}
       breadcrumbs={[
         { name: "Home",     url: "https://nexttabagency.com/" },
-        { name: "Services", url: "https://nexttabagency.com/services" },
-        { name: "Magento Developer Brisbane", url: "https://nexttabagency.com/services/magento-development" },
+        { name: "Services", url: "https://nexttabagency.com/services/" },
+        { name: "Magento Developer Brisbane", url: "https://nexttabagency.com/services/magento-development/" },
       ]}
       serviceSchema={{ name: "Magento / Adobe Commerce Development", description: "Magento 2 and Adobe Commerce development, Hyva theme builds, ERP integration, and migration services for Australian enterprise e-commerce.", areaServed: "Australia" }}
     />
@@ -85,7 +85,7 @@ const Magento = () => (
       <img src={heroBg} alt="Magento Developer Brisbane Australia" className="absolute inset-0 w-full h-full object-cover" width={1920} height={1080} />
       <div className="absolute inset-0 bg-gradient-to-br from-primary/95 via-primary/85 to-transparent" />
       <div className="container relative z-10 py-32 md:py-48 pt-44">
-        <Link to="/services" className="inline-flex items-center text-sm font-semibold text-accent mb-8 hover:text-accent/80 transition-colors">
+        <Link to="/services/" className="inline-flex items-center text-sm font-semibold text-accent mb-8 hover:text-accent/80 transition-colors">
           <ArrowLeft className="w-4 h-4 mr-2" /> Back to all services
         </Link>
         <div className="max-w-3xl">
@@ -205,7 +205,7 @@ const Magento = () => (
             <h2 id="cta-heading" className="font-heading font-bold text-2xl md:text-3xl text-primary-foreground mb-4">Have a complex e-commerce challenge?</h2>
             <p className="text-primary-foreground/55 max-w-md mx-auto mb-8 leading-relaxed">Let's talk. Magento is powerful — and in the right hands it delivers results nothing else can match.</p>
             <Button variant="hero-primary" size="xl" className="rounded-full" asChild>
-              <Link to="/contact">Get a Free Consultation</Link>
+              <Link to="/contact/">Get a Free Consultation</Link>
             </Button>
           </div>
         </motion.div>

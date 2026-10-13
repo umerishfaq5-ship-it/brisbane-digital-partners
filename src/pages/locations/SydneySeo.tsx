@@ -10,12 +10,12 @@ import LocationLinksStrip from "@/components/LocationLinksStrip";
 import EntityTrustAccordion from "@/components/EntityTrustAccordion";
 
 const services = [
-  { icon: Search, title: "SEO Audits & Strategy", href: "/services/seo-audits", desc: "Technical SEO audits, keyword research & actionable ranking roadmaps tailored to the Sydney NSW market." },
-  { icon: MapPin, title: "Local SEO Sydney", href: "/services/local-seo", desc: "Google Business Profile optimisation, citation building & Map Pack rankings for Sydney businesses." },
-  { icon: Globe, title: "Google Business Profile", href: "/services/google-business-profile", desc: "Complete GBP setup, photo strategy, review management & weekly posting for Sydney listings." },
-  { icon: BarChart3, title: "PPC & Google Ads", href: "/services/ppc-google-ads", desc: "Google Search, Shopping & Display campaigns for Sydney — managed for maximum ROI." },
-  { icon: Users, title: "Social Media Ads", href: "/services/social-media-ads", desc: "Facebook, Instagram, LinkedIn & TikTok advertising targeting Sydney audiences." },
-  { icon: Globe, title: "Web Development", href: "/services/web-development", desc: "Fast, SEO-ready websites for Sydney businesses — built to convert visitors into customers." },
+  { icon: Search, title: "SEO Audits & Strategy", href: "/services/seo-audits/", desc: "Technical SEO audits, keyword research & actionable ranking roadmaps tailored to the Sydney NSW market." },
+  { icon: MapPin, title: "Local SEO Sydney", href: "/services/local-seo/", desc: "Google Business Profile optimisation, citation building & Map Pack rankings for Sydney businesses." },
+  { icon: Globe, title: "Google Business Profile", href: "/services/google-business-profile/", desc: "Complete GBP setup, photo strategy, review management & weekly posting for Sydney listings." },
+  { icon: BarChart3, title: "PPC & Google Ads", href: "/services/ppc-google-ads/", desc: "Google Search, Shopping & Display campaigns for Sydney — managed for maximum ROI." },
+  { icon: Users, title: "Social Media Ads", href: "/services/social-media-ads/", desc: "Facebook, Instagram, LinkedIn & TikTok advertising targeting Sydney audiences." },
+  { icon: Globe, title: "Web Development", href: "/services/web-development/", desc: "Fast, SEO-ready websites for Sydney businesses — built to convert visitors into customers." },
 ];
 
 const suburbs = ["Sydney CBD", "North Sydney", "Parramatta", "Chatswood", "Bondi", "Surry Hills", "Newtown", "Pyrmont", "Manly", "Cronulla", "Liverpool", "Bankstown", "Blacktown", "Penrith", "Castle Hill", "Hornsby", "Mascot", "Ultimo"];
@@ -37,8 +37,8 @@ const SydneySeo = () => (
       ]}
       breadcrumbs={[
         { name: "Home", url: "https://nexttabagency.com/" },
-        { name: "Locations", url: "https://nexttabagency.com/locations/sydney-seo" },
-        { name: "Sydney SEO", url: "https://nexttabagency.com/locations/sydney-seo" },
+        { name: "Locations", url: "https://nexttabagency.com/locations/sydney-seo/" },
+        { name: "Sydney SEO", url: "https://nexttabagency.com/locations/sydney-seo/" },
       ]}
     />
     <section aria-labelledby="sydney-hero-heading" className="relative min-h-[60vh] flex items-center overflow-hidden">
@@ -58,10 +58,10 @@ const SydneySeo = () => (
           </p>
           <div className="flex flex-wrap gap-4">
             <Button variant="hero-primary" size="xl" className="rounded-full" asChild>
-              <Link to="/contact">Get a Free Sydney SEO Audit <ArrowRight className="w-4 h-4 ml-1" /></Link>
+              <Link to="/contact/">Get a Free Sydney SEO Audit <ArrowRight className="w-4 h-4 ml-1" /></Link>
             </Button>
             <Button variant="hero-secondary" size="xl" className="rounded-full" asChild>
-              <Link to="/services">All Services</Link>
+              <Link to="/services/">All Services</Link>
             </Button>
           </div>
         </motion.div>
@@ -134,7 +134,7 @@ const SydneySeo = () => (
           <div className="relative z-10">
             <h2 id="sydney-cta-heading" className="font-heading font-bold text-2xl md:text-3xl text-primary-foreground mb-4">Ready to outrank your Sydney competitors?</h2>
             <p className="text-primary-foreground/50 max-w-md mx-auto mb-8">Get a free SEO & digital strategy session for your Sydney business. No obligations, just honest advice.</p>
-            <Button variant="hero-primary" size="xl" className="rounded-full" asChild><Link to="/contact">Book Your Free Sydney Consultation</Link></Button>
+            <Button variant="hero-primary" size="xl" className="rounded-full" asChild><Link to="/contact/">Book Your Free Sydney Consultation</Link></Button>
           </div>
         </motion.div>
       </div>

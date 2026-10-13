@@ -7,7 +7,7 @@ import BlogPostLayout, {
 const schema = {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://nexttabagency.com/blog/choose-digital-marketing-agency-brisbane" },
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://nexttabagency.com/blog/choose-digital-marketing-agency-brisbane/" },
   "headline": "How to Choose a Digital Marketing Agency in Brisbane: 10 Questions That Separate the Good From the Dodgy",
   "description": "Most Brisbane businesses hire the wrong agency and waste 6-12 months finding out. Here's exactly how to vet a Brisbane digital agency before signing anything.",
   "image": "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?q=80&w=2070&fm=webp&fit=crop",
@@ -34,6 +34,7 @@ const faqSchema = {
 const ChooseDigitalAgencyBrisbane = () => (
   <>
     <Helmet>
+      <link rel="canonical" href="https://nexttabagency.com/blog/choose-digital-marketing-agency-brisbane/" />
       <title>How to Choose a Digital Marketing Agency in Brisbane | Next Tab Agency</title>
       <meta name="description" content="Most Brisbane businesses hire the wrong agency and waste 6-12 months finding out. Here's exactly how to vet a Brisbane digital agency before signing anything." />
       <script type="application/ld+json">{JSON.stringify(schema)}</script>
@@ -222,15 +223,15 @@ const ChooseDigitalAgencyBrisbane = () => (
 
       <SectionH2>Related Resources</SectionH2>
       <ul className="mb-10 space-y-2 text-muted-foreground">
-        <li>→ <Link to="/locations/brisbane-seo" className="text-accent underline">SEO Agency Brisbane — What We Do & Why It Works</Link></li>
-        <li>→ <Link to="/services/ppc-google-ads" className="text-accent underline">PPC Agency Brisbane — Google Ads Management</Link></li>
-        <li>→ <Link to="/blog/seo-vs-google-ads-aussie-tradies" className="text-accent underline">SEO vs Google Ads: Which Gets Better ROI for Brisbane Businesses?</Link></li>
-        <li>→ <Link to="/services/seo-packages" className="text-accent underline">SEO Packages Brisbane — Transparent Pricing, No Lock-In Contracts</Link></li>
-        <li>→ <Link to="/blog/why-your-website-needs-seo" className="text-accent underline">Why Your Brisbane Business Needs SEO in 2026</Link></li>
+        <li>→ <Link to="/locations/brisbane-seo/" className="text-accent underline">SEO Agency Brisbane — What We Do & Why It Works</Link></li>
+        <li>→ <Link to="/services/ppc-google-ads/" className="text-accent underline">PPC Agency Brisbane — Google Ads Management</Link></li>
+        <li>→ <Link to="/blog/seo-vs-google-ads-aussie-tradies/" className="text-accent underline">SEO vs Google Ads: Which Gets Better ROI for Brisbane Businesses?</Link></li>
+        <li>→ <Link to="/services/seo-packages/" className="text-accent underline">SEO Packages Brisbane — Transparent Pricing, No Lock-In Contracts</Link></li>
+        <li>→ <Link to="/blog/why-your-website-needs-seo/" className="text-accent underline">Why Your Brisbane Business Needs SEO in 2026</Link></li>
       </ul>
 
       <ActionItem>
-        Not sure if we're the right fit? We prefer to earn your trust first. Book a free 30-minute strategy call — no sales pitch, just honest feedback on your current digital situation. <Link to="/contact" className="text-accent underline font-semibold">Book your free call →</Link>
+        Not sure if we're the right fit? We prefer to earn your trust first. Book a free 30-minute strategy call — no sales pitch, just honest feedback on your current digital situation. <Link to="/contact/" className="text-accent underline font-semibold">Book your free call →</Link>
       </ActionItem>
 
     </BlogPostLayout>

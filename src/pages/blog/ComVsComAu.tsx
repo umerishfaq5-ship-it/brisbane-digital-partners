@@ -7,7 +7,7 @@ import BlogPostLayout, {
 const schema = {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://nexttabagency.com/blog/com-vs-com-au-australia" },
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://nexttabagency.com/blog/com-vs-com-au-australia/" },
   "headline": ".com vs .com.au: Which Domain Actually Ranks Better in Australia?",
   "description": "Should your Australian business use a .com or .com.au domain? The answer affects your Google rankings, customer trust, and lead quality. Here's the definitive answer.",
   "image": "https://images.unsplash.com/photo-1526378722484-bd91ca387e72?q=80&w=2069",
@@ -32,6 +32,7 @@ const faqSchema = {
 const ComVsComAu = () => (
   <>
     <Helmet>
+      <link rel="canonical" href="https://nexttabagency.com/blog/com-vs-com-au-australia/" />
       <title>.com vs .com.au: Which Domain Actually Ranks Better in Australia? | Next Tab Agency</title>
       <meta name="description" content="Should your Australian business use a .com or .com.au domain? The answer affects your Google rankings, customer trust, and lead quality. Here's the definitive answer." />
       <script type="application/ld+json">{JSON.stringify(faqSchema)}</script>
@@ -156,7 +157,7 @@ const ComVsComAu = () => (
 
       <ActionItem>
         <p>
-          Check your current domain setup: does your website use .com.au? Is your hosting on an Australian server? Have you set your geographic target to Australia in <Link to="/services/seo-audits" className="font-semibold text-accent hover:underline">Google Search Console</Link>? These three factors together maximise your local ranking potential. Our <Link to="/services/web-development" className="font-semibold text-accent hover:underline">Web Development</Link> team handles all of this during every new site build.
+          Check your current domain setup: does your website use .com.au? Is your hosting on an Australian server? Have you set your geographic target to Australia in <Link to="/services/seo-audits/" className="font-semibold text-accent hover:underline">Google Search Console</Link>? These three factors together maximise your local ranking potential. Our <Link to="/services/web-development/" className="font-semibold text-accent hover:underline">Web Development</Link> team handles all of this during every new site build.
         </p>
       </ActionItem>
 

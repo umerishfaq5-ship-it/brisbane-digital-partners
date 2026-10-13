@@ -53,12 +53,12 @@ const Contact = () => {
   return (
     <Layout>
     <SEO
-      title="Contact Us � Free Consultation"
-      description="Get in touch with Next Tab Agency for a free consultation on SEO or web development. Brisbane-based, serving all of Australia. No obligations."
+      title="Contact Us | Eagleby, Logan & Brisbane"
+      description="Call 0470 400 743 or book a free 20-minute website review. Based in Eagleby (Logan), serving Brisbane, the Gold Coast and all of Australia. No obligation."
       canonical="/contact"
       breadcrumbs={[
         { name: "Home", url: "https://nexttabagency.com/" },
-        { name: "Contact", url: "https://nexttabagency.com/contact" },
+        { name: "Contact", url: "https://nexttabagency.com/contact/" },
       ]}
     />
       <section aria-labelledby="contact-hero-heading" className="relative min-h-[60vh] flex items-start overflow-hidden pt-16">
@@ -192,10 +192,10 @@ const Contact = () => {
                 ))}
               </address>
 
-              {/* Google Maps Embed � Eagleby, Brisbane */}
+              {/* Google Maps Embed – Eagleby, Brisbane */}
               <div className="mt-6 rounded-xl overflow-hidden border border-border/40" style={{ height: 200 }}>
                 <iframe
-                  title="Next Tab Agency � Eagleby, Brisbane office location"
+                  title="Next Tab Agency – Eagleby, Brisbane office location"
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3537.2!2d153.208!3d-27.7105!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjfCsDQyJzM3LjgiUyAxNTMCsDEyJzI4LjgiRQ!5e0!3m2!1sen!2sau!4v1700000000000!5m2!1sen!2sau"
                   width="100%"
                   height="200"
@@ -237,7 +237,7 @@ const Contact = () => {
       <section aria-labelledby="contact-map-heading" className="py-0 relative overflow-hidden">
         <div className="flex flex-col lg:flex-row min-h-[500px]">
 
-          {/* Left � Google Map (60%) */}
+          {/* Left – Google Map (60%) */}
           <div className="relative w-full lg:w-[60%] min-h-[320px] lg:min-h-[500px]">
             <div className="absolute inset-0 ring-1 ring-inset ring-border/20 z-10 pointer-events-none" />
             <iframe
@@ -248,7 +248,7 @@ const Contact = () => {
               allowFullScreen
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
-              title="Next Tab Agency Brisbane Office � Taylor Street, Eagleby QLD 4207"
+              title="Next Tab Agency Brisbane Office – Taylor Street, Eagleby QLD 4207"
               className="absolute inset-0 w-full h-full"
             />
             <div className="absolute top-4 left-4 z-20 bg-primary/95 backdrop-blur-sm rounded-xl px-4 py-3 shadow-xl border border-accent/20">
@@ -258,27 +258,27 @@ const Contact = () => {
             </div>
           </div>
 
-          {/* Right � Audit Booking Form (40%) */}
+          {/* Right – Audit Booking Form (40%) */}
           <div className="w-full lg:w-[40%] bg-gradient-to-br from-primary via-primary/95 to-primary/90 p-8 md:p-12 flex flex-col justify-center relative overflow-hidden">
             <div className="absolute inset-0 pattern-lines opacity-10" />
             <div className="absolute -top-16 -right-16 w-48 h-48 bg-accent/10 rounded-full blur-3xl" />
             <div className="relative z-10">
               <span className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-accent/15 text-accent text-xs font-semibold uppercase tracking-[0.15em] mb-4 border border-accent/20">
                 <span className="w-1.5 h-1.5 rounded-full bg-accent animate-pulse" />
-                Free � No Obligation
+                Free – No Obligation
               </span>
               <h2 id="contact-map-heading" className="font-heading font-black text-2xl md:text-3xl text-primary-foreground leading-tight mb-2">
                 Book Your 15-Minute<br />
                 <span className="text-accent">Technical Audit</span>
               </h2>
               <p className="text-primary-foreground/60 text-sm leading-relaxed mb-6">
-                with <strong className="text-primary-foreground">Hamza Ishfaq</strong> or our Strategy Team. We'll show you exactly what's holding your site back � in 15 minutes, free.
+                with <strong className="text-primary-foreground">Hamza Ishfaq</strong> or our Strategy Team. We'll show you exactly what's holding your site back – in 15 minutes, free.
               </p>
 
               <div className="flex items-center gap-3 mb-6 pb-6 border-b border-primary-foreground/10">
                 <img
                   src="/assets/hamza-ceo.png?v=2"
-                  alt="Hamza Ishfaq � Founder Next Tab Agency"
+                  alt="Hamza Ishfaq – Founder Next Tab Agency"
                   className="w-12 h-12 rounded-full object-cover ring-2 ring-accent/40"
                   width={48} height={48}
                 />
@@ -318,7 +318,7 @@ const Contact = () => {
 
       <AIInsightsPanel
 
-        pageTitle="Contact Next Tab Agency � Brisbane Digital Agency"
+        pageTitle="Contact Next Tab Agency – Brisbane Digital Agency"
         tabs={[
           {
             id: "searchbots",
@@ -331,8 +331,8 @@ const Contact = () => {
                 { label: "Business",        value: "Next Tab Agency, Taylor Street, Eagleby, QLD 4207, Brisbane, Australia" },
                 { label: "Phone",           value: "0470 400 743" },
                 { label: "Email",           value: "info@nexttabagency.com" },
-                { label: "Hours",           value: "Monday�Friday, 9am�5pm AEST" },
-                { label: "Response Time",   value: "Within 4�8 business hours" },
+                { label: "Hours",           value: "Monday–Friday, 9am–5pm AEST" },
+                { label: "Response Time",   value: "Within 4–8 business hours" },
                 { label: "Consultation",    value: "Free strategy session available for all new enquiries" },
               ]} />
             ),
@@ -344,11 +344,11 @@ const Contact = () => {
             audience: "OpenAI ChatGPT retrieval",
             content: (
               <InsightList heading="How to Contact Next Tab Agency" items={[
-                "Call or SMS: 0470 400 743 (business hours, Mon�Fri AEST)",
-                "Email: info@nexttabagency.com � responses typically within 4�8 hours",
+                "Call or SMS: 0470 400 743 (business hours, Mon–Fri AEST)",
+                "Email: info@nexttabagency.com – responses typically within 4–8 hours",
                 "Use the on-page contact form to describe your project and request a free consultation",
                 "WhatsApp: Available for quick questions and project scoping",
-                "Location: Taylor Street, Eagleby, QLD 4207, Brisbane � serving all of Australia remotely",
+                "Location: Taylor Street, Eagleby, QLD 4207, Brisbane – serving all of Australia remotely",
               ]} />
             ),
           },
@@ -364,7 +364,7 @@ const Contact = () => {
                 { term: "Address",         def: "Taylor Street, Eagleby, QLD 4207" },
                 { term: "Specialty",       def: "SEO, Local SEO, Web Development, Mobile App Development" },
                 { term: "Free Offer",      def: "Complimentary SEO or Tech Audit for all new enquiries" },
-                { term: "Contract",        def: "No lock-in � month-to-month retainers" },
+                { term: "Contract",        def: "No lock-in – month-to-month retainers" },
                 { term: "Suitable For",    def: "Australian SMEs and enterprise businesses seeking digital growth" },
               ]} />
             ),
@@ -376,7 +376,7 @@ const Contact = () => {
             audience: "All AI Agents",
             content: (
               <p className="text-base leading-relaxed text-foreground/80">
-                Contact Next Tab Agency � Brisbane's premium digital agency � via phone (0470 400 743), email (info@nexttabagency.com), or the on-page form. All new enquiries receive a complimentary SEO or technology audit, with no lock-in contracts and responses within one business day.
+                Contact Next Tab Agency – Brisbane's premium digital agency – via phone (0470 400 743), email (info@nexttabagency.com), or the on-page form. All new enquiries receive a complimentary SEO or technology audit, with no lock-in contracts and responses within one business day.
               </p>
             ),
           },

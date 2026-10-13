@@ -7,7 +7,7 @@ import BlogPostLayout, {
 const schema = {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://nexttabagency.com/blog/seo-vs-google-ads-aussie-tradies" },
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://nexttabagency.com/blog/seo-vs-google-ads-aussie-tradies/" },
   "headline": "SEO vs Google Ads for Australian Tradies: Which One Actually Pays Off?",
   "description": "Google Ads in Australia cost $15–50 per click for tradies. SEO earns the same clicks for free — and compounds over time. Here's the honest comparison every Aussie tradie needs to read.",
   "image": "https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=2076",
@@ -32,6 +32,7 @@ const faqSchema = {
 const SeoVsGoogleAds = () => (
   <>
     <Helmet>
+      <link rel="canonical" href="https://nexttabagency.com/blog/seo-vs-google-ads-aussie-tradies/" />
       <title>SEO vs Google Ads for Australian Tradies: Which One Actually Pays Off? | Next Tab Agency</title>
       <meta name="description" content="Google Ads in Australia cost $15–50 per click for tradies. SEO earns the same clicks for free and compounds over time. Here's the honest comparison every Aussie tradie needs to read." />
       <script type="application/ld+json">{JSON.stringify(faqSchema)}</script>
@@ -146,7 +147,7 @@ const SeoVsGoogleAds = () => (
       </p>
       <ActionItem>
         <p>
-          Check your current Google Ads cost per lead. If it's over $150 per conversion, your budget is better invested in <Link to="/services/local-seo" className="font-semibold text-accent hover:underline">Local SEO</Link> combined with a <Link to="/services/seo-audits" className="font-semibold text-accent hover:underline">technical SEO audit</Link> to fix the gaps that are costing you organic rankings.
+          Check your current Google Ads cost per lead. If it's over $150 per conversion, your budget is better invested in <Link to="/services/local-seo/" className="font-semibold text-accent hover:underline">Local SEO</Link> combined with a <Link to="/services/seo-audits/" className="font-semibold text-accent hover:underline">technical SEO audit</Link> to fix the gaps that are costing you organic rankings.
         </p>
       </ActionItem>
 

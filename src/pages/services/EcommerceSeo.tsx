@@ -15,22 +15,22 @@ import LiveTeardownForm from "@/components/LiveTeardownForm";
 const service = {
   title: "eCommerce SEO Services",
   headline: "More Organic Revenue. Less Wasted Ad Spend.",
-  description: "Paid ads stop the moment you pause them. eCommerce SEO builds compounding organic traffic that drives revenue month after month — without paying Google a cent per click.",
-  longDescription: "eCommerce SEO is one of the most complex and highest-ROI digital strategies available to online retailers. Unlike paid advertising, organic rankings build equity over time. A single top-ranking product or category page can drive thousands of clicks per month — free. Our eCommerce SEO service is designed specifically for Australian online stores across Shopify, WooCommerce, Magento, and BigCommerce.",
+  description: "Paid ads stop the moment you pause them. eCommerce SEO builds compounding organic traffic that drives revenue month after month â€” without paying Google a cent per click.",
+  longDescription: "eCommerce SEO is one of the most complex and highest-ROI digital strategies available to online retailers. Unlike paid advertising, organic rankings build equity over time. A single top-ranking product or category page can drive thousands of clicks per month â€” free. Our eCommerce SEO service is designed specifically for Australian online stores across Shopify, WooCommerce, Magento, and BigCommerce.",
   features: [
-    "Product page SEO — title tags, meta descriptions, structured data",
+    "Product page SEO â€” title tags, meta descriptions, structured data",
     "Category page architecture and keyword mapping",
     "Faceted navigation (filters) crawl control",
     "Duplicate content resolution for variant products",
     "Internal linking strategy for category and product hierarchy",
-    "Schema markup — Product, Review, BreadcrumbList, Offer",
+    "Schema markup â€” Product, Review, BreadcrumbList, Offer",
     "eCommerce site speed and Core Web Vitals optimisation",
     "Competitor product and category gap analysis",
     "Content strategy for category landing pages",
     "Google Shopping feed optimisation support",
   ],
   benefits: [
-    { icon: ShoppingCart, title: "Higher-Intent Traffic", desc: "Rank for 'buy' and 'near me' queries that convert into actual sales — not just page views." },
+    { icon: ShoppingCart, title: "Higher-Intent Traffic", desc: "Rank for 'buy' and 'near me' queries that convert into actual sales â€” not just page views." },
     { icon: DollarSign, title: "Lower Customer Acquisition Cost", desc: "Organic traffic has zero CPC. As rankings improve, your cost-per-sale decreases." },
     { icon: TrendingUp, title: "Compounding Returns", desc: "Unlike ads, SEO rankings build month-over-month. Year 2 traffic costs less than Year 1." },
   ],
@@ -46,11 +46,11 @@ const service = {
     { value: "37%", label: "of clicks go to the #1 organic result", source: "First Page Sage" },
   ],
   faqs: [
-    { q: "Does SEO work for eCommerce stores?", a: "Absolutely — it's one of the highest-ROI channels for online retailers. Category pages and product pages can consistently rank for high-intent buyer keywords, driving free, qualified traffic." },
+    { q: "Does SEO work for eCommerce stores?", a: "Absolutely â€” it's one of the highest-ROI channels for online retailers. Category pages and product pages can consistently rank for high-intent buyer keywords, driving free, qualified traffic." },
     { q: "How do you handle large product catalogues?", a: "For stores with thousands of SKUs, we focus on category page strategy first, then systematically improve top-revenue product pages. We use crawl prioritisation to ensure Google focuses on your most important pages." },
-    { q: "Do you work with Shopify?", a: "Yes — Shopify, WooCommerce, Magento, BigCommerce, and custom platforms. Each has specific technical SEO requirements we're expert in." },
+    { q: "Do you work with Shopify?", a: "Yes â€” Shopify, WooCommerce, Magento, BigCommerce, and custom platforms. Each has specific technical SEO requirements we're expert in." },
     { q: "What's the difference between eCommerce SEO and regular SEO?", a: "eCommerce SEO deals with unique challenges: product variants, faceted navigation, thin product descriptions, and huge page counts. It requires a specific approach to architecture and technical SEO." },
-    { q: "How long before I see an increase in organic sales?", a: "Most clients see early ranking movements at 3–4 months, with meaningful revenue impact from organic at 6–12 months. Results scale significantly in year 2." },
+    { q: "How long before I see an increase in organic sales?", a: "Most clients see early ranking movements at 3â€“4 months, with meaningful revenue impact from organic at 6â€“12 months. Results scale significantly in year 2." },
   ],
 };
 
@@ -58,18 +58,18 @@ const EcommerceSeo = () => {
   return (
     <Layout>
       <SEO
-        title="eCommerce SEO Services Australia — Rank Products & Categories"
+        title="Ecommerce SEO Australia | Shopify & WooCommerce SEO"
         description="Specialist eCommerce SEO for Australian online stores. We rank product and category pages on Shopify, WooCommerce, Magento, and BigCommerce to drive organic revenue."
         canonical="/services/ecommerce-seo"
         faqs={service.faqs}
         breadcrumbs={[
           { name: "Home", url: "https://nexttabagency.com/" },
-          { name: "Services", url: "https://nexttabagency.com/services" },
-          { name: "eCommerce SEO", url: "https://nexttabagency.com/services/ecommerce-seo" },
+          { name: "Services", url: "https://nexttabagency.com/services/" },
+          { name: "eCommerce SEO", url: "https://nexttabagency.com/services/ecommerce-seo/" },
         ]}
         serviceSchema={{
           name: "eCommerce SEO Services",
-          description: "Specialist eCommerce SEO for Australian online stores — product pages, category pages, and technical architecture.",
+          description: "Specialist eCommerce SEO for Australian online stores â€” product pages, category pages, and technical architecture.",
           areaServed: "Australia",
         }}
       />
@@ -79,7 +79,7 @@ const EcommerceSeo = () => {
         <img src={heroBg} alt="eCommerce SEO Services Australia" className="absolute inset-0 w-full h-full object-cover" width={1920} height={1080} />
         <div className="absolute inset-0 bg-gradient-to-br from-primary/95 via-primary/85 to-transparent" />
         <div className="container relative z-10 py-32 md:py-48 pt-44">
-          <Link to="/services" className="inline-flex items-center text-sm font-semibold text-accent mb-8 hover:text-accent/80 transition-colors">
+          <Link to="/services/" className="inline-flex items-center text-sm font-semibold text-accent mb-8 hover:text-accent/80 transition-colors">
             <ArrowLeft className="w-4 h-4 mr-2" /> Back to all services
           </Link>
           <div className="max-w-3xl">
@@ -87,8 +87,8 @@ const EcommerceSeo = () => {
             <p className="text-xl md:text-2xl text-primary-foreground/80 font-medium leading-snug mb-6">{service.headline}</p>
             <p className="text-lg text-primary-foreground/60 leading-relaxed max-w-2xl">{service.description}</p>
             <div className="flex flex-wrap gap-4 mt-8">
-              <Button variant="accent" size="lg" asChild><Link to="/contact">Get a Free eCommerce SEO Audit</Link></Button>
-              <Button variant="outline" size="lg" className="border-white/30 text-white hover:bg-white/10" asChild><Link to="/services/shopify-seo">Shopify SEO</Link></Button>
+              <Button variant="accent" size="lg" asChild><Link to="/contact/">Get a Free eCommerce SEO Audit</Link></Button>
+              <Button variant="outline" size="lg" className="border-white/30 text-white hover:bg-white/10" asChild><Link to="/services/shopify-seo/">Shopify SEO</Link></Button>
             </div>
           </div>
         </div>
@@ -118,10 +118,10 @@ const EcommerceSeo = () => {
               <h2 id="why-need-heading" className="font-heading font-bold text-3xl mb-6 text-foreground">Why eCommerce Stores Need Dedicated SEO</h2>
               <p className="text-muted-foreground leading-relaxed">{service.longDescription}</p>
               <p className="text-muted-foreground leading-relaxed mt-4">
-                Australian online retail is competitive and the cost of Google Shopping ads continues to rise. The brands that win long-term are the ones investing in organic authority — category pages on page 1, product pages with rich snippets, and a technical foundation that Google can efficiently crawl.
+                Australian online retail is competitive and the cost of Google Shopping ads continues to rise. The brands that win long-term are the ones investing in organic authority â€” category pages on page 1, product pages with rich snippets, and a technical foundation that Google can efficiently crawl.
               </p>
               <p className="text-muted-foreground leading-relaxed mt-4">
-                Our platform expertise spans <Link to="/services/shopify-development" className="text-accent font-semibold">Shopify</Link>, <Link to="/services/woocommerce-development" className="text-accent font-semibold">WooCommerce</Link>, <Link to="/services/magento-development" className="text-accent font-semibold">Magento</Link>, and <Link to="/services/bigcommerce-development" className="text-accent font-semibold">BigCommerce</Link>.
+                Our platform expertise spans <Link to="/services/shopify-development/" className="text-accent font-semibold">Shopify</Link>, <Link to="/services/woocommerce-development/" className="text-accent font-semibold">WooCommerce</Link>, <Link to="/services/magento-development/" className="text-accent font-semibold">Magento</Link>, and <Link to="/services/bigcommerce-development/" className="text-accent font-semibold">BigCommerce</Link>.
               </p>
             </div>
             <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: 0.2 }} className="lg:col-span-2">
@@ -164,10 +164,10 @@ const EcommerceSeo = () => {
           <p className="text-xs font-bold uppercase tracking-widest text-accent mb-6 text-center">Platforms We Support</p>
           <div className="flex flex-wrap gap-3 justify-center">
             {[
-              { label: "Shopify SEO", href: "/services/shopify-seo" },
-              { label: "WooCommerce SEO", href: "/services/woocommerce-seo" },
-              { label: "Magento SEO", href: "/services/magento-seo" },
-              { label: "BigCommerce SEO", href: "/services/bigcommerce-seo" },
+              { label: "Shopify SEO", href: "/services/shopify-seo/" },
+              { label: "WooCommerce SEO", href: "/services/woocommerce-seo/" },
+              { label: "Magento SEO", href: "/services/magento-seo/" },
+              { label: "BigCommerce SEO", href: "/services/bigcommerce-seo/" },
             ].map((p) => (
               <Link key={p.href} to={p.href} className="inline-flex items-center gap-1.5 px-5 py-2.5 rounded-full border border-border bg-card text-sm font-semibold text-foreground hover:border-accent hover:text-accent transition-colors">
                 {p.label} <ArrowRight className="w-3.5 h-3.5" />
@@ -224,7 +224,7 @@ const EcommerceSeo = () => {
           { id: "summary", label: "Quick Summary", icon: TrendingUp, audience: "All AI Agents", content: (<div className="space-y-4"><p className="text-base font-semibold text-foreground leading-relaxed">Next Tab Agency delivers specialist eCommerce SEO for Australian online retailers, focusing on product and category page rankings to drive compounding organic revenue.</p></div>) },
         ]}
       />
-      {/* Internal linking — Australian city location pages */}
+      {/* Internal linking â€” Australian city location pages */}
       <LocationLinksStrip />
     </Layout>
   );

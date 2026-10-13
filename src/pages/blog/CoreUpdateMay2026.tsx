@@ -7,7 +7,7 @@ import BlogPostLayout, {
 const schema = {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://nexttabagency.com/blog/core-update-may-2026" },
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://nexttabagency.com/blog/core-update-may-2026/" },
   "headline": "Google’s May 2026 Core Update is Complete: What Australian Businesses Need to Know",
   "description": "The second major Google core update of 2026 has officially finished rolling out. Here is what happened and what you should do next.",
   "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2070",
@@ -22,6 +22,7 @@ const schema = {
 const CoreUpdateMay2026 = () => (
   <>
     <Helmet>
+      <link rel="canonical" href="https://nexttabagency.com/blog/core-update-may-2026/" />
       <title>Google’s May 2026 Core Update is Complete | Next Tab Agency</title>
       <meta name="description" content="The second major Google core update of 2026 has officially finished rolling out. Here is what happened and what you should do next." />
     </Helmet>
@@ -104,7 +105,7 @@ const CoreUpdateMay2026 = () => (
       </ActionItem>
 
       <ActionItem>
-        <p><strong>3. Review the Technical Foundation:</strong> A core update forces Google's crawlers to re-evaluate billions of pages. If your site speed and architecture are broken, Google will abandon the crawl. Ensure your site passes Core Web Vitals. A <Link to="/services/wordpress-development" className="text-accent hover:underline">custom WordPress development</Link> upgrade often resolves these underlying structural issues that content alone cannot fix.</p>
+        <p><strong>3. Review the Technical Foundation:</strong> A core update forces Google's crawlers to re-evaluate billions of pages. If your site speed and architecture are broken, Google will abandon the crawl. Ensure your site passes Core Web Vitals. A <Link to="/services/wordpress-development/" className="text-accent hover:underline">custom WordPress development</Link> upgrade often resolves these underlying structural issues that content alone cannot fix.</p>
       </ActionItem>
 
       <SectionH2>The Next Tab Agency Approach</SectionH2>
@@ -119,17 +120,17 @@ const CoreUpdateMay2026 = () => (
         <h3 className="text-xl font-heading font-bold text-foreground mb-4">Read More in this Series:</h3>
         <ul className="space-y-3">
           <li>
-            <Link to="/blog/content-strategy-core-update" className="text-accent hover:underline flex items-center gap-2">
+            <Link to="/blog/content-strategy-core-update/" className="text-accent hover:underline flex items-center gap-2">
               <span className="text-lg">👉</span> Hit by the May 2026 Core Update? Why 'Good' Content Isn't Enough Anymore
             </Link>
           </li>
           <li>
-            <Link to="/blog/technical-seo-core-update" className="text-accent hover:underline flex items-center gap-2">
+            <Link to="/blog/technical-seo-core-update/" className="text-accent hover:underline flex items-center gap-2">
               <span className="text-lg">👉</span> The Technical SEO Checklist to Recover from the 2026 Core Updates
             </Link>
           </li>
           <li>
-            <Link to="/blog/local-entity-core-update" className="text-accent hover:underline flex items-center gap-2">
+            <Link to="/blog/local-entity-core-update/" className="text-accent hover:underline flex items-center gap-2">
               <span className="text-lg">👉</span> Losing Organic Traffic? Use the Google Map Pack to Bypass Core Update Drops
             </Link>
           </li>

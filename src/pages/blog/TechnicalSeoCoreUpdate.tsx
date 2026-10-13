@@ -7,7 +7,7 @@ import BlogPostLayout, {
 const schema = {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://nexttabagency.com/blog/technical-seo-core-update" },
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://nexttabagency.com/blog/technical-seo-core-update/" },
   "headline": "The Technical SEO Checklist to Recover from the 2026 Core Updates",
   "description": "When a core update hits, most business owners immediately blame their content. Often, the real culprit is buried deep inside the website's code.",
   "image": "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=2070",
@@ -22,6 +22,7 @@ const schema = {
 const TechnicalSeoCoreUpdate = () => (
   <>
     <Helmet>
+      <link rel="canonical" href="https://nexttabagency.com/blog/technical-seo-core-update/" />
       <title>Technical SEO Checklist for 2026 Core Updates | Next Tab Agency</title>
       <meta name="description" content="When a core update hits, most business owners immediately blame their content. Often, the real culprit is buried deep inside the website's code." />
     </Helmet>
@@ -129,7 +130,7 @@ const TechnicalSeoCoreUpdate = () => (
       <div className="p-8 my-12 text-center border bg-muted/40 rounded-2xl border-border/50">
         <h3 className="mb-3 text-2xl font-bold font-heading text-foreground">Is Your Code Holding You Back?</h3>
         <p className="mb-5 text-muted-foreground">Request a comprehensive Technical SEO audit. We will analyse your DOM, server response times, and indexation strategy.</p>
-        <Link to="/services/seo-audits" className="inline-flex items-center gap-2 px-6 py-3 font-bold rounded-full bg-accent text-accent-foreground hover:bg-accent/90">
+        <Link to="/services/seo-audits/" className="inline-flex items-center gap-2 px-6 py-3 font-bold rounded-full bg-accent text-accent-foreground hover:bg-accent/90">
           Request a Technical Audit →
         </Link>
       </div>

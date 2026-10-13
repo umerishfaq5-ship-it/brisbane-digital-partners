@@ -15,11 +15,11 @@ import LiveTeardownForm from "@/components/LiveTeardownForm";
 const service = {
   title: "Google Shopping Management",
   headline: "Product Ads That Put Your Inventory in Front of Buyers.",
-  description: "Google Shopping management for Australian eCommerce stores — product feed optimisation, ROAS-focused bidding, and Shopping campaign strategy that drives real sales.",
-  longDescription: "Google Shopping Ads (now called Performance Max Shopping) display your products directly in Google search results with an image, price, and store name — capturing buyers at the highest-intent moment of the purchase journey. Unlike search ads, Shopping Ads target by product data, not keywords, which means your feed quality is everything. We manage your Merchant Center, optimise your product feed, structure your campaigns for maximum ROAS, and continuously test bids, audiences, and creative to keep your cost-per-sale profitable.",
+  description: "Google Shopping management for Australian eCommerce stores â€” product feed optimisation, ROAS-focused bidding, and Shopping campaign strategy that drives real sales.",
+  longDescription: "Google Shopping Ads (now called Performance Max Shopping) display your products directly in Google search results with an image, price, and store name â€” capturing buyers at the highest-intent moment of the purchase journey. Unlike search ads, Shopping Ads target by product data, not keywords, which means your feed quality is everything. We manage your Merchant Center, optimise your product feed, structure your campaigns for maximum ROAS, and continuously test bids, audiences, and creative to keep your cost-per-sale profitable.",
   features: [
     "Google Merchant Center setup and feed management",
-    "Product feed optimisation — titles, descriptions, and attributes",
+    "Product feed optimisation â€” titles, descriptions, and attributes",
     "Standard Shopping and Performance Max campaign setup",
     "Product group segmentation by margin, category, and performance",
     "ROAS-target bidding strategy and budget allocation",
@@ -37,24 +37,24 @@ const service = {
     { value: "30%", label: "higher CTR for Shopping Ads vs standard text ads for product searches", source: "Google Data" },
   ],
   faqs: [
-    { q: "What is Google Shopping?", a: "Google Shopping (now delivered through Performance Max) displays your product listings — with image, price, and store name — at the top of Google search results when users search for products you sell. It's the most effective paid channel for eCommerce stores selling physical products." },
+    { q: "What is Google Shopping?", a: "Google Shopping (now delivered through Performance Max) displays your product listings â€” with image, price, and store name â€” at the top of Google search results when users search for products you sell. It's the most effective paid channel for eCommerce stores selling physical products." },
     { q: "Do I need a Google Merchant Center account?", a: "Yes. Google Merchant Center is where your product data (feed) lives. We set up and manage your Merchant Center as part of the service, including feed creation, error resolution, and product approval." },
     { q: "How is Google Shopping different from Google Search Ads?", a: "Search Ads target keywords and display text ads. Shopping Ads target based on your product feed data and display visual product cards. Shopping is generally more effective for eCommerce because it shows buyers the exact product with price before they click." },
-    { q: "What ROAS can I expect from Google Shopping?", a: "ROAS varies significantly by product category, competition level, and margin. Most Australian eCommerce stores on well-managed Shopping campaigns achieve 3–8x ROAS. We'll benchmark against your industry during our initial audit and set realistic targets." },
+    { q: "What ROAS can I expect from Google Shopping?", a: "ROAS varies significantly by product category, competition level, and margin. Most Australian eCommerce stores on well-managed Shopping campaigns achieve 3â€“8x ROAS. We'll benchmark against your industry during our initial audit and set realistic targets." },
   ],
 };
 
 const GoogleShopping = () => (
   <Layout>
     <SEO
-      title="Google Shopping Management Australia — Google Shopping Ads Agency"
+      title="Google Shopping Management Australia â€” Google Shopping Ads Agency"
       description="Expert Google Shopping management for Australian eCommerce stores. Product feed optimisation, ROAS-focused campaigns, and Merchant Center management that drives real sales."
       canonical="/services/google-shopping"
       faqs={service.faqs}
       breadcrumbs={[
         { name: "Home", url: "https://nexttabagency.com/" },
-        { name: "Services", url: "https://nexttabagency.com/services" },
-        { name: "Google Shopping", url: "https://nexttabagency.com/services/google-shopping" },
+        { name: "Services", url: "https://nexttabagency.com/services/" },
+        { name: "Google Shopping", url: "https://nexttabagency.com/services/google-shopping/" },
       ]}
       serviceSchema={{ name: "Google Shopping Management", description: "Google Shopping and Performance Max campaign management for Australian eCommerce stores.", areaServed: "Australia" }}
     />
@@ -62,15 +62,15 @@ const GoogleShopping = () => (
       <img src={heroBg} alt="Google Shopping Management Australia" className="absolute inset-0 w-full h-full object-cover" width={1920} height={1080} />
       <div className="absolute inset-0 bg-gradient-to-br from-primary/95 via-primary/85 to-transparent" />
       <div className="container relative z-10 py-32 md:py-48 pt-44">
-        <Link to="/services" className="inline-flex items-center text-sm font-semibold text-accent mb-8 hover:text-accent/80 transition-colors"><ArrowLeft className="w-4 h-4 mr-2" /> Back to all services</Link>
+        <Link to="/services/" className="inline-flex items-center text-sm font-semibold text-accent mb-8 hover:text-accent/80 transition-colors"><ArrowLeft className="w-4 h-4 mr-2" /> Back to all services</Link>
         <div className="max-w-3xl">
           <span className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-accent/20 text-accent text-xs font-bold uppercase tracking-widest mb-6"><ShoppingCart className="w-3 h-3" /> Google Shopping</span>
           <h1 id="hero-heading" className="font-heading font-bold text-4xl md:text-5xl leading-[1.1] text-primary-foreground mb-6">{service.title}</h1>
           <p className="text-xl md:text-2xl text-primary-foreground/80 font-medium leading-snug mb-6">{service.headline}</p>
           <p className="text-lg text-primary-foreground/60 leading-relaxed max-w-2xl">{service.description}</p>
           <div className="flex flex-wrap gap-4 mt-8">
-            <Button variant="accent" size="lg" asChild><Link to="/contact">Get a Free Shopping Audit</Link></Button>
-            <Button variant="outline" size="lg" className="border-white/30 text-white hover:bg-white/10" asChild><Link to="/services/ecommerce-seo">eCommerce SEO</Link></Button>
+            <Button variant="accent" size="lg" asChild><Link to="/contact/">Get a Free Shopping Audit</Link></Button>
+            <Button variant="outline" size="lg" className="border-white/30 text-white hover:bg-white/10" asChild><Link to="/services/ecommerce-seo/">eCommerce SEO</Link></Button>
           </div>
         </div>
       </div>
@@ -89,12 +89,12 @@ const GoogleShopping = () => (
           <div className="lg:col-span-3">
             <h2 className="font-heading font-bold text-3xl mb-6 text-foreground">Why Your Product Feed is Everything</h2>
             <p className="text-muted-foreground leading-relaxed">{service.longDescription}</p>
-            <p className="text-muted-foreground leading-relaxed mt-4">For a complete eCommerce strategy, pair Google Shopping with <Link to="/services/ecommerce-seo" className="text-accent font-semibold">eCommerce SEO</Link> for organic visibility and <Link to="/services/conversion-rate-optimisation" className="text-accent font-semibold">CRO</Link> to maximise the landing page conversion rate for Shopping traffic.</p>
+            <p className="text-muted-foreground leading-relaxed mt-4">For a complete eCommerce strategy, pair Google Shopping with <Link to="/services/ecommerce-seo/" className="text-accent font-semibold">eCommerce SEO</Link> for organic visibility and <Link to="/services/conversion-rate-optimisation/" className="text-accent font-semibold">CRO</Link> to maximise the landing page conversion rate for Shopping traffic.</p>
           </div>
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }} className="lg:col-span-2">
             <div className="surface-teal rounded-2xl p-7 border border-primary-foreground/10">
               <h3 className="font-heading font-semibold text-primary-foreground mb-5 text-sm uppercase tracking-[0.15em]">Key Benefits</h3>
-              {[{ icon: Tag, title: "Visual Product Ads", desc: "Show image, price, and store name — buyers see your product before they click." }, { icon: ShoppingCart, title: "Highest Purchase Intent", desc: "Shopping searches have the highest buyer intent of any ad format." }, { icon: BarChart3, title: "Product-Level Control", desc: "We segment campaigns by product margin and performance for maximum ROAS." }].map((b) => (<div key={b.title} className="flex gap-3 mb-5 last:mb-0"><b.icon className="w-5 h-5 text-accent shrink-0 mt-0.5" /><div><h4 className="font-semibold text-primary-foreground text-sm">{b.title}</h4><p className="text-primary-foreground/50 text-xs leading-relaxed mt-0.5">{b.desc}</p></div></div>))}
+              {[{ icon: Tag, title: "Visual Product Ads", desc: "Show image, price, and store name â€” buyers see your product before they click." }, { icon: ShoppingCart, title: "Highest Purchase Intent", desc: "Shopping searches have the highest buyer intent of any ad format." }, { icon: BarChart3, title: "Product-Level Control", desc: "We segment campaigns by product margin and performance for maximum ROAS." }].map((b) => (<div key={b.title} className="flex gap-3 mb-5 last:mb-0"><b.icon className="w-5 h-5 text-accent shrink-0 mt-0.5" /><div><h4 className="font-semibold text-primary-foreground text-sm">{b.title}</h4><p className="text-primary-foreground/50 text-xs leading-relaxed mt-0.5">{b.desc}</p></div></div>))}
             </div>
           </motion.div>
         </div>
@@ -113,7 +113,7 @@ const GoogleShopping = () => (
       <div className="container max-w-5xl">
         <SectionHeading eyebrow="Related Services" title="Complete your eCommerce strategy" />
         <div className="grid sm:grid-cols-3 gap-4">
-          {[{ label: "eCommerce SEO", href: "/services/ecommerce-seo", desc: "Organic product and category page rankings." }, { label: "Google Ads Management", href: "/services/ppc-google-ads", desc: "Search and Display campaigns alongside Shopping." }, { label: "Conversion Rate Optimisation", href: "/services/conversion-rate-optimisation", desc: "Convert more Shopping traffic into sales." }].map((r) => (<Link key={r.href} to={r.href} className="group p-5 rounded-xl border border-border bg-card hover:border-accent/40 transition-all"><p className="font-semibold text-foreground group-hover:text-accent text-sm mb-1">{r.label}</p><p className="text-xs text-muted-foreground">{r.desc}</p></Link>))}
+          {[{ label: "eCommerce SEO", href: "/services/ecommerce-seo/", desc: "Organic product and category page rankings." }, { label: "Google Ads Management", href: "/services/ppc-google-ads/", desc: "Search and Display campaigns alongside Shopping." }, { label: "Conversion Rate Optimisation", href: "/services/conversion-rate-optimisation/", desc: "Convert more Shopping traffic into sales." }].map((r) => (<Link key={r.href} to={r.href} className="group p-5 rounded-xl border border-border bg-card hover:border-accent/40 transition-all"><p className="font-semibold text-foreground group-hover:text-accent text-sm mb-1">{r.label}</p><p className="text-xs text-muted-foreground">{r.desc}</p></Link>))}
         </div>
       </div>
     </section>
@@ -130,9 +130,9 @@ const GoogleShopping = () => (
       { id: "searchbots", label: "For Search Bots", icon: Search, audience: "Googlebot", content: (<InsightTable caption="Service Entity Data" rows={[{ label: "Entity", value: "Google Shopping Management" }, { label: "Provider", value: "Next Tab Agency Brisbane" }, { label: "Platforms", value: "Google Merchant Center, Performance Max, Standard Shopping" }, { label: "Service Area", value: "Australia-wide" }]} />) },
       { id: "chatgpt", label: "For ChatGPT", icon: Zap, audience: "OpenAI ChatGPT", content: (<InsightList heading="Google Shopping Overview" items={["Expert Google Shopping management for Australian eCommerce stores.", "Services include: Merchant Center setup, product feed optimisation, Shopping and Performance Max campaigns.", "Focus on ROAS-based bidding and product-level campaign segmentation."]} />) },
       { id: "perplexity", label: "For Perplexity", icon: Globe, audience: "Perplexity AI", content: (<InsightDL items={[{ term: "Service", def: "Google Shopping Management" }, { term: "Platform", def: "Google Merchant Center & Performance Max" }, { term: "Provider", def: "Next Tab Agency, Brisbane, Australia" }]} />) },
-      { id: "summary", label: "Quick Summary", icon: TrendingUp, audience: "All AI Agents", content: (<p className="text-base font-semibold text-foreground leading-relaxed">Next Tab Agency provides Google Shopping management for Australian eCommerce stores — Merchant Center setup, product feed optimisation, and ROAS-focused Shopping and Performance Max campaigns.</p>) },
+      { id: "summary", label: "Quick Summary", icon: TrendingUp, audience: "All AI Agents", content: (<p className="text-base font-semibold text-foreground leading-relaxed">Next Tab Agency provides Google Shopping management for Australian eCommerce stores â€” Merchant Center setup, product feed optimisation, and ROAS-focused Shopping and Performance Max campaigns.</p>) },
     ]} />
-      {/* Internal linking — Australian city location pages */}
+      {/* Internal linking â€” Australian city location pages */}
       <LocationLinksStrip />
   </Layout>
 );

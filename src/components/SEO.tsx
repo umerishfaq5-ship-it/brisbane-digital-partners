@@ -30,6 +30,10 @@ const SITE_NAME = "Next Tab Agency";
 const BASE_URL = "https://nexttabagency.com";
 const DEFAULT_OG_IMAGE = `${BASE_URL}/og-image.webp`;
 
+/** Append a trailing slash to page URLs (leaves #hash/?query and file URLs alone). */
+const withSlash = (url: string) =>
+  url.replace(/^([^?#]*\/)([^/?#.]+)(?=[?#]|$)/, "$1$2/");
+
 /**
  * Per-page SEO metadata injector.
  * Handles <title>, <meta description>, Open Graph, Twitter Card,
@@ -46,13 +50,11 @@ export default function SEO({
   noIndex,
   serviceSchema,
 }: SEOProps) {
-  const fullTitle = `${title} | ${SITE_NAME}`;
-  // No-slash policy: use canonical path exactly as passed — no trailing slash appended.
-  // vercel.json has trailingSlash:false so /about serves 200, /about/ would redirect.
-  const rawPath = canonical ?? '';
-  const canonicalUrl = rawPath === '' || rawPath === '/'
-    ? `${BASE_URL}/`
-    : `${BASE_URL}${rawPath}`;
+  // Don't double the brand when the page title already ends with it.
+  const fullTitle = title.includes(SITE_NAME) ? title : `${title} | ${SITE_NAME}`;
+  // Trailing-slash policy: prerender writes /route/index.html and LiteSpeed 301s
+  // /route -> /route/, so the slash URL is the only one that returns 200.
+  const canonicalUrl = withSlash(`${BASE_URL}${canonical ?? '/'}`);
 
   const image = ogImage ?? DEFAULT_OG_IMAGE;
 
@@ -82,7 +84,7 @@ export default function SEO({
         "@type": "ListItem",
         position: idx + 1,
         name: item.name,
-        item: item.url,
+        item: withSlash(item.url),
       })),
     });
   }
@@ -111,8 +113,8 @@ export default function SEO({
     <Helmet>
       <title>{fullTitle}</title>
       <meta name="description" content={description} />
-      <link rel="canonical" href={canonicalUrl} />
-      <link rel="alternate" hrefLang="en-AU" href={canonicalUrl} />
+      {!noIndex && <link rel="canonical" href={canonicalUrl} />}
+      {!noIndex && <link rel="alternate" hrefLang="en-AU" href={canonicalUrl} />}
       {noIndex && <meta name="robots" content="noindex, follow" />}
 
       {/* Open Graph */}

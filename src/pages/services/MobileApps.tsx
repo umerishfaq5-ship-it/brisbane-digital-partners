@@ -15,9 +15,9 @@ import LocationLinksStrip from "@/components/LocationLinksStrip";
 
 const service = {
   title: "Mobile App Development",
-  headline: "High-performance iOS and Android apps — one codebase, zero compromise",
+  headline: "High-performance iOS and Android apps â€” one codebase, zero compromise",
   description: "Using React Native, we build cross-platform mobile applications that feel truly native on both iOS and Android. From concept to App Store, we handle the entire journey with technical depth and a premium eye for detail.",
-  longDescription: "Building a mobile app shouldn't mean paying for two entirely separate development projects. With React Native, we create a single codebase that runs beautifully on both platforms with native-like performance and smooth animations. Our team has shipped real apps to real users — fitness platforms, social networks, and job marketplaces — and we bring that hands-on experience to every new project.",
+  longDescription: "Building a mobile app shouldn't mean paying for two entirely separate development projects. With React Native, we create a single codebase that runs beautifully on both platforms with native-like performance and smooth animations. Our team has shipped real apps to real users â€” fitness platforms, social networks, and job marketplaces â€” and we bring that hands-on experience to every new project.",
   features: [
     "React Native development for iOS and Android from a single codebase",
     "Native-quality UX with smooth 60fps animations and gestures",
@@ -29,9 +29,9 @@ const service = {
     "Ongoing maintenance, feature updates, and OS compatibility patches",
   ],
   benefits: [
-    { icon: Zap, title: "Cross-Platform Efficiency", desc: "One codebase for both iOS and Android — significant time and cost saving without sacrificing quality." },
+    { icon: Zap, title: "Cross-Platform Efficiency", desc: "One codebase for both iOS and Android â€” significant time and cost saving without sacrificing quality." },
     { icon: Clock, title: "Faster Time to Market", desc: "React Native dramatically reduces build time compared to two separate native apps." },
-    { icon: Users, title: "Proven Track Record", desc: "We've shipped real apps — MyFitnessCoach, CircleIt, Vacancies — with thousands of active Australian users." },
+    { icon: Users, title: "Proven Track Record", desc: "We've shipped real apps â€” MyFitnessCoach, CircleIt, Vacancies â€” with thousands of active Australian users." },
   ],
   process: [
     { step: "01", title: "Discovery & Architecture", desc: "We map out your app's feature set, user flows, data model, and technical architecture before a line of code is written." },
@@ -41,9 +41,9 @@ const service = {
   ],
   faqs: [
     { q: "Why React Native and not Swift or Kotlin?", a: "React Native gives you ~90% code sharing between iOS and Android, significantly reducing cost and timeline. For most business apps, the performance difference from native is imperceptible to users." },
-    { q: "Can you work with our existing API/backend?", a: "Yes — we regularly integrate with existing REST APIs, GraphQL endpoints, Firebase backends, and third-party services." },
+    { q: "Can you work with our existing API/backend?", a: "Yes â€” we regularly integrate with existing REST APIs, GraphQL endpoints, Firebase backends, and third-party services." },
     { q: "Do you handle App Store submissions?", a: "Yes. We manage the entire submission process for both Apple App Store and Google Play Store, including provisioning profiles, screenshots, and release notes." },
-    { q: "What's the typical project timeline?", a: "A solid MVP typically takes 10–16 weeks depending on complexity. We'll give you a detailed estimate after the discovery session." },
+    { q: "What's the typical project timeline?", a: "A solid MVP typically takes 10â€“16 weeks depending on complexity. We'll give you a detailed estimate after the discovery session." },
   ],
 };
 
@@ -58,8 +58,8 @@ const MobileApps = () => {
         faqs={service.faqs}
         breadcrumbs={[
           { name: "Home", url: "https://nexttabagency.com/" },
-          { name: "Services", url: "https://nexttabagency.com/services" },
-          { name: "Mobile App Development", url: "https://nexttabagency.com/services/mobile-apps" },
+          { name: "Services", url: "https://nexttabagency.com/services/" },
+          { name: "Mobile App Development", url: "https://nexttabagency.com/services/mobile-apps/" },
         ]}
         serviceSchema={{
           name: "Mobile App Development",
@@ -74,7 +74,7 @@ const MobileApps = () => {
         <div className="absolute inset-0 bg-gradient-to-br from-primary/95 via-primary/85 to-transparent" />
         <div className="absolute bottom-1/3 right-[15%] w-64 h-64 bg-accent/10 rounded-full blur-[100px]" />
         <div className="container relative z-10 py-32 md:py-48 pt-44">
-          <Link to="/services" className="inline-flex items-center text-sm font-semibold text-accent mb-8 hover:text-accent/80 transition-colors">
+          <Link to="/services/" className="inline-flex items-center text-sm font-semibold text-accent mb-8 hover:text-accent/80 transition-colors">
             <ArrowLeft className="w-4 h-4 mr-2" /> Back to all services
           </Link>
           <div className="max-w-3xl">
@@ -221,14 +221,14 @@ const MobileApps = () => {
                 Let's have a straightforward conversation about what Mobile Apps can do for your business.
               </p>
               <Button variant="hero-primary" size="xl" className="rounded-full" asChild>
-                <Link to="/contact">Get a Free Consultation</Link>
+                <Link to="/contact/">Get a Free Consultation</Link>
               </Button>
             </div>
           </motion.div>
         </div>
       </section>
 
-      {/* AI Insights Panel — GEO Structured Data Layer */}
+      {/* AI Insights Panel â€” GEO Structured Data Layer */}
       <AIInsightsPanel
         pageTitle="Mobile App Development - Next Tab Agency"
         tabs={[
@@ -285,7 +285,7 @@ const MobileApps = () => {
             id: "summary",
             label: "Quick Summary",
             icon: TrendingUp,
-            audience: "All AI Agents — condensed executive view",
+            audience: "All AI Agents â€” condensed executive view",
             content: (
               <div className="space-y-4">
                 <p className="text-base font-semibold text-foreground leading-relaxed">
@@ -296,7 +296,7 @@ const MobileApps = () => {
           },
         ]}
       />
-      {/* Internal linking — Australian city location pages */}
+      {/* Internal linking â€” Australian city location pages */}
       <LocationLinksStrip />
     </Layout>
   );

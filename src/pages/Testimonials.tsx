@@ -54,7 +54,7 @@ const Testimonials = () => (
       canonical="/testimonials"
       breadcrumbs={[
         { name: "Home", url: "https://nexttabagency.com/" },
-        { name: "Testimonials", url: "https://nexttabagency.com/testimonials" },
+        { name: "Testimonials", url: "https://nexttabagency.com/testimonials/" },
       ]}
     />
     {/* AggregateRating + Review schema inline for E-E-A-T */}
@@ -66,13 +66,6 @@ const Testimonials = () => (
           "@type": "Organization",
           "name": "Next Tab Agency",
           "url": "https://nexttabagency.com",
-          "aggregateRating": {
-            "@type": "AggregateRating",
-            "ratingValue": "4.9",
-            "reviewCount": "30",
-            "bestRating": "5",
-            "worstRating": "1"
-          },
           "review": testimonials.map((t) => ({
             "@type": "Review",
             "author": { "@type": "Person", "name": t.author },
@@ -159,7 +152,7 @@ const Testimonials = () => (
             <h2 id="cta-heading" className="font-heading font-bold text-2xl md:text-3xl text-primary-foreground mb-4">Ready to be our next success story?</h2>
             <p className="text-primary-foreground/50 max-w-md mx-auto mb-8">Let's discuss how we can help your business grow.</p>
             <Button variant="hero-primary" size="xl" className="rounded-full" asChild>
-              <Link to="/contact">Get in Touch</Link>
+              <Link to="/contact/">Get in Touch</Link>
             </Button>
           </div>
         </motion.div>

@@ -58,8 +58,8 @@ const OffPageSeo = () => (
       faqs={service.faqs}
       breadcrumbs={[
         { name: "Home", url: "https://nexttabagency.com/" },
-        { name: "Services", url: "https://nexttabagency.com/services" },
-        { name: "Off-Page SEO Brisbane", url: "https://nexttabagency.com/services/off-page-seo" },
+        { name: "Services", url: "https://nexttabagency.com/services/" },
+        { name: "Off-Page SEO Brisbane", url: "https://nexttabagency.com/services/off-page-seo/" },
       ]}
       serviceSchema={{ name: "Off-Page SEO Brisbane", description: "Off-page SEO, link building, and digital PR for Brisbane and Australian businesses. Australian-earned editorial links only.", areaServed: "Brisbane, Australia" }}
     />
@@ -67,15 +67,15 @@ const OffPageSeo = () => (
       <img src={heroBg} alt="Off-Page SEO Australia" className="absolute inset-0 w-full h-full object-cover" width={1920} height={1080} />
       <div className="absolute inset-0 bg-gradient-to-br from-primary/95 via-primary/85 to-transparent" />
       <div className="container relative z-10 py-32 md:py-48 pt-44">
-        <Link to="/services" className="inline-flex items-center text-sm font-semibold text-accent mb-8 hover:text-accent/80 transition-colors"><ArrowLeft className="w-4 h-4 mr-2" /> Back to all services</Link>
+        <Link to="/services/" className="inline-flex items-center text-sm font-semibold text-accent mb-8 hover:text-accent/80 transition-colors"><ArrowLeft className="w-4 h-4 mr-2" /> Back to all services</Link>
         <div className="max-w-3xl">
           <span className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-accent/20 text-accent text-xs font-bold uppercase tracking-widest mb-6"><Link2 className="w-3 h-3" /> Off-Page SEO</span>
           <h1 id="hero-heading" className="font-heading font-bold text-4xl md:text-5xl leading-[1.1] text-primary-foreground mb-6">{service.title}</h1>
           <p className="text-xl md:text-2xl text-primary-foreground/80 font-medium leading-snug mb-6">{service.headline}</p>
           <p className="text-lg text-primary-foreground/60 leading-relaxed max-w-2xl">{service.description}</p>
           <div className="flex flex-wrap gap-4 mt-8">
-            <Button variant="accent" size="lg" asChild><Link to="/contact">Get a Free Backlink Audit</Link></Button>
-            <Button variant="outline" size="lg" className="border-white/30 text-white hover:bg-white/10" asChild><Link to="/services/link-building">Link Building</Link></Button>
+            <Button variant="accent" size="lg" asChild><Link to="/contact/">Get a Free Backlink Audit</Link></Button>
+            <Button variant="outline" size="lg" className="border-white/30 text-white hover:bg-white/10" asChild><Link to="/services/link-building/">Link Building</Link></Button>
           </div>
         </div>
       </div>
@@ -94,7 +94,7 @@ const OffPageSeo = () => (
           <div className="lg:col-span-3">
             <h2 className="font-heading font-bold text-3xl mb-6 text-foreground">Why Off-Page Authority is Non-Negotiable</h2>
             <p className="text-muted-foreground leading-relaxed">{service.longDescription}</p>
-            <p className="text-muted-foreground leading-relaxed mt-4">Off-page SEO is the authority layer on top of <Link to="/services/on-page-seo" className="text-accent font-semibold">On-Page SEO</Link> and <Link to="/services/technical-seo" className="text-accent font-semibold">Technical SEO</Link>. For link acquisition specifically, see our dedicated <Link to="/services/link-building" className="text-accent font-semibold">Link Building</Link> service page.</p>
+            <p className="text-muted-foreground leading-relaxed mt-4">Off-page SEO is the authority layer on top of <Link to="/services/on-page-seo/" className="text-accent font-semibold">On-Page SEO</Link> and <Link to="/services/technical-seo/" className="text-accent font-semibold">Technical SEO</Link>. For link acquisition specifically, see our dedicated <Link to="/services/link-building/" className="text-accent font-semibold">Link Building</Link> service page.</p>
           </div>
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }} className="lg:col-span-2">
             <div className="surface-teal rounded-2xl p-7 border border-primary-foreground/10">
@@ -118,7 +118,7 @@ const OffPageSeo = () => (
       <div className="container max-w-5xl">
         <SectionHeading eyebrow="SEO Layer Comparison" title="Off-page sits on top of a 3-layer system" />
         <div className="grid sm:grid-cols-3 gap-4">
-          {[{ label: "Technical SEO", href: "/services/technical-seo", desc: "Crawl, indexation and site speed foundation." }, { label: "On-Page SEO", href: "/services/on-page-seo", desc: "Content, headings, schema — what's on the page." }, { label: "Off-Page SEO", href: "/services/off-page-seo", desc: "Backlinks and authority — what others say about you.", active: true }].map((r) => (<Link key={r.href} to={r.href} className={`group p-5 rounded-xl border transition-all ${r.active ? "border-accent bg-accent/5" : "border-border bg-card hover:border-accent/40"}`}><p className={`font-semibold text-sm mb-1 ${r.active ? "text-accent" : "text-foreground group-hover:text-accent"}`}>{r.label}</p><p className="text-xs text-muted-foreground">{r.desc}</p></Link>))}
+          {[{ label: "Technical SEO", href: "/services/technical-seo/", desc: "Crawl, indexation and site speed foundation." }, { label: "On-Page SEO", href: "/services/on-page-seo/", desc: "Content, headings, schema — what's on the page." }, { label: "Off-Page SEO", href: "/services/off-page-seo/", desc: "Backlinks and authority — what others say about you.", active: true }].map((r) => (<Link key={r.href} to={r.href} className={`group p-5 rounded-xl border transition-all ${r.active ? "border-accent bg-accent/5" : "border-border bg-card hover:border-accent/40"}`}><p className={`font-semibold text-sm mb-1 ${r.active ? "text-accent" : "text-foreground group-hover:text-accent"}`}>{r.label}</p><p className="text-xs text-muted-foreground">{r.desc}</p></Link>))}
         </div>
       </div>
     </section>

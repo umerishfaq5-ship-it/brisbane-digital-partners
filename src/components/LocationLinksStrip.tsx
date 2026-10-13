@@ -2,15 +2,15 @@
 import { MapPin } from "lucide-react";
 
 const locations = [
-  { city: "Brisbane", href: "/locations/brisbane-seo", state: "QLD" },
-  { city: "Gold Coast", href: "/locations/gold-coast-seo", state: "QLD" },
-  { city: "Sunshine Coast", href: "/locations/sunshine-coast-seo", state: "QLD" },
-  { city: "Sydney", href: "/locations/sydney-seo", state: "NSW" },
-  { city: "Melbourne", href: "/locations/melbourne-seo", state: "VIC" },
-  { city: "Perth", href: "/locations/perth-seo", state: "WA" },
-  { city: "Adelaide", href: "/locations/adelaide-seo", state: "SA" },
-  { city: "Canberra", href: "/locations/canberra-seo", state: "ACT" },
-  { city: "Hobart", href: "/locations/hobart-seo", state: "TAS" },
+  { city: "Brisbane", href: "/locations/brisbane-seo/", state: "QLD" },
+  { city: "Gold Coast", href: "/locations/gold-coast-seo/", state: "QLD" },
+  { city: "Sunshine Coast", href: "/locations/sunshine-coast-seo/", state: "QLD" },
+  { city: "Sydney", href: "/locations/sydney-seo/", state: "NSW" },
+  { city: "Melbourne", href: "/locations/melbourne-seo/", state: "VIC" },
+  { city: "Perth", href: "/locations/perth-seo/", state: "WA" },
+  { city: "Adelaide", href: "/locations/adelaide-seo/", state: "SA" },
+  { city: "Canberra", href: "/locations/canberra-seo/", state: "ACT" },
+  { city: "Hobart", href: "/locations/hobart-seo/", state: "TAS" },
 ];
 
 interface LocationLinksStripProps {

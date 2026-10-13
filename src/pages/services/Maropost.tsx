@@ -60,23 +60,23 @@ const industries = [
 ];
 
 const relatedServices = [
-  { label: "BigCommerce Development",  to: "/services/bigcommerce-development" },
-  { label: "Shopify Development",      to: "/services/shopify-development" },
-  { label: "Magento Development",      to: "/services/magento-development" },
-  { label: "WooCommerce Development",  to: "/services/woocommerce-development" },
+  { label: "BigCommerce Development",  to: "/services/bigcommerce-development/" },
+  { label: "Shopify Development",      to: "/services/shopify-development/" },
+  { label: "Magento Development",      to: "/services/magento-development/" },
+  { label: "WooCommerce Development",  to: "/services/woocommerce-development/" },
 ];
 
 const Maropost = () => (
   <Layout>
     <SEO
-      title="Maropost Commerce / Neto Developer Brisbane — Australia's E-commerce Platform"
-      description="Expert Maropost Commerce Cloud (Neto) development in Brisbane. Custom storefronts, multi-channel setup, 3PL integration, and migration for Australian retailers and wholesalers."
+      title="Neto (Maropost) Developer & Agency Australia"
+      description="Neto / Maropost Commerce Cloud developers in Brisbane. Custom themes, multi-channel setup, 3PL integrations and migrations for Australian retailers. Free scoping call."
       canonical="/services/maropost-neto"
       faqs={service.faqs}
       breadcrumbs={[
         { name: "Home",     url: "https://nexttabagency.com/" },
-        { name: "Services", url: "https://nexttabagency.com/services" },
-        { name: "Maropost / Neto Development", url: "https://nexttabagency.com/services/maropost-neto" },
+        { name: "Services", url: "https://nexttabagency.com/services/" },
+        { name: "Maropost / Neto Development", url: "https://nexttabagency.com/services/maropost-neto/" },
       ]}
       serviceSchema={{ name: "Maropost Commerce / Neto Development", description: "Custom Maropost Commerce Cloud (Neto) development, multi-channel setup, ERP integration, and migration for Australian retailers.", areaServed: "Australia" }}
     />
@@ -85,7 +85,7 @@ const Maropost = () => (
       <img src={heroBg} alt="Maropost Neto Developer Brisbane Australia" className="absolute inset-0 w-full h-full object-cover" width={1920} height={1080} />
       <div className="absolute inset-0 bg-gradient-to-br from-primary/95 via-primary/85 to-transparent" />
       <div className="container relative z-10 py-32 md:py-48 pt-44">
-        <Link to="/services" className="inline-flex items-center text-sm font-semibold text-accent mb-8 hover:text-accent/80 transition-colors">
+        <Link to="/services/" className="inline-flex items-center text-sm font-semibold text-accent mb-8 hover:text-accent/80 transition-colors">
           <ArrowLeft className="w-4 h-4 mr-2" /> Back to all services
         </Link>
         <div className="max-w-3xl">
@@ -205,7 +205,7 @@ const Maropost = () => (
             <h2 id="cta-heading" className="font-heading font-bold text-2xl md:text-3xl text-primary-foreground mb-4">Need a Maropost / Neto expert?</h2>
             <p className="text-primary-foreground/55 max-w-md mx-auto mb-8 leading-relaxed">We're one of the few Australian agencies with hands-on Neto and Maropost Commerce experience. Let's talk.</p>
             <Button variant="hero-primary" size="xl" className="rounded-full" asChild>
-              <Link to="/contact">Get a Free Consultation</Link>
+              <Link to="/contact/">Get a Free Consultation</Link>
             </Button>
           </div>
         </motion.div>

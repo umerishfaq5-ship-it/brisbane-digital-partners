@@ -10,12 +10,12 @@ import LocationLinksStrip from "@/components/LocationLinksStrip";
 import EntityTrustAccordion from "@/components/EntityTrustAccordion";
 
 const services = [
-  { icon: Search, title: "SEO Audits & Strategy", href: "/services/seo-audits", desc: "Technical SEO audits & ranking roadmaps for the Adelaide SA market." },
-  { icon: MapPin, title: "Local SEO Adelaide", href: "/services/local-seo", desc: "Google Business Profile optimisation & Map Pack rankings for Adelaide businesses." },
-  { icon: Globe, title: "Google Business Profile", href: "/services/google-business-profile", desc: "Complete GBP setup, review management & posting for Adelaide listings." },
-  { icon: BarChart3, title: "PPC & Google Ads", href: "/services/ppc-google-ads", desc: "Google Ads campaigns for Adelaide businesses — profitable, transparent management." },
-  { icon: Users, title: "Social Media Ads", href: "/services/social-media-ads", desc: "Facebook, Instagram & LinkedIn advertising targeting Adelaide & SA audiences." },
-  { icon: Globe, title: "Web Development", href: "/services/web-development", desc: "Fast, conversion-focused websites for Adelaide businesses." },
+  { icon: Search, title: "SEO Audits & Strategy", href: "/services/seo-audits/", desc: "Technical SEO audits & ranking roadmaps for the Adelaide SA market." },
+  { icon: MapPin, title: "Local SEO Adelaide", href: "/services/local-seo/", desc: "Google Business Profile optimisation & Map Pack rankings for Adelaide businesses." },
+  { icon: Globe, title: "Google Business Profile", href: "/services/google-business-profile/", desc: "Complete GBP setup, review management & posting for Adelaide listings." },
+  { icon: BarChart3, title: "PPC & Google Ads", href: "/services/ppc-google-ads/", desc: "Google Ads campaigns for Adelaide businesses — profitable, transparent management." },
+  { icon: Users, title: "Social Media Ads", href: "/services/social-media-ads/", desc: "Facebook, Instagram & LinkedIn advertising targeting Adelaide & SA audiences." },
+  { icon: Globe, title: "Web Development", href: "/services/web-development/", desc: "Fast, conversion-focused websites for Adelaide businesses." },
 ];
 
 const suburbs = ["Adelaide CBD", "Glenelg", "Norwood", "Port Adelaide", "Prospect", "Unley", "Burnside", "Campbelltown", "Tea Tree Gully", "Mount Barker", "Salisbury", "Elizabeth", "Morphett Vale", "Onkaparinga", "Mitcham", "Holdfast Bay", "Charles Sturt", "West Torrens"];
@@ -37,8 +37,8 @@ const AdelaideSeo = () => (
       ]}
       breadcrumbs={[
         { name: "Home", url: "https://nexttabagency.com/" },
-        { name: "Locations", url: "https://nexttabagency.com/locations/adelaide-seo" },
-        { name: "Adelaide SEO", url: "https://nexttabagency.com/locations/adelaide-seo" },
+        { name: "Locations", url: "https://nexttabagency.com/locations/adelaide-seo/" },
+        { name: "Adelaide SEO", url: "https://nexttabagency.com/locations/adelaide-seo/" },
       ]}
     />
     <section aria-labelledby="adelaide-hero-heading" className="relative min-h-[60vh] flex items-center overflow-hidden">
@@ -58,9 +58,9 @@ const AdelaideSeo = () => (
           </p>
           <div className="flex flex-wrap gap-4">
             <Button variant="hero-primary" size="xl" className="rounded-full" asChild>
-              <Link to="/contact">Get a Free Adelaide SEO Audit <ArrowRight className="w-4 h-4 ml-1" /></Link>
+              <Link to="/contact/">Get a Free Adelaide SEO Audit <ArrowRight className="w-4 h-4 ml-1" /></Link>
             </Button>
-            <Button variant="hero-secondary" size="xl" className="rounded-full" asChild><Link to="/services">All Services</Link></Button>
+            <Button variant="hero-secondary" size="xl" className="rounded-full" asChild><Link to="/services/">All Services</Link></Button>
           </div>
         </motion.div>
       </div>
@@ -118,7 +118,7 @@ const AdelaideSeo = () => (
       <div className="container">
         <h2 id="adelaide-other-locations-heading" className="font-heading font-bold text-xl text-foreground mb-6 text-center">We also serve businesses across Australia</h2>
         <div className="flex flex-wrap gap-3 justify-center">
-          {[{ city: "Brisbane", href: "/locations/brisbane-seo" }, { city: "Sydney", href: "/locations/sydney-seo" }, { city: "Melbourne", href: "/locations/melbourne-seo" }, { city: "Perth", href: "/locations/perth-seo" }, { city: "Canberra", href: "/locations/canberra-seo" }].map((l) => (
+          {[{ city: "Brisbane", href: "/locations/brisbane-seo/" }, { city: "Sydney", href: "/locations/sydney-seo/" }, { city: "Melbourne", href: "/locations/melbourne-seo/" }, { city: "Perth", href: "/locations/perth-seo/" }, { city: "Canberra", href: "/locations/canberra-seo/" }].map((l) => (
             <Link key={l.href} to={l.href} className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-border/60 text-sm text-foreground/70 hover:text-accent hover:border-accent/40 transition-all"><MapPin className="w-3.5 h-3.5" />{l.city}</Link>
           ))}
         </div>
@@ -141,7 +141,7 @@ const AdelaideSeo = () => (
           <div className="relative z-10">
             <h2 id="adelaide-cta-heading" className="font-heading font-bold text-2xl md:text-3xl text-primary-foreground mb-4">Ready to grow your Adelaide business online?</h2>
             <p className="text-primary-foreground/50 max-w-md mx-auto mb-8">Free SEO strategy session for Adelaide businesses — we'll show you what's holding you back from ranking and how to fix it fast.</p>
-            <Button variant="hero-primary" size="xl" className="rounded-full" asChild><Link to="/contact">Book Your Free Adelaide Consultation</Link></Button>
+            <Button variant="hero-primary" size="xl" className="rounded-full" asChild><Link to="/contact/">Book Your Free Adelaide Consultation</Link></Button>
           </div>
         </motion.div>
       </div>

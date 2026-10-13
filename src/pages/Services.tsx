@@ -14,7 +14,7 @@ const services = [
     icon: Search,
     title: "SEO Audits & Strategy",
     description: "Comprehensive technical audits, keyword research, meta tag optimisation, and an actionable roadmap to improve your search rankings.",
-    href: "/services/seo-audits",
+    href: "/services/seo-audits/",
     number: "01",
     highlights: ["Technical SEO Audit", "Keyword Research", "Competitor Analysis", "Monthly Reporting"],
   },
@@ -22,7 +22,7 @@ const services = [
     icon: MapPin,
     title: "Local SEO for Australian Businesses",
     description: "Google Business Profile optimisation, local citations, and geo-targeted strategies designed specifically for the Australian market.",
-    href: "/services/local-seo",
+    href: "/services/local-seo/",
     number: "02",
     highlights: ["Google Business Profile", "Local Citations", "Review Management", "Map Pack Rankings"],
   },
@@ -30,7 +30,7 @@ const services = [
     icon: Smartphone,
     title: "Mobile App Development",
     description: "Cross-platform mobile apps built with React Native, delivering native-like performance on iOS and Android from a single codebase.",
-    href: "/services/mobile-apps",
+    href: "/services/mobile-apps/",
     number: "03",
     highlights: ["React Native", "iOS & Android", "Push Notifications", "App Store Launch"],
   },
@@ -38,7 +38,7 @@ const services = [
     icon: Globe,
     title: "Custom Website Design & Development",
     description: "Fast, responsive, and SEO-friendly websites built with modern frameworks that scale with your business and convert visitors into customers.",
-    href: "/services/web-development",
+    href: "/services/web-development/",
     number: "04",
     highlights: ["Custom Design", "Lightning Fast", "SEO-Ready", "CMS Integration"],
   },
@@ -46,7 +46,7 @@ const services = [
     icon: Code2,
     title: "WordPress Development",
     description: "Custom WordPress websites and WooCommerce stores built fast, secure, and SEO-ready — with full admin training so you can manage your own content.",
-    href: "/services/wordpress-development",
+    href: "/services/wordpress-development/",
     number: "05",
     highlights: ["Custom Theme", "WooCommerce", "SEO Setup", "Easy to Manage"],
   },
@@ -54,7 +54,7 @@ const services = [
     icon: LayoutIcon,
     title: "Squarespace Design & Development",
     description: "Premium Squarespace websites for creative businesses, consultants, and boutique brands — custom-designed and configured to convert.",
-    href: "/services/squarespace-development",
+    href: "/services/squarespace-development/",
     number: "06",
     highlights: ["Custom Design", "Commerce Setup", "Booking Integration", "SEO Configured"],
   },
@@ -62,7 +62,7 @@ const services = [
     icon: Target,
     title: "Social Media Advertising",
     description: "Facebook, Instagram, LinkedIn, YouTube & TikTok ad campaigns managed by certified specialists — reaching Australian audiences that convert.",
-    href: "/services/social-media-ads",
+    href: "/services/social-media-ads/",
     number: "07",
     highlights: ["Facebook & Instagram", "LinkedIn Ads", "TikTok Ads", "YouTube Video Ads"],
   },
@@ -70,7 +70,7 @@ const services = [
     icon: BarChart3,
     title: "PPC & Google Ads Management",
     description: "Google Search, Shopping, Display & Remarketing campaigns — managed for maximum ROAS with weekly optimisation and plain-English reporting.",
-    href: "/services/ppc-google-ads",
+    href: "/services/ppc-google-ads/",
     number: "08",
     highlights: ["Google Search Ads", "Shopping Campaigns", "Display & Remarketing", "Bing / Microsoft Ads"],
   },
@@ -78,7 +78,7 @@ const services = [
     icon: Star,
     title: "Google Business Profile Optimisation",
     description: "Complete GBP setup, photo strategy, review management, citation building & weekly posting to rank in the local Map Pack.",
-    href: "/services/google-business-profile",
+    href: "/services/google-business-profile/",
     number: "09",
     highlights: ["GBP Setup & Verification", "Review Management", "Google Posts", "Citation Building"],
   },
@@ -224,7 +224,7 @@ const Services = () => (
             <h2 id="cta-heading" className="font-heading font-bold text-2xl md:text-3xl text-primary-foreground mb-4">Not sure what you need?</h2>
             <p className="text-primary-foreground/50 max-w-md mx-auto mb-8">Let's chat. We'll give you an honest assessment and recommend only what will actually help your business grow.</p>
             <Button variant="hero-primary" size="xl" className="rounded-full" asChild>
-              <Link to="/contact">Let's Discuss Your Project</Link>
+              <Link to="/contact/">Let's Discuss Your Project</Link>
             </Button>
           </div>
         </motion.div>

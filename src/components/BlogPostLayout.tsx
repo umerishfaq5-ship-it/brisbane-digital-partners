@@ -80,7 +80,7 @@ export const CtaSection = ({ heading, sub, btnText = "Book My Free Consultation"
       <h2 className="mb-4 text-3xl font-bold md:text-4xl font-heading">{heading}</h2>
       <p className="mb-8 text-lg text-primary-foreground/80">{sub}</p>
       <Link
-        to="/contact"
+        to="/contact/"
         className="inline-flex items-center justify-center gap-2 px-8 py-4 text-base font-bold transition-all rounded-full bg-accent text-accent-foreground hover:bg-accent/90 hover:scale-105"
       >
         {btnText} <ChevronRight className="w-5 h-5" />
@@ -123,7 +123,7 @@ const BlogPostLayout = ({
       <div className="absolute inset-0 opacity-30 pattern-grid" />
       <div className="container relative z-10 max-w-4xl">
         <Link
-          to="/blog"
+          to="/blog/"
           className="inline-flex items-center gap-2 mb-8 text-sm font-medium transition-colors text-muted-foreground hover:text-foreground"
         >
           <ArrowLeft className="w-4 h-4" /> Back to Blog

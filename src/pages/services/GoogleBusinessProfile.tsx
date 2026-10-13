@@ -80,8 +80,8 @@ const GoogleBusinessProfile = () => (
       ]}
       breadcrumbs={[
         { name: "Home", url: "https://nexttabagency.com/" },
-        { name: "Services", url: "https://nexttabagency.com/services" },
-        { name: "Google Business Profile", url: "https://nexttabagency.com/services/google-business-profile" },
+        { name: "Services", url: "https://nexttabagency.com/services/" },
+        { name: "Google Business Profile", url: "https://nexttabagency.com/services/google-business-profile/" },
       ]}
     />
 
@@ -106,10 +106,10 @@ const GoogleBusinessProfile = () => (
           </p>
           <div className="flex flex-wrap gap-4">
             <Button variant="hero-primary" size="xl" className="rounded-full" asChild>
-              <Link to="/contact">Get a Free GBP Audit <ArrowRight className="w-4 h-4 ml-1" /></Link>
+              <Link to="/contact/">Get a Free GBP Audit <ArrowRight className="w-4 h-4 ml-1" /></Link>
             </Button>
             <Button variant="hero-secondary" size="xl" className="rounded-full" asChild>
-              <Link to="/services/local-seo">Local SEO Services</Link>
+              <Link to="/services/local-seo/">Local SEO Services</Link>
             </Button>
           </div>
         </motion.div>
@@ -206,12 +206,12 @@ const GoogleBusinessProfile = () => (
         <p className="text-muted-foreground text-center text-sm mb-6 max-w-xl mx-auto">We manage Google Business Profiles for businesses across all major Australian cities.</p>
         <div className="flex flex-wrap gap-3 justify-center">
           {[
-            { city: "Brisbane", href: "/locations/brisbane-seo" },
-            { city: "Sydney",   href: "/locations/sydney-seo" },
-            { city: "Melbourne", href: "/locations/melbourne-seo" },
-            { city: "Perth",    href: "/locations/perth-seo" },
-            { city: "Adelaide", href: "/locations/adelaide-seo" },
-            { city: "Canberra", href: "/locations/canberra-seo" },
+            { city: "Brisbane", href: "/locations/brisbane-seo/" },
+            { city: "Sydney",   href: "/locations/sydney-seo/" },
+            { city: "Melbourne", href: "/locations/melbourne-seo/" },
+            { city: "Perth",    href: "/locations/perth-seo/" },
+            { city: "Adelaide", href: "/locations/adelaide-seo/" },
+            { city: "Canberra", href: "/locations/canberra-seo/" },
           ].map((l) => (
             <Link key={l.href} to={l.href} className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-border/60 text-sm text-foreground/70 hover:text-accent hover:border-accent/40 transition-all">
               <MapPin className="w-3.5 h-3.5" />{l.city}
@@ -227,9 +227,9 @@ const GoogleBusinessProfile = () => (
         <h2 id="gbp-related-heading" className="font-heading font-bold text-2xl text-foreground mb-8 text-center">Combine GBP with a complete local SEO strategy</h2>
         <div className="grid sm:grid-cols-3 gap-5 max-w-3xl mx-auto">
           {[
-            { label: "Local SEO", href: "/services/local-seo", desc: "Full local search strategy beyond just GBP — citations, on-page, authority." },
-            { label: "SEO Audits", href: "/services/seo-audits", desc: "Technical audit to ensure your website supports your GBP rankings." },
-            { label: "PPC & Google Ads", href: "/services/ppc-google-ads", desc: "Appear in paid ads above the Map Pack for maximum search visibility." },
+            { label: "Local SEO", href: "/services/local-seo/", desc: "Full local search strategy beyond just GBP — citations, on-page, authority." },
+            { label: "SEO Audits", href: "/services/seo-audits/", desc: "Technical audit to ensure your website supports your GBP rankings." },
+            { label: "PPC & Google Ads", href: "/services/ppc-google-ads/", desc: "Appear in paid ads above the Map Pack for maximum search visibility." },
           ].map((item) => (
             <Link key={item.href} to={item.href} className="group card-premium rounded-2xl p-6 block">
               <p className="font-heading font-semibold text-foreground group-hover:text-accent transition-colors mb-1">{item.label}</p>
@@ -260,7 +260,7 @@ const GoogleBusinessProfile = () => (
               Get a free GBP audit — we'll assess your current profile against competitors and show you exactly what it'll take to rank in the Local Map Pack.
             </p>
             <Button variant="hero-primary" size="xl" className="rounded-full" asChild>
-              <Link to="/contact">Get My Free GBP Audit</Link>
+              <Link to="/contact/">Get My Free GBP Audit</Link>
             </Button>
           </div>
         </motion.div>

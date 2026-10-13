@@ -64,8 +64,8 @@ const OnPageSeo = () => (
       faqs={service.faqs}
       breadcrumbs={[
         { name: "Home", url: "https://nexttabagency.com/" },
-        { name: "Services", url: "https://nexttabagency.com/services" },
-        { name: "On-Page SEO Brisbane", url: "https://nexttabagency.com/services/on-page-seo" },
+        { name: "Services", url: "https://nexttabagency.com/services/" },
+        { name: "On-Page SEO Brisbane", url: "https://nexttabagency.com/services/on-page-seo/" },
       ]}
       serviceSchema={{ name: "On-Page SEO Brisbane", description: "On-page SEO optimisation for Brisbane and Australian websites — title tags, headings, content, schema, and internal linking. From A$490.", areaServed: "Brisbane, Australia" }}
     />
@@ -74,15 +74,15 @@ const OnPageSeo = () => (
       <img src={heroBg} alt="On-Page SEO Australia" className="absolute inset-0 w-full h-full object-cover" width={1920} height={1080} />
       <div className="absolute inset-0 bg-gradient-to-br from-primary/95 via-primary/85 to-transparent" />
       <div className="container relative z-10 py-32 md:py-48 pt-44">
-        <Link to="/services" className="inline-flex items-center text-sm font-semibold text-accent mb-8 hover:text-accent/80 transition-colors"><ArrowLeft className="w-4 h-4 mr-2" /> Back to all services</Link>
+        <Link to="/services/" className="inline-flex items-center text-sm font-semibold text-accent mb-8 hover:text-accent/80 transition-colors"><ArrowLeft className="w-4 h-4 mr-2" /> Back to all services</Link>
         <div className="max-w-3xl">
           <span className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-accent/20 text-accent text-xs font-bold uppercase tracking-widest mb-6"><FileEdit className="w-3 h-3" /> On-Page SEO</span>
           <h1 id="hero-heading" className="font-heading font-bold text-4xl md:text-5xl leading-[1.1] text-primary-foreground mb-6">{service.title}</h1>
           <p className="text-xl md:text-2xl text-primary-foreground/80 font-medium leading-snug mb-6">{service.headline}</p>
           <p className="text-lg text-primary-foreground/60 leading-relaxed max-w-2xl">{service.description}</p>
           <div className="flex flex-wrap gap-4 mt-8">
-            <Button variant="accent" size="lg" asChild><Link to="/contact">Get a Free On-Page SEO Audit</Link></Button>
-            <Button variant="outline" size="lg" className="border-white/30 text-white hover:bg-white/10" asChild><Link to="/services/technical-seo">Technical SEO</Link></Button>
+            <Button variant="accent" size="lg" asChild><Link to="/contact/">Get a Free On-Page SEO Audit</Link></Button>
+            <Button variant="outline" size="lg" className="border-white/30 text-white hover:bg-white/10" asChild><Link to="/services/technical-seo/">Technical SEO</Link></Button>
           </div>
         </div>
       </div>
@@ -103,7 +103,7 @@ const OnPageSeo = () => (
           <div className="lg:col-span-3">
             <h2 className="font-heading font-bold text-3xl mb-6 text-foreground">Why On-Page SEO is Non-Negotiable</h2>
             <p className="text-muted-foreground leading-relaxed">{service.longDescription}</p>
-            <p className="text-muted-foreground leading-relaxed mt-4">On-page SEO is part of a complete strategy: combine it with <Link to="/services/technical-seo" className="text-accent font-semibold">Technical SEO</Link> (crawl and speed), <Link to="/services/content-marketing" className="text-accent font-semibold">Content Marketing</Link> (new page creation), and <Link to="/services/link-building" className="text-accent font-semibold">Link Building</Link> (off-page authority) for maximum ranking results.</p>
+            <p className="text-muted-foreground leading-relaxed mt-4">On-page SEO is part of a complete strategy: combine it with <Link to="/services/technical-seo/" className="text-accent font-semibold">Technical SEO</Link> (crawl and speed), <Link to="/services/content-marketing/" className="text-accent font-semibold">Content Marketing</Link> (new page creation), and <Link to="/services/link-building/" className="text-accent font-semibold">Link Building</Link> (off-page authority) for maximum ranking results.</p>
           </div>
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: 0.2 }} className="lg:col-span-2">
             <div className="surface-teal rounded-2xl p-7 border border-primary-foreground/10">
@@ -130,7 +130,7 @@ const OnPageSeo = () => (
       <div className="container max-w-5xl">
         <SectionHeading eyebrow="SEO Layer Comparison" title="On-page is one layer of a 3-part system" />
         <div className="grid sm:grid-cols-3 gap-4">
-          {[{ label: "On-Page SEO", href: "/services/on-page-seo", desc: "Content, headings, title tags, schema markup. What's on the page.", active: true }, { label: "Technical SEO", href: "/services/technical-seo", desc: "Crawl, indexation, speed, structured data. How the site works." }, { label: "Link Building", href: "/services/link-building", desc: "Backlinks, digital PR, authority. What other sites say about you." }].map((r) => (<Link key={r.href} to={r.href} className={`group p-5 rounded-xl border transition-all ${r.active ? "border-accent bg-accent/5" : "border-border bg-card hover:border-accent/40"}`}><p className={`font-semibold text-sm mb-1 ${r.active ? "text-accent" : "text-foreground group-hover:text-accent"}`}>{r.label}</p><p className="text-xs text-muted-foreground">{r.desc}</p></Link>))}
+          {[{ label: "On-Page SEO", href: "/services/on-page-seo/", desc: "Content, headings, title tags, schema markup. What's on the page.", active: true }, { label: "Technical SEO", href: "/services/technical-seo/", desc: "Crawl, indexation, speed, structured data. How the site works." }, { label: "Link Building", href: "/services/link-building/", desc: "Backlinks, digital PR, authority. What other sites say about you." }].map((r) => (<Link key={r.href} to={r.href} className={`group p-5 rounded-xl border transition-all ${r.active ? "border-accent bg-accent/5" : "border-border bg-card hover:border-accent/40"}`}><p className={`font-semibold text-sm mb-1 ${r.active ? "text-accent" : "text-foreground group-hover:text-accent"}`}>{r.label}</p><p className="text-xs text-muted-foreground">{r.desc}</p></Link>))}
         </div>
       </div>
     </section>

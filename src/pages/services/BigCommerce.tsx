@@ -60,23 +60,23 @@ const industries = [
 ];
 
 const relatedServices = [
-  { label: "Shopify Development",     to: "/services/shopify-development" },
-  { label: "WooCommerce Development", to: "/services/woocommerce-development" },
-  { label: "Magento Development",     to: "/services/magento-development" },
-  { label: "Maropost / Neto",         to: "/services/maropost-neto" },
+  { label: "Shopify Development",     to: "/services/shopify-development/" },
+  { label: "WooCommerce Development", to: "/services/woocommerce-development/" },
+  { label: "Magento Development",     to: "/services/magento-development/" },
+  { label: "Maropost / Neto",         to: "/services/maropost-neto/" },
 ];
 
 const BigCommerce = () => (
   <Layout>
     <SEO
-      title="BigCommerce Developer Brisbane | Enterprise eCommerce Agency | Next Tab Agency"
-      description="Brisbane's BigCommerce specialists. Custom Stencil themes, headless Next.js storefronts, B2B Edition & migration from Magento/Neto. From A$6,000. Already top 10 on Google — book a free scoping call."
+      title="BigCommerce Development Brisbane"
+      description="BigCommerce development in Brisbane: custom Stencil themes, headless storefronts, B2B Edition and migrations from Magento or Neto. From A$6,000. Free scoping call."
       canonical="/services/bigcommerce-development"
       faqs={service.faqs}
       breadcrumbs={[
         { name: "Home",     url: "https://nexttabagency.com/" },
-        { name: "Services", url: "https://nexttabagency.com/services" },
-        { name: "BigCommerce Developer Brisbane", url: "https://nexttabagency.com/services/bigcommerce-development" },
+        { name: "Services", url: "https://nexttabagency.com/services/" },
+        { name: "BigCommerce Developer Brisbane", url: "https://nexttabagency.com/services/bigcommerce-development/" },
       ]}
       serviceSchema={{ name: "BigCommerce Development", description: "Custom BigCommerce e-commerce development, headless builds, and migrations for Australian retailers and wholesalers.", areaServed: "Australia" }}
     />
@@ -85,7 +85,7 @@ const BigCommerce = () => (
       <img src={heroBg} alt="BigCommerce Development Brisbane Australia" className="absolute inset-0 w-full h-full object-cover" width={1920} height={1080} />
       <div className="absolute inset-0 bg-gradient-to-br from-primary/95 via-primary/85 to-transparent" />
       <div className="container relative z-10 py-32 md:py-48 pt-44">
-        <Link to="/services" className="inline-flex items-center text-sm font-semibold text-accent mb-8 hover:text-accent/80 transition-colors">
+        <Link to="/services/" className="inline-flex items-center text-sm font-semibold text-accent mb-8 hover:text-accent/80 transition-colors">
           <ArrowLeft className="w-4 h-4 mr-2" /> Back to all services
         </Link>
         <div className="max-w-3xl">
@@ -205,7 +205,7 @@ const BigCommerce = () => (
             <h2 id="cta-heading" className="font-heading font-bold text-2xl md:text-3xl text-primary-foreground mb-4">Ready to scale your e-commerce?</h2>
             <p className="text-primary-foreground/55 max-w-md mx-auto mb-8 leading-relaxed">Let's talk about your catalogue, business rules, and how BigCommerce can take your retail operation to the next level.</p>
             <Button variant="hero-primary" size="xl" className="rounded-full" asChild>
-              <Link to="/contact">Get a Free Consultation</Link>
+              <Link to="/contact/">Get a Free Consultation</Link>
             </Button>
           </div>
         </motion.div>

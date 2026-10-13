@@ -99,8 +99,8 @@ const SocialMediaAds = () => (
       ]}
       breadcrumbs={[
         { name: "Home", url: "https://nexttabagency.com/" },
-        { name: "Services", url: "https://nexttabagency.com/services" },
-        { name: "Social Media Ads", url: "https://nexttabagency.com/services/social-media-ads" },
+        { name: "Services", url: "https://nexttabagency.com/services/" },
+        { name: "Social Media Ads", url: "https://nexttabagency.com/services/social-media-ads/" },
       ]}
     />
 
@@ -125,10 +125,10 @@ const SocialMediaAds = () => (
           </p>
           <div className="flex flex-wrap gap-4">
             <Button variant="hero-primary" size="xl" className="rounded-full" asChild>
-              <Link to="/contact">Get a Free Ads Audit <ArrowRight className="w-4 h-4 ml-1" /></Link>
+              <Link to="/contact/">Get a Free Ads Audit <ArrowRight className="w-4 h-4 ml-1" /></Link>
             </Button>
             <Button variant="hero-secondary" size="xl" className="rounded-full" asChild>
-              <Link to="/services">All Services</Link>
+              <Link to="/services/">All Services</Link>
             </Button>
           </div>
         </motion.div>
@@ -255,9 +255,9 @@ const SocialMediaAds = () => (
         <h2 id="related-services-heading" className="font-heading font-bold text-2xl text-foreground mb-8 text-center">Combine social ads with our other services</h2>
         <div className="grid sm:grid-cols-3 gap-5 max-w-3xl mx-auto">
           {[
-            { label: "PPC & Google Ads", href: "/services/ppc-google-ads", desc: "Capture high-intent search traffic alongside social." },
-            { label: "Local SEO", href: "/services/local-seo", desc: "Dominate local search while running paid campaigns." },
-            { label: "Web Development", href: "/services/web-development", desc: "Ensure your landing pages convert ad traffic." },
+            { label: "PPC & Google Ads", href: "/services/ppc-google-ads/", desc: "Capture high-intent search traffic alongside social." },
+            { label: "Local SEO", href: "/services/local-seo/", desc: "Dominate local search while running paid campaigns." },
+            { label: "Web Development", href: "/services/web-development/", desc: "Ensure your landing pages convert ad traffic." },
           ].map((item) => (
             <Link key={item.href} to={item.href} className="group card-premium rounded-2xl p-6 block">
               <p className="font-heading font-semibold text-foreground group-hover:text-accent transition-colors mb-1">{item.label}</p>
@@ -320,7 +320,7 @@ const SocialMediaAds = () => (
             </p>
             <div className="flex flex-wrap gap-4 justify-center">
               <Button variant="hero-primary" size="xl" className="rounded-full" asChild>
-                <Link to="/contact">Book a Free Strategy Call <ArrowRight className="w-4 h-4 ml-1" /></Link>
+                <Link to="/contact/">Book a Free Strategy Call <ArrowRight className="w-4 h-4 ml-1" /></Link>
               </Button>
               <a
                 href="https://wa.me/61470400743?text=Hi%2C%20I%27d%20like%20a%20free%20social%20media%20ads%20audit"

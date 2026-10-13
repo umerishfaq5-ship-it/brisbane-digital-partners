@@ -7,7 +7,7 @@ import BlogPostLayout, {
 const schema = {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://nexttabagency.com/blog/content-strategy-core-update" },
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://nexttabagency.com/blog/content-strategy-core-update/" },
   "headline": "Hit by the May 2026 Core Update? Why 'Good' Content Isn't Enough Anymore",
   "description": "Google no longer cares if your content is just 'good.' It demands content that solves the user's exact problem faster and better than anyone else.",
   "image": "https://images.unsplash.com/photo-1455390582262-044cdead2708?q=80&w=2073",
@@ -22,6 +22,7 @@ const schema = {
 const ContentStrategyCoreUpdate = () => (
   <>
     <Helmet>
+      <link rel="canonical" href="https://nexttabagency.com/blog/content-strategy-core-update/" />
       <title>Why 'Good' Content Isn't Enough Anymore | Next Tab Agency</title>
       <meta name="description" content="Google no longer cares if your content is just 'good.' It demands content that solves the user's exact problem faster and better than anyone else." />
     </Helmet>
@@ -141,7 +142,7 @@ const ContentStrategyCoreUpdate = () => (
       <div className="p-8 my-12 text-center border bg-muted/40 rounded-2xl border-border/50">
         <h3 className="mb-3 text-2xl font-bold font-heading text-foreground">Stop Losing Traffic to Competitors</h3>
         <p className="mb-5 text-muted-foreground">If your content strategy is failing, we can rebuild it. Our Brisbane SEO team specialises in intent-driven, high-converting content.</p>
-        <Link to="/services/seo-audits" className="inline-flex items-center gap-2 px-6 py-3 font-bold rounded-full bg-accent text-accent-foreground hover:bg-accent/90">
+        <Link to="/services/seo-audits/" className="inline-flex items-center gap-2 px-6 py-3 font-bold rounded-full bg-accent text-accent-foreground hover:bg-accent/90">
           Book Your Free Content Strategy Audit →
         </Link>
       </div>

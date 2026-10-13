@@ -17,13 +17,13 @@ import LiveTeardownForm from "@/components/LiveTeardownForm";
 const service = {
   title: "Performance-Driven Web Development Brisbane | Custom React & WordPress",
   headline: "Sub-1s websites built to rank, convert, and outperform every competitor in your Brisbane suburb",
-  description: "We design and develop custom websites using the Antigravity framework, React, and Next.js — delivering Core Web Vitals green scores, sub-1s load times, and SEO-ready architecture from the first line of code.",
-  longDescription: "Your website is live 24/7 representing your business to every potential customer who finds you. We build sites using React, Next.js, and the Antigravity framework that load in under 1 second for Brisbane users on Australian CDN infrastructure, rank well on Google through proper technical architecture, and convert visitors into enquiries. Every site we deliver is responsive across all devices, accessible to all users, set up with analytics, and optimised for Core Web Vitals — the three Google performance signals that directly impact your search rankings in 2025.",
+  description: "We design and develop custom websites using the Antigravity framework, React, and Next.js â€” delivering Core Web Vitals green scores, sub-1s load times, and SEO-ready architecture from the first line of code.",
+  longDescription: "Your website is live 24/7 representing your business to every potential customer who finds you. We build sites using React, Next.js, and the Antigravity framework that load in under 1 second for Brisbane users on Australian CDN infrastructure, rank well on Google through proper technical architecture, and convert visitors into enquiries. Every site we deliver is responsive across all devices, accessible to all users, set up with analytics, and optimised for Core Web Vitals â€” the three Google performance signals that directly impact your search rankings in 2025.",
   features: [
-    "Antigravity Framework builds — sub-1s load times for Brisbane users on Australian CDN",
-    "Core Web Vitals engineering — LCP, INP, CLS all hitting Google's 'Good' thresholds",
+    "Antigravity Framework builds â€” sub-1s load times for Brisbane users on Australian CDN",
+    "Core Web Vitals engineering â€” LCP, INP, CLS all hitting Google's 'Good' thresholds",
     "Custom responsive design tailored to your brand and industry",
-    "SEO-ready architecture — clean URLs, structured data, semantic HTML",
+    "SEO-ready architecture â€” clean URLs, structured data, semantic HTML",
     "Content management system integration (Sanity, WordPress, Contentful)",
     "Secure HTTPS, image optimisation, and CDN delivery via Cloudflare",
     "Analytics and conversion tracking setup (GA4, Search Console)",
@@ -31,7 +31,7 @@ const service = {
     "Ongoing support, hosting management, and maintenance plans",
   ],
   benefits: [
-    { icon: Zap, title: "Blazing Fast", desc: "Sites that load in under 2 seconds — because 40% of users abandon a page that takes more than 3 seconds." },
+    { icon: Zap, title: "Blazing Fast", desc: "Sites that load in under 2 seconds â€” because 40% of users abandon a page that takes more than 3 seconds." },
     { icon: TrendingUp, title: "SEO-Ready from Day One", desc: "Built with clean code, proper heading hierarchy, structured data, and technical SEO baked in." },
     { icon: FileText, title: "Easy to Manage", desc: "CMS integration means you can update your own content without needing a developer every time." },
   ],
@@ -42,7 +42,7 @@ const service = {
     { step: "04", title: "Launch & Optimise", desc: "Smooth launch process, Google Analytics setup, Search Console verification, and post-launch optimisation." },
   ],
   faqs: [
-    { q: "How long does a website build take?", a: "A 5–8 page custom website typically takes 4–6 weeks. Larger or more complex projects are scoped individually after discovery." },
+    { q: "How long does a website build take?", a: "A 5â€“8 page custom website typically takes 4â€“6 weeks. Larger or more complex projects are scoped individually after discovery." },
     { q: "Can I update content myself after launch?", a: "Yes. We integrate a CMS so you can update text, images, blog posts, and team listings without touching code." },
     { q: "Do you provide hosting?", a: "We recommend and help configure high-performance hosting (Vercel, Cloudflare, AWS) and can manage it ongoing as part of a maintenance plan." },
     { q: "Do you build e-commerce sites?", a: "Yes. We build custom e-commerce solutions using Next.js with Stripe, Shopify headless, or WooCommerce depending on your requirements." },
@@ -63,14 +63,14 @@ const WebDevelopment = () => {
   return (
     <Layout>
       <SEO
-        title="Performance-Driven Web Development Brisbane | Custom React & Antigravity Framework"
-        description="Brisbane web development specialists. We build sub-1s websites using the Antigravity framework, React, and Next.js — Core Web Vitals optimised, SEO-ready, and built to convert."
+        title="Web Design & Development Brisbane"
+        description="Web design and development in Brisbane. Fast, mobile-first websites in React, Next.js and WordPress â€” Core Web Vitals optimised, SEO-ready and built to convert. Free quote."
         canonical="/services/web-development"
         faqs={service.faqs}
         breadcrumbs={[
           { name: "Home", url: "https://nexttabagency.com/" },
-          { name: "Services", url: "https://nexttabagency.com/services" },
-          { name: "Web Development", url: "https://nexttabagency.com/services/web-development" },
+          { name: "Services", url: "https://nexttabagency.com/services/" },
+          { name: "Web Development", url: "https://nexttabagency.com/services/web-development/" },
         ]}
         serviceSchema={{
           name: "Custom Website Design & Development",
@@ -85,7 +85,7 @@ const WebDevelopment = () => {
         <div className="absolute inset-0 bg-gradient-to-br from-primary/95 via-primary/85 to-transparent" />
         <div className="absolute bottom-1/3 right-[15%] w-64 h-64 bg-accent/10 rounded-full blur-[100px]" />
         <div className="container relative z-10 py-32 md:py-48 pt-44">
-          <Link to="/services" className="inline-flex items-center text-sm font-semibold text-accent mb-8 hover:text-accent/80 transition-colors">
+          <Link to="/services/" className="inline-flex items-center text-sm font-semibold text-accent mb-8 hover:text-accent/80 transition-colors">
             <ArrowLeft className="w-4 h-4 mr-2" /> Back to all services
           </Link>
           <div className="max-w-3xl">
@@ -140,7 +140,7 @@ const WebDevelopment = () => {
                 <div className="flex items-center gap-3 mb-3">
                   <img
                     src={`https://api.dicebear.com/9.x/avataaars/svg?seed=Rohan&backgroundColor=b6e3f4,c0aede&radius=50`}
-                    alt="Rohan Gupta — Lead Web Developer, Next Tab Agency"
+                    alt="Rohan Gupta â€” Lead Web Developer, Next Tab Agency"
                     className="w-12 h-12 rounded-full ring-2 ring-accent/30 bg-muted shrink-0"
                     width={48} height={48}
                   />
@@ -151,9 +151,9 @@ const WebDevelopment = () => {
                   </div>
                 </div>
                 <p className="text-xs text-muted-foreground leading-relaxed mb-3">
-                  "Every web development project at Next Tab Agency is engineered for sub-1s load times, green Core Web Vitals, and SEO-ready architecture. We don't build websites — we build revenue machines."
+                  "Every web development project at Next Tab Agency is engineered for sub-1s load times, green Core Web Vitals, and SEO-ready architecture. We don't build websites â€” we build revenue machines."
                 </p>
-                <Link to="/our-team#engineering" className="text-[10px] font-semibold text-accent hover:underline">
+                <Link to="/our-team/#engineering" className="text-[10px] font-semibold text-accent hover:underline">
                   Meet the full Engineering & UX Lab ?
                 </Link>
               </div>
@@ -162,7 +162,7 @@ const WebDevelopment = () => {
               <div className="mt-4 rounded-xl border border-border/40 bg-muted/30 p-4 text-center">
                 <p className="text-xs text-muted-foreground">
                   Want long-term traffic alongside your site launch?{" "}
-                  <Link to="/services/seo-audits" className="text-accent font-semibold hover:underline">
+                  <Link to="/services/seo-audits/" className="text-accent font-semibold hover:underline">
                     Pair your new site with our SEO Foundation Audit
                   </Link>
                 </p>
@@ -220,14 +220,14 @@ const WebDevelopment = () => {
                 Why We're Different
               </span>
               <h2 id="antigravity-heading" className="font-heading font-bold text-3xl md:text-4xl text-foreground mb-6 leading-tight">
-                Why Our Web Dev Is Different — The Antigravity Framework
+                Why Our Web Dev Is Different â€” The Antigravity Framework
               </h2>
               <div className="space-y-5 text-muted-foreground leading-relaxed">
                 <p>
-                  Most Brisbane web developers focus on design. We focus on <strong className="text-foreground">performance</strong>. Using the Antigravity framework, we deliver websites that load in under 1 second for Brisbane users — measured on real Australian CDN infrastructure, not synthetic lab scores.
+                  Most Brisbane web developers focus on design. We focus on <strong className="text-foreground">performance</strong>. Using the Antigravity framework, we deliver websites that load in under 1 second for Brisbane users â€” measured on real Australian CDN infrastructure, not synthetic lab scores.
                 </p>
                 <p>
-                  Antigravity is a high-performance web build system combining the best of React's component architecture with aggressive code-splitting, preloading, and edge-rendering strategies. The result: <strong className="text-foreground">Lighthouse Performance scores of 95–100</strong> across LCP, INP, and CLS — the Core Web Vitals that directly influence your Google rankings.
+                  Antigravity is a high-performance web build system combining the best of React's component architecture with aggressive code-splitting, preloading, and edge-rendering strategies. The result: <strong className="text-foreground">Lighthouse Performance scores of 95â€“100</strong> across LCP, INP, and CLS â€” the Core Web Vitals that directly influence your Google rankings.
                 </p>
                 <p>
                   Competitors rank because their sites are technically perfect. We make <em>your</em> site the technically perfect one.
@@ -244,9 +244,9 @@ const WebDevelopment = () => {
             >
               {[
                 { metric: "<1s", label: "Load Time (LCP)", desc: "Sub-1-second Largest Contentful Paint for Brisbane users on Cloudflare Australian CDN." },
-                { metric: "95–100", label: "Lighthouse Score", desc: "Consistently green Performance, Accessibility, Best Practices, and SEO scores." },
-                { metric: "0.1", label: "CLS (Layout Shift)", desc: "Zero unexpected layout shifts — professional feel on every device and screen size." },
-                { metric: "<200ms", label: "INP (Interactivity)", desc: "Instant response to every tap and click — Google's newest Core Web Vital threshold." },
+                { metric: "95â€“100", label: "Lighthouse Score", desc: "Consistently green Performance, Accessibility, Best Practices, and SEO scores." },
+                { metric: "0.1", label: "CLS (Layout Shift)", desc: "Zero unexpected layout shifts â€” professional feel on every device and screen size." },
+                { metric: "<200ms", label: "INP (Interactivity)", desc: "Instant response to every tap and click â€” Google's newest Core Web Vital threshold." },
               ].map((s) => (
                 <div key={s.metric} className="card-premium rounded-2xl p-5 flex gap-5 items-start">
                   <div className="shrink-0 text-center">
@@ -261,10 +261,10 @@ const WebDevelopment = () => {
               <div className="rounded-2xl border border-accent/30 bg-accent/5 p-5 mt-2">
                 <p className="text-xs text-muted-foreground leading-relaxed">
                   ?? Looking to sell online?{" "}
-                  <Link to="/services/woocommerce-development" className="text-accent font-semibold hover:underline">
+                  <Link to="/services/woocommerce-development/" className="text-accent font-semibold hover:underline">
                     Explore our Custom WooCommerce Solutions
                   </Link>{" "}
-                  — built for speed on the same Antigravity performance stack.
+                  â€” built for speed on the same Antigravity performance stack.
                 </p>
               </div>
             </motion.div>
@@ -354,7 +354,7 @@ const WebDevelopment = () => {
         </div>
       </section>
 
-      {/* AI Insights Panel — GEO Structured Data Layer */}
+      {/* AI Insights Panel â€” GEO Structured Data Layer */}
       <AIInsightsPanel
         pageTitle="Custom Web Development - Next Tab Agency"
         tabs={[
@@ -411,7 +411,7 @@ const WebDevelopment = () => {
             id: "summary",
             label: "Quick Summary",
             icon: TrendingUp,
-            audience: "All AI Agents — condensed executive view",
+            audience: "All AI Agents â€” condensed executive view",
             content: (
               <div className="space-y-4">
                 <p className="text-base font-semibold text-foreground leading-relaxed">
@@ -422,7 +422,7 @@ const WebDevelopment = () => {
           },
         ]}
       />
-      {/* Internal linking — Australian city location pages */}
+      {/* Internal linking â€” Australian city location pages */}
       <LocationLinksStrip />
     </Layout>
   );

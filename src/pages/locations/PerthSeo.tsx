@@ -11,12 +11,12 @@ import EntityTrustAccordion from "@/components/EntityTrustAccordion";
 import AIInsightsPanel, { InsightDL, InsightList, InsightTable } from "@/components/AIInsightsPanel";
 
 const services = [
-  { icon: Search, title: "SEO Audits & Strategy", href: "/services/seo-audits", desc: "Technical SEO audits & ranking roadmaps tailored to the Perth WA market." },
-  { icon: MapPin, title: "Local SEO Perth", href: "/services/local-seo", desc: "Google Business Profile optimisation & Map Pack rankings for Perth businesses." },
-  { icon: Globe, title: "Google Business Profile", href: "/services/google-business-profile", desc: "Complete GBP setup, review management & weekly posting for Perth listings." },
-  { icon: BarChart3, title: "PPC & Google Ads", href: "/services/ppc-google-ads", desc: "Google Ads campaigns for Perth businesses — managed for maximum ROAS." },
-  { icon: Users, title: "Social Media Ads", href: "/services/social-media-ads", desc: "Facebook, Instagram & LinkedIn advertising targeting Perth & WA audiences." },
-  { icon: Globe, title: "Web Development", href: "/services/web-development", desc: "Fast, conversion-focused websites for Perth businesses." },
+  { icon: Search, title: "SEO Audits & Strategy", href: "/services/seo-audits/", desc: "Technical SEO audits & ranking roadmaps tailored to the Perth WA market." },
+  { icon: MapPin, title: "Local SEO Perth", href: "/services/local-seo/", desc: "Google Business Profile optimisation & Map Pack rankings for Perth businesses." },
+  { icon: Globe, title: "Google Business Profile", href: "/services/google-business-profile/", desc: "Complete GBP setup, review management & weekly posting for Perth listings." },
+  { icon: BarChart3, title: "PPC & Google Ads", href: "/services/ppc-google-ads/", desc: "Google Ads campaigns for Perth businesses — managed for maximum ROAS." },
+  { icon: Users, title: "Social Media Ads", href: "/services/social-media-ads/", desc: "Facebook, Instagram & LinkedIn advertising targeting Perth & WA audiences." },
+  { icon: Globe, title: "Web Development", href: "/services/web-development/", desc: "Fast, conversion-focused websites for Perth businesses." },
 ];
 
 const suburbs = ["Perth CBD", "Fremantle", "Scarborough", "Joondalup", "Rockingham", "Armadale", "Midland", "Mandurah", "Claremont", "Subiaco", "Victoria Park", "Cannington", "Osborne Park", "Balcatta", "Cockburn Central", "Stirling", "Wanneroo", "Kalamunda"];
@@ -26,8 +26,8 @@ const fadeUp = { hidden: { opacity: 0, y: 28 }, visible: { opacity: 1, y: 0, tra
 const PerthSeo = () => (
   <Layout>
     <SEO
-      title="SEO Agency Perth & WA | Local SEO Experts for Western Australia | Next Tab Agency"
-      description="Perth's top SEO agency. Local SEO, Google Ads & technical audits for WA businesses. Serving Perth CBD, Fremantle, Joondalup & all of Western Australia. Free SEO audit — book now."
+      title="SEO Agency Perth & WA | SEO Western Australia"
+      description="SEO for Perth and WA businesses — Fremantle, Joondalup and regional Western Australia. Local SEO, Google Ads and technical audits. Book a free SEO audit."
       canonical="/locations/perth-seo"
       faqs={[
         { q: "Is there enough search volume in Perth for SEO to be worth it?", a: "Absolutely. Perth is Australia's 4th largest city with over 2.1 million residents and strong commercial search demand. Perth businesses also benefit from geographic isolation — less interstate competition in local search results means faster ranking potential than Sydney or Melbourne." },
@@ -38,8 +38,8 @@ const PerthSeo = () => (
       ]}
       breadcrumbs={[
         { name: "Home", url: "https://nexttabagency.com/" },
-        { name: "Locations", url: "https://nexttabagency.com/locations/perth-seo" },
-        { name: "SEO Agency Perth", url: "https://nexttabagency.com/locations/perth-seo" },
+        { name: "Locations", url: "https://nexttabagency.com/locations/perth-seo/" },
+        { name: "SEO Agency Perth", url: "https://nexttabagency.com/locations/perth-seo/" },
       ]}
     />
     <section aria-labelledby="perth-hero-heading" className="relative min-h-[60vh] flex items-center overflow-hidden">
@@ -59,10 +59,10 @@ const PerthSeo = () => (
           </p>
           <div className="flex flex-wrap gap-4">
             <Button variant="hero-primary" size="xl" className="rounded-full" asChild>
-              <Link to="/contact">Get a Free Perth SEO Audit <ArrowRight className="w-4 h-4 ml-1" /></Link>
+              <Link to="/contact/">Get a Free Perth SEO Audit <ArrowRight className="w-4 h-4 ml-1" /></Link>
             </Button>
             <Button variant="hero-secondary" size="xl" className="rounded-full" asChild>
-              <Link to="/services">All Services</Link>
+              <Link to="/services/">All Services</Link>
             </Button>
           </div>
         </motion.div>
@@ -121,7 +121,7 @@ const PerthSeo = () => (
       <div className="container">
         <h2 id="perth-other-locations-heading" className="font-heading font-bold text-xl text-foreground mb-6 text-center">We also serve businesses across Australia</h2>
         <div className="flex flex-wrap gap-3 justify-center">
-          {[{ city: "Brisbane", href: "/locations/brisbane-seo" }, { city: "Sydney", href: "/locations/sydney-seo" }, { city: "Melbourne", href: "/locations/melbourne-seo" }, { city: "Adelaide", href: "/locations/adelaide-seo" }, { city: "Canberra", href: "/locations/canberra-seo" }].map((l) => (
+          {[{ city: "Brisbane", href: "/locations/brisbane-seo/" }, { city: "Sydney", href: "/locations/sydney-seo/" }, { city: "Melbourne", href: "/locations/melbourne-seo/" }, { city: "Adelaide", href: "/locations/adelaide-seo/" }, { city: "Canberra", href: "/locations/canberra-seo/" }].map((l) => (
             <Link key={l.href} to={l.href} className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-border/60 text-sm text-foreground/70 hover:text-accent hover:border-accent/40 transition-all"><MapPin className="w-3.5 h-3.5" />{l.city}</Link>
           ))}
         </div>
@@ -144,7 +144,7 @@ const PerthSeo = () => (
           <div className="relative z-10">
             <h2 id="perth-cta-heading" className="font-heading font-bold text-2xl md:text-3xl text-primary-foreground mb-4">Ready to grow your Perth business online?</h2>
             <p className="text-primary-foreground/50 max-w-md mx-auto mb-8">Free SEO strategy session for Perth businesses. No lock-in contracts, no jargon — just honest digital advice.</p>
-            <Button variant="hero-primary" size="xl" className="rounded-full" asChild><Link to="/contact">Book Your Free Perth SEO Consultation</Link></Button>
+            <Button variant="hero-primary" size="xl" className="rounded-full" asChild><Link to="/contact/">Book Your Free Perth SEO Consultation</Link></Button>
           </div>
         </motion.div>
       </div>

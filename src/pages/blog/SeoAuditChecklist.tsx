@@ -7,7 +7,7 @@ import BlogPostLayout, {
 const schema = {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://nexttabagency.com/blog/seo-audit-checklist" },
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://nexttabagency.com/blog/seo-audit-checklist/" },
   "headline": "The 10-Point SEO Audit: Why Your Website Isn't Ranking on Page 1",
   "description": "You have a beautiful website, but zero traffic. It's like owning a Ferrari with no engine. Here is a 10-point checklist to diagnose every hidden SEO problem costing you rankings.",
   "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2070",
@@ -85,6 +85,7 @@ const auditItems = [
 const SeoAuditChecklist = () => (
   <>
     <Helmet>
+      <link rel="canonical" href="https://nexttabagency.com/blog/seo-audit-checklist/" />
       <title>The 10-Point SEO Audit: Why Your Website Isn't Ranking on Page 1 | Next Tab Agency</title>
       <meta name="description" content="You have a beautiful website, but zero traffic. It's like owning a Ferrari with no engine. Here is a 10-point checklist to find every hidden SEO problem costing you rankings." />
       <script type="application/ld+json">{JSON.stringify(faqSchema)}</script>
@@ -123,7 +124,7 @@ const SeoAuditChecklist = () => (
 
       <SectionH2>The 10-Point SEO Audit Checklist</SectionH2>
       <p className="mb-8 text-lg leading-relaxed text-muted-foreground">
-        Work through each of these 10 areas. If you tick every box, your technical SEO is solid. If you don't, each unchecked item is a ranking opportunity you are leaving on the table. Need a professional to do this for you? <Link to="/services/seo-audits" className="font-semibold text-accent hover:underline">Book a professional SEO audit</Link> and we'll handle everything.
+        Work through each of these 10 areas. If you tick every box, your technical SEO is solid. If you don't, each unchecked item is a ranking opportunity you are leaving on the table. Need a professional to do this for you? <Link to="/services/seo-audits/" className="font-semibold text-accent hover:underline">Book a professional SEO audit</Link> and we'll handle everything.
       </p>
 
       <div className="space-y-4 my-8">
@@ -164,7 +165,7 @@ const SeoAuditChecklist = () => (
           <ChecklistItem>My XML sitemap is submitted to Google</ChecklistItem>
         </ul>
         <div className="mt-5 p-4 rounded-xl bg-accent/5 border border-accent/20 text-sm text-muted-foreground">
-          <strong className="text-foreground">Score 0–4?</strong> Your website has critical SEO issues. <Link to="/services/seo-audits" className="font-semibold text-accent hover:underline">Book an audit now</Link> before you lose more ground to competitors.
+          <strong className="text-foreground">Score 0–4?</strong> Your website has critical SEO issues. <Link to="/services/seo-audits/" className="font-semibold text-accent hover:underline">Book an audit now</Link> before you lose more ground to competitors.
         </div>
       </div>
 

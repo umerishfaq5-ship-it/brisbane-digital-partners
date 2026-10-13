@@ -21,6 +21,7 @@ const schema = {
 const ShopifyVsWooCommerceSeo = () => (
   <>
     <Helmet>
+      <link rel="canonical" href="https://nexttabagency.com/blog/shopify-vs-woocommerce-seo/" />
       <title>Shopify vs WooCommerce SEO | Brisbane Digital Partners</title>
       <meta name="description" content="Confused between Shopify and WooCommerce? Discover which platform provides better Technical SEO and site speed for Australian E-commerce stores." />
     </Helmet>
@@ -54,7 +55,7 @@ const ShopifyVsWooCommerceSeo = () => (
       <SectionH2>The Case for Shopify SEO</SectionH2>
 
       <p className="mb-6 text-lg leading-relaxed text-muted-foreground">
-        <Link to="/services/shopify-development" className="font-semibold underline text-accent hover:text-accent/80">Shopify</Link> is a hosted solution, which means they handle the servers, the security, and the CDN. This is fantastic for out-of-the-box site speed—a major Google ranking factor. 
+        <Link to="/services/shopify-development/" className="font-semibold underline text-accent hover:text-accent/80">Shopify</Link> is a hosted solution, which means they handle the servers, the security, and the CDN. This is fantastic for out-of-the-box site speed—a major Google ranking factor. 
       </p>
 
       <ul className="mb-8 space-y-2">
@@ -70,7 +71,7 @@ const ShopifyVsWooCommerceSeo = () => (
       <SectionH2>The Case for WooCommerce SEO</SectionH2>
 
       <p className="mb-6 text-lg leading-relaxed text-muted-foreground">
-        <Link to="/services/woocommerce-development" className="font-semibold underline text-accent hover:text-accent/80">WooCommerce</Link> is built on WordPress, giving you 100% control over every single byte of code. For Technical SEO purists, this is the holy grail.
+        <Link to="/services/woocommerce-development/" className="font-semibold underline text-accent hover:text-accent/80">WooCommerce</Link> is built on WordPress, giving you 100% control over every single byte of code. For Technical SEO purists, this is the holy grail.
       </p>
 
       <ul className="mb-8 space-y-2">
@@ -80,7 +81,7 @@ const ShopifyVsWooCommerceSeo = () => (
       </ul>
 
       <p className="mb-6 text-lg leading-relaxed text-muted-foreground">
-        The downside? If you don't invest in premium, Australian-based <Link to="/services/speed-optimization" className="font-semibold underline text-accent hover:text-accent/80">Speed Optimization</Link> and hosting, WooCommerce can become incredibly slow, instantly killing your rankings.
+        The downside? If you don't invest in premium, Australian-based <Link to="/services/speed-optimization/" className="font-semibold underline text-accent hover:text-accent/80">Speed Optimization</Link> and hosting, WooCommerce can become incredibly slow, instantly killing your rankings.
       </p>
 
       <Blockquote 
@@ -95,7 +96,7 @@ const ShopifyVsWooCommerceSeo = () => (
       </p>
 
       <ActionItem>
-        <strong>Avoid Migration Disasters:</strong> Are you planning to move from one platform to another? Migrations are notorious for destroying organic traffic if not handled correctly. Request a <Link to="/services/seo-audits" className="font-semibold underline text-accent hover:text-accent/80">Free E-commerce Technical Audit</Link> before you touch any code.
+        <strong>Avoid Migration Disasters:</strong> Are you planning to move from one platform to another? Migrations are notorious for destroying organic traffic if not handled correctly. Request a <Link to="/services/seo-audits/" className="font-semibold underline text-accent hover:text-accent/80">Free E-commerce Technical Audit</Link> before you touch any code.
       </ActionItem>
 
     </BlogPostLayout>

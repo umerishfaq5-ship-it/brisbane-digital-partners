@@ -7,7 +7,7 @@ import BlogPostLayout, {
 const schema = {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://nexttabagency.com/blog/what-are-backlinks" },
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://nexttabagency.com/blog/what-are-backlinks/" },
   "headline": "Ethical Backlink Strategies for Australian Domain Authority",
   "description": "Why do some Australian websites rank higher with less content? Domain authority — built through ethical backlinks. Learn how to build genuine authority without risking a Google penalty.",
   "image": "https://images.unsplash.com/photo-1606761568499-6d2451b23c66?q=80&w=2074",
@@ -33,6 +33,7 @@ const faqSchema = {
 const WhatAreBacklinks = () => (
   <>
     <Helmet>
+      <link rel="canonical" href="https://nexttabagency.com/blog/what-are-backlinks/" />
       <title>Ethical Backlink Strategies for Australian Domain Authority | Next Tab Agency</title>
       <meta name="description" content="Why do some Australian websites rank higher with less content? Domain authority — built through ethical backlinks. Learn how to build genuine authority without risking a Google penalty." />
       <script type="application/ld+json">{JSON.stringify(faqSchema)}</script>
@@ -61,7 +62,7 @@ const WhatAreBacklinks = () => (
         <p className="text-base font-semibold text-foreground mb-1">⚠️ Important: Fix Your Foundation First</p>
         <p className="text-sm text-muted-foreground leading-relaxed">
           If you have a slow site, backlinks won't work. Slow pages signal low quality to Google, and no amount of links will overcome a poor technical foundation. Start with an{" "}
-          <Link to="/services/seo-audits" className="text-accent font-semibold underline decoration-accent/40 hover:decoration-accent transition-colors">SEO Audit</Link>{" "}
+          <Link to="/services/seo-audits/" className="text-accent font-semibold underline decoration-accent/40 hover:decoration-accent transition-colors">SEO Audit</Link>{" "}
           first — then build your authority on solid ground.
         </p>
       </div>
@@ -138,7 +139,7 @@ const WhatAreBacklinks = () => (
 
       <ActionItem>
         <p>
-          Search Google for <strong>"[your city] business directory"</strong> and submit your business to the top 10 free, reputable local directories. This is the fastest legitimate way to start building your backlink profile. For a comprehensive strategy, check out our <Link to="/services/seo-audits" className="font-semibold text-accent hover:underline">SEO Strategy service</Link> — we build your authority plan from the ground up.
+          Search Google for <strong>"[your city] business directory"</strong> and submit your business to the top 10 free, reputable local directories. This is the fastest legitimate way to start building your backlink profile. For a comprehensive strategy, check out our <Link to="/services/seo-audits/" className="font-semibold text-accent hover:underline">SEO Strategy service</Link> — we build your authority plan from the ground up.
         </p>
       </ActionItem>
 

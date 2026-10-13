@@ -40,8 +40,6 @@ const routes = [
   '/services/facebook-ads',
   '/services/email-marketing',
   '/services/conversion-rate-optimisation',
-  '/services/ppc-brisbane',
-  '/services/google-ads-brisbane',
   // Web & App Development
   '/services/mobile-apps',
   '/services/web-development',
@@ -69,7 +67,6 @@ const routes = [
   '/industry/mortgage-broker-seo',
   '/industry/education-seo',
   '/industry/ndis-digital-marketing',
-  '/industry/tradie-digital-marketing',
   '/industry/saas-seo',
   // Location Pages
   '/locations/brisbane-seo',
@@ -113,6 +110,10 @@ const routes = [
   '/blog/ai-search-sge-australia',
   '/blog/seo-vs-google-ads-cost',
   '/blog/shopify-vs-woocommerce-seo',
+  '/blog/website-cost-brisbane',
+  '/blog/choose-digital-marketing-agency-brisbane',
+  // Unknown route -> NotFound component, saved as dist/404.html (real 404 page)
+  '/__not-found',
   // Hamza Invoice (private, not indexed — still prerendered for app shell)
   '/hamza',
   '/hamza/records',
@@ -262,7 +263,9 @@ async function runPrerender() {
     const isIndex = route === '/';
     const filePath = isIndex
       ? path.join(distDir, 'index.html')
-      : path.join(distDir, route, 'index.html');
+      : route === '/__not-found'
+        ? path.join(distDir, '404.html')
+        : path.join(distDir, route, 'index.html');
 
     const fileDir = path.dirname(filePath);
     if (!fs.existsSync(fileDir)) fs.mkdirSync(fileDir, { recursive: true });
@@ -274,7 +277,8 @@ async function runPrerender() {
   await browser.close();
   server.close();
 
-  if (fs.existsSync(templateIndex)) fs.unlinkSync(templateIndex);
+  // Keep the bare SPA shell for client-only routes (/hamza/invoice/:id) — see .htaccess
+  if (fs.existsSync(templateIndex)) fs.renameSync(templateIndex, path.join(distDir, '_spa.html'));
 
   console.log('\nâœ… Prerendering complete!');
   console.log(`   Total routes: ${routes.length}`);

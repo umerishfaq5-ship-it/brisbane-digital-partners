@@ -60,14 +60,14 @@ const LocalSeo = () => {
   return (
     <Layout>
       <SEO
-        title="Local SEO Services for Australian Businesses"
-        description="Local SEO services based in Brisbane. Drive traffic and Map Pack rankings for your trade, hospitality or professional service business."
+        title="Local SEO Brisbane | Google Maps Rankings"
+        description="Get into the Google Map Pack in Brisbane, Logan and SE Queensland. Google Business Profile optimisation, citations, reviews and suburb pages. Free local SEO audit."
         canonical="/services/local-seo"
         faqs={service.faqs}
         breadcrumbs={[
           { name: "Home", url: "https://nexttabagency.com/" },
-          { name: "Services", url: "https://nexttabagency.com/services" },
-          { name: "Local SEO", url: "https://nexttabagency.com/services/local-seo" },
+          { name: "Services", url: "https://nexttabagency.com/services/" },
+          { name: "Local SEO", url: "https://nexttabagency.com/services/local-seo/" },
         ]}
         serviceSchema={{
           name: "Local SEO for Australian Businesses",
@@ -82,7 +82,7 @@ const LocalSeo = () => {
         <div className="absolute inset-0 bg-gradient-to-br from-primary/95 via-primary/85 to-transparent" />
         <div className="absolute bottom-1/3 right-[15%] w-64 h-64 bg-accent/10 rounded-full blur-[100px]" />
         <div className="container relative z-10 py-32 md:py-48 pt-44">
-          <Link to="/services" className="inline-flex items-center text-sm font-semibold text-accent mb-8 hover:text-accent/80 transition-colors">
+          <Link to="/services/" className="inline-flex items-center text-sm font-semibold text-accent mb-8 hover:text-accent/80 transition-colors">
             <ArrowLeft className="w-4 h-4 mr-2" /> Back to all services
           </Link>
           <div className="max-w-3xl">
@@ -136,7 +136,7 @@ const LocalSeo = () => {
                 <p className="text-xs text-muted-foreground leading-relaxed">
                   📍 Based in Brisbane?{" "}
                   <Link
-                    to="/locations/brisbane-seo"
+                    to="/locations/brisbane-seo/"
                     className="text-accent font-semibold hover:underline"
                   >
                     See our dedicated Brisbane SEO service page

@@ -91,13 +91,13 @@ const fadeUp = {
 const PpcAds = () => (
   <Layout>
     <SEO
-      title="PPC Agency Brisbane | Google Ads Management That Delivers ROI | Next Tab Agency"
-      description="Brisbane's certified PPC agency. We manage Google Search, Shopping & Display Ads with avg 4.2× ROAS. No lock-in contracts. Free account audit — call 0470 400 743 or book online."
+      title="Google Ads & PPC Agency Brisbane"
+      description="Google Ads management for Brisbane businesses: Search, Shopping, Maps and Local Services Ads with full call tracking. No lock-in contracts. Free account audit — 0470 400 743."
       canonical="/services/ppc-google-ads"
       breadcrumbs={[
         { name: "Home", url: "https://nexttabagency.com/" },
-        { name: "Services", url: "https://nexttabagency.com/services" },
-        { name: "PPC Agency Brisbane", url: "https://nexttabagency.com/services/ppc-google-ads" },
+        { name: "Services", url: "https://nexttabagency.com/services/" },
+        { name: "PPC Agency Brisbane", url: "https://nexttabagency.com/services/ppc-google-ads/" },
       ]}
       serviceSchema={{
         name: "PPC Agency Brisbane — Google Ads Management",
@@ -134,10 +134,10 @@ const PpcAds = () => (
           </p>
           <div className="flex flex-wrap gap-4">
             <Button variant="hero-primary" size="xl" className="rounded-full" asChild>
-              <Link to="/contact">Get a Free PPC Audit <ArrowRight className="w-4 h-4 ml-1" /></Link>
+              <Link to="/contact/">Get a Free PPC Audit <ArrowRight className="w-4 h-4 ml-1" /></Link>
             </Button>
             <Button variant="hero-secondary" size="xl" className="rounded-full" asChild>
-              <Link to="/services">All Services</Link>
+              <Link to="/services/">All Services</Link>
             </Button>
           </div>
         </motion.div>
@@ -286,9 +286,9 @@ const PpcAds = () => (
         <h2 id="ppc-related-heading" className="font-heading font-bold text-2xl text-foreground mb-8 text-center">Pair PPC with organic growth</h2>
         <div className="grid sm:grid-cols-3 gap-5 max-w-3xl mx-auto">
           {[
-            { label: "Social Media Ads", href: "/services/social-media-ads", desc: "Extend your reach to social channels alongside search." },
-            { label: "SEO Audits & Strategy", href: "/services/seo-audits", desc: "Ads provide traffic, SEO provides long-term growth — combine both for compounding ROI." },
-            { label: "Google Business Profile", href: "/services/google-business-profile", desc: "Maximise local map pack presence alongside search ads." },
+            { label: "Social Media Ads", href: "/services/social-media-ads/", desc: "Extend your reach to social channels alongside search." },
+            { label: "SEO Audits & Strategy", href: "/services/seo-audits/", desc: "Ads provide traffic, SEO provides long-term growth — combine both for compounding ROI." },
+            { label: "Google Business Profile", href: "/services/google-business-profile/", desc: "Maximise local map pack presence alongside search ads." },
           ].map((item) => (
             <Link key={item.href} to={item.href} className="group card-premium rounded-2xl p-6 block">
               <p className="font-heading font-semibold text-foreground group-hover:text-accent transition-colors mb-1">{item.label}</p>
@@ -318,7 +318,7 @@ const PpcAds = () => (
               Get a free, no-obligation audit of your Google Ads account. We'll show you exactly where your budget is being wasted and how to fix it.
             </p>
             <Button variant="hero-primary" size="xl" className="rounded-full" asChild>
-              <Link to="/contact">Book Your Free PPC Audit</Link>
+              <Link to="/contact/">Book Your Free PPC Audit</Link>
             </Button>
           </div>
         </motion.div>
@@ -330,13 +330,11 @@ const PpcAds = () => (
         <p className="text-xs font-bold uppercase tracking-[0.2em] text-accent mb-6 text-center">Related Services</p>
         <div className="flex flex-wrap gap-3 justify-center">
           {[
-            { label: "PPC Agency Brisbane", href: "/services/ppc-brisbane" },
-            { label: "Google Ads Brisbane", href: "/services/google-ads-brisbane" },
-            { label: "Facebook & Meta Ads", href: "/services/facebook-ads" },
-            { label: "LinkedIn Advertising", href: "/services/linkedin-ads" },
-            { label: "Social Media Ads", href: "/services/social-media-ads" },
-            { label: "CRO — Turn Clicks Into Leads", href: "/services/conversion-rate-optimisation" },
-            { label: "SEO Brisbane", href: "/locations/brisbane-seo" },
+            { label: "Facebook & Meta Ads", href: "/services/facebook-ads/" },
+            { label: "LinkedIn Advertising", href: "/services/linkedin-ads/" },
+            { label: "Social Media Ads", href: "/services/social-media-ads/" },
+            { label: "CRO — Turn Clicks Into Leads", href: "/services/conversion-rate-optimisation/" },
+            { label: "SEO Brisbane", href: "/locations/brisbane-seo/" },
           ].map((s) => (
             <Link key={s.href} to={s.href}
               className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full border border-border bg-card text-sm font-semibold text-foreground hover:border-accent hover:text-accent transition-colors">

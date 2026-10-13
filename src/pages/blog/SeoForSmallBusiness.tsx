@@ -7,7 +7,7 @@ import BlogPostLayout, {
 const schema = {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://nexttabagency.com/blog/seo-for-small-business-zero-time" },
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://nexttabagency.com/blog/seo-for-small-business-zero-time/" },
   "headline": "SEO for Small Business Owners: Where to Start When You Have Zero Time",
   "description": "Busy running your business? Here is the 'Minimum Viable SEO' plan for small business owners to rank on Google without wasting 40 hours a week.",
   "image": "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?q=80&w=2070",
@@ -32,6 +32,7 @@ const faqSchema = {
 const SeoForSmallBusiness = () => (
   <>
     <Helmet>
+      <link rel="canonical" href="https://nexttabagency.com/blog/seo-for-small-business-zero-time/" />
       <title>SEO for Small Business Owners: Where to Start When You Have Zero Time | Next Tab Agency</title>
       <meta name="description" content="Busy running your business? Here is the 'Minimum Viable SEO' plan for small business owners to rank on Google without wasting 40 hours a week." />
       <script type="application/ld+json">{JSON.stringify(faqSchema)}</script>
@@ -91,7 +92,7 @@ const SeoForSmallBusiness = () => (
       />
 
       <ActionItem>
-        <p>Write down your top 5 Money Keywords right now using this template: <strong>[Your Exact Service] + [Your Suburb/City]</strong>. Make sure your homepage title tag includes your #1 Money Keyword. Not sure if you've got it right? Our <Link to="/services/seo-audits" className="font-semibold text-accent hover:underline">SEO Audit</Link> maps this out for you professionally.</p>
+        <p>Write down your top 5 Money Keywords right now using this template: <strong>[Your Exact Service] + [Your Suburb/City]</strong>. Make sure your homepage title tag includes your #1 Money Keyword. Not sure if you've got it right? Our <Link to="/services/seo-audits/" className="font-semibold text-accent hover:underline">SEO Audit</Link> maps this out for you professionally.</p>
       </ActionItem>
 
       <InlineImage
@@ -123,7 +124,7 @@ const SeoForSmallBusiness = () => (
         ))}
       </div>
       <ActionItem>
-        <p>Grab your phone right now. Open your website. Can you see your phone number without scrolling? Is it immediately clear what you do and where? If you need a site built correctly from scratch, our <Link to="/services/web-development" className="font-semibold text-accent hover:underline">Web Development</Link> team builds sites engineered for SEO performance from day one.</p>
+        <p>Grab your phone right now. Open your website. Can you see your phone number without scrolling? Is it immediately clear what you do and where? If you need a site built correctly from scratch, our <Link to="/services/web-development/" className="font-semibold text-accent hover:underline">Web Development</Link> team builds sites engineered for SEO performance from day one.</p>
       </ActionItem>
 
       {/* Step 3 */}
@@ -166,7 +167,7 @@ const SeoForSmallBusiness = () => (
       {/* Step 4 */}
       <StepBadge n={4} title="The Review Engine" />
       <p className="mb-6 text-lg leading-relaxed text-muted-foreground">
-        Reviews are the single most powerful signal for <Link to="/services/local-seo" className="font-semibold text-accent hover:underline">Local SEO</Link>. They tell Google you are a real, trusted, active business. They tell potential customers the same thing.
+        Reviews are the single most powerful signal for <Link to="/services/local-seo/" className="font-semibold text-accent hover:underline">Local SEO</Link>. They tell Google you are a real, trusted, active business. They tell potential customers the same thing.
       </p>
       <p className="mb-6 text-lg leading-relaxed text-muted-foreground">
         According to BrightLocal's 2024 Consumer Review Survey, <strong className="text-foreground">98% of consumers read online reviews for local businesses</strong>, and <strong className="text-foreground">78% trust them as much as personal recommendations</strong> from friends and family.
@@ -175,7 +176,7 @@ const SeoForSmallBusiness = () => (
         The secret is <strong className="text-foreground">consistency</strong>. Getting 52 reviews over a year (one per week) is far better for rankings than getting 100 reviews in January and nothing else. Google rewards ongoing, fresh social proof.
       </p>
       <ActionItem>
-        <p>After your next 5 happy customers leave your shop, call, or appointment — send them a direct link to leave a review on your <Link to="/services/google-business-profile" className="font-semibold text-accent hover:underline">Google Business Profile</Link>. Make it one tap. Remove every possible barrier. Then make this a habit, every single week.</p>
+        <p>After your next 5 happy customers leave your shop, call, or appointment — send them a direct link to leave a review on your <Link to="/services/google-business-profile/" className="font-semibold text-accent hover:underline">Google Business Profile</Link>. Make it one tap. Remove every possible barrier. Then make this a habit, every single week.</p>
       </ActionItem>
 
       {/* FAQ */}

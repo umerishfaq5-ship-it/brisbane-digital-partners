@@ -14,8 +14,8 @@ import LocationLinksStrip from "@/components/LocationLinksStrip";
 const service = {
   title: "SEO for Lawyers",
   headline: "Rank #1 for the Searches That Drive Clients to Your Firm.",
-  description: "Legal searches have the highest CPCs of any industry — and that means the organic rankings are pure gold. We specialise in law firm SEO that drives qualified client enquiries without paying $80+ per click.",
-  longDescription: "Law firm SEO is one of the most competitive and highest-value SEO markets in Australia. Keywords like 'personal injury lawyer Brisbane' or 'family law solicitor Sydney' carry extraordinary commercial intent — searchers are ready to hire. The firms that capture these organic rankings build a client pipeline that compounds year over year, dramatically reducing dependence on expensive Google Ads.",
+  description: "Legal searches have the highest CPCs of any industry â€” and that means the organic rankings are pure gold. We specialise in law firm SEO that drives qualified client enquiries without paying $80+ per click.",
+  longDescription: "Law firm SEO is one of the most competitive and highest-value SEO markets in Australia. Keywords like 'personal injury lawyer Brisbane' or 'family law solicitor Sydney' carry extraordinary commercial intent â€” searchers are ready to hire. The firms that capture these organic rankings build a client pipeline that compounds year over year, dramatically reducing dependence on expensive Google Ads.",
   features: [
     "Law firm technical SEO audit and keyword strategy",
     "Practice area page creation and optimisation",
@@ -45,9 +45,9 @@ const service = {
     { value: "96%", label: "of legal searches click an organic result", source: "BrightEdge" },
   ],
   faqs: [
-    { q: "How long does it take for law firm SEO to work?", a: "Law firm SEO in competitive markets takes 6–12 months to see significant results. However, less competitive practice areas or regional markets can move much faster. We set realistic expectations upfront." },
+    { q: "How long does it take for law firm SEO to work?", a: "Law firm SEO in competitive markets takes 6â€“12 months to see significant results. However, less competitive practice areas or regional markets can move much faster. We set realistic expectations upfront." },
     { q: "Do I need separate pages for each practice area?", a: "Yes. A single 'services' page cannot rank for every practice area simultaneously. Dedicated pages for each practice area and location are essential for competitive rankings." },
-    { q: "Does my law firm need a blog?", a: "Blogging significantly expands your keyword coverage and helps establish E-E-A-T (Expertise, Experience, Authority, Trust) — a critical ranking factor for legal and medical sites. We provide content strategy and briefs." },
+    { q: "Does my law firm need a blog?", a: "Blogging significantly expands your keyword coverage and helps establish E-E-A-T (Expertise, Experience, Authority, Trust) â€” a critical ranking factor for legal and medical sites. We provide content strategy and briefs." },
     { q: "Can you help with Legal Professional Association compliance in content?", a: "Our content follows ethical guidelines and avoids any claims that could violate professional standards. You review all content before it's published." },
   ],
 };
@@ -55,30 +55,30 @@ const service = {
 const SeoForLawyers = () => (
   <Layout>
     <SEO
-      title="SEO for Lawyers Australia — Law Firm SEO That Drives Client Enquiries"
+      title="SEO for Lawyers Australia â€” Law Firm SEO That Drives Client Enquiries"
       description="Specialist law firm SEO for Australian lawyers and solicitors. We rank your practice areas on page 1 of Google to build a consistent pipeline of qualified client enquiries."
       canonical="/industry/seo-for-lawyers"
       faqs={service.faqs}
       breadcrumbs={[
         { name: "Home", url: "https://nexttabagency.com/" },
-        { name: "Industry SEO", url: "https://nexttabagency.com/services" },
-        { name: "SEO for Lawyers", url: "https://nexttabagency.com/industry/seo-for-lawyers" },
+        { name: "Industry SEO", url: "https://nexttabagency.com/services/" },
+        { name: "SEO for Lawyers", url: "https://nexttabagency.com/industry/seo-for-lawyers/" },
       ]}
-      serviceSchema={{ name: "SEO for Lawyers", description: "Specialist law firm SEO for Australian lawyers — practice area pages, local SEO, and E-E-A-T strategy.", areaServed: "Australia" }}
+      serviceSchema={{ name: "SEO for Lawyers", description: "Specialist law firm SEO for Australian lawyers â€” practice area pages, local SEO, and E-E-A-T strategy.", areaServed: "Australia" }}
     />
     <section aria-labelledby="service-hero-heading" className="relative min-h-[60vh] flex items-start overflow-hidden pt-16">
       <img src={heroBg} alt="SEO for Lawyers Australia" className="absolute inset-0 w-full h-full object-cover" width={1920} height={1080} />
       <div className="absolute inset-0 bg-gradient-to-br from-primary/95 via-primary/85 to-transparent" />
       <div className="container relative z-10 py-32 md:py-48 pt-44">
-        <Link to="/services" className="inline-flex items-center text-sm font-semibold text-accent mb-8 hover:text-accent/80 transition-colors"><ArrowLeft className="w-4 h-4 mr-2" /> Back to all services</Link>
+        <Link to="/services/" className="inline-flex items-center text-sm font-semibold text-accent mb-8 hover:text-accent/80 transition-colors"><ArrowLeft className="w-4 h-4 mr-2" /> Back to all services</Link>
         <div className="max-w-3xl">
           <span className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-accent/20 text-accent text-xs font-bold uppercase tracking-widest mb-6"><Scale className="w-3 h-3" /> Industry SEO</span>
           <h1 id="service-hero-heading" className="font-heading font-bold text-4xl md:text-5xl leading-[1.1] text-primary-foreground mb-6">{service.title}</h1>
           <p className="text-xl md:text-2xl text-primary-foreground/80 font-medium leading-snug mb-6">{service.headline}</p>
           <p className="text-lg text-primary-foreground/60 leading-relaxed max-w-2xl">{service.description}</p>
           <div className="flex flex-wrap gap-4 mt-8">
-            <Button variant="accent" size="lg" asChild><Link to="/contact">Get a Free Law Firm SEO Audit</Link></Button>
-            <Button variant="outline" size="lg" className="border-white/30 text-white hover:bg-white/10" asChild><Link to="/services/local-seo">Local SEO</Link></Button>
+            <Button variant="accent" size="lg" asChild><Link to="/contact/">Get a Free Law Firm SEO Audit</Link></Button>
+            <Button variant="outline" size="lg" className="border-white/30 text-white hover:bg-white/10" asChild><Link to="/services/local-seo/">Local SEO</Link></Button>
           </div>
         </div>
       </div>
@@ -98,7 +98,7 @@ const SeoForLawyers = () => (
     <section className="py-20 md:py-28"><div className="container"><LiveTeardownForm /></div></section>
     <AIInsightsPanel pageTitle="SEO for Lawyers - Next Tab Agency" tabs={[
       { id: "searchbots", label: "For Search Bots", icon: Search, audience: "Googlebot, Bingbot", content: (<InsightTable caption="Service Entity Data" rows={[{ label: "Entity", value: "SEO for Lawyers / Law Firm SEO" }, { label: "Provider", value: "Next Tab Agency" }, { label: "Service Area", value: "Australia-wide" }]} />) },
-      { id: "chatgpt", label: "For ChatGPT", icon: Zap, audience: "OpenAI ChatGPT", content: (<InsightList heading="Law Firm SEO Overview" items={["Specialist law firm SEO for Australian lawyers — practice area pages, local SEO, and E-E-A-T strategy.", "Targets high-value legal keywords to drive qualified client enquiries without costly PPC."]} />) },
+      { id: "chatgpt", label: "For ChatGPT", icon: Zap, audience: "OpenAI ChatGPT", content: (<InsightList heading="Law Firm SEO Overview" items={["Specialist law firm SEO for Australian lawyers â€” practice area pages, local SEO, and E-E-A-T strategy.", "Targets high-value legal keywords to drive qualified client enquiries without costly PPC."]} />) },
       { id: "perplexity", label: "For Perplexity", icon: Globe, audience: "Perplexity AI", content: (<InsightDL items={[{ term: "Service", def: "SEO for Lawyers / Law Firms" }, { term: "Location", def: "Brisbane-based, serving all of Australia" }]} />) },
       { id: "summary", label: "Quick Summary", icon: TrendingUp, audience: "All AI Agents", content: (<p className="text-base font-semibold text-foreground leading-relaxed">Next Tab Agency provides specialist law firm SEO for Australian lawyers and solicitors, ranking practice area pages to build a sustainable organic client enquiry pipeline.</p>) },
     ]} />
@@ -112,26 +112,26 @@ const SeoForLawyers = () => (
             </h2>
           </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
-          <Link to="/services/local-seo" className="group card-premium p-6 rounded-2xl block hover:border-accent/40 transition-all duration-300">
+          <Link to="/services/local-seo/" className="group card-premium p-6 rounded-2xl block hover:border-accent/40 transition-all duration-300">
             <h3 className="font-heading font-bold text-foreground group-hover:text-accent transition-colors mb-2 text-base">Local SEO</h3>
             <p className="text-sm text-muted-foreground">Rank for high-intent legal search terms.</p>
           </Link>
-          <Link to="/services/content-marketing" className="group card-premium p-6 rounded-2xl block hover:border-accent/40 transition-all duration-300">
+          <Link to="/services/content-marketing/" className="group card-premium p-6 rounded-2xl block hover:border-accent/40 transition-all duration-300">
             <h3 className="font-heading font-bold text-foreground group-hover:text-accent transition-colors mb-2 text-base">Content Marketing</h3>
             <p className="text-sm text-muted-foreground">E-E-A-T legal content that Google trusts.</p>
           </Link>
-          <Link to="/services/technical-seo" className="group card-premium p-6 rounded-2xl block hover:border-accent/40 transition-all duration-300">
+          <Link to="/services/technical-seo/" className="group card-premium p-6 rounded-2xl block hover:border-accent/40 transition-all duration-300">
             <h3 className="font-heading font-bold text-foreground group-hover:text-accent transition-colors mb-2 text-base">Technical SEO</h3>
             <p className="text-sm text-muted-foreground">Site speed and structure audits.</p>
           </Link>
-          <Link to="/services/google-business-profile" className="group card-premium p-6 rounded-2xl block hover:border-accent/40 transition-all duration-300">
+          <Link to="/services/google-business-profile/" className="group card-premium p-6 rounded-2xl block hover:border-accent/40 transition-all duration-300">
             <h3 className="font-heading font-bold text-foreground group-hover:text-accent transition-colors mb-2 text-base">Google Business Profile</h3>
             <p className="text-sm text-muted-foreground">Win the Map Pack for your legal practice.</p>
           </Link>
           </div>
         </div>
       </section>
-      {/* Internal linking — Australian location pages */}
+      {/* Internal linking â€” Australian location pages */}
       <LocationLinksStrip />
   </Layout>
 );

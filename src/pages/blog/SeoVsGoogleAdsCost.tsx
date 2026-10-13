@@ -21,6 +21,7 @@ const schema = {
 const SeoVsGoogleAdsCost = () => (
   <>
     <Helmet>
+      <link rel="canonical" href="https://nexttabagency.com/blog/seo-vs-google-ads-cost/" />
       <title>Rising Cost of Google Ads vs SEO | Brisbane Digital Partners</title>
       <meta name="description" content="Stop burning money on Google Ads. Learn why CPC in Australia is soaring and how SEO provides a sustainable, long-term asset for your business." />
     </Helmet>
@@ -43,7 +44,7 @@ const SeoVsGoogleAdsCost = () => (
       </p>
 
       <p className="mb-10 text-lg leading-relaxed text-muted-foreground">
-        While <Link to="/services/ppc-google-ads" className="font-semibold underline text-accent hover:text-accent/80">Google Ads</Link> can provide immediate visibility, relying on them as your sole source of lead generation is financially dangerous. It's time to talk about sustainable growth.
+        While <Link to="/services/ppc-google-ads/" className="font-semibold underline text-accent hover:text-accent/80">Google Ads</Link> can provide immediate visibility, relying on them as your sole source of lead generation is financially dangerous. It's time to talk about sustainable growth.
       </p>
 
       <div className="grid gap-6 mb-10 md:grid-cols-2">
@@ -86,7 +87,7 @@ const SeoVsGoogleAdsCost = () => (
       </p>
 
       <ActionItem>
-        <strong>Your Next Move:</strong> Stop throwing money at the wall. Let us analyze your current Ad spend. Request a <Link to="/services/seo-audits" className="font-semibold underline text-accent hover:text-accent/80">comprehensive ROI Analysis</Link> to see how an integrated SEO strategy can reduce your customer acquisition cost (CAC) over time.
+        <strong>Your Next Move:</strong> Stop throwing money at the wall. Let us analyze your current Ad spend. Request a <Link to="/services/seo-audits/" className="font-semibold underline text-accent hover:text-accent/80">comprehensive ROI Analysis</Link> to see how an integrated SEO strategy can reduce your customer acquisition cost (CAC) over time.
       </ActionItem>
 
     </BlogPostLayout>
