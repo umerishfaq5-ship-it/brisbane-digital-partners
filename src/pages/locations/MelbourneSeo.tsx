@@ -25,8 +25,8 @@ const fadeUp = { hidden: { opacity: 0, y: 28 }, visible: { opacity: 1, y: 0, tra
 const MelbourneSeo = () => (
   <Layout>
     <SEO
-      title="SEO Agency Melbourne VIC | Top-Rated Local SEO Experts | Next Tab Agency"
-      description="Expert SEO & digital marketing for Melbourne businesses. Local SEO, Google Ads, social media advertising & web development. 4.9★ rated. Free consultation — call +61 470 400 743."
+      title="SEO Agency Melbourne VIC | Local SEO Experts | Next Tab Agency"
+      description="Expert SEO & digital marketing for Melbourne businesses. Local SEO, Google Ads, social media advertising & web development. Free consultation — call +61 470 400 743."
       canonical="/locations/melbourne-seo"
       faqs={[
         { q: "How much does SEO cost in Melbourne?", a: "SEO services in Melbourne at Next Tab Agency start from A$1,200/month for local SEO. Competitive Melbourne CBD markets typically require A$2,500–$4,000/month. All plans are month-to-month with no lock-in contracts." },

@@ -25,6 +25,7 @@ ErrorDocument 404 /404.html
   # ── 0b. Merged pages (consolidated to stop keyword cannibalisation)
   RewriteRule ^services/(ppc-brisbane|google-ads-brisbane)/?$ /services/ppc-google-ads/ [R=301,L]
   RewriteRule ^industry/tradie-digital-marketing/?$ /industry/seo-for-tradies/ [R=301,L]
+  RewriteRule ^dd-generator\.html$ /blog/ [R=301,L]
 
   # ── 1. Let real files pass through (JS, CSS, images, fonts, etc.)
   RewriteCond %{REQUEST_FILENAME} -f

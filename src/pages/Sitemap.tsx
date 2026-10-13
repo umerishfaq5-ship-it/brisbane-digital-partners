@@ -170,6 +170,7 @@ const sections = [
     pages: [
       { label: "SEO Agency Brisbane, QLD", href: "/locations/brisbane-seo/", desc: "Our home base — full-service digital marketing for Brisbane and Greater Queensland." },
       { label: "SEO Agency Gold Coast, QLD", href: "/locations/gold-coast-seo/", desc: "Local SEO, Map Pack rankings and suburb targeting for Gold Coast businesses." },
+      { label: "SEO Agency Logan & Beenleigh, QLD", href: "/locations/logan-seo/", desc: "Local SEO and web design from our Eagleby office for Beenleigh, Springwood and all Logan suburbs." },
       { label: "SEO Agency Sunshine Coast, QLD", href: "/locations/sunshine-coast-seo/", desc: "SEO for Australia's fastest-growing region — from Noosa to Caloundra." },
       { label: "SEO Agency Sydney, NSW", href: "/locations/sydney-seo/", desc: "Local SEO, Google Ads & web development for Sydney and New South Wales businesses." },
       { label: "SEO Agency Melbourne, VIC", href: "/locations/melbourne-seo/", desc: "Digital marketing services for Melbourne and Victoria — SEO, paid ads & web." },

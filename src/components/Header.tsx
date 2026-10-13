@@ -81,6 +81,7 @@ const locationsMenu = {
   groups: [{ heading: "Service Locations", items: [
     { label: "SEO Brisbane",       href: "/locations/brisbane-seo/",       desc: "Our home base - QLD experts" },
     { label: "SEO Gold Coast",     href: "/locations/gold-coast-seo/",     desc: "South-east QLD coverage" },
+    { label: "SEO Logan & Beenleigh", href: "/locations/logan-seo/",          desc: "Our home market — Eagleby, Logan" },
     { label: "SEO Sunshine Coast", href: "/locations/sunshine-coast-seo/", desc: "Noosa to Caloundra" },
     { label: "SEO Sydney",         href: "/locations/sydney-seo/",         desc: "NSW organic growth" },
     { label: "SEO Melbourne",      href: "/locations/melbourne-seo/",      desc: "VIC digital marketing" },

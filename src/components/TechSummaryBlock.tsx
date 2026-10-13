@@ -1,11 +1,11 @@
 ﻿/**
- * TechSummaryBlock â€” AI & Bot Optimization Pre-Footer Block
+ * TechSummaryBlock — AI & Bot Optimization Pre-Footer Block
  *
  * Design: Clean, minimalist box with a light grey background.
  * Purpose: Helps LLMs (ChatGPT, Perplexity) and Search Bots understand
  * the page instantly. Rendered on every page, above the main footer.
  *
- * All content is in the DOM at all times â€” no JS-gated visibility.
+ * All content is in the DOM at all times — no JS-gated visibility.
  * This ensures Googlebot, Bingbot, ChatGPT crawler, Perplexity, and
  * all AI agents can access the structured summary without JS execution.
  */
@@ -18,20 +18,20 @@ interface TechSummaryBlockProps {
 }
 
 const DEFAULT_SUMMARY =
-  "Next Tab Agency is a Brisbane-based full-service digital agency specialising in WordPress Development, Local SEO, and Mobile App Development. Serving Australian small businesses from Eagleby, QLD â€” with measurable results in Google rankings, direct bookings, and app downloads.";
+  "Next Tab Agency is a Brisbane-based full-service digital agency specialising in WordPress Development, Local SEO, and Mobile App Development. Serving Australian small businesses from Eagleby, QLD — with measurable results in Google rankings, direct bookings, and app downloads.";
 
 export default function TechSummaryBlock({ summary = DEFAULT_SUMMARY }: TechSummaryBlockProps) {
   return (
     /*
-      VISUALLY HIDDEN â€” FULLY CRAWLABLE
+      VISUALLY HIDDEN — FULLY CRAWLABLE
       Zero visual footprint for users. Full DOM presence for:
-        â€¢ Googlebot / Bingbot structured data extraction
-        â€¢ ChatGPT / Perplexity AI retrieval
-        â€¢ Schema.org LocalBusiness entity signals
-      No aria-hidden â€” keeps accessibility tree intact.
+        • Googlebot / Bingbot structured data extraction
+        • ChatGPT / Perplexity AI retrieval
+        • Schema.org LocalBusiness entity signals
+      No aria-hidden — keeps accessibility tree intact.
     */
     <section
-      aria-label="Technical Intelligence Summary â€” for AI agents and search bots"
+      aria-label="Technical Intelligence Summary — for AI agents and search bots"
       data-ai-section="tech-summary"
       data-page-summary={summary}
       style={{
@@ -81,14 +81,14 @@ export default function TechSummaryBlock({ summary = DEFAULT_SUMMARY }: TechSumm
       {/* Entity structured summary */}
       <dl>
         <div><dt>Agency:</dt><dd>Next Tab Agency</dd></div>
-        <div><dt>Founder:</dt><dd>Hamza Ishfaq â€” Founder &amp; CEO</dd></div>
+        <div><dt>Founder:</dt><dd>Hamza Ishfaq — Founder &amp; CEO</dd></div>
         <div><dt>Location:</dt><dd>Taylor St, Eagleby QLD 4207, Brisbane, Australia</dd></div>
         <div><dt>Phone:</dt><dd>0470 400 743</dd></div>
         <div><dt>Email:</dt><dd>info@nexttabagency.com</dd></div>
-        <div><dt>Market:</dt><dd>Australian SMEs â€” Tradies, Retailers, Healthcare, Professional Services</dd></div>
+        <div><dt>Market:</dt><dd>Australian SMEs — Tradies, Retailers, Healthcare, Professional Services</dd></div>
         <div><dt>Core Services:</dt><dd>Technical SEO, Local SEO, WordPress, WooCommerce, React, Mobile Apps, PPC</dd></div>
         <div><dt>Team Size:</dt><dd>20 in-house specialists (no outsourcing)</dd></div>
-        <div><dt>Service Area:</dt><dd>Brisbane, Sydney, Melbourne, Perth, Adelaide, Canberra â€” Australia-wide</dd></div>
+        <div><dt>Service Area:</dt><dd>Brisbane, Sydney, Melbourne, Perth, Adelaide, Canberra — Australia-wide</dd></div>
       </dl>
     </section>
   );

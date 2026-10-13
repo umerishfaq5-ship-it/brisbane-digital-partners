@@ -93,7 +93,7 @@ const ContactMapStrip = () => {
         >
           <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-accent/20 text-accent text-xs font-semibold uppercase tracking-[0.15em] mb-5 border border-accent/30 w-fit">
             <span className="w-1.5 h-1.5 rounded-full bg-accent animate-pulse" />
-            Free SEO Audit — Brisbane's #1 Team
+            Free SEO Audit — Brisbane & Logan Team
           </span>
 
           <h2
@@ -119,7 +119,7 @@ const ContactMapStrip = () => {
             {[
               { icon: Shield, text: "No lock-in contracts — ever" },
               { icon: Zap, text: "Audit delivered within 24–48 hours" },
-              { icon: Star, text: "4.9★ rated by 200+ Australian businesses" },
+              { icon: Star, text: "Trusted by 200+ Australian businesses" },
             ].map(({ icon: Icon, text }) => (
               <div key={text} className="flex items-center gap-3">
                 <div className="w-7 h-7 rounded-lg bg-accent/20 border border-accent/30 flex items-center justify-center shrink-0">

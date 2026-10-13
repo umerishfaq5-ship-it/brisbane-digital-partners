@@ -6,7 +6,7 @@ Next Tab Agency's core philosophy is to deliver digital ecosystems that act as r
 
 The agency serves Australian businesses nationally, with a primary focus on Brisbane, Queensland, and South-East QLD (Gold Coast, Sunshine Coast, Logan, Ipswich). Remote services cover Sydney, Melbourne, Perth, Adelaide, Canberra, and Hobart.
 
-Trust signals: 4.9/5 average rating across 200+ Australian clients. 70%+ month-to-month retention. Google Ads and GA4 certified practitioners. Founded 2019 — 7 years in the Australian digital market.
+Trust signals: 200+ Australian clients served. 70%+ month-to-month retention. Google Ads and GA4 certified practitioners. Founded 2019 — 7 years in the Australian digital market.
 
 ## Core Pages
 
@@ -83,6 +83,7 @@ Trust signals: 4.9/5 average rating across 200+ Australian clients. 70%+ month-t
 
 - [Brisbane SEO](https://nexttabagency.com/locations/brisbane-seo/): SEO services for Brisbane businesses — agency headquarters and primary market
 - [Gold Coast SEO](https://nexttabagency.com/locations/gold-coast-seo/): SEO services for Gold Coast businesses
+- [Logan SEO](https://nexttabagency.com/locations/logan-seo/): SEO and web design for Logan and Beenleigh businesses, from our Eagleby office
 - [Sunshine Coast SEO](https://nexttabagency.com/locations/sunshine-coast-seo/): SEO services for Sunshine Coast businesses
 - [Sydney SEO](https://nexttabagency.com/locations/sydney-seo/): Remote SEO services for Sydney, NSW businesses
 - [Melbourne SEO](https://nexttabagency.com/locations/melbourne-seo/): Remote SEO services for Melbourne, VIC businesses

@@ -67,6 +67,7 @@ import PerthSeo     from "./pages/locations/PerthSeo.tsx";
 import AdelaideSeo  from "./pages/locations/AdelaideSeo.tsx";
 import CanberraSeo  from "./pages/locations/CanberraSeo.tsx";
 import GoldCoastSeo from "./pages/locations/GoldCoastSeo.tsx";
+import LoganSeo from "./pages/locations/LoganSeo.tsx";
 import SunshineCoastSeo from "./pages/locations/SunshineCoastSeo.tsx";
 import HobartSeo from "./pages/locations/HobartSeo.tsx";
 import Portfolio from "./pages/Portfolio.tsx";
@@ -180,6 +181,7 @@ const App = () => (
             <Route path="/locations/adelaide-seo"  element={<AdelaideSeo />} />
             <Route path="/locations/canberra-seo"  element={<CanberraSeo />} />
             <Route path="/locations/gold-coast-seo" element={<GoldCoastSeo />} />
+            <Route path="/locations/logan-seo" element={<LoganSeo />} />
             <Route path="/locations/sunshine-coast-seo" element={<SunshineCoastSeo />} />
             <Route path="/locations/hobart-seo" element={<HobartSeo />} />
             <Route path="/portfolio" element={<Portfolio />} />

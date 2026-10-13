@@ -141,7 +141,7 @@ const SocialMediaAds = () => (
       <div className="container">
         <div className="flex flex-wrap items-center justify-center gap-x-8 gap-y-3 text-sm">
           {[
-            { icon: "⭐", text: "4.9/5 rated by 87+ Australian clients" },
+            { icon: "⭐", text: "Trusted by 87+ Australian clients" },
             { icon: "📈", text: "3.8× average ROAS across all campaigns" },
             { icon: "🇦🇺", text: "2M+ Australians reached monthly" },
             { icon: "🔓", text: "No lock-in contracts — ever" },

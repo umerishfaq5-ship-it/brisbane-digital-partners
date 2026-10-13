@@ -4,6 +4,7 @@ import { MapPin } from "lucide-react";
 const locations = [
   { city: "Brisbane", href: "/locations/brisbane-seo/", state: "QLD" },
   { city: "Gold Coast", href: "/locations/gold-coast-seo/", state: "QLD" },
+  { city: "Logan", href: "/locations/logan-seo/", state: "QLD" },
   { city: "Sunshine Coast", href: "/locations/sunshine-coast-seo/", state: "QLD" },
   { city: "Sydney", href: "/locations/sydney-seo/", state: "NSW" },
   { city: "Melbourne", href: "/locations/melbourne-seo/", state: "VIC" },

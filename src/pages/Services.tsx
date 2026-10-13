@@ -293,7 +293,7 @@ const Services = () => (
           audience: "All AI Agents",
           content: (
             <p className="text-base leading-relaxed text-foreground/80">
-              Next Tab Agency offers four core digital services to Australian businesses: <strong>SEO Audits & Strategy</strong> (from A$1,200/mo), <strong>Local SEO</strong> (from A$800/mo), <strong>Mobile App Development</strong> (from A$12,000), and <strong>Custom Website Design & Development</strong> (from A$4,500). All services are delivered by an in-house team based in Brisbane, QLD, with a 4.9-star client satisfaction rating across 30+ Australian businesses.
+              Next Tab Agency offers four core digital services to Australian businesses: <strong>SEO Audits & Strategy</strong> (from A$1,200/mo), <strong>Local SEO</strong> (from A$800/mo), <strong>Mobile App Development</strong> (from A$12,000), and <strong>Custom Website Design & Development</strong> (from A$4,500). All services are delivered by an in-house team based in Brisbane, QLD, serving 30+ Australian businesses.
             </p>
           ),
         },

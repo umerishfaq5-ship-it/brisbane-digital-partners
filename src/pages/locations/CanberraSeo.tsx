@@ -25,8 +25,8 @@ const fadeUp = { hidden: { opacity: 0, y: 28 }, visible: { opacity: 1, y: 0, tra
 const CanberraSeo = () => (
   <Layout>
     <SEO
-      title="SEO Agency Canberra ACT | Top-Rated Local SEO Experts | Next Tab Agency"
-      description="Expert SEO & digital marketing for Canberra businesses. Local SEO, Google Ads, social media advertising & web development tailored for the ACT market. 4.9★ rated. Free consultation."
+      title="SEO Agency Canberra ACT | Local SEO Experts | Next Tab Agency"
+      description="Expert SEO & digital marketing for Canberra businesses. Local SEO, Google Ads, social media advertising & web development tailored for the ACT market. Free consultation."
       canonical="/locations/canberra-seo"
       faqs={[
         { q: "How much does SEO cost in Canberra?", a: "SEO services for Canberra businesses at Next Tab Agency start from A$1,200/month for local SEO. The Canberra ACT market is less competitive than Sydney or Melbourne, which often means more affordable and faster results." },

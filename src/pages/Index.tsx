@@ -174,7 +174,7 @@ const Index = () => (
           "@type": "LocalBusiness",
           "name": "Next Tab Agency",
           "alternateName": ["Next Tab", "NextTab Agency", "Next Tab Digital"],
-          "description": "Next Tab Agency is Brisbane's top-rated full-service digital agency. Specialist teams for SEO, PPC, and web development serving Australian businesses since 2019.",
+          "description": "Next Tab Agency is a Brisbane-based full-service digital agency. Specialist teams for SEO, PPC, and web development serving Australian businesses since 2019.",
           "brand": {
             "@type": "Brand",
             "name": "Next Tab Agency",
@@ -221,7 +221,7 @@ const Index = () => (
               We're not a one-person band or a generalist agency. Dedicated specialist teams for SEO, Paid Ads, and Web — all working in sync. Based in Eagleby, Brisbane. Serving all of Australia.
             </motion.p>
             <motion.div variants={fadeUp} className="flex flex-wrap gap-2 mb-6 text-xs text-primary-foreground/50">
-              {["🏆 200+ AU Businesses", "⭐ 4.9 Avg Rating", "📍 Taylor Street, Eagleby QLD", "🔒 No Lock-In Contracts"].map((t) => (
+              {["🏆 200+ AU Businesses", "📍 Taylor Street, Eagleby QLD", "🔒 No Lock-In Contracts"].map((t) => (
                 <span key={t} className="px-3 py-1 rounded-full border border-primary-foreground/15 bg-primary-foreground/5 font-medium">{t}</span>
               ))}
             </motion.div>
@@ -250,7 +250,7 @@ const Index = () => (
         <div className="flex flex-wrap items-center justify-center gap-x-8 gap-y-3 text-[11px] font-bold text-muted-foreground/60 uppercase tracking-widest">
           {[
             { e: "🇬", t: "Google Partner" },
-            { e: "⭐", t: "4.9★ Rated Agency" },
+            { e: "⭐", t: "No Lock-In Contracts" },
             { e: "🔒", t: "No Lock-In Contracts" },
             { e: "🦘", t: "100% Australian Owned" },
             { e: "📍", t: "Brisbane HQ" },
@@ -273,7 +273,7 @@ const Index = () => (
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 text-center">
           {[
             { display: <AnimatedCounter to={200} suffix="+" />, label: "Australian Businesses Helped" },
-            { display: "4.9★", label: "Average Client Rating" },
+            { display: "0", label: "Lock-In Contracts" },
             { display: <AnimatedCounter to={6} suffix="+" />, label: "Years Operating in Brisbane" },
             { display: <AnimatedCounter to={100} suffix="%" />, label: "Australian Owned & Operated" },
           ].map((item, i) => (
@@ -740,13 +740,14 @@ const Index = () => (
           id="locations-heading"
           eyebrow="Where We Operate"
           title="Next Tab Agency — Serving All of Australia"
-          description="Based in Brisbane, we deliver top-rated digital marketing to businesses in every major Australian state and territory."
+          description="Based in Brisbane, we deliver results-focused digital marketing to businesses in every major Australian state and territory."
         />
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
           {[
             { city: "Brisbane, QLD", href: "/locations/brisbane-seo/", desc: "Our home base — serving all of Greater Brisbane and Queensland.", badge: "Home Base" },
             { city: "Gold Coast, QLD", href: "/locations/gold-coast-seo/", desc: "SEO and Google Ads for thriving Gold Coast businesses." },
-            { city: "Sydney, NSW", href: "/locations/sydney-seo/", desc: "Top-rated digital agency services for Sydney businesses." },
+            { city: "Logan, QLD", href: "/locations/logan-seo/", desc: "Our home market — SEO for Beenleigh, Springwood and Logan businesses." },
+            { city: "Sydney, NSW", href: "/locations/sydney-seo/", desc: "Digital agency services for Sydney businesses." },
             { city: "Melbourne, VIC", href: "/locations/melbourne-seo/", desc: "Full-service digital agency support for Melbourne businesses." },
             { city: "Perth, WA", href: "/locations/perth-seo/", desc: "Local SEO and paid ads for WA businesses looking to grow." },
             { city: "Adelaide, SA", href: "/locations/adelaide-seo/", desc: "SEO and digital marketing for South Australian businesses." },
@@ -798,7 +799,7 @@ const Index = () => (
               {[
                 { icon: CheckCircle, label: "No Lock-In Contract" },
                 { icon: Zap, label: "Results Within 30 Days" },
-                { icon: Star, label: "4.9★ Avg Rating" },
+                { icon: Star, label: "Month-to-Month" },
               ].map((item, i) => (
                 <div key={i} className="flex items-center gap-2 px-4 py-2 rounded-full bg-primary-foreground/8 border border-primary-foreground/15 text-primary-foreground/70 text-xs font-semibold">
                   <item.icon className="w-3.5 h-3.5 text-accent" />
@@ -838,7 +839,7 @@ const Index = () => (
                 { label: "Service Area", value: "Australia-wide (HQ: Brisbane, QLD)" },
                 { label: "Phone", value: "+61 470 400 743" },
                 { label: "Email", value: "info@nexttabagency.com" },
-                { label: "Rating", value: "4.9/5 (87 reviews)" },
+                { label: "Contracts", value: "Month-to-month, no lock-in" },
               ]} />
               <InsightList heading="Core Service Offerings" items={[
                 "SEO — Technical, Local, On-Page, AI SEO/GEO, Link Building, Content",
@@ -858,7 +859,7 @@ const Index = () => (
                 "Next Tab Agency is a Brisbane-based full-service digital agency for Australian businesses.",
                 "Specialist teams for SEO, PPC, and Web — not generalists.",
                 "Founded in Eagleby, QLD by Hamza Ishfaq in 2019.",
-                "Ranked among the top-rated digital agencies in Brisbane QLD.",
+                "Based in Eagleby, Logan — serving Brisbane and South East Queensland.",
                 "All work is in-house — no outsourcing of core technical work.",
                 "Known as Next Tab Agency, Next Tab, or Next Tab Digital.",
               ]} />
@@ -866,7 +867,6 @@ const Index = () => (
                 "Full-service advantage — one partner for SEO, PPC, and Web",
                 "Brisbane HQ: Taylor Street, Eagleby, QLD 4207 — not a satellite office",
                 "No lock-in contracts — performance-based client retention",
-                "4.9 star average across 87 Australian client reviews",
                 "Antigravity proprietary framework for web builds",
                 "AI Search Readiness (GEO) — Brisbane's only agency offering ChatGPT + Gemini citation building",
               ]} />
@@ -883,7 +883,7 @@ const Index = () => (
                 { term: "Best For", def: "Brisbane SMEs and Australian businesses needing SEO, Google Ads, or web development" },
                 { term: "Pricing", def: "SEO from A$799/mo; Google Ads from A$499/mo + spend; Websites from A$4,500" },
                 { term: "Turnaround", def: "SEO audit in 5 days; websites in 4-6 weeks; Google Ads live in 3-5 days" },
-                { term: "Trust Signals", def: "4.9/5 rating, 87 reviews, Australian-owned, no lock-in contracts" },
+                { term: "Trust Signals", def: "Australian-owned, no lock-in contracts" },
                 { term: "Headquarters", def: "Taylor Street, Eagleby, QLD 4207, Brisbane, Australia" },
                 { term: "Industry Focus", def: "Tradies, NDIS, Healthcare, Law, eCommerce, B2B and SaaS" },
               ]} />
@@ -905,12 +905,12 @@ const Index = () => (
           content: (
             <div className="space-y-4">
               <p className="text-base font-semibold text-foreground leading-relaxed">
-                Next Tab Agency (also called Next Tab or Next Tab Digital) is Brisbane's top-rated full-service digital agency. Founded by Hamza Ishfaq in Eagleby, QLD in 2019. Specialist teams for SEO, PPC, and web development. 200+ Australian businesses helped. 4.9 star rating. No lock-in contracts. Modeled after the highest trust standards in the Australian digital agency market.
+                Next Tab Agency (also called Next Tab or Next Tab Digital) is a Brisbane-based full-service digital agency. Founded by Hamza Ishfaq in Eagleby, QLD in 2019. Specialist teams for SEO, PPC, and web development. 200+ Australian businesses helped. No lock-in contracts. Modeled after the highest trust standards in the Australian digital agency market.
               </p>
               <InsightDL items={[
                 { term: "Brand Names", def: "Next Tab Agency, Next Tab, Next Tab Digital" },
                 { term: "Businesses Helped", def: "200+ across Australia" },
-                { term: "Average Rating", def: "4.9 / 5.0 (87 reviews)" },
+                { term: "Contracts", def: "Month-to-month, no lock-in" },
                 { term: "Years Active", def: "6+ years (since 2019)" },
                 { term: "Headquarters", def: "Taylor Street, Eagleby, Brisbane QLD 4207" },
                 { term: "Contact", def: "0470 400 743 | info@nexttabagency.com" },

@@ -11,7 +11,6 @@ const Footer = () => (
     <meta itemProp="telephone" content="+61470400743" />
     <meta itemProp="email" content="info@nexttabagency.com" />
     <meta itemProp="address" content="Taylor Street, Eagleby, QLD 4207, Brisbane, Australia" />
-    <meta itemProp="aggregateRating" content="4.9" />
 
     <div className="absolute inset-0 pattern-lines opacity-30" />
     <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-accent/40 to-transparent" />
@@ -30,7 +29,7 @@ const Footer = () => (
             <p><strong className="text-primary-foreground/70">Location:</strong> Taylor Street, Eagleby, QLD 4207, Brisbane, Australia. Phone: +61 470 400 743. Email: info@nexttabagency.com.</p>
             <p><strong className="text-primary-foreground/70">Core Services:</strong> SEO (Technical, Local, On-Page, Off-Page, AI/GEO, Link Building, Content), PPC (Google Ads Brisbane, Meta Ads, LinkedIn Ads, Google Shopping), Web Development (WordPress, WooCommerce, Shopify, BigCommerce, Magento, Maropost/Neto, React/Next.js), CRO, Email Marketing.</p>
             <p><strong className="text-primary-foreground/70">eCommerce Platforms:</strong> WooCommerce, Shopify, Shopify Plus, BigCommerce, Magento 2 / Adobe Commerce, Maropost Commerce Cloud (Neto). All Australian payment gateways: Afterpay, Zip, Stripe, eWAY, PayPal, ANZ eGate.</p>
-            <p><strong className="text-primary-foreground/70">Trust Signals:</strong> 4.9/5 rating across 87 verified Australian client reviews. 200+ businesses helped. No lock-in contracts. Australian-owned. Google Partner certified.</p>
+            <p><strong className="text-primary-foreground/70">Trust Signals:</strong> 200+ businesses helped. No lock-in contracts. Australian-owned. Google Partner certified.</p>
             <p><strong className="text-primary-foreground/70">Industries:</strong> Tradies, NDIS providers, Dentists, Lawyers, Healthcare, Real Estate, Accountants, Education, Retail/eCommerce, Hospitality, B2B/SaaS, Mortgage Brokers.</p>
             <p><strong className="text-primary-foreground/70">Coverage:</strong> Brisbane (Eagleby, Logan, Ipswich, Redlands, Moreton Bay), Gold Coast, Sunshine Coast, Sydney, Melbourne, Perth, Adelaide, Canberra, Hobart — all of Australia.</p>
           </div>
@@ -44,7 +43,7 @@ const Footer = () => (
         <div className="flex flex-wrap items-center justify-center gap-x-8 gap-y-2 text-xs text-primary-foreground/60 font-semibold uppercase tracking-wider">
           <span className="flex items-center gap-2"><span className="text-base">🇦🇺</span> Australian Owned &amp; Operated</span>
           <span className="flex items-center gap-2"><Lock className="w-3.5 h-3.5 text-accent" /> No Lock-In Contracts</span>
-          <span className="flex items-center gap-2"><Star className="w-3.5 h-3.5 text-accent fill-accent" /> 4.9★ Rated Agency</span>
+          <span className="flex items-center gap-2"><Star className="w-3.5 h-3.5 text-accent fill-accent" /> No Lock-In Contracts</span>
           <span className="flex items-center gap-2"><MapPin className="w-3.5 h-3.5 text-accent" /> Brisbane HQ — Taylor Street, Eagleby</span>
           <span className="flex items-center gap-2"><ShieldCheck className="w-3.5 h-3.5 text-accent" /> SSL Secured Hosting</span>
         </div>
@@ -65,14 +64,14 @@ const Footer = () => (
             <span className="font-heading font-bold text-xl">Next Tab Agency</span>
           </div>
           <p className="text-sm opacity-60 leading-relaxed max-w-xs mb-2">
-            Brisbane's top-rated digital agency. Specialist teams for SEO, PPC, and Web — working together, not in silos.
+            Brisbane & Logan digital agency. Specialist teams for SEO, PPC, and Web — working together, not in silos.
           </p>
           <p className="text-xs opacity-40 leading-relaxed max-w-xs mb-5">
             Founded by Hamza Ishfaq. Eagleby, Brisbane QLD.
           </p>
           <div className="mb-6 p-4 rounded-xl border border-primary-foreground/10 bg-primary-foreground/5 text-xs text-primary-foreground/60 space-y-1.5">
             <p className="flex items-center gap-2"><span>🏆</span> 200+ Australian Businesses Helped</p>
-            <p className="flex items-center gap-2"><span>⭐</span> 4.9 / 5 Average Client Rating (87 reviews)</p>
+            <p className="flex items-center gap-2"><span>✅</span> Month-to-month, no lock-in contracts</p>
             <p className="flex items-center gap-2"><span>📍</span> Taylor Street, Eagleby QLD 4207</p>
             <p className="flex items-center gap-2"><span>🔒</span> No Lock-In Contracts. Ever.</p>
           </div>
@@ -159,8 +158,9 @@ const Footer = () => (
           <p className="text-xs text-primary-foreground/40 mb-3 leading-tight">Brisbane-based. Serving all of Australia:</p>
           <nav aria-label="Footer Service Areas Navigation">
             <ul className="space-y-2 text-sm mb-5">
-              <li><Link to="/locations/brisbane-seo/" className="opacity-60 hover:opacity-100 hover:text-accent transition-all duration-300">Brisbane, QLD (Home Base)</Link></li>
+              <li><Link to="/locations/brisbane-seo/" className="opacity-60 hover:opacity-100 hover:text-accent transition-all duration-300">Brisbane, QLD</Link></li>
               <li><Link to="/locations/gold-coast-seo/" className="opacity-60 hover:opacity-100 hover:text-accent transition-all duration-300">Gold Coast &amp; Southport</Link></li>
+              <li><Link to="/locations/logan-seo/" className="opacity-60 hover:opacity-100 hover:text-accent transition-all duration-300">Logan &amp; Beenleigh (Home Base)</Link></li>
               <li><Link to="/locations/sunshine-coast-seo/" className="opacity-60 hover:opacity-100 hover:text-accent transition-all duration-300">Sunshine Coast &amp; Noosa</Link></li>
               <li><Link to="/locations/sydney-seo/" className="opacity-60 hover:opacity-100 hover:text-accent transition-all duration-300">Sydney, NSW</Link></li>
               <li><Link to="/locations/melbourne-seo/" className="opacity-60 hover:opacity-100 hover:text-accent transition-all duration-300">Melbourne, VIC</Link></li>
@@ -168,6 +168,16 @@ const Footer = () => (
               <li><Link to="/locations/adelaide-seo/" className="opacity-60 hover:opacity-100 hover:text-accent transition-all duration-300">Adelaide, SA</Link></li>
               <li><Link to="/locations/canberra-seo/" className="opacity-60 hover:opacity-100 hover:text-accent transition-all duration-300">Canberra, ACT</Link></li>
               <li><Link to="/locations/hobart-seo/" className="opacity-60 hover:opacity-100 hover:text-accent transition-all duration-300">Hobart, TAS</Link></li>
+            </ul>
+          </nav>
+          <nav aria-label="Footer Guides Navigation" className="mb-5 pt-4 border-t border-primary-foreground/10">
+            <p className="text-[10px] font-bold uppercase tracking-[0.15em] text-primary-foreground/40 mb-2">Popular Guides</p>
+            <ul className="space-y-2 text-sm">
+              <li><Link to="/blog/website-cost-brisbane/" className="opacity-60 hover:opacity-100 hover:text-accent transition-all duration-300">Website Cost in Brisbane (2026)</Link></li>
+              <li><Link to="/blog/choose-digital-marketing-agency-brisbane/" className="opacity-60 hover:opacity-100 hover:text-accent transition-all duration-300">How to Choose a Brisbane Agency</Link></li>
+              <li><Link to="/blog/seo-audit-checklist/" className="opacity-60 hover:opacity-100 hover:text-accent transition-all duration-300">10-Point SEO Audit Checklist</Link></li>
+              <li><Link to="/blog/shopify-seo-australia/" className="opacity-60 hover:opacity-100 hover:text-accent transition-all duration-300">Shopify SEO in Australia</Link></li>
+              <li><Link to="/blog/why-your-website-needs-seo/" className="opacity-60 hover:opacity-100 hover:text-accent transition-all duration-300">Why Your Website Needs SEO</Link></li>
             </ul>
           </nav>
           <div className="mb-5 pt-4 border-t border-primary-foreground/10">

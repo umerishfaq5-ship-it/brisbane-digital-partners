@@ -2,6 +2,15 @@ import React, { useState, useEffect } from 'react';
 import { Lock, Loader2 } from 'lucide-react';
 import { Helmet } from 'react-helmet-async';
 
+// SHA-256 of the invoice password (plain text is never shipped in the bundle).
+// To change it: printf 'new-password' | sha256sum  -> paste the hash here.
+const PASSWORD_SHA256 = '9fa5848b4241a152b72cac9519156633722fbb0e7de1025d1191f8777d7379f4';
+
+const sha256 = async (text: string) => {
+  const buf = await crypto.subtle.digest('SHA-256', new TextEncoder().encode(text));
+  return Array.from(new Uint8Array(buf)).map((b) => b.toString(16).padStart(2, '0')).join('');
+};
+
 // Private area: keep every Hamza page out of search results
 const NoIndex = () => (
   <Helmet>
@@ -21,9 +30,9 @@ export default function HamzaAuthGuard({ children }: { children: React.ReactNode
     setStatus(auth === 'true' ? 'authenticated' : 'unauthenticated');
   }, []);
 
-  const handleLogin = (e: React.FormEvent) => {
+  const handleLogin = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (password === 'hamza321') {
+    if ((await sha256(password)) === PASSWORD_SHA256) {
       localStorage.setItem('hamza_auth_v1', 'true');
       setStatus('authenticated');
       setError(false);

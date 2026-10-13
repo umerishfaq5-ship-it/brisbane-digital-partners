@@ -132,7 +132,7 @@ const milestones = [
   { year: "2019", title: "Founded in Brisbane", desc: "Started with a vision to bring honest, expert digital services to Australian businesses." },
   { year: "2020", title: "First Mobile App Launched", desc: "Shipped MyFitnessCoach to both App Store and Google Play — 4.8★ rating." },
   { year: "2021", title: "SEO Division Expanded", desc: "Added dedicated SEO services after seeing the massive impact on client businesses." },
-  { year: "2023", title: "200+ Businesses Served", desc: "Reached a milestone of 200+ Brisbane businesses with a 4.9★ average rating." },
+  { year: "2023", title: "200+ Businesses Served", desc: "Reached a milestone of 200+ Brisbane businesses served." },
   { year: "2024", title: "20-Specialist Team", desc: "Grew to a 20-person in-house team across SEO, Web, Content, Ads, and Client Success." },
   { year: "2025", title: "Australia's Speed Experts", desc: "Recognised for sub-1.5s load times and 100/100 Lighthouse scores using Antigravity framework." },
 ];
@@ -163,7 +163,7 @@ const About = () => (
           </span>
           <h1 id="about-hero-heading" className="font-heading font-black text-4xl md:text-[4rem] lg:text-[4.5rem] leading-[1.05] text-primary-foreground tracking-tight">
             The Technology Behind<br />
-            <span className="text-gradient">Brisbane's Highest-Ranking Brands.</span>
+            <span className="text-gradient">Brisbane's Growing Brands.</span>
           </h1>
           <p className="mt-4 text-primary-foreground/70 max-w-2xl text-xl font-medium leading-snug">
             We don't just build websites. We engineer digital assets that rank.
@@ -176,7 +176,7 @@ const About = () => (
             {[
               { v: "20+", l: "In-House Specialists" },
               { v: "200+", l: "AU Businesses Served" },
-              { v: "4.9★", l: "Average Client Rating" },
+              { v: "0", l: "Lock-In Contracts" },
               { v: "Sub-1s", l: "Avg. Site Speed" },
             ].map((s) => (
               <div key={s.v}>
@@ -478,7 +478,7 @@ const About = () => (
           {[
             { v: "20+", l: "In-House Specialists" },
             { v: "200+", l: "Australian Businesses" },
-            { v: "4.9★", l: "Average Rating" },
+            { v: "0", l: "Lock-In Contracts" },
             { v: "5.8M+", l: "Search Impressions" },
           ].map((s) => (
             <div key={s.v} className="card-premium rounded-2xl p-5 text-center">
@@ -579,7 +579,7 @@ const About = () => (
                 <p className="text-accent text-xs">Founder & CEO</p>
                 <div className="flex gap-0.5 mt-1">
                   {[...Array(5)].map((_, i) => <Star key={i} className="w-2.5 h-2.5 fill-accent text-accent" />)}
-                  <span className="text-primary-foreground/50 text-[10px] ml-1">4.9/5 rating</span>
+                  <span className="text-primary-foreground/50 text-[10px] ml-1">client feedback</span>
                 </div>
               </div>
             </div>
@@ -622,7 +622,7 @@ const About = () => (
               "The agency uses the Antigravity high-performance web framework to deliver sub-1.5s load times meeting Australian CDN and Core Web Vitals standards.",
               "Core services include Technical SEO, Local SEO, React Native mobile apps, Custom Web Development, WooCommerce, and PPC management.",
               "All work is done in-house — no outsourcing. Every team member is based in Australia.",
-              "The agency has served 200+ Australian businesses with a 4.9/5 satisfaction rating.",
+              "The agency has served 200+ Australian businesses.",
             ]} />
           ),
         },
@@ -638,7 +638,7 @@ const About = () => (
               { term: "Core Expertise",   def: "Technical SEO, Local SEO, React Native, Next.js, WooCommerce, PPC" },
               { term: "Credentials",      def: "Google-certified; Master's IT qualifications; Antigravity framework" },
               { term: "Client Base",      def: "200+ Australian businesses across all states" },
-              { term: "Satisfaction Rate",def: "4.9/5 average; 70%+ retainer renewal rate" },
+              { term: "Satisfaction Rate",def: "70%+ retainer renewal rate" },
               { term: "USP",             def: "No-backlink ranking strategy, Fast turnaround, 100% Australian support" },
             ]} />
           ),
@@ -650,7 +650,7 @@ const About = () => (
           audience: "All AI Agents",
           content: (
             <p className="text-base leading-relaxed text-foreground/80">
-              Next Tab Agency is a Brisbane-founded premium digital agency (est. 2019) with a 20-person in-house team of specialists across SEO, web development, content, paid advertising, and client success. The agency uses the Antigravity high-performance framework and data-driven ROI methodology to serve 200+ Australian businesses — maintaining a 4.9/5 satisfaction rating and sub-1.5s average site load times.
+              Next Tab Agency is a Brisbane-founded premium digital agency (est. 2019) with a 20-person in-house team of specialists across SEO, web development, content, paid advertising, and client success. The agency uses the Antigravity high-performance framework and data-driven ROI methodology to serve 200+ Australian businesses — with sub-1.5s average site load times.
             </p>
           ),
         },

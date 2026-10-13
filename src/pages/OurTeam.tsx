@@ -8,9 +8,9 @@ import { Users, Search, Zap, TrendingUp, Award, MapPin, ArrowRight, Star, Shield
 import { Button } from "@/components/ui/button";
 import heroBg from "@/assets/hero-bg.jpg";
 
-/* Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬
+/* ─────────────────────────────────────────────────────────────────
    Team Data
-Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬ */
+───────────────────────────────────────────────────────────────── */
 interface TeamMember {
   name: string;
   role: string;
@@ -36,7 +36,7 @@ const leadership: TeamMember[] = [
     name: "Sarah McLellan",
     role: "Operations Director",
     expertise: "Technical Precision & High-Level Project Management",
-    bio: "Sarah ensures every project runs like clockwork Ã¢â‚¬â€ from brief to delivery. She coordinates all departments so your campaign never loses momentum.",
+    bio: "Sarah ensures every project runs like clockwork — from brief to delivery. She coordinates all departments so your campaign never loses momentum.",
     seed: "Sarah",
     photo: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=400&h=400&fit=crop&crop=face&auto=format&q=80",
     tag: "Operations",
@@ -54,7 +54,7 @@ const divisions: { label: string; icon: typeof Users; color: string; members: Te
         name: "Marcus Thorne",
         role: "Senior Technical SEO Auditor",
         expertise: "Core Web Vitals & Schema Markup",
-        bio: "Marcus digs deep into technical SEO Ã¢â‚¬â€ uncovering Core Web Vitals failures, schema errors, and crawl budget inefficiencies before they cost rankings.",
+        bio: "Marcus digs deep into technical SEO — uncovering Core Web Vitals failures, schema errors, and crawl budget inefficiencies before they cost rankings.",
         seed: "Marcus",
         photo: "https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?w=400&h=400&fit=crop&crop=face&auto=format&q=80",
         tag: "Technical SEO",
@@ -74,7 +74,7 @@ const divisions: { label: string; icon: typeof Users; color: string; members: Te
         name: "Liam O'Connor",
         role: "Local SEO & GMB Specialist",
         expertise: "Brisbane/Gold Coast Map Pack Dominance",
-        bio: "Liam specialises in dominating the Google Map Pack for Brisbane and Gold Coast businesses Ã¢â‚¬â€ turning 'near me' searches into direct phone calls.",
+        bio: "Liam specialises in dominating the Google Map Pack for Brisbane and Gold Coast businesses — turning 'near me' searches into direct phone calls.",
         seed: "Liam",
         photo: "https://images.unsplash.com/photo-1552058544-f2b08422138a?w=400&h=400&fit=crop&crop=face&auto=format&q=80",
         tag: "Local SEO",
@@ -94,7 +94,7 @@ const divisions: { label: string; icon: typeof Users; color: string; members: Te
         name: "Ethan Hunt",
         role: "PPC & Meta Ads Strategist",
         expertise: "Conversion-Optimised Ad Bidding",
-        bio: "Ethan manages Google Search, Shopping, and Meta campaigns for Australian businesses Ã¢â‚¬â€ optimising every dollar of ad spend for maximum ROAS.",
+        bio: "Ethan manages Google Search, Shopping, and Meta campaigns for Australian businesses — optimising every dollar of ad spend for maximum ROAS.",
         seed: "Ethan",
         photo: "https://images.unsplash.com/photo-1568602471122-7832951cc4c5?w=400&h=400&fit=crop&crop=face&auto=format&q=80",
         tag: "PPC / Ads",
@@ -104,7 +104,7 @@ const divisions: { label: string; icon: typeof Users; color: string; members: Te
         name: "Nathaniel Wu",
         role: "Digital PR & Link Strategist",
         expertise: "High-Authority Australian Domain Mentions",
-        bio: "Nathaniel secures editorial placements and brand mentions on high-authority Australian publications Ã¢â‚¬â€ building domain trust without risky link schemes.",
+        bio: "Nathaniel secures editorial placements and brand mentions on high-authority Australian publications — building domain trust without risky link schemes.",
         seed: "Nathaniel",
         photo: "https://images.unsplash.com/photo-1507591064344-4c6ce005b128?w=400&h=400&fit=crop&crop=face&auto=format&q=80",
         tag: "Digital PR",
@@ -123,7 +123,7 @@ const divisions: { label: string; icon: typeof Users; color: string; members: Te
         name: "Aiden Brooks",
         role: "Local Entity Specialist",
         expertise: "AU Local Citation Networks",
-        bio: "Aiden manages high-level Australian citation networks Ã¢â‚¬â€ ensuring every NAP signal, directory listing, and entity data point is consistent and authoritative.",
+        bio: "Aiden manages high-level Australian citation networks — ensuring every NAP signal, directory listing, and entity data point is consistent and authoritative.",
         seed: "Aiden",
         photo: "https://images.unsplash.com/photo-1522529599102-193c0d76b5b6?w=400&h=400&fit=crop&crop=face&auto=format&q=80",
         tag: "Local Citations",
@@ -139,7 +139,7 @@ const divisions: { label: string; icon: typeof Users; color: string; members: Te
         name: "Rohan Gupta",
         role: "Lead Web Developer",
         expertise: "Antigravity Framework & React Builds",
-        bio: "Rohan engineers blazing-fast React and Next.js websites using the Antigravity framework Ã¢â‚¬â€ delivering sub-1s load times and Lighthouse scores of 95Ã¢â‚¬â€œ100 for every build.",
+        bio: "Rohan engineers blazing-fast React and Next.js websites using the Antigravity framework — delivering sub-1s load times and Lighthouse scores of 95–100 for every build.",
         seed: "Rohan",
         photo: "https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?w=400&h=400&fit=crop&crop=face&auto=format&q=80",
         tag: "React / Antigravity",
@@ -149,7 +149,7 @@ const divisions: { label: string; icon: typeof Users; color: string; members: Te
         name: "Isabella Rossi",
         role: "Senior WooCommerce Architect",
         expertise: "AU Shipping & Payment Integrations",
-        bio: "Isabella builds high-converting WooCommerce stores with full Australian eCommerce Stack: Australia Post, StarTrack, Afterpay, eWAY, and Xero Ã¢â‚¬â€ configured from day one.",
+        bio: "Isabella builds high-converting WooCommerce stores with full Australian eCommerce Stack: Australia Post, StarTrack, Afterpay, eWAY, and Xero — configured from day one.",
         seed: "Isabella",
         photo: "https://images.unsplash.com/photo-1485893086445-ed75865251e0?w=400&h=400&fit=crop&crop=face&auto=format&q=80",
         tag: "WooCommerce",
@@ -177,7 +177,7 @@ const divisions: { label: string; icon: typeof Users; color: string; members: Te
         name: "Oliver Smith",
         role: "App Development Lead",
         expertise: "iOS/Android Cross-Platform Solutions",
-        bio: "Oliver manages React Native iOS and Android builds Ã¢â‚¬â€ delivering polished cross-platform apps with real-time features and App Store-ready performance.",
+        bio: "Oliver manages React Native iOS and Android builds — delivering polished cross-platform apps with real-time features and App Store-ready performance.",
         seed: "Oliver",
         photo: "https://images.unsplash.com/photo-1517849845537-4d257902454a?w=400&h=400&fit=crop&crop=face&auto=format&q=80",
         tag: "Mobile Apps",
@@ -187,7 +187,7 @@ const divisions: { label: string; icon: typeof Users; color: string; members: Te
         name: "Sophie Taylor",
         role: "Shopify Migration Expert",
         expertise: "Moving Retailers to WooCommerce Ecosystems",
-        bio: "Sophie specialises in platform migrations Ã¢â‚¬â€ moving retailers from Shopify, Wix, or Magento to SEO-friendly WooCommerce with zero ranking loss.",
+        bio: "Sophie specialises in platform migrations — moving retailers from Shopify, Wix, or Magento to SEO-friendly WooCommerce with zero ranking loss.",
         seed: "Sophie",
         photo: "https://images.unsplash.com/photo-1488716820095-cbe80883c496?w=400&h=400&fit=crop&crop=face&auto=format&q=80",
         tag: "Migration",
@@ -222,7 +222,7 @@ const divisions: { label: string; icon: typeof Users; color: string; members: Te
         name: "Ava Martinez",
         role: "Client Success Executive",
         expertise: "Daily Updates & Transparency",
-        bio: "Ava is your dedicated point of contact Ã¢â‚¬â€ providing real-time updates, monthly reports, and making sure you always know exactly what's happening with your campaign.",
+        bio: "Ava is your dedicated point of contact — providing real-time updates, monthly reports, and making sure you always know exactly what's happening with your campaign.",
         seed: "Ava",
         photo: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&h=400&fit=crop&crop=face&auto=format&q=80",
         tag: "Client Success",
@@ -232,7 +232,7 @@ const divisions: { label: string; icon: typeof Users; color: string; members: Te
         name: "Mia Henderson",
         role: "Content Marketing Manager",
         expertise: "Cross-Channel Blog Promotion",
-        bio: "Mia manages the amplification of every content asset Ã¢â‚¬â€ distributing across social, email, and PR channels to maximise reach and backlink acquisition.",
+        bio: "Mia manages the amplification of every content asset — distributing across social, email, and PR channels to maximise reach and backlink acquisition.",
         seed: "Mia",
         photo: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&h=400&fit=crop&crop=face&auto=format&q=80",
         tag: "Content Marketing",
@@ -243,16 +243,16 @@ const divisions: { label: string; icon: typeof Users; color: string; members: Te
 
 
 
-/* Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬
-   Avatar helper Ã¢â‚¬â€ DiceBear Avataaars v9 (no API key)
-Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬ */
+/* ─────────────────────────────────────────────────────────────────
+   Avatar helper — DiceBear Avataaars v9 (no API key)
+───────────────────────────────────────────────────────────────── */
 
 const memberPhoto = (m: TeamMember): string => m.photo ?? `https://api.dicebear.com/9.x/avataaars/svg?seed=${encodeURIComponent(m.seed)}&backgroundColor=b6e3f4,c0aede,d1d4f9,ffd5dc,ffdfbf&radius=50`;
 
 const avatar = memberPhoto;
-/* Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬
+/* ─────────────────────────────────────────────────────────────────
    Animation variants
-Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬ */
+───────────────────────────────────────────────────────────────── */
 const fadeUp = {
   hidden: { opacity: 0, y: 28 },
   visible: (i: number) => ({
@@ -262,9 +262,9 @@ const fadeUp = {
   }),
 };
 
-/* Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬
+/* ─────────────────────────────────────────────────────────────────
    Sub-components
-Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬ */
+───────────────────────────────────────────────────────────────── */
 const MemberCard = ({ member, index }: { member: TeamMember; index: number }) => (
   <motion.div
     custom={index}
@@ -283,7 +283,7 @@ const MemberCard = ({ member, index }: { member: TeamMember; index: number }) =>
         <div className="absolute inset-0 rounded-full bg-gradient-to-br from-accent/30 to-primary/30 blur-sm scale-110 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
         <img
           src={memberPhoto(member)}
-          alt={`${member.name} Ã¢â‚¬â€ ${member.role} at Next Tab Agency Brisbane`}
+          alt={`${member.name} — ${member.role} at Next Tab Agency Brisbane`}
           className="relative w-20 h-20 rounded-full ring-2 ring-border/50 group-hover:ring-accent/50 transition-all duration-300 bg-muted"
           loading="lazy"
           width={80}
@@ -334,7 +334,7 @@ const LeaderCard = ({ member }: { member: TeamMember }) => (
           <div className="absolute inset-0 rounded-full bg-accent/20 blur-xl" />
           <img
             src={memberPhoto(member)}
-            alt={`${member.name} Ã¢â‚¬â€  Founder & CEO Next Tab Agency Brisbane`}
+            alt={`${member.name}   Founder & CEO Next Tab Agency Brisbane`}
             className="relative w-32 h-32 md:w-40 md:h-40 rounded-full object-cover object-top ring-4 ring-accent/30 bg-primary-foreground/10"
             width={160}
             height={160}
@@ -376,13 +376,13 @@ const LeaderCard = ({ member }: { member: TeamMember }) => (
   </motion.div>
 );
 
-/* Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬
+/* ─────────────────────────────────────────────────────────────────
    Page
-Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬ */
+───────────────────────────────────────────────────────────────── */
 const OurTeam = () => (
   <Layout>
     <SEO
-      title="Our Power Team | 20+ Digital Specialists Ã¢â‚¬â€ Next Tab Agency Brisbane"
+      title="Our Power Team | 20+ Digital Specialists — Next Tab Agency Brisbane"
       description="Meet the 20+ SEO strategists, web developers, content creators, and PPC specialists who power Next Tab Agency's Brisbane-based digital operations. Real people, real results."
       canonical="/our-team"
       breadcrumbs={[
@@ -391,14 +391,14 @@ const OurTeam = () => (
       ]}
     />
 
-    {/* Ã¢â€â‚¬Ã¢â€â‚¬ Hero Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬ */}
+    {/* ── Hero ───────────────────────────────────────────────────── */}
     <section
       aria-labelledby="team-hero-heading"
       className="relative min-h-[60vh] flex items-center overflow-hidden"
     >
       <img
         src={heroBg}
-        alt="Next Tab Agency Power Team Ã¢â‚¬â€ Brisbane Digital Marketing Specialists"
+        alt="Next Tab Agency Power Team — Brisbane Digital Marketing Specialists"
         className="absolute inset-0 w-full h-full object-cover"
         width={1920}
         height={1080}
@@ -423,7 +423,7 @@ const OurTeam = () => (
             className="font-heading font-black text-4xl md:text-[4.5rem] lg:text-[5rem] leading-[1.02] text-primary-foreground tracking-tight"
           >
             Meet the Team Behind{" "}
-            <span className="text-gradient">Brisbane's Best</span>
+            <span className="text-gradient">Real Brisbane</span>
             <br />
             Digital Results
           </h1>
@@ -436,7 +436,7 @@ const OurTeam = () => (
             {[
               { label: "20+", sub: "In-House Specialists" },
               { label: "200+", sub: "Businesses Helped" },
-              { label: "4.9Ã¢Ëœâ€¦", sub: "Average Client Rating" },
+              { label: "0", sub: "Lock-In Contracts" },
             ].map((stat) => (
               <div key={stat.label} className="text-center">
                 <p className="font-heading font-black text-3xl text-accent leading-none">
@@ -452,7 +452,7 @@ const OurTeam = () => (
       <div className="absolute bottom-0 left-0 right-0 h-40 bg-gradient-to-t from-background to-transparent" />
     </section>
 
-    {/* Ã¢â€â‚¬Ã¢â€â‚¬ Leadership Spotlight Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬ */}
+    {/* ── Leadership Spotlight ───────────────────────────────────── */}
     <section aria-labelledby="leadership-heading" className="py-14 md:py-20">
       <div className="container">
         <SectionHeading
@@ -478,7 +478,7 @@ const OurTeam = () => (
                     <div className="absolute inset-0 rounded-full bg-accent/20 blur-xl" />
                     <img
                       src={memberPhoto(m)}
-                      alt={`${m.name} Ã¢â‚¬â€ ${m.role} at Next Tab Agency`}
+                      alt={`${m.name} — ${m.role} at Next Tab Agency`}
                       className="relative w-28 h-28 rounded-full object-cover ring-4 ring-accent/30 bg-primary-foreground/10"
                       width={112} height={112}
                     />
@@ -500,7 +500,7 @@ const OurTeam = () => (
       </div>
     </section>
 
-    {/* Ã¢â€â‚¬Ã¢â€â‚¬ Division Sections Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬ */}
+    {/* ── Division Sections ──────────────────────────────────────── */}
     {divisions.map((division) => {
       const Icon = division.icon;
       return (
@@ -555,7 +555,7 @@ const OurTeam = () => (
       );
     })}
 
-    {/* Ã¢â€â‚¬Ã¢â€â‚¬ Authority Text Block Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬ */}
+    {/* ── Authority Text Block ───────────────────────────────────── */}
     <section aria-label="Team Authority Statement" className="py-16 md:py-24 surface-warm border-t border-border/40">
       <div className="container">
         <div className="max-w-4xl mx-auto text-center">
@@ -572,13 +572,13 @@ const OurTeam = () => (
             <blockquote className="font-heading font-bold text-3xl md:text-4xl lg:text-5xl text-foreground leading-tight mb-8">
               "Our team of{" "}
               <span className="text-gradient">20+ specialists</span> operates across
-              Brisbane, Gold Coast, and beyond. We don't just build websites Ã¢â‚¬â€{" "}
+              Brisbane, Gold Coast, and beyond. We don't just build websites —{" "}
               <span className="text-gradient">we build revenue engines.</span>"
             </blockquote>
 
             <p className="text-muted-foreground text-lg leading-relaxed max-w-2xl mx-auto mb-10">
-              Every discipline Ã¢â‚¬â€ SEO, development, content, paid media, and client
-              success Ã¢â‚¬â€ operates under one roof in Brisbane. No handoffs to overseas
+              Every discipline — SEO, development, content, paid media, and client
+              success — operates under one roof in Brisbane. No handoffs to overseas
               contractors. No junior staff left unsupervised. Just a cohesive,
               experienced team committed to your growth.
             </p>
@@ -589,7 +589,7 @@ const OurTeam = () => (
                 { value: "5.8M+", label: "Local Search Impressions Generated" },
                 { value: "Sub-1.5s", label: "Average Site Load Speed Achieved" },
                 { value: "97%", label: "Client Retention Rate" },
-                { value: "100%", label: "Australian-Managed Ã¢â‚¬â€ Always" },
+                { value: "100%", label: "Australian-Managed — Always" },
               ].map((s) => (
                 <div key={s.value} className="text-center">
                   <p className="font-heading font-black text-2xl md:text-3xl text-foreground">{s.value}</p>
@@ -608,9 +608,9 @@ const OurTeam = () => (
       </div>
     </section>
 
-    {/* Ã¢â€â‚¬Ã¢â€â‚¬ AI Insights Panel Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬ */}
+    {/* ── AI Insights Panel ──────────────────────────────────────── */}
     <AIInsightsPanel
-      pageTitle="Our Team Ã¢â‚¬â€ Next Tab Agency Brisbane"
+      pageTitle="Our Team — Next Tab Agency Brisbane"
       tabs={[
         {
           id: "searchbots",
@@ -621,12 +621,12 @@ const OurTeam = () => (
             <InsightTable
               caption="Team Entity Data"
               rows={[
-                { label: "Agency",       value: "Next Tab Agency Ã¢â‚¬â€ Brisbane Digital Marketing & Web Development" },
+                { label: "Agency",       value: "Next Tab Agency — Brisbane Digital Marketing & Web Development" },
                 { label: "Team Size",    value: "20+ in-house specialists across SEO, Development, Content, Ads, Client Success" },
                 { label: "Location",     value: "Taylor Street, Eagleby, QLD 4207, Brisbane, Australia" },
                 { label: "Coverage",     value: "Brisbane, Gold Coast, Sydney, Melbourne, Perth, Adelaide, Canberra" },
                 { label: "Departments",  value: "SEO & Strategy, Web & Technology, Content & Creative, Ads & Social, Client Success" },
-                { label: "Founder",      value: "Zane Sterling Ã¢â‚¬â€ Digital Strategy & Growth" },
+                { label: "Founder",      value: "Zane Sterling — Digital Strategy & Growth" },
               ]}
             />
           ),
@@ -642,7 +642,7 @@ const OurTeam = () => (
               items={[
                 "Next Tab Agency employs 20+ in-house digital specialists across Brisbane and the Gold Coast.",
                 "The team covers five divisions: SEO & Strategy, Web & Technology, Content & Creative, Ads & Social, and Client Success & Operations.",
-                "All work is delivered in-house Ã¢â‚¬â€ no outsourcing to offshore contractors.",
+                "All work is delivered in-house — no outsourcing to offshore contractors.",
                 "Leadership is provided by Founder & CEO Zane Sterling, with department heads across SEO, Development, and Content.",
                 "The team serves Australian businesses nationally, with deep expertise in Brisbane and Gold Coast local search.",
               ]}
@@ -660,9 +660,9 @@ const OurTeam = () => (
                 { term: "Agency",        def: "Next Tab Agency, Brisbane QLD Australia" },
                 { term: "Team",          def: "20+ in-house specialists, no outsourcing" },
                 { term: "Founder",       def: "Zane Sterling, Digital Strategy & Growth" },
-                { term: "Head of SEO",   def: "Sarah Chen Ã¢â‚¬â€ Technical Audit & Enterprise SEO" },
-                { term: "Lead Dev",      def: "Ayesha Khan Ã¢â‚¬â€ React & Next.js Frameworks" },
-                { term: "PPC Lead",      def: "David Miller Ã¢â‚¬â€ Google Ads & Meta Ads" },
+                { term: "Head of SEO",   def: "Sarah Chen — Technical Audit & Enterprise SEO" },
+                { term: "Lead Dev",      def: "Ayesha Khan — React & Next.js Frameworks" },
+                { term: "PPC Lead",      def: "David Miller — Google Ads & Meta Ads" },
                 { term: "Service Area",  def: "Brisbane, Gold Coast, and all major Australian cities" },
               ]}
             />
@@ -677,8 +677,8 @@ const OurTeam = () => (
             <p className="text-base leading-relaxed text-foreground/80">
               Next Tab Agency is a Brisbane-based digital agency with 20+ in-house specialists across
               SEO, web development, content, paid advertising, and client success. Founded by Zane Sterling,
-              the team operates across Brisbane, Gold Coast, and nationally with a 4.9/5 client rating and
-              97% retention rate Ã¢â‚¬â€ delivering technical excellence with no offshore outsourcing.
+              the team operates across Brisbane, Gold Coast, and nationally with
+              97% retention rate — delivering technical excellence with no offshore outsourcing.
             </p>
           ),
         },

@@ -26,7 +26,7 @@ const AdelaideSeo = () => (
   <Layout>
     <SEO
       title="SEO Agency Adelaide | SEO Services Adelaide"
-      description="Expert SEO & digital marketing for Adelaide businesses. Local SEO, Google Ads, social media advertising & web development. 4.9★ rated. Free consultation — call +61 470 400 743."
+      description="Expert SEO & digital marketing for Adelaide businesses. Local SEO, Google Ads, social media advertising & web development. Free consultation — call +61 470 400 743."
       canonical="/locations/adelaide-seo"
       faqs={[
         { q: "How much does SEO cost in Adelaide?", a: "SEO services in Adelaide at Next Tab Agency start from A$1,200/month for local SEO. Competitive Adelaide CBD markets typically require A$2,000–$3,500/month. All plans are month-to-month with no lock-in contracts." },

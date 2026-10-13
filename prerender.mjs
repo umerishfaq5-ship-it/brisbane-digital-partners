@@ -76,6 +76,7 @@ const routes = [
   '/locations/adelaide-seo',
   '/locations/canberra-seo',
   '/locations/gold-coast-seo',
+  '/locations/logan-seo',
   '/locations/sunshine-coast-seo',
   '/locations/hobart-seo',
   // General
