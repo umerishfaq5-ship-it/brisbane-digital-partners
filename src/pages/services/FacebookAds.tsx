@@ -59,7 +59,7 @@ const service = {
 const FacebookAds = () => (
   <Layout>
     <SEO
-      title="Facebook & Meta Ads Agency Australia – Facebook Advertising Brisbane"
+      title="Facebook Ads Agency Australia | Facebook Advertising"
       description="Results-focused Facebook and Instagram advertising agency for Australian businesses. We build full-funnel Meta Ads campaigns that generate leads, sales, and measurable ROAS."
       canonical="/services/facebook-ads"
       faqs={service.faqs}

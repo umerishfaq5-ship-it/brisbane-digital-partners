@@ -55,7 +55,7 @@ const service = {
 const SeoForDentists = () => (
   <Layout>
     <SEO
-      title="SEO for Dentists Australia — Get More Dental Patients From Google"
+      title="SEO for Dentists Australia | Dental SEO Services"
       description="Specialist dental SEO for Australian dentists and clinics. We get dental practices into the Google Map Pack and rank service pages to drive new patient bookings."
       canonical="/industry/seo-for-dentists"
       faqs={service.faqs}

@@ -89,7 +89,7 @@ const faqs = [
 const SeoPackages = () => (
   <Layout>
     <SEO
-      title="SEO Packages Australia | Pricing & What's Included"
+      title="SEO Packages Australia & Brisbane | Pricing"
       description="Explore Next Tab Agency's SEO packages for Australian businesses — Local SEO, Growth SEO, and Enterprise SEO. Custom scopes, no lock-in contracts. Request a quote today."
       canonical="/services/seo-packages"
       faqs={faqs}

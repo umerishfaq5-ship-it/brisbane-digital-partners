@@ -159,7 +159,7 @@ const comparisonRows = [
 const Index = () => (
   <Layout>
     <SEO
-      title="Digital Marketing & SEO Agency Brisbane"
+      title="SEO & Digital Marketing Agency Brisbane & Logan"
       description="SEO, Google Ads and websites for Brisbane, Logan & Gold Coast businesses. Month-to-month, no lock-in contracts. Book a free 20-minute website review."
       canonical="/"
       breadcrumbs={[{ name: "Home", url: "https://nexttabagency.com/" }]}

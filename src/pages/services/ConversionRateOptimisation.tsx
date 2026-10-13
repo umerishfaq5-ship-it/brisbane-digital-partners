@@ -58,7 +58,7 @@ const service = {
 const ConversionRateOptimisation = () => (
   <Layout>
     <SEO
-      title="Conversion Rate Optimisation (CRO) Australia — CRO Agency Brisbane"
+      title="Conversion Rate Optimisation Brisbane | CRO Agency"
       description="CRO agency for Australian businesses. We use data, A/B testing, and UX analysis to increase your website conversion rate — generating more leads and sales from existing traffic."
       canonical="/services/conversion-rate-optimisation"
       faqs={service.faqs}

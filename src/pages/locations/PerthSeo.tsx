@@ -26,7 +26,7 @@ const fadeUp = { hidden: { opacity: 0, y: 28 }, visible: { opacity: 1, y: 0, tra
 const PerthSeo = () => (
   <Layout>
     <SEO
-      title="SEO Agency Perth & WA | SEO Western Australia"
+      title="SEO WA & Perth | SEO Agency Western Australia"
       description="SEO for Perth and WA businesses — Fremantle, Joondalup and regional Western Australia. Local SEO, Google Ads and technical audits. Book a free SEO audit."
       canonical="/locations/perth-seo"
       faqs={[

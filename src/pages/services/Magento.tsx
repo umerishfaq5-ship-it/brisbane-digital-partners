@@ -69,7 +69,7 @@ const relatedServices = [
 const Magento = () => (
   <Layout>
     <SEO
-      title="Magento Developer Brisbane | Adobe Commerce Experts"
+      title="Magento Developer Brisbane & Gold Coast"
       description="Brisbane's Magento 2 & Adobe Commerce developers. Hyva theme builds, ERP integrations, M1→M2 migrations. Projects from A$25,000. Free scoping call — no obligation."
       canonical="/services/magento-development"
       faqs={service.faqs}

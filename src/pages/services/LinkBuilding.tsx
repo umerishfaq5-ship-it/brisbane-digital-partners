@@ -58,7 +58,7 @@ const LinkBuilding = () => {
   return (
     <Layout>
       <SEO
-        title="Link Building Services Australia — Ethical High-Authority Backlinks"
+        title="Link Building Agency Australia | Ethical Backlinks"
         description="Build the domain authority your rankings need. Our link building service secures editorial backlinks from high-quality Australian and international websites."
         canonical="/services/link-building"
         faqs={service.faqs}

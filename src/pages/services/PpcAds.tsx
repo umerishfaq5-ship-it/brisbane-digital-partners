@@ -91,7 +91,7 @@ const fadeUp = {
 const PpcAds = () => (
   <Layout>
     <SEO
-      title="Google Ads & PPC Agency Brisbane"
+      title="Google Ads Agency Brisbane | PPC Management"
       description="Google Ads management for Brisbane businesses: Search, Shopping, Maps and Local Services Ads with full call tracking. No lock-in contracts. Free account audit — 0470 400 743."
       canonical="/services/ppc-google-ads"
       breadcrumbs={[

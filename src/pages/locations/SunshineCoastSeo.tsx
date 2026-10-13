@@ -40,7 +40,7 @@ const faqs = [
 const SunshineCoastSeo = () => (
   <Layout>
     <SEO
-      title="SEO Sunshine Coast | Local SEO Agency"
+      title="SEO Sunshine Coast | Sunshine Coast SEO Agency"
       description="SEO for Sunshine Coast businesses from Noosa to Caloundra. Google Maps rankings, suburb pages and review strategy. No lock-in contracts. Free SEO audit."
       canonical="/locations/sunshine-coast-seo"
       faqs={faqs}

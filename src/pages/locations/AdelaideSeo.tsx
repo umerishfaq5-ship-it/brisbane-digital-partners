@@ -25,7 +25,7 @@ const fadeUp = { hidden: { opacity: 0, y: 28 }, visible: { opacity: 1, y: 0, tra
 const AdelaideSeo = () => (
   <Layout>
     <SEO
-      title="SEO Agency Adelaide SA | Top-Rated Local SEO Experts | Next Tab Agency"
+      title="SEO Agency Adelaide | SEO Services Adelaide"
       description="Expert SEO & digital marketing for Adelaide businesses. Local SEO, Google Ads, social media advertising & web development. 4.9★ rated. Free consultation — call +61 470 400 743."
       canonical="/locations/adelaide-seo"
       faqs={[

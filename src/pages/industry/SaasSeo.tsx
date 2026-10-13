@@ -63,7 +63,7 @@ const service = {
 const SaasSeo = () => (
   <Layout>
     <SEO
-      title="B2B & SaaS SEO Australia — Organic Pipeline for Tech Companies"
+      title="B2B SaaS SEO Agency Australia"
       description="SaaS-specific SEO strategy for Australian B2B software companies. Competitor comparison pages, bottom-of-funnel content, and technical SEO that generates MQLs and trial signups. Brisbane-based, Australia-wide."
       canonical="/industry/saas-seo"
       faqs={service.faqs}

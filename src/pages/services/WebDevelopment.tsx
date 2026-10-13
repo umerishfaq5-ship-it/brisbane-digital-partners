@@ -63,7 +63,7 @@ const WebDevelopment = () => {
   return (
     <Layout>
       <SEO
-        title="Web Design & Development Brisbane"
+        title="Web Developer Brisbane | Web Design & Development"
         description="Web design and development in Brisbane. Fast, mobile-first websites in React, Next.js and WordPress — Core Web Vitals optimised, SEO-ready and built to convert. Free quote."
         canonical="/services/web-development"
         faqs={service.faqs}

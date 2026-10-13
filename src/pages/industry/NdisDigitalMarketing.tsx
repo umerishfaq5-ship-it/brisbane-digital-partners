@@ -60,7 +60,7 @@ const suburbsServed = [
 const NdisDigitalMarketing = () => (
   <Layout>
     <SEO
-      title="NDIS Digital Marketing Brisbane — Grow Your Participant Numbers"
+      title="NDIS Marketing Agency Brisbane | NDIS Digital Marketing"
       description="Specialist NDIS digital marketing for Brisbane and Queensland providers. NDIS-compliant SEO, Google Ads, and web design that drives participant enquiries. Logan, Ipswich, Gold Coast, Sunshine Coast."
       canonical="/industry/ndis-digital-marketing"
       faqs={service.faqs}

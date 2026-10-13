@@ -52,7 +52,7 @@ const MobileApps = () => {
   return (
     <Layout>
       <SEO
-        title="React Native Mobile App Development Brisbane"
+        title="Mobile App Development Brisbane | React Native Apps"
         description="Premium React Native mobile app development in Brisbane. Cross-platform iOS and Android apps crafted natively with incredible performance."
         canonical="/services/mobile-apps"
         faqs={service.faqs}

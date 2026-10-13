@@ -137,7 +137,7 @@ const Shopify = () => (
 
     {/* ── SEO & Schema ───────────────────────────────────────── */}
     <SEO
-      title="Shopify Development Brisbane — Expert Shopify Stores Australia"
+      title="Shopify Development Agency Brisbane | Shopify Developer"
       description="Expert Shopify store development in Brisbane. Custom Shopify themes, Shopify Plus, Afterpay integration, and migration from WooCommerce or Magento. Built for Australian e-commerce."
       canonical="/services/shopify-development"
       faqs={service.faqs}

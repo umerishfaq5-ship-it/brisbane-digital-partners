@@ -47,7 +47,7 @@ const service = {
 const LinkedInAds = () => (
   <Layout>
     <SEO
-      title="LinkedIn Advertising Agency Australia — LinkedIn Ads Management"
+      title="LinkedIn Advertising Agency Australia | LinkedIn Ads"
       description="LinkedIn Ads management for Australian B2B businesses. Precise job title, company, and industry targeting that generates pipeline-quality leads from decision-makers."
       canonical="/services/linkedin-ads"
       faqs={service.faqs}

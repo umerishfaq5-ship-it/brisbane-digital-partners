@@ -40,7 +40,7 @@ const faqs = [
 const GoldCoastSeo = () => (
   <Layout>
     <SEO
-      title="SEO Gold Coast | Local SEO Agency"
+      title="SEO Agency Gold Coast | SEO Services Gold Coast"
       description="Gold Coast SEO from a team just up the M1 in Logan. Rank in Google Maps and organic results for Southport, Robina and Coomera searches. Free SEO audit."
       canonical="/locations/gold-coast-seo"
       faqs={faqs}

@@ -86,7 +86,7 @@ const fadeUp = {
 const SocialMediaAds = () => (
   <Layout>
     <SEO
-      title="Social Media Advertising Agency Brisbane & Australia — Facebook, Instagram, TikTok, LinkedIn Ads"
+      title="Facebook & Instagram Ads Agency Brisbane"
       description="Expert social media advertising for Australian businesses. Facebook Ads, Instagram Ads, LinkedIn Ads, YouTube & TikTok campaigns. Avg 3.8× ROAS. No lock-in contracts. Free ad audit — call +61 470 400 743."
       canonical="/services/social-media-ads"
       faqs={[

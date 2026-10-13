@@ -40,7 +40,7 @@ const faqs = [
 const HobartSeo = () => (
   <Layout>
     <SEO
-      title="SEO Hobart — SEO Agency for Hobart & Tasmania Businesses"
+      title="SEO Hobart | SEO Services & Agency Tasmania"
       description="Expert SEO agency for Hobart and Tasmanian businesses. We rank Hobart companies on Google with local SEO, Map Pack strategy, and suburb-level keyword targeting."
       canonical="/locations/hobart-seo"
       faqs={faqs}

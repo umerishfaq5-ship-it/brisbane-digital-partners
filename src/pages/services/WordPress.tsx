@@ -136,7 +136,7 @@ const WordPress = () => (
 
     {/* ── SEO & Structured Data ──────────────────────────────── */}
     <SEO
-      title="WordPress Developer Brisbane | Custom WP Design & WooCommerce | Next Tab Agency"
+      title="WordPress Developer Brisbane | WordPress Agency"
       description="Brisbane's WordPress specialists. Custom theme design, WooCommerce setup & ongoing support. Sub-2s load times, Google-ready architecture. 50+ WordPress sites delivered. Free quote today."
       canonical="/services/wordpress-development"
       faqs={service.faqs}
