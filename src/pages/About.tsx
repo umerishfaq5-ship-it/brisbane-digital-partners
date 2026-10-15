@@ -9,6 +9,7 @@ import SectionHeading from "@/components/SectionHeading";
 import { Users, Award, Heart, MapPin, GraduationCap, Handshake, Search, Zap, TrendingUp, ShieldCheck, Star } from "lucide-react";
 import heroBg from "@/assets/hero-bg.jpg";
 import SEO from "@/components/SEO";
+import { Helmet } from "react-helmet-async";
 import AIInsightsPanel, { InsightDL, InsightList, InsightTable } from "@/components/AIInsightsPanel";
 
 /* ─── Audit Booking Form (15-min call) ───────────────────────── */
@@ -146,9 +147,41 @@ const About = () => (
   <Layout>
     <SEO
       title="About Next Tab Agency | 20+ Experts, One Goal — Your Growth"
-      description="Next Tab Agency: 20+ in-house Brisbane specialists delivering Data-Driven ROI through technical SEO, high-performance web development (Antigravity), and ethical digital growth strategies for Australian businesses."
+      description="Next Tab Agency: 20+ in-house Brisbane specialists delivering Data-Driven ROI through technical SEO, high-performance web development and ethical digital growth strategies for Australian businesses."
       canonical="/about"
     />
+    <Helmet>
+      <script type="application/ld+json">{JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "AboutPage",
+        url: "https://nexttabagency.com/about/",
+        name: "About Next Tab Agency",
+        mainEntity: {
+          "@type": "Organization",
+          "@id": "https://nexttabagency.com/#organization",
+          name: "Next Tab Agency",
+          url: "https://nexttabagency.com/",
+          logo: "https://nexttabagency.com/logo.svg",
+          foundingDate: "2019",
+          telephone: "+61470400743",
+          email: "info@nexttabagency.com",
+          address: {
+            "@type": "PostalAddress",
+            addressLocality: "Eagleby",
+            addressRegion: "QLD",
+            postalCode: "4207",
+            addressCountry: "AU",
+          },
+          areaServed: ["Logan", "Brisbane", "Gold Coast", "Australia"],
+          founder: {
+            "@type": "Person",
+            name: "Hamza Ishfaq",
+            jobTitle: "Founder",
+            sameAs: ["https://www.linkedin.com/in/hamza-ishfaq-108268105/"],
+          },
+        },
+      })}</script>
+    </Helmet>
 
     {/* Hero */}
     <section aria-labelledby="about-hero-heading" className="relative min-h-[55vh] flex items-center overflow-hidden">

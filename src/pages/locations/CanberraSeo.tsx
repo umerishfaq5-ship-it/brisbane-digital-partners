@@ -51,7 +51,7 @@ const CanberraSeo = () => (
             <MapPin className="w-3.5 h-3.5" />Canberra, ACT
           </span>
           <h1 id="canberra-hero-heading" className="font-heading font-bold text-4xl md:text-[3.5rem] leading-[1.08] text-primary-foreground mb-6">
-            SEO & digital marketing for{" "}<span className="text-gradient">Canberra businesses</span>
+            SEO Agency Canberra —{" "}<span className="text-gradient">SEO &amp; digital marketing for Canberra businesses</span>
           </h1>
           <p className="text-lg md:text-xl text-primary-foreground/60 max-w-2xl mb-10 leading-relaxed">
             Canberra's unique mix of government, education, and private sector creates distinct digital marketing opportunities. We help ACT businesses rank higher and attract the right customers.

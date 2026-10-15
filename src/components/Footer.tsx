@@ -4,13 +4,7 @@ import { MapPin, Phone, Mail, ShieldCheck, Star, Award, Lock, Globe, MessageCirc
 const Footer = () => (
   <footer
     className="surface-teal text-primary-foreground relative overflow-hidden"
-    itemScope
-    itemType="https://schema.org/LocalBusiness"
   >
-    <meta itemProp="name" content="Next Tab Agency" />
-    <meta itemProp="telephone" content="+61470400743" />
-    <meta itemProp="email" content="info@nexttabagency.com" />
-    <meta itemProp="address" content="Taylor Street, Eagleby, QLD 4207, Brisbane, Australia" />
 
     <div className="absolute inset-0 pattern-lines opacity-30" />
     <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-accent/40 to-transparent" />
@@ -189,22 +183,22 @@ const Footer = () => (
 
           {/* Contact */}
           <p className="font-heading font-semibold mb-4 text-xs uppercase tracking-[0.2em] text-accent">Contact Us</p>
-          <address className="not-italic" itemProp="address" itemScope itemType="https://schema.org/PostalAddress">
+          <address className="not-italic">
             <ul className="space-y-3 text-sm">
               <li className="flex items-start gap-3">
                 <MapPin className="w-4 h-4 mt-0.5 shrink-0 text-accent" aria-hidden="true" />
                 <span className="opacity-80">
-                  <span itemProp="streetAddress">Taylor Street</span>,{" "}
-                  <span itemProp="addressLocality">Eagleby</span>,{" "}
-                  <span itemProp="addressRegion">QLD</span>{" "}
-                  <span itemProp="postalCode">4207</span>,{" "}
+                  <span>Taylor Street</span>,{" "}
+                  <span>Eagleby</span>,{" "}
+                  <span>QLD</span>{" "}
+                  <span>4207</span>,{" "}
                   Brisbane,{" "}
-                  <span itemProp="addressCountry">Australia</span>
+                  <span>Australia</span>
                 </span>
               </li>
               <li className="flex items-center gap-3">
                 <Phone className="w-4 h-4 shrink-0 text-accent" aria-hidden="true" />
-                <a href="tel:+61470400743" className="opacity-80 hover:opacity-100 hover:text-accent transition-colors font-semibold" itemProp="telephone">
+                <a href="tel:+61470400743" className="opacity-80 hover:opacity-100 hover:text-accent transition-colors font-semibold">
                   +61 470 400 743
                 </a>
               </li>
@@ -216,7 +210,7 @@ const Footer = () => (
               </li>
               <li className="flex items-center gap-3">
                 <Mail className="w-4 h-4 shrink-0 text-accent" aria-hidden="true" />
-                <a href="mailto:info@nexttabagency.com" className="opacity-80 hover:opacity-100 hover:text-accent transition-colors" itemProp="email">
+                <a href="mailto:info@nexttabagency.com" className="opacity-80 hover:opacity-100 hover:text-accent transition-colors">
                   info@nexttabagency.com
                 </a>
               </li>

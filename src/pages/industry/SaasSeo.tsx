@@ -107,7 +107,7 @@ const SaasSeo = () => (
       <div className="container">
         <div className="grid sm:grid-cols-3 gap-8 text-center">
           {service.stats.map((s, i) => (
-            <motion.div key={i} {...fadeUp} transition={{ delay: i * 0.1 }}>
+            <motion.div key={i} initial={fadeUp.hidden} whileInView={fadeUp.visible} viewport={{ once: true }} transition={{ delay: i * 0.1 }}>
               <p className="font-heading font-bold text-5xl text-accent mb-2">{s.value}</p>
               <p className="text-sm text-primary-foreground/70 leading-snug">{s.label}</p>
               <p className="text-xs text-primary-foreground/40 mt-1">Source: {s.source}</p>
@@ -123,11 +123,11 @@ const SaasSeo = () => (
         <SectionHeading
           eyebrow="The SaaS SEO Advantage"
           title="Organic Traffic That Actually Converts to Pipeline"
-          subtitle="Most SaaS companies treat SEO like a blog strategy. We treat it like a revenue channel."
+          description="Most SaaS companies treat SEO like a blog strategy. We treat it like a revenue channel."
         />
         <div className="grid md:grid-cols-3 gap-8 mt-12">
           {service.benefits.map((b, i) => (
-            <motion.div key={i} {...fadeUp} transition={{ delay: i * 0.1 }} className="p-8 rounded-2xl border border-border bg-card">
+            <motion.div key={i} initial={fadeUp.hidden} whileInView={fadeUp.visible} viewport={{ once: true }} transition={{ delay: i * 0.1 }} className="p-8 rounded-2xl border border-border bg-card">
               <b.icon className="w-10 h-10 text-accent mb-5" />
               <h3 className="font-heading font-bold text-lg mb-3">{b.title}</h3>
               <p className="text-sm text-muted-foreground leading-relaxed">{b.desc}</p>
@@ -143,11 +143,11 @@ const SaasSeo = () => (
         <SectionHeading
           eyebrow="Content Strategy"
           title="The Full-Funnel SaaS Content Framework"
-          subtitle="We build content at every stage of your buyer's journey — from problem awareness to vendor comparison."
+          description="We build content at every stage of your buyer's journey — from problem awareness to vendor comparison."
         />
         <div className="mt-12 space-y-4 max-w-4xl mx-auto">
           {service.contentTypes.map((c, i) => (
-            <motion.div key={i} {...fadeUp} transition={{ delay: i * 0.08 }}
+            <motion.div key={i} initial={fadeUp.hidden} whileInView={fadeUp.visible} viewport={{ once: true }} transition={{ delay: i * 0.08 }}
               className="grid sm:grid-cols-[80px_200px_1fr] gap-4 items-start p-5 rounded-2xl border border-border bg-card">
               <span className={`inline-flex items-center justify-center px-2 py-1 rounded-full text-xs font-black tracking-wider ${
                 c.type === 'BOFU' ? 'bg-accent/20 text-accent' :
@@ -170,7 +170,7 @@ const SaasSeo = () => (
             <SectionHeading eyebrow="What's Included" title="Full SaaS SEO Service" />
             <ul className="mt-8 space-y-3">
               {service.features.map((f, i) => (
-                <motion.li key={i} {...fadeUp} transition={{ delay: i * 0.04 }} className="flex items-start gap-3 text-sm text-muted-foreground">
+                <motion.li key={i} initial={fadeUp.hidden} whileInView={fadeUp.visible} viewport={{ once: true }} transition={{ delay: i * 0.04 }} className="flex items-start gap-3 text-sm text-muted-foreground">
                   <CheckCircle className="w-4 h-4 text-accent shrink-0 mt-0.5" />{f}
                 </motion.li>
               ))}
@@ -180,7 +180,7 @@ const SaasSeo = () => (
             <SectionHeading eyebrow="Our Process" title="How We Build Your Organic Pipeline" />
             <div className="mt-8 space-y-6">
               {service.process.map((p, i) => (
-                <motion.div key={i} {...fadeUp} transition={{ delay: i * 0.1 }} className="relative pl-14">
+                <motion.div key={i} initial={fadeUp.hidden} whileInView={fadeUp.visible} viewport={{ once: true }} transition={{ delay: i * 0.1 }} className="relative pl-14">
                   <div className="absolute left-0 top-0 text-3xl font-heading font-black text-accent/20">{p.step}</div>
                   <h3 className="font-heading font-bold text-base mb-1">{p.title}</h3>
                   <p className="text-sm text-muted-foreground leading-relaxed">{p.desc}</p>
@@ -198,7 +198,7 @@ const SaasSeo = () => (
         <SectionHeading
           eyebrow="Brisbane Tech Scene"
           title="We Know the Brisbane Tech Ecosystem"
-          subtitle="From Fishburners to River City Labs, QUT Forge to the Valley tech precinct — we understand the Brisbane startup landscape and the B2B buyers within it."
+          description="From Fishburners to River City Labs, QUT Forge to the Valley tech precinct — we understand the Brisbane startup landscape and the B2B buyers within it."
         />
         <div className="mt-8 grid sm:grid-cols-3 gap-4">
           {["Fishburners Brisbane", "River City Labs", "QUT Forge", "Startup QLD", "ilab Ventures", "Brisbane Technology Park"].map((org, i) => (
@@ -235,7 +235,7 @@ const SaasSeo = () => (
         <SectionHeading eyebrow="FAQ" title="SaaS SEO — Your Questions Answered" />
         <div className="mt-10 space-y-6">
           {service.faqs.map((faq, i) => (
-            <motion.div key={i} {...fadeUp} transition={{ delay: i * 0.08 }} className="p-6 rounded-2xl border border-border bg-card">
+            <motion.div key={i} initial={fadeUp.hidden} whileInView={fadeUp.visible} viewport={{ once: true }} transition={{ delay: i * 0.08 }} className="p-6 rounded-2xl border border-border bg-card">
               <h3 className="font-heading font-bold text-base mb-2">{faq.q}</h3>
               <p className="text-sm text-muted-foreground leading-relaxed">{faq.a}</p>
             </motion.div>

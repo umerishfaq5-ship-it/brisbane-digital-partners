@@ -197,9 +197,10 @@ const WebsiteCostBrisbane = () => (
         </table>
       </div>
 
-      <Blockquote>
-        A $5,000 website with no SEO investment is a $5,000 online brochure. A $5,000 website with $1,500/month SEO is a lead generation machine. The website cost is only the beginning.
-      </Blockquote>
+      <Blockquote
+        quote="A $5,000 website with no SEO investment is a $5,000 online brochure. A $5,000 website with $1,500/month SEO is a lead generation machine. The website cost is only the beginning."
+        author="Hamza Ishfaq, Founder, Next Tab Agency"
+      />
 
       <SectionH2>Red Flags When Getting Website Quotes in Brisbane</SectionH2>
 

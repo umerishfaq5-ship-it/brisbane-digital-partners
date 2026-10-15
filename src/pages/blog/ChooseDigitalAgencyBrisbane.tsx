@@ -175,10 +175,10 @@ const ChooseDigitalAgencyBrisbane = () => (
         </table>
       </div>
 
-      <Blockquote>
-        The best time to scrutinise an agency is before you hire them. The worst time is 6 months in when you've paid $15,000 and your rankings haven't moved.
-        <footer>— Hamza Ishfaq, Founder, Next Tab Agency</footer>
-      </Blockquote>
+      <Blockquote
+        quote="The best time to scrutinise an agency is before you hire them. The worst time is 6 months in when you've paid $15,000 and your rankings haven't moved."
+        author="Hamza Ishfaq, Founder, Next Tab Agency"
+      />
 
       <SectionH2>Brisbane Local vs National vs Global Agency: Which is Best?</SectionH2>
 

@@ -97,11 +97,16 @@ export default function SEO({
       description: serviceSchema.description,
       provider: {
         "@type": "LocalBusiness",
+        "@id": "https://nexttabagency.com/#organization",
         name: serviceSchema.provider ?? SITE_NAME,
+        url: `${BASE_URL}/`,
+        telephone: "+61470400743",
         address: {
           "@type": "PostalAddress",
-          addressLocality: "Brisbane",
+          streetAddress: "Taylor Street",
+          addressLocality: "Eagleby",
           addressRegion: "QLD",
+          postalCode: "4207",
           addressCountry: "AU",
         },
       },

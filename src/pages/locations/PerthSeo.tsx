@@ -19,7 +19,7 @@ const services = [
   { icon: Globe, title: "Web Development", href: "/services/web-development/", desc: "Fast, conversion-focused websites for Perth businesses." },
 ];
 
-const suburbs = ["Perth CBD", "Fremantle", "Scarborough", "Joondalup", "Rockingham", "Armadale", "Midland", "Mandurah", "Claremont", "Subiaco", "Victoria Park", "Cannington", "Osborne Park", "Balcatta", "Cockburn Central", "Stirling", "Wanneroo", "Kalamunda"];
+const suburbs = ["Perth CBD", "Fremantle", "Scarborough", "Joondalup", "Rockingham", "Armadale", "Midland", "Mandurah", "Claremont", "Subiaco", "Victoria Park", "Cannington", "Osborne Park", "Balcatta", "Cockburn Central", "Stirling", "Wanneroo", "Kalamunda", "Bunbury", "Busselton", "Margaret River", "Geraldton"];
 
 const fadeUp = { hidden: { opacity: 0, y: 28 }, visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: [0.16, 1, 0.3, 1] } } };
 
@@ -52,7 +52,7 @@ const PerthSeo = () => (
             <MapPin className="w-3.5 h-3.5" />Perth, WA
           </span>
           <h1 id="perth-hero-heading" className="font-heading font-bold text-4xl md:text-[3.5rem] leading-[1.08] text-primary-foreground mb-6">
-            SEO & digital marketing for{" "}<span className="text-gradient">Perth businesses</span>
+            SEO WA &amp; Perth —{" "}<span className="text-gradient">digital marketing for Western Australian businesses</span>
           </h1>
           <p className="text-lg md:text-xl text-primary-foreground/60 max-w-2xl mb-10 leading-relaxed">
             Western Australia's booming economy means fierce online competition. We help Perth businesses rank higher on Google, attract local customers, and grow sustainably.
@@ -109,7 +109,7 @@ const PerthSeo = () => (
     <section aria-labelledby="perth-suburbs-heading" className="py-16 surface-warm relative overflow-hidden">
       <div className="absolute inset-0 pattern-dots" />
       <div className="container relative z-10">
-        <h2 id="perth-suburbs-heading" className="font-heading font-bold text-2xl text-foreground mb-3 text-center">Serving all Perth suburbs & regional WA</h2>
+        <h2 id="perth-suburbs-heading" className="font-heading font-bold text-2xl text-foreground mb-3 text-center">SEO across Perth suburbs & regional WA</h2>
         <p className="text-muted-foreground text-center mb-8 max-w-2xl mx-auto">From the Swan River foreshore to the outer suburbs — we build hyper-local SEO strategies that target how Perth customers search.</p>
         <div className="flex flex-wrap gap-2 justify-center">
           {suburbs.map((s) => (<span key={s} className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-primary/5 border border-primary/10 text-sm text-foreground/70"><MapPin className="w-3 h-3 text-accent" />{s}</span>))}

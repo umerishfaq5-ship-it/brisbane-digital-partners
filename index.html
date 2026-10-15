@@ -4,13 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/svg+xml" href="/logo.svg" />
-    <!-- Preload the hero image to improve LCP (Largest Contentful Paint) -->
-    <link rel="preload" as="image" href="/assets/hero-bg.jpg" fetchpriority="high" />
     <link rel="preconnect" href="https://www.googletagmanager.com" />
-    <link rel="preconnect" href="https://is1-ssl.mzstatic.com" crossorigin="anonymous" />
-    <link rel="preconnect" href="https://play-lh.googleusercontent.com" crossorigin="anonymous" />
-    <link rel="dns-prefetch" href="https://is1-ssl.mzstatic.com" />
-    <link rel="dns-prefetch" href="https://play-lh.googleusercontent.com" />
     <meta name="theme-color" content="#0B302D" />
     <!-- Title leads with strongest geo-modified keyword; per-page titles injected by SEO.tsx Helmet -->
     <title>Brisbane SEO Agency &amp; Web Development | Next Tab Agency</title>
@@ -35,6 +29,7 @@
       {
         "@context": "https://schema.org",
         "@type": "LocalBusiness",
+        "@id": "https://nexttabagency.com/#organization",
         "name": "Next Tab Agency",
         "description": "Digital agency in Eagleby (City of Logan), QLD providing SEO, Google Ads, web development and mobile apps for businesses in Logan, Brisbane, the Gold Coast and across Australia.",
         "founder": { "@type": "Person", "name": "Hamza Ishfaq", "sameAs": "https://www.linkedin.com/in/hamza-ishfaq-108268105/" },
@@ -53,6 +48,12 @@
           "@type": "GeoCoordinates",
           "latitude": -27.7105,
           "longitude": 153.2080
+        },
+        "openingHoursSpecification": {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+          "opens": "00:00",
+          "closes": "23:59"
         },
         "areaServed": [
           { "@type": "City", "name": "Logan" },

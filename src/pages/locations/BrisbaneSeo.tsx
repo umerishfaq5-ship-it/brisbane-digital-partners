@@ -49,10 +49,11 @@ const BrisbaneSeo = () => (
         {JSON.stringify({
           "@context": "https://schema.org",
           "@type": "LocalBusiness",
+          "@id": "https://nexttabagency.com/#organization",
           "name": "Next Tab Agency",
           "telephone": "+61470400743",
           "email": "info@nexttabagency.com",
-          "url": "https://nexttabagency.com/locations/brisbane-seo/",
+          "url": "https://nexttabagency.com/",
           "priceRange": "$$",
           "address": {
             "@type": "PostalAddress",

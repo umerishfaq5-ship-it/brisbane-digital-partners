@@ -52,19 +52,14 @@ export default function TechSummaryBlock({ summary = DEFAULT_SUMMARY }: TechSumm
 
       {/* Search Bot structured data */}
       <div
-        itemScope
-        itemType="https://schema.org/LocalBusiness"
       >
         <p>
           Optimised for Googlebot, Bingbot, and all major web crawlers.
-          <span itemProp="description">
+          <span>
             Focus: SEO Brisbane, Local SEO QLD, Web Development Australia, WordPress Development,
             Mobile App Development. Location: Eagleby, QLD 4207, Brisbane, Australia.
           </span>
         </p>
-        <meta itemProp="name" content="Next Tab Agency" />
-        <meta itemProp="areaServed" content="Brisbane, Queensland, Australia" />
-        <link itemProp="url" href="https://nexttabagency.com" />
       </div>
 
       {/* ChatGPT & Perplexity entity data */}

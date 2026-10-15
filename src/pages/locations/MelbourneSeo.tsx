@@ -18,7 +18,7 @@ const services = [
   { icon: Globe, title: "Web Development", href: "/services/web-development/", desc: "Fast, SEO-ready websites for Melbourne businesses built to convert." },
 ];
 
-const suburbs = ["Melbourne CBD", "Southbank", "St Kilda", "Richmond", "Fitzroy", "Collingwood", "Carlton", "Brunswick", "Footscray", "Docklands", "South Yarra", "Prahran", "Glen Waverley", "Box Hill", "Dandenong", "Frankston", "Essendon", "Moonee Ponds"];
+const suburbs = ["Melbourne CBD", "Southbank", "St Kilda", "Richmond", "Fitzroy", "Collingwood", "Carlton", "Brunswick", "Footscray", "Docklands", "South Yarra", "Prahran", "Glen Waverley", "Box Hill", "Dandenong", "Frankston", "Essendon", "Moonee Ponds", "Werribee", "Tarneit", "Point Cook", "Moorabbin", "Geelong"];
 
 const fadeUp = { hidden: { opacity: 0, y: 28 }, visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: [0.16, 1, 0.3, 1] } } };
 
@@ -51,7 +51,7 @@ const MelbourneSeo = () => (
             <MapPin className="w-3.5 h-3.5" />Melbourne, VIC
           </span>
           <h1 id="melbourne-hero-heading" className="font-heading font-bold text-4xl md:text-[3.5rem] leading-[1.08] text-primary-foreground mb-6">
-            SEO & digital marketing for{" "}<span className="text-gradient">Melbourne businesses</span>
+            SEO Agency Melbourne —{" "}<span className="text-gradient">SEO &amp; digital marketing for Melbourne businesses</span>
           </h1>
           <p className="text-lg md:text-xl text-primary-foreground/60 max-w-2xl mb-10 leading-relaxed">
             Melbourne is Australia's most competitive business city. We help VIC businesses cut through the noise with proven SEO, targeted ads, and conversion-focused websites.

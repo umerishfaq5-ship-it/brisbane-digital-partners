@@ -58,7 +58,7 @@ const HobartSeo = () => (
         <Link to="/" className="inline-flex items-center text-sm font-semibold text-accent mb-8 hover:text-accent/80 transition-colors"><ArrowLeft className="w-4 h-4 mr-2" /> Back to Home</Link>
         <div className="max-w-3xl">
           <span className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-accent/20 text-accent text-xs font-bold uppercase tracking-widest mb-6"><MapPin className="w-3 h-3" /> Hobart, TAS</span>
-          <h1 id="hero-heading" className="font-heading font-bold text-4xl md:text-5xl leading-[1.1] text-primary-foreground mb-6">SEO Agency Hobart</h1>
+          <h1 id="hero-heading" className="font-heading font-bold text-4xl md:text-5xl leading-[1.1] text-primary-foreground mb-6">SEO Hobart &amp; Tasmania</h1>
           <p className="text-xl md:text-2xl text-primary-foreground/80 font-medium leading-snug mb-6">Less Competition. Faster Rankings. More Hobart Customers.</p>
           <p className="text-lg text-primary-foreground/60 leading-relaxed max-w-2xl">Hobart businesses have a unique advantage: the SEO landscape is far less competitive than mainland capitals. Act now to build rankings that dominate for years.</p>
           <div className="flex flex-wrap gap-4 mt-8">

@@ -18,7 +18,7 @@ const services = [
   { icon: Globe, title: "Web Development", href: "/services/web-development/", desc: "Fast, conversion-focused websites for Adelaide businesses." },
 ];
 
-const suburbs = ["Adelaide CBD", "Glenelg", "Norwood", "Port Adelaide", "Prospect", "Unley", "Burnside", "Campbelltown", "Tea Tree Gully", "Mount Barker", "Salisbury", "Elizabeth", "Morphett Vale", "Onkaparinga", "Mitcham", "Holdfast Bay", "Charles Sturt", "West Torrens"];
+const suburbs = ["Adelaide CBD", "Glenelg", "Mawson Lakes", "Norwood", "Port Adelaide", "Prospect", "Unley", "Burnside", "Campbelltown", "Tea Tree Gully", "Mount Barker", "Salisbury", "Elizabeth", "Morphett Vale", "Onkaparinga", "Mitcham", "Holdfast Bay", "Charles Sturt", "West Torrens"];
 
 const fadeUp = { hidden: { opacity: 0, y: 28 }, visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: [0.16, 1, 0.3, 1] } } };
 
@@ -51,7 +51,7 @@ const AdelaideSeo = () => (
             <MapPin className="w-3.5 h-3.5" />Adelaide, SA
           </span>
           <h1 id="adelaide-hero-heading" className="font-heading font-bold text-4xl md:text-[3.5rem] leading-[1.08] text-primary-foreground mb-6">
-            SEO & digital marketing for{" "}<span className="text-gradient">Adelaide businesses</span>
+            SEO Agency Adelaide —{" "}<span className="text-gradient">SEO experts for Adelaide businesses</span>
           </h1>
           <p className="text-lg md:text-xl text-primary-foreground/60 max-w-2xl mb-10 leading-relaxed">
             Adelaide is one of Australia's fastest-growing technology and innovation hubs. We help SA businesses rank higher, attract local customers, and build a strong online presence.

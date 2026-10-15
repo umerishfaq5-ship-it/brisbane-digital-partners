@@ -22,7 +22,7 @@ const SeoVsGoogleAdsCost = () => (
   <>
     <Helmet>
       <link rel="canonical" href="https://nexttabagency.com/blog/seo-vs-google-ads-cost/" />
-      <title>Rising Cost of Google Ads vs SEO | Brisbane Digital Partners</title>
+      <title>Google Ads vs SEO Cost in Australia (2026) | Next Tab Agency</title>
       <meta name="description" content="Stop burning money on Google Ads. Learn why CPC in Australia is soaring and how SEO provides a sustainable, long-term asset for your business." />
     </Helmet>
 
@@ -89,6 +89,15 @@ const SeoVsGoogleAdsCost = () => (
       <ActionItem>
         <strong>Your Next Move:</strong> Stop throwing money at the wall. Let us analyze your current Ad spend. Request a <Link to="/services/seo-audits/" className="font-semibold underline text-accent hover:text-accent/80">comprehensive ROI Analysis</Link> to see how an integrated SEO strategy can reduce your customer acquisition cost (CAC) over time.
       </ActionItem>
+
+      <div className="p-6 my-10 border rounded-2xl bg-card border-border">
+        <h3 className="mb-3 text-lg font-bold font-heading text-foreground">Related reading</h3>
+        <ul className="space-y-2">
+          <li>
+            <Link to="/blog/seo-vs-google-ads-aussie-tradies/" className="text-accent hover:underline">SEO vs Google Ads for Australian Tradies: Which One Pays Off?</Link>
+          </li>
+        </ul>
+      </div>
 
     </BlogPostLayout>
   </>

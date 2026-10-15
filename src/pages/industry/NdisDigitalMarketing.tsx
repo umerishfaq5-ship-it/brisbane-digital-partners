@@ -102,7 +102,7 @@ const NdisDigitalMarketing = () => (
     {/* -- Trust Hook -- */}
     <section className="py-16 bg-muted/30">
       <div className="container max-w-4xl">
-        <motion.blockquote {...fadeUp} className="text-xl md:text-2xl font-heading font-medium leading-relaxed text-foreground/80 border-l-4 border-accent pl-6">
+        <motion.blockquote initial={fadeUp.hidden} whileInView={fadeUp.visible} viewport={{ once: true }} className="text-xl md:text-2xl font-heading font-medium leading-relaxed text-foreground/80 border-l-4 border-accent pl-6">
           "QLD has the highest concentration of NDIS participants outside NSW. Every day, families in Logan, Ipswich, and the Redlands are searching for NDIS providers — and finding your competitors first. We help NDIS disability service providers get found, get enquiries, and grow their participant numbers without violating NDIS marketing guidelines."
         </motion.blockquote>
       </div>
@@ -113,7 +113,7 @@ const NdisDigitalMarketing = () => (
       <div className="container">
         <div className="grid sm:grid-cols-3 gap-8 text-center">
           {service.stats.map((s, i) => (
-            <motion.div key={i} {...fadeUp} transition={{ delay: i * 0.1 }}>
+            <motion.div key={i} initial={fadeUp.hidden} whileInView={fadeUp.visible} viewport={{ once: true }} transition={{ delay: i * 0.1 }}>
               <p className="font-heading font-bold text-5xl text-accent mb-2">{s.value}</p>
               <p className="text-sm text-primary-foreground/70 leading-snug">{s.label}</p>
               <p className="text-xs text-primary-foreground/40 mt-1">Source: {s.source}</p>
@@ -129,11 +129,11 @@ const NdisDigitalMarketing = () => (
         <SectionHeading
           eyebrow="Why Next Tab"
           title="NDIS Marketing That Respects the Rules — and Gets Results"
-          subtitle="We understand the unique compliance requirements for NDIS providers. Every strategy we build is NDIS Commission-aware."
+          description="We understand the unique compliance requirements for NDIS providers. Every strategy we build is NDIS Commission-aware."
         />
         <div className="grid md:grid-cols-3 gap-8 mt-12">
           {service.benefits.map((b, i) => (
-            <motion.div key={i} {...fadeUp} transition={{ delay: i * 0.1 }} className="p-8 rounded-2xl border border-border bg-card">
+            <motion.div key={i} initial={fadeUp.hidden} whileInView={fadeUp.visible} viewport={{ once: true }} transition={{ delay: i * 0.1 }} className="p-8 rounded-2xl border border-border bg-card">
               <b.icon className="w-10 h-10 text-accent mb-5" />
               <h3 className="font-heading font-bold text-lg mb-3">{b.title}</h3>
               <p className="text-sm text-muted-foreground leading-relaxed">{b.desc}</p>
@@ -151,11 +151,11 @@ const NdisDigitalMarketing = () => (
             <SectionHeading
               eyebrow="What's Included"
               title="Full NDIS Digital Marketing Service"
-              subtitle="Everything you need to grow participant enquiries and build your provider reputation in Queensland."
+              description="Everything you need to grow participant enquiries and build your provider reputation in Queensland."
             />
             <ul className="mt-8 space-y-3">
               {service.features.map((f, i) => (
-                <motion.li key={i} {...fadeUp} transition={{ delay: i * 0.04 }} className="flex items-start gap-3 text-sm text-muted-foreground">
+                <motion.li key={i} initial={fadeUp.hidden} whileInView={fadeUp.visible} viewport={{ once: true }} transition={{ delay: i * 0.04 }} className="flex items-start gap-3 text-sm text-muted-foreground">
                   <CheckCircle className="w-4 h-4 text-accent shrink-0 mt-0.5" />
                   {f}
                 </motion.li>
@@ -182,7 +182,7 @@ const NdisDigitalMarketing = () => (
         <SectionHeading eyebrow="Our Process" title="How We Grow Your NDIS Participant Enquiries" />
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 mt-12">
           {service.process.map((p, i) => (
-            <motion.div key={i} {...fadeUp} transition={{ delay: i * 0.1 }} className="relative">
+            <motion.div key={i} initial={fadeUp.hidden} whileInView={fadeUp.visible} viewport={{ once: true }} transition={{ delay: i * 0.1 }} className="relative">
               <div className="text-6xl font-heading font-black text-accent/10 mb-4">{p.step}</div>
               <h3 className="font-heading font-bold text-lg mb-2">{p.title}</h3>
               <p className="text-sm text-muted-foreground leading-relaxed">{p.desc}</p>
@@ -219,7 +219,7 @@ const NdisDigitalMarketing = () => (
         <SectionHeading eyebrow="FAQ" title="NDIS Digital Marketing — Common Questions" />
         <div className="mt-10 space-y-6">
           {service.faqs.map((faq, i) => (
-            <motion.div key={i} {...fadeUp} transition={{ delay: i * 0.08 }} className="p-6 rounded-2xl border border-border bg-card">
+            <motion.div key={i} initial={fadeUp.hidden} whileInView={fadeUp.visible} viewport={{ once: true }} transition={{ delay: i * 0.08 }} className="p-6 rounded-2xl border border-border bg-card">
               <h3 className="font-heading font-bold text-base mb-2">{faq.q}</h3>
               <p className="text-sm text-muted-foreground leading-relaxed">{faq.a}</p>
             </motion.div>

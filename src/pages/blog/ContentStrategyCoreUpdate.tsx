@@ -147,6 +147,21 @@ const ContentStrategyCoreUpdate = () => (
         </Link>
       </div>
 
+      <div className="p-6 my-10 border rounded-2xl bg-card border-border">
+        <h3 className="mb-3 text-lg font-bold font-heading text-foreground">More in this Core Update series</h3>
+        <ul className="space-y-2">
+          <li>
+            <Link to="/blog/core-update-may-2026/" className="text-accent hover:underline">Google's May 2026 Core Update: What Changed (Series Overview)</Link>
+          </li>
+          <li>
+            <Link to="/blog/technical-seo-core-update/" className="text-accent hover:underline">Technical SEO Checklist for 2026 Core Updates</Link>
+          </li>
+          <li>
+            <Link to="/blog/local-entity-core-update/" className="text-accent hover:underline">Use the Google Map Pack to Bypass Core Update Drops</Link>
+          </li>
+        </ul>
+      </div>
+
     </BlogPostLayout>
   </>
 );

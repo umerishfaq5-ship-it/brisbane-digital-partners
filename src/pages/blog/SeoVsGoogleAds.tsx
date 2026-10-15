@@ -168,6 +168,15 @@ const SeoVsGoogleAds = () => (
         ))}
       </div>
 
+      <div className="p-6 my-10 border rounded-2xl bg-card border-border">
+        <h3 className="mb-3 text-lg font-bold font-heading text-foreground">Related reading</h3>
+        <ul className="space-y-2">
+          <li>
+            <Link to="/blog/seo-vs-google-ads-cost/" className="text-accent hover:underline">Google Ads vs SEO Cost in Australia (2026)</Link>
+          </li>
+        </ul>
+      </div>
+
     </BlogPostLayout>
   </>
 );

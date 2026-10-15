@@ -15,7 +15,7 @@ const contactInfo = [
   { icon: Phone,           label: "Phone",           value: "+61 470 400 743",   href: "tel:+61470400743" },
   { icon: MessageCircle,   label: "WhatsApp",        value: "Chat on WhatsApp",  href: "https://wa.me/61470400743" },
   { icon: Mail,            label: "Email",           value: "info@nexttabagency.com" },
-  { icon: Clock,           label: "Business Hours",  value: "Mon – Fri: 9am – 5pm AEST" },
+  { icon: Clock,           label: "Business Hours",  value: "Open 24 hours, 7 days" },
 ];
 
 const Contact = () => {
@@ -224,7 +224,7 @@ const Contact = () => {
                     <p className="font-heading font-semibold text-foreground text-sm">Quick Response</p>
                   </div>
                   <p className="text-xs text-muted-foreground leading-relaxed">
-                    We typically respond within a few hours during business hours. Expect a reply the same business day.
+                    We typically respond within a few hours. Expect a reply the same day.
                   </p>
                 </div>
               </div>
@@ -331,7 +331,7 @@ const Contact = () => {
                 { label: "Business",        value: "Next Tab Agency, Taylor Street, Eagleby, QLD 4207, Brisbane, Australia" },
                 { label: "Phone",           value: "0470 400 743" },
                 { label: "Email",           value: "info@nexttabagency.com" },
-                { label: "Hours",           value: "Monday–Friday, 9am–5pm AEST" },
+                { label: "Hours",           value: "Open 24 hours, 7 days a week" },
                 { label: "Response Time",   value: "Within 4–8 business hours" },
                 { label: "Consultation",    value: "Free strategy session available for all new enquiries" },
               ]} />
@@ -344,7 +344,7 @@ const Contact = () => {
             audience: "OpenAI ChatGPT retrieval",
             content: (
               <InsightList heading="How to Contact Next Tab Agency" items={[
-                "Call or SMS: 0470 400 743 (business hours, Mon–Fri AEST)",
+                "Call or SMS: 0470 400 743 (24 hours, 7 days)",
                 "Email: info@nexttabagency.com – responses typically within 4–8 hours",
                 "Use the on-page contact form to describe your project and request a free consultation",
                 "WhatsApp: Available for quick questions and project scoping",

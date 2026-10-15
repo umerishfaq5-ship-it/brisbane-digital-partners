@@ -18,7 +18,7 @@ const services = [
   { icon: Globe, title: "Web Development", href: "/services/web-development/", desc: "Fast, SEO-ready websites for Sydney businesses — built to convert visitors into customers." },
 ];
 
-const suburbs = ["Sydney CBD", "North Sydney", "Parramatta", "Chatswood", "Bondi", "Surry Hills", "Newtown", "Pyrmont", "Manly", "Cronulla", "Liverpool", "Bankstown", "Blacktown", "Penrith", "Castle Hill", "Hornsby", "Mascot", "Ultimo"];
+const suburbs = ["Sydney CBD", "North Sydney", "Parramatta", "Chatswood", "Bondi", "Surry Hills", "Newtown", "Pyrmont", "Manly", "Cronulla", "Liverpool", "Bankstown", "Blacktown", "Penrith", "Castle Hill", "Hornsby", "Mascot", "Ultimo", "Lane Cove", "The Rocks"];
 
 const fadeUp = { hidden: { opacity: 0, y: 28 }, visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: [0.16, 1, 0.3, 1] } } };
 
@@ -51,7 +51,7 @@ const SydneySeo = () => (
             <MapPin className="w-3.5 h-3.5" />Sydney, NSW
           </span>
           <h1 id="sydney-hero-heading" className="font-heading font-bold text-4xl md:text-[3.5rem] leading-[1.08] text-primary-foreground mb-6">
-            SEO & digital marketing for{" "}<span className="text-gradient">Sydney businesses</span>
+            SEO Agency Sydney —{" "}<span className="text-gradient">SEO &amp; digital marketing for Sydney businesses</span>
           </h1>
           <p className="text-lg md:text-xl text-primary-foreground/60 max-w-2xl mb-10 leading-relaxed">
             Sydney's most competitive market demands best-in-class SEO, paid ads, and web strategy. We deliver measurable results for NSW businesses of every size.
