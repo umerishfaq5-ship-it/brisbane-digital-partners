@@ -106,6 +106,7 @@ import VacanciesPage from "./pages/portfolio/Vacancies.tsx";
 import HeavenOnMainstreet from "./pages/portfolio/HeavenOnMainstreet.tsx";
 import InstitutionalScalper from "./pages/portfolio/InstitutionalScalper.tsx";
 import MarkhorAutoCare from "./pages/portfolio/MarkhorAutoCare.tsx";
+import DemoSite from "./pages/demos/DemoSite.tsx";
 
 const queryClient = new QueryClient();
 
@@ -191,6 +192,9 @@ const App = () => (
             <Route path="/portfolio/heaven-on-mainstreet"     element={<HeavenOnMainstreet />} />
             <Route path="/portfolio/institutional-scalper"    element={<InstitutionalScalper />} />
             <Route path="/portfolio/markhor-auto-care"        element={<MarkhorAutoCare />} />
+            <Route path="/demos/riverbend-plumbing" element={<DemoSite slug="riverbend-plumbing" />} />
+            <Route path="/demos/brightpath-support" element={<DemoSite slug="brightpath-support" />} />
+            <Route path="/demos/lonestar-air" element={<DemoSite slug="lonestar-air" />} />
             <Route path="/testimonials" element={<Testimonials />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/sitemap" element={<SitemapPage />} />

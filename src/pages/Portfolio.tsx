@@ -8,7 +8,7 @@ import SEO from "@/components/SEO";
 import { fadeUp } from "@/lib/animations";
 import AIInsightsPanel, { InsightDL, InsightList, InsightTable } from "@/components/AIInsightsPanel";
 
-type Category = "All" | "Mobile App" | "SEO" | "Web Development";
+type Category = "All" | "Mobile App" | "SEO" | "Web Development" | "Concept Builds";
 
 const projects = [
   /* ── Mobile Apps ─────────────────────────────────────────── */
@@ -114,9 +114,56 @@ const projects = [
     serviceLink: "/services/web-development/",
     serviceLabel: "Web Development",
   },
+
+  /* ── Concept builds (fictional businesses, clearly labelled) ── */
+  {
+    title: "Riverbend Plumbing",
+    subtitle: "Concept build · Tradie website · Logan, QLD",
+    category: "Concept Builds" as Category,
+    tech: "React · Click-to-call · Suburb pages · Quote by text",
+    url: null,
+    demoLink: "/demos/riverbend-plumbing/",
+    screenshot: "/assets/demo-riverbend-plumbing.jpg",
+    challenge: "Most Logan plumbers we speak to have 4.8+ stars on Google Maps and no website, or a one-page site from 2015. A homeowner with a burst pipe compares two or three listings in under a minute and calls the one that looks most certain to turn up.",
+    solution: "We designed the site around that minute: the phone number in the header and a sticky call bar on mobile, the Google rating above the headline, an upfront-pricing promise, and a 4-field \"get a price by text\" form. Every service gets its own section (and its own page on the full build) so Google can match \"blocked drain Beenleigh\" to the right page.",
+    result: "The $500 tradie site",
+    resultDetail: "This is the layout we build for tradies: 5 pages, mobile-first, live in about a week. Concept site: Riverbend Plumbing is fictional.",
+    serviceLink: "/industry/seo-for-tradies/",
+    serviceLabel: "Websites & SEO for Tradies",
+  },
+  {
+    title: "BrightPath Support",
+    subtitle: "Concept build · NDIS provider website · Logan & Ipswich",
+    category: "Concept Builds" as Category,
+    tech: "Accessible design (WCAG AA contrast) · Plain English · Enquiry form",
+    url: null,
+    demoLink: "/demos/brightpath-support/",
+    screenshot: "/assets/demo-brightpath-support.jpg",
+    challenge: "Families and support coordinators choosing an NDIS provider want three answers fast: what supports you offer, which suburbs you cover, and whether a real person will call back. Many provider sites bury that under mission statements and PDFs.",
+    solution: "A calm, high-contrast design written in plain English. Supports are listed as four clear cards (daily living, community access, respite, support coordination), plan-management types are stated up front, suburbs are listed by name, and the enquiry form asks only what's needed to call back. Keyboard-friendly and readable at large text sizes.",
+    result: "Built for participants, not search bots",
+    resultDetail: "The structure we use for NDIS and home-care providers, ready to rank for \"NDIS provider [suburb]\" searches. Concept site: BrightPath Support is fictional.",
+    serviceLink: "/industry/ndis-digital-marketing/",
+    serviceLabel: "NDIS Digital Marketing",
+  },
+  {
+    title: "Lone Star Air & Heat",
+    subtitle: "Concept build · US HVAC website · Austin, TX",
+    category: "Concept Builds" as Category,
+    tech: "React · Booking-first layout · Service areas · Financing callout",
+    url: null,
+    demoLink: "/demos/lonestar-air/",
+    screenshot: "/assets/demo-lonestar-air.jpg",
+    challenge: "We build for US home-service companies too. In a Texas summer, a family with a dead AC books whoever answers first and looks trustworthy. The site has to win that comparison on a phone in a few seconds.",
+    solution: "A booking-first layout: same-day promise in the headline, review count beside it, flat-rate pricing and financing as trust badges, one service card per job type, and named service areas (Austin, Round Rock, Cedar Park...) that match how people search. A full-width call bar stays on screen on mobile.",
+    result: "Same playbook, US market",
+    resultDetail: "Shows how our local-service approach carries to US cities. Concept site: Lone Star Air & Heat is fictional.",
+    serviceLink: "/services/web-development/",
+    serviceLabel: "Web Development",
+  },
 ];
 
-const categories: Category[] = ["All", "Mobile App", "SEO", "Web Development"];
+const categories: Category[] = ["All", "Web Development", "Concept Builds", "SEO", "Mobile App"];
 
 export default function Portfolio() {
   const [activeFilter, setActiveFilter] = useState<Category>("All");
@@ -129,7 +176,7 @@ export default function Portfolio() {
     <Layout>
       <SEO
         title="Portfolio — Our Work & Case Studies"
-        description="Real case studies from Next Tab Agency Brisbane — MyFitnessCoach, CircleIt and Vacancies mobile apps; Institutional Scalper WordPress + SEO; Heaven on Mainstreet WordPress + Local SEO. Measurable results for Australian businesses."
+        description="Next Tab Agency work: Markhor Auto Care website + Map Pack, Institutional Scalper and Heaven on Mainstreet SEO, mobile apps, plus live concept websites for tradies, NDIS providers and US HVAC."
         canonical="/portfolio"
         breadcrumbs={[
           { name: "Home", url: "https://nexttabagency.com/" },
@@ -153,7 +200,7 @@ export default function Portfolio() {
               <span className="text-gradient">speak for themselves</span>
             </h1>
             <p className="mt-6 text-primary-foreground/55 max-w-xl text-lg leading-relaxed">
-              Real challenges. Real solutions. Measurable results for Australian businesses.
+              Client work with real results, plus concept builds that show exactly what we make for tradies, NDIS providers and home-service companies.
             </p>
             {/* Live stats strip */}
             <div className="flex flex-wrap gap-4 mt-8">
@@ -219,7 +266,7 @@ export default function Portfolio() {
                 >
                   {/* Visual panel */}
                   <div
-                    className="h-64 relative flex flex-col items-center justify-center p-6 text-center shrink-0 overflow-hidden"
+                    className={`${(p as any).screenshot ? "min-h-64 py-8" : "h-64"} relative flex flex-col items-center justify-center p-6 text-center shrink-0 overflow-hidden`}
                     style={{
                       background: (p as any).webBg || (p as any).iconBg ||
                         "linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(var(--primary)/0.7) 100%)",
@@ -236,8 +283,16 @@ export default function Portfolio() {
                         {p.category}
                       </span>
 
-                      {/* App icon */}
-                      {(p as any).iconUrl ? (
+                      {/* Concept build screenshot */}
+                      {(p as any).screenshot ? (
+                        <Link to={(p as any).demoLink} className="block w-full max-w-[300px] rounded-xl overflow-hidden shadow-2xl border border-white/20 bg-white" aria-label={`Open the ${p.title} concept site`}>
+                          <div className="bg-[#2a2a2a] px-2.5 py-1.5 flex items-center gap-1.5">
+                            <span className="w-1.5 h-1.5 rounded-full bg-red-400" /><span className="w-1.5 h-1.5 rounded-full bg-yellow-400" /><span className="w-1.5 h-1.5 rounded-full bg-green-400" />
+                            <span className="ml-1 text-[7px] text-white/50 font-sans truncate">nexttabagency.com{(p as any).demoLink}</span>
+                          </div>
+                          <img src={(p as any).screenshot} alt={`${p.title} concept website homepage, designed by Next Tab Agency`} className="w-full h-auto block" width={1440} height={900} loading="lazy" />
+                        </Link>
+                      ) : (p as any).iconUrl ? (
                         <div className="relative">
                           <div className="absolute inset-0 rounded-[22%] blur-xl opacity-50 scale-110" style={{ background: "rgba(255,255,255,0.2)" }} />
                           <img
@@ -389,15 +444,15 @@ export default function Portfolio() {
                   <div className="p-8 flex flex-col flex-1 justify-between">
                     <div className="space-y-5">
                       <div>
-                        <p className="text-[10px] font-bold uppercase tracking-[0.2em] text-accent mb-2">The Challenge</p>
+                        <p className="text-[10px] font-bold uppercase tracking-[0.2em] text-accent mb-2">{(p as any).screenshot ? "The Brief" : "The Challenge"}</p>
                         <p className="text-sm text-muted-foreground leading-relaxed" itemProp="description">{p.challenge}</p>
                       </div>
                       <div>
-                        <p className="text-[10px] font-bold uppercase tracking-[0.2em] text-accent mb-2">Our Approach</p>
+                        <p className="text-[10px] font-bold uppercase tracking-[0.2em] text-accent mb-2">{(p as any).screenshot ? "What We Built" : "Our Approach"}</p>
                         <p className="text-sm text-muted-foreground leading-relaxed">{p.solution}</p>
                       </div>
                       <div>
-                        <p className="text-[10px] font-bold uppercase tracking-[0.2em] text-accent mb-2">The Result</p>
+                        <p className="text-[10px] font-bold uppercase tracking-[0.2em] text-accent mb-2">{(p as any).screenshot ? "What It Shows" : "The Result"}</p>
                         <div className="flex items-center gap-3">
                           <TrendingUp className="w-5 h-5 text-accent shrink-0" />
                           <p className="font-heading font-extrabold text-2xl text-foreground">{p.result}</p>
@@ -417,6 +472,15 @@ export default function Portfolio() {
                         <ArrowRight className="w-3.5 h-3.5" />
                       </Link>
                       <div className="flex items-center gap-3">
+                        {(p as any).demoLink && (
+                          <Link
+                            to={(p as any).demoLink}
+                            className="inline-flex items-center gap-1 text-xs font-bold text-primary hover:text-accent transition-colors"
+                            aria-label={`Open the ${p.title} concept site`}
+                          >
+                            View live demo <ArrowRight className="w-3 h-3" />
+                          </Link>
+                        )}
                         {(p as any).detailLink && (
                           <Link
                             to={(p as any).detailLink}
