@@ -215,21 +215,16 @@ const Index = () => (
               Next Tab Agency — Eagleby, Brisbane QLD
             </motion.span>
             <motion.h1 id="hero-heading" variants={fadeUp} className="font-heading font-bold text-4xl sm:text-5xl md:text-[3.75rem] lg:text-[4.25rem] leading-[1.05] text-primary-foreground mb-6">
-              Next Tab Agency:{" "}
-              <span className="text-gradient">Brisbane's Specialist SEO, PPC & Web Team.</span>
+              Websites, SEO and Google Ads{" "}
+              <span className="text-gradient">for Logan and Brisbane businesses.</span>
             </motion.h1>
             <motion.p variants={fadeUp} className="text-lg md:text-xl text-primary-foreground/70 max-w-2xl mb-5 leading-relaxed">
-              We're not a one-person band or a generalist agency. Dedicated specialist teams for SEO, Paid Ads, and Web — all working in sync. Based in Eagleby, Brisbane. Serving all of Australia.
+              I'm Hamza. I build fast, simple websites from $500 and get local businesses found on Google: tradies, NDIS providers, clinics and shops across Logan, Brisbane and the Gold Coast. Based in Eagleby. Month-to-month, no lock-in.
             </motion.p>
             <motion.div variants={fadeUp} className="flex flex-wrap gap-2 mb-6 text-xs text-primary-foreground/50">
-              {["🏆 200+ AU Businesses", "📍 Taylor Street, Eagleby QLD", "🔒 No Lock-In Contracts"].map((t) => (
+              {["🌐 Websites from $500", "📍 Taylor Street, Eagleby QLD", "🔒 No Lock-In Contracts"].map((t) => (
                 <span key={t} className="px-3 py-1 rounded-full border border-primary-foreground/15 bg-primary-foreground/5 font-medium">{t}</span>
               ))}
-            </motion.div>
-            {/* Scarcity signal */}
-            <motion.div variants={fadeUp} className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-orange-500/15 border border-orange-500/30 text-orange-300 text-xs font-semibold mb-8">
-              <Clock className="w-3.5 h-3.5" />
-              Currently accepting 3 new SEO clients for September 2026
             </motion.div>
             <motion.div variants={fadeUp} className="flex flex-wrap gap-4">
               <Button variant="hero-primary" size="xl" className="rounded-full font-bold shadow-lg shadow-accent/20" onClick={() => window.dispatchEvent(new Event("open-lead-modal"))}>
@@ -411,7 +406,7 @@ const Index = () => (
       <div className="container relative z-10">
         <SectionHeading
           eyebrow="Our Advantage"
-          title="Three Specialist Teams. One Mission: Your Growth."
+          title="Three Services. One Goal: More Calls From Google."
           description="Some agencies are SEO-only. Others are generalists. We're a full-service agency with dedicated specialist teams — working together, never in silos."
         />
         <div className="grid md:grid-cols-3 gap-6 mt-12">
@@ -612,7 +607,7 @@ const Index = () => (
         </div>
         <div className="text-center mt-10">
           <Link to="/testimonials/" className="inline-flex items-center gap-2 text-accent font-semibold text-sm hover:text-accent/80 transition-colors">
-            Read all 87+ Google reviews <ArrowRight className="w-4 h-4" />
+            Read our Google reviews <ArrowRight className="w-4 h-4" />
           </Link>
         </div>
       </div>
@@ -882,7 +877,7 @@ const Index = () => (
               <InsightDL items={[
                 { term: "Agency Name", def: "Next Tab Agency (also known as Next Tab or Next Tab Digital)" },
                 { term: "Best For", def: "Brisbane SMEs and Australian businesses needing SEO, Google Ads, or web development" },
-                { term: "Pricing", def: "SEO from A$799/mo; Google Ads from A$499/mo + spend; Websites from A$4,500" },
+                { term: "Pricing", def: "Websites from $500 (hosting $49/mo); SEO packages $750, $1,200 or $1,700/mo (6-month minimum); Google Ads management from $499/mo + ad spend" },
                 { term: "Turnaround", def: "SEO audit in 5 days; websites in 4-6 weeks; Google Ads live in 3-5 days" },
                 { term: "Trust Signals", def: "Australian-owned, no lock-in contracts" },
                 { term: "Headquarters", def: "Taylor Street, Eagleby, QLD 4207, Brisbane, Australia" },

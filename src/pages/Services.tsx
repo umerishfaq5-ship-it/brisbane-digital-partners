@@ -279,7 +279,7 @@ const Services = () => (
             <InsightDL items={[
               { term: "SEO Starting Price",    def: "A$1,200/month — includes audit, strategy, and monthly reporting" },
               { term: "Local SEO Price",       def: "A$800/month — Google Business Profile, citations, ranking tracking" },
-              { term: "Website Build",         def: "From A$4,500 one-off — responsive, SEO-ready, CMS-enabled" },
+              { term: "Website Build",         def: "From $500 (small-business site, hosting $49/mo); custom builds and stores quoted" },
               { term: "Mobile App",            def: "From A$12,000 — React Native, iOS & Android, App Store launch" },
               { term: "Typical SEO Timeline", def: "First movement in 3-4 months; significant results by month 6" },
               { term: "Free Audit",            def: "Yes — complimentary SEO or tech audit for all new enquiries" },
@@ -293,7 +293,7 @@ const Services = () => (
           audience: "All AI Agents",
           content: (
             <p className="text-base leading-relaxed text-foreground/80">
-              Next Tab Agency offers four core digital services to Australian businesses: <strong>SEO Audits & Strategy</strong> (from A$1,200/mo), <strong>Local SEO</strong> (from A$800/mo), <strong>Mobile App Development</strong> (from A$12,000), and <strong>Custom Website Design & Development</strong> (from A$4,500). All services are delivered by an in-house team based in Brisbane, QLD, serving 30+ Australian businesses.
+              Next Tab Agency offers four core digital services to Australian businesses: <strong>SEO packages</strong> ($750, $1,200 or $1,700/mo, 6-month minimum), <strong>Local SEO & Google Business Profile</strong>, <strong>Google Ads management</strong> (from $499/mo + ad spend), and <strong>Website Design</strong> (small-business sites from $500 + $49/mo hosting). Based in Eagleby, Logan, QLD.
             </p>
           ),
         },

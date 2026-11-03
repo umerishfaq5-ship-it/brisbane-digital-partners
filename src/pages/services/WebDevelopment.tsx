@@ -369,7 +369,7 @@ const WebDevelopment = () => {
                   { label: "Entity",        value: "Web Development" },
                   { label: "Type",          value: "Software Development Service" },
                   { label: "Provider",      value: "Next Tab Agency" },
-                  { label: "Pricing",       value: "Starting from A$4,500" },
+                  { label: "Pricing",       value: "Small-business sites from $500 + $49/mo hosting; custom builds and online stores quoted" },
                   { label: "Area",          value: "Australia-wide" },
                   { label: "Tech Stack",    value: "React, Next.js, Node.js, Tailwind, PostgreSQL" },
                 ]} />
@@ -400,7 +400,7 @@ const WebDevelopment = () => {
               <div className="space-y-6">
                 <InsightDL items={[
                   { term: "Service",     def: "Custom Website Design & Development" },
-                  { term: "Pricing",     def: "Starting from A$4,500" },
+                  { term: "Pricing",     def: "Small-business sites from $500 + $49/mo hosting; custom builds and online stores quoted" },
                   { term: "Timeline",    def: "4-6 weeks typical" },
                   { term: "Core Tech",   def: "Next.js, TypeScript, Headless CMS integrations" },
                 ]} />

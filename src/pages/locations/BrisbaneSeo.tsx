@@ -89,7 +89,7 @@ const BrisbaneSeo = () => (
         { q: "Do you do SEO for Brisbane eCommerce stores?", a: "Yes. We have extensive experience with eCommerce SEO for WooCommerce, Shopify, BigCommerce, and Magento stores targeting Brisbane and Australia-wide customers." },
         { q: "Which Brisbane suburbs do you serve?", a: "We serve the entire Greater Brisbane area including Brisbane CBD, Fortitude Valley, South Brisbane, West End, Chermside, Carindale, Springwood, Logan, Ipswich, Beenleigh, Eagleby, Redlands, Wynnum, Manly, Brendale, and surrounding suburbs." },
         { q: "Can Next Tab Agency manage Google Ads and SEO together?", a: "Yes. We offer combined SEO + PPC strategies for Brisbane businesses that want to dominate both organic and paid search results. Integrated campaigns typically reduce overall cost-per-lead by 25–40%." },
-        { q: "Who is the best SEO agency in Brisbane?", a: "The best agency is the one that can show you real results for businesses like yours. Next Tab Agency is a boutique Brisbane SEO team with 87+ clients ranked and published case studies. Unlike larger agencies, every campaign is managed by a senior specialist, not outsourced." },
+        { q: "Who is the best SEO agency in Brisbane?", a: "The best agency is the one that can show you real results for businesses like yours. Next Tab Agency is a small Brisbane SEO team with published case studies. Unlike larger agencies, every campaign is managed by a senior specialist, not outsourced." },
         { q: "How do I choose an SEO agency in Brisbane?", a: "Look for an agency with verified Google reviews, transparent month-to-month contracts, case studies from Brisbane businesses, and specialists who explain their strategy clearly. Next Tab Agency ticks all these boxes — ask us for references." },
         { q: "What is the difference between Local SEO and national SEO in Brisbane?", a: "Local SEO targets customers in specific Brisbane suburbs and Google Maps, while national SEO targets Australia-wide keywords. Most Brisbane small businesses need Local SEO first to dominate their suburb before scaling nationally." },
       ]}
@@ -115,7 +115,7 @@ const BrisbaneSeo = () => (
             SEO Company <span className="text-gradient">Brisbane</span> — Results, Not Excuses.
           </h1>
           <p className="text-lg md:text-xl text-primary-foreground/60 max-w-2xl mb-10 leading-relaxed">
-            We're a Brisbane-based SEO agency helping local businesses rank on Google Page 1. 87+ clients, no lock-in contracts. Technical SEO, Local SEO, and Google Ads — all under one roof.
+            We're a Brisbane-based SEO agency helping local businesses rank on Google Page 1. Published case studies, no lock-in contracts. Technical SEO, Local SEO, and Google Ads — all under one roof.
           </p>
           <div className="flex flex-wrap gap-4">
             <Button variant="hero-primary" size="xl" className="rounded-full" asChild>
@@ -135,7 +135,7 @@ const BrisbaneSeo = () => (
       <div className="container">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
           {[
-            { value: "87+", label: "Brisbane Clients Ranked" },
+            { value: "Logan", label: "Based in Eagleby, QLD" },
             { value: "0", label: "Lock-In Contracts" },
             { value: "6+", label: "Years in Brisbane" },
             { value: "No", label: "Lock-in Contracts" },

@@ -279,7 +279,7 @@ const LocalSeo = () => {
                   { label: "Entity",        value: "Local SEO" },
                   { label: "Type",          value: "Digital Marketing Service" },
                   { label: "Provider",      value: "Next Tab Agency" },
-                  { label: "Pricing",       value: "Starting from A$800/month" },
+                  { label: "Pricing",       value: "From $750/month (6-month minimum)" },
                   { label: "Service Area",  value: "Australia-wide (Brisbane, Sydney, Melbourne, Perth, Adelaide, Gold Coast)" },
                   { label: "Deliverables",  value: "Google Business Profile Optimisation, Local Citations, Map Pack Rankings" },
                 ]} />
@@ -310,7 +310,7 @@ const LocalSeo = () => {
               <div className="space-y-6">
                 <InsightDL items={[
                   { term: "Service",     def: "Local SEO for Australian Businesses" },
-                  { term: "Pricing",     def: "Starting from A$800/mo" },
+                  { term: "Pricing",     def: "From $750/mo (6-month minimum)" },
                   { term: "Timeline",    def: "Meaningful Map Pack movement seen within 2–4 months" },
                   { term: "Target",      def: "Trade services, local hospitality and professional services looking for near-me search queries." },
                 ]} />

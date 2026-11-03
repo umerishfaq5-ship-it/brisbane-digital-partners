@@ -14,51 +14,54 @@ import LiveTeardownForm from "@/components/LiveTeardownForm";
 
 const packages = [
   {
-    name: "Local SEO",
-    badge: "Best for Tradies & Local Services",
-    icon: "??",
-    description: "For local service businesses that want to dominate the Map Pack and local search results in their area.",
+    name: "Basic",
+    price: "$750",
+    badge: "One suburb, one service",
+    icon: "📍",
+    description: "For a tradie or local service that wants to show up in Google Maps and search for its main suburb.",
     includes: [
-      "Google Business Profile optimisation",
-      "Local keyword research and on-page optimisation",
-      "Citation building and NAP consistency",
-      "Local link building",
-      "Monthly ranking and traffic reporting",
+      "Website and Google Business Profile audit, fixed in month 1",
+      "Google Business Profile: categories, services, weekly post",
+      "On-page SEO for your main service pages",
+      "10 Australian directory listings (consistent name, address, phone)",
+      "Review system so customers actually leave Google reviews",
+      "Monthly report in plain English: calls, rankings, enquiries",
     ],
-    cta: "Request a Quote",
+    cta: "Start with Basic",
     accent: false,
   },
   {
-    name: "Growth SEO",
+    name: "Standard",
+    price: "$1,200",
     badge: "Most Popular",
-    icon: "??",
-    description: "For established businesses ready to dominate competitive keywords across multiple services or locations.",
+    icon: "🚀",
+    description: "For businesses serving several suburbs or services (NDIS providers, clinics, multi-trade businesses).",
     includes: [
-      "Everything in Local SEO, plus:",
-      "Technical SEO audit and implementation",
-      "Content strategy and monthly blog posts",
-      "Advanced link building and digital PR",
-      "Competitor gap analysis",
-      "Location page creation",
-      "Monthly strategy call",
+      "Everything in Basic, plus:",
+      "Suburb and service pages written and published each month",
+      "1 blog article a month aimed at a real search people make",
+      "Local backlinks from suppliers, groups and AU directories",
+      "Competitor tracking: who outranks you and why",
+      "Call and form tracking so every lead is counted",
     ],
-    cta: "Request a Quote",
+    cta: "Start with Standard",
     accent: true,
   },
   {
-    name: "Enterprise SEO",
-    badge: "For Large Sites & National Brands",
-    icon: "??",
-    description: "Custom SEO engagements for enterprise websites, multi-location businesses, and national brands requiring dedicated strategy.",
+    name: "Premium",
+    price: "$1,700",
+    badge: "Competitive markets",
+    icon: "🏆",
+    description: "For Brisbane-wide or Gold Coast-wide competition, online stores, or businesses that want Google Ads run alongside SEO.",
     includes: [
-      "Everything in Growth SEO, plus:",
-      "Dedicated senior SEO strategist",
-      "International or multi-location SEO",
-      "Large-scale technical migrations",
-      "Custom reporting dashboard",
-      "Bi-weekly strategy sessions",
+      "Everything in Standard, plus:",
+      "2 articles a month and a quarterly content plan",
+      "Digital PR and stronger link building",
+      "Technical SEO: speed, Core Web Vitals, schema",
+      "Google Ads setup and management included (ad spend separate)",
+      "Monthly strategy call",
     ],
-    cta: "Request a Quote",
+    cta: "Start with Premium",
     accent: false,
   },
 ];
@@ -66,15 +69,15 @@ const packages = [
 const faqs = [
   {
     q: "What's included in your SEO packages?",
-    a: "Every Next Tab SEO package includes keyword research, on-page optimisation, link building, and monthly reporting. Higher tiers add technical SEO, content creation, strategy calls, and location or industry-specific page development. All packages are customised to your business — contact us to discuss exactly what's right for your situation.",
+    a: "Every package includes an audit, Google Business Profile management, on-page SEO, directory listings, a review system and a plain-English monthly report. Standard adds suburb and service pages, a monthly article, local links and call tracking. Premium adds two articles a month, digital PR, technical SEO and Google Ads management.",
   },
   {
-    q: "How do you price your SEO packages?",
-    a: "Our packages are priced based on the scope of work, your industry's competitiveness, the number of target keywords and locations, and whether content creation is included. We don't publish fixed prices because one-size-fits-all SEO pricing rarely delivers good value — contact us for a quote tailored to your business.",
+    q: "How much do your SEO packages cost?",
+    a: "Basic is $750 a month, Standard is $1,200 a month and Premium is $1,700 a month, each with a 6-month minimum and then month-to-month. Prices exclude GST. The first 15 clients get 50% off for the first 3 months.",
   },
   {
-    q: "Is there a contract or lock-in period?",
-    a: "We work on a month-to-month basis with no lock-in contracts. We believe our results should be the reason clients stay, not a contract. That said, SEO is a long-term investment — we recommend committing to at least 6 months to see meaningful, compounding results.",
+    q: "Why a 6-month minimum?",
+    a: "New pages, directory listings and links take 3 to 6 months to move rankings; anyone who promises page 1 in 30 days is selling Google Ads or spam. After the first 6 months every package is month-to-month and you can stop any time.",
   },
   {
     q: "How is your SEO service different from cheaper online packages?",
@@ -90,7 +93,7 @@ const SeoPackages = () => (
   <Layout>
     <SEO
       title="SEO Packages Australia & Brisbane | Pricing"
-      description="Explore Next Tab Agency's SEO packages for Australian businesses — Local SEO, Growth SEO, and Enterprise SEO. Custom scopes, no lock-in contracts. Request a quote today."
+      description="SEO packages with real prices: Basic $750, Standard $1,200, Premium $1,700 a month. 6-month minimum, then month-to-month. For Brisbane, Logan and Gold Coast businesses."
       canonical="/services/seo-packages"
       faqs={faqs}
       breadcrumbs={[
@@ -100,7 +103,7 @@ const SeoPackages = () => (
       ]}
       serviceSchema={{
         name: "SEO Packages Australia",
-        description: "SEO packages for Australian businesses — Local, Growth, and Enterprise SEO with custom scopes and month-to-month flexibility.",
+        description: "SEO packages for Australian businesses: Basic $750, Standard $1,200 and Premium $1,700 per month, 6-month minimum.",
         areaServed: "Australia",
       }}
     />
@@ -124,7 +127,7 @@ const SeoPackages = () => (
             No lock-in contracts. No templated campaigns. Just SEO that grows your business.
           </p>
           <p className="text-lg text-primary-foreground/60 leading-relaxed max-w-2xl">
-            Every Next Tab SEO package is scoped to your business — your industry, your target keywords, your locations, and your goals. Choose a tier below and request a quote for a custom scope and recommendation.
+            Three packages, three prices, no quote dance: $750, $1,200 or $1,700 a month. Pick the one that matches how many suburbs and services you need to rank for.
           </p>
           <div className="flex flex-wrap gap-4 mt-8">
             <Button variant="accent" size="lg" asChild>
@@ -146,7 +149,7 @@ const SeoPackages = () => (
           {[
             { value: "No Lock-In", label: "Month-to-month contracts" },
             { value: "100% Local", label: "Australian-based team" },
-            { value: "Custom Scope", label: "Every package is tailored" },
+            { value: "$750+", label: "Real prices, published" },
             { value: "Transparent", label: "Monthly reporting always included" },
           ].map((s) => (
             <div key={s.label}>
@@ -161,7 +164,7 @@ const SeoPackages = () => (
     {/* Package Cards */}
     <section className="py-20 md:py-28">
       <div className="container max-w-6xl">
-        <SectionHeading eyebrow="Our SEO Packages" title="Choose the right tier for your business" description="All packages are customised to your specific keywords, competition level, and goals. Scope and deliverables are agreed upon before work begins." />
+        <SectionHeading eyebrow="Our SEO Packages" title="Choose the right tier for your business" description="Real prices, nothing hidden. All three run for a 6-month minimum because Google takes that long to trust new pages and links; after that it is month-to-month. Prices exclude GST." />
         <div className="grid lg:grid-cols-3 gap-6 mt-12">
           {packages.map((pkg, i) => (
             <motion.div
@@ -183,7 +186,8 @@ const SeoPackages = () => (
                 </span>
               )}
               <div className="text-3xl mb-3">{pkg.icon}</div>
-              <h2 className="font-heading font-bold text-2xl text-foreground mb-3">{pkg.name}</h2>
+              <h2 className="font-heading font-bold text-2xl text-foreground mb-1">{pkg.name}</h2>
+              <p className="mb-4"><span className="font-heading font-black text-4xl text-foreground">{pkg.price}</span><span className="text-sm text-muted-foreground"> / month, 6-month minimum</span></p>
               <p className="text-sm text-muted-foreground leading-relaxed mb-6">{pkg.description}</p>
               <ul className="space-y-3 mb-8 flex-1">
                 {pkg.includes.map((item) => (

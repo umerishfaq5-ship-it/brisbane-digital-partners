@@ -105,7 +105,7 @@ const PpcAds = () => (
         areaServed: "Brisbane, Australia",
       }}
       faqs={[
-        { q: "How much does Google Ads management cost in Brisbane?", a: "PPC management fees at Next Tab Agency start from A$800/month for small Brisbane accounts. We also offer performance-based arrangements for established businesses spending A$5,000+/month on ads. All fees are transparent with no hidden costs." },
+        { q: "How much does Google Ads management cost in Brisbane?", a: "Google Ads management at Next Tab Agency starts from $499/month plus your ad spend for small Brisbane accounts. We also offer performance-based arrangements for established businesses spending A$5,000+/month on ads. All fees are transparent with no hidden costs." },
         { q: "What is a good ROAS for Google Ads in Australia?", a: "A healthy ROAS varies by industry, but we typically target 4x+ for e-commerce clients. Our Brisbane clients average 4.2× ROAS across all campaign types. For lead generation businesses, we focus on cost-per-lead rather than ROAS." },
         { q: "How quickly can I see results from PPC advertising?", a: "Unlike SEO, Google Ads can generate traffic from day one. Typically expect 2–4 weeks for the algorithm to exit its learning phase, with meaningful ROI data available by month two." },
         { q: "Do you manage Bing Ads as well as Google?", a: "Yes. We manage Microsoft Advertising (Bing Ads) campaigns and often import optimised Google campaigns to capture Bing's Australian desktop search traffic at 30–50% lower CPCs." },
