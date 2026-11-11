@@ -82,7 +82,6 @@ const routes = [
   // General
   '/our-team',
   '/portfolio',
-  '/portfolio/my-fitness-coach',
   '/portfolio/circle-it',
   '/portfolio/vacancies',
   '/portfolio/heaven-on-mainstreet',
@@ -91,6 +90,7 @@ const routes = [
   '/demos/riverbend-plumbing',
   '/demos/brightpath-support',
   '/demos/lonestar-air',
+  '/demos/ironbark-fitness',
   '/testimonials',
   '/sitemap',
   '/privacy',

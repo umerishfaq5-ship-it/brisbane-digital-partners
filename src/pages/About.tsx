@@ -131,7 +131,6 @@ const usps = [
 
 const milestones = [
   { year: "2019", title: "Founded in Brisbane", desc: "Started with a vision to bring honest, expert digital services to Australian businesses." },
-  { year: "2020", title: "First Mobile App Launched", desc: "Shipped MyFitnessCoach to both App Store and Google Play — 4.8★ rating." },
   { year: "2021", title: "SEO Division Expanded", desc: "Added dedicated SEO services after seeing the massive impact on client businesses." },
   { year: "2023", title: "200+ Businesses Served", desc: "Reached a milestone of 200+ Brisbane businesses served." },
   { year: "2024", title: "20-Specialist Team", desc: "Grew to a 20-person in-house team across SEO, Web, Content, Ads, and Client Success." },

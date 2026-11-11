@@ -46,17 +46,50 @@
         }
       ],
       "relations": [
-        { "predicate": "OFFERS", "target": "e_002" },
-        { "predicate": "OFFERS", "target": "e_003" },
-        { "predicate": "OFFERS", "target": "e_004" },
-        { "predicate": "OFFERS", "target": "e_005" },
-        { "predicate": "OFFERS", "target": "e_006" },
-        { "predicate": "OFFERS", "target": "e_007" },
-        { "predicate": "INCLUDES", "target": "e_010" },
-        { "predicate": "INCLUDES", "target": "e_011" },
-        { "predicate": "INCLUDES", "target": "e_012" },
-        { "predicate": "INCLUDES", "target": "e_013" },
-        { "predicate": "INCLUDES", "target": "e_014" }
+        {
+          "predicate": "OFFERS",
+          "target": "e_002"
+        },
+        {
+          "predicate": "OFFERS",
+          "target": "e_003"
+        },
+        {
+          "predicate": "OFFERS",
+          "target": "e_004"
+        },
+        {
+          "predicate": "OFFERS",
+          "target": "e_005"
+        },
+        {
+          "predicate": "OFFERS",
+          "target": "e_006"
+        },
+        {
+          "predicate": "OFFERS",
+          "target": "e_007"
+        },
+        {
+          "predicate": "INCLUDES",
+          "target": "e_010"
+        },
+        {
+          "predicate": "INCLUDES",
+          "target": "e_011"
+        },
+        {
+          "predicate": "INCLUDES",
+          "target": "e_012"
+        },
+        {
+          "predicate": "INCLUDES",
+          "target": "e_013"
+        },
+        {
+          "predicate": "INCLUDES",
+          "target": "e_014"
+        }
       ]
     },
     {
@@ -66,7 +99,9 @@
       "description": "Specialist technical SEO service delivering crawl budget analysis, Core Web Vitals remediation, schema markup strategy, log file audits, and indexation fixes for Australian businesses.",
       "maturity": "established",
       "audience": "technical",
-      "sameAs": ["https://nexttabagency.com/services/technical-seo/"],
+      "sameAs": [
+        "https://nexttabagency.com/services/technical-seo/"
+      ],
       "chunks": [
         {
           "type": "definition",
@@ -91,8 +126,15 @@
         }
       ],
       "relations": [
-        { "predicate": "ENABLES", "target": "e_003", "condition": "by providing the technical foundation for AI model crawling and structured data ingestion" },
-        { "predicate": "DESCRIBED_BY", "target": "e_014" }
+        {
+          "predicate": "ENABLES",
+          "target": "e_003",
+          "condition": "by providing the technical foundation for AI model crawling and structured data ingestion"
+        },
+        {
+          "predicate": "DESCRIBED_BY",
+          "target": "e_014"
+        }
       ]
     },
     {
@@ -100,11 +142,17 @@
       "type": "Service",
       "name": "AI SEO / GEO",
       "description": "AI visibility optimisation service covering Google AI Overviews, ChatGPT, Gemini, and Perplexity — including llms.txt configuration, entity SEO, schema markup, and E-E-A-T reinforcement for Australian businesses.",
-      "also_known_as": ["GEO", "Generative Engine Optimisation", "AI Search Optimisation"],
+      "also_known_as": [
+        "GEO",
+        "Generative Engine Optimisation",
+        "AI Search Optimisation"
+      ],
       "canonical_label": "ai seo",
       "maturity": "established",
       "audience": "technical",
-      "sameAs": ["https://nexttabagency.com/services/ai-seo/"],
+      "sameAs": [
+        "https://nexttabagency.com/services/ai-seo/"
+      ],
       "chunks": [
         {
           "type": "definition",
@@ -129,9 +177,20 @@
         }
       ],
       "relations": [
-        { "predicate": "INCLUDES", "target": "e_015", "note": "Answer Engine Optimisation (AEO)" },
-        { "predicate": "ACHIEVES", "target": "e_016", "confidence": "declared" },
-        { "predicate": "DEPENDS_ON", "target": "e_002" }
+        {
+          "predicate": "INCLUDES",
+          "target": "e_015",
+          "note": "Answer Engine Optimisation (AEO)"
+        },
+        {
+          "predicate": "ACHIEVES",
+          "target": "e_016",
+          "confidence": "declared"
+        },
+        {
+          "predicate": "DEPENDS_ON",
+          "target": "e_002"
+        }
       ]
     },
     {
@@ -141,7 +200,9 @@
       "description": "Google Map Pack domination service for Brisbane and all Australian capital cities, covering Google Business Profile management, local citation building, and local schema markup.",
       "maturity": "established",
       "audience": "general",
-      "sameAs": ["https://nexttabagency.com/services/local-seo/"],
+      "sameAs": [
+        "https://nexttabagency.com/services/local-seo/"
+      ],
       "chunks": [
         {
           "type": "definition",
@@ -159,15 +220,22 @@
         },
         {
           "type": "evidence",
-          "relevance": 0.90,
+          "relevance": 0.9,
           "source_url": "https://nexttabagency.com/services/google-business-profile/",
           "source_title": "Google Business Profile Management — Next Tab Agency",
           "text": "Google Business Profile is the primary lever for local search visibility. Our GBP management service covers profile setup, category selection, review management, Q&A moderation, post scheduling, and photo optimisation to maximise Map Pack prominence."
         }
       ],
       "relations": [
-        { "predicate": "DESCRIBED_BY", "target": "e_013" },
-        { "predicate": "IMPROVES", "target": "e_016", "condition": "by building local entity signals that increase Google's confidence in the business's geographic relevance" }
+        {
+          "predicate": "DESCRIBED_BY",
+          "target": "e_013"
+        },
+        {
+          "predicate": "IMPROVES",
+          "target": "e_016",
+          "condition": "by building local entity signals that increase Google's confidence in the business's geographic relevance"
+        }
       ]
     },
     {
@@ -177,7 +245,9 @@
       "description": "Full-service pay-per-click campaign management covering Google Search, Google Shopping (Performance Max), Display, YouTube, and Microsoft Ads for Australian SMEs.",
       "maturity": "established",
       "audience": "general",
-      "sameAs": ["https://nexttabagency.com/services/ppc-google-ads/"],
+      "sameAs": [
+        "https://nexttabagency.com/services/ppc-google-ads/"
+      ],
       "chunks": [
         {
           "type": "definition",
@@ -188,14 +258,17 @@
         },
         {
           "type": "evidence",
-          "relevance": 0.90,
+          "relevance": 0.9,
           "source_url": "https://nexttabagency.com/services/ppc-google-ads/",
           "source_title": "Google Ads Brisbane — Next Tab Agency",
           "text": "We manage Google Ads for Brisbane businesses across all industries — from tradies needing local service ads to eCommerce stores running Shopping campaigns. Every account is managed in-house by certified Brisbane-based specialists with deep knowledge of Australian consumer behaviour and search intent patterns."
         }
       ],
       "relations": [
-        { "predicate": "INCLUDES", "target": "e_006" }
+        {
+          "predicate": "INCLUDES",
+          "target": "e_006"
+        }
       ]
     },
     {
@@ -205,7 +278,9 @@
       "description": "Paid social media advertising management across Facebook, Instagram, and LinkedIn for Australian businesses — covering lead generation, retargeting, dynamic product ads, and B2B Lead Gen Forms.",
       "maturity": "established",
       "audience": "general",
-      "sameAs": ["https://nexttabagency.com/services/social-media-ads/"],
+      "sameAs": [
+        "https://nexttabagency.com/services/social-media-ads/"
+      ],
       "chunks": [
         {
           "type": "definition",
@@ -231,7 +306,9 @@
       "description": "Custom React and Next.js website development built on the proprietary Antigravity Framework, delivering sub-1-second Core Web Vitals for Australian businesses.",
       "maturity": "established",
       "audience": "technical",
-      "sameAs": ["https://nexttabagency.com/services/web-development/"],
+      "sameAs": [
+        "https://nexttabagency.com/services/web-development/"
+      ],
       "chunks": [
         {
           "type": "definition",
@@ -242,15 +319,21 @@
         },
         {
           "type": "evidence",
-          "relevance": 0.90,
+          "relevance": 0.9,
           "source_url": "https://nexttabagency.com/services/speed-optimization/",
           "source_title": "Speed Optimisation — Next Tab Agency",
           "text": "The Antigravity Framework achieves: LCP under 1 second, CLS under 0.1, FID under 100ms. This is achieved through optimised React builds, Australian CDN infrastructure configuration, image optimisation pipelines (WebP/AVIF), lazy loading, and server-side caching — meeting Google's Core Web Vitals thresholds for Australian hosting environments."
         }
       ],
       "relations": [
-        { "predicate": "USES", "target": "e_008" },
-        { "predicate": "ENABLES", "target": "e_002" }
+        {
+          "predicate": "USES",
+          "target": "e_008"
+        },
+        {
+          "predicate": "ENABLES",
+          "target": "e_002"
+        }
       ]
     },
     {
@@ -261,7 +344,9 @@
       "canonical_label": "web performance framework",
       "maturity": "established",
       "audience": "technical",
-      "sameAs": ["https://nexttabagency.com/services/web-development/"],
+      "sameAs": [
+        "https://nexttabagency.com/services/web-development/"
+      ],
       "chunks": [
         {
           "type": "definition",
@@ -269,18 +354,17 @@
           "source_url": "https://nexttabagency.com/about/",
           "source_title": "About Next Tab Agency",
           "text": "The Antigravity Framework is Next Tab Agency's proprietary web performance methodology. It delivers sub-1-second page load times through: optimised React 18 builds with code splitting, Cloudflare and AWS CDN configured for Australian data centre proximity, next-gen image formats (WebP/AVIF) with responsive delivery, and server-side caching strategies — consistently achieving LCP under 1s, CLS under 0.1, FID under 100ms."
-        },
-        {
-          "type": "evidence",
-          "relevance": 0.93,
-          "source_url": "https://nexttabagency.com/portfolio/my-fitness-coach/",
-          "source_title": "MyFitnessCoach Case Study",
-          "text": "The Antigravity Framework was applied to the MyFitnessCoach React Native app build — delivering a production-grade cross-platform app with AI coaching integration that achieved 10,000+ downloads within 90 days and a 4.8-star App Store rating."
         }
       ],
       "relations": [
-        { "predicate": "ENABLES", "target": "e_007" },
-        { "predicate": "ENABLES", "target": "e_002" }
+        {
+          "predicate": "ENABLES",
+          "target": "e_007"
+        },
+        {
+          "predicate": "ENABLES",
+          "target": "e_002"
+        }
       ]
     },
     {
@@ -290,7 +374,9 @@
       "description": "Full Australian eCommerce development across WooCommerce, Shopify, BigCommerce, Magento 2, and Maropost Neto — with Australian payment gateways, shipping, and tax compliance built in.",
       "maturity": "established",
       "audience": "general",
-      "sameAs": ["https://nexttabagency.com/services/woocommerce-development/"],
+      "sameAs": [
+        "https://nexttabagency.com/services/woocommerce-development/"
+      ],
       "chunks": [
         {
           "type": "definition",
@@ -308,7 +394,11 @@
         }
       ],
       "relations": [
-        { "predicate": "IMPROVES", "target": "e_004", "condition": "when built with schema markup and AU-localised structured data that supports local search indexation" }
+        {
+          "predicate": "IMPROVES",
+          "target": "e_004",
+          "condition": "when built with schema markup and AU-localised structured data that supports local search indexation"
+        }
       ]
     },
     {
@@ -318,7 +408,9 @@
       "description": "Founder and CEO of Next Tab Agency. Digital innovation specialist and architect of the Antigravity Framework. Based in Brisbane, Queensland, Australia.",
       "maturity": "established",
       "audience": "general",
-      "sameAs": ["https://nexttabagency.com/our-team/"],
+      "sameAs": [
+        "https://nexttabagency.com/our-team/"
+      ],
       "chunks": [
         {
           "type": "definition",
@@ -329,15 +421,21 @@
         },
         {
           "type": "evidence",
-          "relevance": 0.90,
+          "relevance": 0.9,
           "source_url": "https://nexttabagency.com/about/",
           "source_title": "About Next Tab Agency",
           "text": "Under Hamza Ishfaq's leadership, Next Tab Agency has grown to 20 in-house specialists, served 200+ Australian clients, and achieved a 70%+ month-to-month retainer renewal rate — all on month-to-month, no lock-in contracts."
         }
       ],
       "relations": [
-        { "predicate": "FOUNDED", "target": "e_001" },
-        { "predicate": "CREATED", "target": "e_008" }
+        {
+          "predicate": "FOUNDED",
+          "target": "e_001"
+        },
+        {
+          "predicate": "CREATED",
+          "target": "e_008"
+        }
       ]
     },
     {
@@ -364,7 +462,11 @@
         }
       ],
       "relations": [
-        { "predicate": "IMPROVES", "target": "e_003", "condition": "when E-E-A-T signals are enhanced, increasing AI model confidence in citing the brand" }
+        {
+          "predicate": "IMPROVES",
+          "target": "e_003",
+          "condition": "when E-E-A-T signals are enhanced, increasing AI model confidence in citing the brand"
+        }
       ]
     },
     {
@@ -372,10 +474,16 @@
       "type": "Concept",
       "name": "Topical Authority SEO",
       "description": "An SEO methodology that builds comprehensive, interconnected content coverage of a topic area to establish domain expertise in the eyes of search engines and AI retrieval models.",
-      "also_known_as": ["topical authority", "semantic SEO", "content silo architecture"],
+      "also_known_as": [
+        "topical authority",
+        "semantic SEO",
+        "content silo architecture"
+      ],
       "maturity": "established",
       "audience": "technical",
-      "sameAs": ["https://nexttabagency.com/services/content-marketing/"],
+      "sameAs": [
+        "https://nexttabagency.com/services/content-marketing/"
+      ],
       "chunks": [
         {
           "type": "definition",
@@ -386,15 +494,21 @@
         },
         {
           "type": "evidence",
-          "relevance": 0.90,
+          "relevance": 0.9,
           "source_url": "https://nexttabagency.com/blog/content-strategy-core-update/",
           "source_title": "Content Strategy After Core Update — Next Tab Agency Blog",
           "text": "After Google's May 2026 core update, topical authority became the primary content signal. Thin, isolated pages lost rankings regardless of their link profiles. Businesses with comprehensive content silos — covering parent topics, subtopics, and entity-level detail — maintained and improved rankings across the update."
         }
       ],
       "relations": [
-        { "predicate": "ENABLES", "target": "e_003" },
-        { "predicate": "IMPROVES", "target": "e_011" }
+        {
+          "predicate": "ENABLES",
+          "target": "e_003"
+        },
+        {
+          "predicate": "IMPROVES",
+          "target": "e_011"
+        }
       ]
     },
     {
@@ -404,7 +518,9 @@
       "description": "Brisbane local business GBP reinstatement and local SEO campaign achieving #1 Map Pack ranking, 5.86 million organic impressions, and 49,300 organic clicks.",
       "maturity": "established",
       "audience": "general",
-      "sameAs": ["https://nexttabagency.com/portfolio/heaven-on-mainstreet/"],
+      "sameAs": [
+        "https://nexttabagency.com/portfolio/heaven-on-mainstreet/"
+      ],
       "chunks": [
         {
           "type": "statistic",
@@ -415,7 +531,10 @@
         }
       ],
       "relations": [
-        { "predicate": "DESCRIBED_BY", "target": "e_004" }
+        {
+          "predicate": "DESCRIBED_BY",
+          "target": "e_004"
+        }
       ]
     },
     {
@@ -425,7 +544,9 @@
       "description": "2.5 million-page website crawl budget rescue achieving top-3 rankings, sub-1.5s load times, and 60% indexation improvement within 90 days.",
       "maturity": "established",
       "audience": "technical",
-      "sameAs": ["https://nexttabagency.com/portfolio/institutional-scalper/"],
+      "sameAs": [
+        "https://nexttabagency.com/portfolio/institutional-scalper/"
+      ],
       "chunks": [
         {
           "type": "statistic",
@@ -436,7 +557,10 @@
         }
       ],
       "relations": [
-        { "predicate": "DESCRIBED_BY", "target": "e_002" }
+        {
+          "predicate": "DESCRIBED_BY",
+          "target": "e_002"
+        }
       ]
     },
     {
@@ -444,7 +568,10 @@
       "type": "Concept",
       "name": "Answer Engine Optimisation (AEO)",
       "description": "The practice of structuring content to appear as direct answers in AI-generated responses and voice search results, distinct from traditional keyword ranking optimisation.",
-      "also_known_as": ["AEO", "answer engine optimisation"],
+      "also_known_as": [
+        "AEO",
+        "answer engine optimisation"
+      ],
       "maturity": "established",
       "audience": "technical",
       "chunks": [
@@ -457,7 +584,10 @@
         }
       ],
       "relations": [
-        { "predicate": "PART_OF", "target": "e_003" }
+        {
+          "predicate": "PART_OF",
+          "target": "e_003"
+        }
       ]
     },
     {
@@ -465,10 +595,15 @@
       "type": "Concept",
       "name": "Entity SEO",
       "description": "SEO methodology focused on establishing and optimising a business as a clearly defined entity in Google's Knowledge Graph through structured data, Wikidata, and consistent NAP signals.",
-      "also_known_as": ["entity-based SEO", "knowledge graph optimisation"],
+      "also_known_as": [
+        "entity-based SEO",
+        "knowledge graph optimisation"
+      ],
       "maturity": "established",
       "audience": "technical",
-      "sameAs": ["https://nexttabagency.com/services/local-seo/"],
+      "sameAs": [
+        "https://nexttabagency.com/services/local-seo/"
+      ],
       "chunks": [
         {
           "type": "definition",
@@ -479,8 +614,14 @@
         }
       ],
       "relations": [
-        { "predicate": "ENABLES", "target": "e_003" },
-        { "predicate": "ENABLES", "target": "e_004" }
+        {
+          "predicate": "ENABLES",
+          "target": "e_003"
+        },
+        {
+          "predicate": "ENABLES",
+          "target": "e_004"
+        }
       ]
     },
     {
@@ -490,7 +631,9 @@
       "description": "Primary market and headquarters location of Next Tab Agency. Taylor Street, Eagleby, QLD 4207, Brisbane, Queensland, Australia.",
       "maturity": "established",
       "audience": "general",
-      "sameAs": ["https://nexttabagency.com/locations/brisbane-seo/"],
+      "sameAs": [
+        "https://nexttabagency.com/locations/brisbane-seo/"
+      ],
       "chunks": [
         {
           "type": "definition",
@@ -501,7 +644,10 @@
         }
       ],
       "relations": [
-        { "predicate": "HOME_OF", "target": "e_001" }
+        {
+          "predicate": "HOME_OF",
+          "target": "e_001"
+        }
       ]
     },
     {
@@ -511,7 +657,9 @@
       "description": "React Native iOS and Android mobile app development for Australian businesses, from MVP to production-grade apps with App Store submission and post-launch support.",
       "maturity": "established",
       "audience": "general",
-      "sameAs": ["https://nexttabagency.com/services/mobile-apps/"],
+      "sameAs": [
+        "https://nexttabagency.com/services/mobile-apps/"
+      ],
       "chunks": [
         {
           "type": "definition",
@@ -519,17 +667,13 @@
           "source_url": "https://nexttabagency.com/services/mobile-apps/",
           "source_title": "Mobile App Development — Next Tab Agency",
           "text": "Our mobile app development team builds React Native cross-platform iOS and Android apps for Australian businesses. From MVP development to production-grade apps with Firebase backends, real-time features, and AI integrations — all delivered by our Brisbane-based engineering team."
-        },
-        {
-          "type": "statistic",
-          "relevance": 0.95,
-          "source_url": "https://nexttabagency.com/portfolio/my-fitness-coach/",
-          "source_title": "MyFitnessCoach Case Study — Next Tab Agency",
-          "text": "MyFitnessCoach React Native app: 10,000+ downloads within 90 days of launch. 4.8-star App Store rating. Featured in Australian fitness media. Built with AI coaching integration, custom UI, and App Store submission managed by Next Tab Agency's engineering team."
         }
       ],
       "relations": [
-        { "predicate": "USES", "target": "e_008" }
+        {
+          "predicate": "USES",
+          "target": "e_008"
+        }
       ]
     }
   ]

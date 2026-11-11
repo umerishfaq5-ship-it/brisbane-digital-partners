@@ -6,8 +6,8 @@
 
 import { motion } from "framer-motion";
 
-const clients = [
-  { name: "MyFitnessCoach", abbr: "MFC", image: "partner_logo_mfc_1775912631967.png" },
+const clients: { name: string; abbr: string; image?: string }[] = [
+  { name: "Markhor Auto Care", abbr: "MAC" },
   { name: "CircleIt",        abbr: "CI" },
   { name: "Vacancies",       abbr: "VAC" },
   { name: "Mr. Blackbird",   abbr: "MB" },

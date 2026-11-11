@@ -265,21 +265,21 @@ const BrisbaneSeo = () => (
               Brisbane SEO Success Story
             </span>
             <h2 id="local-case-study-heading" className="font-heading font-bold text-3xl md:text-4xl text-foreground mb-6">
-              My Fitness Coach
+              Markhor Auto Care, Rocklea
             </h2>
             <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-              See how we helped a local Brisbane fitness brand scale their organic traffic and dominate local search rankings through data-driven SEO and high-converting web design.
+              A Rocklea car detailing and repair business needed a website and a Google Business Profile that could compete with established Brisbane mechanics. We built a fast, mobile-first WordPress site with service pages and online booking, then set up and optimised the Google Business Profile.
             </p>
             <ul className="space-y-3 mb-8">
               <li className="flex items-center gap-3 text-sm font-medium text-foreground">
-                <TrendingUp className="w-5 h-5 text-accent" /> 300% Increase in Organic Traffic
+                <TrendingUp className="w-5 h-5 text-accent" /> Google Map Pack top 3 for Rocklea car detailing
               </li>
               <li className="flex items-center gap-3 text-sm font-medium text-foreground">
-                <MapPin className="w-5 h-5 text-accent" /> Dominated Local Map Pack Rankings
+                <MapPin className="w-5 h-5 text-accent" /> New website, service pages and online booking
               </li>
             </ul>
             <Button variant="outline" size="lg" className="rounded-full bg-card hover:bg-accent/5 hover:text-accent" asChild>
-              <Link to="/portfolio/my-fitness-coach/">View Full Case Study <ArrowRight className="w-4 h-4 ml-2" /></Link>
+              <Link to="/portfolio/markhor-auto-care/">View Full Case Study <ArrowRight className="w-4 h-4 ml-2" /></Link>
             </Button>
           </motion.div>
           <motion.div
@@ -288,7 +288,7 @@ const BrisbaneSeo = () => (
              viewport={{ once: true }}
              className="relative rounded-2xl overflow-hidden shadow-2xl border border-border"
           >
-            <img src="/assets/myfitnesscoach-mockup.png" alt="My Fitness Coach SEO Case Study Brisbane" className="w-full object-cover" />
+            <img src="/assets/markhor-website.jpg" alt="Markhor Auto Care website, Rocklea Brisbane, built by Next Tab Agency" className="w-full object-cover" width={1440} height={900} loading="lazy" />
           </motion.div>
         </div>
       </div>

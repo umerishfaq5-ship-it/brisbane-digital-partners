@@ -97,7 +97,6 @@ Trust signals: 200+ Australian clients served. 70%+ month-to-month retention. Go
 - [Portfolio Overview](https://nexttabagency.com/portfolio/): All client case studies with verified results
 - [Heaven on Mainstreet](https://nexttabagency.com/portfolio/heaven-on-mainstreet/): GBP reinstatement and local SEO — #1 Map Pack, 5.86M impressions, 49,300 organic clicks
 - [Institutional Scalper](https://nexttabagency.com/portfolio/institutional-scalper/): 2.5M-page site crawl rescue — top-3 rankings, sub-1.5s load, 60% indexation improvement in 90 days
-- [MyFitnessCoach](https://nexttabagency.com/portfolio/my-fitness-coach/): React Native fitness app — 10,000+ downloads in 90 days, 4.8-star App Store rating
 - [CircleIt](https://nexttabagency.com/portfolio/circle-it/): Social MVP delivered in a single sprint — investor demo-ready at launch
 - [Markhor Auto Care](https://nexttabagency.com/portfolio/markhor-auto-care/): Automotive business digital presence and SEO
 

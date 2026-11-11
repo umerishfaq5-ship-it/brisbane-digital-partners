@@ -15,12 +15,6 @@ const testimonials = [
     highlight: "300% traffic increase",
   },
   {
-    quote: "The mobile app they built for us is fast, reliable, and our users absolutely love it. The React Native approach meant we got both iOS and Android without paying for two separate apps.",
-    author: "James Chen",
-    role: "Founder, MyFitnessCoach",
-    highlight: "10K+ app downloads",
-  },
-  {
     quote: "We've worked with three different agencies before finding Next Tab. The difference is night and day — they actually know what they're doing technically, and they don't oversell.",
     author: "Laura Nguyen",
     role: "Director, CircleIt",
@@ -186,7 +180,6 @@ const Testimonials = () => (
           content: (
             <InsightList heading="Client Satisfaction Highlights" items={[
               "'Next Tab completely transformed our online presence. Organic traffic increased by 300% in six months.' — Sarah Mitchell, Mr. Blackbird Brisbane",
-              "'The React Native app they built is fast, reliable, and our users love it. We got iOS and Android without paying for two separate builds.' — James Chen, MyFitnessCoach",
               "'Third agency we've worked with — the difference is night and day. They actually know what they're doing technically.' — Laura Nguyen, CircleIt",
               "'In the Google Map Pack within three months. We now get calls from customers who never would have found us.' — Mark Davidson, Davidson Plumbing",
             ]} />

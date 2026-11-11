@@ -100,7 +100,6 @@ import HamzaInvoiceView from "./pages/hamza/HamzaInvoiceView.tsx";
 import HamzaAuthGuard from "./pages/hamza/HamzaAuthGuard.tsx";
 import WebsiteCostBrisbane from "./pages/blog/WebsiteCostBrisbane.tsx";
 import ChooseDigitalAgencyBrisbane from "./pages/blog/ChooseDigitalAgencyBrisbane.tsx";
-import MyFitnessCoach from "./pages/portfolio/MyFitnessCoach.tsx";
 import CircleIt from "./pages/portfolio/CircleIt.tsx";
 import VacanciesPage from "./pages/portfolio/Vacancies.tsx";
 import HeavenOnMainstreet from "./pages/portfolio/HeavenOnMainstreet.tsx";
@@ -186,7 +185,6 @@ const App = () => (
             <Route path="/locations/sunshine-coast-seo" element={<SunshineCoastSeo />} />
             <Route path="/locations/hobart-seo" element={<HobartSeo />} />
             <Route path="/portfolio" element={<Portfolio />} />
-            <Route path="/portfolio/my-fitness-coach"         element={<MyFitnessCoach />} />
             <Route path="/portfolio/circle-it"                element={<CircleIt />} />
             <Route path="/portfolio/vacancies"                element={<VacanciesPage />} />
             <Route path="/portfolio/heaven-on-mainstreet"     element={<HeavenOnMainstreet />} />
@@ -195,6 +193,7 @@ const App = () => (
             <Route path="/demos/riverbend-plumbing" element={<DemoSite slug="riverbend-plumbing" />} />
             <Route path="/demos/brightpath-support" element={<DemoSite slug="brightpath-support" />} />
             <Route path="/demos/lonestar-air" element={<DemoSite slug="lonestar-air" />} />
+            <Route path="/demos/ironbark-fitness" element={<DemoSite slug="ironbark-fitness" />} />
             <Route path="/testimonials" element={<Testimonials />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/sitemap" element={<SitemapPage />} />

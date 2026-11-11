@@ -1,6 +1,6 @@
 import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
-import { Phone, Star, CheckCircle, Clock, MapPin, ShieldCheck, ArrowRight, Heart, Users, Home, Thermometer, Wrench, Droplets, Flame } from "lucide-react";
+import { Phone, Star, CheckCircle, Clock, MapPin, ShieldCheck, ArrowRight, Heart, Users, Home, Thermometer, Wrench, Droplets, Flame, Dumbbell, Calendar } from "lucide-react";
 
 /**
  * Concept builds: fictional businesses designed by Next Tab Agency to show what we build for
@@ -128,6 +128,38 @@ export const demos: Record<string, Demo> = {
     formTitle: "Schedule service",
     formFields: ["Name", "Phone", "ZIP code", "What's going on with your system?"],
     footer: "Lone Star Air & Heat · Concept site · Serving Greater Austin",
+  },
+  "ironbark-fitness": {
+    slug: "ironbark-fitness",
+    name: "Ironbark Fitness",
+    tagline: "Gym & small-group training in Springwood, Logan",
+    place: "Springwood",
+    phone: "0491 570 156",
+    tel: "+61491570156",
+    color: "#15803d",
+    soft: "#ecfdf3",
+    heroImg: "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=1600&fm=webp&fit=crop",
+    heroTitle: "Try us free for 7 days. No contract, no sales pitch.",
+    heroSub: "Strength, HIIT and small-group PT for Springwood, Shailer Park and Daisy Hill. Coaches who know your name, classes capped at 12, and memberships from $19 a week.",
+    badges: ["Memberships from $19/week", "Classes capped at 12", "Open 5am–9pm"],
+    services: [
+      { icon: Dumbbell, title: "Open gym", desc: "Racks, platforms and free weights. 24/7 access for members after induction." },
+      { icon: Users, title: "Small-group PT", desc: "4 to 6 people, one coach, a program written for you. 3 sessions a week." },
+      { icon: Flame, title: "HIIT & conditioning", desc: "45-minute classes morning and evening. Scaled for every fitness level." },
+      { icon: Calendar, title: "Class timetable", desc: "Book and cancel in the app. See the whole week before you sign up." },
+    ],
+    areas: ["Springwood", "Shailer Park", "Daisy Hill", "Rochedale South", "Underwood", "Slacks Creek", "Tanah Merah", "Loganholme"],
+    reviews: [
+      { name: "Jess M., Shailer Park", text: "First gym where a coach noticed I'd skipped a week and messaged me. Six months in and still going." },
+      { name: "Ben R., Springwood", text: "Small-group PT for less than one PT session costs elsewhere. Programs actually change as you get stronger." },
+      { name: "Anita K., Daisy Hill", text: "Did the free week expecting a hard sell. Nobody pushed. Signed up anyway." },
+    ],
+    rating: "4.9",
+    reviewCount: "211",
+    cta: "Start your free week",
+    formTitle: "Book a free 7-day trial",
+    formFields: ["Name", "Mobile", "Best time to train", "Any injuries or goals?"],
+    footer: "Ironbark Fitness · Concept site · Springwood, City of Logan",
   },
 };
 

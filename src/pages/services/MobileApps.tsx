@@ -31,7 +31,7 @@ const service = {
   benefits: [
     { icon: Zap, title: "Cross-Platform Efficiency", desc: "One codebase for both iOS and Android — significant time and cost saving without sacrificing quality." },
     { icon: Clock, title: "Faster Time to Market", desc: "React Native dramatically reduces build time compared to two separate native apps." },
-    { icon: Users, title: "Proven Track Record", desc: "We've shipped real apps — MyFitnessCoach, CircleIt, Vacancies — with thousands of active Australian users." },
+    { icon: Users, title: "Proven Track Record", desc: "We've shipped real apps to the App Store and Google Play, including CircleIt and Vacancies." },
   ],
   process: [
     { step: "01", title: "Discovery & Architecture", desc: "We map out your app's feature set, user flows, data model, and technical architecture before a line of code is written." },
