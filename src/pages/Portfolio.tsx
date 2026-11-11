@@ -72,6 +72,22 @@ const projects = [
     serviceLink: "/services/web-development/",
     serviceLabel: "Web Development",
   },
+  {
+    title: "FitPath Coach",
+    subtitle: "Concept build · Fitness coaching app · iOS & Android",
+    category: "Concept Builds" as Category,
+    tech: "React Native · Coach dashboard · Push reminders",
+    url: null,
+    detailLink: "/portfolio/my-fitness-coach/",
+    demoLink: "/portfolio/my-fitness-coach/",
+    screenshot: "/assets/concept-fitpath-app.jpg",
+    challenge: "Personal trainers and small gyms lose most new clients in the first 90 days, usually on the days between sessions: no plan, no idea what to eat, no sign of progress. Generic fitness apps don't help because the program isn't from their coach.",
+    solution: "An app a trainer hands to every client: today's workout from the coach's own program, meal logging against the coach's targets, and a progress screen with streaks and personal bests. One React Native codebase for both app stores, plus a web dashboard for the coach.",
+    result: "How we plan an app",
+    resultDetail: "Screens, brief and build plan for a 10–14 week first version. Concept: FitPath Coach is a fictional app.",
+    serviceLink: "/services/mobile-apps/",
+    serviceLabel: "Mobile App Development",
+  },
   /* ── Mobile Apps ─────────────────────────────────────────── */
   {
     title: "CircleIt",
@@ -205,7 +221,7 @@ export default function Portfolio() {
                 { value: "5.86M", label: "Google Impressions", color: "text-purple-300" },
                 { value: "49.3K", label: "Organic Clicks",     color: "text-blue-300" },
                 { value: "#1",    label: "Map Pack Achieved",  color: "text-amber-300" },
-                { value: "4",     label: "Live Concept Builds", color: "text-green-300" },
+                { value: "5",     label: "Concept Builds",      color: "text-green-300" },
               ].map((s) => (
                 <div key={s.label} className="flex flex-col">
                   <span className={`font-heading font-black text-2xl ${s.color}`}>{s.value}</span>
