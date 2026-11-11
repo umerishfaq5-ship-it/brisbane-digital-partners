@@ -43,7 +43,7 @@ const sections = [
     bg: "bg-violet-500/10",
     description: "Dedicated story-driven case study pages for our key projects — each covering the Problem, Solution, Tech Stack, and measurable Results.",
     pages: [
-      { label: "FitPath Coach — Fitness App (concept build)", href: "/portfolio/my-fitness-coach/", desc: "Concept fitness coaching app: daily workouts, meal logging and progress tracking. Screens, brief and React Native build plan." },
+      { label: "JEFIT — Gym Workout App", href: "/portfolio/my-fitness-coach/", desc: "Development work on JEFIT, the gym workout tracker by Jefit Inc. 5M+ downloads, 4.6★ on Google Play." },
       { label: "CircleIt — Social App", href: "/portfolio/circle-it/", desc: "Firebase real-time community platform — social engagement, real-time notifications, interactive features. iOS & Android." },
       { label: "Vacancies — Job Listing App", href: "/portfolio/vacancies/", desc: "Android job listing app for Lead Time Telecom FZE — real-time updates, company profiles, easy CV apply. Live on Google Play." },
       { label: "Heaven on Mainstreet — WordPress + SEO", href: "/portfolio/heaven-on-mainstreet/", desc: "WordPress rebuild + Technical SEO — massive organic impressions spike, 62% more direct bookings, mobile bounce 74%→28%." },

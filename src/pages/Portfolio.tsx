@@ -72,23 +72,24 @@ const projects = [
     serviceLink: "/services/web-development/",
     serviceLabel: "Web Development",
   },
+  /* ── Mobile Apps ─────────────────────────────────────────── */
   {
-    title: "FitPath Coach",
-    subtitle: "Concept build · Fitness coaching app · iOS & Android",
-    category: "Concept Builds" as Category,
-    tech: "React Native · Coach dashboard · Push reminders",
+    title: "JEFIT",
+    subtitle: "Gym Workout Tracker · App by Jefit Inc.",
+    category: "Mobile App" as Category,
+    tech: "Mobile app development · Android · Wear OS",
     url: null,
+    androidUrl: "https://play.google.com/store/apps/details?id=je.fit",
     detailLink: "/portfolio/my-fitness-coach/",
-    demoLink: "/portfolio/my-fitness-coach/",
-    screenshot: "/assets/concept-fitpath-app.jpg",
-    challenge: "Personal trainers and small gyms lose most new clients in the first 90 days, usually on the days between sessions: no plan, no idea what to eat, no sign of progress. Generic fitness apps don't help because the program isn't from their coach.",
-    solution: "An app a trainer hands to every client: today's workout from the coach's own program, meal logging against the coach's targets, and a progress screen with streaks and personal bests. One React Native codebase for both app stores, plus a web dashboard for the coach.",
-    result: "How we plan an app",
-    resultDetail: "Screens, brief and build plan for a 10–14 week first version. Concept: FitPath Coach is a fictional app.",
+    iconUrl: "/assets/jefit-icon.png",
+    iconBg: "linear-gradient(135deg, #0b3a66 0%, #0a1f3a 100%)",
+    challenge: "JEFIT is a gym workout planner and tracker used by millions of people. Logging a set has to take one tap, the next exercise has to be ready, and nothing can lag mid-workout.",
+    solution: "We worked on the development of the JEFIT app: workout tracking, plans and the exercise library, progress screens and the Wear OS companion. JEFIT is owned and published by Jefit Inc.",
+    result: "4.6★ · 5M+ downloads",
+    resultDetail: "Public Google Play figures for JEFIT (90K+ reviews). App owned by Jefit Inc.; Next Tab Agency worked on development.",
     serviceLink: "/services/mobile-apps/",
     serviceLabel: "Mobile App Development",
   },
-  /* ── Mobile Apps ─────────────────────────────────────────── */
   {
     title: "CircleIt",
     subtitle: "Social Engagement & Community App",
@@ -189,7 +190,7 @@ export default function Portfolio() {
     <Layout>
       <SEO
         title="Portfolio — Our Work & Case Studies"
-        description="Next Tab Agency work: Markhor Auto Care website + Map Pack, Institutional Scalper and Heaven on Mainstreet SEO, CircleIt and Vacancies apps, plus live concept websites for tradies, NDIS providers, gyms and US HVAC."
+        description="Next Tab Agency work: Markhor Auto Care website + Map Pack, Institutional Scalper and Heaven on Mainstreet SEO, JEFIT, CircleIt and Vacancies apps, plus live concept websites for tradies, NDIS providers, gyms and US HVAC."
         canonical="/portfolio"
         breadcrumbs={[
           { name: "Home", url: "https://nexttabagency.com/" },
@@ -221,7 +222,7 @@ export default function Portfolio() {
                 { value: "5.86M", label: "Google Impressions", color: "text-purple-300" },
                 { value: "49.3K", label: "Organic Clicks",     color: "text-blue-300" },
                 { value: "#1",    label: "Map Pack Achieved",  color: "text-amber-300" },
-                { value: "5",     label: "Concept Builds",      color: "text-green-300" },
+                { value: "5M+",   label: "JEFIT Downloads",     color: "text-green-300" },
               ].map((s) => (
                 <div key={s.label} className="flex flex-col">
                   <span className={`font-heading font-black text-2xl ${s.color}`}>{s.value}</span>
@@ -593,7 +594,7 @@ export default function Portfolio() {
                   { label: "Page Type",       value: "Portfolio / Case Studies" },
                   { label: "Projects Listed", value: "8 detailed case studies" },
                   { label: "Categories",      value: "Mobile App, SEO, Web Development" },
-                  { label: "Clients",         value: "Markhor Auto Care, CircleIt, Vacancies, Institutional Scalper, Heaven on Mainstreet" },
+                  { label: "Clients",         value: "Markhor Auto Care, JEFIT (development work), CircleIt, Vacancies, Institutional Scalper, Heaven on Mainstreet" },
                   { label: "Live Sites",      value: "institutionalscalper.com, heavenonmainstreet.com" },
                   { label: "Market",          value: "Australia — Brisbane, Sydney, Melbourne" },
                 ]} />
